@@ -13,12 +13,29 @@ i18n
       useSuspense: false
     },
     resources: {
+      'zh-CN': {
+        translations: {
+          'submit': '确认',
+          'reset': '重置',
+          'legion': {
+            'add-char': '添加角色'
+          }
+        }
+      },
+      'en-US': {
+        translations: {
+          'submit': 'Submit',
+          'reset': 'Reset',
+          'legion': {
+            'add-char': "Add Character"
+          }
+        }
+      }
     },
     fallbackLng: [ 'zh-CN', 'en-US' ],
     debug: true,
     ns: ['translations'],
     defaultNS: 'translations',
-
     interpolation: {
       escapeValue: false, // not needed for react as it escapes by default
     }
