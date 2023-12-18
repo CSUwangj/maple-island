@@ -108,6 +108,6 @@ const gmsPieces = [
   ],
 ]
 
-const pieces: any[] = defaultPieces
+const Pieces: number[][][] = defaultPieces.concat(gmsPieces)
 
-export { pieces }
+export { Pieces }

@@ -1,5 +1,66 @@
-import { Point } from './point.js'
+import { Point } from './point'
 import _ from 'lodash'
+
+export const Color = new Map([
+  [-1, 'white'],
+  [0, 'grey'],
+  [1, 'lightpink'],
+  [2, 'lightcoral'],
+  [3, 'indianred'],
+  [4, 'darkseagreen'],
+  [5, 'firebrick'],
+  [6, 'mediumseagreen'],
+  [7, 'purple'],
+  [8, 'dodgerblue'],
+  [9, 'lightsteelblue'],
+  [10, 'maroon'],
+  [11, 'green'],
+  [12, 'indigo'],
+  [13, 'blue'],
+  [14, 'cadetblue'],
+  [15, 'mediumpurple'],
+  [16, 'aquamarine'],
+  [17, 'aquamarine'],
+  [18, 'aquamarine'],
+  [10, 'lightpink'],
+  [20, 'lightcoral'],
+  [21, 'indianred'],
+  [22, 'darkseagreen'],
+  [23, 'firebrick'],
+  [24, 'mediumseagreen'],
+  [25, 'purple'],
+  [26, 'dodgerblue'],
+  [27, 'lightsteelblue'],
+  [28, 'maroon'],
+  [29, 'green'],
+  [30, 'indigo'],
+  [31, 'blue'],
+  [32, 'cadetblue'],
+  [33, 'mediumpurple'],
+  [34, 'aquamarine'],
+  [35, 'aquamarine'],
+  [36, 'aquamarine']
+])
+export const PieceDescription = [
+  'lvl60',
+  'lvl100',
+  'warriorPirate140',
+  'mageThiefArcher140',
+  'warrior200',
+  'archer200',
+  'thiefLab200',
+  'mage200',
+  'pirate200',
+  'warrior250',
+  'archer250',
+  'thief250',
+  'mage250',
+  'pirate250',
+  'xenon250',
+  'enhancedLab200',
+  'enhancedLab250',
+  'lab250'
+]
 
 class Piece {
   static curId = 1
@@ -8,11 +69,11 @@ class Piece {
   id: number
   _cellCount: number
   _offCenter: number
-  _pointShape: any[]
-  _transformations: any[]
-  _pointTransformations: any[]
-  _restrictedTransformations: any[]
-  _restrictedPointTransformations: any[]
+  _pointShape: PiecePoint[]
+  _transformations: Piece[]
+  _pointTransformations: PiecePoint[][]
+  _restrictedTransformations: Piece[]
+  _restrictedPointTransformations: PiecePoint[][]
 
 
   constructor(shape: number[][], amount: number, id: number) {
@@ -113,7 +174,6 @@ class Piece {
   }
 
   get restrictedPointTransformations(): PiecePoint[][] {
-    Object.defineProperty(this, "restrictedPointTransformations", { value: [] })
     for (const piece of this.restrictedTransformations) {
       this._restrictedPointTransformations.push(piece.pointShape)
     }

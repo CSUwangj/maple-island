@@ -18,7 +18,8 @@ i18n
           'submit': '确认',
           'reset': '重置',
           'legion': {
-            'add-char': '添加角色'
+            'add-char': '添加角色',
+            'rem-char': '删除角色'
           }
         }
       },
@@ -27,7 +28,8 @@ i18n
           'submit': 'Submit',
           'reset': 'Reset',
           'legion': {
-            'add-char': "Add Character"
+            'add-char': 'Add Character',
+            'rem-char': 'Remove Character'
           }
         }
       }
