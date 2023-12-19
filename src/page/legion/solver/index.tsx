@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
 import styled from '@emotion/styled/macro'
 import { useLiveQuery } from 'dexie-react-hooks'
-import _ from 'lodash'
+import _, { sumBy } from 'lodash'
 import { Archer, Character, Mage, Pirate, Thief, Warrior } from 'models/Character'
 import { db } from 'models/db'
 import React, { useEffect, useState, CSSProperties } from 'react'
@@ -17,15 +17,48 @@ const HEIGHT = 20
 const WIDTH = 22
 
 const initBoard = () => new Array(HEIGHT).fill(0).map(() => new Array(WIDTH).fill(-1))
-const initColorBoard = () => new Array(HEIGHT).fill(0).map(() => new Array(WIDTH).fill(0))
 const initAmount = new Array(18).fill(0)
-
 
 const Content = styled.div`
   display: flex;
   > :nth-child(1), > :nth-child(3) {
     flex: 1;
   }
+`
+
+const Legion = styled.div`
+  display: flex;
+  flex-direction: column;
+`
+
+const Board = styled.table`
+  -webkit-touch-callout:none;
+  -webkit-user-select:none;
+  -khtml-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none
+  border-spacing: 0;
+  border-collapse: collapse;
+  height: min-content;
+`
+
+const Cell = styled.td`
+  width: 25px;
+  height: 27px;
+  border-style: solid;
+  border-width: 1px;
+`
+
+const states = {
+  START: 'start',
+  RUNNING: 'running',
+  PAUSED: 'paused',
+  COMPLETED: 'completed',
+}
+
+const Instructions = styled.div`
+  margin-left: 30px;
 `
 
 const PiecesDisplay = styled.div`
@@ -66,37 +99,7 @@ const InitBorderStyle = (() => {
   return styles
 })()
 
-const Board = styled.table`
-  -webkit-touch-callout:none;
-  -webkit-user-select:none;
-  -khtml-user-select:none;
-  -moz-user-select:none;
-  -ms-user-select:none;
-  user-select:none
-  border-spacing: 0;
-  border-collapse: collapse;
-  HEIGHT: min-content;
-`
-
-const Cell = styled.td`
-  width: 25px;
-  height: 27px;
-  border-style: solid;
-  border-width: 1px;
-`
-
-const states = {
-  START: 'start',
-  RUNNING: 'running',
-  PAUSED: 'paused',
-  COMPLETED: 'completed',
-}
-
-const Instructions = styled.div`
-  margin-left: 30px;
-`
-
-const draw = (
+const onMouseOver = (
   i: number,
   j: number, 
   dragValue: number, 
@@ -228,8 +231,6 @@ const runSolver = async (
   setBorderStyles: (a: CSSProperties[][]) => void
 ) => {
   const newBoard = _.cloneDeep(board)
-  console.error(board)
-  console.error(newBoard)
   const downBoard: number[][] = []
   for (let i = 0; i < HEIGHT; i++) {
     downBoard[i] = []
@@ -275,15 +276,12 @@ const runSolver = async (
     solver.stop()
   }
 
-  let finishedSolver
-
   if (legionSolvers[0].success !== undefined) {
     for (let i = 0; i < HEIGHT; i++) {
       for (let j = 0; j < WIDTH; j++) {
         newBoard[i][j] = legionSolvers[0].board[i][j]
       }
     }
-    finishedSolver = legionSolvers[0]
     pieceHistory = legionSolvers[0].history
   } else if (legionSolvers[1].success !== undefined) {
     for (let i = 0; i < HEIGHT; i++) {
@@ -299,7 +297,6 @@ const runSolver = async (
         point.x = holder
       }
     }
-    finishedSolver = legionSolvers[1]
     pieceHistory = legionSolvers[1].history
   } else if (legionSolvers[2].success !== undefined) {
     for (let i = 0; i < HEIGHT; i++) {
@@ -314,7 +311,6 @@ const runSolver = async (
         point.x = WIDTH - 1 - point.x
       }
     }
-    finishedSolver = legionSolvers[2]
     pieceHistory = legionSolvers[2].history
   } else if (legionSolvers[3].success !== undefined) {
     for (let i = 0; i < HEIGHT; i++) {
@@ -330,14 +326,8 @@ const runSolver = async (
         point.y = holder
       }
     }
-    finishedSolver = legionSolvers[3]
     pieceHistory = legionSolvers[3].history
   }
-  console.error(success)
-  for(let i = 0; i < 4; i += 1) {
-    console.error(legionSolvers[i].board)
-  }
-
   if (success) {
     setBoard(newBoard)
     drawBoard(legionSolvers, board, pieceHistory, setBorderStyles)
@@ -345,11 +335,11 @@ const runSolver = async (
   return success
 }
 
+
 export const Page: React.FC = () => {
   const { t } = useTranslation()
   const characters = useLiveQuery(() => db.character.toArray())
   const [ board, setBoard ] = useLocalStorage('board', initBoard())
-  // const [ colorBoard, setColorBoard ] = useState(initColorBoard())
   const [ piecesAmount, setPiecesAmount ] = useLocalStorage('pieces', initAmount)
   const [ dragging, setDragging ] = useState(false)
   const [ dragValue, setDragValue ] = useState(0)
@@ -357,6 +347,8 @@ export const Page: React.FC = () => {
   const [ fillCount, setFillCount ] = useState(board!.map((row) => row.reduce((s, c) => s + c)).reduce((s, c) => s + c))
   const [ borderStyles, setBorderStyles ] = useState(InitBorderStyle)
   const pieces: Piece[] = Pieces.map((piece, index) => Piece.createPiece(piece, piecesAmount![index], index + 1))
+  const boardFilledValue = board!.map(row => row.reduce((s, i) => (s + (i !== -1)))).reduce((s: number, i: number) => s + i)
+  const currentPiecesValue = pieces.map((piece) => piece.amount * piece.cellCount).reduce((s: number, i: number) => s + i)
   useEffect(() => {
     document.documentElement.addEventListener('mouseup', () => {
       setDragging(false)
@@ -372,31 +364,45 @@ export const Page: React.FC = () => {
       <button>{t('legion.button2')}</button>
       <button onClick={() => setPiecesAmount(initAmount)}>{t('reset')}</button>
     </PiecesDisplay>
-    <Board>
-      <tbody>
-        {
-          board!.map((row, rowIndex) => <tr key={rowIndex}>
-            {
-              row.map((cell, colIndex) => <Cell
-                key={colIndex}
-                style={{'background': `${Color.get(cell)}`, ...borderStyles[rowIndex][colIndex]}}
-                onMouseOver={() => {
-                  if(!dragging) return
-                  draw(rowIndex, colIndex, dragValue, board as number[][], setBoard, fillCount, setFillCount, state)
-                }}
-                onMouseDown={() => {
-                  setDragValue(-1 - board![rowIndex][colIndex])
-                  draw(rowIndex, colIndex, dragValue, board as number[][], setBoard, fillCount, setFillCount, state)
-                  setDragging(true)
-                }}
-              />)
-            }
-          </tr>)
-        }
-      </tbody>
+    <Legion>
+
+      <Board>
+        <tbody>
+          {
+            board!.map((row, rowIndex) => <tr key={rowIndex}>
+              {
+                row.map((cell, colIndex) => <Cell
+                  key={colIndex}
+                  style={{'background': `${Color.get(cell)}`, ...borderStyles[rowIndex][colIndex]}}
+                  onMouseOver={() => {
+                    if(!dragging) return
+                    onMouseOver(rowIndex, colIndex, dragValue, board as number[][], setBoard, fillCount, setFillCount, state)
+                  }}
+                  onMouseDown={() => {
+                    setDragValue(-1 - board![rowIndex][colIndex])
+                    onMouseOver(rowIndex, colIndex, dragValue, board as number[][], setBoard, fillCount, setFillCount, state)
+                    setDragging(true)
+                  }}
+                />)
+              }
+            </tr>)
+          }
+        </tbody>
+      </Board>
+
+      <div id="currentPieces">
+        Spaces to be Filled: <span id="currentPiecesValue">{currentPiecesValue}</span>
+      </div>
+      <div id="boardFilled">
+        Board Spaces Filled: <span id="boardFilledValue">{boardFilledValue}</span>
+      </div>
       <button onClick={async () => await runSolver(board!, pieces, setBoard, setBorderStyles)}>{t('start')}</button>
+      <button onClick={() => {
+        setBoard(board!.map(row => row.map(cell => (cell !== -1 ? 0 : -1))))
+        setBorderStyles(InitBorderStyle)
+      }}>{t('reset')}</button>
       <button onClick={() => setBoard(initBoard())}>{t('clear')}</button>
-    </Board>
+    </Legion>
     <Instructions>
       <h2>{t('instructions') + t(':')}</h2>
       <div>
