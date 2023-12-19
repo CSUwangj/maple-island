@@ -1,16 +1,23 @@
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
 import styled from '@emotion/styled/macro'
 import { useLiveQuery } from 'dexie-react-hooks'
+import _ from 'lodash'
 import { Archer, Character, Mage, Pirate, Thief, Warrior } from 'models/Character'
 import { db } from 'models/db'
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, CSSProperties } from 'react'
 import { useTranslation } from 'react-i18next'
 import { useLocalStorage } from 'react-use'
 import { PieceDisplay } from './components/PieceDisplay'
+import { LegionSolver } from './legion_solver'
 import { Color, Piece } from './model/piece'
+import { Point } from './model/point'
 import { Pieces } from './pieces'
 
-const initBoard = new Array(20).fill(0).map(() => Array(22).fill(-1))
+const HEIGHT = 20
+const WIDTH = 22
+
+const initBoard = () => new Array(HEIGHT).fill(0).map(() => new Array(WIDTH).fill(-1))
+const initColorBoard = () => new Array(HEIGHT).fill(0).map(() => new Array(WIDTH).fill(0))
 const initAmount = new Array(18).fill(0)
 
 
@@ -25,6 +32,39 @@ const PiecesDisplay = styled.div`
   margin-right: 20px;
 `
 
+const InitBorderStyle = (() => {
+  const styles: CSSProperties[][] = new Array(HEIGHT).fill(0).map(() => new Array(WIDTH).fill(0).map(() => ({borderWidth: '1px'})))
+  
+  for (let i = 0; i < WIDTH / 2; i++) {
+    styles[i][i].borderTopWidth = '3px'
+    styles[i][i].borderRightWidth = '3px'
+    styles[HEIGHT - i - 1][i].borderBottomWidth = '3px'
+    styles[HEIGHT - i - 1][i].borderRightWidth = '3px'
+    styles[i][WIDTH - i - 1].borderTopWidth = '3px'
+    styles[i][WIDTH - i - 1].borderLeftWidth = '3px'
+    styles[HEIGHT - i - 1][WIDTH - i - 1].borderBottomWidth = '3px'
+    styles[HEIGHT - i - 1][WIDTH - i - 1].borderLeftWidth = '3px'
+  }
+  for (let i = 0; i < HEIGHT; i++) {
+    styles[i][0].borderLeftWidth = '3px'
+    styles[i][WIDTH / 2].borderLeftWidth = '3px'
+    styles[i][WIDTH - 1].borderRightWidth = '3px'
+  }
+  for (let i = 0; i < WIDTH; i++) {
+    styles[0][i].borderTopWidth = '3px'
+    styles[HEIGHT / 2][i].borderTopWidth = '3px'
+    styles[HEIGHT - 1][i].borderBottomWidth = '3px'
+  }
+  for (let i = HEIGHT / 4; i < 3 * HEIGHT / 4; i++) {
+    styles[i][Math.floor(WIDTH / 4)].borderLeftWidth = '3px'
+    styles[i][Math.floor(3 * WIDTH / 4)].borderRightWidth = '3px'
+  }
+  for (let i = Math.ceil(WIDTH / 4); i < Math.floor(3 * WIDTH / 4); i++) {
+    styles[HEIGHT / 4][i].borderTopWidth = '3px'
+    styles[3 * HEIGHT / 4][i].borderTopWidth = '3px'
+  }
+  return styles
+})()
 
 const Board = styled.table`
   -webkit-touch-callout:none;
@@ -35,7 +75,7 @@ const Board = styled.table`
   user-select:none
   border-spacing: 0;
   border-collapse: collapse;
-  height: min-content;
+  HEIGHT: min-content;
 `
 
 const Cell = styled.td`
@@ -111,7 +151,7 @@ const setLegion = (characters: Character[], currentAmountArray: number[], setCur
         amountArray[8] += 1
       }
     } else {
-      if(character.job == 'Xenon') {
+      if(character.job === 'Xenon') {
         amountArray[14] += 1
       } else if(Warrior.has(character.job)) {
         amountArray[9] += 1
@@ -129,16 +169,194 @@ const setLegion = (characters: Character[], currentAmountArray: number[], setCur
   setCurrentAmount(amountArray)
 }
 
+const drawBoard = (
+  legionSolvers: LegionSolver[],
+  board: number[][],
+  pieceHistory: Point[][],
+  setBorderStyles: (a: CSSProperties[][]) => void
+) => {
+  setBorderStyles(InitBorderStyle)
+  colourBoard(legionSolvers, board, pieceHistory, setBorderStyles)
+}
+
+const colourBoard = (
+  legionSolvers: LegionSolver[],
+  board: number[][],
+  pieceHistory: Point[][],
+  setBorderStyles: (a: CSSProperties[][]) => void
+) => {
+  const styles: CSSProperties[][] = new Array(HEIGHT).fill(0).map(() => new Array(WIDTH).fill(0).map(() => ({})))
+
+  if (pieceHistory.length == 0 && legionSolvers[0]) {
+    pieceHistory = legionSolvers[0].history
+  }
+
+  for (const piece of pieceHistory) {
+    for (let i = 0; i < piece.length; i++) {
+      if (board[piece[i].y][piece[i].x - 1] > 0 && (styles[piece[i].y][piece[i].x].borderLeftWidth == '3px' || styles[piece[i].y][piece[i].x - 1].borderRightWidth == '3px')) {
+        styles[piece[i].y][piece[i].x].borderLeftWidth = '1px'
+        styles[piece[i].y][piece[i].x - 1].borderRightWidth = '1px'
+      }
+      if (board[piece[i].y - 1] && board[piece[i].y - 1][piece[i].x] > 0 && (styles[piece[i].y][piece[i].x].borderTopWidth == '3px' || styles[piece[i].y - 1][piece[i].x].borderBottomWidth == '3px' )) {
+        styles[piece[i].y][piece[i].x].borderTopWidth = '1px'
+        styles[piece[i].y - 1][piece[i].x].borderBottomWidth = '1px'
+      }
+      for (let j = 0; j < piece.length; j++) {
+        if (i != j && piece[i].x - 1 == piece[j].x && piece[i].y == piece[j].y) {
+          styles[piece[i].y][piece[i].x].borderLeftWidth = '0px'
+          if (board[0][piece[i].x - 1]) {
+            styles[piece[i].y][piece[i].x - 1].borderRightWidth = '0px'
+          }
+        }
+        if (i != j && piece[i].x == piece[j].x && piece[i].y - 1 == piece[j].y) {
+          styles[piece[i].y][piece[i].x].borderTopWidth = '0px'
+          if (board[piece[i].y - 1]) {
+            styles[piece[i].y - 1][piece[i].x].borderBottomWidth = '0px'
+          }
+        }
+      }
+    }
+    setBorderStyles(styles)
+  }
+}
+
+
+const runSolver = async (
+  board: number [][],
+  pieces: Piece[],
+  setBoard: (a: number[][]) => void,
+  setBorderStyles: (a: CSSProperties[][]) => void
+) => {
+  const newBoard = _.cloneDeep(board)
+  console.error(board)
+  console.error(newBoard)
+  const downBoard: number[][] = []
+  for (let i = 0; i < HEIGHT; i++) {
+    downBoard[i] = []
+    for (let j = 0; j < WIDTH; j++) {
+      downBoard[i][j] = board[HEIGHT - 1 - i][WIDTH - 1 - j]
+    }
+  }
+  const rightBoard: number[][] = []
+  for (let i = 0; i < WIDTH; i++) {
+    rightBoard[i] = []
+    for (let j = 0; j < HEIGHT; j++) {
+      rightBoard[i][j] = board[HEIGHT - j - 1][i]
+    }
+  }
+  const leftBoard: number[][] = []
+  for (let i = 0; i < WIDTH; i++) {
+    leftBoard[i] = []
+    for (let j = 0; j < HEIGHT; j++) {
+      leftBoard[i][j] = board[j][WIDTH - 1 - i]
+    }
+  }
+
+  let pieceHistory: Point[][] = []
+  const legionSolvers = []
+  legionSolvers.push(new LegionSolver(newBoard, _.cloneDeep(pieces), () => false))
+  legionSolvers.push(new LegionSolver(rightBoard, _.cloneDeep(pieces), () => false))
+  legionSolvers.push(new LegionSolver(downBoard, _.cloneDeep(pieces), () => false))
+  legionSolvers.push(new LegionSolver(leftBoard, _.cloneDeep(pieces), () => false))
+
+  const runRotated = legionSolvers[0].longSpaces.length != 0
+  const boardPromise = legionSolvers[0].solve()
+  let success
+  if (runRotated) {
+    const rightBoardPromise = legionSolvers[1].solve()
+    const downBoardPromise = legionSolvers[2].solve()
+    const leftBoardPromise = legionSolvers[3].solve()
+    success = await Promise.race([boardPromise, rightBoardPromise, downBoardPromise, leftBoardPromise])
+  } else {
+    success = await boardPromise
+  }
+
+  for (const solver of legionSolvers) {
+    solver.stop()
+  }
+
+  let finishedSolver
+
+  if (legionSolvers[0].success !== undefined) {
+    for (let i = 0; i < HEIGHT; i++) {
+      for (let j = 0; j < WIDTH; j++) {
+        newBoard[i][j] = legionSolvers[0].board[i][j]
+      }
+    }
+    finishedSolver = legionSolvers[0]
+    pieceHistory = legionSolvers[0].history
+  } else if (legionSolvers[1].success !== undefined) {
+    for (let i = 0; i < HEIGHT; i++) {
+      for (let j = 0; j < WIDTH; j++) {
+        newBoard[i][j] = legionSolvers[1].board[j][WIDTH - 1 - i]
+      }
+    }
+
+    for (const piece of legionSolvers[1].history) {
+      for (const point of piece) {
+        const holder = point.y
+        point.y = HEIGHT - 1 - point.x
+        point.x = holder
+      }
+    }
+    finishedSolver = legionSolvers[1]
+    pieceHistory = legionSolvers[1].history
+  } else if (legionSolvers[2].success !== undefined) {
+    for (let i = 0; i < HEIGHT; i++) {
+      for (let j = 0; j < WIDTH; j++) {
+        newBoard[i][j] = legionSolvers[2].board[HEIGHT - 1 - i][WIDTH - 1 - j]
+      }
+    }
+
+    for (const piece of legionSolvers[2].history) {
+      for (const point of piece) {
+        point.y = HEIGHT - 1 - point.y
+        point.x = WIDTH - 1 - point.x
+      }
+    }
+    finishedSolver = legionSolvers[2]
+    pieceHistory = legionSolvers[2].history
+  } else if (legionSolvers[3].success !== undefined) {
+    for (let i = 0; i < HEIGHT; i++) {
+      for (let j = 0; j < WIDTH; j++) {
+        newBoard[i][j] = legionSolvers[3].board[WIDTH - j - 1][i]
+      }
+    }
+
+    for (const piece of legionSolvers[3].history) {
+      for (const point of piece) {
+        const holder = point.x
+        point.x = WIDTH - 1 - point.y
+        point.y = holder
+      }
+    }
+    finishedSolver = legionSolvers[3]
+    pieceHistory = legionSolvers[3].history
+  }
+  console.error(success)
+  for(let i = 0; i < 4; i += 1) {
+    console.error(legionSolvers[i].board)
+  }
+
+  if (success) {
+    setBoard(newBoard)
+    drawBoard(legionSolvers, board, pieceHistory, setBorderStyles)
+  }
+  return success
+}
+
 export const Page: React.FC = () => {
   const { t } = useTranslation()
   const characters = useLiveQuery(() => db.character.toArray())
-  const [ board, setBoard ] = useLocalStorage('board', initBoard)
+  const [ board, setBoard ] = useLocalStorage('board', initBoard())
+  // const [ colorBoard, setColorBoard ] = useState(initColorBoard())
   const [ piecesAmount, setPiecesAmount ] = useLocalStorage('pieces', initAmount)
   const [ dragging, setDragging ] = useState(false)
   const [ dragValue, setDragValue ] = useState(0)
   const [ state, setState ] = useState(states.START)
   const [ fillCount, setFillCount ] = useState(board!.map((row) => row.reduce((s, c) => s + c)).reduce((s, c) => s + c))
-  const pieces: Piece[] = Pieces.map((piece, index) => Piece.createPiece(piece, piecesAmount![index]))
+  const [ borderStyles, setBorderStyles ] = useState(InitBorderStyle)
+  const pieces: Piece[] = Pieces.map((piece, index) => Piece.createPiece(piece, piecesAmount![index], index + 1))
   useEffect(() => {
     document.documentElement.addEventListener('mouseup', () => {
       setDragging(false)
@@ -150,17 +368,18 @@ export const Page: React.FC = () => {
       {
         pieces.map((piece, index) => <PieceDisplay piece={piece} index={index} key={index} amount={piecesAmount!} setAmount={setPiecesAmount}/>)
       }
-      <button onClick={() => setLegion(characters!, piecesAmount!, setPiecesAmount)}>{t('fill with my legion(auto calculate legion rank)')}</button>
-      <button>{t('fill with my legion(ignore character limit)')}</button>
+      <button onClick={() => setLegion(characters!, piecesAmount!, setPiecesAmount)}>{t('legion.button1')}</button>
+      <button>{t('legion.button2')}</button>
+      <button onClick={() => setPiecesAmount(initAmount)}>{t('reset')}</button>
     </PiecesDisplay>
     <Board>
       <tbody>
         {
           board!.map((row, rowIndex) => <tr key={rowIndex}>
             {
-              row.map((cell, colIndex) => <Cell 
+              row.map((cell, colIndex) => <Cell
                 key={colIndex}
-                style={{'background': `${Color.get(cell)}`}}
+                style={{'background': `${Color.get(cell)}`, ...borderStyles[rowIndex][colIndex]}}
                 onMouseOver={() => {
                   if(!dragging) return
                   draw(rowIndex, colIndex, dragValue, board as number[][], setBoard, fillCount, setFillCount, state)
@@ -175,14 +394,16 @@ export const Page: React.FC = () => {
           </tr>)
         }
       </tbody>
+      <button onClick={async () => await runSolver(board!, pieces, setBoard, setBorderStyles)}>{t('start')}</button>
+      <button onClick={() => setBoard(initBoard())}>{t('clear')}</button>
     </Board>
     <Instructions>
-      <h2>{t('Instructions') + t(':')}</h2>
+      <h2>{t('instructions') + t(':')}</h2>
       <div>
-        <p>{t('1. Click the grid spaces you want to be filled, the region click will help you fill it in faster.')}</p>
-        <p>{t('2. Input the amount of each shape you want to be filled in the board.')}</p>
-        <p>{t('3. The space that the pieces take up should equal the amount of grid spaces you filled, \'although the program will still try to run otherwise.')}</p>
-        <p>{t('4. When you press Start the program will try to fill the board spaces with the pieces you\'ve chosen, click on Live Solve if you want to see the board filled in real time.')}</p>
+        <p>{t('legion.instruction1')}</p>
+        <p>{t('legion.instruction2')}</p>
+        <p>{t('legion.instruction3')}</p>
+        <p>{t('legion.instruction4')}</p>
       </div>
     </Instructions>
   </Content>

@@ -22,7 +22,7 @@ export const Color = new Map([
   [16, 'aquamarine'],
   [17, 'aquamarine'],
   [18, 'aquamarine'],
-  [10, 'lightpink'],
+  [19, 'lightpink'],
   [20, 'lightcoral'],
   [21, 'indianred'],
   [22, 'darkseagreen'],
@@ -63,71 +63,64 @@ export const PieceDescription = [
 ]
 
 class Piece {
-  static curId = 1
   shape: number[][]
   amount: number
   id: number
-  _cellCount: number
-  _offCenter: number
-  _pointShape: PiecePoint[]
-  _transformations: Piece[]
-  _pointTransformations: PiecePoint[][]
-  _restrictedTransformations: Piece[]
-  _restrictedPointTransformations: PiecePoint[][]
 
 
   constructor(shape: number[][], amount: number, id: number) {
     this.shape = shape
     this.amount = amount
     this.id = id
-    this._cellCount = 0
-    this._offCenter = 0
-    this._pointShape = []
-    this._transformations = []
-    this._pointTransformations = []
-    this._restrictedTransformations = []
-    this._restrictedPointTransformations = []
   }
 
-  static createPiece(shape: number[][], amount: number): Piece {
-    return new Piece(shape, amount, this.curId++)
+  valueOf() {
+    return -(this.amount * this.cellCount)
+  }
+
+  static createPiece(shape: number[][], amount: number, id: number): Piece {
+    return new Piece(shape, amount, id)
   }
 
   get cellCount(): number {
+    let cellCount = 0
     for (let i = 0; i < this.shape.length; ++i) {
       for (let j = 0; j < this.shape[i].length; ++j) {
         if (this.shape[i][j] > 0) {
-          this._cellCount++
+          cellCount++
         }
       }
     }
-    return this._cellCount
+    return cellCount
   }
 
   get pointShape(): PiecePoint[] {
+    const pointShape = []
     for (let i = 0; i < this.shape.length; ++i) {
       for (let j = 0; j < this.shape[i].length; ++j) {
-        if (this.shape[i][j] == 1) {
-          this._pointShape.push(new PiecePoint(j, i, false))
-        } else if (this.shape[i][j] == 2) {
-          this._pointShape.push(new PiecePoint(j, i, true))
+        if (this.shape[i][j] === 1) {
+          pointShape.push(new PiecePoint(j, i, false))
+        } else if (this.shape[i][j] === 2) {
+          pointShape.push(new PiecePoint(j, i, true))
         }
       }
     }
-    return this._pointShape
+    return pointShape
   }
 
   get offCenter(): number {
+    let offCenter = 0
     for (let i = 0; i < this.shape[0].length; i++) {
       if (this.shape[0][i] != 0) {
-        this._offCenter = i
+        offCenter = i
         break
       }
     }
-    return this._offCenter
+    return offCenter
   }
 
   get transformations(): Piece[] {
+    let transformations = []
     let shape = [...this.shape]
     let newGrid
     for (let i = 0; i < 2; i++) {
@@ -141,7 +134,7 @@ class Piece {
           }
         }
         shape = newGrid
-        this.transformations.push(new Piece(shape, this.amount, this.id))
+        transformations.push(new Piece(shape, this.amount, this.id))
       }
       newGrid = new Array(shape.length).fill(0).map(() => new Array(shape[0].length).fill(0))
       for (let k = 0; k < shape.length; k++) {
@@ -153,31 +146,34 @@ class Piece {
       }
       shape = newGrid
     }
-    this._transformations = _.unionWith(this.transformations, _.isEqual)
-    return this._transformations
+    transformations = _.unionWith(transformations, _.isEqual)
+    return transformations
   }
 
   get pointTransformations(): PiecePoint[][] {
+    const pointTransformations = []
     for (const piece of this.transformations) {
-      this._pointTransformations.push(piece.pointShape)
+      pointTransformations.push(piece.pointShape)
     }
-    return this._pointTransformations
+    return pointTransformations
   }
 
   get restrictedTransformations(): Piece[] {
+    const restrictedTransformations = []
     for (const piece of this.transformations) {
-      if (!piece.shape[0][1 + piece.offCenter] || piece.shape[0][1 + piece.offCenter] == 0) {
-        this._restrictedTransformations.push(piece)
+      if (!piece.shape[0][1 + piece.offCenter] || piece.shape[0][1 + piece.offCenter] === 0) {
+        restrictedTransformations.push(piece)
       }
     }
-    return this._restrictedTransformations
+    return restrictedTransformations
   }
 
   get restrictedPointTransformations(): PiecePoint[][] {
+    const restrictedPointTransformations = []
     for (const piece of this.restrictedTransformations) {
-      this._restrictedPointTransformations.push(piece.pointShape)
+      restrictedPointTransformations.push(piece.pointShape)
     }
-    return this._restrictedPointTransformations
+    return restrictedPointTransformations
   }
 }
 

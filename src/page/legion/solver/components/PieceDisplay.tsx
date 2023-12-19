@@ -43,7 +43,7 @@ const PieceAmountInput = styled.input`
 export const PieceDisplay:React.FC<PieceDisplayProps> = ({index, piece, amount, setAmount}) => {
   const { t } = useTranslation()
   return <PieceSelector>
-    <PieceDescriptionDiv>{t(PieceDescription[index])}</PieceDescriptionDiv>
+    <PieceDescriptionDiv>{t(`legion.${PieceDescription[index]}`)}</PieceDescriptionDiv>
     <label htmlFor={`piece${index}`}>
       <PieceDisplayDiv>
         <tbody>
@@ -61,7 +61,7 @@ export const PieceDisplay:React.FC<PieceDisplayProps> = ({index, piece, amount, 
       type='number'
       min={0}
       value={amount[index]}
-      onChange={(e) =>setAmount(amount.map((a, i) => (i == index ? parseInt(e.target.value) : a)))}
+      onChange={(e) =>setAmount(amount.map((a, i) => (i === index ? parseInt(e.target.value) : a)))}
     />
   </PieceSelector>
 }
