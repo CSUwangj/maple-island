@@ -5,6 +5,7 @@ import { Fieldset } from 'primereact/fieldset'
 import { InputText } from 'primereact/inputtext'
 import React, { useState } from 'react'
 import { useTranslation } from 'react-i18next'
+import { CharacterCard } from './components/CharacterCard'
 
 const addCharacter = async (name: string, e: React.FormEvent<HTMLFormElement>) => {
   e.preventDefault()
@@ -60,11 +61,7 @@ export const Page: React.FC = ({ }) => {
       <Button type='reset' onClick={resetCharacter}>{t('reset')}</Button><br />
       {
         characters.map((char, index) => (<div key={index}>
-          <img src={char.image} key={char.name + 'img'} />
-          <p key={char.name + 'name'}>{char.name}</p>
-          <p key={char.name + 'lv'}>{char.level}</p>
-          <p key={char.name + 'job'}>{char.job}</p>
-          <Button onClick={() => removeCharacter(char.name)}>{t('legion.rem-char')}</Button>
+          <CharacterCard onRemove={removeCharacter} {...char}/>
         </div>
         ))
       }
