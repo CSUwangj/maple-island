@@ -1,5 +1,7 @@
 import styled from '@emotion/styled/macro'
 import React from 'react'
+import { confirmDialog } from 'primereact/confirmdialog'
+import { Toast } from 'primereact/toast'
 
 const Info = styled.div`
   width:300px;
@@ -210,15 +212,28 @@ export interface CharacterCardProps {
   level: number
   job: string
   onRemove: (a: string) => void
+  onUpdate: (a: string) => void
+  toast: React.RefObject<Toast>
 }
 
-export const CharacterCard: React.FC<CharacterCardProps> = ({image, name, level, job, onRemove}) => {
+export const CharacterCard: React.FC<CharacterCardProps> = ({image, name, level, job, onRemove, onUpdate, toast}) => {
+  const deleteConfirm = () => {
+    confirmDialog({
+      message: `Are you sure to remove character "${name}"?`,
+      header: 'Delete Confirmation',
+      accept: () => onRemove(name),
+    })
+  }
+  const updateInform = () => {
+    onUpdate(name)
+    toast.current?.show({ severity: 'info', summary: 'Updating', detail: `You have update character"${name}"`, life: 3000 })
+  }
   return <Info>
     <BoxTitle>character info</BoxTitle>
     <InfoBox>
       <Buttons>
-        <RemoveButton onClick={() => onRemove(name)}>Remove Character</RemoveButton>
-        <UpdateButton>Update Character</UpdateButton>
+        <RemoveButton onClick={deleteConfirm}>Remove Character</RemoveButton>
+        <UpdateButton onClick={updateInform}>Update Character</UpdateButton>
       </Buttons>
       <Character>
         <CharacterImg src={`${image}`} />
