@@ -65,7 +65,7 @@ const PiecesDisplay = styled.div`
   margin-right: 20px;
 `
 
-const InitBorderStyle = (() => {
+const InitBorderStyle = () => {
   const styles: CSSProperties[][] = new Array(HEIGHT).fill(0).map(() => new Array(WIDTH).fill(0).map(() => ({borderWidth: '1px'})))
   
   for (let i = 0; i < WIDTH / 2; i++) {
@@ -97,7 +97,7 @@ const InitBorderStyle = (() => {
     styles[3 * HEIGHT / 4][i].borderTopWidth = '3px'
   }
   return styles
-})()
+}
 
 const onMouseOver = (
   i: number,
@@ -178,7 +178,7 @@ const drawBoard = (
   pieceHistory: Point[][],
   setBorderStyles: (a: CSSProperties[][]) => void
 ) => {
-  setBorderStyles(InitBorderStyle)
+  setBorderStyles(InitBorderStyle())
   colourBoard(legionSolvers, board, pieceHistory, setBorderStyles)
 }
 
@@ -188,7 +188,7 @@ const colourBoard = (
   pieceHistory: Point[][],
   setBorderStyles: (a: CSSProperties[][]) => void
 ) => {
-  const styles: CSSProperties[][] = new Array(HEIGHT).fill(0).map(() => new Array(WIDTH).fill(0).map(() => ({})))
+  const styles: CSSProperties[][] = InitBorderStyle()
 
   if (pieceHistory.length == 0 && legionSolvers[0]) {
     pieceHistory = legionSolvers[0].history
@@ -219,8 +219,8 @@ const colourBoard = (
         }
       }
     }
-    setBorderStyles(styles)
   }
+  setBorderStyles(styles)
 }
 
 
@@ -329,8 +329,9 @@ const runSolver = async (
     pieceHistory = legionSolvers[3].history
   }
   if (success) {
+    console.log(newBoard)
     setBoard(newBoard)
-    drawBoard(legionSolvers, board, pieceHistory, setBorderStyles)
+    drawBoard(legionSolvers, newBoard, pieceHistory, setBorderStyles)
   }
   return success
 }
@@ -347,7 +348,7 @@ export const Page: React.FC = () => {
   const [ fillCount, setFillCount ] = useState(board!.map((row) => row.reduce((s, c) => s + c)).reduce((s, c) => s + c))
   const [ borderStyles, setBorderStyles ] = useState(InitBorderStyle)
   const pieces: Piece[] = Pieces.map((piece, index) => Piece.createPiece(piece, piecesAmount![index], index + 1))
-  const boardFilledValue = board!.map(row => row.reduce((s, i) => (s + (i !== -1)))).reduce((s: number, i: number) => s + i)
+  const boardFilledValue = board!.map(row => row.reduce((s, i) => (s + (i !== -1)), 0)).reduce((s: number, i: number) => s + i)
   const currentPiecesValue = pieces.map((piece) => piece.amount * piece.cellCount).reduce((s: number, i: number) => s + i)
   useEffect(() => {
     document.documentElement.addEventListener('mouseup', () => {
