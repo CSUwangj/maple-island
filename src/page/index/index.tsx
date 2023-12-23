@@ -5,6 +5,5 @@ import React from 'react'
 // }
 
 export const Page: React.FC = ({ }) => {
-  // const { t, i18n } = useTranslation()
   return <>hello cra again </>
 }
