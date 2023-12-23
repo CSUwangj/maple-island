@@ -96,7 +96,8 @@ i18n
     defaultNS: 'translations',
     interpolation: {
       escapeValue: false, // not needed for react as it escapes by default
-    }
+    },
+    returnEmptyString: false
   })
 
 

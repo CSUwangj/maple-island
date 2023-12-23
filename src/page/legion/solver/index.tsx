@@ -26,6 +26,34 @@ const Content = styled.div`
   }
 `
 
+const legionTotalLevelAndMemberCount = [
+  [ 12500, 45 ],
+  [ 12000, 44 ],
+  [ 11500, 43 ],
+  [ 11000, 42 ],
+  [ 10500, 41 ],
+  [ 10000, 40 ],
+  [ 9500,  39 ],
+  [ 9000,  38 ],
+  [ 8500,  37 ],
+  [ 8000,  36 ],
+  [ 7500,  31 ],
+  [ 7000,  30 ],
+  [ 6500,  29 ],
+  [ 6000,  28 ],
+  [ 5500,  27 ],
+  [ 5000,  22 ],
+  [ 4500,  21 ],
+  [ 4000,  20 ],
+  [ 3500,  19 ],
+  [ 3000,  18 ],
+  [ 2500,  13 ],
+  [ 2000,  12 ],
+  [ 1500,  11 ],
+  [ 1000,  10 ],
+  [  500,   9 ]
+]
+
 const Legion = styled.div`
   display: flex;
   flex-direction: column;
@@ -127,9 +155,23 @@ const onMouseOver = (
   setBoard(newBoard)
 }
 
-const setLegion = (characters: Character[], currentAmountArray: number[], setCurrentAmount: (a: number[] | undefined) =>void) => {
+const setLegion = (
+  characters: Character[],
+  currentAmountArray: number[], 
+  setCurrentAmount: (a: number[] | undefined) =>void,
+  setLegionInform: (a: string) => void,
+  calcLimit: boolean
+) => {
+  let nonDupCharacters = characters
+  if(calcLimit) {
+    const levelSum = characters.map(c => c.level > 59 ? c.level : 0).reduce((s, l) => s + l)
+    const memberLimit = legionTotalLevelAndMemberCount.find((v) => levelSum > v[0])?.[1] ?? 0
+    // for each job we only place its max leveled block
+    nonDupCharacters = characters.sort((a, b) => b.level - a.level).filter((c1, i, v) => v.findIndex((c2) => c2.job === c1.job) === i).slice(0, memberLimit)
+    setLegionInform(`Your character level sum(only first 42 characters with level higher than lv60 is counted) is ${levelSum}, so you can place ${memberLimit} character pieces.`)
+  }
   const amountArray = new Array(15).fill(0).concat(currentAmountArray.slice(15))
-  for(const character of characters) {
+  for(const character of nonDupCharacters) {
     if(character.level < 60) continue
     if(character.level < 100) {
       amountArray[0] += 1
@@ -329,7 +371,6 @@ const runSolver = async (
     pieceHistory = legionSolvers[3].history
   }
   if (success) {
-    console.log(newBoard)
     setBoard(newBoard)
     drawBoard(legionSolvers, newBoard, pieceHistory, setBorderStyles)
   }
@@ -345,11 +386,13 @@ export const Page: React.FC = () => {
   const [ dragging, setDragging ] = useState(false)
   const [ dragValue, setDragValue ] = useState(0)
   const [ state, setState ] = useState(states.START)
+  const [ legionInform, setLegionInform ] = useState('')
   const [ fillCount, setFillCount ] = useState(board!.map((row) => row.reduce((s, c) => s + c)).reduce((s, c) => s + c))
   const [ borderStyles, setBorderStyles ] = useState(InitBorderStyle)
   const pieces: Piece[] = Pieces.map((piece, index) => Piece.createPiece(piece, piecesAmount![index], index + 1))
   const boardFilledValue = board!.map(row => row.reduce((s, i) => (s + (i !== -1)), 0)).reduce((s: number, i: number) => s + i)
   const currentPiecesValue = pieces.map((piece) => piece.amount * piece.cellCount).reduce((s: number, i: number) => s + i)
+  const usedCharacterPiece = pieces.map((p) => p.amount).reduce((s, a) => s + a) 
   useEffect(() => {
     document.documentElement.addEventListener('mouseup', () => {
       setDragging(false)
@@ -361,12 +404,13 @@ export const Page: React.FC = () => {
       {
         pieces.map((piece, index) => <PieceDisplay piece={piece} index={index} key={index} amount={piecesAmount!} setAmount={setPiecesAmount}/>)
       }
-      <button onClick={() => setLegion(characters!, piecesAmount!, setPiecesAmount)}>{t('legion.button1')}</button>
-      <button>{t('legion.button2')}</button>
+      <p>Current used character: {usedCharacterPiece}</p>
+      <p>{legionInform}</p>
+      <button onClick={() => setLegion(characters!, piecesAmount!, setPiecesAmount, setLegionInform, true)}>{t('legion.button1')}</button>
+      <button onClick={() => setLegion(characters!, piecesAmount!, setPiecesAmount, setLegionInform, false)}>{t('legion.button2')}</button>
       <button onClick={() => setPiecesAmount(initAmount)}>{t('reset')}</button>
     </PiecesDisplay>
     <Legion>
-
       <Board>
         <tbody>
           {
@@ -390,7 +434,6 @@ export const Page: React.FC = () => {
           }
         </tbody>
       </Board>
-
       <div id="currentPieces">
         Spaces to be Filled: <span id="currentPiecesValue">{currentPiecesValue}</span>
       </div>
@@ -405,7 +448,7 @@ export const Page: React.FC = () => {
       <button onClick={() => setBoard(initBoard())}>{t('clear')}</button>
     </Legion>
     <Instructions>
-      <h2>{t('instructions') + t(':')}</h2>
+      <h2>{t('instructions') + ':'}</h2>
       <div>
         <p>{t('legion.instruction1')}</p>
         <p>{t('legion.instruction2')}</p>

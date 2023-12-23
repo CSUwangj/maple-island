@@ -4,13 +4,15 @@ import { confirmDialog } from 'primereact/confirmdialog'
 import { Toast } from 'primereact/toast'
 
 const Info = styled.div`
-  width:300px;
-  height:190px;
-  border-radius:10px;
-  border:1px solid rgba(255,255,255,0.7);
-  background:rgba(0, 0, 0, 0.7);
-  box-shadow:1px 1px 2px rgba(0, 0, 0, 0.8), -1px -1px 2px rgba(0, 0, 0, 0.8), inset 0 10px 10px rgba(255, 255, 255, 0.4);
-	font-family:"Helvetica Neue","Helvetica",Arial,sans-serif;
+  width: 300px;
+  height: 190px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.7);
+  background: rgba(0, 0, 0, 0.7);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8), -1px -1px 2px rgba(0, 0, 0, 0.8), inset 0 10px 10px rgba(255, 255, 255, 0.4);
+	font-family: "Helvetica Neue","Helvetica",Arial,sans-serif;
+  display: inline-block;
+  margin: 5px;
 `
 
 const BoxTitle = styled.div`
@@ -212,7 +214,7 @@ export interface CharacterCardProps {
   level: number
   job: string
   onRemove: (a: string) => void
-  onUpdate: (a: string) => void
+  onUpdate: (a: string, b?: () => void) => void
   toast: React.RefObject<Toast>
 }
 
@@ -225,8 +227,8 @@ export const CharacterCard: React.FC<CharacterCardProps> = ({image, name, level,
     })
   }
   const updateInform = () => {
-    onUpdate(name)
-    toast.current?.show({ severity: 'info', summary: 'Updating', detail: `You have update character"${name}"`, life: 3000 })
+    onUpdate(name, () => toast.current?.show({severity: 'success', summary: 'Success', detail: `You have updated character "${name}"`, life: 3000}))
+    toast.current?.show({ severity: 'info', summary: 'Updating', detail: `Update character "${name}"`, life: 3000 })
   }
   return <Info>
     <BoxTitle>character info</BoxTitle>
