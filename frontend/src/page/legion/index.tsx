@@ -12,7 +12,7 @@ import { CharacterCard } from './components/CharacterCard'
 const addCharacter = async (name: string, e: React.FormEvent<HTMLFormElement>, toast: React.RefObject<Toast>) => {
   e.preventDefault()
   toast.current?.show({ severity: 'info', summary: 'Updating', detail: `Adding character "${name}"`, life: 3000 })
-  const r = await fetch("/GMS/" + name, {
+  const r = await fetch("https://maple-island-api.vercel.app/character/info/GMS/" + name, {
     method:"GET",
     headers: {
       Accept: 'application/json',
