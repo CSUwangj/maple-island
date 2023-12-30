@@ -44,19 +44,17 @@ const removeCharacter = async(name: string) => {
   await db.character.where('name').equals(name).delete()
 }
 const updateCharacter = async(name: string, callback?: () => void) => {
-  const r = await fetch("http://124.221.81.131:10019/GMS/" + name, {
+  const r = await fetch("https://maple-island-api.vercel.app/character/info/GMS/" + name, {
     method:"GET",
     headers: {
       Accept: 'application/json',
     },
   })
   const j = await r.json()
-  const img = j.CharacterData.CharacterImageURL.split('/').slice(-1)
-  const t = await (await fetch("http://124.221.81.131:10019/" + img)).text()
   const id = await db.character.where('name').equals(name).modify({
     name,
     level: j.CharacterData.Level,
-    image: "data:image/png;base64," + t,
+    image: "data:image/png;base64," + j.CharacterData.Image,
     job: j.CharacterData.Class
   })
   console.log(`successfully update character with id ${id}`)
