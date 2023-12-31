@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-non-null-assertion */
 import { Point } from './model/point'
 import { Piece } from './model/piece'
 
@@ -10,7 +11,7 @@ class LegionSolver {
   shouldStop: boolean
   board: number[][]
   pieces: Piece[]
-  onBoardUpdated: any
+  onBoardUpdated: () => void
   pieceLength: number
   valid: boolean
   pieceNumber: number
@@ -25,7 +26,7 @@ class LegionSolver {
   longSpaces: Point[]
   firstAlgorithm: boolean
 
-  constructor(board: number[][], pieces: Piece[], onBoardUpdated: any) {
+  constructor(board: number[][], pieces: Piece[], onBoardUpdated: () => void) {
     this.board = board
     this.pieces = pieces
     this.onBoardUpdated = onBoardUpdated

@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
 import styled from '@emotion/styled/macro'
 import { useLiveQuery } from 'dexie-react-hooks'
-import _, { sumBy } from 'lodash'
+import _ from 'lodash'
 import { Archer, Character, Mage, Pirate, Thief, Warrior } from 'models/Character'
 import { db } from 'models/db'
 import React, { useEffect, useState, CSSProperties } from 'react'
@@ -385,7 +385,7 @@ export const Page: React.FC = () => {
   const [ piecesAmount, setPiecesAmount ] = useLocalStorage('pieces', initAmount)
   const [ dragging, setDragging ] = useState(false)
   const [ dragValue, setDragValue ] = useState(0)
-  const [ state, setState ] = useState(states.START)
+  const [ state ] = useState(states.START)
   const [ legionInform, setLegionInform ] = useState('')
   const [ fillCount, setFillCount ] = useState(board!.map((row) => row.reduce((s, c) => s + c)).reduce((s, c) => s + c))
   const [ borderStyles, setBorderStyles ] = useState(InitBorderStyle)
