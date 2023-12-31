@@ -328,7 +328,7 @@ const runSolver = async (
   } else if (legionSolvers[1].success !== undefined) {
     for (let i = 0; i < HEIGHT; i++) {
       for (let j = 0; j < WIDTH; j++) {
-        newBoard[i][j] = legionSolvers[1].board[j][WIDTH - 1 - i]
+        newBoard[i][j] = legionSolvers[1].board[j][HEIGHT - 1 - i]
       }
     }
 
