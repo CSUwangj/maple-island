@@ -9,7 +9,7 @@ import { useTranslation } from 'react-i18next'
 import { useLocalStorage } from 'react-use'
 import { PieceDisplay } from './components/PieceDisplay'
 import { LegionSolver } from './legion_solver'
-import { Color, Piece } from './model/piece'
+import { Color, HoveredCellColor, Piece } from './model/piece'
 import { Point } from './model/point'
 import { Pieces } from './pieces'
 
@@ -127,7 +127,7 @@ const InitBorderStyle = () => {
   return styles
 }
 
-const onMouseOver = (
+const setBoardCell = (
   i: number,
   j: number, 
   dragValue: number, 
@@ -389,6 +389,7 @@ export const Page: React.FC = () => {
   const [ legionInform, setLegionInform ] = useState('')
   const [ fillCount, setFillCount ] = useState(board!.map((row) => row.reduce((s, c) => s + c)).reduce((s, c) => s + c))
   const [ borderStyles, setBorderStyles ] = useState(InitBorderStyle)
+  const [ hoverPosition, setHoverPosition ] = useState([-1, -1])
   const pieces: Piece[] = Pieces.map((piece, index) => Piece.createPiece(piece, piecesAmount![index], index + 1))
   const boardFilledValue = board!.map(row => row.reduce((s, i) => (s + (i !== -1)), 0)).reduce((s: number, i: number) => s + i)
   const currentPiecesValue = pieces.map((piece) => piece.amount * piece.cellCount).reduce((s: number, i: number) => s + i)
@@ -418,14 +419,20 @@ export const Page: React.FC = () => {
               {
                 row.map((cell, colIndex) => <Cell
                   key={colIndex}
-                  style={{'background': `${Color.get(cell)}`, ...borderStyles[rowIndex][colIndex]}}
+                  style={{
+                    'background': (dragging || cell > 0 || rowIndex !== hoverPosition[0] || colIndex !== hoverPosition[1]) ? `${Color.get(cell)}` : `${HoveredCellColor.get(cell)}`,
+                    ...borderStyles[rowIndex][colIndex]
+                  }}
                   onMouseOver={() => {
-                    if(!dragging) return
-                    onMouseOver(rowIndex, colIndex, dragValue, board as number[][], setBoard, fillCount, setFillCount, state)
+                    if(dragging) {
+                      setBoardCell(rowIndex, colIndex, dragValue, board as number[][], setBoard, fillCount, setFillCount, state)
+                    } else {
+                      setHoverPosition([rowIndex, colIndex])
+                    }
                   }}
                   onMouseDown={() => {
                     setDragValue(-1 - board![rowIndex][colIndex])
-                    onMouseOver(rowIndex, colIndex, dragValue, board as number[][], setBoard, fillCount, setFillCount, state)
+                    setBoardCell(rowIndex, colIndex, dragValue, board as number[][], setBoard, fillCount, setFillCount, state)
                     setDragging(true)
                   }}
                 />)
