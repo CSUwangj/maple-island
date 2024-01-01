@@ -131,6 +131,7 @@ const setBoardCell = (
   i: number,
   j: number, 
   dragValue: number, 
+  bigClick: boolean,
   board: number[][], 
   setBoard: (a: number[][]) => void,
   fillCount: number,
@@ -139,20 +140,31 @@ const setBoardCell = (
 ) => {
   if(state != states.START) return
   setFillCount(fillCount + dragValue - board[i][j])
-  const newBoard = board.map((row, ii) => {
-    if(ii != i) {
-      return row
-    } else {
-      return row.map((cell, jj) => {
-        if(jj != j) {
-          return cell
-        } else {
-          return dragValue
-        }
-      })
+  if(!bigClick) {
+    const newBoard = board.map((row, ii) => {
+      if(ii != i) {
+        return row
+      } else {
+        return row.map((cell, jj) => {
+          if(jj != j) {
+            return cell
+          } else {
+            return dragValue
+          }
+        })
+      }
+    })
+    setBoard(newBoard)
+  } else {
+    const newBoard = board.map(r => r)
+    for(const group of legionGroup) {
+      if(!group.find((a) => a[0] === i && a[1] === j)) continue
+      for(const position of group) {
+        newBoard[position[0]][position[1]] = dragValue
+      }
     }
-  })
-  setBoard(newBoard)
+    setBoard(newBoard)
+  }
 }
 
 const setLegion = (
@@ -265,6 +277,34 @@ const colourBoard = (
   setBorderStyles(styles)
 }
 
+const legionGroup = (() => {
+  const group: number[][][] = new Array(16).fill(0).map(() =>[])
+  for (let i = 0; i < HEIGHT / 4; i++) {
+    for (let j = i; j < HEIGHT / 2; j++) {
+      group[0].push([j, i])
+      group[1].push([i, j + 1])
+      group[2].push([i, WIDTH - 2 - j])
+      group[3].push([j, WIDTH - 1 - i])
+      group[4].push([HEIGHT - 1 - j, WIDTH - 1 - i])
+      group[5].push([HEIGHT - 1 - i, WIDTH - 2 - j])
+      group[6].push([HEIGHT - 1 - i, j + 1])
+      group[7].push([HEIGHT - 1 - j, i])
+    }
+  }
+  for (let i = HEIGHT / 4; i < HEIGHT / 2; i++) {
+    for (let j = i; j < HEIGHT / 2; j++) {
+      group[8].push([j, i])
+      group[9].push([i, j + 1])
+      group[10].push([3 * HEIGHT / 4 - 1 - j, HEIGHT / 4 + 1 + i])
+      group[11].push([j, WIDTH - 1 - i])
+      group[12].push([HEIGHT - 1 - j, WIDTH - 1 - i])
+      group[13].push([j + HEIGHT / 4, i + HEIGHT / 4 + 1])
+      group[14].push([j + HEIGHT / 4, 3 * HEIGHT / 4 - i])
+      group[15].push([HEIGHT - j - 1, i])
+    }
+  }
+  return group
+})()
 
 const runSolver = async (
   board: number [][],
@@ -389,7 +429,8 @@ export const Page: React.FC = () => {
   const [ legionInform, setLegionInform ] = useState('')
   const [ fillCount, setFillCount ] = useState(board!.map((row) => row.reduce((s, c) => s + c)).reduce((s, c) => s + c))
   const [ borderStyles, setBorderStyles ] = useState(InitBorderStyle)
-  const [ hoverPosition, setHoverPosition ] = useState([-1, -1])
+  const [ hoverPosition, setHoverPosition ] = useState<number[][]>([])
+  const [ bigClick, setBigClick ] = useState(false)
   const pieces: Piece[] = Pieces.map((piece, index) => Piece.createPiece(piece, piecesAmount![index], index + 1))
   const boardFilledValue = board!.map(row => row.reduce((s, i) => (s + (i !== -1)), 0)).reduce((s: number, i: number) => s + i)
   const currentPiecesValue = pieces.map((piece) => piece.amount * piece.cellCount).reduce((s: number, i: number) => s + i)
@@ -420,19 +461,29 @@ export const Page: React.FC = () => {
                 row.map((cell, colIndex) => <Cell
                   key={colIndex}
                   style={{
-                    'background': (dragging || cell > 0 || rowIndex !== hoverPosition[0] || colIndex !== hoverPosition[1]) ? `${Color.get(cell)}` : `${HoveredCellColor.get(cell)}`,
+                    'background': (dragging || cell > 0 || !hoverPosition.find((a) => a[0] === rowIndex && a[1] === colIndex)) ? `${Color.get(cell)}` : `${HoveredCellColor.get(cell)}`,
                     ...borderStyles[rowIndex][colIndex]
                   }}
                   onMouseOver={() => {
                     if(dragging) {
-                      setBoardCell(rowIndex, colIndex, dragValue, board as number[][], setBoard, fillCount, setFillCount, state)
+                      setBoardCell(rowIndex, colIndex, dragValue, bigClick, board as number[][], setBoard, fillCount, setFillCount, state)
                     } else {
-                      setHoverPosition([rowIndex, colIndex])
+                      if(!bigClick) {
+                        setHoverPosition([[rowIndex, colIndex]])
+                      } else {
+                        for(const group of legionGroup) {
+                          if(!group.find((a) => a[0] === rowIndex && a[1] === colIndex)) continue
+                          setHoverPosition(group)
+                        }
+                      }
                     }
+                  }}
+                  onMouseOut={() => {
+                    setHoverPosition([])
                   }}
                   onMouseDown={() => {
                     setDragValue(-1 - board![rowIndex][colIndex])
-                    setBoardCell(rowIndex, colIndex, dragValue, board as number[][], setBoard, fillCount, setFillCount, state)
+                    setBoardCell(rowIndex, colIndex, dragValue, bigClick, board as number[][], setBoard, fillCount, setFillCount, state)
                     setDragging(true)
                   }}
                 />)
@@ -446,6 +497,10 @@ export const Page: React.FC = () => {
       </div>
       <div id="boardFilled">
         Board Spaces Filled: <span id="boardFilledValue">{boardFilledValue}</span>
+      </div>
+      <div>
+        <input id='bigclick' type='checkbox' checked={bigClick} onChange={(e) => setBigClick(e.target.checked)}/>
+        <label htmlFor='bigclick'>{t('legion.bigclick')}</label>
       </div>
       <button onClick={async () => await runSolver(board!, pieces, setBoard, setBorderStyles)}>{t('start')}</button>
       <button onClick={() => {
