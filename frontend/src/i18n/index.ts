@@ -47,7 +47,8 @@ i18n
             'xenon250': 'xenon250',
             'enhancedLab200': 'enhancedLab200',
             'enhancedLab250': 'enhancedLab250',
-            'lab250': 'lab250'
+            'lab250': 'lab250',
+            'bigclick': '选择区域'
           }
         }
       },
@@ -85,7 +86,8 @@ i18n
             'xenon250': 'xenon250',
             'enhancedLab200': 'enhancedLab200',
             'enhancedLab250': 'enhancedLab250',
-            'lab250': 'lab250'
+            'lab250': 'lab250',
+            'bigclick': 'Region Group Click'
           }
         }
       }
