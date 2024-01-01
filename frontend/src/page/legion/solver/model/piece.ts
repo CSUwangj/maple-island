@@ -41,6 +41,10 @@ export const Color = new Map([
   [35, 'aquamarine'],
   [36, 'aquamarine']
 ])
+export const HoveredCellColor = new Map([
+  [-1, 'silver'],
+  [0, 'dimgrey']
+])
 export const PieceDescription = [
   'lvl60',
   'lvl100',
