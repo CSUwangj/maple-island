@@ -65,7 +65,7 @@ export const Page: React.FC = ({ }) => {
   const [name, setName] = useState('')
   const toast = useRef<Toast>(null)
   const { t } = useTranslation()
-  const characters = useLiveQuery(() => db.character.toArray()) ?? []
+  const characters = (useLiveQuery(() => db.character.toArray()) ?? []).sort((a, b) => a.name.localeCompare(b.name))
 
   const resetCharacter = async (e: React.MouseEvent<HTMLButtonElement, MouseEvent> ) => {
     e.preventDefault()

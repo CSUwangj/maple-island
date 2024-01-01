@@ -254,11 +254,11 @@ export const CharacterCard: React.FC<CharacterCardProps> = ({image, name, level,
       </ClassSlot>
       <FameSlot>
         <InfoName>fame</InfoName>
-        <InfoDetail>114514</InfoDetail>
+        <InfoDetail></InfoDetail>
       </FameSlot>
       <GuildSlot>
         <InfoName>guild</InfoName>
-        <InfoDetail>Chocological</InfoDetail>
+        <InfoDetail></InfoDetail>
       </GuildSlot>
       <AllianceSlot>
         <InfoName>alliance</InfoName>
