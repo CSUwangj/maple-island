@@ -47,7 +47,9 @@ i18n
             'xenon250': 'xenon250',
             'enhancedLab200': 'enhancedLab200',
             'enhancedLab250': 'enhancedLab250',
-            'lab250': 'lab250'
+            'lab250': 'lab250',
+            'bigclick': '选择区域',
+            'solver': '方块摆放'
           }
         }
       },
@@ -59,6 +61,11 @@ i18n
           'start': 'Start',
           'clear': 'Clear',
           'instructions': 'Instructions',
+          'legion-tracker': 'Legion Tracker',
+          'legion-solver': 'Legion Solver',
+          'midnight-chaser': 'Midnight Chaser Helper',
+          'hungry-muto': 'Hungry Muto Helper',
+          'esfera-guardian': 'Esfera Guardian Helper',
           'legion': {
             'add-char': 'Add Character',
             'rem-char': 'Remove Character',
@@ -85,7 +92,9 @@ i18n
             'xenon250': 'xenon250',
             'enhancedLab200': 'enhancedLab200',
             'enhancedLab250': 'enhancedLab250',
-            'lab250': 'lab250'
+            'lab250': 'lab250',
+            'bigclick': 'Region Group Click',
+            'solver': 'Legion Solver',
           }
         }
       }
