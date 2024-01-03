@@ -81,6 +81,8 @@ export const Page: React.FC = ({ }) => {
         <Button type='submit'>{t('submit')}</Button>
       </Fieldset>
       <Button type='reset' onClick={resetCharacter}>{t('reset')}</Button><br />
+    </form>
+    <div>
       {
         characters.map((char, index) => (<CharacterCard 
           onRemove={removeCharacter}
@@ -90,6 +92,6 @@ export const Page: React.FC = ({ }) => {
           key={index}
         />))
       }
-    </form>
+    </div>
   </>
 }
