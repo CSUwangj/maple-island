@@ -8,6 +8,7 @@ import { Page as Composer } from 'page/legion/composer'
 import { Page as MidnightChaserHelper } from 'page/helpers/midnight-chaser'
 import { Page as HungryMutoHelper } from 'page/helpers/hungry-muto'
 import { Page as EsferaGuardianHelper } from 'page/helpers/esfera-guardian'
+import { Page as CharacterCalculator } from 'page/calculator/character'
 
 export const Routes: React.FC = () => {
   return <Suspense fallback={ <div>faild</div> }>
@@ -16,6 +17,7 @@ export const Routes: React.FC = () => {
       <Route path='/legion'  element=<Legion />/>
       <Route path='/legion/solver' element=<Solver />/>
       <Route path='/legion/composer' element=<Composer />/>
+      <Route path='/calculator/character' element=<CharacterCalculator />/>
       <Route path='/helper/midnight-chaser' element=<MidnightChaserHelper />/>
       <Route path='/helper/hungry-muto' element=<HungryMutoHelper />/>
       <Route path='/helper/esfera-guardian' element=<EsferaGuardianHelper />/>

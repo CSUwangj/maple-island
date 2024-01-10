@@ -1,4 +1,4 @@
-export class EquipStats {
+export class StatsDetail {
   dex: number
   str: number
   int: number
@@ -11,16 +11,16 @@ export class EquipStats {
   matt: number
   attPercent: number
   mattPercent: number
-  allStatPercent: number
   dexPercent: number
   strPercent: number
   intPercent: number
   lukPercent: number
-  allPercent: number
   defence: number
   ignoreEnemyDefence: number
   bossDamage: number
   critDamage: number
+  finalDamage: number
+  ignoreElementResistence: number
 
   constructor() {
     this.dex = 0
@@ -35,7 +35,6 @@ export class EquipStats {
     this.matt = 0
     this.attPercent = 0
     this.mattPercent = 0
-    this.allStatPercent = 0
     this.dexPercent = 0
     this.strPercent = 0
     this.intPercent = 0
@@ -44,6 +43,7 @@ export class EquipStats {
     this.ignoreEnemyDefence = 0
     this.bossDamage = 0
     this.critDamage = 0
-    this.allPercent = 0
+    this.finalDamage = 0
+    this.ignoreElementResistence = 0
   }
 }

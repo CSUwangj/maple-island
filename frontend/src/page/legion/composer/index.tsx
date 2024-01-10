@@ -1,9 +1,9 @@
+/* eslint-disable @typescript-eslint/no-non-null-assertion */
 import styled from '@emotion/styled/macro'
 import { useLiveQuery } from 'dexie-react-hooks'
 import { db } from 'models/db'
 import React, { CSSProperties, useCallback, useState } from 'react'
-import { DndProvider, useDrag, useDrop, XYCoord } from 'react-dnd'
-import { HTML5Backend } from 'react-dnd-html5-backend'
+import { useDrag, useDrop, XYCoord } from 'react-dnd'
 import background from './images/henesys hunting ground.jpg'
 
 const DragType = {
@@ -78,7 +78,7 @@ export const Page: React.FC = () => {
     },
     [listedCharacters, setListedCharacters]
   )
-  const [{ isOver }, drop] = useDrop(
+  const [, drop] = useDrop(
     () => ({
       accept: DragType.CHAR,
       drop: (char: CharacterModelProps, monitor) => {
