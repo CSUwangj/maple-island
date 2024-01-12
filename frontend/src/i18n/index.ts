@@ -63,6 +63,7 @@ i18n
           'instructions': 'Instructions',
           'legion-tracker': 'Legion Tracker',
           'legion-solver': 'Legion Solver',
+          'legion-composer': 'Legion Composer',
           'midnight-chaser': 'Midnight Chaser Helper',
           'hungry-muto': 'Hungry Muto Helper',
           'esfera-guardian': 'Esfera Guardian Helper',

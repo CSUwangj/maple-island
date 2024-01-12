@@ -17,6 +17,7 @@ export const App: React.FC = () => {
       <Div className='app'>
         <div><Link to='/legion' >{t('legion-tracker')}</Link></div>
         <div><Link to='/legion/solver'>{t('legion-solver')}</Link></div>
+        <div><Link to='/legion/composer'>{t('legion-composer')}</Link></div>
         <div><Link to='/helper/midnight-chaser'>{t('midnight-chaser')}</Link></div>
         <div><Link to='/helper/hungry-muto'>{t('hungry-muto')}</Link></div>
         <div><Link to='/helper/esfera-guardian'>{t('esfera-guardian')}</Link></div>
