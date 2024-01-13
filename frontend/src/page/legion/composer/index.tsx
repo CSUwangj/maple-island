@@ -6,9 +6,6 @@ import { DndProvider, useDrag, useDrop, XYCoord } from 'react-dnd'
 import { HTML5Backend } from 'react-dnd-html5-backend'
 import background from './images/henesys hunting ground.jpg'
 
-const ListedUnusedCharacters = styled.div``
-const Background = styled.div``
-
 const DragType = {
   CHAR: 'character'
 }
@@ -20,6 +17,28 @@ interface CharacterModelProps {
   left?: number
   top?: number
 }
+
+const NameBox = styled.div`
+  background: rgba(0, 0, 0, 0.6);
+  color: rgb(255, 255, 255);
+  padding: 1px 3px;
+  font-size: 14px;
+  text-align: center;
+  margin-top: -9px;
+  font-family: 'Arial';
+`
+
+const Container = styled.div`
+  display: flex;
+`
+
+const ListedUnusedCharacters = styled.div`
+  min-width: 100px;
+  height: 500px;
+  border: 1px;
+`
+
+const Background = styled.div``
 
 const CharacterModel: React.FC<CharacterModelProps> = ({name, image, inBackground, left, top}) => {
   const [ { isDragging }, ref ] = useDrag(
@@ -34,10 +53,16 @@ const CharacterModel: React.FC<CharacterModelProps> = ({name, image, inBackgroun
 
   return isDragging ? <div ref={ref}></div> : <div 
     ref={ref}
-    style={styles}
+    style={{
+      ...styles,
+      'display': 'flex',
+      'alignItems': 'center',
+      'justifyContent': 'center',
+      'flexDirection': 'column',
+    }}
   >
     <img src={image} />
-    <div>{name}</div>
+    <NameBox>{name}</NameBox>
   </div>
 }
 
@@ -61,7 +86,6 @@ export const Page: React.FC = () => {
           setListedCharacters([...listedCharacters, {...char, inBackground: true, top: 20, left: 20}])
         } else {
           const delta = monitor.getDifferenceFromInitialOffset() as XYCoord
-          console.log(delta)
           const left = Math.round(char.left! + delta.x)
           const top = Math.round(char.top! + delta.y)
           moveChar(char.name, left, top)
@@ -75,7 +99,7 @@ export const Page: React.FC = () => {
     [moveChar]
   )
 
-  return <>
+  return <Container>
     <ListedUnusedCharacters>
       {
         characters.filter((c) => listedCharacters.find(ch => ch.name === c.name) === undefined).map((c) => <CharacterModel {...c} key={c.name} />)
@@ -87,5 +111,5 @@ export const Page: React.FC = () => {
         listedCharacters.map((c) => <CharacterModel {...c} key={c.name} />) 
       }
     </Background>
-  </>
+  </Container>
 }
