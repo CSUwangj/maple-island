@@ -125,7 +125,7 @@ class LegionSolver {
             position++
           }
         }
-        
+
         if (position == this.emptySpots.length) {
           return true
         }

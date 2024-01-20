@@ -2,8 +2,9 @@
 import styled from '@emotion/styled/macro'
 import { useLiveQuery } from 'dexie-react-hooks'
 import _ from 'lodash'
-import { Archer, Character, Mage, Pirate, Thief, Warrior } from 'models/Character'
+import { Character } from 'models/Character'
 import { db } from 'models/db'
+import { Warrior, Pirate, Thief, Mage, Bowman } from 'models/Jobs'
 import React, { useEffect, useState, CSSProperties } from 'react'
 import { useTranslation } from 'react-i18next'
 import { useLocalStorage } from 'react-use'
@@ -198,7 +199,7 @@ const setLegion = (
     } else if (character.level < 250) {
       if(Warrior.has(character.job)) {
         amountArray[4] += 1
-      }else if(Archer.has(character.job)) {
+      }else if(Bowman.has(character.job)) {
         amountArray[5] += 1
       }else if(Thief.has(character.job)) {
         amountArray[6] += 1
@@ -212,7 +213,7 @@ const setLegion = (
         amountArray[14] += 1
       } else if(Warrior.has(character.job)) {
         amountArray[9] += 1
-      } else if(Archer.has(character.job)) {
+      } else if(Bowman.has(character.job)) {
         amountArray[10] += 1
       } else if(Thief.has(character.job)) {
         amountArray[11] += 1

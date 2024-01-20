@@ -4,15 +4,49 @@ import { Equipment } from "models/Equipment"
 import { GeneralBuffEffect } from "models/BuffEffect"
 import React, { useState } from "react"
 import { useTranslation } from "react-i18next"
+import { Bowman, DexPirate, DexStrThief, Mage, StrPirate, Thief, Warrior } from "models/Jobs"
 
 const StatRow = styled.tr``
 const StatName = styled.td``
 const StatVal = styled.td``
 
+// ignore xenon and demon avenger
+const pureStats = (job: string, level: number) => {
+  const mainStat = level < 60 ? level * 5 + 4 :
+    level < 100 ? level * 5 + 9 :
+      level * 5 + 14
+  if(Warrior.has(job) || StrPirate.has(job)) {
+    return [mainStat, 4, 4, 4]
+  } else if(Bowman.has(job) || DexPirate.has(job)) {
+    return [4, mainStat, 4, 4]
+  } else if(Mage.has(job)){
+    return [4, 4, mainStat, 4]
+  } else if(Thief.has(job)) {
+    return [4, 4, 4, mainStat]
+  }
+  // long live the beginner!
+  return [mainStat, 4, 4, 4]
+}
+
+const calculateStatValue = (str: number, dex: number, int: number, luk: number, hp: number, job: string) => {
+  if(Warrior.has(job) || StrPirate.has(job)) {
+    return str * 4 + dex
+  } else if(Bowman.has(job) || DexPirate.has(job)) {
+    return dex * 4 + str
+  } else if(Mage.has(job)){
+    return int * 4 + luk
+  } else if(DexStrThief.has(job)) {
+    return luk * 4 + str + dex
+  } else if(Thief.has(job)) {
+    return luk * 4 + dex
+  }
+  // i don't know what's beginner's formula :)
+  return str * 4 + dex
+}
+
 export const Page: React.FC = ({ }) => {
   const [ level, setLevel ] = useState(0)
-  const [ hp, setHp ] = useState(0)
-  const [ mp, setMp ] = useState(0)
+  const [ job, setJob ] = useState('Pathfinder')
   const [ dmg, setDmg ] = useState(30)
   const [ bd, setBd ] = useState(0)
   const [ fd, setFd ] = useState(120.48)
@@ -36,14 +70,10 @@ export const Page: React.FC = ({ }) => {
   const [ buffs, setBuffs ] = useState<GeneralBuffEffect[]>([])
 
   // pure stats
-  // let dex = level < 60 ? level * 5 + 4 :
-  //   level < 100 ? level * 5 + 9 :
-  //     level * 5 + 14
-  let str = 1582
-  let dex = 5096
-  let int = 4
-  let luk = 4
-  let att = 691
+  let [str, dex, int, luk, hp, mp] = pureStats(job, level)
+  const mastery = 0.85
+  const multiplier = 1.3
+  let att = 0
   let matt = 0
 
   // added stats
@@ -54,6 +84,8 @@ export const Page: React.FC = ({ }) => {
     luk += equipment.statsSummary.luk
     att += equipment.statsSummary.att
     matt += equipment.statsSummary.matt
+    hp += equipment.statsSummary.hp
+    mp += equipment.statsSummary.mp
   }
 
   // percentage stats
@@ -67,9 +99,9 @@ export const Page: React.FC = ({ }) => {
   // final stats increase
   
   // stat value
-  const statValue = dex * 4 + str
-  const upperActual = 1.30 /* weapon multiplier */ * statValue * att / 100
-  const lowerActual = 0.85 /* weapon mastery */ * upperActual
+  const statValue = calculateStatValue(str, dex, int, luk, hp, job)
+  const upperActual = multiplier * statValue * att / 100
+  const lowerActual = mastery * upperActual
   const drMax = upperActual * (1 + dmg / 100) * (1 + fd / 100)
   const drMin = lowerActual * (1 + dmg / 100) * (1 + fd / 100)
   return <table>
