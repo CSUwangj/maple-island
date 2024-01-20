@@ -3268,3 +3268,110 @@ export const ArcaneUmbraThiefGloves = (starForce: number, flame: EquipStats, sou
   potential,
   'iVBORw0KGgoAAAANSUhEUgAAAB8AAAAdCAYAAABSZrcyAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADkUlEQVR4nKVWi3WjMBBc3rsGSAlyCVAClAAlhBLsEuwSTAlQApQQlWCVcCpBt7NCQhDi5OJ9j1gfpJmd/ZA/9Lq53Tz76cFXwZ1zDf8My7SlLBtTMk+JvO65GVcM5ZhNG9ezU1TlkMQr4O5cOapbGxemIcFQDRPZkPhE4GXPmyqn92tLl3pgIn/j+v38RqpYSSzh2BD4LbhzDxKvFeXUXwYBwhj2/p4JEWsNDddS9pAbewK/AXdVwR6qTrw2et0wBAJEfe+oYB6aZ+3lg65VSdV5JBBOQ/C/4O4xQMmO6vIuAKmphYCefR4UeU7XoaSyZgIEAkQ4f2o9gZ+CS9bC477PSWnEepU3ZxCVEuC5YUnE887xvqVuHOjOpQgCwb4Dj6CQODUAzzfaAKcKDI+bZHoIS90NQkDNLU3vPO/JfQUeQSGdZO0OGJf2xvE763oAuk7tUv8eNM8VTfdSxmdWTPFD/bHnEtfu9jeWEbI5AvMc9176FThNuuudFemIbtpnewA18/rOyfehTzGXErpwnBBTGOo3XIqaNeO4ENuCwrS1m1qHx8j2e1PGOcstwPiTgkufnrsxeiOAMIUorMAIxR4YJuv8a63drCPW070l3ZcReA8uhmysFHSBx6E1+xgG6RDToEiwAAqp4SESMSURpE7PBPD166QWIO3fCy0yNQBDFYQn9TQAyzlCk3lu0XNIqopMuhNM80nU6h3tkUaRXlVZvBHAOvEMwB9TKTGH/On6t+CqcZzVJBkMRzHmKFLHCTNNiJXX7Vy8SSZPH77LBQA8AMb6PiSixjYNtuC4XOuBS8mXqF48NF8wD8CfvFvqG2ERMpxoyPinnkucWWYzFjRHyQup2SObhjfp2bDHRyvZj/wIVYC2Cnelxu02yz+DL0lVc6kplqlpijgO5FTTyGsVgVEjMZatBRjtdjZuUcPr/JXkG/DTSdOD+3F9OovUt94I8JQAkB43nSrYbUZ4uG9z35z11sFCHUuegmfGGDd33A6ncfMCQFPAACR7tpV69p62ZE0e5/G8rb8FFwL40qDhK6VENpVPPpPJBz7nj6JvICyCKeU9ATBmIWDjWgT3ez/6BzJbDkjgtE+UaBbllsQvgLLVydq0uxOXKPInN9Hfg+fLUybjPNmjgzGsSi6+7PaKZc8sTySQggcglfymQHvAn5h9tnnk+VcHn11kn4z3zyF4kOaZvGHtiMgzsofE/wHIP+RJwxWW/AAAAABJRU5ErkJggg=='
 )
+
+export const Shoes = {
+  PensalirSkipperBoots,
+  ArcaneUmbraThiefShoes,
+  PensalirMageBoots,
+  PensalirChaserBoots,
+  PensalirBattleBoots,
+  SweetwaterShoes,
+  ArcaneUmbraMageShoes,
+  ArcaneUmbraPirateShoes,
+  PensalirSentinelBoots,
+  ArcaneUmbraArcherShoes,
+  ArcaneUmbraKnightShoes,
+}
+
+export const Capes = {
+  PensalirSkipperCape,
+  ArcaneUmbraMageCape,
+  PensalirChaserCape,
+  ArcaneUmbraThiefCape,
+  ArcaneUmbraPirateCape,
+  PensalirSentinelCape,
+  ArcaneUmbraKnightCape,
+  SweetwaterCape,
+  PensalirBattleCape,
+  ArcaneUmbraArcherCape,
+  PensalirMageCape,
+}
+
+export const Bottoms = {
+  TrixterWandererPants,
+  EternalArcherPants,
+  EternalThiefPants,
+  EternalPiratePants,
+  TrixterRangerPants,
+  TrixterAssassinPants,
+  TrixterDunwitchPants,
+  EternalMagePants,
+  EternalKnightPants,
+  TrixterWarriorPants,
+}
+
+export const Overalls = {
+  ArcaneUmbraPirateSuit,
+  PensalirMageRobe,
+  PensalirSkipperCoat,
+  PensalirSentinelSuit,
+  ArcaneUmbraArcherSuit,
+  SweetwaterSuit,
+  ArcaneUmbraMageSuit,
+  ArcaneUmbraThiefSuit,
+  PensalirChaserArmor,
+  PensalirBattleMail,
+  ArcaneUmbraKnightSuit,
+}
+
+export const Tops = {
+  EagleEyeWarriorArmor,
+  EternalMageRobe,
+  EagleEyeDunwitchRobe,
+  EagleEyeRangerCowl,
+  EternalArcherHood,
+  EternalKnightArmor,
+  EternalPirateCoat,
+  EternalThiefShirt,
+  EagleEyeWandererCoat,
+  EagleEyeAssassinShirt,
+}
+
+export const Hats = {
+  PensalirBattleHelm,
+  EternalThiefBandana,
+  PensalirMageSallet,
+  ArcaneUmbraMageHat,
+  ArcaneUmbraArcherHat,
+  EternalArcherHat,
+  RoyalAssassinHood,
+  EternalPirateHat,
+  ArcaneUmbraPirateHat,
+  ArcaneUmbraThiefHat,
+  PensalirSentinelCap,
+  RoyalRangerBeret,
+  SweetwaterHat,
+  RoyalWarriorHelm,
+  PensalirChaserHat,
+  EternalMageHat,
+  RoyalDunwitchHat,
+  RoyalWandererHat,
+  GenesisBandana,
+  EternalKnightHelm,
+  PensalirSkipperHat,
+  ArcaneUmbraKnightHat,
+}
+
+export const Gloves = {
+  PensalirSentinelGloves,
+  PensalirChaserGloves,
+  ArcaneUmbraArcherGloves,
+  ArcaneUmbraMageGloves,
+  PensalirSkipperGloves,
+  PensalirBattleGloves,
+  ArcaneUmbraPirateGloves,
+  PensalirMageGloves,
+  SweetwaterGloves,
+  ArcaneUmbraKnightGloves,
+  ArcaneUmbraThiefGloves,
+}

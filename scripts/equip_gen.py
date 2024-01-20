@@ -99,6 +99,7 @@ slotMapping = {
     'Ring': 'ring',
     'Glove': 'glove',
     'Medal': 'medal',
+    'Totem': 'totem',
 }
 
 fileNames = {
@@ -135,6 +136,52 @@ def main(argv):
         'Armor': set(),
         'Weapon': set(),
         'Secondary Weapon': set()
+    }
+    slotExport = {
+        'belt': set(),
+        'sub-weapon': set(),
+        'shoe': set(),
+        'cape': set(),
+        'bottom': set(),
+        'heart': set(),
+        'shoulder': set(),
+        'overall': set(),
+        'pocket': set(),
+        'top': set(),
+        'badge': set(),
+        'eye': set(),
+        'face': set(),
+        'pendant': set(),
+        'earring': set(),
+        'hat': set(),
+        'ring': set(),
+        'glove': set(),
+        'medal': set(),
+        'weapon': set(),
+        'totem': set(),
+    }
+    slotCategory = {
+        'shoe': 'Armor',
+        'cape': 'Armor',
+        'bottom': 'Armor',
+        'overall': 'Armor',
+        'top': 'Armor',
+        'hat': 'Armor',
+        'glove': 'Armor',
+        'heart': 'Accessory',
+        'belt': 'Accessory',
+        'shoulder': 'Accessory',
+        'pocket': 'Accessory',
+        'badge': 'Accessory',
+        'eye': 'Accessory',
+        'face': 'Accessory',
+        'pendant': 'Accessory',
+        'earring': 'Accessory',
+        'ring': 'Accessory',
+        'medal': 'Accessory',
+        'totem': 'Accessory',
+        'sub-weapon': 'Secondary Weapon',
+        'weapon': 'Weapon',
     }
     for item in items:
         set_name = ''
@@ -236,10 +283,16 @@ export const {} = (starForce: number, flame: EquipStats, soul: EquipStats, poten
             equipments['Secondary Weapon'].add(equip)
         else:
             equipments[fileNames[item['typeInfo']['category']]].add(equip)
+        slotExport[slot].add(re.sub(r'[_\' \-,!<>()]', '', item['description']['name']))
     for category, equips in equipments.items():
         files[category].write(HEADER)
         for equip in equips:
             files[category].write(equip)
+    for slot, equips in slotExport.items():
+        files[slotCategory[slot]].write('export const ' + slot + r's = {' + '\n')
+        for equip in equips:
+            files[slotCategory[slot]].write('  {},\n'.format(equip))
+        files[slotCategory[slot]].write(r'}' + '\n\n')
     closeFiles(files)
     return
 
