@@ -19,7 +19,7 @@ def main(argv):
         if 'frameBooks' in itemDetail:
             itemDetail.pop('frameBooks')
         itemsDetail.append(itemDetail)
-    with open('itemsDetails.json', 'w', encoding='utf-8') as f:
+    with open('itemsDetail.json', 'w', encoding='utf-8') as f:
         json.dump(itemsDetail, f, indent=2)
     return
 
