@@ -1,16 +1,17 @@
-import { EquipStats } from "./EquipStats"
+import { EffectStats } from "./EffectStats"
+import { ApplyEffect, StatsDetail } from "./StatsDetail"
 
 export type EquipType = 'ring' | 'pendant' | 'weapon' | 'belt' | 'hat' | 'face' | 'eye' | 'top' | 'bottom' | 'overall' | 'shoe' | 'earring' | 'shoulder' | 'glove' | 'heart' | 'emblem' | 'badge' | 'medal' | 'sub-weapon' | 'cape' | 'totem' | 'pocket'
 
 export class Equipment{
   name: string
-  base: EquipStats
-  flame: EquipStats
-  soul: EquipStats
-  sfStat: EquipStats
+  base: EffectStats
+  flame: EffectStats
+  soul: EffectStats
+  sfStat: EffectStats
   canSF: boolean
   canPot: boolean
-  potential: EquipStats
+  potential: EffectStats
   starForce: number
   level: number
   special: boolean
@@ -26,11 +27,11 @@ export class Equipment{
     special = false,
     canSF = true,
     canPot = true,
-    stats: EquipStats = new EquipStats(),
+    stats: EffectStats = new EffectStats(),
     slot: EquipType = 'weapon',
-    flame: EquipStats = new EquipStats(),
-    soul: EquipStats = new EquipStats(),
-    potential: EquipStats = new EquipStats(),
+    flame: EffectStats = new EffectStats(),
+    soul: EffectStats = new EffectStats(),
+    potential: EffectStats = new EffectStats(),
     icon?: string
   ) {
     this.name = name
@@ -51,11 +52,27 @@ export class Equipment{
   }
 
   applyStarForce(starForce: number) {
-    return new EquipStats
+    return new EffectStats
   }
 
   // @TODO: need to avoid recalculation
-  get statsSummary(): EquipStats {
+  get statsSummary(): EffectStats {
     return this.base.add(this.flame).add(this.soul).add(this.potential).add(this.sfStat)
   }
+
+  setFlame(flame: EffectStats) {
+    this.flame = flame
+  }
+
+  setPotential(potential: EffectStats) {
+    this.potential = potential
+  }
+
+  setSoul(soul: EffectStats) {
+    this.soul = soul
+  }
+}
+
+export const ApplyEquipment = (init: StatsDetail, equip: Equipment) => {
+  return ApplyEffect(init, equip.statsSummary)
 }

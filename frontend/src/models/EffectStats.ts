@@ -1,4 +1,4 @@
-export class EquipStats {
+export class EffectStats {
   str: number
   dex: number
   int: number
@@ -67,8 +67,8 @@ export class EquipStats {
     this.critDamage = critDamage
   }
 
-  add(stat: EquipStats): EquipStats {
-    return new EquipStats(
+  add(stat: EffectStats): EffectStats {
+    return new EffectStats(
       this.dex + stat.dex,
       this.str + stat.str,
       this.int + stat.int,

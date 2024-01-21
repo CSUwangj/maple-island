@@ -67,6 +67,7 @@ i18n
           'midnight-chaser': 'Midnight Chaser Helper',
           'hungry-muto': 'Hungry Muto Helper',
           'esfera-guardian': 'Esfera Guardian Helper',
+          'calculator-character': 'Character Calculator',
           'legion': {
             'add-char': 'Add Character',
             'rem-char': 'Remove Character',
@@ -98,6 +99,7 @@ i18n
             'solver': 'Legion Solver',
           },
           'calc': {
+            'job': 'Job',
             'lv': 'LEVEL',
             'dex': 'DEX',
             'int': 'INT',
@@ -109,6 +111,7 @@ i18n
             'dmg': 'Damage',
             'bd': 'Boss Damage',
             'fd': 'Final Damage',
+            'nmd': 'Normal Monster Damage',
             'buffd': 'Buff Duration',
             'ied': 'Ignore Defense',
             'idr': 'Item Drop Rate',
@@ -125,7 +128,9 @@ i18n
             'speed': 'Speed',
             'af': 'Arcane Force',
             'sacf': 'Sacred Force',
-            'jump': 'Jump'
+            'jump': 'Jump',
+            'ier': 'Ignore Element Resistence',
+            'add-equip': 'Add Equipment'
           }
         }
       }

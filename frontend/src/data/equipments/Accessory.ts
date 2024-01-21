@@ -1,15 +1,15 @@
 import { Equipment } from "models/Equipment"
-import { EquipStats } from "models/EquipStats"
+import { EffectStats } from "models/EffectStats"
 
-const PromisingKid = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const PromisingKid = new Equipment(
   'Promising Kid',
   '',
   0,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     4,  
     4,
     4,
@@ -33,21 +33,21 @@ const PromisingKid = (starForce: number, flame: EquipStats, soul: EquipStats, po
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACQAAAAhCAYAAACxzQkrAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAFOElEQVR4nLVXDZGsMAwOM2egSAAJrARWAisBJICERQJIAAlUwiKBSqASeEnaQvm7uzdvXmbuurRp8jXNX7/gnhb4/xQcJ+4ALcucA4jmYqmwY+P9/pl0P4LIEh6JRJpAELbLEdS9hRCMLEJ4thrSt7hg6OGvqVYgKw1DLiBFcFe0ApoXY40wsKfW2+lz3JxFCfRqPAlw88fxjk9W0srf1ki303uyEC3GYQF6HCHJIoCWlAww6iePRtZr5deg1nlip7U02iwqoOOR9jsiuSTfN4QDdXVlYpqbOA6rSdtjBEFgN712Ski5+V3h35tH+t7mN/CP0FhGCAFPvDYRMYgHi/PsdQQkeA/ANM3veDWCHfEEHHnd9LQWoWtwv8Fe1XM3/4qlkx1Ya5DzpKjjjYJT/E0M6x0fAWn7j8BEFmBiNykUGBAoUhgENU+/B+OctXqsQoK45nFZSrt1BcPyhDEnWFBkQuV0f5eHhD1Jbk0k3SZZtKvu6jkuTrkBaeZpyuPzZZKQ1sqtfDB3gNwinSS3UkqaRL8aliU3p2/It1qXPNHNapdTFsZ35gutrAZlFdoksdECWokBOU8/kKzrvizLDHAEKVU5Y7J81tupnVJSOHcJhK+RR0qAz3rLU7wWFDM5Jzk1UvOZ3iHsgv/eQmylR1wNSPxRlin+tfBCMO98S2hOKQGTRc+KX0pxAvT5Xpg6ZvQ1kX74e0SeMIhn2Hxry0MX1hF0ms80Wfjk2xWDKVFJIkhRyStDWWN+GRlYl0YMhoBEYstDCoW88UBFLbHYPAwonPt8Jng84gV13ZYOjioUlSZJZE4yKkiiiK/pqMhQiXMFr5EVLnnwU2sNeY6gkKdLjYVI7hV97bdyiOdJYnLVVQWjzCyg3s0RCCovRzBKu9SKtUuk0ItzSbkDxJYBE1UR+QwIDUdEpICUai8waI7ILxdunq6LZNAOqSXokwvfAyJezjMU4nUtoxyjy0kYyhmvLeQrUZ7Uqt1O3OEhXvWaldlijmhH30rkmX8NyO0jDe046rc516bcgfJpsAr8+as5f/5vACmLSqEzv/dsFJINCs3sd7Ob582H+zAArpq5c87zI/2L4v8Q+tr7fxDiA7kWfr9+zXtMO6fEuDZo31Lzj+vgB8y5/fgZxE8WMQnw573bFRNRvrNF1hVu9V2198gHYhRQs650BBWGs4uonGsYRiPmnEgormlX12aMo8HkO041LqDgl4DO4ERWcBZ9t6lteQwRmCR3OfbGolxkNddIoLxqalGrnYV8xzpeH5UPR66k+MCSfOPbr+9plWM9RmPGa6m+NTndNqV+spC+avIFg7JOR3Xnjr4D0PYSvieBstnxWgeGPi57agQVUnvg+p07GsfyBMwBybgZvMSBFT+FOG7hM5UPGwuXLeza4GOGjrHJD4OgWtMrPRa7yLQYjobSODfWcLYk/TkgPl9JLRJipkciK4oUdF2OvbQgCa2FeQJkG3wdU5HuzZOX8v/cTen60MNWABSausRTUltiXqIPyLAfGiU2XvalO5Q58xPviP49IH+dSMAeHNI0KqJIZIgi0wbI2j5cvjpIcG8K5w4M29aCqaV0J27xuZ3DVmhbnM/7zL5iwYAiftoH2ITWhWqkHIuM3voauxLhLugAyEaYS3HMYd5Vxi/oyePA0EkBVkc5OkyB+5pughUUyanc84ubNrphPQrBFvpVptb2ytYkjyAmOqEF4x5iu9TvUYwgJgJlH4tr+U8ioRWmAYUZiBpHIbag+Ckx7tDD9g4L4HcUIJhf85Nh/gAPhbwch6YeEAAAAABJRU5ErkJggg=='
 )
 
-const HorsebackRidingDollTotem = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const HorsebackRidingDollTotem = new Equipment(
   'Horseback Riding Doll Totem',
-  '',
+  'Antique Totem Set',
   125,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     20,  
     20,
     20,
@@ -71,21 +71,21 @@ const HorsebackRidingDollTotem = (starForce: number, flame: EquipStats, soul: Eq
     0
   ),
   'weapon',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACIAAAAkCAYAAADsHujfAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAE+ElEQVR4nK1Y7XWjOhCdH2lALcglKCUoJeAScAl2CXYJpoRQginBKiG0QAnvzR1pyCDAyZ5d5bBgJI3u3Plk3+gfjK+GHN98uVx5PfE14jr08vxy/DWQAkKBBD70XN53fEvl+Ucw/4QRC+Jxb2lMIx26oWUAvQH8EsxLIEXb1agECiMA8fX1SeMw2HUNy8Bae/0OiKF6PqRaMhnhdl9/OBwbMBLPLd353ZgmBpPAjPgKZO+x8lYJE1u7po1T300GiAUzknFEWjon+Rjlhw8+T6f8c0OhfSBlQ2ApDQS/9xS34DNg8J/KpUvkbk1TyfVGiW0gJvygTnShDZfxRM/Pc9nlZn2c98QmkHXFGRUMTJYOpy7c28wKTFMBcXvmUUacMAEQ57tIud4/abicKLC9Uz/ITtA9jSM9H1cF1BQlUpEBMIgYApjYBtYsEIPz/F7BbDrtGwS55hrJ+9aFJugEP1PzYBX7jndlRhGWqh7AIUrATjlEfIq1JThsZmQUx32w5zIYgE7FPNummfoLFvSXkQKYAIhp6Gi4XfhUz6rynzhfHkOXmB3H852CgcbzAACwZ0yzGFvmecOLEo7j2cMax3h//icgfAw8kYNGhcMksV2CgakOHxcRqAlN2YMp9ZleRI76iIZjYjC+724eYehwCYhhZgIgAKa5eqawFzDTkAQA5jOIrGxzbcSEJ/aZkktkYtdZLSu4uq73d7GzW+iAQ7vbQDF6Ck2cD+LMM8+DtdBkM2JuGBZsuF3TmOeZlSGlqAhAbT2yxoOA8e7bbHgWVqbMIH4DNK9CJDmTJlaRMwMprGgqTof3Y4DtrY0BoOffDZsmZ8whA1DamBmELMC0yEG8tvKRoKzXrGwVvRVatfktpQzCDFd+W+bEbwwImAf7Dv0YiguIFrYi10AW6RqCpHZ0aYVW/cEZYAJm/NZBQYQS+jAVF8Foi6aCeckIQAgYPrR4PrQiTeEWxMyMFLpp5VsOfs9yrj6yjGHVHrzsR3YK2BJ1daCGry85GizU4xzCqj3YY2RcCl0L07pT+whM0Z7jvNexAyuWaZ1o55BeALH5hPdPbI4sIpEmpFWjpADmOuRyrsHdlfxiAUzsQ+MGol1GHpFOlGPeItdWYTFsNsXhocrkk3XgNYjNqLH5ZDaRARLzwXnKl2hQEHLITqGzvoJcVCrxnPI3nbXE9lQ1z1L90Z0hBOH9W6OvnBf5Y8KrbeedI/Rl1NjMZ3xETgLd8AU4JpxZs66pWXIuh7tDlCSeb9pVa7DtrD+BKmBmVnCAgjl1HZWeRPtZAcLvGl4rYPpuFDBnkvAN9rvnjz6wpuI3bqfLohwglhEqa8PO+rka/xEQsFoikp4NuvysKYoc+hFuBx2/BxoHQK5qIZLkJJhnXTJ+A8SVfxznKqclpk5x3ymegoQcZ3mffdPX626pgyJjYY/e+9cp3tUX7xTBnu8fA81OeH3kZhk16KMbwjXMTu74EIf38A+sQ1e3NfaA2ARm75xvyR8Tzd8uaA203KMw8scI0okQduTeCWDxHqbTAgpnZbP653dLQD8xomOqnyFcx8eps5NCedkcbsUf7JpK1ss8op5vwTiUD5gGWrtS2eUPLjFloSgl6lSfkZJzZd3yGxmXfOO4XyS0RacmXSpDuzcLU5Ujy1cH39GcleX1B/ziY12V3evQfhwmse3O60F7/7+ysZb+B9sTHc3p8s8TAAAAAElFTkSuQmCC'
 )
 
-const AllAboardtheFunkTrain = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const AllAboardtheFunkTrain = new Equipment(
   'All Aboard the Funk Train',
   '',
   130,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     8,  
     8,
     8,
@@ -109,21 +109,21 @@ const AllAboardtheFunkTrain = (starForce: number, flame: EquipStats, soul: Equip
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB8AAAAgCAYAAADqgqNBAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEIElEQVR4nKVXgZGrOgxUZl4DXAlcCaQEUgIpgZQAJZASQglQQighLuFcwncJfK1sOYYA92aeZjI2tvHuSrJM/tCxzfTvdtqbOAKf5wj9G4ed/U1Op7Od9xb8ppz6y8Hmv1hRuMP5I/DT6eQlP/OMsuFJ7nqRFqb9c2vp1eUypn20NF355w6Z74Grn/HiXJYlZBBpC9N+nnOT+THt5zml7yf9X8Hn+eVfDvH6F5tfTUZFlW3Gfg0uSdZfbHhTEoamaaLMGHKhhb37OZkwRtZyP5cWBuB+ZNfzL+y1IPBnDWxadls9aKZFc85RSwV1zi3GyE7cercXtud+8yHfFQ2Zsf8gsBnzsiyoHXmT9h7VF7c7vQbL/YTUxfcvk3/86YiuNxJCqtpQSXXF+WH6D5wVOEh90fV89Y/sQRNdxghFXLiVwZIfJgAb4z1knaX2dqNn/fnCpvLhNXCcDU0jo5m73xkETpYQGj2CqUH1d0sR2HDYoRpeLEX5FXHZBF9spspzPkpT1ggBVYKqNc/JJsafDDv5MUkw8sCwaRrlt1IucQf4rHXUtF/S1l3DqieyIYv7sBFvJfFf2vJ5dPliPM9yEYFdkMzz7MnBe9HtAM6aH3F333pXw/1qMQzBxJUYH6eoUMbLKs7BEG/xSln78fZKRecJBHDkjz8uKXCe+THLR0pixz+Q8CBvIiCwBtX57vEQAiCXzifgFFyURbUAybhMjnd/RKqmJmfXLl8aSOT8zjSO1It3Kq43VggoIQfukidWwOUCQSw05qYYIvAwdKK85XOuBFSVegaKUmDkDNYgcUEAc03eC3AoteJuVZ4Q8BsCuHs0vPBbiLweQySgntF4AzwFvnFcmRk9uoeEMQ+XUQr84fY0XrpxFm4ojbX20xxQ1ep6AC/2+7sKt3wBSruqiZsexR2x9S4eqSoqGUtVb9k+eIireiAF3ot5SkDmi+Ijw/8KPD3vsLVidb0cswQABFDPpR+q3h6BWF79Pc4Lh3ehef0848Lzt7/BpPqF+Md2VWjq+n2t9n0QUA3U86dXeq1uKldgBYTp+Y83nip1b48oaAQMY3jeUv8BnmY1DHHDkVPQtOQa6xbhQCWDoahAQEoM3lmegZ2YAxCqm+FBd/46QGJp1h4pxyUCk48RZ6XkQrWO7ykPRQZxZ1fzNQowAIPAyJez3nBKApWvl5peREJKBEcUwMgBBc74Wn4M+W6RiQTo4mM28bfX/epdCRIwfdZ8aA9iDmA+D9JPgL/WypcEwqczvuEodF37HUj8xMUab2t860ZPrIrBtfz95h8CMFzkbxVevhXzL174HzqRRGJ9IAEzq2JXV+uUYg/d49fubT23V2TO/MuYxHM9kRIy4/K/WAKUGtS6jd8mOCagCTJUZpTEhF60b2fdeLXfVp/+B5wweUAJKZ4fAAAAAElFTkSuQmCC'
 )
 
-const DominatorPendant = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const DominatorPendant = new Equipment(
   'Dominator Pendant',
   'Boss Accessory Set',
   140,
-  starForce,
+  0,
   true,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     20,  
     20,
     20,
@@ -147,21 +147,21 @@ const DominatorPendant = (starForce: number, flame: EquipStats, soul: EquipStats
     0
   ),
   'pendant',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACAAAAAeCAYAAABNChwpAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAE2klEQVR4nI1Xi5GjOhAcqjYBOQRtCDgEEwKEgEKwQ4AQIAQIwYSwhPAUwioE3nw0Qtj47nTrEh+h7ulpjXRf8A9tMpMJEMBA/MNr7AP1TXB0s334tPjb3B8JDLYzEAgMGBybBUYPcUQIkcnPtiF+IKzbPgG+Lr5XJfaRyCmBrsSIfTDGIGgAH4EIkUhYZYHRdwReFDr/cphn+6+EsK5waVihUxJvBLrbZBjKQMmA2KMEM75qRQFBd8HVOfhkhgY7j2N9BZyWpMDvBB9JHAjcERyxrZGoCUxkN7AiahmHERnROsh8XY1qzG6C81YQ+M8AcHXvJBKBtqbICS34h3ehswMBkaYluw1JIDEiVOs36yz9YxYS2t8yK0RQePRolhMSiQDbO4SSFLjbYUT/TfKMlZCoZQGg7125/Vgorp4nXRYBjwAyOjZ6pgTm+Z0EE2jbpwEfVHLOOxhjxejcWP6ohCyKkizxYPBljYNK+tzDBOgHw2n0V+d+lQgRsOaYn6hAoOgtT0/ON6YmcPwz+brTH6ZnLArXbluHJnzwS1UEzeh2UcEgGbSACxQ1kejHoylzE3qO3BoTDUcTLIhYxurj40/JJHC+vuqrRFhJ5Pdv7au9P40R+Sl+S1d4r5+VkYTNlCCTcmalAFX7bLOHwslqQCUqOLbiTIUvTmwIUuKMIfuQyy1orkQNLkYIfM+BHdYAevEcLDjn+Xr7KZlucXHPSORypoEpadoVPbAX+BKjbyHo2qcKnMotgzMwth6B27YFYsOGry14JEAfVldx5PZ7U0XIhGnZvXhQTcgZsDs9hN7XvZLYwbsODC72MI5x/DNhKKnqssCTSLjkDRl6tgo47wImqlMqzA7cx+hD38M9qkDXDIj3FZIiMAKdIwkXSVBKiuua1r2xslSPChhhoNHjvxqf+bjjymjMubl1O3XcZBQsK3zcCDzBrH9cBEqAo5aIaQ+UAsQ+6H3TcvQN1pa7AAesPgGrCquBPbm2j5JT1ESILEYEvzEFG5q0cH47y4HWgXAoUSJ/PA5I9ECFcVlS9KnVNdhpgrppDhPb7HpdRERaelW1Qpm9/Br7KmAtSG6n3zg2rCo+Txt8QNOZeS/yLD8RW1omIQ99kn5+IcFx4dJb/Hp4lldCAe+rG5VY8DPu59WNlhtgZbZ13IFJfnU/gWHkpMBZ8y/3eD7gDgVJRzj1ABnPI/h0qO94oim+RxhaNNxYwo32B1RBqxU1Wgt3JMHb5SrFSD1w0s4PJOOjimc7AUfpKUSDCgjOKnvyg4wXwTkFswD2Mdp73A2V3AynbZPARI3jkcynT2g+y0RwXygcroRhgfVlUiq/VIarrKfoV9gr3oRsrvMx+pCZ+NOpWNNn8tqpjhyyqKlpHdDjkpqQxg83y+bU6OMmlAjlBAo6RIo8FbsKFXBUF/C49kAVui1GqeBc+2P0Lu4Fc3y3xOiLvRTzTpiDnymQSMhxuhr0BQVC65nAvl/q+7r6JJuqROBljF6PZVc5qlzyb89SUOTHaZ44ZBPMUtmo5URegTlyHEscri4Na2Cv0uETAcr6lXqU63l8YUb6CienAyET4SoXBJhJzqA5590qFsHDjvo3BfLWwG5o/S9amhyJ3E++0XhzwHDy+0iAXup/TADezxD5s7OlHv5w/6bC/0yFjFookcN+AAAAAElFTkSuQmCC'
 )
 
-const LegendaryHunter = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const LegendaryHunter = new Equipment(
   'Legendary Hunter',
   '',
   0,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     7,  
     7,
     7,
@@ -185,21 +185,21 @@ const LegendaryHunter = (starForce: number, flame: EquipStats, soul: EquipStats,
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAABoAAAAgCAYAAAAMq2gFAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADXklEQVR4nK2Wi7GjMAxFxUwacErglQAlkBJCCVACKSEpAZcQSohLgBJCCXEJrK5//F/YndVMxgaMDpKv5JxotIH+v0V+cprdLuIwbYsnSSmpKApznYgLNQ+ia0Vh7PTLPPPrUpmPvmQ/cz0HiXGaJAkJIcwIUzd2Xn94PIcxu9tnYZ2gXTvRQcvuHzsW8+ujdhhE/Zko5kgkIOP1v4F6bUexkQM47c82kj0IXtf6KyiiRlvlXXmju47fWb9k9qZY+Od1WG8gTXgnmq5Zps4+ZGDapGYaVIfN5iiyYozGOCerOvy2AHug1eI0TU2Ubdu6Oy8Q/LNfnR8BraAAIjpIGalyEXwF/A0INgwcyAPOtS0XXEcX000OwY6Ahidvk1KCqqe7ozQ1DVGdEZXqGOxQRDl3k6HS1EtBfW/FFbM20p4O2x4oNNhXJeiCXHEbjGMzUOg1DHwx8PLQ04Z8WHXDMAiTHphS7NZIu1stNPdVR23N8o9teh10BduOCJBEkOIunWcJfTKGgOMKGOnrtaBP1dGZEnoyDEWeIcTHpsf9PUJPM5BYW0iSmfv61lHMXRspVA9Fda8ov2ZUsyrijHZtCRreNbIhKE8cJMZ+wINyS0SYZ5W7ZkhZMEwqenJkebNW4vyEZX8/nBLk3qdL3/j6rl00rDoJQczvQRUvjixN3N7a75rBZhEN+ELkJO7GdDVdgPWunWFMeK1+WPVd74Kam6Y20ZTUgjqGpYpmNuveqPThvc6vAcj50dH92Ou4WK9PS+tvDzQ3pzBEglT1cr0EEFG5Y2H7GPoOgoT9XxWzH3J9GAYI7Z53myDTOAOIReFBdsPXhj2awryhgDl9+2KIUGyZrXgUI+rESnhME/YmeesgBJjMWQQs61RD6keOcpYkehfaCioexUheynoEwpaRAPLs7BnCdUT07ShHr0IK0VZQ8ShGGCS8BCASWJlZCDqDU9z5t4iMHz9BympX8ShG1IkxPW68TxcgV64f6sJHhO31v9ME4H9MsRV+RZqkrXgU49I8xPQ4HtG9XY6zCQSnVn+aAGI33qJI370z9C5AUfErK+2euHR5yGb/nkY0XV36e7yxd3yfaSvluAgSds/JrdcLH7PfaRLeFDadp6zG1vWu8P+Kof7/18/i4/XW/A+UgZUhD5m24QAAAABJRU5ErkJggg=='
 )
 
-const TheHotness = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const TheHotness = new Equipment(
   'The Hotness',
   '',
   0,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     0,  
     0,
     0,
@@ -223,21 +223,21 @@ const TheHotness = (starForce: number, flame: EquipStats, soul: EquipStats, pote
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAABoAAAAhCAYAAADH97ugAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADrklEQVR4nL2Wi5GjMAxAxUwa8JZgSiAlQAmhhFCCKSEugZSwlBCXEJcQlxCXwEn+gM0nt7Nzc5rxwtqKniTLMifIZYJ/K0V8SUHT9MS/VWTdlxXbfTZngpphy5S2cJbO8WINAj2i+baA34ud366XfCUD3RGkWQWsqqFi5CZ37irNP5qvq0VXWw5WK7Slj0HDa4Ku60CbK9y+SwCGkdsCzu3rI+gmct2qsjAMT7gXS3ZO8J9kAzLG4FBgMY2m0sA1uP8/iSUdtuhWO5lOQQWKKznGL5g+fFaJMbNfeYwP87sO1Xe/392Ag/KeF9Do1EjMPUPvrIdME7kZ96oEqww6wqH4wj1VVEQKeklrXQY4AmXAvu9dhNObo4cCxrEJy9yNy+UC70cHX2663wX8DZQCHWwcRz+jwn7VtZu7iNy534Km9wOgabkrEo7jMeCeyB4aBBrOoZU1PISCJukCPwXN/Y4gZIggQmDq6IzhiDVIc1JKkJDBdiPcNFUUoM2mbhIjcRBMEwH6oOhgOEdrdMiN4eiYLztfJCaL8LSGUFmOoz8IGQRTJWpqNyEaHI30sV2vV/e7c+d/xzGl0xsy2GkLGYEp3xzFsEAeaLm+hczY0j0e2NsIVmNhRFgUykYKSyIqXSQE+f7GzZEGWrcfOockUgs+w0her5dzDI/FRne/6joDY9jyI8gWBnP0e7KAwlViawat8u3mKjRCPl8RJHirAKrOkdAeOVuxJyWggnJJVUMbSntDlXSd1crwzK+L1FAU6hYUGXWT4svbziP6kZSHgBlu7a5OBmLV39NEzZSaKKXrE2gtm/LmfISu931NYd6jPQKkosOeR6AJy1prt0fnDtwBxoa7Lu9QNWj8huVNV76UDdS9OvQ+AulbYzTOW6D0FoWZC2IdEfj8+0WC6OAyle0DjlMVIT7s8nD/NsVALUZJf+8MN6og32qofIXIdSOEvGeMYZX5Lx/6n4ZWe+VdGBd50/C5n1FnFsG6TA5i3I8IoUEHNaaLnqJy3dzZXkc0w+jwUgroiljDODnB6EvUG6Q+54uIw3PwHlAkAVJ6bbARxMI4I+wZydPbQHleIjNWwfM5YPeT0J0NRr5AhosJV/os1F7ILaKbUwLh4Rk7IsNuIeijpES/qFNQNKOR6LE/KykkRCDDbzeHKY0IdpR6jPDmYXgJYjpl69MTU0fpCpG0KxvZOIUXs4Kl7y6d/nOLO22FV0h1c7gIKRN9u/d+Sib2e4cXVyjZjFzW4AfyBx4VBMQUpAHwAAAAAElFTkSuQmCC'
 )
 
-const MasterofDisguise = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const MasterofDisguise = new Equipment(
   'Master of Disguise',
   '',
   100,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     4,  
     4,
     4,
@@ -261,21 +261,21 @@ const MasterofDisguise = (starForce: number, flame: EquipStats, soul: EquipStats
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACIAAAAgCAYAAAB3j6rJAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEhklEQVR4nLWXW7W0OgyAw1q/gY4EkFAkFAkggZHASAAJIAEkUAkgYSphKoGT9ALlMrN5OVl7NqWX5GuSBvgH17LA/y9RePMNBJaPa7AW/5X46+y9fu4nqvNaPbuhYCyOUVVu50fpec03kCh6wNJzgc0BoMLL3NgRjmDatVmFo7ad46TOAZQcsRtLUVaxmU5DjAEUhdnIzhu/QKxyHbsGeaQ5t9FTcgUpsaVtO2fQNLNrc5hfbg/kETh49AZIFKnO5krUhd2X7S5o72acp5+88RdIuGj5YEQebjPLcp3L0WZ1XTdhWNPmO8BdkFUY30NE0VlvMLZ4w2kDV+J3siq5DUKZToY8wPv9wZPATFspDfOs1jE3bwnaofFL4NsgXmHfT8C5TeJhmEFQ8vHR9BGcBwo9dwzlBXB0B2TxEPm4gEQGiZ0aT2ePJyKDHkZdQJJyqGtzLAysN0ZrPEzYN2T70P4FskLEWD+kKxRM2auuOhgFA9lImGoNyZADmwd4T7OBeb0G0Hzvhbh6r3rugmwQuDjG0shcWdHKamdiMBCiEpA0LfRxAqJf0EsK1KuDeKoRbFW2AzqG61aOaEzGscq2Dk5HuYZEtTDxwrQJ4inxfkiNlxKcRA+HWBirx7yAAuNLnvF58vWh5xcsH4G7TiEragulben+jLZcJqnA0j1DARP0IkUvCeOlvCyBDtV2yt6rR7xulk/3PRI9pGu9dv1pViIAnpRJgpYS0heeH/QQDMrki8hzY4wAKKxe6D6EcZyXp2b1BufWWIxHU81q55F57hwoYNgAjVPfDMiEO10uIUjo/ghz5ZEThDEq5Q7CKhRm50zYouaTVtTjV4gfssuREwQZ9sZDo16ix3YMPz23MPW2819y9IoH2UGQKCXXRQSRvpi5kjwKC/CuMWyiBCU70+d1+MSUctMhhPgJ9u8KIgzB2yS2hfAACyYEGY/z1u4erx++Pd3IGwRBv6ax/eM4/oQ5JStB+DBoqffub12ZjHP84/B8bsYF55AHdsgo/eq6xgr7gizLjMeUuni3PIKM1WwAdsZHgcnKYJi1gWT4vjfLAbpOQltiqCih6R2BV7uwhEIwoTeSJIGqqk4gEVW28Cj5nRf43vnIbJyXkcJGx1hiCAHaHJ+yBe2OoAfcrVX8LUk9CEFQmLyHnM21jpxgGNaOkiko2x6BMETZ0+RGnLtjgfnUt7EZo1DdEQrLlce8R7zsYJaJChlDezmgPQwFeoQN22wMSb6OnRVTXpRU5p2Hwtwgr4TeOILsRGMlTTsFS41eiWcoaw/Ag0nKfDqU5vCcQ+LDcKewHUFOITJfS6Hxg8hhMM8VUMO6S7pSgpJQLpBQcpKHrrxxBbKDcTewvHs74oCe9iMJv1noiMYWVp+PJRnm3K6h6zeIbyArDDVC71CykrRtuc2kCoz5EqX0dH6dqqsHOOiij056Xui/QGgSrY5x4fjrE8LL8WU5nHtYX1yt//U+4p9wBSroQ4VXEhh+YrsN5wZj5Akd/P4EoUkqgCHvMFQ4wXcJv/ETnBsWjMdB90n+A5wlh2sKhKR3AAAAAElFTkSuQmCC'
 )
 
-const FoxPointRanger = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const FoxPointRanger = new Equipment(
   'Fox Point Ranger',
   '',
   180,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     9,  
     9,
     9,
@@ -299,21 +299,21 @@ const FoxPointRanger = (starForce: number, flame: EquipStats, soul: EquipStats, 
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB8AAAAgCAYAAADqgqNBAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACwklEQVR4nK2XjXHzIAyG5bsuYI/gjOCMEI+QjBCP0IzQjOCMEI/QjhCPUEYwI/AhQIQ/29D7dJeeYzieF0m8pB+QFwLyo8qdmAMXYpF/64DPDWN23nWS3CihWQJydw6XQ/NmtPi39sZnBvAcOZREDrzC3Xyd5GbPevEUoptqqHo9/3/C1YK3Hy7EE4DVXTTY8hmqgReBS+BqYcyAWGaYeGtfnmuGdS4Gl8J1sBZmLDDBVQMw+EuUwFXXV40Pukuwfp/f5aVwIV4tgSOAKgeOH1mRgKxzrgBH5n2PBMTjuyLW4BYghMt6pGfzIRbTeCKTQkK4CIH9UNbE1IvKFWMh3mIE96AucBw7aOHLAzC42Xf47MO1BTWXd2OKb0PufREfmjl60BSQQLT4DHGq3RjHtxc0A7MijAsCwVXNermB62crfdv3bBf4l8D1Xt8dHPs5GkO4cS6585tWiCKg3YfOP2lz6U7+JoZhhuUTIu+nmlsBGFQvVBwKQOAcbwK6Loaq+RsbcLu9oq7E2nDJP8hUXc960VIoxePO4NlB8sYLj5oapK5cZB8eJtk88joNwXtQjL2yrZkMihC1aVi3tgi9XjvIiUF2earWe3BDCr4a8OPxToO7ezye4bnfil1vxxsTAXjoQjCGyooR4IJzjuc2vEbz0WaCAkLwYzIPE1Om4h+v7ZTvw51w607Q3/N7/GBczHW2vVi91dBy+2FQhkPgENo4Dkv+jVZqBez0ZQpuwejxlGoEYxoxHH+26aTjiSLIy/ciulJdsL5cegt2oPQj3j3kjRGx2OvU6ZkcuAq8k7Fb8eYKwEczZSuhvXRKUwQLxvnc+azAza+SlUvj5DynrI0WDg87wZn58BS8kapV2pqLfuHs+g7oI+WxeuBTaT9KAS+qm/mHgHay5Rx84zn8JOGUmoOE/pKYBKheEcI3vkfz/wGhhz9agmtQgwAAAABJRU5ErkJggg=='
 )
 
-const PromisetoMeetAgain = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const PromisetoMeetAgain = new Equipment(
   'Promise to Meet Again',
   '',
   200,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     0,  
     0,
     0,
@@ -337,21 +337,21 @@ const PromisetoMeetAgain = (starForce: number, flame: EquipStats, soul: EquipSta
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB8AAAAhCAYAAAAh3nDkAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEsklEQVR4nKVXiZGDSAwUVZcAhAAhQAg4BAgBQsAhmBBMCCYECMGE4AnBhMC1NI9nAO/u1WnLxTNC3ZJ6nv2HQtvod4s8X//+Lxb5Dz74Bjt4r2qmdR7lPi4rSrKLOL3uDWXtIPfv1+R89jar1d23/egTduACHGXtV8rvCcAXAKQNba+7+Npv+L0bP1js7u5dFRBg8I2ZC3Baavc4/Pz9qChC4Dgv5T6pAaIGXEshws/ZddWk2G/3/WqSb8c5ICCZ25KlVS7XZ6koNkTYskFR3uQ05Uru17EG4ydFSYHnF71uMRVzKmMbKiAx0S4bu5h1rE8DPmWPpHco5zovAJ6RBTuHJZzc+yXMCt9kMxPuBSSZw3GiUmIKAVSr7eWlK7t+UMO2IlsWCJfpnofgWcvPg9xz1v01dtnL+Mg93eeGUi+Vi+mwvMw/L+d6a6VaI+lrYMG0SuPjmOnlzmysMQDeg9vBzYji4MxjnO1SQxvof1vH/pSLzvx/iHUAFyt3adHfFhHrE4CcxArAD4GRSRC0Km8IUlGOhKMkk14PyPreDZhaA03dixSaOkPh43y1Vdh2sXwcJzhx5IB7g5gEuCob9HilRbGoXprA1AG4p3uDNgA4x+QueXrCnwnwuDUFwSml6NLPQWWc2hnI9RM2p8qpuasqAWZre515UYyGQEE3jwCA5X3bN+K/YHo9wGMP7IMHBFhIyzzQWJAhkH16YIBTtKFoPwTcuAFmULYHpp8p/a+CcwSIsFIto/xcCfPKAbP5BHxjLdhyfwM+A9cMkjCTwu03Iz3v4NPr1ixYMBs8F95+xOOshb/YKXgK4TTlHSKLESgRAnWvs2XgfNJ+q4ppaDv4a0E8ulGAHxBljCm2QCjXoaBvdjhMMHCedwLMIuoaqPvC6jYZpkaQwGNMhlVqpFu1wG+msnvLImwbkaNVyxLu4z9m7ls/ZK703GMuNWfMwDyzlnaV91fIYxJVJ0JgVetvoc/Bx/Hi9jQfmCTxmlT7oBHBmzSlqmppWG4HAnZr4Mz/DK6wSslxajVb46JLarfS65jrHqeoCt4pPN+qq0HSl6nT+3cKcrvV8mdwBh5wKlmXFP1cqcoXu0CYwCQZcqa21+F4KQRznA+YLw43XwmEB0heswWYDHArgavqDSDtxCW1BCxwnr9lLE79cQ1Y94ed7wAuwAoflClJSe1a/Hxv1IuoSAgwkAXYA7M9X28qMj1ujb87I+B2NX9hsXZ7v+Xcld9jo2oWY+JK69RdaQLdDVMQH0xPECwS+mLB6fVwAOi6B9ZmHCLxh1M7dIQ9GQSuSSTqvy7Y5aAFX92P1ybTMDfrg50drAv6D8tr1Pf1VlbYGnHaK7ElcbvTYNpinuMYrZbPYVEZkkx2rFsf+GsJvi0y0TxeN2Y/ZDU1rwdhXaEb/5MQRbLa1UPuBMft4f4I8CUAvpAoSGz1fl/BY/MrEOBpCbAxCZcpZ23DotRDUX/GNDBP/nwHrMxvPQO3wKm5XhHoxgOWBF9589DqncknZ0DZevr8n/R1nf2WuTX+kOsYWxLWUnMw9ADJ+O4B15PfKbgtjU/A3vtzMUb20+7dHvSMRGBnma/0Q6l2ttD/sH8BxBfBUn9UX8QAAAAASUVORK5CYII='
 )
 
-const BlazingHot = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const BlazingHot = new Equipment(
   'Blazing Hot',
   '',
   135,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     7,  
     7,
     7,
@@ -375,21 +375,21 @@ const BlazingHot = (starForce: number, flame: EquipStats, soul: EquipStats, pote
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADSklEQVR4nLWWgXXjIAxAyXtdgBuBFegIdASvgEewR4hHKCMcIxwjlBVYgRF8kkAOdnCSXt8pzzFgoy8JIfwm9rKK/yeXttOC1+s0UENKKZTSu1kpxa2dU4aXvkedF7+28KPHwi8ZVSOK+kqqvQE53SnN9H4R2bFomO7HWvBlcX5VqoC0ViJGgGQlpukqQgjQD2BJAo+LIqkyta2ZqO/CQs9RjNEwJ1Zv742987iF4j0Dq0Aj9I2IoAxBOWfho6N2SomWh4Whm/HVsYfgYdDC+7hNVuIWavRYS01QvHhMNsuB8zwYqtXN+Jhe8BihDMe7816kkITRJfFC9OQ9Cq4tJ6GLi7BW3aAAY3hPdmBw4pJEWoFFliKcJsPPx5pAqlGUETgLTnEf4galaMA9JZq3C3PXY4ZHz5P5Sd1OXQeKUZjw7barcgftghneGV6tvQrn5lbZOkByeczmE8CZvInXhCraEYp/Fcr9l+HPwKQcKxpvl3F2NGaN2RWOYkTkkvvUgEdgCKPeKhE7NkhL93xYyqSCwPcbAx7Cn4Y6R9wSpU0FBPcy3FHaNuee0FG8Io/BUZNiLBaYrVQy0Zh8CzGP3Yxprfg38MVnWE/QwUVC21qt3E0xhlg0LJhDc38CpmMSyjF5i9AJTpmAHHvzOEH/z6TFx1IMGKT+0RqvdjAQPkmQwUhQJggKybytOcpvi1Aor/AuVjeDc8Rz+KnHSkkAFM98YDj2pZgAXh0UtcBtJdWFfm1+BUzekhIX4OAvCuel7Gc0Bh1Gx5CF9bk9CBTsdwlGD+ax16cet1Bbj0b4fOm+y88dFHKco1/4LjoFp7yvSp90OihSfoTis1HsP5FCfLylumAHmYThxnXGo9GlAj2TsTEIj1MUoynU3wPj+pSiUb5IBggeh/nzavfQ2W1thr4iPfAFk6KFo+ftQdEKjg8KszzTwW+Nosyu3v76DngnDK+97jscUDRL4dYH+FgyXTUT+eqCZb3eweKvz6lsqxD7QBRTCwd+4lhwHcEfM21yPLxNA0z1ykcwQ1W9z+MSrvjgkQGhgY5cVSDyVcepxT2PWXDSiGNHA44ywnqO5aN9PMBy57oDczhaOLffSesSvk4ceBf33uWTNslfxiDe6/a5+mkAAAAASUVORK5CYII='
 )
 
-const JackpotEntertainmentCoCEO = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const JackpotEntertainmentCoCEO = new Equipment(
   'Jackpot Entertainment Co-CEO',
   '',
   150,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     8,  
     8,
     8,
@@ -413,21 +413,21 @@ const JackpotEntertainmentCoCEO = (starForce: number, flame: EquipStats, soul: E
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACMAAAAgCAYAAACYTcH3AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAFUUlEQVR4nMVX7bGrOgwUM7cBpwRSAinBKYGUQEqAEqCEUAKUEJcQlxBKwCXwdm1MyAc5b+75cTVDDNhIq5UsOX/kl6JTmeK9GST5ja5fgSGQ672ekTRyPLvpN4A+glFKTfKDZMoJgTRS+ufKZDJdTh6QdepHw865N9BvYAhk7GhN4yGb35ZPa477RK4X5YEUeD70TtIsk8R0EZAsjK0F7EXZndT0CmgzTK7p5dT381O1vM/k2euDERlaS1cRNyXOuvDFvhEr7k1vl8NH/Zm5j2CccQASDDuQougQlKSGhDmxM8aqMpJq7YEoi9U1Fpgwl+dgyygZMC1YH/WcwGLnQb4DWsBM09WPtte7w3k/pmp4BpjOzCByOYwwFAwJQ0NGCORmzt6JXCmsA2gTvns1e2hTuV/uicqNJMlxm5kMC+662+0PxxG8QNFD1UCHcuRC03iDEZAPjZEFSKCmFluFHInB4jgIgIyX3ULhmpnIyMxbSjjgvL/fu91udxp1AxUlpuZQMRfq2knbqAVQlAikKJ2csU7lzD0J+Y/RYv5+uxxgAx7Zlthg3ysgQ2tmGAgEQZXeAcg4dgkATUv+tvNwXhP/uJ9zV6o433J3Ekh4DkC8DW5CGz9bmHlozPIZCERf4BNU2YqA1nFdIMwlgMyw0LEAdjCxh+G4ZWfW1cpGOQN5siFzJCMYJ2GPDGGRqWbESuTD/oyiib1aWoLKtoqdHqFzP9tAsmi4YU7B3kP/EiaE45amSoqikL7v6+v1Jvv9TobhMxZ4j+JXyUs78OWGpPCHjIY08j/3eM8R6zrq4AUGPZN/5hBMkMVQUYRo3e+jfBMq2u32y/Ptdn+aRyj99ZOOJNnRePLXjTJ6dbvdNtf8HyDOPZhfwLhjEvIcl2N1L+6i2uA17+PHNBAVIJyotPmibBhQRdLUjxmqI+c5WmtF29Oii3p924MdteylNZgLFjV71nHUB8WCgqqKxB+Qc/jYN8UibARjjGi0gX7uXTQYQXBs21Yul8sChkBUAZ1p/tDLvDW9DDWYPRyewVCJXCZxVeIXO+S86lsZUKzSG96fz+hFlTdCo2SI3xAgjdMoGePIOb6Lek9DLjXKc1q2Qa+PRB8IWIVtM2fSq5bhaDyQGKK6xvkFrWAdqvVIkBTOc+3pdHrog57hkHi9QifJiHveqY8wgRGfG7xApTOPPIih4D3DwzDROL3myOd13sS1zKfIYtRDBxUbvQpAMvOhUXrjxeq+C0nLZLP6+sRGDAmBRcZ8mGfh+7iOUpal12PKLrxv0Fwz97D1CsYUF9GnuWYQCO69B2DKYTdsbdOYOz8JHdJggcYtQBEQpWUVt80zmAgo3OCL1X2k+FVimLbm18I1hu2bpME5q8u3NQQz1Vhwxm75V0L7ODROnhmNBnfLQnJb9qIlIqs+ud0uv8sXXVmqZIk+jrqPBJ6BEEtvw6IM/xCsNX7Oub9DE/rTu66CuQ1ja0BvdYYH/WnqmMkZzwjD0Dco565tzcCyPmNanVG+A8nzTGFXpWi+Rd83DU4BQ1W1FnbGWj+vJ5jk0LilZfO4uToEqTTVtXPKAlTP1vQBxCYgepymWZrnBf+EKa2LGolstLatMXaHPBlX8V+6tj9PXK84RNtBDUPL3e+0LsumqQyZgWRrO/KDROpREPHpYMqy1tAFh5xXNtet7T9xDAN2oMMhyx/klTJm8OJb/frPzrcEcgRCY9frtaiqcz9Xae5/y0ogLye8j2CqKnRhxBmLFWpdQyTfknfjWBoOVSgX53Cqcy50+OCStZ+Pjx8bZdfV7tXIp0P5loxj93V+S9d/K/MW7Iz9zHEAAAAASUVORK5CYII='
 )
 
-const SuperiorEngravedGolluxPendant = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const SuperiorEngravedGolluxPendant = new Equipment(
   'Superior Engraved Gollux Pendant',
   'Superior Gollux Set',
   150,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     28,  
     28,
     28,
@@ -451,21 +451,21 @@ const SuperiorEngravedGolluxPendant = (starForce: number, flame: EquipStats, sou
     0
   ),
   'pendant',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   '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'
 )
 
-const SweetwaterShoulder = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const SweetwaterShoulder = new Equipment(
   'Sweetwater Shoulder',
   '',
   160,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     16,  
     16,
     16,
@@ -489,21 +489,21 @@ const SweetwaterShoulder = (starForce: number, flame: EquipStats, soul: EquipSta
     0
   ),
   'shoulder',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB8AAAAeCAYAAADU8sWcAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADl0lEQVR4nKWWjbGrIBCF15nXACnBlGBKgBK0BC1BS0hK0BK0BClBS4glXErg7fKjaIwx9+4MEyXIt2dZFv7B700f/BedmeBb+AzMBw1K4QO2NgXIOuyLFWSVAiWvftyhE2fh2gNDYwyMAwS2DjDrTdzbAZMIP3hx5BP8BVonAMW4HlRzZcCcKZjiGMZpMv1934MoAO6xgErCSzSO4HqrlMB7VkhmfpuOrfoNOB+hanq4cwFljuTMOBEdwXXeL+AU5+QxrN47jK6yAue131pdTlA8Ekjxg6rrQVUCfu4MLpUyDuzBdfvU0OHEbAdMlmB4m5HNz3JisyOTC7mJyMN+2HXWswdgLjQChhLg9gC9qzzFbwgehjmTMGe2MlItsENwiwozB1IBPLQShJ07Xfq2cI1mn8IsduBQ2T1BoFxCck/l7MAnKKomi94mXI6qG5/VDmxC66JB6glYddxFwql2u+0AasBb5fr5fM4vtM7USOnkFFJ4yUKF5ACxx3G0njnwEdTbSjlNGnMw+5XHagVK+frdg8kIXDU2JCH4HXQXTjbhfA3GroFlzxI4TdSsPszoBsd3cgGXOYMJQ+HXFQ7MwzVldvNmUIdFhJpXSkZrPcrl/Vuwh2s9AEj8YKgxVAWstk5oBIyZxL094nbEltv+USUQOz/Ogj18zuCLmIwDe2BvHW6/DhKzruQEgbkUpopNSsE35sLeA68FtMUVlT9Rud1CodE6hwXEO0HGXXoECXYaHkWRWGoLAuhAwIWYBw0tg1uGScdp/dcT1ExAXi51/lu4M23U94UAMfarQQTua3BO7YHNYYHOcXRu490JOKqPTGn1DpB5J+4IEBWGF7ebxAOFoGQ5OgSo2IO/tXCfOwd+gLc4o6pmJzDBgTgEolPOQN07ns+/Am/hRjk6YF9+MItrP6mCZAquLw5Kds/z+ebyF7ixvm2Bo5Locjn8kKAML3F0qCTB1elP8BgnopvhcxggThJzTZGYRNRvDhms49QfVjdygswl26kCE8KXc3wz4ZExdEjihufJ6nK39+Fu9VkrR5Wxm+gUPBjjVFOGbq+ZKvhd3fZsbXeqaf2Yv4x/gNMaJw7qwI8dcOgAtck15eHub2XhYEupj0DXNCa8ZH69RZaFav1h+M7btwXfldfISK/LEq9PCVxvNwqHgWVVZfrJisdcvKsPkO3zts1wsshNrh3gig75O9UN+wb/HKjcU6QO3l/G/wcX2uDJIjGOCAAAAABJRU5ErkJggg=='
 )
 
-const Deckhand = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const Deckhand = new Equipment(
   'Deckhand',
   '',
   30,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     3,  
     3,
     3,
@@ -527,21 +527,21 @@ const Deckhand = (starForce: number, flame: EquipStats, soul: EquipStats, potent
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB8AAAAgCAYAAADqgqNBAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAET0lEQVR4nKVXi3GDOBBdZq4BXAKUACU4JZgSnBKgBCghlAAlhBJQCaYEqwRu30orBMZJbm4nHoFAeu/tT+Qf+tlW+v+WvHvwGzjd65b6rqH1SfQxPuj7lssIO7vGmFy2dT/Zb+AJb+DUL/w39ZRPNd/09Kg7B1rklHd1mKfCLfTAb1X/BVw3WBdDZM1Ec22o7Aq6VEW4Jtrm8V607kf7C7hslH8i/oY3T8l6BJ4jzMF03s39DvxfwHXDNStsfK/2bv5P4GdZfbaJeODxJarDmu97yveWvucHfZT5Gc7p/kH5uupzl0hJ0ujEkYQQWJ8plbml+ZFydovq5ARY9sC7Ymmte8sYwJfeYWQ+W2XBYikpZYOdi/GsKi0N7Y0JjLTOdPoePJTdUlpGF5LFdDtmCu7UiHr3QpU7dtHG4R6kYMYsflOiYyhwX2GLxnlHhN1rVZ3slJ+pb+sbVZVTplZV2/U4GcpSD+IBw3s8V98K6kYjylENKuyo/EX9MDQCfLsWPG7FC0JZUWyEjQleqJrtvWuRCvDQOtcfVb8oxwO2kCTDYANwDApAdblaUWQ08A/zAJ2MdcC8xCXka8c7q3OpZ5eZzQ5YQeFuIWG3RddloSLLhARWgoAY4kL2Bfgd+IsdgYfBxR4xxX1bI8YAWIIXaDT0m70Ht50AQDVMgTUHMlZkWC1GACPGcDUIiHomhhyYC/sW4gx81RqPVW+KHQFRR1puS4gxiBTZEtSjDN/0gV17lVivaxtq/GjwBJRi436caGGCcs+xXhilOlmmcxDEiRdwyLdXKS9kuQLD1XFiaWZDMVwNW7xnMHonBNfjHfUM5kCuzE0gABy07+B2NIilb2iY0TrHwFzrGCZNBbE2LtaqXM3FnHaEMTfxHvM3XzfuEDq43XUe7cMggLHZNyQfc59UKKtsIwVHuJjv17S85/XOBPptRDJv4HyT3VtRDgJgqC0WCtSFmmwuHFuTATDcq1kPYhoekYZW23oCLYVkBngicXg6AtNnJwyRpfdrSj0DAVwJbFlvAxHNcgVWd9+8gNvNExhIT0pYOM8dgblhZlDuXCSdadrUxx5QInLf0A5YVRecD/jCGUcoJwll/Jm1O1hQi+tsAwH9NFKQmEBsxrdWvY4TLwAbevm+i8GlBNTtIFCVFFyrv7jBHAnEoPBEw0qR5QAGiUOtHztcTVcuORDopyims+94aKWlCZ6AxYeLAiFZyw+XAxgR+3pIKT6sXt0ujWYVAj03G00u53PnleHRur5fOnI4vQAKYh0noYAsW6sVSR7Yn+eXM/AdgQH/Bfl6xGZTz+H4ql1YvpyCcHpFwBiR3VCvpCJgfAchZshIe3awXJjAM55ArKRBfG4E4IHy0sj32RmwLydyZ7kAfx6B3h2pWJrqj5PkCwQ+ektr24VxfrJvTUMNl2PN3pGxDcDR1x7Zk98puH4VpNFcyQTm17HZnpc0R2N+2O/smv4FoYzb8Qy0LIgAAAAASUVORK5CYII='
 )
 
-const DreamyBelt = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const DreamyBelt = new Equipment(
   'Dreamy Belt',
   'Pitched Boss Set',
   200,
-  starForce,
+  0,
   true,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     50,  
     50,
     50,
@@ -565,21 +565,21 @@ const DreamyBelt = (starForce: number, flame: EquipStats, soul: EquipStats, pote
     0
   ),
   'belt',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   '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'
 )
 
-const UrsusSSSCollector = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const UrsusSSSCollector = new Equipment(
   'Ursus SSS Collector',
   '',
   100,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     7,  
     7,
     7,
@@ -603,21 +603,21 @@ const UrsusSSSCollector = (starForce: number, flame: EquipStats, soul: EquipStat
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACEAAAAiCAYAAADRcLDBAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEb0lEQVR4nLVXi5WjMAwU710DpAS2BFKCKYGUACVACXEJUEIoAUqAEo4SQgmcRsbmE7PJvrubt1kCxtZoJMvKL/Jjpv+H4PjAR2J+PmcKw/NVpun12TiOL8+Gcf9i13XU1OV8JOJVAgTqZpBJf4NxWOdHsSKlFJN4fc9LAgRqXVI0qt3z6hFSfpvk6gzplKKicfd2HNeI1vkjdXTmko9EkN+ukhPDMq2Kfss1jCdSLBOuUxkbDyNDBIgfoxtXSzzz8cusOvCfUeajnHh5kReasWQ6VPzfeBfeWa3rqkjWr/GfhoHn5N61fPhFnyGAiUuSi0KGDAmhtOJky5UYBko2XiafGf8pCUeGP/OwJGyUdgSF7RWY1vc+xk9JzGl2p4STFkjjyA00g9miGPdtw39Jgqp7ASP4GrDhbVETlTbjH+M7EtbAzqOmG7a3wfJecDL+7VrvSMwMCoLdHFko5j3Z90+6Xi9y/2wrl7B4fnjfLTA/ewouV2+YvGUbE6bOlTZj7Gmc0bcrWeNhHMuuwHckq87NmCVjiQKd1lvC78s2kJQNxVxq+76V+zIxBooiE+N24a5JSaX8Lpfkij9bMpZ4kiRUdhO1irw4khAVrknpN64yY7y8ifFCPSiMeFMOinTTvZDJky8+2Nj476cj41PDknCy2aJjCZwZZ5E4CUeqp5rPiJCKODslk3xdqGpN6R/WQ9Elq1PCJuLmJRr5zAYBn/EtRi5R+aAdmYbPs7IeqH1EdES31JMlUffhQCKCiJF/30zUvO0qJnA0foQlA0Tkb0jgGAggnywsiQBxKlQt8ndl411ge0jh8MJ9pEeRPrmNO89xlEsCH3qSTMV0S262wgaWhMsHEBhOGhkkWLwY36Ks2XC9KgQy3ymBcIDIQmJ2Ssie59gjJ9oi3c+aTKJCxnijhiVzz1YlAKsGlDhDohsXEnwXEvC+07UMlDf0Aa9eoK+0hvdE7kyi26ngS0gLOAOnEZJoaXxAImA2MxQAgU9zwt6bBFNvjQ9LI4xQ5KUWAtqcM4HLCcgCIlrXosSxo46jkD3fP4MS9bTmhFUCOMsJ7LQNAWCWcGBrYouCwCjWv+n3f4Bt4bNAgjNDcVgVhdQKCQdDyjVCYYjsJ0o2cyVMI8WNbSgLHX9TAPA+Ck1IOknoV2cwH+shmZdi5SpmgGNW2HG31HXGAGSDN2CsChxYOZdlVM7UkUEXfTSOHVMsJfuFBK+JbZpoaYRdnbCQBC1U7DwoHr07uqHSSsaWcSY9xi/GQQsEEH8Qzap2DQeHe1uojiSkkQGQHzjxgLbt5XpKhhPTZxxQxUOu9dKT3lXonm0bnN1RbosVjPStaVjekWnV8JHxWJltjDKgDy3gLhz4h5Bw4I0hDs1dRSaGC5msML85tImpkMG+9xmP+EhDDtR88DV6V3vedlbuBWY83x+VlCK73S5Lk1M9jDI5H/PWeL6oZEt/jJjJnHy37hFvW3575h9J2t+rIGON01ZN8cJfeX9KIng3tpAJfGOf4g/yoqsCu15KDQAAAABJRU5ErkJggg=='
 )
 
-const MissionPossible = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const MissionPossible = new Equipment(
   'Mission Possible',
   '',
   100,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     4,  
     4,
     4,
@@ -641,21 +641,21 @@ const MissionPossible = (starForce: number, flame: EquipStats, soul: EquipStats,
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACAAAAAfCAYAAACGVs+MAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAClklEQVR4nL1WgXXjIAwV72UBZ4R2BN8IWeEyQjwCHSEewRnhboWMcB7hOkIZwZUA2UKAY/el/e/FWCCkL0XIHCDHBN8LI4USAZg+8NEM+Ljg7wbguud4PuZzRQLuLz27+At4f/+645eX+lqRwBH9tpf/AKMLE20TRpYZW+dRHm+v9GZAoUSAlCawgTYNv3GkpPSUhbsDe2mgv6HxU3Sk5rI9hBsUcYAKxtdA9kxsprQuyXiv9EtzZ5MFvJlAstMYkzK4lA/K2IUqO1fs7CFQIzT9s55QroB1Q2u/+m2O9xKYISpaO5nWqn0LgU0N6LiczGnPWgFGEsA6G8RabECMvY2o0jPcuLwjWSJpDux8fOugn8v4OZ2vBou18jEEEvNfQM7/4HGjo9OiPEZFP4+t+XwMcntF4s5Aj/KJZBv30zru73G/9a081SM7ZJffh5jw1SL0xnslRzBBKcsx0+vLNjMCnAUaKQJvRGwY30zIApTXPGL0fox6nE2NQOBBkXH6+B3znMoQ1qUeEWuviw0dedNKAozIeo4+RqDZt5CCZanna8emrUL+ZYxNjUiytzaNVMo6yqKdhwQ48mapAW3E+yFHqNNilLMsbQAsNVCxVSawAcXTsRL5GgIB3blkFmCpBV9Y8ujxiXAPvj2unoUsA9qJxF2e5Vk2Vf0tyAiE6oWlFxAE87si6GXRFxKIWqhla1cNnOy6LKGPnA/smuutE1DVrCOYM1E5LRq6i84E3Ag/glIWkgxwX9fjvB4j4J6v1+Vp0fsIrXjPCMiOpkf+RPN3gI3p9pzoiXn9LSFfnHUiYOhiQBeEQVyKGt3wv4K2cMsaO+88Xt8MZ8DEK9KT0VXeg096HPRERBN/UtagOVeYdytypv8JvDgdlRjEfvAAAAAASUVORK5CYII='
 )
 
-const ElodinBirdDog = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const ElodinBirdDog = new Equipment(
   'Elodin Bird Dog',
   '',
   30,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     3,  
     3,
     3,
@@ -679,21 +679,21 @@ const ElodinBirdDog = (starForce: number, flame: EquipStats, soul: EquipStats, p
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACAAAAAhCAYAAAC4JqlRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAD7klEQVR4nK1XjbGiMBDezNgAr4RQApaAJWAJWIKUgCVICVCClHApwZRgSuB2EzYkAZ46dzvjIGTZ79u/bDjA5zLB9yLeKXxDAKZpi8eMoZOn+Wc2vyIAI8CtcYBSZvPDzC9rbez12n5u8hsCQpxgaguAxhTw7AvIc+UXn88CznjfZgpQz+r/bwLWaKMwB2UNEmoMQ+cX+L4ZLx+Df01gQhECbRuFKUcgs6yF97Pev0WAjPB/MubBSVQHZ10C+c1y1hpe5QhZa/U/JrFJIAIL7i0l7X4ix4qUhdd5dMqCO/2YROgMO/Q2AjOwNWSNPRZwu4b34rQUYVbu2pjSQITReVsD09OBmnEGqoO1R6I865Du6+qiwI64dWGzFkZnRSAKNxezDLzktGv333Sx9wTuUjFhz7LnwumXC3Em8UsEOG1iAU/CbLoAtHaEHJkl5aYhQpMj2wS2ZtklECnLGaQMjJZJRCJxHqfRsSSpgE9LWnYJcEVTXtlTzrEXApdhgQs4Ynv+0aOLBtvQwhcvg28W4ZL/IPzl5LyYjYSRiATXj2mOdHLdEE8gLr594S7gqGSlq2wC6UsJcuyi9Z9h2StAq8j7iEDMWngjWb30sC82lFNdgjrh3jsA3OsCRmWgLZd2DYFflbJRo7V0lzyw96xMc5zahA1x+3DhcRr6VkIOuBFlBRQFERgxEHcQg9ucpue8SQV1Y9+/xf4ewp0qzH0mF7AMgg4Ynfc4/C34vXLP6Xgg8mMMbhfA7xn0S7fpsAbAbxj84gx8lCXu9c6VUV6hl27sjQhO3iuF0zGYjOJYQ9E7Q7YjZnu2Q5JWOqSTrniikhx9Oui+l9LlFD0mXi3GpKqpxy4YCG1PQoOhEHVWh8Z1j4OKJmSnaqiLzhUp2iGYVRuGE4ueHxFU4bTjYQRTDf21xGOYCwuBNpezP5ZZ7xEUZA1XJF9VVKnK2rhYmhzluyMZRsCHLSBBTMMzJRVXflmP9nu7TKa+JjIaSZUwDCN2RG/BwknMe8zbcUyAzNRHAWBljMQYAxX2v1Iabt3g129dDDY5icBXBFYnH1ilx6+T95R7SsMwavR6iAiy/tb/XQIpYPoyg1dVZcEp9xo3IBW0wKdnwV0Ce0ZCcKq9AYELLkLlC/YHwg+FWMzWw3cnovXXRyIyXil21ExwNcH9LoFs47crsii5wh94bX4hQT8+WZo9Agwo+YqGWwIgIMq3LDIbfpv7OQT2mPWTw6yb7Pjb4d8jwCRWLz9b3CERHDD/zVBB/1CQn/Az7Q9Nrx941ZojccXrecP7j1LAYVqF3X3z8bsD9jpdR9gpfJ5IoferSOxFIGK51Zq/yTet+Be+XytDHRBTUwAAAABJRU5ErkJggg=='
 )
 
-const SweetwaterPendant = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const SweetwaterPendant = new Equipment(
   'Sweetwater Pendant',
   '',
   160,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     34,  
     34,
     34,
@@ -717,21 +717,21 @@ const SweetwaterPendant = (starForce: number, flame: EquipStats, soul: EquipStat
     0
   ),
   'pendant',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAYAAABX5MJvAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEhElEQVR4nKWWjbWqMAyA03PuAjiCjgAjwAg4AoygI8gIMIKMICPACDKCHYGXpE3/RO975+UcpZY2+fLT1B/4P9nsU30Z/yr/ChEZ2vDXcgUoOjOGJQNV6Ggc7P0I9BvEm1H+oXA8oxGlnXKaAzC/w7HsM3P7IN8gNmNVGaNGkXer0CGoSgxEYwdtIvMG8glimy9mt6FxAKGCCBK+14JKUvMrBCu3AEYx5teGN/QEl6gkXW9QEYjoT999iES0hr2gcC6j5iIMQaJ1CdTOmt20CETioUmHNehAaJDOf6MPCtK9I0fCJTT/k07IBj52SA25dqfBjuEvj6AryCCC9JS1bq+DsHUQR8QbiceovEEgqQEzuV8H4b4oSL7u4prYA/nkaT9jvV4VDBNAU0ah/5oicAXs5a0wA5A9BZFuAhgWUPjZttqdoE+yif5UBIIrWxZsr5eZPBw+wwTHtsm/2bbGrU7ngm8BDMGLLnUN1/MZbve7Wzg/HvwsqiqFMcd2a6BnoAmLdE1ht1BHKGSH7HXjuAmEC9EyTbygbppo0/124+f5enWxJICq7b3F+UQgW7pHZFkWfo7DwPrzsoSbjcgPBKmgF3mew7VtIwVIDB7WvHMANivV8GQQmVOnKw/J41BuPe7LMh5LSt5rAhdQSigqK9Kj9y5S7UTfPayjV9qgDXQONGajuD55bl1X2J4VTmJfKUaOyhGdIyfBG+QHfUU1MXadSwVFBGuBAYxxL0c0LCA1FmW3+ncEQHKoTC1sc4EgV1MbWruUpDXB3UsKkmpCUpAC1EdUEBh82Izc+xXO7dGvKzWMkwn54TxbkMqlhmzRqNtLx/P5hAZDp9EbUwcth5+TUEIEJADieQhCACkYw2GUs+OR95xOpygdIgpfbDZMXP3t5AGmIAK9Te2Ad8IwHKGuNXtPhtFhAzJ6kDQattDfblEHInly9NYZSYMAVC0VY+YMdp3GvAN/CISiIXDDsDh9KUAK4YxLB6TiK30rcAAkOohMKgLCTtSaTw8smvVanqj5JRcYngw9wBi3CQdUjaboSrxB6ybDKjeRoBw3F7NuGM2RdftWT1tiVPvehNZ2WHiDIKmwKT56xTBSlKEMaHjAbnS7TDBC6YzQTSrehwDmvTFcl2T8gvXRRetcn2CxhhnkZtI2TmYznYbUSH5c0EgGSZdnIcgwCipo8bC4+fjuUCq+KCt7TQyjgSCF90AP6c/zBSFLTM/Kv+m9GJZn1x2xU2rswNkbqNg16dAFPLBdqwP+W3opmxJzAkgoAs0lw5xqZ4D+S0yjqdSqWqGsPSzJhFc9Gc5tDQnE1rcYFWB7ZNdFYk8IIG1IYnx0fdqHexrNJy8zNiqfvxEDsdK5ybgM1QFcNA6nlY8bG8fGNA6xUvJKRHJOHocRIKGUhFGglSvdI+viIPAPCv0rxvNcQARyKJ7YXpPbKzCu2r25GCZ8LwAkzUwnxWzxdweB2D9V9WJB5uA4LGGlu2ERzM1ibK+R0Z4X9pLMNkIBkEi4deoMW/Q7+KeU6vw0h8Y+7jl0sX4Z/AGUY7qgzE1KrgAAAABJRU5ErkJggg=='
 )
 
-const VoidVanquisher = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const VoidVanquisher = new Equipment(
   'Void Vanquisher',
   '',
   200,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     0,  
     0,
     0,
@@ -755,21 +755,21 @@ const VoidVanquisher = (starForce: number, flame: EquipStats, soul: EquipStats, 
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB4AAAAgCAYAAAAFQMh/AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADhklEQVR4nLWX7ZGjMAyGxcw14C3BV4JTAimBlMCWEEogJRwlLCXEJaxLOJewLoGTZIs4YAj5cWIZIHw8eiVZ9v6CZ5vg/1i1/CEHT1P987hq1OvPjeHlI9Y7OPvztIQLmKGjt2CDhwAewMEh8/j8nrW6gbu+r+CzYvrAzQ+glS5+4IriLBhw6uFRj791G8+LDX6EXl9Xvwu4+u1Ok4E6XoV6fuALRj5eoHm6ZzAuHWA69qKtLB9QLTNKYL7hwE4aWjDGRJWuWzkwItIT0NRgSjBn4Qo2OaswY3YFXYL5gTEME7iaQbPKImBdBBSFFkHy3hguRWgJzMZQRVVt4R1rQ4DP/L2dNJTAVQXjBK9HysrGNayodgtcemFq2x6GocvvTU19hdHedgHvgldmxxGHGhZWcNzd6Ny591LxDpghpExp6WSxcIKPMVVBowOjtNrDyvfAHF4B0JG2+JeguFHD0egYNaDkwCH4FniG5i2Ru5qKQIqAwyEVsJJV2oxpDsNL4Cdo08TQeu9n5XKURkMOkFOKG8sxeFFxDiXgrHzRM3StWTk5QMWn9H7f3gOzWlKQQ63dqF6bw2uucoJn1X98HEsoX0LpGZo+6baBeVYLKSWv8v20EKCHn8xFJ2pUYHC/6nj/gpOHD4HBtKFGTgWpFTBZajBF+LwQ6Hvs0JwnHCJez8pz6M3HGerL9AmeR8rPOY7hjilIHa+4AmGos4/KMajGqcfSR5Tm54bzGFUvjZxwaRVDTpTgBK667sJ9F3PCFapRiUOux5MmTfykVqCinEOcwA0qzKshr/DU44uhrlIuwDsPNcZw1A/FApIjmfPPShWFHV/5ExROjYFVY2XL7d2FAN2cqB0KkvJEa6ZWRaVzccUZCaNiQSdl1ErYLU5REOjh4VTREDibFnrMeWc0f3hISp2NKiW8Ek5SV+Nk8Y0sSyl6AS2B+QXrhukTh1aPYaewaR1bY0hbbgT9wvCe8BECnwM7+QEwB664pNiaJD5Q+U+HcC4gXJSrVOVKGgWEGXpB5/5iNVYx2LSklHVgyI4hu16BVbafEX6nH2sM/VIxQen8rOJ1gnYZdA5K2n3awxIsQJ0d6UMKQ3+l/ivwxwtK8jmkDy7/79lcuZUUl17qENBLdxOjcZ+cCxvvhcK+Aks4cnh+fhput++6aXj2StDTBrDkwJMtFQfYCQ+qrobBvb2+Ktk/kX0A6snBJwYAAAAASUVORK5CYII='
 )
 
-const HYPERBURNING = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const HYPERBURNING = new Equipment(
   'HYPER BURNING',
   '',
   200,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     6,  
     6,
     6,
@@ -793,21 +793,21 @@ const HYPERBURNING = (starForce: number, flame: EquipStats, soul: EquipStats, po
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACAAAAAhCAYAAAC4JqlRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAE00lEQVR4nK1XjZGjOgyWZ7YBU4JTAlsCKYGUkJQQSkhKWEo4SlhKiEuIS0Al8CRLBpsHe3cz57tcgrH0ffr3fcDxmuHfLXP04ojAPM93+mr0c7TGzXf+aljRz2E+IrFHIILj7QlV/4R/seZvd0hi3wPEvuoBflkL7ooQert7rP1CGG7775LcBRFwCIfk9ggYZQsN6bYtKRuyty0CDBbsg75b/ksAnV3201rkaJuNgb8IQTq8n4QKwqA2gWf7P+jbXT9VAYwoVgQ8OHA7Bv1R7g8JGIrfDDEPV011doAj6zbPy8lV7tD6hcBRwZtMWG2dX5TR1TksijW95kn36Zz5A8NLAtmy+mEdGIl9CUolFWkqTdAt75xUbCHJNVkBmJ2q/si0WBVzKlZ4NAFOUXu2xlVrdV5I7bp962k+lDzAoNzyapibFszYRfAv8TyV0TsB305PcFYSDDe+nr6VyIVC8oCTbgfJh9K7iwcUvIXUc83o43dDhx20XQ/3aZrgUlVx+4tO2StpoNpGX1bB5SJ63/S+G+H9uBJ0gt/x7pwRaKgBS4Ib41UALx3cf32/IvjDWjHBYaRquf37MkZ8JnqpJ+cRiSjfRAJWvfsgA58iKQPkqAxDNbLbZwI3i2LL3e6qJ1pVQ7bYGqU+qRlxWPh8JNHG5J0mS+GgnkXgfRaKGI4PdcdIlifwkZz9zTEvwBsFT9mtOcDgtpZ9ZCIalgfpvw0YwxFzCOAcpebmrjlWEBjUHtDnB6w4wBxsDk4nME1g3eNnDGtiWk03ngkgs8DHHTMWFfaxqLxKxRLbma3/pKLlhGONASn+A4ilHHdus6NY6toYXbC0H7oyJ+60/3mG5AVKZahgrQIhkBy/rdHaCXtkxWwdAdY3pDFLz0TVo1jpghKrxamx/9N3raGpQ+aFqwL3K4604usGHYVAdC/Hmv74IH5ryXpHLQGfujdqFJyAezqbnvlTOyjdslkfR3OArQzs9kYUsSes3g+iZWwVg18lJJzfLIMZOMvzXhokIPeDvHmg5ECvZZFe+SdwqrDiFtaaiWFJok4J1cujaPSa3kRuGCRU0HAXjf2oKMEUgnwGFM5iYec5nhrvOlkzE7CJ+8tvn2knTd4reL7kDmPhXd/h5J/JA0Jgrr/A+Ftx3uqHwsANMIVDVn7HJBKNATfqe5YJIlvMC6sGKnjyAP8ICh6oa1U01SYeLF2nZXZ48ckyyAlBLke0Isd96UEdpaKSpuFkYL1bJlq4Eki1ifKSY+jcT+C/WVbla4l/RcZM3N5aBe/kWGpExYikZWjqzm8S6AdRFpPQi2Uc87JzGOkXmnSoGu80DCoeBhBHs8VOXlWZ5F4jshMfpnOnDqY3GXDuhQBzuQZN6s2dg2dcP67WvKZ7dP2LxFGiET19Ku5I2TRkdVNWEVyFhPNJnnhxKz1r92IQLlGXhYYbUMjmwGsWcHLWhYuopf9qeWM63GlJxThGAa/dXD/Q+KfqvJx6+MUkuAmdqLcHXypJXF58I2oEnOQ6rw06GDOgFgZkPeB/BEbNBWs8G2oVh8PxJBJ37uGJyN6qeOBCBI+XEPU1aoLhbz0wCr0Yq+2NFDVvicgjHyZQnrmtP+UfL80xn4AFiYLAsJZjnihFIdLLT9i4sXx9+Lw7kv4D+do0mPRJCPAAAAAASUVORK5CYII='
 )
 
-const EmblemoftheAlliance = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const EmblemoftheAlliance = new Equipment(
   'Emblem of the Alliance',
   '',
   200,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     0,  
     0,
     0,
@@ -831,21 +831,21 @@ const EmblemoftheAlliance = (starForce: number, flame: EquipStats, soul: EquipSt
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADw0lEQVR4nK1WjXGrMAxW7rqAOoIzgjOCMwIZgYwAI8AIMEIYoR6hHiEeIRohT/IPJEBIX6+6a01sWZ/0SZb9ATMpC7jDH0s/wG4+9wQsoN1lBZfqTcPk7Rtod5+Dj8AZlNwB2sGEuXbwYAyOytbSC8NqoVcVKnxr1UNT6QX4U8QZ1JgEbC0odNAUBPXAhlHDrbPweTaLUfQ6Bji3LuhlGzaQ0S9cHYGjN+6Oio0olWYRjHKAquSx5+2GQZiaL4LdcRpFRI/jC6PoTTYiAy+pFnFeNi6JHIZnj3dHTKC4qfdol/+vRxwUnBOv7pmmLEYrsM6Pv2/dECKVURhY0/M+jpa5TnZfA2fwuq5DaYufba+gDSuKfw/h63iG8J1HWNGr6+ExmIV8rE3OldX1IgOa+nSTCq25gGzTHUx9/p5+X/YSaIh2f4J38gH/IXJkpPiMYfsM+rSIHCqBhx/KJnCKNAlhW1x6GE5lUZRQFLFxpGhrIvLsllQbyb53Ub8EfgBle5Ju1Gwc2uLLw3BUuZn47tsqSSxiBUSDJy/l+6rT/CziDKxRl4zOBHtCFltegUoi6y2XFGgtB529I/RC9/kvgIU6OdlKaER2gc0HCngJlTIl8+2jIglaBkRmjLbo/kHEBI4chwoaQaWZaF/49SSZtj5khGjsIL/KcT4+yTY3M8WtAUdAzd8ugyttoi6S54PIefbZxu8j5igV51cL0xJFAjPRI24T4gpnIJKPhKoicqJk4U2eXwJLRmMkUstcNgmwgEi4gljuETxyEY4TFwJvcfBGVoEjJsQbgC06jIbLEOckOoG3KThZ4wo3rM1FEYruZdSvI44QWmpXBVAEXNGTNWGhD9UediqMocOWPAF3DcZ3Tz8Vha2uAJDreV0y9ZFultO+YTYaPV1c2/exSFndxjdW34fTkXIc2tdCBGyN0/B2YzvcZvimWqZ8STUrC6Dj4uy6iu+7PbrqytXCNTujW8BcAh7l9AkNx3s+7aSlcU9f52r9HKtUV+ytbKT6EwWkbW6kQ9lG8SMwBUARARUR0GznLfC5pp1z7V02y0ahSL7LMhrr2YHYHaJB7/keTOFmQJG8L3+/fVcH4+nRNzc0N973bnToSadKc0yCXJls7wBT7Y2lMAcOTSMqu/C6EFWJXnIuxnPecqTD4MOaiKxxJUJV6gwqVaphqsGxDj/moMk7jJtck6MoHt9/yW/pygV38rwmoG3vMnMtbMhaxKN53nyOc9GBuWSQR+E9jzcDrfwtgDMdj+CYjB1mc2utkDZ+L/T/ARCF68+eYBcDAAAAAElFTkSuQmCC'
 )
 
-const RisefromRuins = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const RisefromRuins = new Equipment(
   'Rise from Ruins',
   '',
   160,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     8,  
     8,
     8,
@@ -869,21 +869,21 @@ const RisefromRuins = (starForce: number, flame: EquipStats, soul: EquipStats, p
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADa0lEQVR4nK2WDZWDMAyAw3tnoJPQSeAkgASQABJAAkgYEkAClbBKuEpYJHBJC4xCx/3mPQZrS74kTRPeICwT/K9E+4EQeJoeDYCowiqwfa0e6+ejFuvzJcdpD9+Dp+kDQNUdpF0NfxO0v2Mh4V4hvLfgwQ8es6VpZ0DEGfRN4c3lZNBW7jDY+0AMTKQ317kpq+seCN4eHM1hgURKkNJXlsz/G9OuQAuRFVRy8Nay4dYR1bK3VvcZeFlg4UIIb4KBIqHxHqC9EjjpHYQuKdEHy3iv05NXWQ3KmPUZ04u9s4ccfM4h9hKMXtcYo+w9Q/ceGt/o74Ij1MOESNmdX9eQ6riC0ixGGe8FHiq0gTZ222HUmv0Hb8/A9oXr9eqfZ/P6KLXkvJ3Vq0ERnMgZOPTy9OgFn8t1gDM2lDxfyRv8TGzW2wIDLmO3Rvw3eBtu9iqKLvV+LLTuT+Bp7J9FJM07q/ybY7/eYwuNkwZU68rnonwoXbHI6Oze7z0dHQVqUNAqXNd9BX/ZncaRoLGDJpXbU6017esTysJQRP9opWRYU0moW/MSfhrqLTQkNdX1dXapF+h+EH9XQKzsoQnmUFM1uT3oCLEfxY0ALV24gTor2s5G4cehjtK0mx50bBalmtqkIWhFtf+9vIGGEiSVTKSQGy/SaMEVtUOC/zjUdo+30LhoIKb9tZ3RNR4q1QqMhFOJM2GzXg/4ZXfyRHclQW/wWxEZeZ9RouV62sJPwc5TB+UqJccHDGkJSMZwv0XNHckl0aAMcLv2w+5EBTrVAcyh0XM74vAuUJFUpNRpFYIItA3crxnIcpt1D/aOq0HIurzWHAAv+0F3oOSCceQGX1ECkXcEbfOcZqVTas+ugFg6QGlckhX0Vxb2DPNw5JxQh6/Wg8dNH9vQiExTInGxGEC4Hg9V30OeLx+BfvjYAEPwjjj7k79PrCCYoVyhOCFULOiLk8ohhbVpjoXkozBkHBWL2Ddi9vYyWxdsX0dw7dxjqNHuHT6Tde08FSK2QAuYoYN6rpsLRwpuZxcobq4jmEJiraQ9/mCoGdw3FStjpe5Zw2X7IULQBThDa/DTaQEu30u4B4v5sgSGkiH1PMZKq8WrvczAdqNnCw3KPtRi9jyHffY4TxgS6hrlCxgGrgN4CccWGGoxKYQ9wZP/h/WfweK8bIySQWsAAAAASUVORK5CYII='
 )
 
-const ShatteringPot = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const ShatteringPot = new Equipment(
   'Shattering Pot',
   '',
   100,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     4,  
     4,
     4,
@@ -907,21 +907,21 @@ const ShatteringPot = (starForce: number, flame: EquipStats, soul: EquipStats, p
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAABoAAAAgCAYAAAAMq2gFAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADmklEQVR4nK2WC5GjQBCGO1UY4CRMJIAEVkIiASQQCSCBSGAlBAkgIUjISOD673kSIHtXd72VnfDo/vo1PUkoyEL/X07uSwyiruuooow6mqi6T3Lv2RCdb8eWxnKm/K6MfpkF/apavbcCFUVBpFMq0pRoNspKzfxAHYKyYvbvFnjP6b/JCjTPrJRm9kLLojUMbRWd7D0XOx9AJw53gW9DXcOCNcSr3ioGkH3On2HQpNqWbNJO8XvvEcnDtm0Xsl6dB65DV/g6xIL6nL8Gf922ytv4FNEGaGXJq2HvNcpDvU9Wj44koR8kyzLTjdxF0zSdovtLzSnm6HH/JzP7IBj5l/uxQ4cgKI3j6K+1bYrH47GbGkRljcuacmuzzvJeq8PUff060d/KxD6VFvwuH2t04Z2uUkUqU+JpLIgUESISEzVffx/bWoHitD1ei0SlFKfENh1Ysm2MXb9CkNSedQH//v5mPbVKX7IHceJgZX1xuWcDvPLUmObJ1IxBw2QgEAZQ0zTy/Xa7eVjyDolr83i9PKzra4Yp6/1sQqAAueb5ysmm7wXoYAkg6CgHaZqSndT2+lekmsqfdt9TXBkBpGsKuQ9dPKuu1xXMp04gXUnzhBwPVAPIVsexcxwpUqq11EpAKSa2eXxvBzeHxU7XXTxsVSMIaiCQfqTbV07jszMd8CYSG9LIk15zrRAmIJ1NP3Tr5uJr5kFuI4ZkBJPrVZvvqXYByuoiCR5vfNvuo7K8UHvNqX80RMfHULBlYfgHPfjc9eVm/nlQ8zDpQn59DCiSpC520USjcAiTqZO2rwDScG0AadvJt7yAMABx4GFCOxhkYi1MbncAut2KPTTbg9BtYJBxq+CyVJUZD53t5Cs3hLS3GI1gzoDxcA6jBxBtjm4zfrQ5xm0etU0AunAYzPGS5zmtNqwT1xQqw2l55zTUwWVrLYwdbY/xvcJtZQVCbsuup3t1FYMAK5kG2mxi6/YsUc0+StznuStTAjLyRHkfwkkEQYhygDmY+VUUB2SiAERSN4d+cXafizkDz+cz7Q7VI1hx0RSVydaIAgR+KFOXI8gGBB2GYcC91jAblt4pQmog4/Mp0doGQOtmZJONTxJeX31EDMSMEMk5XNfuoAtRFmwy5yhQGytFBEGHzUlkXEWrCEbL/X78E8q/Z5vgT35uxS2iXQSXnfNfNrEVNzB3ZKIobWRT58LzMK5TzukZ9yzgmP4kHFV8iPkc/wZfpUeu4ENnjgAAAABJRU5ErkJggg=='
 )
 
-const HawksEyes = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const HawksEyes = new Equipment(
   'Hawk\'s Eyes',
   '',
   0,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     0,  
     0,
     3,
@@ -945,21 +945,21 @@ const HawksEyes = (starForce: number, flame: EquipStats, soul: EquipStats, poten
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAABoAAAAgCAYAAAAMq2gFAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC8ElEQVR4nK2Wi42zMAyAjXQL9EZIRqAjlBFghDLCMQKMACOUEWCEMgKM8DMCv53XOYGUVjpLiDz9xQ8cvsCXDf5WEtvgoO3xGCDPb29pWJblcHya9HiaCpBSbhbmWUSTSZJ4G2+398BcxnEEOjQXD1SWpVK8Qqr6P/cbNN3o5nn/1RydreuaOGgYBgWblrvq57nAzcLNNx3Ac6hV+5qRi+5ujq8VooG2bT3veCDyu370yfpeeLFoawHfcnTtsvqd42sxArsYclBiggcXkasBUsQVcsW8HUK7rlMPRLLOTaxLaYCtm8Ax2DY/+8k14RquJ2bRIbAo9ABByB2llNqKeVZjBLNrjgBnoHCjMoUgAwYZmgoybBPsDPAuSAGsNSQTZuXIF2irrE8/ssgFIowJASrWJqED2HUMuIPual2o3CrDjIS5tX38QPFNY7wC8L0GelzrrIsqqaNbzw/1thBx14rEqhNigAWyInMwaRJl/k2U41pHQhC1sVmgwHYPkwfhcvsRDmYBfd8rYOiZ42QoFwToKMQgO1gDCkIFleRVZVBC7iqM69J8QoiAM0mxiNaot6oqZ1koXgkin5LJBCPza3dDSPP2FazT/k4K4hUtQScio4Az+Qi0juajNR9R+sGdeJje8orF8UJaRg8QSgjEKwn6KoN0mFWcolc5CUFq9HM/YRs3DXg3nZ2cboQJ1z9m0isxmTC+gx/PQ9cRZDLHpbQdIO4mClfVa2sAP+RY/Hag+dmiVZlrKyupah/ALMRmWmH2hdaEIJfe2z//D8b4G+woAchV/aIh9PdEkjLAWXonvALbMiKEcDChf5BUYeUQptzpilm0W2ChDoiQJ7pzggbK6+IgDPANEQlBl+BNGi4IfFpYvzSY1mtoRWa6xl5Y2Vs9FnSJPBwKw2PGSi1dm0kKe7EQSsPliykV7B1a16FVd7JqfmrL7GWI0vDDBBY54RbFFtl+hbA6mCsP1nFrPNdZ8zgsPKEdux6Mry/6rv0fIJSk2PGpBKYAAAAASUVORK5CYII='
 )
 
-const MercedessSpeed = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const MercedessSpeed = new Equipment(
   'Mercedes\'s Speed',
   '',
   100,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     4,  
     4,
     0,
@@ -983,21 +983,21 @@ const MercedessSpeed = (starForce: number, flame: EquipStats, soul: EquipStats, 
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACAAAAAiCAYAAAA+stv/AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAFGklEQVR4nLVX4dGCOhAMM68BLCGWACVgCVACloAlSAlaApQgJUgJUoIpgbd7FyAKfvp+vJtxhBDu9jZ7l/CPWdto/l+Lwpt3AOP4iI2xF3+b+//WX7d664q127jRcRfrlCFeTXH9YPYnSXAGsWJgaJ3p+o0AGwZ/gU3vuLf/xap8NbQGUCPJ3iQmzxPcWUIy12u3CeBxVgT7k918XpbZ7KNte/juvwKIrj0p6s391psjWLwgEecqc65qnQEspx73eW1ObeWB1DqW1Kb3MVpTmTJpTZcNJuusOZ0G4x/9qYFpwkqIp1qDEcg5q+WeIORZuwRn4D8seh/YAjBnGnMV6LRtgwcLkH2q1D+ahY1wbpUMqgT3IpafAERRoSzk59cHDPBoBgne5F4DhZVleNfCAPBHaPPoff4XAPMLqZTNYJIkmR+kxwTBoZFOx3id1omJg8rre459DvwLgNnuZwJ5VXAqt/3q+vWd775/ARApC3qN31jeloc2YP20X+b44H9mPwEInX8E8XKXBQB+mb9t4wQA/XeE6qJfgMicazDjuj3nq49xzBGznZagEBASfQESmtB68620w3/Wvk4Ixw7tDGLli4HFnE7+R687E+fs5c0MRHo7JrkuNrvCjTm4zho8c5G5Qt0nFPj9NmLKzhyuzth+eZ6zdwxw9YSbeGMD8H65XxBAxAAXwM/L3dtMrSsGbx7qvEBwm2iNM3icOVkHjhWnyFyS2DR3Z4oUdSFl+EaVt7SWFhWJCGdaPBs9dsThfTMLgtOyEg2md1J9vKbxGccaL9I+qEy2EQtwAhj2TJRZYQBiAAPItIyRmTMxMp7aDnfHEjekrKmcgJiM2dIEiLem0rll4gw2tpctmL6t0RghA2KlV1iSKwvtdXF6BaASrKDXIajP8qxLIkAwzjECcthDyCA1YgMWyEAi24WCmM4LEwBh4V4pTdMLNHZbZsXMBw+K4pPgMcq3jcwIWgni4J9zKW6J3lu4I6PWgwuzDwHIAHo39KALaI1qobl4SiGKBEvEMeUTLwzwEWQ9gaM4eX/HKa07LmtPUb7vD6tWzObA1SBq/pg5g1+FT+U1G2rlF7tPjBR7HDYyALW1VoJoAfdpYWTJBFwr/WFlKwDPuzW7VLdZAim9BqbS49qnh8jcwMZdSgXM+GAcoxakJAHmHOtRYAoc+v4IYEAHqaxqgC/mlaq9Nm6udVKbFkoxjcF5XdRuLlO+cwCYvuN2rWKk768MWHYdTOT5kZcXv35D0AOoCYsy6/xJw/oyHXz2ZCpGyd5YHWCJvuzku/6bgQgUSTWw/oEjQj2Nl7OWjSxBRWF5LQSteRLd1CcI6IhapA/EHXOw4On/eiidWZiMzi+5MsGsZR+AFmbBeV2cj2aumrlafD/fyv4TAGGBGwn6+Qgc3CCepdFGdHJOWi+Dc23JBINzjJ0v8cGvuiEdEPfZ3OlUgu89IPcXgHdL4Ei3SmmlUDdaBQ6t87cQhSb04xR09JnjHZ6JkndfRjqI/NwnAES4j3bm4Vm4eYdc3YpjXIZns9Dc+DFqBRsMh2pUknw3afYy7biV3ScGCOKAF2+sXZaPxRdHBvw7dKdH7iQ4RRgNmARRJtDIHr9bLvRXVaPv+eAHn3H4+wjAeYqECejhwcEJSFMMaDa6Q3IfiCkuvELFN9ywkDq/rYOGs3vz/RMDIUqROoU5AakAhDvbnYuCT2Rb6RiVHgT+5WD623fBFhATnAvm8qrXdf7N/gU/obBc2djuCQAAAABJRU5ErkJggg=='
 )
 
-const TroubledYouth = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const TroubledYouth = new Equipment(
   'Troubled Youth',
   '',
   0,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     0,  
     0,
     0,
@@ -1021,21 +1021,21 @@ const TroubledYouth = (starForce: number, flame: EquipStats, soul: EquipStats, p
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAABoAAAAgCAYAAAAMq2gFAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC8ElEQVR4nK2Wi42zMAyAjXQL9EZIRqAjlBFghDLCMQKMACOUEWCEMgKM8DMCv53XOYGUVjpLiDz9xQ8cvsCXDf5WEtvgoO3xGCDPb29pWJblcHya9HiaCpBSbhbmWUSTSZJ4G2+398BcxnEEOjQXD1SWpVK8Qqr6P/cbNN3o5nn/1RydreuaOGgYBgWblrvq57nAzcLNNx3Ac6hV+5qRi+5ujq8VooG2bT3veCDyu370yfpeeLFoawHfcnTtsvqd42sxArsYclBiggcXkasBUsQVcsW8HUK7rlMPRLLOTaxLaYCtm8Ax2DY/+8k14RquJ2bRIbAo9ABByB2llNqKeVZjBLNrjgBnoHCjMoUgAwYZmgoybBPsDPAuSAGsNSQTZuXIF2irrE8/ssgFIowJASrWJqED2HUMuIPual2o3CrDjIS5tX38QPFNY7wC8L0GelzrrIsqqaNbzw/1thBx14rEqhNigAWyInMwaRJl/k2U41pHQhC1sVmgwHYPkwfhcvsRDmYBfd8rYOiZ42QoFwToKMQgO1gDCkIFleRVZVBC7iqM69J8QoiAM0mxiNaot6oqZ1koXgkin5LJBCPza3dDSPP2FazT/k4K4hUtQScio4Az+Qi0juajNR9R+sGdeJje8orF8UJaRg8QSgjEKwn6KoN0mFWcolc5CUFq9HM/YRs3DXg3nZ2cboQJ1z9m0isxmTC+gx/PQ9cRZDLHpbQdIO4mClfVa2sAP+RY/Hag+dmiVZlrKyupah/ALMRmWmH2hdaEIJfe2z//D8b4G+woAchV/aIh9PdEkjLAWXonvALbMiKEcDChf5BUYeUQptzpilm0W2ChDoiQJ7pzggbK6+IgDPANEQlBl+BNGi4IfFpYvzSY1mtoRWa6xl5Y2Vs9FnSJPBwKw2PGSi1dm0kKe7EQSsPliykV7B1a16FVd7JqfmrL7GWI0vDDBBY54RbFFtl+hbA6mCsP1nFrPNdZ8zgsPKEdux6Mry/6rv0fIJSk2PGpBKYAAAAASUVORK5CYII='
 )
 
-const ChaosVonBonCrusher = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const ChaosVonBonCrusher = new Equipment(
   'Chaos Von Bon Crusher',
   '',
   0,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     0,  
     0,
     0,
@@ -1059,21 +1059,21 @@ const ChaosVonBonCrusher = (starForce: number, flame: EquipStats, soul: EquipSta
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAABsAAAAhCAYAAAAoNdCeAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADZUlEQVR4nLWWjdGjIBCG15mvAVMCKUFL0BKkBFOCKSEpIZagJcQStIRQQiyB20XAxRDPb+ZuMwZ/Fh7ehV39gdU0/D9L6I/DQI8ArUyhfr3N9VQqyJ7CtNz27lFL1p5PUHczJPnqw2EJPkB1M9T2xqQmyECYlqx4ZjCUE6RqeeauDcz6UUt2UTNc8lXVhzL7QLfn3gxEppQKQN9a50etmwAHxWBLB6DOKf5PIGw72QHEgfvUP2Zx2LzMcsa2lS3GvjYt2bYl4895/yOwpJ973Ze9v8HPY/bFN9n6RZVFHHVXpyDb2T3Trt3c37UfOGYJDqgpNWjHYgO40ez1MdBvYAsRCQQSBbYDBDn0L2C+qlg1BqSG1eGBxyWsPl9VbmGuk1mPh+gwOaVX8xhC50cIhFo00Kq7X88t/EOZLl6QDGc9YpsPZ6iYmiwyW9rkwp4jCOwE/UT3lCUEskAYxw6mPOygNuq4dY8a5EUCA+1WkAAkhDC1wAHonKvjqr4AXUijMF9oCESWIfSO6hoLopStrJ8D3S0kHOezZAXvM7dOpCpNUzNclmXQ6RfI5GycCjahu21vCBJZsaidBqvu/qEuuvUXVTxAwgCnaTIqCwviEO+J1wSMmYNF3tJ8RZSfRIOqJQI7u6bmqYoXXmZGHcHMNt3GuCxzeD5Hfz3PsweO7zHwpXsOeL1e4HajzGvxNTxDlVZQ4EHhJFhi44obYN1rw4CvdFynokih655/m7mBUB9uCn/4BjGHU2ZOIBJKrTUCE5CyhLrCGVb11gWGvoW27w3I+Ufsc4OY0oRrQfbGUJXlySgjI9Al/6y8TYf+CHvfMNT3BF6YIymFGsfJ8/0K4hedjIePQN3YrI4206XEzYKC00aDtBvpdsU0qbqPiQWwt114Cg0PmQexWqUG+k7BInwDs1kd6DHTtlhsqy6AnU65d9qazO+oNPMgMkqxy3V5/oAz0IYl0CRqkx57ytzKah5KMloXSlSJHzUOmIoFVDU1FHMLqmATXJN6vxBTzjmF3Eht0xX4dpbwxnFPco3AKacvq1DJoULMXg0GbCaKPx77kz119yhx09R+ditTMX3u7injsn0HgjowGW0BBWGJshA+xuFPuaDjdpakxFaFbxON2uFPOXauixV26BPut7AAvF34o/YH8Y7bsxpLTFoAAAAASUVORK5CYII='
 )
 
-const ChaosHorntailNecklace = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const ChaosHorntailNecklace = new Equipment(
   'Chaos Horntail Necklace',
   'Boss Accessory Set',
   120,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     10,  
     10,
     10,
@@ -1097,21 +1097,21 @@ const ChaosHorntailNecklace = (starForce: number, flame: EquipStats, soul: Equip
     0
   ),
   'pendant',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   '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'
 )
 
-const SuperiorGolluxEarrings = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const SuperiorGolluxEarrings = new Equipment(
   'Superior Gollux Earrings',
   'Superior Gollux Set',
   150,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     15,  
     15,
     15,
@@ -1135,21 +1135,21 @@ const SuperiorGolluxEarrings = (starForce: number, flame: EquipStats, soul: Equi
     0
   ),
   'earring',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACUAAAAiCAYAAADYmxC7AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAFkklEQVR4nL2Yi5GzOgyFxcw2YEqAEkgJUAKUQEoIJYQSlhJCCVBCKAGXEJXAPfIDDGSz/33M9Q55OMb+fCRLYr/oQ5uXRMl7Gmmm/7GdoDwImnKX9AmUAfs/AHdQDkiuxF0eUEC0XBhzmuS/Bl2hHJCHyRKab+FATWnrwRwkbfdmeFUsVxr1/xrwKwDyUDmA6iiKdgOXZbkBrH8HJd+ZWGMCnpdayzRp1PxjuNB8XiEDtCxz8NOVbN9SAmyyg+csnGiiS8sGmME26edSCqPAUhFNfwvQQxmVxGR28RzzphRdtoHS58AMzDslAdZlNHxPVFTSxyIg3h7uoFR/6HtfgenU2juNBggLrV0e1sPslWw8cD3SZURHTublWfd0aWRGXBpw9CdgX/SHTQA3oHdKlh4sBxgDSLnv994eEsCqd/54hpLjHMYhaRq3DzUFEAu2mm5gTsnXgyiuNuAATIXKimk7uuAgKB6Wmyqi9iOYV8rEIThxJybYKzL6iU83e6AxAF6egb9NYzjcuYhSLwyKo8uPYKH5PNgoJvCK6PF8k1ey6GgHHIKZCfWOCQck4QQRBwdgfC2zUmQsJPfsAA3UwYTrgPZqPTRsZ98adycx/N1/76gQKBNylHEsOZXaZQl1Umzn6HxwwttTTtiVuD8sLCYSJw+UFH9yuz6ZuqZB3iSUZAwYthrqhJJB03iZl0GnUbGuvUKxMTnjzrncgufV/KbKnOZveM7VAlEmv6U7JZsoofuzNc4fbkDBSOE1DAOk4RwXImon4UK+q2F5IMhWfFBqC1N2x6l5fw2YLM9IY/W72esCgOakZFy11F42JSl7uZkmawObMExPSTcz00QjwDjRNPUKkCelsLQxn6QLOcIbnKhG1OGWh+vF8r8q2URtoJTVo35gM8lARVGY36Ba1nBlwIS8fuW6i0cOlMqQtCRXaYhSdBiYIQCarfEYHsHuoCTWy/OTkvfHXSQxIXO8dmbbXVVS/RzpUcsqcIA0pXme64ovvgIxPrRCJZhBnBBHFrmrapzepolbbtl3RPrI4bx4VTnFxeWk5K7lcuRgfkySYM0RM2e5hXreeA2uBV/WaG+gJAJvJuwLk5uR6TfTBm3qyaU2GtkqeFRywh9fJ5gVW+ntUprd4ZKCwUFxEh52Nsvkr0Qdcp9gldiv7o6OH6p2v43UtGTUeqekB85j29Nyb95vSUndiM+1DT7JrvixVeKqVCDIXWAzLDfS9Rg310FwNgy0YL5vbQclJxf6MjEeSrAR/oaijI4VVvj1mGbMWZ+og6PbzWduxRpppQVEWdodCti3wolrDpMflMyALL6naniEK0a1po/NQEnucX4lp69xm2dk9v75Wso0juh5t2BdZw/VT+2dkp34nvt8Q8WVuCOk39iCQ6X2YPYespGv9LuTyXD6qe+3SZJflFwXY3vl3zlVqAPr/MzD4ekLweR9WO5SykrGVC2n7fxabqLWo7bj8nyb5QZQqS0/KSmp2KiTWaDcKxWY0QGxjjW/rTwLPIncUYojlBqBG047gNUCJu3brRoWtj8pubfQBiRjxR8leae8Pr6dlQpbgyeQ2yvxa49XTlkUkw4PF4JVUOidkufCxCoaFStQ59hX3T7W6C2kzB9KS/6SEFZJrY3KDHBvff2TkompOa2vrUA6AFLWdL9CoampYSmtlZJZE4Rd3HxRsRhImT8fpfAZsEkIdwSTVvYOaDIPtpO5FKwfbyM/Qdncru2jPNzeQKj1gcwbhl3lDRgdTzLCw/3U4hFAvCqkkfbO5fAvYHZlWyizQTO/sNqNMolTmf6U48n27GK9P/Iyi/+fxMQVn7zuE5T/T0s4s1rzAQd9smAiCJLQICGvvR4svIudyszV+wfT35TaPUh8bNo/vdjhySt5m9FD3/mp/QVYrUxO8/7Z2AAAAABJRU5ErkJggg=='
 )
 
-const EdelsteinMonsterCollector = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const EdelsteinMonsterCollector = new Equipment(
   'Edelstein Monster Collector',
   '',
   33,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     2,  
     2,
     2,
@@ -1173,21 +1173,21 @@ const EdelsteinMonsterCollector = (starForce: number, flame: EquipStats, soul: E
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB8AAAAgCAYAAADqgqNBAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEmUlEQVR4nL1XYRWzOgwN5zwDTAKTABJAwpAAEoYEJmFIGBJAApUwJAwJvNyUlBa2732/Xs7ZSkubm6TJbfmHdlnp/5MIfwq+rh/+j1/e+9uPdf3+uJTec2ybOf5P5Esxw9FIwaPoAs9Let7or8XMfm85tGfpjHsMPNeBNb1P1PejDGjry+2WyzjaOCE3T8e/zde2yzIHfASXF1mWrSzUdR293wNlWRlMSJKY4jiWVkX7aH2ZppfoqaqKQxsFwAruJxpe8rzIGQAFRwP+Rv4A7PDE8/fAE5sHPYxZfQPwrq7rQGld90F7HHdeWEBd74Df00Bd3QBLwKNrUYqn7GJgwMGZ9cPFEPMW1l8C8eR3C2/5xb6LzjNCYPKynbqioFueyrNnQCDFFoTpfdacXelPIs6ZpqZ52avBgVfDQA177r/0F6ecS9PnKZ2arei8xK7y3SAYYRY6GQ/n5nmmO6ri0YXg89iL5/1o6CB2S6gTUNQ2fu+XJYR5XqhoRjJcRWmyG2F5Yzcgb++09H2gX7L9meeScPC6n4U5Ih9Yk0dlaHMqmzHoiwG8tLtsCz+BAdE1KwQHGCmXpFmWVTzP7xUny+iTxGqRnwIML+Gh2SitYaqa3rw9JuY1i/Tbm2WclN1feG50Mb4BzvsU3jMOg9uwKzBUIyMfTUHPAcC1A242brylv7m7583uOZPbKqUX/8SAiXOkIbq3A40c3ZEjmycJ9suCPxgYAze2uis5pZNdoQJP74/0s+uFmD+4VSNi2y8XaWVOaQ3wBfuNqEA6W2q2znmf14T3YeZkgP9QUm91ZcLTQ8JdFilZ4+cNjBywiq6D18+W5xQdO2gNMrai9lNtq+19sYeJUIvHG/CrtS/LBtEymwEagXBrfD0buQieeu4PyLkOBtNy0qyGYgUGKATPAIXcb4tngOUKrL+WvXjPqcSn1g58BHcCAlFgyWqye5x4ufAajGS7eqsiW+DWjM6A5xecr+CBmD2E2GN4LWHncQC97gv/OCqP+OsalWU+Df0GN6OdjTq2YhVijzW8AIYAGGF/9PFpjer5Jl8vkODqkssLzKX1/S28J4/dPDuGcgPzVXkwxdHufoEEfy+RJFtb2YTDQmUurWMohpe+xxB4fcx2rEdpQ1/TWcqlWOg6uEAyCURc57t5WKRlAubSOvY9U1Ad398vzoDUS1LDWZ/k+znh6pwvARL2aZqoaTKxFlkPVur3+nSE4m+B9n2iETbrZ+d11U58V8lwOBL9qvM0DWkRF0PsHSgTIoSDLfAOFkRCxyGYrxdM3HwA6On9XeeGvYTH+OHadOEaRa1C4ZFqjwID4DGAUdvbqSZSmdM9Icz2+731j9ULb8XHKggvh6iC7KrKYpfVIr010AMGr03QC/2PR3PKdicjHy7bJORmwQqG1R5ojnYBBANUNKs1sxHqDbgBMPRBb56HWxqA+x8Cm2B2w4pa9UaNKLybDOoYoBKuPREfpMz0Q3+QcHzH5oS7+ZOUqhqZoEbwBeHI1duhIbZR+MFWcBQH6D3K6XPJmH7dPgD0Muybm21AE50lo/NXovYvrPez6XXZ/i8yVZn7XJI2ZgAAAABJRU5ErkJggg=='
 )
 
-const ForsythiaCorsage = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const ForsythiaCorsage = new Equipment(
   'Forsythia Corsage',
   '',
   0,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     1,  
     1,
     1,
@@ -1211,21 +1211,21 @@ const ForsythiaCorsage = (starForce: number, flame: EquipStats, soul: EquipStats
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB8AAAAiCAYAAACnSgJKAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAFNklEQVR4nKVYi5GrOgwVM2nAKYEtgZRASoASSAmhBCgBSoASoIRQwlLCUoKfjmSbT8jOu/dqZpMAts6RrB97oX+UZ0Fd3VL+N3t/A7f4iOOY5nmOPgEmhjK3Njoq4L2W9/rLt+efwO3Pd0MmTuQiz2vb933YvAWcJv5hK4qickcgyzLbdQ3/mmlhAtev/I3gL5YbD0VNlQohT0ABfxjwauuRqKKS7Leh6GuxfrcCQ0fMRhD9fHdvBM7ALRYadjeAiRbxQFNRIKCAMxOAYQbGybftmECO+y/Sm3EwAvqOBLbgwvoIrEpICExT7ddGUXST9QCEzPMiqyFws+rwBKBreiPgweWMwRIL5janiZWNo6prXi9R+BqevPERmBdDTNE9BBQp+Ua+H7cbpakSS2JDcfG9IdCIHoBbdRMFNwE4qzqOKpz1KIogVdfsgJYl/PTnaMv84QgP/In9NfVlzZoX8UBbP8ImsbzlvBHXLTNVVeUeKfCqCNbcqWAPthPZpDDsjYXSytBYLrbQxAhrVbD/KQRwBGVZquYkWcE9MAQLEjpKD4qs2F2yI6ZZIwKRDODwjO78V5AGWho0eOCtCHgcI2LjQABnnTmrPfCfSesIiDbRZxyPmNnecwlcCbiILyRym6oQAiZNxcU7F67nSw3fLnMOSE6vhF1fDfvnml0gkIke6PPAj1IM2aWaXPAD6wnsrXCCnJa42SI5mYyrKSfPToC34BBrO06dXMFAQq3frIDehRFGQ/yYypYDtIgpnBDtgb3VdR0WvJfXZ0q2aoxsBoFpWujGLJWAIzM4ixkYKYaiwjVe1iJmjFk98tDM3AK/NRUBHxqyaYH0KsWtKI+BORNAKi2jnjEEFgO45SBK2Wh8F3ykCTMpXWOdjBaXabU41Hw2lPi2nrke71PAuTGQsmAMrl6wELmM2oPgkofsalgM4BQB3SqZnj0w+mYU6xeIG/ZKn+N4DD0BEw+UlDfLAe/L68LFencmdXufrVcg3+Qt12OBxQAemXzBZTSD5a16bYp1Dxcf8nFQtgsh3qy9cfX8Ia7w9oL2mNH17EiESNxrm6x81o1aF+BqWAzg2IFxRdbjui9vesJFhHJ+lbZ8Ef/fcUMfbBdz5bIh2qFvcu3R6BnD1bA4CJ5z0G0rIUrxkQBiq2bPXbY3LDceNxBECgxz7+sm41gwAIILZyzp1tGa5xuR/ZxujoCMZF22OCMcOKyvGfS7CbstncmHAiKSfH6GrrnMk/zmVkouDkI/F1Zfj1l6LdriWlpdSG+sQh5LOsUaXDjjXTEK+9R6tOSq0yEF4xeU5Xku/dwNe09ZjKFBhwDfUs1K4H9LQivb9PAM9ycOuIku65SpN3X82YrfrE1CVGcFtZw3GVdD5PDrydbf/NQz0FFgzH40U7mAwXHWUhmD9R4U5XLTIMgVMvnmoOIikoa16yQTqpwTHaUxz1/woQMfBQKYuXpXK7UX71siLIXceH5DL4DYgUvzfRQCEJDYznB7w9R66eeYJnVqlaU87L3IzL0smKjfAQtovdb5EOVIVRkolQAIp0XmXjxWd+sLhMxxIdrfCNTtCooK5qePrQOZi3022hckDV39xx7MBKqj57mwc+6eArC33EsgULc8xyXqTg6VU2C/B69JOv3ibGv35tLSdigp+QjXwXSVkzeWJUyXkF+ARbJMbA1B7DqjHNHA6Yv6L1oPVp+BR+6lYHfvE7AMIR2KxpU3vq/3s6GSedd19q72EewocFB5v5KbGU6P5bf9//TPAW5qPQP/1T8GIP8BdcC1az96fLIAAAAASUVORK5CYII='
 )
 
-const NobleIfiasRing = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const NobleIfiasRing = new Equipment(
   'Noble Ifia\'s Ring',
   'Boss Accessory Set',
   120,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     5,  
     5,
     5,
@@ -1249,21 +1249,21 @@ const NobleIfiasRing = (starForce: number, flame: EquipStats, soul: EquipStats, 
     0
   ),
   'ring',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAHzUlEQVR4nJWYjbWzrBKFx7XSACmBlEBKMCVoCVqClqAlSAlSQijhUEIoIZSQu2dAY87P+62LyxMTER72DDPjORHa69XQf7Wqcvni8Xr/eKn+87n/Z+zT752VCqQpJkWJVEr4ZXo2NKeG0rHbBvYH1C9jq8N1OvZjoNNvndFLMQiAVBQYnEmlcl+XT/4e5fMTapcOE/jHa7hp6baBDIZoDocx9naEUdsDipY1kpsjaQ0ShokCdKm+PtAfrxZ/Qxk0ySJfE6Xo6HzBUh7P2xyD6nQgk7kxvplw0Zb+OxCr812ZrRk2FX8CQjFIvFQNTyTKxWzj86VaAdSLQpfq/nwYqDFuoFfMUnsMAXmT0Q3G1EMee13xiCUa3W/KFFW4E3eGmKpesJbUwkDpWmkG2SdC+1rzaS/XZeOPIWwgvblcvzYH8V/3fo4+NNr2mib0b9vfFPimzNZpfczJtRC3BmPNHrypgYnk4gqlOgAs3SBKJxtobMtKANhRdt6AI15vi/tae+gXYLJRZeuwcIz6FwwPq9g+IYm/KJ3oR5ORMkgHacB2H0jZSAMGd5jRAcBShu9wkAC1i7vf+5SCh+1T37r1+aTbP5QRGLLJzSGZBiA6Xs56xQJ8H4h9An5Sv0Gwqg43a0Ou82StFW9caRJmh1VbHAwki7rdFn+/33ArpGRr7DY4fFP9AbM+Es3XmDQ7rQoMAis0mDAEvwONl6IPFGEQbs0yUNMgDrlEN9vn0XDI4nA0ODwrlJTyKT+THT4DfYsz2DGYxscazq8ZpBYQg90MCHOvyRhPjtWAMvM8U5yJlgH+ONXQ3dNo8RumX2mRiVscAw5+IsqdPBEDHSXYI3AxTWI1XKpVSNr463lSy5OauhUQ7x28oRYQP8NEKse9PmGaGWetBWRCnz677G6et/nhhRwv2+vCPViVffcdzeQizJAME2t/Oy8rxuiNkgFosXmH8IBzTQsmhkS4dhBeY3JHk6tzB9wzPuEXvlcLkJhQHNvLp5EATgJyxVpV86qSy25zmv0gYZ93jm+r9Quqm+5VNmYOuCley9aGujUmHhoKs6VtXUlMx+6uqINqFpfb5OwrruwsGIAaDWfHgwxihlcVD+KcfDSSi3AIMoPAmz7kg4eRt/wbQBwmjjklcdN4cMbEcF/qYSpZNe5tIC31e78kgaOIOL16JXgScIqZkgR+BVUWnpRBeCu37Arri0dX+K3je7ZHWMCuItXBIlhxtAcgV8wR5Dsrk9XJRg46Cn+MeWo/Vhy5l+H+vNHw9PPtTKcSCwvvLCAfXrdn1pn04qnv4cDseBqBHdOOuN3x9LytfZSyg5UxInXOgwp9kV4oR9M8HKcSbtfb+c5AOP2mTJl8s+1uYnJjNXFe8nakW5+za4+tuAQUF/APnZAGoMaSMJnBpEBIuBdSzIoAjbd5h5QUD3mRfYYXzlAF6LIp824fEQALHl49zCTJENc2m2wSIMwqjrYYAPq5KEF7RIniI4CDj419D3CO7pHq+12yUgvTfG27H2KeynM7DlyBeOOs+GzHagBAi3PLIXrr1yBauF7nR6HIgvCQMFEQE+VuBiEgIETMcOwQg+w+vl9/zFhaUOoU8wyp66DAGU78RDDC3lN6r3s2Ux/CJlJiw0/aDIScRMhVikNjzPuD1bABLhzyrN2AoGd2P6EfDY+ceJ9zDEu5hPxo90HRba6QE183BrGWd9xUDLhQ3WmcCJCVRWy0YuNUlswpMxYIkdTkckp3b+cVMPjO0KEsQfI8sZNiMZwtPkyVPiM1rynDsmOq+aPQyj5kf2hfD5GaKZehHHHrxUg5emxDIyA26RRPIVZIvC9RtmvepvK8W/SuzgR1Rj5xX6Rhs26g7NT3Uu9xusIuRllmZA0MorC6iOJrMxMAtmLeKZISKM7zOecmzUG1ZoHoE5uF/wm0FdNSULPpGKTumHHgaqpEa9zs+YvL7wuB3okxvUFgkehKsScwfapoSvKGEaFOi9Wvos6c1fkAal4j27c4h/g0g2SzjZI69uadlA9bHD3koahYGXktwxIwvg+H4goqomSQKUJXv4GCiz8UEjM1YqZsWsQhPMM0eksdrE79wO7SqAjcSM09Aw/mxYp4XlAubBEOlBHldpgIdZx7MZBkj7+AvhYlPsy7jHK/uYD8aGePbcOlSJtVm+qXZa9CZR21AYji7Y4wwol3/lZ2RgKQL0AgGo5A0DGFd6RhlVCRUeuq4SfGLLsx8R8k16F+elmC8kGbGJUOScwvL0iKS/+3z3wHsh65Vtewq6HOPLDDLrLD2PgMFQ+vXuv2Ol12desPg7kbnr+jvHH5pVRz8RlZEEkN29v0lo5+faPkWs1HdnQEdmVSrde5OreiAEOZ4pE72AFkS6qt5cJvQh7nKiSpZVqbebw5MKhleUzWXq9I5gknlPF/wxRkLCBAUF4JCnLVWRa0Oo97kXEEk++q2YOhUQNAXOQyf5oWo9G6YaqtHd04Xlqt1fc5/4TZgIqKSHMMBXG16mA+ftHTqjr39ecjiLJqcdw/kU/iVFj5PPfYOaoBiOVIj6c54sc8eHlt/AfMFiEP+Pw/Ea7W+JNxYEA1wZY8UvlPSpLIAIKQSokpLyXGKOXcGPAp3wuMXB8V+pcyhyrv/ZOip1x1pXpgjj36FT01x6zXr+/2v7btvel/jvWBtzu3VWUAAAAASUVORK5CYII='
 )
 
-const DiligentExplorer = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const DiligentExplorer = new Equipment(
   'Diligent Explorer',
   '',
   0,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     1,  
     1,
     1,
@@ -1287,21 +1287,21 @@ const DiligentExplorer = (starForce: number, flame: EquipStats, soul: EquipStats
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAABoAAAAfCAYAAAD5h919AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC0ElEQVR4nKWWj7VDMBTGr3O6gI6gI+gIOkKMwAiMICMwQo1QKxihRqgRvPvdihdE6XtfjxNNyO/+i+REbg30d3muzi0QFU+iLBjokt7oWT5Id+v37fG09ai6btNPtKOkSGb/u9493nef59kFVXlFWalWACMda8oeam+a7z1aKsr2IYdAxqOlJFQhUaNr0P4OMqEKVbQGWPq3R6igcvi1eCvZZryO/waSWvY8bxhbUnfHQ55nt871sweygUNZFJTG+WpQ+vN8F3IEJArD0AYbffX1OALyrrfbkChFVV1PkydcJEe9OQoSdV1Hw/Dm9H1P8e1G3+gIaDAAzR4EYUBt29L98ZC+8/mMwX/nSCAAKA5dFEUMCrlVVNc1hUFAr9frEOzjNmFDgrEg8jyloiilD6qrip7PF10uZ5O/w9vEFKqGrc64hGfq522SZaS1Fhg0AlewJWgKFTyA1bg3sDxNKeTwpdyWZSl9aRzLeFVpLpiWgU+GXVYwZ+gCjn3g+3Lvc2vC5XM//puxOL7xfSD3WcYwncu7LrlB7I0/TiZQ/sGbCHnh0sZ4zJ5EYTQaE3D4cnth74OM9RDKGJMjVwZiFI2TIkcV56gYw7u1vpYgT+tqUCqRaio4D23TCAR5UZwfoHr+lDfcj7UECGAAqITf4346UAzy0PV6HYrivZkh+Qgb8tJbHiGkmBwLGEKoEU769hSE5MLqSLzoeXGGYjGqrLzfxRN8lpIkE0MyDjd/C7em+/xl6DhHLVtalu/NyDiEVjHgnTfjof9pqs8gTASrkS8jhLJtain1ru14y+8IOe1+j0mGODs3LUGTWSZE9rqYcsSNzx6gnA0gT6e9PKT590MuA/IXV8zxvnN2Zc0ghEYAA9DoZpoJXjfvastHkA3BaaM7WZMHVgtphvGpYzvBC2naCBtke0SOh9YHhbn6D/ez60S/7tkwVwn5LksdfU74D04ZYU8DeZZ1AAAAAElFTkSuQmCC'
 )
 
-const SoulConjurer = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
-  'Soul Conjurer',
+const SoulConjurer = new Equipment(
+  'new EquipStats() Conjurer',
   '',
   62,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     1,  
     1,
     1,
@@ -1325,21 +1325,21 @@ const SoulConjurer = (starForce: number, flame: EquipStats, soul: EquipStats, po
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAABoAAAAhCAYAAADH97ugAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADHklEQVR4nLWWgbGrIBBF15k0YErwlWBKMCXYgilBS9ASQgmhhFhCLCGUEErw7wUhqGjyZ97bGaMicLjLspsDWRvpbyxxDwCN45V/y8q2SPErhH4gOgsjIHEg+6H5HYCzIp+/HwI6jS9+SXkROiGln9R1HcmypTJNTWeptbmH76VsqK5rytIfPzY5Et2rNSiBxKIoiFRPOtOUKp6kl6R5Iq0Ut6UkFU+aWYAYlHnW3IY+Ukqqebgbi7nOoida7NHMUnVcuQGQ8L583hu7BCV934/Jieh1tQ1GDVzFivYMfRRUD/b9eMHvXE0I8h+4own1R92xKyoqBkF9WkQhhe4pyzKqUjEB3vNsKQrNdDx1AAqqKt5VNURBgAghSOwA9kAzIE80IoIQrkdZmg+3THKkZtQJ9RHwDcgDEZV1ntGrkqahEQwZvod8AzL7ZTIHvYOirRS1oFx86voIjIF83hvvudmfCyvQ+h3OLrLHq30IgJvQJWgcX9ORHhjQYKKMKC+YFwSEPbd0apQH9tPnML99UmQSK1S09wfx+TKpKGocdQ74aN+wbxRZJRuQPM+nLosZGQhYW66zRQw0Yk/gLkBSTpwAhZC2bc0zzg7y2xLWSMXJVEfdN1dkDmZmIHuWTS77H/MVFiEMl10fT/8RWdi5CXcoASS2ZyYqeYGNpKiqw6pzYKZ0sLmJV+7aGLelyJbyjcFL2B4EWTyf3I5MwtljXcr3VgiYA8IQJO4KIZ8UJTjZUIUT/40bHNiUenZnDLLMhd8kVW8ICCzEqUMJQYQ2TfNxrK+wVpWm088P3Z/PVUdA4CqAcMcfElgY6tgfHNqzLVA752jHfGmnSGagKWvs7NOslO+pgrugBJDb7ebb4ToH2VITVYTEiAQZgzl3OUMQmP2ZIKi6U91CjM+iKuo6wMzqGAYDcBmNUNZd7D+SN8Sbe9HucqB0uk4s/eF6I5XAHHBpLltbd/n9QQgWAQQf1CGAZNPdxWrKE9QhcGnn99/1MG2s3AYLFTkLOzXThKY+IK2YWQe/+svGOL28DoG8ELasEye0MeAevMcAMaCxf1sPwxBWdBEcAAAAAElFTkSuQmCC'
 )
 
-const UrsusDefeaterKing = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const UrsusDefeaterKing = new Equipment(
   'Ursus Defeater King',
   '',
   100,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     7,  
     7,
     7,
@@ -1363,21 +1363,21 @@ const UrsusDefeaterKing = (starForce: number, flame: EquipStats, soul: EquipStat
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB8AAAAhCAYAAAAh3nDkAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAElUlEQVR4nK1WgZGjOBAcV10CbAg4BBECDgFCgBAgBBOCCcGEYEKwQliF8ITg7x5JWPi4Xe/VTZWNkIbpmZbU0i/Zt4f8ezu8duyBPx53/JsL/pqXoXH7urS/f+3CkMvE2WXtLgYtaJPAbuV2AkzNwK38vT2Bm2rfYxd8JDgqMHkmt3Mpw2hldot0VS4W1QylSDeL9pXwie/GoD057esaI6d+Fgsfmd4HPwBY55xBGIAJzHgO1SI3Y8QNs3Sd7yOIPuFzyq0Cse+jnqQrcwUf/VS8Neer4zA7TYKV07opk4/MClmcrY8Ynx/OytWictAd/fH9Luh34LtJ1AMAOoPiFqWfFp/XJdNx7XPLl6DvgqdJPG63u5xORehaUiAFTsa/Bf4JuFpZmjSZV3sk429ZCh6F5ZC8H5J+cW6RF/9D8kzH01jp/t5gRPAHTD8+Hj/U4fPzP23zSbPO8V2uoLY+FQ/OPah+cEVzTbCf4013BkOlfqN+wT/GpAWMw68IXJxqSR3qttU2n9EYuOacnnOpAGCwp7mt3LJoP8enadQfjcBtW68xi7BeYmHbOT/bJ1jSvgOswBq3vR+ioBTlJJABPx1gu4LAELTJvdi006LAS/MEZTtLFJrgB9hafWecDDaXEkAzgbpOin5AApUcAGig2We063YE+FOE+EyBL5ergldoz5Lp2Ajge5ieXdpj1cIqHVRteCZwNV5EYrWxchrbnIJjb1fgaKxYKwnU79JOevueErmob2lywiCBQccnKBZB+n4KCQRth6K5C569FxkCm5DYDBHK8HPo+ARDx+ATad81Akfp5Padl9wDAiTvfaWs3uHkvTk4ICiTwawqsA3fGpOv7VfbgLOieFCkRhXLxAr/uRaMRldCwQY5l8AEm4ssGznwVmFLtsOsyaXgmwXHE4tUsmpWb7fCotUZ8YuOyVLTlfYXxDwsCKtx/FHr8B3Xw+6C45wvrtQMmcA4WTmXmVQh2YlHM8B4mFSVZ0ATtNZvN/g1gQUeowP8CMwx3gXoe8R6iMKzob3o/dxQtSZ/HGrA7AqRmAZsm0GpZmBWrdsKiabAWdXhpZOm/hAechxjIa1mblO4Le1Rmykuztq1AgZiAgxcoV1h1WaZp8PvCNIy+ySZHnzCBUJjjoHuaHU4+WLlmkAc9LIqcjl3oHSGOAyaQLQJl4bKLNv3ABoTXkwpZyzefhgVuF6PYo8XK087HlHPy8yB6RYMXqA3o8zxVoqFRXqPNWk3Ot/nrpHTllFpMDZCH8hL+5znFfgVfGNxX1sKRgCJVubhxmLt7rc81Qjskm21Z6/gh/QYJQNV08g0+tPA6PbxAVktKeVTAcPcc4vOM3Qekhwp11g7N5zd22t6pusUoHLsQZ0CBcDpxeojMC2OCaZKsnxvrn90e31EoSAwxeaMJAovENLrzvC0q980yR3JtiqlTmRL+e6d7qs73Eb5ytxJXxdYweXGaU50OyYWlaz+5jL57dU5TUAtgEXZXRJZjQvsHeB3wDcJ0NYk1lvMc8V/tbj+FnxNgI2YRHqT5eUyAX0L+Cfga8BUCf/k8679D7BovJa/LBaNAAAAAElFTkSuQmCC'
 )
 
-const HenesysDonor = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const HenesysDonor = new Equipment(
   'Henesys Donor',
   '',
   0,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     0,  
     10,
     0,
@@ -1401,21 +1401,21 @@ const HenesysDonor = (starForce: number, flame: EquipStats, soul: EquipStats, po
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAABoAAAAgCAYAAAAMq2gFAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADu0lEQVR4nLWWjbGiMBSFLzM2EEvIloAl8ErAErQEXwlSgpQgJUgJUoKU8FICe05yA+HHWXdm985AMJD75f7GnQQZ5P9JxlsEyXAXqY8ipx8RtxfpN1bkQynuuxN36f03S7G4DNbXeHeCvuw4vdstP24rI4WB0jjxcuIqG5QDYkpsAb/lpxeD0WBefplkPe9utYkVqLjgo9qMECoxD1V+wmixZbMPkFIh+l1cX1dra0dQ300W5S7siHeDZ0OfVLCgxFwGyBMjfssFI97H7yhdZfzKqG8Fcv1kkas0RvC19UotfveS5yXujeQ2vLe06ok3+7Apm1jk+m1QdmhC5lnsqFMfF9zhAfFCPPIrXNbtkRDJiIzoNClaVZRj/Znrm6B3K0Z+8qtyHnjSxdylbY0nGsDc9zRKbmCZ89bxqrmwcjPAFmgGrLW2COyPDkAoqHT7Os4Aydot2cl7GYFltExfUHmjz80fAJ+ARmDDen4ZaSrNRpDuyLjs6zPIp6DhDv+1MK28aX21ThrQb8iWc+td/E8sEkfIA0HH2PdGWDIWraOr5WN5Bxqb7ONikPLUjNHGOBm9O/8+ZqrKpnVboGEYjHcPpW1VuV1/yCkmxvMmvojbdoR+lN4BghphgyxoDcFsKdpmemjvHZov5ovMSQurpGSBswQ2Nb6PEYPvIS8GA5rzws+zg9tr7q1pq1YcEqXEdw37bSFvZQkaXnBD22Gn3wqxjAc1xCZjxufiEn43sKSsQ03dYdmxWWdiChpuvJ/VBd5dPINwTFy1fvDMzEMrnc2xpXaM0zls4RbUzGAzi04PCRbQL4wJ3dV0I6zXdOaY84ioQvaVV1gFD1gQTjg1O8b4/N51GSp9GF5r/3pAbWZznR509rT+/hAgb103F80wWkJX9RvFSYi56LG9Pr1n8hbEFI6l4+OxsMjPXybt7i9Aw/BIQKiTCAoBXwtjlMKisIDhvvfJUH+FjPNH8mB8nYQUntzE2OT+n9EEr3Fe4ZQXc+axsm3aLBmYkuxdbCuseOcDransJqCfXVhCSFeGKjsujvGVRXzJXkUXtljiK14JTOElgJZQijZA2Bk041Z/L5eg0R90GdsKK57FyDrx4qbAR3cR4s+qbtzEGN547RJAvMT/VUXRlafQVljx9iYriRDf4wBh91YfFwnE/7XYJQCr43eWuWtUxt7FtsKKXwoDz9nD2AU8ZLN/pxalX5/jHAJ7pTFsK4ekrTzVQg38WeYl65bXLjEvhaXP1P/U3nVIJp/6+Guxebf1/Bs93LanynhdGgAAAABJRU5ErkJggg=='
 )
 
-const LightofAzwan = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const LightofAzwan = new Equipment(
   'Light of Azwan',
   '',
   170,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     5,  
     5,
     5,
@@ -1439,21 +1439,21 @@ const LightofAzwan = (starForce: number, flame: EquipStats, soul: EquipStats, po
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB0AAAAiCAYAAACjv9J3AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADd0lEQVR4nL2X63WrMAyAxTldwBkBRiAjhBHoCOkIyQjNCGEFjxBGiEfAI8QjcCX5gW1MGv5cnZMCfuizZEl2vwBghv8sBIX5BaAHgOYKcD6fuWMUNYAcYHoKaI6G2z59PzQaxPkCJ6O5bRhQzy8ycEh3c9DqsF5N255AIRTECb+kbRRP/NO497g9fx94PoxD0EcGxZZWEWtWSvGLESM/lRyXiU3DltgBY3hvGhnG+PFKjSCcLieB85UZWCGU91iIFqA+Qfcj4XGv8WlddWisG+M2L6Gt7cEoDXqBxoatoGGAGYcQYKQohhhj4PhtFQohEiD1RW5NYO+gqwmoaCYIAUg5vT/qFjqtAswvojR/D3SlgODfV5N00DdbZ8fM86u1Ew68TbstLcK11vPZuZSeg9YJsOpq7qM03ALvhbIotky7p2XM8wWqo4b+cgF5u4GWanP+XigH19O5kBQ3P0xE4DcD1TjCX7IF9ZFb5W1k0ZKX5EqdAClNprPkxcDePXXRmdRlsogKRN/3/C2l5JwsAXm/MfBgx55WBCSwxPqJk4tAjQUkBrZYtxtM0elO4BDRn1vKijeAuRDw0/18B2W3fgIk2dhPr+cj986AJ4TAamOTfjkeeA+dcJ+r/TnQl0aD24OdK3AO3TzQCUinSpx/jSuxpf304JLFX1EjRxwlPB1LxllbVTegSkOHNAG7W72oEnQwGwaa9BjDo7EmK4Eyul0imaTi6wpF6SKu0rhqQyvGcubAdZouHoBAslboEY5XgdYatNYugoA9LqB3hlNW8CHu89FbmksKlqug8sBYpjvw/vqSOSx6K+9e9ndwAVouzHJ2htEIJmXdLbop4P0nBj5/DVtLT9KjcIuUSXN2dXOAKJiMS5kQwXhFiQPJw8gTNDYGctrUid4g5ZsDupvW5nM0FauJXOz3tQgk0WoF3IKy/FUU3gFd3S0C30Jz5SWxeatXwJarhtmc9xY6TQUrzRI0dKmmZI1dai008Sm15+ZwTe6zKzYqf011OMh9MHlIfix+Aq2wEvEVJBGMVj0u0UspRJIDffdeaACXOqh+1bx3WDIh5DL9cyIKw1ebuwX1k5tCm0DQo8dPafV10Vq2gCb6raBi4xdDWdRiwCkDlMC2FtqfiaEeUEfPxMJo7CCNof8pByi7NAaupGTp1oT8+7rRl7/nP/gHfXtBkM4ZFsMAAAAASUVORK5CYII='
 )
 
-const LikeCloudsandWinds = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const LikeCloudsandWinds = new Equipment(
   'Like Clouds and Winds',
   '',
   130,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     7,  
     7,
     7,
@@ -1477,21 +1477,21 @@ const LikeCloudsandWinds = (starForce: number, flame: EquipStats, soul: EquipSta
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAD6ElEQVR4nK1WgZGjMAwUM9cAKcFXQlJCUkKuBCgBSoASQglHCUcJoYRQwrkEXisjIwjJ5f5fMwy2sb2rtSTzRs9tpH+35NnHZwTG8dsRpTczVC9n+GZzoe99eAaiQyNOPCTxVIG+HKjrw9rB06/MpUTH/c/znhFIJvbkqlkF3zaUnrO7yevxoXxnD8I+f0tAF49F5ihjjxpWISsqea9Nx3VeXv4M/goBsboZaF84eSMKbtx+r4f43fZ13qv2CoGE5RxPbREHdi1RcZnl3h3K2D61CEIJ1h+9f5WAbMabjrcqdN4ZrzwsM8J+exX8NwTEHMdCshs2ARg4pG35uvy/JkApZC/pf9oWgXX1U2+TJCnFS1ZhXVzGcax4QqnzH+3xIwHeCGun8+VKtwJL0DckwiL0DTjI6HoZvCe8SUDADyWHMblpqOLNywVYJCEgBQ11YuNC9ijrNq7v+p6+vxranfwmCSUQwS/VmbSCopAhw0BCHOL6jo0Q8cHjMI6+BOEEfs6OtE/TsIc/0imnhyTetsB7MwFjJs15oxwbkd3oETgM7culeEhiEQMKnpdtBEf7ym+Md/3AheaiJOYYWIH33lPXDXwbDjIGK6qMTiXUqoWwkrjLAgCez/M15jtAn+/GtfB0nXFg8lzeR8c3aEp5XosCj2wigKh3iw/H/dzvjRogdOhCGS7SmrIvdsbzzccBB8+t/K/YQgEAXeXMW2rykEIZ13xIDxMF+GnbnrL+Q8Ahfdef5e4f/PZPgx33HgTnPgjEAoNgAwhIQHZLzFrKd332VcVzZ3gZb5tOCKrVZSNn/4oCU4Ep6VBX0cO4kS8oZRchv8j+6RjcUVWcqea5CDa0ickICSLJfwsOMhfX8P7LDLJHICQuxwAsZxuWkoQvZEhJPB/qOS8L9rj3rN5HSddP/sZ96znaavmQ0bUQEo+zQIHnasaefoWQt8DwEEXmWdCJ11MGaBzgT8mSWJXiKgJr/gYyQdaKf7tQ33EtfzY1feTzYptqx/0+guuRpM6JWsTKWBKmFFdyrvspiHQh+nK+bJDZBickt9YO87+Agq8ro1spFkoxMuDD87nt45npGfYcZP2UBzao3FTx1CAx5qp6AG3p3tapuogBgF+LsEzrv5VWVRFiG5tDLRADeFCLJEVBVIHX2RAJKHByCDKiZsPsOUMBBXhmAAcILM+X39apGAkoMNuOn5QvjJslImRWf2NKSA11fwUiwbYgt1UHzA9FOj24CFAQHBOJkWbJbBFSryeQemqvb6Kd7bzR/V+K1Rc75TpmyTzxjibyaqdpH/ssCFjDx2FFwrYPZswz4HW1/n1jv612tD+f80GZb0o0awAAAABJRU5ErkJggg=='
 )
 
-const Celebrity = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const Celebrity = new Equipment(
   'Celebrity',
   '',
   0,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     1,  
     1,
     1,
@@ -1515,21 +1515,21 @@ const Celebrity = (starForce: number, flame: EquipStats, soul: EquipStats, poten
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAABoAAAAfCAYAAAD5h919AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC1ElEQVR4nKWWDZGDMBCFl5kaoBKoBJDASQAJICFIIBJAAkg4LERCkdBI4PaFhqb897odJkDofvt2N4ELrdtA/zdv7eYWiHwx0KPkf8mOBhHTtVg+4857qSJqo036JshaEsdv17pXzlX4mteK9uwQ1HYd+4tnAGdestSmPHJzDIpniuYWZseQU6DuqWhhJlUhqZoVxV8oGlMVUjiHzGrxvSLTQcMr4o1iT/Nd/i+QWQue5w3jKNlZtXzI82ia31g/RyAXOFRlSXmxjHi8XxxCzoCMOXVyHX60e5wBedFPNGRJQnXbTs6zJD6t5izIWN/3NAwjR2tN6c8PfWJnQIMFSFYQhAEppaj5/TX3rtcrJr+ukYEAEHPqsEsEYchjQl3bUhAE9Hg8TsF2XxMWkjAEAFjB3VeWlQHD2rqmx51ht6ut3+nXxJQqRC3K2crX72MmBEkp6c4w2O22rm4OmlIFBVCCcwsr8py3Pe42HqtqXMB5mpr5upbcMIqBd4bdFrDV1CH3ge+bc59Hmy4/8Am37VzKEHsuBMP4lYH/rtk6iNX4TwcGyj+oMXXh1sY8IPGzbr4fcPoKXtghbdkCZKOHqU4Z56iVhVgDRBslgpVI/s+Y3q31NQd5UtZDkmSmm0qug+L3ESBGEdcHzrXuzXsKawkQNAQASZaNb+QTzWAeiqJoKEthLlB8QJBK7ShCSuEcCxiGeaSTPv0KQnER9ahCUxiEJmJ0WdU0Rgm2pSwRJhDB6ea9cMvd/s7Q81ajONKqasy1FYQxycSzblahv+dqHwRHiBr1soZUqq7lVg84kJ56rlfMNe37Ka2WqF1fc9AUlk2Ruy6mGvGANYV2toAiT6dY6H3/MIcF+bMj5Xw3hAUJZ+r1vQAwAJ3sJk9Q3Y3dVjxBLqTHcXGcB84IkwwTtFPgmUnaSBvMVUQrD618cb+Z3jl/Oy70kufC1lrIX4t05d4q/A88n2F0I1jQCgAAAABJRU5ErkJggg=='
 )
 
-const Clairvoyant = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const Clairvoyant = new Equipment(
   'Clairvoyant',
   '',
   0,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     0,  
     0,
     10,
@@ -1553,21 +1553,21 @@ const Clairvoyant = (starForce: number, flame: EquipStats, soul: EquipStats, pot
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACIAAAAhCAYAAAC803lsAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEk0lEQVR4nK1Yi5GjMAyVZ7YBUgKUACVACUkJRwlQQighKSGUACXEJeASQgmcnm2BCZDd27k3Q8JH2E/Sk+zkiz5jov8LdfTgE5FpevJn+s7lvr4cy+2bxj8y0XJLj5Q11rFdMh8jolue9qLo9xjnsz/nz5YfidyZiI5SitKc0ghuxgR3ex1Tni7fwPaes9VjTKPueSz9eyKxwXCa2uhB10dCFHFkR0XZZeAJiZ58D+dAeH6t1rZn3dB3+Egkh6eYpCvI6jY5EQ0TXydU1AMVjTsHinriyBF112Rj2yg31q+JCLKio+6syDyeFN8VFe1AxtxpuJV0Sm7WZrgpSsobZZptq7XtmZJv5/hERGW+fCPTk+Y0wWPA8PXr2djwv5CNMWEdED3OJV3a2zwA3oFtHYz5EyJSp6GxPR9NORU87zXqKR3tNZNg77PMm6FMU07DSGNTEmuTRc4ErDTKIwKr+YTIxHB3lTokVNf15IxB4k5xHNvDRclwCg1Nr5jUCVVTfySAMYgans/Y3iJEFAhMU0w4OONHhOxzcy9tBECiaVxFVFVlyfRNSOaYAIdObFYR8WTMhEEoSvwLKd/MVt1w7A1d7guJ6cZ2TU2Kz0Gm5rR0+aZnTK5NXyyBkcVzKtZObsQKlq8Owlwxtt50V7L5h+d57gpSl6UtcQD3ccAGY/Bkc1ThEJwMSKwwa8R+vFy+YYxDnqWpK5dL4+6BRN+76TNaIAQv994uSZFfasZxtOP3/n2Zhx2diX5RIFSHO0V5Y5eJNI02gpRvrTVVHJQ8Xd4sGj0TDd8R+7yKF+OIvB4rDlc5fZEXqjCVSBR1OpMQQUpkMGhX8YRX78DoGlbHa4uQkcmB8/nsI6BtygQuReUcEXsShgqTALMgHy8WpCGlXSJWJALA45DMMAzUti3KfnGiR+TmVw7FaoWZyiIjKA21/sYRiS0ZsiRwHGDVFt6JTC5vDggvwqraMBIxfQc4UmnbAO01xhB94dlUxRL93Yh40SZWqGjX6JRIDwZaeyaL2LAiEFTajIhLR/Qi1SJCla76TmQWrQgKfSO5LD1ji+SQQAgRN+yi1BKY55STXY2M2BBx6ULVxyRcl7UTeT2lB6YQKgQM/2KzJbFHxCLOmUS29AMpX+zK8oDAO0JCMh83szWZap/sHhGlknFCboXEtZsIW86mVpTX5tBzAXd9ao0VHSF9Sum5fH3pblblo42RkrYMgIT27mKgjo7TgA13KwGzG6ZN9P795wTWE6yoiASweKV3yQgJiSY6KRCW7xE+bhVZ7TYqstcIIWQsYe00EZJ4X6N8u//VLz3gxAO8QhIYXCpJWrkgJLHTUdEVwWyk8JfXN0Si4ChYL530FvQVpAyTwcsXb6A077gKZeYIgIRUhxcnWmzqCRh/rMjsERECsf9+zG2fXx0expKZJzUNl+0ypiVnN1bu+Su3GyFujbTzI/lnERGU3Alv693VOLf+MnEpECEDsHl1rov63VhBS0p+nBoJX0gm40XqKef44P7yhIjDivCCTDyZwf8tcHobexdHEdlj/a543i830webf/ob4S++IpwATgXOrgAAAABJRU5ErkJggg=='
 )
 
-const OtherworldsCollector = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const OtherworldsCollector = new Equipment(
   'Otherworld\'s Collector',
   '',
   33,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     2,  
     2,
     2,
@@ -1591,21 +1591,21 @@ const OtherworldsCollector = (starForce: number, flame: EquipStats, soul: EquipS
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB8AAAAgCAYAAADqgqNBAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEkUlEQVR4nL1X7ZGjMAwVM9cAKYGUACVACaEEKAFKCCVACaEEKAGXACWEEjg9GRsbkr39dZrZNbGFnr5l/tBBG/0/CvDPgG/bm/+HL+f88eW9/nhcc+c51MsS/hP5li0wNDDgQXCD5Tm1D/o1qcX9tZ7WK3XKPnqWm40tribq+1E2zOrS45HKPtYwIstn9j/xm7VLEgt8BpeDJEk2Juq6juZ5oCTJPYYoCikMQ1kNmd9YXZqml8gpioJdG3jABtxNNBwyX2AVgICzAr+hH4Atnlg+D8xYN9QotbkK4KwsS09oWfbeet63VmhA874FnqeBurIGloAH9ywXS9lET4GTMdubiyHkEJYfHNHy2cohv+mz4MrhA5OT7dRlGT3SWJ4dBTzKdidMMx/ejEZ6Te70E4lxqi5pWY9qsODFMFDNlruH7ssx59L0brVZQcnSWlmNF6CQUUKtdFEexi3LQhWqoul88GXsxfJ+VHQiHRLqqGTT/do+ah1VFEeHErpvHAqkz4rWvvfkS7a3aSoJB6v7RaR5mVlmwQXUBY+j49ko4bwv+XNPMsEBRswlqdZ1E8vTquBkGd0mYcsBViNzXQD9UFP1nOhZKXE/yPB04/GeKwvWx7CecRhcu90AQy4ysqkzaofWCt2mkLvPapW539GpFqtEFMXckCZbXuC3yk/suZpY0YFG9u7Ink0j1pJXAW8YGBsPVr3LGfBwm6b4zUJudM8jqptLTghhX5R4LcJ/JsQ73l3T6VLTdc5x3iKOw8LJAPu5OUlygRfWSMKxwPkFBUqxktTNCsZveMMFNqGC1e2TcyHr2EBdykpX1DHV9tq25CaYCGYARQP/8jue9w6fxzv/Jzl7cxE8Y7m7IXPd1C5enCaecqMW+HrpOlcsJHZBD6HC9yhawjDjIWWt51TivDmAz+D65Ob/zvPSe8bgysX1b1qahjPpTfluqeHtu5L/SHJALUqMGPNYfOPSBdxkrjYJmlwLHIl3Jon3J4p1NN1QfAWfJ3WUzHa91mkXl6JY33PiqAYq63jH8YXfyMJQup0G0scLZJHqeOPFKLoKnOfC9gDU/zYtUgVnWtjliHnsO8q23eMCCSvXQJLtWfAEq/UBkgwJhzjqUnoKMAQW1ZO6prYKgBASN+FAkFd3+wQMpfN5F0huAgHX+aGe0RYCTPOA4HkfHAAuikqey7K2wJqv5C55tZqbIUXpMexsnXM8xO0orbpOPOsh0Na40puw2F0tAPPNr8yUlbW64DkgntDT9Mvt1UkaxF36NLrWXsv1OPBeJq42FoMH+7YB7e0YPLj5ANCR+73Okc2YSjKZdmCTsSDE0lXAAGMfrjZxRg6JAjc9kAp1nQletlccR/furSdZYLPftMpnFbNCq+79UGCLbZczcXYVBkEu5DdNfcl2SyMPl53J7rX7VxQqwVhmyAWCkogxXN05nRLyIDdN/bL1wN0PgZ1EA265T3ENh76l6+0VCgAU5DSSxmB/k+8lHN+xOeEeLpO5TfpKTHSh4HBISf4HW8ZeHCD3TJfPJaX6bf8A+HT3bnagT5/Tn/h/lPsXKZl2BfTdqbgAAAAASUVORK5CYII='
 )
 
-const IslandExplorer = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const IslandExplorer = new Equipment(
   'Island Explorer',
   '',
   33,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     2,  
     2,
     2,
@@ -1629,21 +1629,21 @@ const IslandExplorer = (starForce: number, flame: EquipStats, soul: EquipStats, 
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB8AAAAgCAYAAADqgqNBAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEdklEQVR4nL1Xa7WjMBAezlkDIKGVABJAQiuBSAAJRQKRsEgACSChSCAS2PkSEhKgvffXzjltII/55p3hD+200v+jCH8WfF0X/o//euuPD+e6/VE9vefYDHP8I3JSzFA0suBRlEDzJ7UP+jVNs/+mDuOZ5OQeA83txJpWI3XdoCfs6NPjket5jPGN3D47f7XfjjLLHPARXC9kWbYykZSS3u+esuwZbLjdYorjWI+W7DtGn8bxr+ZTliWbNgqALbgfaFjkfZETAAyOAvyGvgA7PK35u+eNdUPNNK2+AFgTQgRMheiC8TjvtDCA9rwDfo89SVEDS4NH9+KpNWUVAwEOyqwLJ0PMLhQXhmh5TbHLE7MWnXeEwORFO8mioEee6mdPgICKzQjj+8w5u9M30spNtaBZ7dngwMu+p5o19xf9wynH0ri0+kUU4rTBCgQhJkUn4aHcPM9UISsaGYLPQ6c174aJDmRcQlKDIrf9/E63dOM6YTYv7j0QIH9VpLou4K+jvc1zHXDQups1ZxcgABZF5AAxLm9jAVKCksw8vvpSaxYlA5W5EcITILpnhcYBRsopOSm1as3zquRgGfwisRrkNgD2aR4E2yKnskXu36gujCnLlhURA4qlL4DTPoX2jMPgxuwWGBiIyKYuqO1bZ+Yr4IzdnpaTrqaSz8L8/l48IyvWkceaqHr1NLB1B7ZOzsKymQx4w4cx8WAO8slcbzuDT7SMKU3sv6Le/X4k/zz8nW4bpUk1k+fs5/XGfpiZGfTn4nSKaJ8RtF7GWQP7azD5NIUBC63bF59ht+Q3k8qTyaj9Vtty+xJMB1l/1EtRyTfgqzRv9ZzrgOsfihJ5zafZBbu+1RAk8JU9ZE3aeAxBVRVrASwoO5FyNbP/z8DQnkOJb60d+Ah+ouVdUnKXWoAmLN0Mzn+5AR4ag2JzxQbfsrwpST6Xvq/gIJgW2qReELZ9RTWbEAE3dcoB+hoDmKPMzamL4P0R/FWZ0ZoTxWSad+Ceg8kGngVGYVIz+0lJ+kY/NJBpAAyCmS1wmV8zxXW6cH7La2xXdvcGEvVbRTrYEMHQILkL7XfUdau1ZElmBoZZxfPsT+vvjo/U0ryDH55Nk7rS1ivsV6rqIs7zMxMQtLA1/CfSMQFXqZ2PW2P33PL9snN5zk2ANvs4jlTXmae91OBGAGOB5f0w3DcA3+/tFiPioHX5GrlXyawRP3SvaRpoD4LWVgC2G//g7FvQJEOAeZsQjTmLHzofAHp8P+c5yqNk8+OHtqmWuwAjbjDNMT0ewz2hwZtuB0ZrZe/5cjr1CWG0V9XLXaswf8JmshUPlOlyP3GwhW0ygIXcrXUARrSM4Av+TVOfot3RwGmETZlp8Atm0NvuxJZdVC3T3ezAFhQ+hqk3YETCCH7gm+ehxQJw/0NgI+yumdFLm8YTwrbG6IqQ7/aCSfbOlj1PAcMj/yDguMfmgHv4m2xM6Vh2QnDgtQcpoz0VBYUfbAWbugffI50+l6apW7cPgKveu9mArj6nr/Z/5fsPy4t0a/KHSoUAAAAASUVORK5CYII='
 )
 
-const VanquisherOfNightmares = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const VanquisherOfNightmares = new Equipment(
   'Vanquisher Of Nightmares',
   '',
   200,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     15,  
     15,
     15,
@@ -1667,21 +1667,21 @@ const VanquisherOfNightmares = (starForce: number, flame: EquipStats, soul: Equi
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACUAAAAfCAYAAABgfwTIAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAGg0lEQVR4nMWX75HjKBDFcdUkwITAhIBDkENAIcghSCFIIVghiBBMCEMIQwhLCL73+CMjr2+37tOx5UVC0Px43TTMh2jK/fbYny/Xk/i/yscrTC21zdnT7x//QwkRv3Bs81H8ccUfL++yeY4Emkc06dj0mJsu4x9ML42lqSGS4tzHxzw/3oLRQx9FEVl/zq66M4OnKSELEAxdpwrWTFCeY8yK/K18b9mefC79IAL/I89H81HxF6I3pS2EIAtQEBZ1p7RwwYvRDGKx618har86DgplsDy/bH51San+aD4o710Xgteoo9adG4af8+X6+a1l7qB1gbJyd84sOjEILT7R8gvuXIWHfi5DlX51HMsFYOP8+Kxz6sUOfjRcYY28mJSiy6gQgUIM0tqp815LJbUYx1+fy3L61U6yGCzIZgsE4I9An20cNf3aRYw5lpIQBJIhGNQCYEurlCgxJKgQgYyZHZViUzI0Pk7X6+ejVy6tx3u/T/wnpWq/fdxx10UqVIDWxoUJKpZfIAgVsm6FWlhnjKYTxkWEshZDD+SNa3TR7yFalWJ5Var2czEQvUfTsF4nYDuTtoeU8TZ/Lw3DU6kKxZou82EFUOj4wYol1VIq0UVjRXacQ3scO5FSxrREsThxQuw9GMgMaKpiBPOJ4Hjjpdtg8wAtY7IVGoasFPMCtmGllHBlgFLmMFiqvHKxGjwbHTuLCW3KRR1y1TIJAqVOeAemwHdTYLhAtKlk5wWs3XmppDwljiV1gMtsqxDLDQ7shi09f9k+TSjcuEyXaZzvz4R6+ZygwLhQGb7/mDzGrYu4Sn8A05jn3XH2UelY6tESUzp8lg4LshJxsVqoFcQP4YwSX/15JBhAxliWXYDGn+0bjg4JpoNKaTx6uKMwb1PuQakKB+kdAtPSXek9ZqME4gQCcNhm4uf+ncA0QJBIRhXNE+iylAWpNK7acdKXOQarO+234SFO/VGtA9Rj24+c2PcTt5RJbhMM8qfxWneYmKrBneOIBLl4ANFdaN/7iOr+rtRIEfimlIrDzczYiivmdS3Ya0wpOHpgx3fS1gmoWhVfryEtIwR+CyLi3aOufbiYOq4t2mjFtaYXL7x4yVNVIY4cMEE6+ofBOLkKe8Xu+YFh1IcV73DRim+xiXPsU+2xI3foNJMWk1z2sQx2EwfkeGm5hncCPA9kXYByZhk7nlfWJxfWzqa4MBt3yEVZlTuGxWI3JVIqiF02xxHf7R6TT1BhtVaWWZSv/xZTlVhW98GEU1rFzpnlC0H8E82uFq3O4iYu+JdfldgAGuXTTfzeqsaFnDEeAb52ncYNREhVOB/DM5ZPa8lTJEU6CEiAKydEQrB0jDIdc4PlKVjBmtWKu7wnW3xW8pbaN/lTegTmoXQdk8AjEPLfanRntVL8XBNnvTblQfWWsE8UcVcrii0LdtS4rdp09PyqcW4QTIict7gH6RbRACWr8ZrqpBDPveJWKkSgyU93hvXdbNdkhJvY9skA2s6o/AGqeh1Agw/w29LjhrAtesA1a/ILjhd2GZ10ikGdD+WsFGEIVwFnWDtj85cxC1zmk0LlgkEQQCyof7tTv6aEJBgVItA8bhZXV53mnkePEz4iOSq60ZUbARUZEercVXTmgjirCn4D7SwnBbCI22dyFUB6gGwFbAdiu3i5JexAVTQqRCBlEKO2RHRzpyZMnVwWjaV47jB+b/7eaO/iBJgANLfv7fxvlap1isQMFKBSShZdY58Tc5dVN51ln9w6yevep8vu7ZBdfKfz6ApU3cd3PF9+g+qY5RgKuaQArKnnvF6Qr3W6htT+NYl+yb42MVoUAZ+71OdAxzgZpIPyXknVJsr2HnPM6KXM1+WSZrqNd4VnVZ4Zs1x6vhchF2EX7oN01C6I4DB9lFECXml87xq76aqC5GpWv0acecJo0yPGZATfNmw9Lnvh36D2UoGyQf4vTb0xcALkHySIEJjFHVJazJ6WeenSczYcIxBGKWR0laVfOwa8Bb+WAXBSrus63wAVs4G3UBNU2Vqg23APi194buxtOEPx54D18WnjEMQx/fMpSwAMyiF9C6f3b+loilyrvI23NS9b7vfzA9RpOvnH/KCMCnCBcDQxuQl/hmLtuA9kJVx8vQS+KbFCoD/j0eX3QFr6EhrC6nWd4220AI2yOaJe3Ue1UoDPAxJvdISke/CnpHOvqjRKvYPcwfK5++zDRcG5CKjxwlvPp/06DPwH3rvnbtVieFsAAAAASUVORK5CYII='
 )
 
-const CondensedPowerCrystal = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const CondensedPowerCrystal = new Equipment(
   'Condensed Power Crystal',
   'Boss Accessory Set',
   110,
-  starForce,
+  0,
   true,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     5,  
     5,
     5,
@@ -1705,21 +1705,21 @@ const CondensedPowerCrystal = (starForce: number, flame: EquipStats, soul: Equip
     0
   ),
   'face',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAABoAAAAeCAYAAAAy2w7YAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABnElEQVR4nLWWi5GDIBRFrzNpAEuwBbYEW0hK0Ba2BFOClmBaoIW0QAlSgsvzw6oBATV3JgMIz8P7QLxhVI/rlSwHBOrbtr2UoJRCWZb9EnZDgCbDoX90U17QDOm6bhinaXoI5gUxxlDX9QAgfc2jGXY2j0GgK2RAQgjkeX5Jyzm3g64CLFsriHJQVdXwYK8NXUeV6gzdVvRS0tJo7s9zW9kAXpDN0AXwQXZBVoh464Ry79ookFXy84UhkGCQ8ebOIYVElmdREC/I5GQRsowpiEcDnjGw6h4M3K86ApB4Zp6r5ws5FJqnAn8rMO1lVvDjxTBoTjwBNZggeEs0Eij6+h9+1KOPMtZj8RSjJxpyr90hI9ugA2s9Kzp08kXFMM6xIo+CfID2DiR50ZQv400MZAXyXSvkRaEvTFi88UFWoF0IbeLxq/9e9YWZPMD6djV3qry3lyk7AXGCnMZ1YboxECvIZTx4NeUnAkInnRaqFchnHAkh0YmX9Asu75h1rgObJknS4Xr9YAobptBRh74Ol9u0bZlNa7dSO2PT/wNu4yb9oTCcBgAAAABJRU5ErkJggg=='
 )
 
-const VictoriaExplorer = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const VictoriaExplorer = new Equipment(
   'Victoria Explorer',
   '',
   50,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     0,  
     0,
     0,
@@ -1743,21 +1743,21 @@ const VictoriaExplorer = (starForce: number, flame: EquipStats, soul: EquipStats
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAABMAAAAcCAYAAACDBoQZAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACpElEQVR4nK2V4bGrIBCFDzNpwJTALQFL0BK0BC0hlqAlaAmhhFhCKOFSQiiBt4AiCea9P29nbi4s7MdZWPACwOI/mYPBvoB2eXjHvavDyEo+/cC9or4OLt/nNZQK/akIMbPoca11gKWWQu+oY9/7NtAOOVXmVGhtwHlxCo3KVvIVYe6bcR1hjLWwossnPbs2U1au90zRtfX/2J4mU0vrD0J0yWT9voD6EEQxe5MdaSYOBy2KAryZvYq5iAHoTVhIyx7GmBizW3YAzh6PB+o6nGqNIhnp/e88zmj7Nos7hQkhTlfexiwX/CzsFMbILJlrZAU9z5R+WZ4udKrMmZYM1j5Dx6zRr5byW8gpjES94I9S1dG5pU2nPcJSGbHrYPGPAwggM8BXp3h5p+yvBNlUqqDMvsYMeMlBE3HmTO5K94hTyRR0lbTREGufAS85aIRWGvuJOVXN2EAOAzS/wdWglBLoZjdIwIaA0gMTZTq2Crqjal0hqipT6EBN1xwOc1yLS1BF+2GkV7VvNKda21VpAnMSusgBohmP1DHD9KTuycFKbQ9lG+yvZnYlxZsqrY9XI/jJYUz4+7Rp0uiqAFhJZaGOKyZ8LPfbdImqfGrOeVwVHdy4dZwCgoqK9tHtqRPlFSVrf70BMQuTZJj603k6fRyvE1VG568QbywFGchpgbjd0dLrcX80GGpJY912ml1AqwVVw1EOHpaWBiF0kL5SgKgE3sa21jiOWJaFUuVvqtI0mSs8+6SCnH5oV2eqM+Wfotsc3jZBqipR+dJxC2k5oaH16iXEf+4ZY6Wxv/SYyiU8gitucdBVvtLKQ5x9gj5hfuCHPi6/22dALhPcIbqP1g7pGu5T+wSdwSLQNTzUuNPjcW+2zc5A32Bx4g7di2n7rDJ8sT+tx2GWC5rRiwAAAABJRU5ErkJggg=='
 )
 
-const AstralWhale = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const AstralWhale = new Equipment(
   'Astral Whale',
   '',
   200,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     0,  
     0,
     0,
@@ -1781,21 +1781,21 @@ const AstralWhale = (starForce: number, flame: EquipStats, soul: EquipStats, pot
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACMAAAAhCAYAAABTERJSAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAElUlEQVR4nKWXjXWzOgyGxTlZgIxAR4ARnBHICGQEMwKMUEYII4QRwgj1CGEErl7bAuPQJPerzmkB/0iPZFl2DvRG5nmmJElm+qPcdZYUrXk55iWMgOC5L+1TyzQOT22mN8Qg8zuglzACMtZfNAzTpm80E30qeZYiMhYIav8JxklrQWr6pqwqqao8TOee+O669SltEHybrud/Z1KUvrX0ZpkaDk7t1ih3RrR0eoPav+u4zX/XDNRzEHtenj8uU20f4MKL9TzwWgxKe9i2GePV/SmBF8mvCY3n2Vzg6dU2YckgkkphStVF717Gczj/rZnPYJyixL/PNhm91+Zy9k9r1L7fVU02CgLxAcjnMIH4dZ8f946OxbD1mkEfd8Xtkh+fQXwEwwlMSwJ7kXVP8xvZYEVeS7vfxrG+xOfh/4NZC16ztKGgoYA5aalM7U5ZjJapa8cyQrIy84DKPuHYK6BdmLDyFskp6vWGupquD4DKRm4t7PlYk5mUNHkZvN7mJdAuzB5Ipksybb98w2CRDIuhVdTm61rd6Nw5PRgfLP1TJRYYCfWvpToEeSdqvtHgHRGQMq+oH7eFJzqEk8NeB+jj5cl0tQPY0Z4ABOPDfgFBdOScYnti1/YdPEgCEM0d3fGyC3FtyqUtXu0YyoKokvh8pMmfSeMmsobStKLq8U0eCPYdjJAZv1HkGgClAgGAIUoPxX2Yk0mDN25494yDoZEPtFy53lzHQKu9JTLlz0z9VzLjORQXulUDnYpF/ROEUu4bxko23PM5UFZr1CZvQDeZj8jwFJlTp7ydCwX2k0MMcmlXEAm/8tEBhIA0KiWtEAq+Xpy8IaxLnjFctguR846U7z0gu0yZtx9foEKgEAoLUzOQBanHDYSNTj88LQlAcq02gGJP7L88DtTPlYavswVCLkypS0bFShXnAlTlabYoBEQcDRFpG1+UCAtjCz5ndntkhVpT3rodBRDrqQeBInjY1i4xVIoDUdHZ7EdDTRkN6XqHCfunShOCjh0F+63AJKx85oRruKO2Hd92gkBVJQMMq9eKgYbJReTEuYHwjzuehiAhBAQJ3jTOTuKdc3WGO6TBQvmdkDBU2rULSOghgEJv01LhZvoUHZ0pas2wgMzNukFCmwmH5iAFD5UQUTkGRW9GUeKDEECxhEbt8kX9mmsAnIhBQv3aL5EUvkNQAS2QLBWCgYmY0P4CJEYg2BgyBiC6dJEDEMZoD5Jdv22tkovJbgUWIJRpmTzwxG4HSEL/FHY/RpY1BOkCEGyAjsdNU+fNB2eTAEEeD5dUuFHaiazMRHkYgkyjO1Bx6dLNzwId5hnmY7xUb+tAg3Npe6Zt6oxEx3rPSwYl8AqeoKD13pB4CxC5xXEcKS2OVF4fm3F2XmfseOgDkDjOcvwVxg+y/1qGym8OCIcdFAqQeIto5Hl8HXUSgmC+BIrLPh4oYE/7/lUFPo6n5BE29JwyOEfsOxuh6ofyYnWubx78s9csx4I3zLtto7cAa/D3EQwGwlL4IzllA/cQztzWHwEMv7R7+Yr07b1/BCOT4ombqykDLDS8rIkA/Yv8B0MR4rkyapb8AAAAAElFTkSuQmCC'
 )
 
-const GoodCook = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const GoodCook = new Equipment(
   'Good Cook',
   '',
   60,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     0,  
     0,
     0,
@@ -1819,21 +1819,21 @@ const GoodCook = (starForce: number, flame: EquipStats, soul: EquipStats, potent
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACIAAAAhCAYAAAC803lsAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEEElEQVR4nLWXDfGjPBDGw8wZoBJAApUAEloJ95dAJYCEVkKRUCQUCURCI4F3n4QNSwh9uZu5nWGAkGR/eXbzwS8Vt0n9W0vCghjINE0Z3cYD/T2U0jf3mKWHCEyn1elqB7qC+bVfmeqVxYGuM3XY+kG5QerNpxhIYokBUZTqU7TqNNT2zoZ3GH+LPcu68luSDPZ2BMRV7IcprRuVlr1K09Le2fBu7/O32LOsy99M20YhGIQTM6yQmKqaXGGlzHP5MNI7Rpj0UKxylW8YcW9Hb7qlrrlWivvYg2AQNY6jyvN8ilT07wjXWC8fUq3VO+tU3l0cXNaqs74oIxrnbXSA+yDDoL/BeCjqWExrgpjv1umqbDuQwMLlIfE5chBG1XWt2i+xhhNRJ/r9+XytCq7XarIgJc0QY4yFoUWEMjvZhSkKJGQbG1Wszi5EUbhpD58wgCSn02n6fD62oOv6rzBEb+9cXxoGQ4r6OvugDiLLljXIhyZNU6tMT4vODoxVAOFDXVwhBMoAyEBzm6iyEkKCJHAK5xymAGYDoGnWsKxL56mvg/ro53w+b2Bkuxk4kQuah2H5ABNCSAA45pGhXGtMXrMqf7/fDKOQH5GwJVKRKAwaHYFgqfGK0Dog7dvNMAyxu7JuCDkcsBjE4+ca60s1r5cNLasDsCCfvq+sMRi6JlYjhChJjZ4c/Z6zX1Mu4P1WVRbGKbWGESE6rIg3HskexIPKcZdQFmYWIKOcAExRbGfZUZCVGtLYKVQA1I1yokE4jFnVK5pCDciJ5umn9reVe1eRmBpw1ojDEqDwDpiMpzWA8PzQqsCp7UbtCKYsMwv0p4pEDU4RDhkeOAYEK/KkXLCzhgAKcXz829DsGiAAw+GwQHd3WMHaA4d2GpMKgDlqDHLo1M6OpTKsBO8fbFd9VW/eZfUmJPvHgA8NYPhxz5VZ9g4sXJAa0xIzQiZqHzhg+U+PXIHr3FfqmS1HO86R1xyl4m4PXCtFVHqhlj8uMRvl9gBsYK5zM6+Wi4UQeXd2nVM3zYXV0U6Z0imDPhsJfllO9JscaUX/PIJQFZhUBM7gvKNwYZLds7trh32nTClshV8GsHv11KwOcteD4F+G7UX/Hm2i7Qh4PUECShhAIESYJa4Dyk3tIDkkcj9iNWrqu0r0xudKkUGoUf8u1e3R+1yRMHd2Hth4ebutn0AYQi6K6JNDAV/y9+3r9B1Jvpx2TewTEkbuwJygAOA8Qk5ICKvs//yR7v5y4uqMS9xzAIO9Y3G8yMhg8ozCIUFfFzrfzP9g+yCnL2sPw9jREhCPlo8jsWMjnYN929D6+ZLrnT8qyorz33rUGIiTmB37tjMA200+o5pzjkqr+f/tPJLOF9tq2CR5PGOJNXQSvEd3vv8AxSKKbC4BklUAAAAASUVORK5CYII='
 )
 
-const AceoftheAlliance = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const AceoftheAlliance = new Equipment(
   'Ace of the Alliance',
   '',
   60,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     2,  
     2,
     2,
@@ -1857,21 +1857,21 @@ const AceoftheAlliance = (starForce: number, flame: EquipStats, soul: EquipStats
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAABoAAAAgCAYAAAAMq2gFAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEOUlEQVR4nK2Wa5WzMBCGh3PWQCohlQASQAKVABJAAkgoEoiEIqFIaCQ0EvjemSSUdmm7P77s0uGWeeaWCT/0PBb6/yPhny1oWa74TSNrwKFwOCJb+1Pyl7vnluTC2ahOkZ0tZb0Ynzx5NBui/pSQwmTnVszzNX6Ue75vA9DhQgWwxktN/tD9BOoBMrCoxKzyrMjUjsrLSKY4rQ40jaO+V9R0kK3XqjkQTUdz21KO51OrycBFNmgPlACy+IkAlZbmWtOpKJLlTkt/0NTcLbWQY5RXyExTBzm5FIZgHn5j9Aa7n6P1Zk926eaYuGVpk6Ocs/IuQLoAkfuQ+uwncBh7j0q2il9BKzAp2DtL5TQjTBZh8sppIgkP51MkwlghjMYbiLA+DP4LaH05K7JQhlCSxUduIx0hNRj1LuAvoHVcLlcqiuydoiXPS5om81HHHujXog2Q3Wc8NpDX56thvzoDBtZnj+Q2Ih+LSD0W6EbG2yQ1h7+uwrwB8yskOlnoTdV5C4eBKgYNj3Cw3hStY0IF5svtST7aAwoEIIf5BNB2/ALx6p5hHTuR3y/UHzKxlC22Cc6rigYoT4PkZ9GjCmDnaHfsgngVtOgG3eWMcyeYcjyTOdXUwdMWFpddQ4blpaOpqMNk/Nt5498HkH8ffWrs0Peg+H4ni2QPOFfBUwpwlgzhNqXzFE10Jp2mNAfoV5AKappzJ1CeLNf3G8VKEGNwPR0KUrl/rnW6VfIXEJqrVBxJiNpjBs9uZM2E+608H5C76nZFHq/kkDuChEthCfsUfAQp1Cs31Wr03vB/dT7LZIZEj7nL2WMhlUgoGilzeK7xouEo2C8gHhwAA4ujdQ2s7Q++wtgLAwB7MuMdi6aoAZoTv6gnzhuO9LEDvvco/vGiVWUuOPRn8dBZNFoodmtR+yGwfsDR79m+V95x0aPMa5RtvdncJPlYQ9cL2eyE66tc8xGB6ql1fAyd21SmEmUcIpb8QcAhk/DCAztPlCOU/ZELA4sbIY3q1beq42rhv3QcaT6dAg7fEyjj9D6G7wJ8eGCf4rIe1s7hiz5tGgnhV498C0KoUkxHjiQ/sJ7XCx/5zedHpVoKhhXmt1GixRBdlQJS5L6BfPC4ssorPkzaHk3SUAkA3+PwNFDMkkfF7+BcNxUgOU0hfO6bRz62/qUBCa/QXgaABgFfRIWBxZwTNspkHqjLUiCPfeSzR0mWZUtD+pEbY6SXWchpYO8mWUvD8SihygOcn2/MJegRfe9ArPuAj4w7XzCQ96S4L0koAZK9SfKRI2xZ6BN+tDTHUybp6N7PBrA9uNwUgGcPTOXmlNVSYVZWPTrAsV4hG0AbZBog/LL9CYr1i4zw3gNn2S476Q4AwSs+XgD7LeFN6Pb2RxesVC3ZRoDDE6DembutBnH/Z+OeDvJ1g9z2FBO84PYQP422nyyvBq/3/gEbnT0qTzNuBAAAAABJRU5ErkJggg=='
 )
 
-const SwampRegionTroubleshooter = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const SwampRegionTroubleshooter = new Equipment(
   'Swamp Region Troubleshooter',
   '',
   45,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     2,  
     2,
     2,
@@ -1895,21 +1895,21 @@ const SwampRegionTroubleshooter = (starForce: number, flame: EquipStats, soul: E
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB8AAAAfCAYAAAAfrhY5AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADaUlEQVR4nK2XgZHyIBCFNzPXAJaAJeRKiCWcJWgJsQRTgpagJUgJpoSjhKOE/DzCkg0S9W7+nXHCEeB7uwtL7oPKNtD/tarUuQSn+7156LPWzf92jg57S8cvTYerf5707L2zlrpuWdEiHKDttqd3TGsVnhAirW2fz1uGu9HLRk19zVGTOdhZ24hgyLFmHqRfwSvvRco7QGFBD5NtAC5tTduuD+B6R6T0JDCGvJjvZ/A0yQMGI8Ip28g1wHEcmQCzs/nP7INeW77IwGBssta73I0xfgn7C3wGBUwpFcAAevAQBQy/FfAOPEFho5fJ0+GofuhgVvQXASX4wwInPdDepC5uDOh38VR00/YesnFvwYesXck+gHpr6EyboncNHUlTjfcyCk9FSHiAtb5KocBcu5TLNECrmhp3JEOH4HUOZsMcsTcWU5GHveri+ebdDIPHAAcBEYJwY3HjzqkPXjNo9NzxOkUBxQ3HhYMnINQ7d0sCdnTzFbAP0AwMY1CYC/CSgCJcXCAptlgcAiQIKWBD6NmQFvpDkRkyr8NRCoJcn8CXe01Xn5Jrd5iBPZTXkeBqyftX57w6uFXwPoSaRgG1D7/z0W4uHthPIgrgpQiE/gd4dmcPgIZ+D4Zn8BqmNO5rL6DWdPXvvlqFE5IDknE9kP0vK5zYSMl6N7/nBXgqQJea9oXvge9LQ+uteQs+CyEW3H72hKcSHy0lMNJR+4+h3lCqF6dWSwHDAxzhWToa7Ame8BYhzyyAYbZ3pGvl4VMq9p31AsYniZynPIzV6WUUQgVErhmGNSAIBq8BRkTyK9eDH3IejtXtB4oV7Tcur89LVvkozPILcBRHjS7e9enOSJ4zuDdQP4aKVZdCPB6xURznF4Zw9yaOsYsfcpWE02ZFERomOA9VgAcB2FCtnQkIbd8HGLyURw1CUPcpflCas3ta2/PCEKQg7AgdC+DzzGZ7Sl4CHHd3sHCu3Sii2amigNJRwwAmrH3o7gbFRCvFEGnscfOlotdT2KMMbqyWPGdThV+onV7EiQfxDufNNVtApz3DNZdziZxZqUbCGabFk/thZ//bMdjFNWIkzubqdsF7N1vv6b8OJc/Z8oluavjQxo12u3/T5nONc7b3Ak5ifC+8lr8iHC9sJkC2g2X1+tOD5fy1eOcW2sn+AdKaCcHR06i9AAAAAElFTkSuQmCC'
 )
 
-const PartyQuestLegendaryCollector = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const PartyQuestLegendaryCollector = new Equipment(
   'Party Quest Legendary Collector',
   '',
   70,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     2,  
     2,
     2,
@@ -1933,21 +1933,21 @@ const PartyQuestLegendaryCollector = (starForce: number, flame: EquipStats, soul
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACEAAAAiCAYAAADRcLDBAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAFP0lEQVR4nKVYjZGzOgwUM2nAlMCVACXkSiAlQAmhhKQEKOEo4SgBlxBKwCXwtJYMhvDd3czTTAZjjLRe/VjkQr/LQv9fkp8e/gUELbMhMnce3U+ePreh0zHW6jhJ3a/6dyCWZbknSfI8LnLW0WSfZG1zqsTa40xDeU5UVu9r2UbONnZvHJl4kG7tCMgykGZ6nG/FnCFjIBYP3pi44ulPIFaJACTpp8SFGcUdM+8yVTX/GndFQ13jASS6qVwBPHiMqSEwcsGOlQHSxSEQGwBRRqBocZPsqs8N/TYOG4g2BYMW6o8uv+hEcMGiBo+MLPM3o6pT6suRalZ3f+T+ed3Y3RgOyLqCqpLve89gctA9HFn/U3ZATK7+nSYq7Y1cL/MlZnnMIUMZj6frl5/Psb7fWAmbOwblGYgQ/nFt8C8jQxDxOd2oesWPlVlNyeLjRrCPQI7kTV/M+iWeCNRLWGieJ42nFMEZwqX+2Nee2N74MmQ7BrMFJb+2ZVXQF7v9QrRRtQOgO0MsAACu3U2W2e+FTJSWGY+HwXlvFR+pgHkYABEAbotDFD4uYGusrCD28mRjjS9A7SiWKnZ2z7vr24VKnoprENzu+FdeDU0ASDMZO1HHwSlh9PSu/LyRv3+07xZPAxOVztbbPWIhADhKy3OMj0AEmDBMi+MQ7Wmksi+8azJJHqqq0+K1A7GAQvaZ3DCNbmh2DOQBFP+mwAQJMw76FWTPD13GQK4jqpY3Pr62c6Q9pO8lBhAHE2iMAWQRgJDoIdcAJFPjkIxdAxdNygiAPMIOWD8AhJjB/cpEju2cnE+xC34/D0UmRofKeWXXDC47XZPlm7ZLYEGpkpTiCO5qR8/HQt9BsV7BwjUo0msfKY+B2p4raJVTb5mNulgzjTTlAxueifw+46TY3va9Q+PTMBgoD0BsNH8qAc3T+vjAC2vVVQnsiztcSn8RezLXKxBUAm/rZJG5mj1dQV8nVwFhmIm4A9Pi4rD1XIyc6FjFp+gkdUBeZJXTtG7aDTJw+1LOHmDGm+aciXjx9AOAsMpnBW6MAEdQGve+cDo0OfYpmz1lIiwOy2HjrjuOq2Xn9KDkX56hdMs8KuaZ2CMTcUy44bwZNijXCCgjwQhDn5H+PBOEMQCw6F0RKzlr/2gfE7t0wT2uuL/XCT25WDmle1K6gyAOUJJ3AIaoZ8G5wgirIfWlvxa/+jIQF8d/FquuE+om5tugYjkpQuEcmIItLOPNovbYAwCfLiRHvT30U7G9ACLB8bodv1s/kd9SqmneKIR7ojpuO6Hf8s9cr+zaYQWA+gAW2nnfT+DsiIrj7gBLdgA0TauvB1nuEbpqA0LNVgxid7t+YIAMhAMTAPJeAOAg9Gs5h7WfWAGsIN4+ehgAyrZa9P6cc0ljZE6RvdbgK23BXfbIOV96BkoO8vwq0DqDLmzz8aN1WjX3EjqrqAXfhlX7/vmX88ExPlMPpJ1S7jeZ6o+CDc7Ucr0Bc0HaO61NTaP9SciINxDKxkPazMa3cmhshA0wofGBYGJQOGtabvVgsGGA7cjPCwWkRns1Fso4egoEtmZEetbo+u3qh0nKKbsGwNnHcKcAUnenb36c8vJ5TD31LQMxzFZ13VhgfeFrDFIo+2+NLr60TCJtldGFvlfiIPpqyz0bAIA+dOZPDACZGUZdON+Thm4ssNBJ6HyS5Iyb57lK03TXuazuSEJfJ4sn2gL/g4vMa2lJGVF6W2kFl/npo33WxgOBV7VSuOpPPxUfTO4IYAfiIHoirJJIm/72fhLad2lW3nqvH/8cCfIfbw3XsvnFWm4AAAAASUVORK5CYII='
 )
 
-const UrsusMouthWash = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const UrsusMouthWash = new Equipment(
   'Ursus Mouth Wash',
   '',
   100,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     2,  
     2,
     2,
@@ -1971,21 +1971,21 @@ const UrsusMouthWash = (starForce: number, flame: EquipStats, soul: EquipStats, 
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAYAAABX5MJvAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAE6klEQVR4nKVXi5GjMAwVM9cAlOCUACVACVAClBBKgBKghLiEUEIo4VxCKIGTZMuYTzY3d5rJJgaDnp+ePvsLvtsK/2/RTze/gVjXF/5NBce43Vma827jbpl4uzQvkPV8kI9AvjIxa4C+SSBeFvh72/bW5ffdX0GMCEKpGLrXGxZdQT/OfL3sHqDbCiazQI73ZU12r1OIywe0xQ2fN/8NIhoNUmnwRfjCNI3ZQdNP+DsFg2sCQddp3SNbwz2HaTYwjzfoJw/grzUhgT8+wGt84QoT/ZqhRKdVlsB9eIKaClDlwGuypNKnZy9s52vHRPpSMGfmk4jo2vp+xOjIxlxn2e6b7HUHEuLPADoF0G5hCkFEBGDFt0RZ/1HNce5Fd3V/VSllxkcR4yFKYcs/f9LEgvG/58rSf+FsmS6d+FpCKRlci8L7JQp4ns8APwrTMXK6bs4vWde33ESvGT3r0GcbEGKgaadLXwJilY2E1JiPdBKu1cWdnyEAVWaLk8HsIABZYTc7/Wws4X3KnCdmUNFPnulffBJ3agIw6hmGLhcWLgVKANZ14EV1a+HxqKFtta2Oha0TUk/kGdTBSs7bcWPD6WNlJjLQrANEB6TcGl/2gy4YADnn0+FpCQCdME+VB0AFrmiWHRtcP1C4M9YP0kdi5i0cT4MPgr3wVqkPSaBkHzIC0NwaZKtEJxoUthAqWPNdwVNZAOTMh2C2QMiSyoVismw8Fzw4ColBhE4lJHWZhkr29BOADgHIaUtkjPYpvUBhLOA8T/l7mmZouOct8BwsENEEhUXAEoiIRCLqJedkHBp3cnFOJgCmDmOvFWikVoQszmdcLyhCWqcItB/3WUEAujoXH5FPUQGg9QTUc66cM6UYxwfG1TQGemMunYvZk6odAKpDpJ1QoJwdYRgYwHtzHqfWAYmPrMZP7/zESp2ckwMyZgDfRyEZapBSzw0xXSyQLuVksNlB9BKlGj8MAAuOdODOhQeU/TbIRHyoIznGvHbbKvPj3MHifg5W1BJG1gSlIolF99cVzZhdzvOpSzc81Y7t+IHzRpUwoAliZic0KnC2r9hO60oAsyOa8OKMEs1saOzMryGF6WImISo1qTy1zo8W6gLiGDNE1luWCABh4p8N4wt1lfh1H+egKC5978GSNvz98XPv8FWRSmjIRnbDTMBUxDnqFBJhQ7vL9f2Ow04OTWUbRxzbkNCHgJBAiQWZRRwLq2dCajjF6ZMpdQ2E0pAApAcAYkcApD2bhcvqGpkVJgGgqaqDEqpq5I1RMnk2hucALXam8n4enXP8jEx/z2DMTGk5MRAGMO9FRfWBskPjgYr2UKxy6kfd3kGU2HZcFBnqPcbssbWiez35u28qLt1iY7/NHwu37a2SFs0cjn5QolilK+2EOek93ZalhedK6oi5q37EynM9Z4UYsSAZItq4Y5lukAUCQilaBuA3JiS+WJykpoMbbAnA671Cm9x4bxrTtH27dL57H2pBwPTjPizMYFCs7EPo/Bi/0NhpoFsJA51SnC9BL2E94G8q2VfGc8e0dVE2mdukR4CbHbPb4htUaGFFFOfisKEuG+w9jqqHOcWDiBwQThupZijMVTLkJ6P0c//4slHcL4zDS2Xg28gfBQOot9fv8xvt6G/tUID8EHwAwBaW608gjhuYDbi0XYO6/Nfxy7u9/QGWefxbM9dhMgAAAABJRU5ErkJggg=='
 )
 
-const DawnGuardianAngelRing = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const DawnGuardianAngelRing = new Equipment(
   'Dawn Guardian Angel Ring',
-  'Dawn Boss Set',
+  'Boss of Dawn Set',
   160,
-  starForce,
+  0,
   true,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     5,  
     5,
     5,
@@ -2009,21 +2009,21 @@ const DawnGuardianAngelRing = (starForce: number, flame: EquipStats, soul: Equip
     0
   ),
   'ring',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAYAAAA6RwvCAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAExElEQVR4nJ2XjZGzLBCAYSYNkBK0BCzBlGBKMCXkSoglxBJiCaEELSGUEErw2wWWrKh3+d6dyaEg7MP+wR3EP8rz3ewN1bE1+Od0HL5a72uQHcULpfG9ZeMG530Dk0De8y11HuXPHgRXnCtFaUFpw+fU6mHmOQxKKf8GiYJT/NdznG3cmUNwxSul+P4eC3GsbPoI5wNMWvdbkAiB+i7wu9MCda6YlCqlhIz9/l2/tnT+CrEAQXcEAC9XgOhgNwuIoAgUy6AYIbqz9QC2t2JPuEvI0nn/VrAChLgFi4gph+gqK/hze1f+2YN5SIkWw+jsxSeIc8GNLCJ4C6RjLQWncLDh/mJFc1XBEtXyub0XmxopY7glRIi1gfoQfpE1DnclLASYIwhvjXnWSbEzVkywz1oDnHH+ubnGWJHTyhofd/uYayIErv2M3w1bFpkBYhVYbnKhBQh9n7PRSkwX8KDWm9aIIKD0fopKhwhx4t8uQCY3Sa00tjXvR7f8AMw86lUtQPPqu/g1NmBzp1pdsMXXWqt2mlyfahJmYQIB5dSmekHpWkJmoHuY6ZMAAKV0gqiVnZ1o5PMtSDm2pLgFCCGyCnyIi1DHol7Mr2BuWQJkzE5WSwbeRoiotJC1GoRWzRU2NhEAn09Cug9bEK9HIYpG8e+FRdcAGELheLkE6vMdgkVEhFgAUKa4qVxUYHLNCsIOzruEBJ9xjFyEwoDSbmhj0dUf6846AaAgBHfnqo5wiDweygjqF7XBZXuVkiDIvZh5VH2rXqwC+yCyepFB9Hxl3G3JfBy+LwH+5dso/We9GVJbClUXYuicuELW+VKwcRysLIK1IpNFKvKTlvpQWdGmyrq4Gui79nXm+ggQ/SXGGsxn8Wm2SvxKsDDFSQTllaH1FOhXbTj6R+itgoIBf5jawXXSB7u3CrjWxZT+xSKj2DuxGUwSHsyUUXsSXFOkQN+KkT8lu+4Z6mOQjYie4Vbha3hLxKMih8C1D3xhMuUIVqkyH9KEzEUoyU08tXMh14Rv1mv/r8szgnAYOJewcvaUTT61o4soC5dZ87FKLgTylVXwGQ9FJjd4l1i8chh0FVrnhpcmUO6vENDmhSyBbAUhCfN3gkGlaAmEUHCZc6KbC1UM1oXA5QGMUD6rtNoNUoo97pqVVdCsGzAoeHHqEAJgwCLndGKjNTAeEIhDZYej1xWsy0DyIPzAhGK0hrFwlLseLWHcKVykxfKQzJQTAOoycBu8hi5H19KPRaLv/cEB5j8FmGEFQwqccG082JqooBljTUVLPN71YK1LIJfK4Mc+UmEuXCyFO8rEsZ01SP141YrDoIwi+LnK7hR+DCCwzFu6Vlqh4BpW9JdwH4E13hAnFQ6VsusIahME/rdJZfVcGnN7aIVAUhp/u5rfRQRaH1oIMcE5dYL/Vm/P2poezBEON78LgPiJzwhg4y/BLP7BYoIOVz/nybbXYro/a/8uj6bgQFzkMcDdntoacAqA2HEc26qqyD3bBWTLIpn46Os7OzXxGYA0B+ICY36HxtgJILw7AILvzm38/gQh83mAofMLq6JQ3kXgrjotE5NlMs7Eb41Y797tPP8JwneQpIPAu8L9Av6ZmvJs1TUUO7ip4nh32T+F9+Q/bq9PyFc/Xy0AAAAASUVORK5CYII='
 )
 
-const OssyriaExplorer = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const OssyriaExplorer = new Equipment(
   'Ossyria Explorer',
   '',
   70,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     1,  
     1,
     1,
@@ -2047,21 +2047,21 @@ const OssyriaExplorer = (starForce: number, flame: EquipStats, soul: EquipStats,
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAABMAAAAcCAYAAACDBoQZAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACnklEQVR4nK2V75GzIBDG15k0YErgSsAStARSgpYQS9AStIRQgpYQSgglhBJ4d0GQBG7eL7czN8EFfjz7B+4CABb+yAgG9g3QdMI5npv0Mzv6ZgHPBb+1d7nvuwSl/Pew+z3bpODaaQ9LLYU+Wxm/ne8ABUhRGakwxkBd10VoVDZ4H639MKMjrKpuYBnLF70ee6bsZ2wzRdeb+6lCmJXWuysEY8li/XlAyFWc1nsYVmeYiYOgFG5dc6fiIeIGuMn2CFOFQ6oUnhWAbNs26LrOjbu1Tma8tGVa4Dbcsn1FGOe8ePIxZxlnpW1FWIVm0WiQNfSyLNA0TfGgojIyLSuw9uk/zJk3tTa/bSnCUNQbXClVF52hqryfwPYo6zpa+E8BPMiMOMTE87dzyuGKkEOl8srse8qAlxw0I2fJ5O7YZMy1zAYaO57vQwa85KAJtNIQKkaqxCRAjiNodndXTkq8Yv1CkwgUCJQOmCjTcVSzGtS+A2/zq0Mg0ScXPbkhF68K86GxCdkrJpphrwVVGsF0d1c5AhfTGTosYAZU92RQNdr+2hpFM0FJ/aFK6/PV8H50GOP/vm2eNfStB+yoslbnFeNuL+X363H0ST+vij4e3XvPcINX0WIeKackyilKzvYwI8tRmSO0EGHqT9fp9HG8ztgZvbtCTFjcZEDOK/D7A274ejw2AWMnca4/qtl7tFqhFQya0cHS1jDu9SXpO27gLYePuWM0TROs64qhsg9VZ5hOncQOwYacfzCrC/aZck/RffFvG0dVLW9d69BBWs4gOL13fn8K88DG2NcDG3MdnGOHe5ykzldaOQjZN+gb5iZ+8J8LAcnkOgMVEYsXIb1gLrRvUAkWgTRwUEPVYzE3R7Iz0G+wuDBAQzOxugwJ9g9+w2LbcJ4vTQAAAABJRU5ErkJggg=='
 )
 
-const MinarForestMonsterCollector = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const MinarForestMonsterCollector = new Equipment(
   'Minar Forest Monster Collector',
   '',
   33,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     2,  
     2,
     2,
@@ -2085,21 +2085,21 @@ const MinarForestMonsterCollector = (starForce: number, flame: EquipStats, soul:
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB8AAAAgCAYAAADqgqNBAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAE3UlEQVR4nL1X65WrPAwU53wNkBJICVAClEBKgBKgBCgBlxCXQErAJYQSQgl8Gr+wIbv3/rras2seRjOSR7L3Pzpsp39nCf448H3/8N/0Gbyvf/hOHpfbI7hOzbCmf0S+VSsCTRx4ktwQ+YOmmv7a1BrebafxakL5yyhy92DPu4WkfOkHbgytrkv9HGOakZ/nnn+b70ZRFB74DK5fFEWxs5EQgt7vmYriEU3IspTSNNWjM3ePMbRleWo/TdNwapMI2IGHQsNLnpd4AnBwJvA39guwx9ORv2ee2I80KrWHBPCubdvIadvKaDw/91EYQPe9B34vM4m2B5YGT+7VQ0fKIUYETsHsHy6GlJew/ZKIid9tvOQ38y65zoiBKVA7iaqiusz1dUAgssomYXlfPRd3+s10cKpvad2OavDgzTxTz5GHL8OPc9bS8pn0TVu1lwmOEEiojS7kEdy6rtShKkYRg68vqSOXL0UnM0tCQoOitvO6o7wZSIlej6JKsGKUZwcJ0zcOAuXQ0SZl5F+rfSpLLThELVfdOZIQuGXnDrSZBmrv/HoczQwep/euiSg5ehLomAGB5F5UGgcYOZek2rZdR152DYvlFTaJ3SBPEbAAIP+aTBiT60aPu+HadJ3PBEQZEPDR54iecRjcpN0BI2YocuwrmuYpSrOwoJIlIa0sNnZQcnPpnm96ScVzHtSAxLwfBBbWSE/UDTO9OLsvzmyZcWp41OAjA+NBzfkSDxaTbZtXYIOa2U6meDPBnKbOWDN8UT8vBJxhvfPcOBam1Eyd8zrvcLiyGBA/NycdtROWX19ruRNpigB4DSmlvGQC0jh1YgSBtk2IZUJFJTjA3JLWQRy7mq1tbzoiK67m+aFv5opSE+Ba5OCY8FN/40UY7Hy2uWg8F3n4QO/rWCuwxsfHhxt1AEBF8G+N1P+8e/oyRAVgzVlKvGsdwGfwrx+HKRfIht3NcI3s6Qx+OT+EqVftt277C7j72BnKP8s2BrUnFgDjx0avVJwGH7n1sUUHjz+At/crWwdobsx9nR/kQnM9Qa99Gwv2G7gXnECv6XJmvjHzlMvvRvWEvmmiTikGxrVaDSklIZiOso6rZ9yMYMsI07fd4wCJrrWZxoCt8/ZQpMgSGAFkatpEH0cspH1hzQFz+LrVDlz4vTAdj9Kd7Fnh2FI3mXCdH/TAVoyKVt5slk9Jxe3GXe9DWXbMAbBeawaGDqXgAyhacrt64DyYr3j5s/JYTl/nfAjQaV+Whfq+0KlP55xmjrjgKByBYVr0B/J1RJpyLgCcvQeOMKVpyqiljpdspHkwUTfDwptOgc2R6Kc6z/PcP3iXDe9C5nh0ECjomwF4e5kwR15/TUCYkw8AA78/17niLiRs+m+JOTQAFNajf3sh1oRuuXLT0qPg1DdG8uu9J3xpdzVtjbqcE2K1d90Qbqv47GMcxOdxI0QZEUBZrbaioBec6QCMZUS64Rf+x7G/qN3bizcXOwnarNjBvNvWjkqA4tVoKiEEduKCspFqGzGfzIoB/uC3LPMIKwIP/xGwhtk9OxrIptGR0JVAykcKUJ2u42SLPEQOz/4jwfEZmwVXh5OcpHWP9CRY8NOJZXLosKV4y6k4izP8nu3y75JScrf/ALjDcEi3sEALXa2g6z7n7m/s92P9erX/D8/T0f2H/tS0AAAAAElFTkSuQmCC'
 )
 
-const WinterBard = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const WinterBard = new Equipment(
   'Winter Bard',
   '',
   100,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     4,  
     4,
     4,
@@ -2123,21 +2123,21 @@ const WinterBard = (starForce: number, flame: EquipStats, soul: EquipStats, pote
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB8AAAAgCAYAAADqgqNBAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEmElEQVR4nJVXi5GjMAwVM9sAlMCWEEoIJYQSQglQApRASoASTAmkhKWEuATfk2yDCc7dnmeSGBvr6fMkOV/072Ho/0fym5d+A07GRPC1k/8M1i5Azf4pyyQYB/BwMQoEkKpOd5w8Pbxyv2lK345BZMO/ENv7tRDjK7bIhw4HYM0NYOOg5bksG5pXu6eUfY0Vm1ZN/zOibg+BycUPgg27tS8UNffLtjlPDV27zAMnf5HzO/API4EHjFEl9bXaFpuh9HH+FclO4JHYmIgwpgXZ6JTbYoupeUloomfCNeOYeyJcBMRTfBeot2kIYvR0liFfn5WiDTwWGz4oe/th53ZMyj33XwNRVh8UMuYnd9P1IPM9m+Ixh4VCrAUoO5hVoPQK5ABePfCu82AnfTlQo+qTAlY7m00h+ME9DFwVNnNvuWM7v2SVkcHAgeWGc79kH/aaFnXUKpTvPe3BtzhzPusJBcN5bvx5bbEWVrss664dtXNF6Q0PwNlcna5UQGmNQvCYUilGTygei//B7ULGOdkq2bhoqr4z/Nr85jRjBXLqaJ5n+U2yVqz3bmbgRaVUOO+oRlsFI2MH3+JMUsm8a3nO7h+Rz0V5hcV3AVbqgUp3p/t1pLJ+kJL9VMBgPlsrSqXXHHLj8d/BnzbOPNhyo7RYye5iBRh4UTO17Z3U6wGpButQ+GHXeV8Ns4Al36sAlz28cCUB1vOZeB58Y7G3li1nAb5LcUTrdqChq6guRhoA3PYjdU0l65omR7wV3kkxZ8s1QG29f0vHU8yTMH+ZeGm+NYpkpdlofRfCDUMFl3dQshJiap0CcvbCDXe4abUKhPI/Wb4NJl1fZtQ0W9xFIE+mtaIiu9HysiWNgatSweat3AqbYaVhq2u4nUn7qcd/vbdPJt4TWtPl+KJLFVAJG+lIKm/lHe1uE5xqHGs/OPYr8v1w2XgHD5uJt1pi/t6pQLAFNvYbY61LOSkXGjGpQrkJFJFqJ+R96WiNP7r9g9V+XF4VNdlINfQdUEzqrKMGVLz8tNH3Y9aHHfRIOG4c8C9bL6kW1nRUP9sRJwALufD7oKfupKq9ecpaXaLMLvpjvz83lsB6Tpl21id3tRrFBgq0YH+keEmJTnE2FvOQX+/g1nrEqK9SFIcXNfaAvwTY+PLgbvNwh3Y2G9uKuSqCC8MhY07jK3bDZG2fK20pt12d4ZUks8RaZ1wYAcKHpKmkloh8seAU4yd9LmpH8MiaFBs2jC1nBai3SnAo2DKp9YilbyIhKA+/917VTteoDzfMRPo3OlyjjFjse7sI/2GlJpAJRafwq04ReIAVedrbbEY2G6N36vBPQwdFwpzJ4IGXUYlYLO2VLXbAl/wqXZAvDQWzOvCAs5ijfQmAdZIIOzZFwj8NHjgdx/FaVRVHrIQC+z2ZfH/XAnxvbBtlK5Pvg3EtHauFdp/VffQBfPMd16qq4s3cfVhQJx3v4hRgD8DiqvQxtzcXZ3Hv5ITA0eHv7eH/tNjBFh7o5F1FrlloYXkAyqN+OyfzZVluRVH0gQd28ADYuyZUwM+FWlBi8c+o30u4F7FSngH8jOzRH3TGd/fJ9NQ9AAAAAElFTkSuQmCC'
 )
 
-const HundunsPallbearer = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const HundunsPallbearer = new Equipment(
   'Hundun\'s Pallbearer',
   '',
   200,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     0,  
     0,
     0,
@@ -2161,21 +2161,21 @@ const HundunsPallbearer = (starForce: number, flame: EquipStats, soul: EquipStat
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB8AAAAhCAYAAAAh3nDkAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADw0lEQVR4nLVXi5GjMAwVM9eAU4JTApQAJWRLgBKgBCgBl5CUACVACaGEuAROkrGx+WRzu3NvZsfGtvT0i+z9AyFm+L+I/A+ffJ7nGofyH3Q1pzt67HmcHpNbS5pp9g3Yeg5NcnlLN04a/gWxFDymqdjt+eRRFFUu7Gl357EVxoNCp+7bzi38te35KvtarGajT8NuN+ehlJAsQvJVL8IYyjQGqSfQIg6E/DWaE/qLkWddzbQjPiLnQ5Qbyj9GAqJLBbM14EOQzHfEZ+QLqPBYSYTKXDqMliok89aidWmWN4lFNMEZ3pCHIO8Xj6KzI96Zj/CG3P2M2OtpmqBrY8iK8bAX0B6d8WV+QQ7wGkzFXpIeZNziH2rN0ZCxCM7R3grl5H5CzsXWJGEDIUIp5QEZQpuz1vMi6wMH0PiguZyRO+KpHtbV7MqE1mMpN4YtpMYoBeL+dHsFyp4ZsGmvM3e4cngZwX4ChcK0Tt5Zj0/DjmfoLHYryDtjABlyZoAld8Rx10GvR15ssakon2UJ71nYj9CmEvrnAMU12Rmwy/ljXHtwlkXO6y1ZVRkD6zre7Vnvu9fAjqRi44TnufOa8kxhtgiIRenmRGxJ/bk74xlgQYZsvT/8qT2H3M2pmGyx0ZhlCXT3GyTiBkL10CFx9vWArhvcGTOueq6JCiLqex7Adqm0bUHHWMVxiSQKtEbhvgKrgoh1jr9n/eDvpKHOhruLDJoNYoyhLwrWWYzHYd+BKpXDX+wjAViEFGrymIhp3nLYl3t+bNhTXxdW0hGNJTe5FMIokFPP1lZTirWQYAjDW63GYq+KYplvKp+h8Oc6QC171KGdbpr5L5vAcyKydV3eanRMQVyXkKmHCbGPtubQ094WJEOygFeqr/O2SftpzllJfgN1zUzVIx6Y11su4KE0j1OsgZ5qbq00EeIm8+yAXyAbnf4168grfOZQbqm6aaTDeZkvnivjOX6zF6VJlCBm9IadFwKUUs7zERejRgU6qRbKs7DTJlV5v+Tz154j+VbnLuz0zK1jwd53OXqNB1sO2+9AOgo03ur8NucWUgj4DT6Rd+RH7/HskuC7W3JXs1B9OIZr5hzLoCy11I/Ij4htrn8Kv7dbbKs9okbPTx98geilU3GVjvsicUpO7nYftsIt2o4vFbbLkjOyL7RGYLjw5vn2ne7dcGzEm/ucdCXX68rhwZEPz+fmVvp03N982/F+X/f9SFhyTE/ECU5buiTwb6TGYm4ne0sdjYIbizn/buwTl//D/1J5EZvBWmXn6fwJdtX3FwPfV5P2mYLpAAAAAElFTkSuQmCC'
 )
 
-const CrystalVentusBadge = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const CrystalVentusBadge = new Equipment(
   'Crystal Ventus Badge',
   'Boss Accessory Set',
   130,
-  starForce,
+  0,
   true,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     10,  
     10,
     10,
@@ -2199,21 +2199,21 @@ const CrystalVentusBadge = (starForce: number, flame: EquipStats, soul: EquipSta
     0
   ),
   'badge',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACEAAAAfCAYAAABplKSyAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAE/klEQVR4nLWXj42jPBDFJ9I2wJZASjAlkBJICVBCUgIpgZSwKSGUgEsIJYQS+N4bPI5JWOk76c4Sx8XYnp/f/LH3S9ZtDu+d/Lv2YePrY8Q8y263m9NB6CvR1/8NgLD+qvPrfcDGrAwvh7fH5OkPrHEen+l93vCcpfh+bXSlhMdQl30McnhKfsaTqvFJvHYjAR549gTh+G54qA0/jqtJBqEqXD0+5rmCPADSHA+z916cc7ooxpwJg509CcpxBs+Fm2KfupGG99/f3wQRAjiszXG+n1Zuj0pwodrlcr56yWonOQzc7/cU2PV9f8cjDyyQc3Y/SlZmMp17GdpKDQWQ6Pe6HcRhjAH0WP+nq5YNJ0pEFRwgWgAQiEN6GKmwQJYtWy7LUp+oN749ofqucgslDFlcmTrX81WmEd/rZQ4B9FuixksJdPpcosQXENcACvYV6lgUMk1LjP1g11RAAW6eBHLYf0fA9j4oVPfTRgXKsEH+njQu3Com1OA1GLY3gW6YNfVXucENVGEMQXUs9jLQzxjjA4ApxnY+FPquTnddi0oQxN4GFCEsK94B2H9pDnKqa/TVwiDlo9IjWJFB0WiOXZtKhLVxt8sBMbGokgJYjBjEjunIaLfOGPXhN4Mxw6Tb7aZu4Pf9fi9VVUVjBHg+nxpbVCFVha6uT0qKHPf6W0rNJn6O2aEgjG7zlapwPOiOexrCYwDMivnx0AygAnSRBllzQzGokFZDdAdhTA1m3zh6VcEA0piYQ3pJVf+sVOBOHzCo2WMAZb68QwmmigQQBOmuaGQeOvGIhe7kBHUiqhHiEBlTaOriHevEHCqkkt2ux1m6Jc3M+KoxEwBhIDr3vABstSrANBcfYC5qhwBWV77SGEhbSs5GKbkQ5TbZB4AUTQJwvshw7+SIvhOKV9rSlLSmwSobp+gKZHoZZ8bYjhQEsmdDK1lXIoWnCHA5LwB052WjOm61mKKbEONylphxA+FOabAASOVKeKiXrjvhrDmvihNhCKCq/rZ+hBh/J7W6Yca5sO20rmo9F+Qa0rCtY6lOYbIg+/tmDU7rBIMjPXzYuDgH9dcj/NlG45Rbqx2+Eaw4LLtnv+9RgPrbCmb0VymrLoKENofs4P9fdSIBWSBY0cTHWWY8BaAy3b2VBiAD3vztymo5hwCTNlUstBQguiMF4QDmPmsA3UAV7OQjCBt/q2vwZrz7Ux0VYVwshmoN6uIgsUyzDLAOpQDvEFs3JZXRzhY2uiQF0DF0HQ4GAtA43UAABmWeb9ePYO/zepdeQmmIO7ZDjfJzR5qCCYA5zEAIQJewpYeVKYRiKElx/FBixwtGeikxEGsuHEBFuFGxaY24BRS73BBoes0xhVzeap9V5y2ICKIX0pA+Fh+UlhJzZ/ghCMEFJAFwl0UFGr6GOkGDrjypKqOboNRhBbAF8br2O6rBnf2sQOxeYCAfAACz2mIAiwq53tJO9VOK/X7Gyfv/lJhCEeNvA9GWgrwB0JirF8mZaUxVjRNcCVzppMZ5gwt0gztK1jTNtAXB9o1UfS4GX1cwAwly6aXYtYBh/Qg7Tfz9umWXQQX0jZ5/tuS8g9SAioXktwOsgMFho/8c5GoNxmpIEu0N/0Et6N4nD8PA+S1uYZeiKGIR34LgR/phn/S9H/asNhlg7m99Nl+S+emJQbkoh0/6flViepv8W/ujv96xew/1jrhtrdb+Dzvxc45E5BHZAAAAAElFTkSuQmCC'
 )
 
-const HorntailSlayer = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const HorntailSlayer = new Equipment(
   'Horntail Slayer',
   '',
   0,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     5,  
     5,
     5,
@@ -2237,21 +2237,21 @@ const HorntailSlayer = (starForce: number, flame: EquipStats, soul: EquipStats, 
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAABoAAAAgCAYAAAAMq2gFAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADn0lEQVR4nLVW0XWrMAxVzskCfiO4I9ARyAhkBBgBRoAR4hHCCPUIZYQywvMIPF3ZJo6BNh99OodCZaNrXV2JnMnbQv/PTvgTgajvezKjpXay5IJvhF8TzTORJX+VyR2X5vWO16vwjuJrKEqqq5K6rlvRVqDUVLgXAKtaqsaB0byv5sA2PAME68UwrO8c2fmHddJK0ZUD3zkowDSjl7MHhL/l9Zl+tmeg7FgSm9MHSPmlSF8ddcxnzzzpu6L7m6OR13UedSe9FWh2jtzsq+OyTZIRBzWzBwFYzf9fk9rEd4CBOIi3B3QywyDKm9JsMlDQpZi6enr4XNgX94tvnsgMsum0ySg6TZB6nYHEbCbj64SscjCTxdrLKLUnwCKcFsEuHLxibsbR+2IWU/bunn2nOnmJgyxKPaorp1aP4M7X4hDgFaAVkIMtC6tuHIJYIO+WFy6PA/0G0HLngllOpbqFzKwT+m48GhorFP9KRtSMiv7eWbIG40gR2IIgLqOI+ZUQh0DrkP1oFXWWy65nGTm+OX1mmh09j4nL4NKhvJvdHtCyLErogVmeoAUPSdJms1H8LI/PGz9jBloVQV+StwcpFFmepaOr6XYzXmah2zHNZ6fE3zQ1VeC0wjTn9WE34nGNUHwBaa0HkdMzVjeR7guh0A6Wgw+8ryXXDKRLOrQcaPliGuzEUp4DiEY94lcIptbnsg3/M4hVLZVMwZ0zu45bJaZA0phXo4X7SJfrFKk+9A8/gyVNzz4ory4GakzBtM6E/kbv0cGsEwlDXVL4SNc4rWBz0APuBWfjBq++qmcGOkc3nrZFqWjiGr83x9SduNN5Amz5FQDz/JGZ3oLE6+3+AHJI3bMFhSETUDVv1S0gqg0N+0PfHgJBwvHLKfUw28/mCvI410tAy/KRAHGfRCBf8K2hRilYNDQw03cshj9XJWMlqk76pPVrkSbUpvhyqxBghn9LFCxrUR1+e9F2Bj6JAZLE7MJYQceX0uZByu4BCMszAUirJ+H76r++34rhhFklFPJoQMejGWGQcA6ATOTuPAgmQ1DcnyzuBmjlA5S50PFoRvSJmHsUPtIFEPlWTesh1vLG65wAxItR/PSuQJPxHX9Lf/pkdMmMYxBM78BxmYCgFvM5AdDh3p1Oro/BMLswVtDxuUnhNSVTQEB253eaUbq7iT4ubI/ZlY8VSBhbQuEbepaZy69zkl4Klj6/sxo/A8j76mzoM8R+yw7v9p7/AQg3rkUbXsTuAAAAAElFTkSuQmCC'
 )
 
-const OutstandingCitizen = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const OutstandingCitizen = new Equipment(
   'Outstanding Citizen',
   '',
   0,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     0,  
     0,
     0,
@@ -2275,21 +2275,21 @@ const OutstandingCitizen = (starForce: number, flame: EquipStats, soul: EquipSta
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAABoAAAAgCAYAAAAMq2gFAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADMElEQVR4nK2WgbF0MBDH18w1QAmUECVQgiuBEiiBEijhKYESTgmnBCnBt/+QXBzuvHnfzjgnNvntbnY3brSXmf4uzvvAEYjmJ1HT1pTmKdHIc/yZmqrZ6dnvi6KgMq3ICY7JN/oisiVy8/P3fUYkfuSiO57rfQW5yfZ5tFaTUpJgI4ZhWAaGX4Jsy+ARpXIDsGWo+Idh48jvxe9AjhfTnOejsvhsMhaGJyJ6OeIVy/yrIKVcVdXMF3UR9uC1+Lu07HFWxGbeyXqf9yiJIor7nk31KEmS3fs4jo1eC70P8hFU//xQyxBY2rbtUX3BgznN8z+BHM/zZhZyHGem47DMz8eDgjAk+hC2byA1GZB1sZ1HVyFXQGoRQOZpfZJIf1f99S5CroKMSGIaGEj5IaDfyBXQPE0TDZzavr8MqDR3O5omn7CP9B9Cp5IBhekzxXWXkAkhVDFj/EuyXAIZSM+pm3MKwxPdEfCse9wV2Ol5pCFFkVHXPRQAXmnPMF6WNRctEqK0YUQXzqMlu9yXJzZEi8D/JDVGoFVBHpzufh+i5+28u51BYLUOl4JIdHBplPE+WWHwDHNwScFJUsY72OEe6fDYkAbdcxW5HhlRlFDE7TvmeurYG23gcNCNPmadAvHEqqnUgpYp6rdtGj4mXueIOjbE8bmyBaHq6RUepLCGYB/QZPX4/X6nNE3Z+u2xumTmF5BqLWJRhmWCAcvhFpHQ8ZCKxPDF8p7f13VNevuktY/nHm2g20zL85LH2JMsppo3H970ax35vmDjhsuh4yNczlMXkC+eSxbxHpRlSVl2V95BkGka0HBYu+7JtRQoGOCyyqhYQnea3gbGfZnQ3xCGMAy4Pp7mNDUec+YBEgYeRXz6wpMsy8w6V0KnlNAsAUPVFxkKs6P38MdshNq/F8RbX6EpbrTfQa51Dxj2ZFEDqq+ZqRIVq66IQSsELouXgrmr62YtfHRlQRDUaC38zWC+gvQde7JCCtp/mGkIlMebtahv3W3vmjAM06lk7Xzpe9i7aMgoWCCVpWtDNmJ7dKZknt0mVGbDIasmx3c9y5tN6LR7NuzdwpCb5IP2En4yzP7/DyYe1GRo8b2tAAAAAElFTkSuQmCC'
 )
 
-const WaitingfortheSwordsOwner = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const WaitingfortheSwordsOwner = new Equipment(
   'Waiting for the Sword\'s Owner',
   '',
   200,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     0,  
     0,
     0,
@@ -2313,21 +2313,21 @@ const WaitingfortheSwordsOwner = (starForce: number, flame: EquipStats, soul: Eq
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB8AAAAhCAYAAAAh3nDkAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAE4klEQVR4nK1Xi7GjOBAcqjYBOQReCBACDgFCgBAgBBMChAAhQAhWCI8QrBC4biFhfvbdVt3susQToJ6eP39kI/OrkeBWzPI/y9ClwT3rT/s7cAJTAVH5+QTTLvtc/0LGcRQAk1DwFZzSt61oXYuezMVR1V8BR6GSKFIf7+/Au0cUZJWeE7zAF5M0krHX8rfi3yOBup/8udL97j26A+cDAA5GbeY8DSVJEjHTdDo8zd9uoaXesrBc3hNpNQFfMbaiLrW3zOZ3NjuAN2cRZO/jtHxKX8c7RRYF1PJTSiYJRcIEFkj4SO5u8mAy0e5nTuAUb/5O4h3Y1XXf9st1WwAilDBKJY4zaYanjFUM87e76MV+6xTRl+DWP1sFPDsX6dbsuF72RzFmtEwlTOV+j+X1+5Tbz7IeBfs5FBhphUvwowJSFcumW1VdgSRYhhHWSKZRSV0xE+oV8Pc52FXD70y3uu09896Z33wE9wpQUCSYq4xW5ir9R2emxT1Om0cjhWNLoK3w7xBKlmVpwQHMBzy4fAWHzBAJguAIXAIw+mReY4xMyBICc71nBYHpZ/qNJr+O9pO8K9oOeOgau1nm6YktJYqi3eoYaw/8n8DpL6YPz8Ev94w9CE3q2R7ArNAyYE0z2yDz+9lP8B3cNYR56Epp23ZA2qwmpkm3QvN64KPvN8DGA39lPr86NJpsVmBd90byR86cXe+rxRqrf7dCJbj/E9/FpdUaZFs5gbsAmwFsFZjg6slEkt3PgeUZ0gpeGQpNTckfDy7UePW1Z30C98BcGWg9moNB4aiK+0dge7qr75tchsoGSimJb7eueb5O7XQHvgXu67stlf2E7lQXa8G4AqawkWxXVrmyzG3le71e9lym6pb1DvwNHKMVIkLQDssmn+DnXWR9MrUXF926Lu5REsLSOM8Tk8NAcfK5RldrNU3X4f24pLl9Gh1z+Cj+OT5aNkMBpk+U6I/TjwdfWbP5p2kqkx7LT4yPYD7aXSUbxzrLJ61zDiW2RyDmNvPhyv4c7XiI/Vib5KQpC44vKhRvdlqC5i6bhjGSNE3ntFsY7weOM/Ndi2RrLKp3apHZEXjLnvlM4DRChCfNErDvKrqbfK7BnYYVlEzy94u+JR7LqJctsObwibbaIkW3ExHNfqXAwezK/k/SHEHeWrsTOM/zHajvVJQShcQDZ1XPGRCK4tV6pAL078fvgB24HRCitYlIXdc2d1lEfAHxwhapx1blwBkdMCTA4Dnznboe12fJ2jaoK3AWgNvPbX7+dpJDAaSYYqvkIX4Y8GZnYHXDABdV6lGiCLU1gO3BN+qP6L7BzK9heNjotqkmIu6LZZ/nnKUNMwhAE9p1kcXCXk2zHtlaxrgXKpRdPcJDTLvVHWvys1YoMKULrK/tFFycmcOViqeUj27M4jjxwI9ugG+19TVmNc3VmMlgVkvKREnXLUOlG7XqDfiDHwsaZid7AnMSgrDb+BHamV3ZjRCmXoG759NyQnlHGx2lquqIrxj+gxIaN1LH0MmagzTzGtlv4EwuZAk4d4ZjrKsii6ZxaQopIir1WbItkzgYs6P9HcV9HHpTx3L4UnmDG8tJA7SgC2Bqo1Ropw5ofR68ncwv+1UrX+S2ub766pQ/io0XmLielmqZoFwmlqPu2+BYVLy4z+ngXxT4Kv8AnOAR4u015LwAAAAASUVORK5CYII='
 )
 
-const Berserked = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const Berserked = new Equipment(
   'Berserked',
   'Pitched Boss Set',
   160,
-  starForce,
+  0,
   true,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     10,  
     10,
     10,
@@ -2351,21 +2351,21 @@ const Berserked = (starForce: number, flame: EquipStats, soul: EquipStats, poten
     0
   ),
   'face',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACzElEQVR4nL2XjZGyMBCG15mvASwBSoglhBKwhFACliAlQAlHCVACKcGUICXw7RuIP5Eons7tDRMICU/eze7G+0ePNtL3beN3+ODxfGq/Tt0m6ejDlxSTMebph3Zpbtu+rV5CzTAs9i+CX0HP57O93263q+BfAX/L3gZDIZS6+z8Dfwp8Cm6ahoQQpLX+vJVyHTiKJV/11A7m8zYS6xUrNblSiIonRiS9VQuhqOs6KssG/rlEuZQ/NHD6YJ6bD9WrwRf1DHUGkJTz6lmJjGI6ZhNgw8HWtq1171oLgm+hTLqDkrlXMZ5727fZphf1vwL70OvtI5Ricekb+8qqXwN/kU7roc7GVq1yfRDs7+kaqG+hwAqCHRQRajrNz8jrmCRfS9BOG4ZMBwuGnCpBSZpa1W+BYYAOOKX4KtSUTsYMFCO1bqDok/OidDfMSqcWsTK8ezqZzlC+r+29zFgkf0Qd1YN74ziiutb2+OuaqS/jtRVFwe/i9/IYrs7myP5pj7RPD6QKSYe8pGNxX0wOZXcBurFSZTRwnqP0Ar4aXJYM4NQYSLNruVCwUslAkz+6TUWSjqOiMint2KwQXJ8FR/aOqip8mDxNp5YYxm4EtNvVJBe+E7P38a44FXZswftimv30LqA2CEYBQC6O/YnMrkTR5Y3DXgXyEu8Gbfebo4mSXFu1AId+RgUVIxXqXU6qz3jP9TWnF0wqxdsS8V9J9X4C4WB5G+xKZk6czzY18HwFl3VnW5tmyGl+r+ucI3/gOZr6vvfK7krwdLQJqxqFoFK8cl2zggleFMqNtFDsKfI5rY2FQumvwM4cPGU47OSCi3M54jM54oUAij2F+VCveER0U/xf/uZycFgyLwDFQTIg5ZSBIZCwpwAGoDCEuHHwW7CdgWAIBYRfe2+fX/0T4JuveJckSU/ft4QmpYuuRqeZBzlbipC7vfLmh54fxv8HYemTYsFM7VUAAAAASUVORK5CYII='
 )
 
-const SharenianKnight = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const SharenianKnight = new Equipment(
   'Sharenian Knight',
   '',
   100,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     4,  
     4,
     4,
@@ -2389,21 +2389,21 @@ const SharenianKnight = (starForce: number, flame: EquipStats, soul: EquipStats,
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB4AAAAgCAYAAAAFQMh/AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADLUlEQVR4nL2XgZGrIBCGNzNpgJRgSiAlmBK0BC1BStASpISkBC3hKCGWEErw7aIooDEmd/N2xoknC9/+u7h4R0BjwHv4D6ZBHez9kaDPR4T0GK8s8JQ7V2zfEY2dLtBb+NGO3SVB9oGSJBrm3Lu3vqobqGXGvecGLCoFWt/Mg5jnw8KUgTGgVtXThPqGC9xxMaUhyQTkopjGzNxszBpmgQKz6wqZAhV1ApN0KXmfJDN0UCLnRUJowgwYZAl1gfCq8PyG7NnM5CZwKZlf41cpIuc2N7jloOiglWJQmazPIRFbNoEjxqDrbqg2nSJ1jcagS71AOFDdlJkbRannbzNH8yIGCzNgSkEl074ucHHtwsGpdYrXDZ/noHNuoKxR6FsaqFtb40/l0gM0r1IvzZ5iw2A2tAYnXoeonXpRQG3bQNwM2WhbVM/W/DrcRo27l16n2oApfdkdlEzMRAu3CiJajJLb1pP/lp9daxNMqbiKaw9mz8zvcy7cd/X6UsGq37hWmOaF4jUHMupuj4bD+aoWPltjW3aED6wuSZnf1+nZN7YbTIpI2fPptz6tlBn7c/B0iKCdzgRYQubx+RD4GmyPymf/A/fqgikeAOKioKx/8F2WUOHGKX84AjuTcvI9HS5m3rsAVsFWJe1UjT2QoLSQuOieoGB0Kyggw0Bo13YHqv3Q66nu0Vv1r1ONHSvmdDINta3SEUqHA2ceHJjsCzxAyDfmMHa77SN2FUyRnk6yfz6z8Xh7v3kIao9TnPtdql043WdMg6c2nnuhVV1Vcmwictf7vLmr5wWi3oMGPZjxyGz2v24gc20daDu+VjFQbe9QctzWSvSV7n73OnlGUKwhpNgWlf+dZQOAD3vIRy0zhP7GPgK/shiGD4P2A9l7wIdDde774kHfqqsOBKUutre+e8GT0e4N0x2Dd2isfXPoT8As+D2j6oer2gJjnoBQgtTS6c+DdbTzq52/F2D24podHNXc54RQF05XN146BFtI5Py6qiWqzkg1M4qH4VGthA/SHIJdyNok+lsIeS3LrMH/5+52Q4nAN7wPrwXYpsOFL1SYWsprM95f3gT6agz+AUtBw2rRmCN3AAAAAElFTkSuQmCC'
 )
 
-const PerionDonor = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const PerionDonor = new Equipment(
   'Perion Donor',
   '',
   0,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     10,  
     0,
     0,
@@ -2427,21 +2427,21 @@ const PerionDonor = (starForce: number, flame: EquipStats, soul: EquipStats, pot
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAABoAAAAgCAYAAAAMq2gFAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADu0lEQVR4nLWWjbGiMBSFLzM2EEvIloAl8ErAErQEXwlSgpQgJUgJUoKU8FICe05yA+HHWXdm985AMJD75f7GnQQZ5P9JxlsEyXAXqY8ipx8RtxfpN1bkQynuuxN36f03S7G4DNbXeHeCvuw4vdstP24rI4WB0jjxcuIqG5QDYkpsAb/lpxeD0WBefplkPe9utYkVqLjgo9qMECoxD1V+wmixZbMPkFIh+l1cX1dra0dQ300W5S7siHeDZ0OfVLCgxFwGyBMjfssFI97H7yhdZfzKqG8Fcv1kkas0RvC19UotfveS5yXujeQ2vLe06ok3+7Apm1jk+m1QdmhC5lnsqFMfF9zhAfFCPPIrXNbtkRDJiIzoNClaVZRj/Znrm6B3K0Z+8qtyHnjSxdylbY0nGsDc9zRKbmCZ89bxqrmwcjPAFmgGrLW2COyPDkAoqHT7Os4Aydot2cl7GYFltExfUHmjz80fAJ+ARmDDen4ZaSrNRpDuyLjs6zPIp6DhDv+1MK28aX21ThrQb8iWc+td/E8sEkfIA0HH2PdGWDIWraOr5WN5Bxqb7ONikPLUjNHGOBm9O/8+ZqrKpnVboGEYjHcPpW1VuV1/yCkmxvMmvojbdoR+lN4BghphgyxoDcFsKdpmemjvHZov5ovMSQurpGSBswQ2Nb6PEYPvIS8GA5rzws+zg9tr7q1pq1YcEqXEdw37bSFvZQkaXnBD22Gn3wqxjAc1xCZjxufiEn43sKSsQ03dYdmxWWdiChpuvJ/VBd5dPINwTFy1fvDMzEMrnc2xpXaM0zls4RbUzGAzi04PCRbQL4wJ3dV0I6zXdOaY84ioQvaVV1gFD1gQTjg1O8b4/N51GSp9GF5r/3pAbWZznR509rT+/hAgb103F80wWkJX9RvFSYi56LG9Pr1n8hbEFI6l4+OxsMjPXybt7i9Aw/BIQKiTCAoBXwtjlMKisIDhvvfJUH+FjPNH8mB8nYQUntzE2OT+n9EEr3Fe4ZQXc+axsm3aLBmYkuxdbCuseOcDransJqCfXVhCSFeGKjsujvGVRXzJXkUXtljiK14JTOElgJZQijZA2Bk041Z/L5eg0R90GdsKK57FyDrx4qbAR3cR4s+qbtzEGN547RJAvMT/VUXRlafQVljx9iYriRDf4wBh91YfFwnE/7XYJQCr43eWuWtUxt7FtsKKXwoDz9nD2AU8ZLN/pxalX5/jHAJ7pTFsK4ekrTzVQg38WeYl65bXLjEvhaXP1P/U3nVIJp/6+Guxebf1/Bs93LanynhdGgAAAABJRU5ErkJggg=='
 )
 
-const RoyalBlackMetalShoulder = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const RoyalBlackMetalShoulder = new Equipment(
   'Royal Black Metal Shoulder',
   'Boss Accessory Set',
   120,
-  starForce,
+  0,
   true,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     10,  
     10,
     10,
@@ -2465,21 +2465,21 @@ const RoyalBlackMetalShoulder = (starForce: number, flame: EquipStats, soul: Equ
     0
   ),
   'shoulder',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB4AAAAhCAYAAADOHBvaAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEv0lEQVR4nLVXi3GDOBBdz6QBuQRSAi4BlwAl4BKgBCgBSsAlQAlWCVYJVgncvl0EMraT3MzdzmgUS0Lv7V/5oh9knufscDhM9D/IR2AGNTylxpjRe//THYf/FPh8Pj+qqqLHY+Bf2W6318n1dPi28xsS79Z+BoamAB1HAJoPtEqdkpLPv5KY7yl55+h4/mypJ2D4tK7rcRybZ1BveUw6GyeAK/hKAt8rAYD+Jk/ACCT2KTUNTOsF3FpLbdvKvPm6pi6vKcv5RJJs/CJAXbd/A4bSjxs+4Av8lawrqe97ApkwII4BLlf+g0eXOyEQS0zmr8AqbK7jyVHXaVB1lRVtznVCVeooHxLZh4CA7z0NpXmxwL8CDkExzx2407Rk8cQAN8QbOzOYFNa5ttDeUAFwArgTcJwBGV6H518i+wU4gFqbkrueWVu9vLUJ1bx36zx9F3q2vlhqulTAvotncIi4oP+jxl2noJCry6gtnGgp1vAKeh/UAtC0Z5OXqec1s4FzLGQZvvH0GEWZF61j4Pl2u1GapusCCgiieWJ7uyhig8YQgFaVESJBjEnIpJyStmVoy+DmBTwAz6qpfQFK2F9ZtlWusBf2e8taR0QgWcnnTUZ1j/OWqryNwZ81LrkOcOZQntRUDo1E9qnQ1OGisl4KImEEAl2UTnkFkrpQDRmZPqPiMrHvrQRbO7ENmPNXM9zmujjR6dTT7cboLtG/h+0yXJxXmkIBLIBLenWNHlyqVst+bgatffBc04ys1InKzAkoTP4FUJjhXKvG06QFRFNmuZhBEcEaQAvGQiDPFRD7GheGnMUegpGorT27imPAmbXIrqZG3o0N52OvSQttT4WuQUACvqRWozfkKUhIBWOizThzumnsOEa88lX26lkRMN3Ml7JezGsG8AFdBbnbcQ1GdTotWl3YP1s0uyiQ3OYCMXNJ18tRtFWmSDfPfaUnznI2cQ82TwEYgov7w4XBZ/Yz+2lSAiGYAI46jeJhMg086VA8Xy81a11LjmvxIBrHliN4YhMPAlrUHFylkl19HJFg8MMMf5vsIQS05fULUBUB4XgtGl+W/AWxULkQE4/RMnghJXcorRBa+vMh1ngFR66l6Uk0naY62qppL7jsnmsVs2zKdtI5ZBfAP8kKvLyxMI6s+QPmRWmUbpNE8bikDMDCCwOpmyb41Mscmgj2w96+dcYa48s7j29he0t2L41FEpBBoenpkSsBmBitGgUCZo6ePQe2wlxlnFK7Z1QM7BdQVYNBOeDYEpgP0rHkN7+nOAtkhjVydn0gsAeNgeJa/gTMl/sFVKIbQRUahs4lzxrNxtQbsYhAcMFOVq3j/vzxeVsUE6FbFUURzSUdj/Vam8NTCKX0vtQImJ1eG7+AB2PuTQ2ZVbt+KRy72WlXl7odEXhjznfv4o/9WEQaBdHaJJ5mNu992NIqNI5AYNH2zGNr6io+mmW8mnop+JNkxIXwkEiT5SnLmkvlInoisJP0w3oAxc3u7WMv5CTAdWhx0HfyRcoegkoJ6He/mPnlX4q3lQtlk64bOEQ1N8GcNaeUqI6zIZeF1Xswvx/vonoFR9KnUXosl5+Wn/Cl57O35XdY32vn3/39KZ0O8fsoXv/j2q/yD9OP4E+GpDFwAAAAAElFTkSuQmCC'
 )
 
-const ArcaneUmbraArcherShoulder = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const ArcaneUmbraArcherShoulder = new Equipment(
   'Arcane Umbra Archer Shoulder',
   'Arcane Umbra Set (Bowman)',
   200,
-  starForce,
+  0,
   true,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     35,  
     35,
     35,
@@ -2503,21 +2503,21 @@ const ArcaneUmbraArcherShoulder = (starForce: number, flame: EquipStats, soul: E
     0
   ),
   'shoulder',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACAAAAAfCAYAAACGVs+MAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAESUlEQVR4nKWWgbVzQBCFxzlpgBIogRKkhFVClBAlJCVECZRACZRgS6AE/9xZyxLJ+897e473hLX3mzuzw4X+PuYf7nvfbv4FQITn2dXP3tW92k44BfktwGyFdf05wFApnqhckLfJvwGYsSiE65qobCsjFqa7SVq3dKszYgYKYxKQM4hfOaBZ2YpDOPZ9EdnN6RW1eqQyZ5A0o/ujpnlg9Yh2EEeAb/lakx0tqZ4HPglfy9UbH6WcFdebAep9imNlXCqMG0eINweQW8/zXEoRvqdG3420LI9R36ifJmo6vqFzumajuKMsBBepOuidpCCjoZIoV+HHyzM8IS9UmJzfHtl6boeNGg70k2KQmqLAlzThsBDO+t5pDWChZZJEZCOx9yB+je7UNHso3W9rYP41UTR0AUVJtYNQatuuLsDcII26lkXDEPnicwpk4fw5mlkSYSXiZTmvbuDacbzu5tnmxcB5te4UFLB1wQLMKA4KD00tNCkBTBNvIIiuyJ25gObxaExkFgaAaegRdF2IltdRanNgE9dfuubiyosdsRAQhBhgjHhF+ZXncM3gGtLX9yPztfRi2/XEoJqX8rdlL3ZxiLdP5PxcH/vYTOXiUvkucnuOXaHZJjgFcTt8P6Rryc/dav5/BsDk7dMT8Wfr0zR9oCBYVwuEaDpCKNSm8ijlIuUmuI5p0vRIE1ob5WHrLgAmdxA3xP5u0thNaB4bBDkQrDZ0mQDgwEDxTa1e5+c1577lbohaYBeeDuBlrfwvAwv7frQDEQhs1y5bI4XVdnRNItvPDj1VbH8tAE2zbdkLcpJyody5ys9GpSbKaqMaJD7BnKKepIqxCCBQOwCwIys6+T2MS2AcIGDi8M7R15KOpZ2bRtRUgSzyuI1UlMFqOyK34hLVa6Ik9yVFUTbRQ9HaWlHhodNoh1HxjlB0Z4ex7V6Kd0bbvQV4SWPkLRCqvGCbx5GCgLvXFXYmImaL0jQjA4TrcELSAd3S7HUbPeoqjivZYD1cRqpbegdo+8DD2wm94BZrEbdF6Bbj0PC9JKJP46FMTag4obrvxPa+N+Wl3R59BHB/xE7x78SHgaIokvxbN5b/XlEvL63HuUBe9OxQLFvTZ0fTw3eDAOBr5Zq8+O3FDabefOq6UF40EHfBtJaC27VNW5AGTkvRDZ0n1yEuW9E33wS2AFcA/lTiH/y5pFGIM91upitGEaKMVjcQ9Ym4uGDdgxOqz+SF425DbFFEH545YBcyteDRs+Ca6sO3hvRleLydZylELrb0ziDxBoKaQG0AbukjHz/JZMQfdM+sdyHw5xwk+Uh+BPCW7zWuar1zoe97K/KTLcECMrog8vAh+jOAdYKpbu1ex+M2g/+Tm+sC0jgvoLd2ewbgL0finONID8JnEGev0WK5jgPdTbvzjgBWLHT+u2L/XZU/QK3jkwOfHv622PTl/Hh8BMBNTT9b7X+A+QZ8Cv8PaowwmAcPRCAAAAAASUVORK5CYII='
 )
 
-const EndlessTerror = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const EndlessTerror = new Equipment(
   'Endless Terror',
   'Pitched Boss Set',
   200,
-  starForce,
+  0,
   true,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     5,  
     5,
     5,
@@ -2541,21 +2541,21 @@ const EndlessTerror = (starForce: number, flame: EquipStats, soul: EquipStats, p
     0
   ),
   'ring',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   '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'
 )
 
-const HandoftheFamily = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const HandoftheFamily = new Equipment(
   'Hand of the Family',
   '',
   0,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     0,  
     3,
     0,
@@ -2579,21 +2579,21 @@ const HandoftheFamily = (starForce: number, flame: EquipStats, soul: EquipStats,
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAABoAAAAgCAYAAAAMq2gFAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC8ElEQVR4nK2Wi42zMAyAjXQL9EZIRqAjlBFghDLCMQKMACOUEWCEMgKM8DMCv53XOYGUVjpLiDz9xQ8cvsCXDf5WEtvgoO3xGCDPb29pWJblcHya9HiaCpBSbhbmWUSTSZJ4G2+398BcxnEEOjQXD1SWpVK8Qqr6P/cbNN3o5nn/1RydreuaOGgYBgWblrvq57nAzcLNNx3Ac6hV+5qRi+5ujq8VooG2bT3veCDyu370yfpeeLFoawHfcnTtsvqd42sxArsYclBiggcXkasBUsQVcsW8HUK7rlMPRLLOTaxLaYCtm8Ax2DY/+8k14RquJ2bRIbAo9ABByB2llNqKeVZjBLNrjgBnoHCjMoUgAwYZmgoybBPsDPAuSAGsNSQTZuXIF2irrE8/ssgFIowJASrWJqED2HUMuIPual2o3CrDjIS5tX38QPFNY7wC8L0GelzrrIsqqaNbzw/1thBx14rEqhNigAWyInMwaRJl/k2U41pHQhC1sVmgwHYPkwfhcvsRDmYBfd8rYOiZ42QoFwToKMQgO1gDCkIFleRVZVBC7iqM69J8QoiAM0mxiNaot6oqZ1koXgkin5LJBCPza3dDSPP2FazT/k4K4hUtQScio4Az+Qi0juajNR9R+sGdeJje8orF8UJaRg8QSgjEKwn6KoN0mFWcolc5CUFq9HM/YRs3DXg3nZ2cboQJ1z9m0isxmTC+gx/PQ9cRZDLHpbQdIO4mClfVa2sAP+RY/Hag+dmiVZlrKyupah/ALMRmWmH2hdaEIJfe2z//D8b4G+woAchV/aIh9PdEkjLAWXonvALbMiKEcDChf5BUYeUQptzpilm0W2ChDoiQJ7pzggbK6+IgDPANEQlBl+BNGi4IfFpYvzSY1mtoRWa6xl5Y2Vs9FnSJPBwKw2PGSi1dm0kKe7EQSsPliykV7B1a16FVd7JqfmrL7GWI0vDDBBY54RbFFtl+hbA6mCsP1nFrPNdZ8zgsPKEdux6Mry/6rv0fIJSk2PGpBKYAAAAASUVORK5CYII='
 )
 
-const KrakianChaser = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const KrakianChaser = new Equipment(
   'Krakian Chaser',
   '',
   170,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     9,  
     9,
     9,
@@ -2617,21 +2617,21 @@ const KrakianChaser = (starForce: number, flame: EquipStats, soul: EquipStats, p
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB4AAAAiCAYAAABIiGl0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEyUlEQVR4nLVX7ZGjMAwVM9sAVwIpAUqAEqAEKAFKgBLiEkIJoYS4hFDCuYScnrCNIc7u/jnNMBBb1tO3nC9iSjPqzUoT/WcKcb7s2siLIy8mv1TiFXwnvwHjtztzAKayzmmetNscv0V9bWyL1lQVxYt+phHyl1n7ha9wl7Uix3BLH1EJ5YP3i13A/cF8XRytMQWdAaPAjinLU2p0QY/yL2VZGleAeUEL6cNvR39U4uWd9zwwYgs353UqoKs2sqnm+R2wZGGrpmXS0d+eWF9nxLqupGeR6fMhtDjhzVdWbi5nZUilnbxDmgrrXia9LIjxm3I4797GGFoXOoCegWWTmc7J8pa1SKhxHGkYhtg+sliSM1B6OMs4A0eBYgTQPr3SZLqXPeMUxndYjlgfT2tR4DNFyyVPywNP3o6k1eD4k8j6gQDc03vdegtKTrg0y/yG5tq1MaPxb0tT0pETXvc5u3flpDI/1jaA4YIRh71wNbwAuBrzdgCgcPFCM39vQbz1NV2sVTiDswxOTmZWtsyroMxAp86VAAwMsO5+f1BVFSIgX7bD2mhK+2PJXKqL8K6rEWVIIYu5tPgD3a3oJvEAgzovHiwG9Zs1SrQDOXAuQ3EprOsqKLuDAyzjglXNEvBoej6fUrviicvlo6vJmo/nVWtuCI0WCwGOb0emzcSqup+4YWTU3kqxGi51bnekisUrx5n/ERgkzQMGhRYCDC6LESx11Lgux/zdZaL76yo/hz/KxTzM9u/LCaBaW0u08uvzhMjs7dSXS97aV3bwQJCkHtwBi7XIWHYyJUlCz7FkgQvdagbneFGOvpxRNa3iOtSxcyGzEmRPVjmuOMlyhCA1q8h18qMWS2YyXfuSB8Qi4Hi3/WaJmhTd+0xaYcPro+0hAMUwuLJyM5dRywrmeUYX291yurJ/jnH2wLW++mSh01BabdOFAgCH5fAE1gFatiVPtD0JAeoUvwwdPe9P1pSTLAD/cpYCNKQ82w6DFna5CGcgB+4oBJ1nN07ZS3Xpz4vSkN/sGS7A8qPZwBGXiePzZHen1lLDiRKC4+29EYDyaOYGtF0cMKMxol33QgWEZeVdrcuBy6fG/KaSWro0ip63VoBSxGzZLf8JFNQpI3JIcVkqLsd6PoTQA6NVGt5c98FNxaDoMbbUaVzGciCxoOEALu5lq5Zs26/NRMOyuRytE9mcpe/XJ9+rcfWRwbDfFmTCVIoP13e6M1ilKE4M6van+TBY5GLBKShNJAa8abjfi6Su/Q2CLRHQ9f22+Gnf1q1vGOdRGQL7kSUH2T2aNcW7zxZOMNscaIttlu83x1IPsoEYz8E5WBpaT3YYnYE//ntopq2DwQPooFs4361HbPM8fh0+Y0R79e3KHSw1nFTc9nJunZrTMcMAXKUrqXnvw6U1XDJ6NZ6/rXvm5ft514HDBE8UGOqmzFw8HtsdNod5tg7K8UlzcxHwNbhC1uOdS62hkD/jIBdFgfA54NU+5gyc2gcXrBSH+BYh1d80g7h2URXVtydNVRIFhS41W4qHB823f/xiFjsyfLhza9wQRlTmnSrqGRyEWwZA0SwsdXwmzCgTed6AnTtC8PBb/jJU3fK46v3fgwUtQqGBvNj3G3Co4XeUMNiv/x9/on959rrXLLgkrwAAAABJRU5ErkJggg=='
 )
 
-const UrsusSSSSuperCollector = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const UrsusSSSSuperCollector = new Equipment(
   'Ursus SSS Super Collector',
   '',
   100,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     8,  
     8,
     8,
@@ -2655,21 +2655,21 @@ const UrsusSSSSuperCollector = (starForce: number, flame: EquipStats, soul: Equi
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACEAAAAiCAYAAADRcLDBAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEn0lEQVR4nLVXjbGjPAwUM9cAKSEpgZRASiAlQAm4BFxCKCGUACWEEkIJcQmcVrbB/OQld/d9O/MeEGxpLa0l84v2MdL/h2j9wx6JcRxLvlQ/2FHbn4ze/tTFi+e+M3SpZYELIm8iUZFpDjLpX9AF89OUKEmZVL21uUsCBLQyNJhlNO5PRddTJVeP/vqi5H6Ynv17XJeEMGd/UXskosPVOE1YZ7fj0z7GhtI4k6sprJPj0RIBklZP7+XKKIaTWxmRrq39b0hsBrKhEdnNZSG55XNTVJ/yaUz+rOcJrI9imDSycfotiQ0p+I8OENXJkbGE8seJ6vNzEqZi5+rwnfM/JTGR4b/Rqz6rzrID/BUwNu9fE/gbEmPLGWDNyEN5nF/owV7xfm8b/pckKL1xDakl9BE7DouaRCl4/zV+IuEdLFZkmjp8jNy46M37H219IsFVc6QoWsyxhuKKXi2n5FLI8/jyguVUlBn1Pe4aPz6aDZZsT++m6X3ZNvN86+whD506k3dOcSm7AvcQplbiXMgAF91M6UKEAsLflG2i8ymmhAX/eNlC1BV2Xlo5586wVncqq4Li1FD12Cej6o4uBdt67vtak5AonA/1G+ejc46yfqMyfVF25PJeP6lR3S6ZnjdSlWfcN1JemOJomE00PIlZ5VJ04onAO+clN6SmG7gf1XTk8WWSvyVzLRq6o4OR76wm9BlNkfBCDNtv13EEmMCe8xADGy16PZHB2M70HP7tVvWd2Ql1lQ4WIojY8C/PAeioZZpJvwDQMdA30C8y1gVWfT6VrrsqSog2XTRcGAiEW9mTiJCnNnfhb+gtwqYFXIrlM8gAR9pHWcWkTtpX2MiTmPQAAuvTkMcwGFmh75aeTHubIwH4FLyLBNIBIvo660IiYfe81cTrvp5mUzAYQ71zvCRiO2kYhT0thEDv8SnBvZDA6vsukhddMe+OEMxheWZwZMLcfnIOiCZ40UiJ2zBCQk5Sr3ssBH7SxFoPeA6PjD4SwFoTPbyT08TZCIGLO2lNmkBYhIhyVk2/MJIcOVrD7HGgnqpnzwccLZGEQNM4satdzQ2BnRYQAEarCd6a2KIg4Ai/hXcOqDMs2dRBoIAnM5hhdz4qKLEPLDjOcqkVkg6GlOu00qLDbpUOUTNXwuyYUt72zjmX47blgPVuhWpDZg/oR7CHHeWKVTTXCW6zYJdALA2JcREOhzvOSqoyOLME4BzwHbXrYx5rVaZ1N5HZ2+4YJh9BV+sX/8IGJgJtZQF2cpJx+VUFTItg1SUWAt65GL1xlT0fOI2dc5JO98g/wl/m2TQer8JCtSYhBxngUUXS8WRF95tbdbFc0W3ueVVrBQuSHiLALCPEB63cRodsVMEgOOAsWrktVrEMfKCAcSpCMklGkwZ8h8WHFT7vdFAifGoWzlPj5ulwZ2wiIazs15e1iNTAgM2h4tBaQy/+sW9sZKCHJJ2d82lK7pOYdRLb7ajVfBoPfe2R2AzA0X288ZbLkCJLLJo/OyX8ZVVNO8MD0QRiR+7y4WPo45Hf9/w1IFqkhw+80zHOw3+XfItPJHbZ+5O2HxMeaIn+7OsL+A2z7YR30nzg8AAAAABJRU5ErkJggg=='
 )
 
-const DarkGrinTotem = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const DarkGrinTotem = new Equipment(
   'Dark Grin Totem',
   '',
   0,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     0,  
     0,
     36,
@@ -2693,21 +2693,21 @@ const DarkGrinTotem = (starForce: number, flame: EquipStats, soul: EquipStats, p
     0
   ),
   'weapon',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACMAAAAiCAYAAADVhWD8AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEwUlEQVR4nJ2X65myMBCFx+fZBtgSsiVgCVgClhBLwBKkBChBSpASNiUsJSwl+M2ZZGJAYPWbH6u4ubxz5pLwQe/Z/Y2xuzfXpndg7mzxYRyJTueaxsyQybKnwe35kIK/BPYqjIAAwA0j8f5kKKPmUtGRgQZ6AGXGyKe93GjABLa+PirYJtQrMBHkcDyFjSrQiF0uVj7P55aMyWkchqcFiuqaQq0CvRwmAQlet6wGgHLzCA+gRuao25ZEugUD1BbQXzCiyv7gQTLdJDcC5CEucW98bkFBtS2gLZhJwsJMUGJA3uQFh27g8Jzlt+Z6ieNSqHPdvgy0qUzME1Ylz/MJlADxrmNw/nRcgaqsB14J3Ssw99/fe0xY3pmGlYEUElYh5lBepcsEaE2dVWUG8mWZJirKt+0cKzZKiZdlLv/Tku/4f5rkgNoCelWZSdK2bccbGpa7FJDUZPMyf1qgLArq+j4CIXfmQEvqLCrjQrPCor3jEPEjGtgYfq9sIc/nuhegMgAhoa0teSM/Ds4oEJSDilBaKnEBaA4TVcHC8E5z4nTs46C+6yaTWtfHzTsJo58zht9TINgcSPd+UsaJAkm6pv3lRUOGDc75auO1xDGGLLgiW+4/BauXWl4yaHf+o7R7nohK4kUdJ29elGSSEseGrvcq5SGEA48b1Y+ikjVgUBMwAIEqRVl6hTPfNlw3zZlH4sI7HpQhpliIPXNZzhFzDFQ8YAYXlTBBzSHzsEZ6k6EhRBDq9Axv+DeARBVRJOcDvu42lYGXfPzxZ5CTu26WXBfw3A9o+xk5o2dCJnBFaZ/WgxI2rwRocB6ek1dA8GcVRiqjqiTGMGsrKoppGecsORTou5ZDYwILV4y1rGAeG+CSAcz5EP7d9GRhjuX1dt0aImVdls2qQ0uGEp+DzGF2bPfm+0cSDAvVpxNVTSOTcZlauNBF096kNlcFOSj3ILb95+cTyBwmUmsfUCAsdLsue68GWBwhgEgVwVwkLPIEa6+BzGHuSv39+ytASDLEFovj0NQq0KaXVgU2g+l5pA1OHQwQqyApjJR1y5tjYs1XyIHLGgtrq8dvCvF9a2SsXrDEpk1ZcyK1Py/lH5Rcoix7p30GVZJ4w9VhI0i32xE6jA35hYsWbOH++9bryiRnxuUxWPAuxy6aHycq+hi6shY6rhY4ONHAFCi0+M0L+CKMqoHuqgfaJATkO6Xl40AOPc4pHVNxL8LJvgT0rk2UsXw1wCZIXF9REvs7vLTcxOravxVo2eJ7zUBwoG0fdx0FQmgxn954iduFCQzi+wCSFhteeLPDvo0vZjBRLHllSQ19SNuNB3ovXKqMDDztv+LrwI2T87D/4g78I8+qiiSs3mVpiEohXJ2b3gSbxrLKIwE5AH2RT83F9Jw3PaW/d72Pu8kzWTA1vB1YUe9x4cI4CiwIadv7h+PBOxSA4NmeSO73T0BLZxOa/hcf6z9ofnNVoIBszIbvyBmTXC9hqpS2BgU6dusH5xoMTGKDxbS/qEnl8MsSmqIJuaMXJgXRxIYzAejAQLewxDe98XoL+T6DQqiGH3ilmhbcGL0y+SR8UAUg6Lynve+++8/YhV1Yc6WVrcMokE7csVcxsY/PbT5uruPpP+0fdtLndzy5v/MAAAAASUVORK5CYII='
 )
 
-const BeachBum = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const BeachBum = new Equipment(
   'Beach Bum',
   '',
   30,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     3,  
     3,
     3,
@@ -2731,21 +2731,21 @@ const BeachBum = (starForce: number, flame: EquipStats, soul: EquipStats, potent
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB8AAAAgCAYAAADqgqNBAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADxklEQVR4nLWXjZGjMAyF5ZlrgC3BlEBKgBKSEqAEUgKUACUsJSQlhBJwCaEEn2RbtvnN3t2cZrIGY+t7EsL2/oKtafh/JuKbNVzrN/5NIv4s4J9MOTcjwFdlAvMO9yKH8f6PwB3Lrtu+DXxsAZ6jva6/wWYBo++/wpjybVvqKyeJY9T2uZvX3o4FreHi0tp3XtOfmRy71uWPHBvoO0ziey8gmjc/FbTU97T+TyPnAThBlzhxzkZIRmXQZQdw/7KtGqwchWPyqL+vbB/PayOfnyJfmELvEi6mJdAdHZd1aJUb07ehfz3vzM7gomjDZ1dHD6Rry3p5z23RLv38DXwxsXXff4sXk0tvGbVp9TPgEXzxDe7Z5CAMalftCzNxaeGTeQ7DtdY5CPE8FSBzU8JwMEYnEj7ZghMix+r4IECIdNYu+s0SPIXUH4k34LgKCa5LaT8PmUMsYO3I9BFAv12lzX1Qls7xuM08BhOHeD3GaiKva1tINQQBNlQvwrzPjAZi5ofb9sXqKTHt/TZDO3oBmn0x2HBqW6gGLnNpwLEA69C+xBFlZk3toXLn3Q53G3nzjSKcAK2lh5IxmHi0Shh4VSjoHksBbDNeMlieFBQ/IxFNhwKqGVQf/MRg4pERXFD+wQnoclgo7aYlOGu6QwHDzVbc0FoBFWagduVBvjlQpylUezflUKVPP9ibCkWVNW/cbr/w3W/BtBtemytGPuwKW79vjtwqQjCr44EdVtlQ2agJjDGZyEdcxGMBBM5K3LDnAa41RY5Zw/TT/ApXHU53l3spSziBKSWLyKNPKbZYQAz2ruftfA4oNobjAqI0VfdGwIF5ASvwmVGAyDG8GO4FTAf1RO96t7//GTiucrbNSYaXznL1WWU/yIYxFY5hi+5nqPIjuH9oPz8smkdivl2FFXrtAODDAaG927amTw3nE7AP2+3HY5Q3mhi/hYEFwL4IAsvEFdwy+j86RmHxOSBGfW0Sv3wOLoo4Cxwtg+sSxw+UNStepPtnhcPIcYLZTK7fGlcusRDAIkgAHY2l3VMW4KR8YDEWp4eLI7jZkbJG475Am8qE4NQIoHS2vRXBZ3KGGlEIpvEmE7SoWPgFfxnYkwj/PqRdCbD7z2QiqYrCPOyaZDOhclnpJitYQmpOlPpBJ1F40RAHVe4378GNZ0q7UYEipEoxhei4M46gv1mQOxQExQ/bSlqPVfBxZEeRX5yIh3FSOOfh/y0qsSYCm3uKSwjhRTu7wTLdp2nn1NgMFF7MS9z8NVnBTlgwPn+56xSjZvxz5dvbbyuKCZLKYTxzAAAAAElFTkSuQmCC'
 )
 
-const ViolettasKnight = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const ViolettasKnight = new Equipment(
   'Violetta\'s Knight',
   '',
   65,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     2,  
     2,
     2,
@@ -2769,21 +2769,21 @@ const ViolettasKnight = (starForce: number, flame: EquipStats, soul: EquipStats,
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACEAAAAgCAYAAACcuBHKAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEv0lEQVR4nL1YiZGrOBBtqn4CmhDkEOQQIAQcAoQAIUAIEIIJwYRghWBCsEJgX7cQ5vLseLb2q2osoaufXl/S/KFXGenvl4h/AojxeVOk4gbN9M387tV0ta9VsZ4S+g+Ks8O6A59fueODRzMTtndkKKe2vqznbtauy4U+KVr7OksV2cHN/QFElNQ0Zp2jVFXSEd86QW/L12lNVct3qJd978ZDvzKa+sSzXNYltf5wK3VIBwbGlkoaxyu59urB3C3aRtoq1mQy86ozHrvPc7bjsmaa4wa/VxTN7EVbJlYDmDgb6dPeSFUXcmXldW4rcrnyfXm1q0XZ0zxVldL31Z78Zvla+DsQO5RfbTJSy62EbtjYQJhQDWq53SfFXEOyUM/txCYU1h0J/gmIQ0CJLcc0YZo7arJK9GyMmeu8LTFJY7T8V8GfglgB6siO9/ud8nNOce8B0dlQP5RU3Bs6n88fAfgNCBEAQSMKWWupvZwpu96hCfsrAL8FIYJQxgx+3zxGyk/RyuX+bxCz1zATLHyyPoRcQ9GXXYb+/2QT45sNRo4fXOrE+3rzaHx9VRJahRlu8wZn93afbf8WhOiaqd5MlH7XfpFt4ZJUAUhExQ0gnGciv3DYz2Aj6NLtkpnNPtcQh94GK1olqgMAVon7UXE1AOKjD+cXZiC/eECpA8hLeQzkIMmtUjkL68topV8fwicGsprijFXic0BxW4DG5g2cxHUDtV1JZg+ExruS8S0bGyY6igv4fG1lMadq1+K09goAF+SB54ut7YmmtK7SmgozUF2ugTBdPRJkjAy6XbtKYIyOUcZpLkBiTgUAwPEgbp4v4SyQ/5abhf6pcLru6kHsh4YaoJz0cT4HM0Tf2oTNp8RvJyGVqAHk7wQdApkuIMp4AyWw4SzNfXy4bdllUXatW2FFLay/FQvbE29VsrwB4SBFBfu4DGDEieEyG2VPKxaOQPhYwGywIAv64uTFwiTIYZxvRnZzKOQwMhppPtUzEAR2f1HSHcZha9e9x+zVAWFiQGbaWKuZBaZShGAsNgq2s1kKUC3WUmfBggo4MODHGXR8cF/cqwMoqxiTJ3vgE3NbDLUwkypS2nkINmdwBcAxmGCILNMoP85tqJvop+qQU8vx4Wa29JYdXJa8OgL1YjvTxTUwBYcQVjiKcmFQKbA3xQfqYOGMQl9Tsh1JACoy8voe2PXUalkQHtQifYhmXdeRxrcaMrGPj9SRwcrEM3Qstybb08szWCt64Y5ZszLcUDQMomkaak85aYUb14/VMUU3zkvMQtiMNxABehGsdD2zFwC4fRgg3WCf0np1QK3bDMsgFneEK3LHRQwwsFDXXkDa3KDXBLbBBpjTUQkASsSF4vYQVQwAVhQF9a6jVPtYsb17/PHC+bsToxMPwELOlrYmUYUOTyfouMyT+SW1YX8uDFhqHJ1B+IO0pAcfziWJTbmJ3yEMIpruDzR7BgyT/dwBRWsLYSVsGgToBRJuD+KCw0t9XTeBHKgyncQ9iRMpLfKHXI7mt+jq0cMoGS0erEi/tY842Cw6+bvE4/GYBS/BcEkSeWfQs/HewiriffibAXjD/D6BeTAvfUXeiOxq/HQ6ffdvBJkzvbjnvsX37sr3D3E+28KyzLqfAAAAAElFTkSuQmCC'
 )
 
-const HurrayThatsGood = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const HurrayThatsGood = new Equipment(
   'Hurray That\'s Good!',
   '',
   130,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     4,  
     4,
     4,
@@ -2807,21 +2807,21 @@ const HurrayThatsGood = (starForce: number, flame: EquipStats, soul: EquipStats,
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAABwAAAAeCAYAAAA/xX6fAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADhElEQVR4nKVWi5GjMAwVM9cAWwIpgZQAJYQSQgmhBCghlBBKCCXgEtYlLCVwerZljAPJzp1mGMvG+OnpZ/7Qviz0/5LsLe4BLouH+4Sb7C+rjJKzXvY2HDGkvnxz4Ae5tsfvYkDDDmCZTs1C+njSXJVmhIh+bjRNbWbWRMdopKlomfZZHjIsisIqeY6JHe0Lq2cZD9Yor2fWANK/Z5gkiQ3c9Ur/LPXIz9mgfoyhZEmS9MPyzFJKlaJ5HM0IWfWMlFsjrVnPzEhjJUCLew5dukztheMwbCyY55kayqnlMVwjPfJoXZrrnvXbC9NHnlGltnHcMMw5Po9c+U2lnpe87mh6aE6Act1YWr0c7fSbs7KqyRgh7K5pStmFY622Ad0A1mUTG5koPS6Ur3N6FRMGtYIZ0eyEphlfNm8A78+WFMeoGFToCpNIKBdJqFDA7tRsjDHsiswyjEO0yxCbA/9b4aRYlsA9ypaAHv2aze7UxrVXTFEdM7SbbwVpZjdqmyD+Y06S5BwX13ZekN3rPiW22Rg+qlnOTwRwWaa7cWXfWYvgWk/EuVjEJAIOdmu9csblqX8HQfzwDp5yrjWg3qUbsNxVvepN5uIBMCSXDuRAYyB537YrKFdb5FIGuD9XRikKubPBzm8XmvWbXuWAU25rw8is2fBLkZtv2rYIjBg8IGdhYmKIwseHALtM34bhwHUooJ4dPMCGgVkIhhzAHiQfQLXNdgHzMZSJrSeA3W+cJCdz0A/rAioe0DyXeIZg557dzvrEOkKEpAnOpxDQU5dkSF3nl9iJHsZU2IlbaQXwBr3tNLIJjJ5BNr6LI9bhPrB8OMCI3XtAiZMwDcGOYhiCQqTL/AowrEfDOGJm3OoMCg8FqBQ9SuFKahfUd5qw+O8/P35D/fVlRiSFxFPGuPhvAUCHGmVQd+VtOo0XARMQiHSd+CbR6/XogbqgI2EN87DoN4BhNkIQB5SHAIXtTrP7wiSSawiFDqNDY3RgxAtDgIDd7X6lru7pwslRZN1HhpKQpqwYHO0O7KJExWz2hQ8/o9ECFGAA1UPjbw5Jc3Qg1VW+o4TgKCeAIaYCZjsN4UcHBatDhl/80mQLgAEKATBE5qOLrw5u8ziGAOvXf6D60KUsZ1Bn4Kcs9JV16fdj/UmS+M0uO8shumjtcuW0zfMn2oaT4IyTW/NROFXdRMdy9jAxbKT/Bf1CHe+JhzvAAAAAAElFTkSuQmCC'
 )
 
-const PinkBeanSlayer = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const PinkBeanSlayer = new Equipment(
   'Pink Bean Slayer',
   '',
   0,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     8,  
     8,
     8,
@@ -2845,21 +2845,21 @@ const PinkBeanSlayer = (starForce: number, flame: EquipStats, soul: EquipStats, 
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAABoAAAAhCAYAAADH97ugAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADhklEQVR4nK1WjZGyMBBdZ2wglhBLwBKwBCxBSoASoAQp4ShBSjAlmBIuJfDtyw8m/PjpzO0cBwnJPvbt2417+tJGth3bt/tioPGTDR7jo7VYvgZERdbYe3XLSXQ9CSnsWFQV1Zeemp+CTNsuxjCjDZlrQW052HGv6s2ISEpp71mW8T9FfpBsEEKk4zwnUopEJuxaKbV7odLQ/p8j3hy+Hg6dE2XHi/k39p0Y4BARhvsXlgBprdO3a84C0MbcwscaEBIIQSjelHkHCT0B2Due06c82FwIc6CdXzT2J6LntSIZr4ST6/UF1HVJxFppOpVl4mszonjRsWtH6lqqih87aYyhWG/xOKrfzUJ+Jwa7qe0voz43JAXHxzRpo20euGo4qgs/928BPgGaAPuhHsenoL41hHJhCGJmaXd+H8W3QOMPp2bglBQ3T9ZgqOdAuIEQN4KR/igizvuN7veSdAf5Cs4PdxHWQc3zDPWJi02gqWneK1DG+eG+hw7llOh7II/w/tyauMmuRrcGxAeBsPTAhgEYGaVad5YJJ+8HB5ZJrJ1AP5K3A+GsD9yYVfek6vfomqRx4Ch+bYSdbw9Pyq78nms2h0zaVY/bOULyLcjj7ECy3M6bWpFsMhvg0A4kiwOv++Vj4kAyp02bA41PpmFQglTrQeyZBA+DXyKm57xy454OpPtffj4QuhGX24K+5ITN6UZ1KS33gS5TCxKN8dEIqzxJfg5/LYAN5c2BD707P2n/WWUClkQECdsIwEugq1cTGEBguGdVAOH0NBxVbfhkPvMWZoNzfJqpPmmqXOncAZb8WoAuPVnV0Y3ldbneg2xSl5pXGCIBVSGa2AAiKuPX01vbBIKEQ+nYfMwisvPVy7v5Amgc7xGQERMQcrRmyFEMFgwFzPRti+F8vtm2ElSHOnESftGE3GRPMwkB1l24q7Osg+qcpWpIxABJonfBUPEoRoqkHABh80g6BikKd25ceudvC8i+RK9yFB5txaMYYZDwHACRwIbBgaAzeMUdZn4XQBMfoAxtBRWPYkSdWDOvxAe6AGLPKjV9xJTecO0jgHAxiuveBdOEiOAMxTi3QJftcQyC7u05ziMQJE3vIwDp7/VuZ5rgDL0LCUbFz037xL+6gAVZ7d9xRPHqMszhZ5v94FlbgYT9e/LrzcxHcu2j8GKw+PnEanx4kNM0WdLDS/g4+3iz9vwPlHWvsvYnX4IAAAAASUVORK5CYII='
 )
 
-const ShaolinTempleSavior = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const ShaolinTempleSavior = new Equipment(
   'Shaolin Temple Savior',
   '',
   140,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     5,  
     5,
     5,
@@ -2883,21 +2883,21 @@ const ShaolinTempleSavior = (starForce: number, flame: EquipStats, soul: EquipSt
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB8AAAAgCAYAAADqgqNBAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEcElEQVR4nLVXi5HqIBS9mXkNsCVgCbGEWEIsYS3BlGBK0BKkBClBSlhKWErgnXuBhETXdd7MYybyv+f+OOAfmssR34n+fxnwjdyowU8xdqhu1dCOKDh8AR+6Kg8/a9djtJrz+UNpDmLgA3iabBr6XyVel/0FeNNY+taaLCzt1MoMWGHw08MU9f1FYbPBGNaoQOrmKWy1zH9iPqw8YULa1+z9j+BscuRNAYsNiVzqtCLjAVB0ybX6+pp3+tlbF0oh6rHBYl/Wj0hnhRLOo+U88RF85AZHni1R2O0Ua67ZJnIc/4+PpMAJwgdFJeg61xZLHNfZUztG9WEB/Ax8WrALQZTQwUuujKJ2Cofqs0U8kds0wlKa3YpV8AI8ER5BX4EvlBg4FMRnkC2hOZYj+wGdShnusnJDCJI3P4G+Az6VeIeUbWqzK9NBSQGUY3iZ+wwaEbNm97vcd8AbAEfmAD4N9Nqad9e9DR6v1y+6mEBnnFPvnISBXY92aRY/0H6PNOg/yZhLpH9w+8OmYdhRSqEMko9PWG2slXhH7ho8ns93Ohy2sQyw1eN4oOPxLHXf9+SMIdVqhNsj37TwgkKicV/nftu2xXopef9CgQfLrb3IwuLWYdhnQaMkF495Fo613jMIhj2UQKP0WRGHdex+rdtFiF5Z3rC2bdcJuYglYDiPWkhCq2QluzekM801H7NkdQLlPRo0zW2ZZ6JyhugNkiFnLbECcpn5DCakAstzVEPIdWIu8UahXh4LVfQz8K+Wx3i9gTIH+oACfaskgxhYh+keEZ4PVa0L6GosSBj53EPmATK9ex1zBjbeTcJEgaoU4c7N6d7pak11EqzL3gGw9W/EPGsnbdxK8XbtyGzN4s1AvaYOrjUA7dnFUFAZv1hj2nSrrWW+ApcF8d7FZmupmC9Cj22qRzdFc7K3XLOnVpJLjXbxqIn3HvRsHgjnOcMlV4PZ7riVIPSqpgTyR5cuEc2J5WBhNrUnvkeT5Thi2UHprLdPUSbwRSI0jWgZh+EwLXzGXr8w2lSyvLoIHoPHM1jssN/EepYJomauxGQeJNLL0SnMplfz67ptPxdMx6WwnVhuwV41q3HhWoOumCiY4WRMnlMunf2W+17m5n5hOD3t85npuAjbAcR7O7l9wWp8TlgIs1RhK7aQgUpb3jQ1w+WaWY3BVMVwtRzH7yvItzZduVPCFVajmrFoyVbep6eUyvPrmqo9qtrD3CC1TjilSMxR8BTeCqsxYegnDHa9f9cp9GNyGbxqzKge2JBlGGa7goWzL5Zzp7AaEwMr8NmqRSZf9hvSnaf9oCnl+fw4T61AV37NWhBQl6YKMDOdKWxXYUnM1wyUmK2ly9Yu/gl5+O188hNYut3mC8UD+BXT8U+NVWK+ZDUp2SKwllyvYC2RhqPPtLr+a8Z0K0TD5ZiymlZMxwU4YDvbFMtTadfL8mt05DOLUNBMKAm4XHO0uD5lj/EyL3vWLFTh/PSGo5rbqbyOTf5T4Cs1ctM8mb8s1j6+4f4CRq3iF5r34MMAAAAASUVORK5CYII='
 )
 
-const DaybreakPendant = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const DaybreakPendant = new Equipment(
   'Daybreak Pendant',
-  'Dawn Boss Set',
+  'Boss of Dawn Set',
   140,
-  starForce,
+  0,
   true,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     8,  
     8,
     8,
@@ -2921,21 +2921,21 @@ const DaybreakPendant = (starForce: number, flame: EquipStats, soul: EquipStats,
     0
   ),
   'pendant',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACIAAAAhCAYAAAC803lsAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAG3klEQVR4nJVXgZWrug4U59wGvCV4SzAlkBKcEqCEUAIpAUoIJYQScAlxCesS+DMyEJLN/e8978kmYGONpdFI/JH/OJaf+q9z5few/3bmeT+k12uOIb5e70D+n4Hia/jbPLdPR5zy70ZR21dAnzxyxK5Glrp6X2PzOutEYuC69jQ85tnpTGiCuJ6YSkzj+orrS54TmaX8KpbVQwqIYN6BmP2T+AccQ8onbrG6s8d1lZjKSxrGoRm77ubUYDPmBVUo9qNM3GEMa3gK6b0osOYUlg2MAnlzuxHTz5Kak4KRl4/sniAIcfiuxdhJT0sQs6++Dgd6ebaZphyOSZb+ItI/Fmm+CwXzKTQw35QSkwHLjHjvZRx5zvjcFOGAJwiC31NIzkcjld295cTXvm0bH+HQmI+gLpofNUldlGVY5rlUInP8+QVCKoQFziSIBPe7qgYQLp8QzCCZZfma67Cy7/13ex4eHjQYQnhYOKvCp7thbWokDBqy5QDGnMoB95+p8wqEwYyYTXA0QWiYLE9I6x4+STjNQzeba2was5fwWFd3RTu0S3cnWwP40iBw4LG7gQ9n6WUHo6G7z3V5Pg0zCU6uPIFs6JISNWdFTapj8Hu4hnYKj/nHgfUwkNwKIe3s6XxdIHsWhgJx1dvWfEsHYyQnwcATPwShPDSIuL0rNgWiOvFMUQTbV+rb7A2cqnKpFtddcBkbyWCaZb7dvmjt1DQ/RzGZf3r9juNVzk3Ed54lmY058DAhl+PpI0fyommc8MkeAYg4Dhqr2IKf3oL1E4hpFAD3vf/84ClaGZTSqZ0kXqO45SI3yWCYukzblokTCAdxBpHJHxI2p+9vwcrZgXDQE1Yvs0CMCOGFhrdlBBDP+SdAmIqJFDUwiOe+ocp876QqEdYpyMYtVyvDPwraqprwaIy9t7iMLRI2IpwOSWPA55NsArzSVU/ne967if05SR310OqNueuKsm0XSeTDN8h0n8HQ0tGSnUkO+bM4itmeRpyCtUsNb4zUAElXCRNce7ESEGs61UJaNr2yXEN22qTZfL2WAoaBUOaw7XbMU0YNELJRPJYHjgTYr2LOGF9TO1ywo/PC7AjQUYAY4Ora5/Iifo8eCJ3BMuuZxkBBDrkP5CMwnEnAvB0iy8ITCJ2i6YhIjlTKyQOKQDvFB9GwuAtB2BXEvg2emRSPI5NIkDA97WI7klTDglGWarQoR12zUEO2exkIOeWDbDFi0lQQ2LpjOACCZFZPHGvStJ9SjB5CTAy/nMBHSdK16iqAfdI++5QnWUfejQloZ+rEUEaWNHEMuLqfYbhi4SVnCgfThAJMT2mkoPrGP0EeQsKWYNOX0DRrlc5EfQVyGAmkrHuL7CBZIbSxUqVkGcJNGIZnpjU145TDGsIKZlyL9rOtSYNddWV48Wpoiv33C5A1dsgMoyAsTpoSPvjWbQOPASNjWhN8lfcJxgmYCRS36s/aGaErAHGO8BGAIBabN478YHjePbJQ/ZLOY/ZyRzQgVtzcxDVjSVjIVdA8zuCIB2AjgE3Sam2RlS6WVh6iII6hOPLjU4eWPQLRYgKxN+IDhplBAVHZnPTk+o+eWLM+BrdyZo0YnkcDhEBkRPRMuhbqDR5WCydQsT/p5QMQPiC2Aw1a5DhQs+5pv0UPVGrMmKA4aNeiEI4NCzaKmznDG0sWKdaW+7NPJR+2NpL9LFvJ7l5vREq/gFj/0I0GSHNtfYMNe01dt5LMXehMAGZVhVNao/wIANHPuWGmNxiSTawYDuXFoy7QBizc3+QybFdCfQjNehrOoknrLYwYihTDU/U5a+CKCM0w9gajQUFc2FjHDIIk5SPUD3b0K4hvHuM+d83YDr339LT2xuVHj2wjaa+JbMGmCaczTBQ0MgkqO0LCKXbn0wmNT5IL6tBmPDvNaTHbwkFP8LasnX+yI0JvUHK+pL/5V4+UcdUFagR+dw8n7XcDw/1evIyWHhQK9h0WvcZ9wGYqrdn45myRHQTqVAEvGevc3vnXlz6MbeN6aBVC9UDHVvwpwrClkWp/KHC9bGC03c8aorqRv6dDVVVCrmPjxEZKROkLdcq0oBTqebQ2jMZctPOvvG3b83jvKn1VXX6Fxi0IW3sW06mf8O7xXkdX0q4efBJS31eeoJKw5jvN8ozcVM4kZ4cpJigOBm9rlo3FG1nZgBe5P5ggyf5msiC9jGEn5PH0u4fWtzio5n17lN1ZxHoCrewTuL6iyrEfOZzWPbIhv0p0eKtf74apW2/zNV8vN0BHHclVOF8zw7ZXVOzx+qaHzlz+aeCh9l/MJxjoCSiPVdbfr/N6vTgCKbbXv8PY3mGP15/W/HoSe32/3Up/+a3jf5mJ2ZssCPn7AAAAAElFTkSuQmCC'
 )
 
-const HumanEnough = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const HumanEnough = new Equipment(
   'Human Enough',
   '',
   0,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     0,  
     0,
     0,
@@ -2959,21 +2959,21 @@ const HumanEnough = (starForce: number, flame: EquipStats, soul: EquipStats, pot
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACIAAAAhCAYAAAC803lsAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEk0lEQVR4nK1Yi5GjMAyVZ7YBUgKUACVACUkJRwlQQighKSGUACXEJeASQgmcnm2BCZDd27k3Q8JH2E/Sk+zkiz5jov8LdfTgE5FpevJn+s7lvr4cy+2bxj8y0XJLj5Q11rFdMh8jolue9qLo9xjnsz/nz5YfidyZiI5SitKc0ghuxgR3ex1Tni7fwPaes9VjTKPueSz9eyKxwXCa2uhB10dCFHFkR0XZZeAJiZ58D+dAeH6t1rZn3dB3+Egkh6eYpCvI6jY5EQ0TXydU1AMVjTsHinriyBF112Rj2yg31q+JCLKio+6syDyeFN8VFe1AxtxpuJV0Sm7WZrgpSsobZZptq7XtmZJv5/hERGW+fCPTk+Y0wWPA8PXr2djwv5CNMWEdED3OJV3a2zwA3oFtHYz5EyJSp6GxPR9NORU87zXqKR3tNZNg77PMm6FMU07DSGNTEmuTRc4ErDTKIwKr+YTIxHB3lTokVNf15IxB4k5xHNvDRclwCg1Nr5jUCVVTfySAMYgans/Y3iJEFAhMU0w4OONHhOxzcy9tBECiaVxFVFVlyfRNSOaYAIdObFYR8WTMhEEoSvwLKd/MVt1w7A1d7guJ6cZ2TU2Kz0Gm5rR0+aZnTK5NXyyBkcVzKtZObsQKlq8Owlwxtt50V7L5h+d57gpSl6UtcQD3ccAGY/Bkc1ThEJwMSKwwa8R+vFy+YYxDnqWpK5dL4+6BRN+76TNaIAQv994uSZFfasZxtOP3/n2Zhx2diX5RIFSHO0V5Y5eJNI02gpRvrTVVHJQ8Xd4sGj0TDd8R+7yKF+OIvB4rDlc5fZEXqjCVSBR1OpMQQUpkMGhX8YRX78DoGlbHa4uQkcmB8/nsI6BtygQuReUcEXsShgqTALMgHy8WpCGlXSJWJALA45DMMAzUti3KfnGiR+TmVw7FaoWZyiIjKA21/sYRiS0ZsiRwHGDVFt6JTC5vDggvwqraMBIxfQc4UmnbAO01xhB94dlUxRL93Yh40SZWqGjX6JRIDwZaeyaL2LAiEFTajIhLR/Qi1SJCla76TmQWrQgKfSO5LD1ji+SQQAgRN+yi1BKY55STXY2M2BBx6ULVxyRcl7UTeT2lB6YQKgQM/2KzJbFHxCLOmUS29AMpX+zK8oDAO0JCMh83szWZap/sHhGlknFCboXEtZsIW86mVpTX5tBzAXd9ao0VHSF9Sum5fH3pblblo42RkrYMgIT27mKgjo7TgA13KwGzG6ZN9P795wTWE6yoiASweKV3yQgJiSY6KRCW7xE+bhVZ7TYqstcIIWQsYe00EZJ4X6N8u//VLz3gxAO8QhIYXCpJWrkgJLHTUdEVwWyk8JfXN0Si4ChYL530FvQVpAyTwcsXb6A077gKZeYIgIRUhxcnWmzqCRh/rMjsERECsf9+zG2fXx0expKZJzUNl+0ypiVnN1bu+Su3GyFujbTzI/lnERGU3Alv693VOLf+MnEpECEDsHl1rov63VhBS0p+nBoJX0gm40XqKef44P7yhIjDivCCTDyZwf8tcHobexdHEdlj/a543i830webf/ob4S++IpwATgXOrgAAAABJRU5ErkJggg=='
 )
 
-const TheWilltoSurvive = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const TheWilltoSurvive = new Equipment(
   'The Will to Survive',
   '',
   100,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     4,  
     4,
     4,
@@ -2997,21 +2997,21 @@ const TheWilltoSurvive = (starForce: number, flame: EquipStats, soul: EquipStats
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAYAAABX5MJvAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAFVElEQVR4nKVXi5GrMAxUZl4DpASuBFICKYGUQEqAEkIJoYRzCaGEuITnEo4SeLuyRYDLXe7meSY/bEvr1Upy/sjrMcn/j913k69ATNMd78UVb3V61K9XjOfPu0KaCpkEP8qh04N8CeQlE97B7YmOzvL7MUpdvV71EkRPEDhZU+YyhFGaKheP03Ulng2iz8o8m38XBb67EJ8N2Oj+H8QOAFQTTV3I0A7SVaPcikJCN0jTlPrM5ppLKcfcq2M+I4g+hub3msiSGMe4ma+p673ONS6TfeaFLA8+erDPffDy7sEAdtp6A7Cx+TMm8nsu4RAmA4JTqZFTB0dNgcOOGhYO+3wfM53XZ2FcARgvuWRt+J6JbJOKd5x1jzMthjJS1w0c2fNx6VABcL7vuxmAjY+8kDekzdKPsbJigqe/BSw+4ZzhOerr9fLUSRrTYn41Zrago2MWVqzMIIiK9Gf3SuoyZgAVDvVPyziGdGpzagwZqM28nhxmVDe0x+zJTmGljRUTnNgfuunve6XCqqsCSvdLILu3t/2UKJ+oDYRgYvpSM3yO+ZklA1AWuYKjPWV5w+InYdo5uGlADLnRIR3lEcsdAQiEVpWlFKgJTMcwjsswWSbMADi/sL+qoFsQatzSa7jgLcVuujdyQE74Q8wSFqZD6YQnVdCwXoFq50dlhrRTqATgaoShA0iwKiVjsw7ZFsQOTqcmhUNOyPeUajuEiUB2FydFP8rlUsnp3ANEJkcUqhsLFQvWAgD3OYSSALhuwer34bDBMlyhVxU4KlJwMiDUQZdIJT5jgoPfGZr9ya3CwuHyRwt8GY6PxELBOEqMaQl9ds6rQYdSTGdt6xKQ1DuwJ1zx2c6VcuJeDmZGEdiDvNyYopGNp0yokyznxmiIRqwkN6Cyc/E5neVtPDnZCOj0rC8CACZA7vVpr9nJU4pu2TAQlmZ6QmtIy8GqSGOq+DZ2y4gVwuPSeGgFxRCO41p8HNTEOdmtsMalMP8xAFRxldqvUawFhifaFCDOF6gCFCdBs2doODaO8yQY2qHtfvB0LEUWbRiQORxMI6YjM4Al+3h2CoAhuCKtqsSiG/nKtKJWVWQkUu9jmmJdnVhhG299dMZ7B0v2tcmicGEzDwtNKP1wSnaRATqhWZDqBQ1n7x/w3knlOg2BOgALBHGG0JYAsqrBj0bq054yUQBX2FsKMkOtqAGKKTszwf5C5ZI6vqwl24lokEDooML3CnUhyyI9lgUUh4IlTKzp7a4pscNyNcOc261LHkzsQM+0BJAanub5/X4H1YOWZAKZw4fLS1WM69/JuQEfC9APls/nVu1h9aTXQYnXxcTMblUnTIg5Sy0E02iFO4PZq7S4ZRt4Kp+0sxkVuOpRD5emlqOX1agx1+PuYQWPgmTlJJB6UeU0O1igTIia0yxTWGh1wYfT7MxGmac5v/Fs82huBLDMLAJgKMhEjxOlwhWz45g/ilNbIRxdsHBwTFVdi+vj/41CTxBPwdO3Xa+ftt8YHYYBwmvmUGjIWBeQhc0QqxwvN8bEzjqjpltL4xFh2ryDoanhH4gxaGjUkeuVDQPAYXOCEKL0rgCI1SM0v7KKN/HUoWdNqAhZsgfvHmpfDgAgtReE5RAvLrBBqiOLWpick/vfDzlruX5+PdR0fZTuT3fMuV0fjp3YbcnYYAOjUNvTQS51uTbsHw4N4PK2zQPGihmEt7ZFl5UtiBkIv9yQWmRkGRbrpDZMdMs+sRDiKgy0xcK0BfAMhC2YKNZ7Dh2s265u3oJ5sn819I4R/JfzX11qoljvP3f0crSrjPsRiOjp8OX/i98MrcjfLfgHrOQ7YZJBHs4AAAAASUVORK5CYII='
 )
 
-const TouristofOz = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const TouristofOz = new Equipment(
   'Tourist of Oz',
   '',
   110,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     0,  
     0,
     0,
@@ -3035,21 +3035,21 @@ const TouristofOz = (starForce: number, flame: EquipStats, soul: EquipStats, pot
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAABoAAAAhCAYAAADH97ugAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADHklEQVR4nK1Wi3WrMAwV53QBZwTeCM4IZIQwAhkBRoARyghhBBihHiGMEI/A01Vtar4hPVXL4SNH15Kur/1BUxvo7ywKX0Kg4fF4UBzH44e+79+KjPH+qqpqCMEmGdV1TcYYstYeDo6hSv28K37ROlmMC4EiNwseqClRPSX5nZRNyao7dVXKjjE8kVGBv2X/hTobU9d1ctFO6UYnZzXkGYMlmBmiJ2SbWOLrUpMpjHz+8WvxV7VZAGwBrZiaPJrOjElN/Gq/3GtAA0rXW26q6fn3HfUKDWaAhIOCH+ALv078xkrJUY21rBb0LstSalxzD5ob198qbjD3ByVqSIiChuM+9cfyPc/zBeNWM8KsrtfrIk0PsGXIzlhmbL9ewgUZLpfLYtG6ktDR73SgdGuDBrDLBQx9Axb3yvdVO8C6bxpz3UcAHzjLMmqa5kiIQ0BSzrZtSe73O13S1L8THcjmKNAIhgftiPIOyCsgXyIBQAZizD6wMtasBEXliRMF498CGp7PJ51OpwHrAj1yGQig9IX/4YNh3bBRFEWbYFtAEUAcmBABVIYBUMdalMcTBOAM4jN7LyPMFiAA+Pr68oHoOTB4dBoBiqIQ8C1FeAU0pzShNDLl21kAsIZE/0bbVo1doNGcomDmVWyo/CzpcrtRrjKejF4O/C2QDeRfMdMSSDdrnpoH3k/oNRBCImad9JTpjDWcVfqqqagaaikQ3xe7/ybrvBqADFF1ppy3j6vfy3FOyJjydUpt+Snbiuvn71gnVGagAawrzlRzJqikxS7LC7fNPqV3ENa9TW8PaMI67EW8bKlq+NABAjBYrq6L8Rtbxj7QqsnZKri/YYeA/BaNvxPWEZdsb7if1h7QOE93Nvv+BWcAlYA5TZPnUWinpgMQf+89kJpdKffn7rXOSxEMIKHueUD3XNDPMdO6C+cm9eECx7N76Wc+V28PDvPqDZ8DK/m1opVVFZZOBQNuDIJGFJxZCfaFZZL9iLUu0MIbg2B8Oi+Zz+wjSM87fZ/OwV1xoNaXKTgnnIPf/QsmPe/RmJGllyLyvRDdln54C/f2HwbbmzX5Q0Z5AAAAAElFTkSuQmCC'
 )
 
-const BlackBeanMark = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const BlackBeanMark = new Equipment(
   'Black Bean Mark',
   'Boss Accessory Set',
   135,
-  starForce,
+  0,
   true,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     7,  
     7,
     7,
@@ -3073,21 +3073,21 @@ const BlackBeanMark = (starForce: number, flame: EquipStats, soul: EquipStats, p
     0
   ),
   'eye',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAABoAAAAeCAYAAAAy2w7YAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABuElEQVR4nLWVC5HCMBRFszMYKBJYCVQCFkACSCgSsAASwAISioVKoBJYTqeXfc0mbSjdO7OTNCQ575e3M/erh5teX5oI9Difz5MS6rp2u93uIdjMJao92MzHGJUEMpDGus1m83YEkkBZlrnj8ahQ/J9Hgn2Sx2TQp+qArterW61Wk4zL5TIMmgpgx6hHh8Nh1Eih2JF1KjUK8kUBIB2qqspdLhe3Xq/dYrHo7BlSFBSDYO1+v29gfh7s/iRQyMrT6dQJDQ9Y3ynqDZ1vHd8YwYhHQ/t7QSFvVK76jZEc3W63V/j6IH9AFqKDQJhvt9vOQUCsh95Mkke+dYJQDHmev8JXlmUDY30UyA+ByhgIj1APku/7/d4p8+QchTZqTZ4B4nJKXetDkKBHvmwBUOKECo/s+hAkCcTFiJwQLjxRjvT76GKQuJBLsJhwkRMrPPy4BUmAeC96Oz7E79Jvg6ylwGg5tB7lBHhRFC5Vyb3OrvvjKFDsMKVN11b39jtFj7iwjrYgKxUDodK/CJuvAbGxmrXEqPRGZMQ7ebGSR/l8Pi/d9Pp+/mFpEzomVbsohbzM2r2+6p7v1/wH1m85e0N5mFYAAAAASUVORK5CYII='
 )
 
-const WorldTreeConqueror = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const WorldTreeConqueror = new Equipment(
   'World Tree Conqueror',
   '',
   100,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     4,  
     4,
     4,
@@ -3111,21 +3111,21 @@ const WorldTreeConqueror = (starForce: number, flame: EquipStats, soul: EquipSta
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB8AAAAfCAYAAAAfrhY5AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEM0lEQVR4nKVXi5HjIAyVZ7YBrgRSglOCt4SkBKcEu4S4hHUJcQlLCaGEpQVK4CSBCPiT2bnTTMY2xnpP0kOQD3hvAf7fmqMX78BDCGv8Jj0X/qyuPrKLz/ftRUFzdqsPDsCHEIapaabS8Tyuv1s/O/hXy+AEjJc7XiERaBJrCE8NzWcb5+kBhsHDNKkX6fQ8ucj72Rs4T5gB4/fYbsEJsAAWi3luHXTqzgMtYqoOr3OcMLoR7t3Az526xDkXiw73gbGWoUGrwIXAHkOaGsIVPk8PsOizM8DXxY95jk2l/n6MVOejYEGAN+BH8xOBQASuf77wSTNwO/Rgpxk8knHOwvf3JMAN/MIYHNPNOcXIJRSReO0kKfs8Thm49RdwNkZaKr20jZAFnIAReRjjpEwgwBORz9UyOXL+zggY/d9hq6cY+bj9piHgFYEGFRyeSNNaUjcmv+vAmgWfDXS4GM7RdZUtBnwBS0av+Fs+KNIhdpMy7WyzwnTWwTIButFYATOP8KUecDMmvy/mkvSXTACBu/7O38j4xx6o2HJB8LkausCrzbH1XsNtC0yGCxIeMr8A3lV7KbKg2x5UW7VOej8La7FVdkof/eXrAcvtymMiytIEnOv7iZ0J2QWtO9AJmEg4O4fkqMchCrRxznA0t/laEca54rsh4CLiXfAgEdAkmuywhsS0RQJEApcw+Jp5dkpEiQgTIpJqwB4wbTaTRErGWA8fMVeoan/mlxS5ECBASj2JarKm9PUqiap3tQ7aui5oLEp/zY/4MzntFLXWMb3ZsYl1ItfmruHn1iPtGdamlKqeCwFy+chH77s8BoVuCLxBVqFrqcnFmtnZ5A7mDBHo4Ip8wy2ue67tYjnlZJJ6yuBJjzxfsvJjezjhrqN9HMN5opssOE43OxLRzLGJEHMqAWXihGn48phCe83A3ntyyKk9qUJYCDy4jsnwalCa/ZYaKZcai4FSH9M1s9Co/t4pBsEbmNTMJaJ7pVseJ5HROAFEgTp+z3XGz1iEca/nVSIraL2rhcQsRyaKLiMix3RVGkkZi/sNKSMBp25HPkAazI4Iy7QXvrFJu5cDquNMEWsTQYuIRZixXLpqJBRd6xQDJ6VvOt0GXF9asAZyHXkJUs2wBC2eWDzWgiO2RdMnUqDLiOM95HaY13zZYqv2mrpYZlkw5vcMikuJI95plxipHCePDhPVeBV5AbzrgECV85xin7qfTRqglA+4xPZqe2QbtR8YZ4U6HpWlNGm/MfX7hxCx9Ynp7Z8GuRFgj1G3fRQW936I2aBqE4FJkVg6bNy5v+fA9k5Mbw+QBEqWyhE3HQJebE619P9IwOUeTmoHgHKX25yY5AAZpuJIK2xlL4YkQAIRIgxgu2q7FEBIO1zxLeydmOQk8yt1rgQZqAzlvAJw820JKvabc/uRs8aazb79q/O62F8lg4LBPP8VdQAAAABJRU5ErkJggg=='
 )
 
-const HayatosTreasure = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const HayatosTreasure = new Equipment(
   'Hayato\'s Treasure',
   'Sengoku Treasure Set',
   140,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     11,  
     11,
     11,
@@ -3149,21 +3149,21 @@ const HayatosTreasure = (starForce: number, flame: EquipStats, soul: EquipStats,
     0
   ),
   'shoulder',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB8AAAAfCAYAAAAfrhY5AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAD+0lEQVR4nLVXi7WqOhAd17oNQAmhBCwBS8ASoAQsAUqQEqAEKUFKgBJICbw9QxLDR8/xrXtzDgIBZ+/Z80n8Q1+MeX4E5jLwpjV/nE4XTV+OX4MbYO+IE6K+M+Aaz78m8BvwO44sDK80Tc35BR4AnHrvvX/iec7g01TQ5XJ7BkFATdO0mIvxnwK/Ne8F3xL4leyQNIyi6zQMzYJJQWrwcE4UMCF/X3NovpH+V+BsEIYjeD48HqUlQG1bU5qqiv5n0n2T7RrDAC8jTVOE4tKA0Jn+UczdeD7v0fl8Hp7Pp5np6dEoQkieC7HVOP01cCM9jSODcG4hzLqWZ1mM+6Sg6lbJ/TTEdAq7+ScSX3kOAlPB+SXAlZvPUHQV4j9NE/KgpTDKiaviJxLfgM8st+6uK2Biub1+x3mglIJCo5CYp4TGdqQoH+ctgSNwbir5EfBuAFiP+2kGF0P3uxAYkBfDXe0IbMG5frMNuADHcUxdFVGSBh+B19w0FUVB4eVG02NPYAuezBynqLcvOI99YN1rH4FsotuMZ8n5sPdZkYFALQT8sQXPkCkSJ04UTi6JMbOywL63BrhGg9W8znjAfMj9Rp4mU3StF++PEy54oKWKv6vkeuexkAP4J2CsB/D+KuDvPJfMVNkeeDssMHsdZ6XL8CNgFagjE3twNlaoMwVxsH6g9e7ayl3XNWVZ9haYiV2vS/ggOZ92CTdzaXBzqKobI1B5fxFw9gBcLY3NeVzzHwgkSfIWOMW5HV/APvjMMeEvy5dUI17c8tuhXOwtx9hKzSA60AuBNDkEZuHvKNe8749LjQ1xPdtDPDFSakkwbcgp9759HqgA611MLWLBCorERmr2uDDfMQq4bJe8zvOlrzBoWZZy5hDwmUEZhO99otsYMwEmzLakwQCoMlLjPDNwAhsF1Dm33ew850UAWYar0jG2fXo7PmW1SpUsLgysglXSnthjthebxUDAufNwicEUi4SaXHZJUXQTcM7kI6k/ZTUDd/Dei7Obb/vxBV6hnKvuZWigZU84DCl3Flkc0ixd1es7YCs1AOlpku9udj9MJkZoMihcITn/SDy60TETj3MkCFprjI0piEtIwqiV+Kt4HYYtsCf1BXF9zFCN1CjeNqaaTrXUqmuvsoj4Rq0STALtwxDoqes6SSoOhR0uR0CMQYzUD0zdAFQ6m3VtL3elFuKYaDOYRIVO2/SLAhrGw0snJLavwtOCpe7H1X6Oy4gnbFK5h9v26v0iodXvMrTFUnbtMe2WxvAiKslHjDC02MYb70tjU3uHGz64ZefXh399BgFZ3P2VyRssRQSZB45zzwm5/JhaefsO3BL4tP+WWJn1eDdvr0Hgx50rj/8AZyVgfcPMHkQAAAAASUVORK5CYII='
 )
 
-const EternalMageShoulder = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const EternalMageShoulder = new Equipment(
   'Eternal Mage Shoulder',
   'Eternal Set (Magician)',
   250,
-  starForce,
+  0,
   true,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     51,  
     51,
     51,
@@ -3187,21 +3187,21 @@ const EternalMageShoulder = (starForce: number, flame: EquipStats, soul: EquipSt
     0
   ),
   'shoulder',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACEAAAAeCAYAAACiyHcXAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEJElEQVR4nK2XCXXjMBCGx++VgApBheBCUCA4EGwINYQEQgQhglBBqCBUECII2fl1OLLipLuvO6+5rGM+/XPYfaH/Y9cfxrtng7+FiM6v1/Nzgm5fIDdhfgNxLc6Dsw8niV4tkBnmDqRAPCV9BADnVlsKfXLSK7ma5KwnofekRkVCigizBfJS7coTuk3SLasB4LxnJ631Y0/Of5HJMMOB/Vw+qHs9rvxU4TA1CD2AWRLw9V2nCxfDmhcFABKSCn6IYPHFMFqfycxJlRakQHSQ6ftc4je0quQEPPH7uCHLTC58rFWQDBd8vB5BWC1HZ1YvgdT2Up/uqB0pO9NwWoUnfq8dkjisIfh3T/k6xtm8cSlUDKN1n0JWgVy+RqgZDxqVwAXR45SGF2sy08y0Njs3HP+JPBwh7sVR5bCA1IByQEhCDMs4HEmbYQVCpFdKdCC6fFEEkcPAL5MOzc5RYnhJN/NvijBEH7eTN4rUIIAGiPUjDf2RE3RcKghJXdRYciJJo2lUghQvHg5DdF56AL7HjclmwMBAYXG2CcKfPQ9558iEA4PoBUSbQCUzlj5RpMdxveVFs+GQhOScrwEmeE9S9QtUAXKelcqhEU3IoESQDMvQWG8t1twnZjQzvcXTYyHCgZgW52VzIXveKG3Guy5AfVQ4bWxdTyIq9EHC7njwzL8F8VIeO9BhmGk2qZhbiG6vPRdnPn2RV/T4SzA+rGBgUCzZDUhV853kHHP7paOm9euuulKiGBImbhZr+XZPEFXcb0C3DWsgXMd8hQpgYMvzpZ8IW0xHxWpYbgf3EFd0MWyEXhFhkBPZMRKJ+87iVDQtGlA1UIy99sthlNSkORSSs1SpsDrcWomoewIIInU/649ZHp/ypVGiOMSNqrW6FAESK8OlbouDHni/3Pq7G0RwtGWn87g4xoY2A0CldHeU/CkXoGIFDDBbIFtKdLihoHkUNYoi0/64WlBU4jInw0PGzHQeZXRSknPaa+qHT1JiJg4kydM3d+LdZlLWENHqWMtlwSm+e38v+SODSoLjL2MV8bqpIzGOK6UeQjwzWVdC3gwq0FLedpU3izX54lgR1SR2DRFDglv5tJuoKLAFge/T9B7X1HNSlaRcsXpHmvvDyFwhNjmumIB7yi6Ol6RsIfJO9wkqm1huAEQ1vhVOLSuQPXeKW6NCiTpzX+ItRFLjgoSc8u39r61729v44IGHIyQpwoOnKRiqCgCoNvaxOsSPOfFEBbEx/RVvDHNBQwJMyRNV9ZbWtiC6/PzHD3KcG/KzBXgj3NGTbYHAdhnms8CU8s0qvP4EEefCgbbhQva9vo6MVY3zLZBy7DnDHKpWjfhAXl/mPYIQ+bXLnyUm9WP1v9gxO9yMybOcqB21ix8HeD3Wfm9fTyEwwdPPst/+0XgOGZ6M0R+MeUUNU59xSgAAAABJRU5ErkJggg=='
 )
 
-const HumbleHonor = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const HumbleHonor = new Equipment(
   'Humble Honor',
   '',
   0,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     3,  
     0,
     0,
@@ -3225,21 +3225,21 @@ const HumbleHonor = (starForce: number, flame: EquipStats, soul: EquipStats, pot
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAABoAAAAgCAYAAAAMq2gFAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC8ElEQVR4nK2Wi42zMAyAjXQL9EZIRqAjlBFghDLCMQKMACOUEWCEMgKM8DMCv53XOYGUVjpLiDz9xQ8cvsCXDf5WEtvgoO3xGCDPb29pWJblcHya9HiaCpBSbhbmWUSTSZJ4G2+398BcxnEEOjQXD1SWpVK8Qqr6P/cbNN3o5nn/1RydreuaOGgYBgWblrvq57nAzcLNNx3Ac6hV+5qRi+5ujq8VooG2bT3veCDyu370yfpeeLFoawHfcnTtsvqd42sxArsYclBiggcXkasBUsQVcsW8HUK7rlMPRLLOTaxLaYCtm8Ax2DY/+8k14RquJ2bRIbAo9ABByB2llNqKeVZjBLNrjgBnoHCjMoUgAwYZmgoybBPsDPAuSAGsNSQTZuXIF2irrE8/ssgFIowJASrWJqED2HUMuIPual2o3CrDjIS5tX38QPFNY7wC8L0GelzrrIsqqaNbzw/1thBx14rEqhNigAWyInMwaRJl/k2U41pHQhC1sVmgwHYPkwfhcvsRDmYBfd8rYOiZ42QoFwToKMQgO1gDCkIFleRVZVBC7iqM69J8QoiAM0mxiNaot6oqZ1koXgkin5LJBCPza3dDSPP2FazT/k4K4hUtQScio4Az+Qi0juajNR9R+sGdeJje8orF8UJaRg8QSgjEKwn6KoN0mFWcolc5CUFq9HM/YRs3DXg3nZ2cboQJ1z9m0isxmTC+gx/PQ9cRZDLHpbQdIO4mClfVa2sAP+RY/Hag+dmiVZlrKyupah/ALMRmWmH2hdaEIJfe2z//D8b4G+woAchV/aIh9PdEkjLAWXonvALbMiKEcDChf5BUYeUQptzpilm0W2ChDoiQJ7pzggbK6+IgDPANEQlBl+BNGi4IfFpYvzSY1mtoRWa6xl5Y2Vs9FnSJPBwKw2PGSi1dm0kKe7EQSsPliykV7B1a16FVd7JqfmrL7GWI0vDDBBY54RbFFtl+hbA6mCsP1nFrPNdZ8zgsPKEdux6Mry/6rv0fIJSk2PGpBKYAAAAASUVORK5CYII='
 )
 
-const DangerSeeker = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const DangerSeeker = new Equipment(
   'Danger Seeker',
   '',
   65,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     3,  
     3,
     3,
@@ -3263,21 +3263,21 @@ const DangerSeeker = (starForce: number, flame: EquipStats, soul: EquipStats, po
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB4AAAAfCAYAAADwbH0HAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADkklEQVR4nK2WgXGzMAyF1bsu4I7AP4I7AowAIyQjwAjxCDACHgFGiEeoV/AI/HoGUxtIQ3rVXUIcQJ+ebMl+p40JISb6Y3POvW3/S8CAtm1LUkrKsuzQibWWjDEvga/X67SFr+AAhVOtFMaUiZ8dOscff3UPnxEsoq5rUkol8EQxoHbUpC+zo8HViZMi6/ZkO/8cxOZZofy17Bw/ku8CWsGIRndqmV9BA9W47M0wTIoZmkhLh3i/IEWGp8ZZTQ9TDbOO3ji9U2tK77yghh3cEuiQ3agwDRGWAKv1Y9sk5PAeMnbl308XV4Ar3U0tO4QvOA1p9FdWimthVTIOGQgpxnsZ0sz+DvK2B68BcIqCiMIpal2Z3G+pZKc2+e8q9fIyPbVDcFAdF5Sijp5Zpvd+XgI/eolre7pcLtR1HTLyhnFZlqS19mN6wd7pRUNjWZrL9KjJ/DkYqpqmmW6329q9fqP2HLjPplzZBcxfvKCaa5U8ghJcg/thXk+Bczk7G8Huv5J7Dk3BHS/divvymQAOwYAO94ne9D/fNPSo2JGbS2xjfs7Fd/Mocy4za5Ce6fyqjlS6CBKgl/oyPybn3mvMSJ3qfNmGAPA5UcYRmKGyZ2eYvjqjD1PMfXlEk0+hYlGI37dWeoUIgAI8k0vEj1W/J1CzNGCzbAAMLflmgAqRrdCtyTwnM46UYS8/oTpNdQQkL7xM5vXaNL6McFAY+j7Zh6VE0DmNDM+lpGe2gme1zu+c7W2gEfUZOW44lfHJI0D9QvqFzWDD86DsRHmaxm3K5KKkvlxWKAKC3ZbpWIVwps6v6nF/hMFqxcKBY8wxVCvu1T0fk+IsGGP9HCPNyJREO326uIJqqIi60FEQYZ5jkyfm9DH4wEL9CgZC3dDnflEV1dwyQ3pjtbGJO39VLMTQ8xPIkZUllwqDAUQKAfcBceoVZwCZiKGYe9vb7/J8VfEaOQNa3pF8mhmIADJ/sBW7ljlyN1uh2FzMyaMPFkNRFdPQzyWFbgRVNYMBx+ag9cgt1ayHfhuVVgKFSZ9qbvrzEfwRWFB0XIRDr8bDr7tHQ3MxSy1bxOGnf4Fy65XSog1/MfxzueG24ADNWHXFqnv8id3m+3Zcbm6BWrrfv9as4FpynVdVQZY7ocE5GIdUZe88+PhJcUi5l6hH3dITg/L4A6i30W17w2Gq3ZKKuH0JDuDzILjEG4PuyzUEPc9p1GG3wf4Hx8giyxz4z9AAAAAASUVORK5CYII='
 )
 
-const ArcaneUmbraPirateShoulder = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const ArcaneUmbraPirateShoulder = new Equipment(
   'Arcane Umbra Pirate Shoulder',
   'Arcane Umbra Set (Pirate)',
   200,
-  starForce,
+  0,
   true,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     35,  
     35,
     35,
@@ -3301,21 +3301,21 @@ const ArcaneUmbraPirateShoulder = (starForce: number, flame: EquipStats, soul: E
     0
   ),
   'shoulder',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACAAAAAfCAYAAACGVs+MAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAESUlEQVR4nKWWgbVzQBCFxzlpgBIogRKkhFVClBAlJCVECZRACZRgS6AE/9xZyxLJ+897e473hLX3mzuzw4X+PuYf7nvfbv4FQITn2dXP3tW92k44BfktwGyFdf05wFApnqhckLfJvwGYsSiE65qobCsjFqa7SVq3dKszYgYKYxKQM4hfOaBZ2YpDOPZ9EdnN6RW1eqQyZ5A0o/ujpnlg9Yh2EEeAb/lakx0tqZ4HPglfy9UbH6WcFdebAep9imNlXCqMG0eINweQW8/zXEoRvqdG3420LI9R36ifJmo6vqFzumajuKMsBBepOuidpCCjoZIoV+HHyzM8IS9UmJzfHtl6boeNGg70k2KQmqLAlzThsBDO+t5pDWChZZJEZCOx9yB+je7UNHso3W9rYP41UTR0AUVJtYNQatuuLsDcII26lkXDEPnicwpk4fw5mlkSYSXiZTmvbuDacbzu5tnmxcB5te4UFLB1wQLMKA4KD00tNCkBTBNvIIiuyJ25gObxaExkFgaAaegRdF2IltdRanNgE9dfuubiyosdsRAQhBhgjHhF+ZXncM3gGtLX9yPztfRi2/XEoJqX8rdlL3ZxiLdP5PxcH/vYTOXiUvkucnuOXaHZJjgFcTt8P6Rryc/dav5/BsDk7dMT8Wfr0zR9oCBYVwuEaDpCKNSm8ijlIuUmuI5p0vRIE1ob5WHrLgAmdxA3xP5u0thNaB4bBDkQrDZ0mQDgwEDxTa1e5+c1577lbohaYBeeDuBlrfwvAwv7frQDEQhs1y5bI4XVdnRNItvPDj1VbH8tAE2zbdkLcpJyody5ys9GpSbKaqMaJD7BnKKepIqxCCBQOwCwIys6+T2MS2AcIGDi8M7R15KOpZ2bRtRUgSzyuI1UlMFqOyK34hLVa6Ik9yVFUTbRQ9HaWlHhodNoh1HxjlB0Z4ex7V6Kd0bbvQV4SWPkLRCqvGCbx5GCgLvXFXYmImaL0jQjA4TrcELSAd3S7HUbPeoqjivZYD1cRqpbegdo+8DD2wm94BZrEbdF6Bbj0PC9JKJP46FMTag4obrvxPa+N+Wl3R59BHB/xE7x78SHgaIokvxbN5b/XlEvL63HuUBe9OxQLFvTZ0fTw3eDAOBr5Zq8+O3FDabefOq6UF40EHfBtJaC27VNW5AGTkvRDZ0n1yEuW9E33wS2AFcA/lTiH/y5pFGIM91upitGEaKMVjcQ9Ym4uGDdgxOqz+SF425DbFFEH545YBcyteDRs+Ca6sO3hvRleLydZylELrb0ziDxBoKaQG0AbukjHz/JZMQfdM+sdyHw5xwk+Uh+BPCW7zWuar1zoe97K/KTLcECMrog8vAh+jOAdYKpbu1ex+M2g/+Tm+sC0jgvoLd2ewbgL0finONID8JnEGev0WK5jgPdTbvzjgBWLHT+u2L/XZU/QK3jkwOfHv622PTl/Hh8BMBNTT9b7X+A+QZ8Cv8PaowwmAcPRCAAAAAASUVORK5CYII='
 )
 
-const WonderfulPetOwner = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const WonderfulPetOwner = new Equipment(
   'Wonderful Pet Owner',
   '',
   0,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     0,  
     1,
     0,
@@ -3339,20 +3339,20 @@ const WonderfulPetOwner = (starForce: number, flame: EquipStats, soul: EquipStat
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAABoAAAAgCAYAAAAMq2gFAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADLUlEQVR4nK2WjfGzIAzG410X0BF0BBhBR7AjlBF0BB1BR2hH0BHqCDqCjOCbB8Viq/24/5s7KiLwS0ISeqKtTPR38fYGn0E09URahuSP3Bl4TTiRDqKXhe73zgtI9Jq812nHIFf0jTfMjr+3ikhc9Tx3oLfyFuSn2/dB67Ufcl+wEl3XkY+B7keQqxksooveAFzpSv4BjDSF7zkvIC9IaLpjITYX+4uwsWZLRPwwJMjn9d+CzGRJeqIgoCbGGTw2f5YbW6zyZF1Hb+TwjNI4pqRtCcBq53uSJOu8G+Z9kENQdb3SjSHQVO3nFyyYLln2J5AXBMHEQp7nTbTvlqm/3ymSkuiD296BzGJAls1eLPoF8glkNgFkGpc3jfA3WUPBD5BvQKtoYhoYCPkuol/lE2gax5G6YaBwyciB++Q3NI4h4RzpP7jOBANKTMgU359dJoQgzcmM8Q/B8hVohbQcuhmHMCxBwxje8VwmfgXbvY8sJM8VNc3dAGCVtQzjRVFx0iIgChdG9MV9NEeX/7DEhVgR6KeXVYmyLM34ncM9bCVq3q51pz0ItLbuMhC9reD4ni4wWIY1aFpwkBTJLuzljKx7XEiN6rmIXu6ROE4p5vKdcD41bI1VsDuoRodRZ0C8sKxLs6Gjivm91TVfE497BCBE5JE8QMh65ypACFsIzgFF1o6fz2e6XC6s/fZanSPzA8iUFjFPhmaCAUZLvgaE9Yc2JIbPmrf8vaoqssenD27irUWO6KdIy7KCx9gSlVDFhw9r2iWPwlCwct3XruMrXE9jE1Eo+jmK+AyKoiClzsY6CCLNAmp2a9P0nEuRgQGuS0X57LrD8F5hXJcJ9Q1ukDLi/OjX23S1mCMPEBkFFKepsUQpte7zjevMJBRLwJD1uUJiNvTs/oSVMOf3gATLJ9/q8w5kJ0UM61nMi6lr6zKNjDUtZtACgcnuAWnnaZoF+TtNRVFUobTcOGGHJW7tE2eyQHLa/2NmIVgwnJyNQ+dp4aWUMhsLnpnNdQ9nF3eKohlSO154hmzEtehwkplQS6M2DHJy0s1Y/dTftJNjngtz+5KL5H2HLQ8U03v9fxYLy2PJoHNlAAAAAElFTkSuQmCC'
 )
-const DetectiveRavesHonoraryAssistant = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const DetectiveRavesHonoraryAssistant = new Equipment(
   'Detective Rave\'s Honorary Assistant',
   '',
   175,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     9,  
     9,
     9,
@@ -3376,21 +3376,21 @@ const DetectiveRavesHonoraryAssistant = (starForce: number, flame: EquipStats, s
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAD+klEQVR4nJ2XjZWjIBCAx/euAVICKUFLcEuIJWAJsQQtQUuIJcQSQgmhhKUEbmYAxUQT79jn4yfKNzPMD/sHkiZl7qy1OLLLogjT1/6lbS3jXhnstBkshHDPHj/Nc5zkAXKF761LSM0y1hJOFbg9+EpjyJGmNdTNyCoI3OhNWV4Pc0FaLb8PGuCKMretxL1M+OKLxiTZ6Sycog9sDsZYkLizwS0lJH26jlIYJOdSwIgCu+cNsnMFQ2XJgsdMvQggEABgUFjcD0F09kuPSq3XWVMN6lJCUXcMPxcNeF/ZbyswSTga4W6lBKMNAiQ+2CNBWgM5zk3shf990iP0qoQOJejvDyiKApSS0HTTcXCEV9Pkcm8qNqlF9ajXdt1X08jf1MPk4VUFqhRQe+iumTfBEY4mddpqnmu2GgrBTmXZvNGUZNquGzz8WkIzmK/QXXCExzEq71pFm068TlAhpCMxhmGA0Xghjmj6FfwiBG46BiGEC6twu16gCutHgUfBDOlbFVA+Mk3UcDiu4b+A3a33mUujh2t0sDktBgnUJYdumNz/wPfADCUTx2jMMaSMMauXtJljNZj/uAAfTc3pUHgF6ZHSZy4bVJ8oWz0wWxUVxzoKdliALfCsLYh4nujFbOhADFCK3aLx2epU1PxxjkVGa/1VgL049loGU0YsmZpWGIox2+mYrX6gVXkMJ4ZT+yTAJrhuBriU+VoY8KaPBYcgPlv9YLbycwKShYTwL78IsIJvggk6Thr22t05+Mky1NjAFfM6ZasIEVgzY7hJ66tUYv4Z/gp2VGWGccJEf5nDh0zcYuhUqBVtRNA8lxhOF7RON0P5iJailJGzUQm14r0ub2rM8GFcrRWJBfr2yhIRVCabWjvX4QVurYONEvkKzlBbR5lKQfl2+/CaWQYCLE7EUEowBE2sB960X68+7IFKKXYunybFEswJMDY8t3lMcUyxIKyHC5r7uP4IdgSkRudZlheG7zX3BGhqAS1eDrMz8IUgQumiQE0kWW8PjA6lGOijgN0pMaM3dAwTTpvYl3Q/CpbgP+N78g9am6iIf7j+eI3DzdHML6Ze6MeULq2lc5SQnQy4X9T2BOxclGDwbgzTNM1fjJrHp2STlRQM5oyE0PTMthqZlLag22Z2snyO1J73lqHjZDiO6cIYTC0Ts0E6ZnCUNEgYk/Lj3iv4qQfW0icGE1O1X8PR49aDjlDwUMoD2Oh2X8JSY0x4WHsCR6+T4RGh53OOcFpmJxKLE/1iZWJNdYCi2Qd/Oei2zPumcbKQlCCoseL0VHnw5hwKhw0aW4T2HF5UPoKGsdUJMO1Xxfw1gZjkZRKgwP8MHmFeJEIJFOqefFd80m7rt7/9+G5mmVCIWAAAAABJRU5ErkJggg=='
 )
 
-const SlowandSteady = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const SlowandSteady = new Equipment(
   'Slow and Steady',
   '',
   200,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     0,  
     0,
     0,
@@ -3414,21 +3414,21 @@ const SlowandSteady = (starForce: number, flame: EquipStats, soul: EquipStats, p
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB4AAAAgCAYAAAAFQMh/AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADnElEQVR4nMWXj42rMAzGHakLpCNwI8AI6QhlBG6EMgKMUEYoI1xGKCNcRigj8PyFBEII73rSk54l1Ms//2zHTnInCmSaniREMdE/lO+7FB+f465/AU/fNwsFfJWcxv5C8tpEy4J+0xONTnF+J9OdKcuvtmmGnhg6peALWHy0E+BWkZOhu8z68n6z6LD/U3i7rMCA7/sMByIJthbqbqNIZr/sz+Xi6U+yAftwKKW85nUwU2SMSSrJsmw3F6K1piMJwT4Uk1IuVn2wkPuO9Nj50dwALFJrTvSfZAdumpuo63YpqWdFVGArh/ZQiQ9pPNfpeg/sJi5hnxNmDPuOZDf3CJoET6+b/RHn9ieQlReX4JlLMecEKy1npHfkaI8FDGA4K5OUZ5IGY6bnoxJFuS0hQAE3w8h1K9H+Hdh5OlPP6+J7o5a/Gbo7CCB1PdjfijJ6V2KPUQeDt4U9pK5faxdtB1+kuq6GhXNjR+J2DFYBeCdtZ+jr0STH+j5Z5KC1AdS28ccptISl8QOx4B6oKkWDTtuVSc4FPji6rQHQhQiV/D0o2CZ4jPAqC5XMHeuJjam5XXBInggvPPVQJdeslVI6qvOaxxGRS1lPWkuhlJ1bst4H6wV8yR+AB/e1gPIkwb+ryQloXrGtmQu5qfm2GuwFge0O4eyAsJ7OUOuxr5Z4j2tAw6w+go66nL3m+kWfhfsIrHILwiso3OM5yho3N+6y4+sEMu4Ph5FvLA83nNWh1+JcN+xhG2T14tFphioOgy55Qu9PLnpTrJds0Og+SVuvWefkbBbh4QKPe0DxO73mif4kCuvyHfFee/E13jS5PeFom9U2uoAve/tXqEsqyUHy+7wdK3dLoC+WU5hIy3rcMgevl6G+UN58beCJpFqkumazvhgcd3CYhQuLFRwISBRtMzsN51deEo61Xb/Rewx2g+FFsBihR2nLCjULOMSWl4Oadh9mryu+tZLXon1jrxMFDgN4jXoGHLW3vig5F8J0wCn2Rk4mwYAy/NZr0ymV3djaBQ7p9eE9YqE4s3m+dfRXYBZZt7pv7o/XpbgUzo+Cldl/M45uKC+AopR4j19YR/OzxH9JsPTflT39+ChKfgjcdGkfzeiHG014BXbp67Dmfm8djMXmG/eNMdhD4Z0syh7xzC6lLejMjW0EpeKytqPtYwtz29jLUFIee4kXLG2cRP6N5WRIzaNtiA9DjU4TwVMnw4WT7StoFz8ZmhijP2Zj6IDPQUwXAAAAAElFTkSuQmCC'
 )
 
-const DamiensNemesis = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const DamiensNemesis = new Equipment(
   'Damien\'s Nemesis',
   '',
   100,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     4,  
     4,
     4,
@@ -3452,21 +3452,21 @@ const DamiensNemesis = (starForce: number, flame: EquipStats, soul: EquipStats, 
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB4AAAAjCAYAAACD1LrRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEBElEQVR4nL2WgbGbMAyGxd1bwB2BjkBH4I1ARiAjkBHCCGEEGCGM8DxCGeF5hFS/kMCAk1zvelWPhmcsfZIsCT5olQf9H8nwXwymx2NlD8P41xa9P+pM0xTZHJb7GJyxPPr+TqfTJ/1LqarKoFkKLGJeNy6nnH/r79/U/fhJtatkvQsDpSR+Dp0L60DaMCX378FZ27aS7yJ388rPCznc16X86bonRxA/Z51F39Mh2mTEtuHk/QNRV99XCvC+nYEhhDQ4fs46nnU02iy1PQVeHGDFR5vNeufQ0iuJn5+zhZWEvgPTI29+8A9ylmdTe2+ahvgosN5tPJzaOnqGykSogdef2n4KZgMAFnrJAVo7ALTfH7VKwxfy7tmG573Js0mCFQpYaZBHfVs3jOlKRRvwftHTrDj+HVPwAziCVqxQGXAcPX1O3X47OeeW+55bivXlHg6rLUrBt5MrAY2BhSsOMIhV+kl73BwQG+rIHr6AX0FjICAGytWB+9edB48nz/s7Pms48A7+EUGliFJQAMWrsqSiLKgoCgGdzxcxeD6d6Nb3cwQMrvKCTtMMv+e1wQEMVnAWsYDlXJ5A53Me5SJ14na7rlF+nqi5NmrMbeBNUVHm5cxRldJqHxptrmkWSUGrupJhb2KpRQZQ9oC3l3YZlRs4VaQdDQbaTCK2aEuL1sSgiATppXwtqiIv5zUVg+dAOtNf92vUaDOkbIpTfYg2hnZtJ4axXnGa61szOzKF1QEdIlx+C7RkW1Jsa9TywCLe9oculOVs8NevT6lgq2I55zMd4DUfBZz7us9VPrCzohMOpt3LWe3yXM4Nyv3vu6x5/jJBNW/gln44qlFL5SNTQ/r9nQRbmocurfRO4p6G01NiWm/Bz2YwzZFCEG3uXHqPFqb193I8b8E7gY4UFkORcjMGKa3ADOrnCO2c45qQSbfzFeBASZ9WgxgUcaQxFJlApDjz25X3XS4b6HT8YhHeR/SHCPqt9Rh7+g3F/zp+wX/xPI77WK0urYTCMufioximUcbm6BbEMqtx43WAo8Gl3wKt2QEc8xjO9/d+kw0rIgiAyAai39cBgtHh4SViDGydoVgs46gxSMpoBMIWZvI+hYAUfDX9bTnrJ9HK1IpfEhZ1py9wzt0Mz8OcuutXL6m1t1IckUElC1rZMVSj7SxaSzVp1FjEp4pb3qHReXfnluqmXgxbpIZHJiwLPvg9dNBo/eZ9HMGlWTcvcIUP+iEft0p8iogaUUISUAEnv0Bewa98XdxE5+6iEVFSAJSDfAM9gBPwsHxlqgPj85ZfgLofZzqmoEnwDm4VX+pn61tRPWubv/uujuBQBtirweQrVMUmoOmEZ9CXYIPTHHVQY/QGTO+AJn8ANl/PI5ILvkAAAAAASUVORK5CYII='
 )
 
-const HonoraryFairyProfessor = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const HonoraryFairyProfessor = new Equipment(
   'Honorary Fairy Professor',
   '',
   30,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     3,  
     3,
     3,
@@ -3490,21 +3490,21 @@ const HonoraryFairyProfessor = (starForce: number, flame: EquipStats, soul: Equi
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB8AAAAgCAYAAADqgqNBAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEjUlEQVR4nK1Xi5GiQBBtqjYBDAFDgBAwBDYECUFCwBAgBAkBQpAQJAQJgXuvewZhxdWtur7aG2Zg5nW//o1f8lom+X8SbC2+Ap+mK/6PYpEww8MJf2c3ejk/Hsfm+YSht1edyK5QQ54UeGk5Nw1jL3XDQwq3Wshf5Ai9o/D1+y3w6V4Cpoad7U2aIZFredUXOZ57rHOeFInER3maV5F9y/npeJXisBeet2X9puXDaGMURXKqImgf6TzFOMaDrtMjafw8998u9/nzPrE8SM4WbHFdSzMOEoa1pGkqTYNngCTnnVyyq3zXiY6cc72pB8myQbqum/dhSWoLj499rh/mea5K5Pj3U5I+kTItld6xeZi2L/bzs9u3Gem/ga+UcDI53+k6AKe8yZffrd7LB/Iln0vAoJmuEfwyTBBbHRO86P36x8B/AZ8LDgEM+CxNUkh2LWEyNet/fvtWiU/AgQU+fxQYA54wBrMCSyEb7xR4B67ABPIFhkAeWEZ5KNDGkif9Y+MtlGA//qrAEnxZyxcbTgrswQjU9alkeO7hYqS2zuXQScVvUNHyPbZrjvfy2/kefMoqFhWbnA8btdiBRdUkwwG0o5yj+sqA/B7CFOvtrMwWg6fWHgZ8gyTR87+WwAA1W1tTYJoqtZSS7w5yvLbaL47lSerijIJiI+dcZ5Xjd6h1cEE3U+/Om88mHhVQyxfAgbfcgHOjG0KaD3sDGh2bfT8YKZizwhVgpL23Sr0qDPqdAquzPQsKnmLjacpkFzTbAeIo9xZHUYa6XUh5LARTKJHJAD/w/Uz9djebWpcVZw8ea89eyw5W368P2uU4qYUElnEv1c1yvcoaULzH+s1iAKv1t+2BLrI7vOgqDjxwFntqphib+uahgIy1+pKBRbmUpvtYFxKmoYJ8F40GU1Qj6m9mNoEJredZswoOu0cR+lqAKi30B5oSOpI4y61+p5VZTj8X50ItJvDYjUo9GYnBdwik/GDH3QC6dxceH2QLrOciEwMUys/APr/pS1JK35JiUk2LCSzhDVY3kh5PGvHLfPcKpNU27SvpvYtA9SyhBRGj2Ud705S47SDQcH/L0kiBGYwt0TaCbRjegwdMhVgDpZf7JZwDjlWsdHnOtBLEBGnmoTqHlO3J8jzqbE6rYQNj1HXf99coBtsJNO2+R1MAY3W3CkZa6wQFBxVtdAWny60AUfhdDoVLTzfG5iyb8hNcI/FyQfR+W9BJxNDOZ+obDSbU9kyN17HLLb28r5dCYD0vmc9/HXCMdgVmoVikqKc/xQ1VIzI0YAUDzbQ0Tx6sdsa8nsPzXLT/avnsc3fnX+W6jBY1KbSyPj5pRBNY891pS+C8l5mF+EOfz3luapv1u2St8h29O0W7bJIH8FMlC2XlAt+s5G2euw5FYdPhH9eZhlSMV6bpHiPFjAk2DrKVWgGc02oee7P+p6wuE3c0l7xupCrZbOzrDqFPUBcwXgJ3TZrnLJ/9+WEllWXLoKd41+CvLjYVV17XlwkCU7LYAz39+As+nTt6V3KxX1ErBWbL0Vx+O/iv8rQfBj0p9A8enWLeK8rzwAAAAABJRU5ErkJggg=='
 )
 
-const ShadowAlchemist = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const ShadowAlchemist = new Equipment(
   'Shadow Alchemist',
   '',
   100,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     4,  
     4,
     4,
@@ -3528,21 +3528,21 @@ const ShadowAlchemist = (starForce: number, flame: EquipStats, soul: EquipStats,
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB4AAAAdCAYAAAC9pNwMAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEIklEQVR4nK1XjbGkIAzOzrwGuBJ4JbAleCVoCVqCluCWsJQgJRwlPEo4WqCEvS/8qKg7927mmHFQCPmSLyHgB100SfSi/9Q80e1q/ATMoG0jSAqippEkpawVeY8n9X8FDUTGhtcVeAVcQLUVacBgJbk3agV9p/XNNfgl1UFAqZAkmpaCNWv/mg3dpjZrxKPTaxmv5A1PhvycWwXMVrF14Be4ioRSzOna/9CK7SH5xOeA/lfqyzjLBWuTvGsoeMve0l+pjuBCvaVtkRN1fo5goXHoVTVeNY4EmPMEmXAO15nq4Ni6V/BY6Rys9mv/0/eJF2VBMzxSOnq2jjuXVeR1wRd93wDeDECcsiJzsDgmn9v6suSd/LeB31hZsr7E7fhN/9BOwK+XEgmDdcW+zT3ph4/sFSOQf9T0Ij2tWPIac7s5t9eD71NqX3nMwl94OjwjGbdmW48Z324FpR1RaFy2xFDLOSRm1QB0yCKs504XxeAK2Feg7VdtlblTP2ZwDdF5mxfgJkx3BXBsOJoy6GWJ+6ClZSqX+AXrbxMXBHpsoPvtBcMxJgCevCugap0X8wLwjsEb6Brj8NIWBR11xiRg55d+HrEkYG9m1uxjXEWrxgBY10LQ2QNo3ZBwoxwTLhdClBjS944dvCVgZgxGiFitEoWigTJzxRCHimWe8GzYjRXwbU3UkVPKG3sK8hrjkE8bcTiNalDIaIS//x3BSX/ifTmA6mpV0Br4cFnWh8oHPbBnR5y/SqLOQjlY9NgJMYbtwSMGPbZoSAHfQD3ORP94ENf9CPowrGrd61tW+8RLAC0G9bqZYcF0zwmUiYqechsO324FDZOlgLW85+ktewWYve7lK2YBmtWOHBeFqIjB+Q2HgP1Mq5rm6DZn03oWONQLV8rPhbe1x9oncDTFNw+BxSCheWbQCLhkup/Ja50NYarbso9tXKsQc1cS1L05Fnfl7QeXt7YJrzAFgO73cY71Sm9uffE+3QyYHQnwFhXOwZmsu+xOW8pn8biUSZQl+dW0Kt4k6sbrDyW3LwWkZPR2LVFIVnwyg0xRyT5+N3tgXnn/nMJX/5wphHpLbLYlz7e47+cO+x42ShSaTttl6c/3swic3XfMJFcwGfb1aF8g8ghLDxahOBrmdzKJHU4yvHact+hLubu4+kDSBBG3kx3uOc5b3eExNSuf32WaL03H5PJjw0nORTgGyOC2GkLw0xTWWJ2Aw/CIMAOS4xcAWHnl1yjDMPho+TzLFvORR5XZDD3mtRcxo+GmAn19rxatQ5cpqZKLmwDiZ+ZMOOfl4IREdiou45EN3AMA6m0mDF7Yvpd85xc+z+sBNy5bPIMEojRN8Segysyjx/ssCKDI4Xn7y8AGWOsd1elevfO9z6WAV5fsj8MCfwC/+l242FcnwJMBR+E/0IorBYALJUEAAAAASUVORK5CYII='
 )
 
-const SilentCrusadeChampion = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const SilentCrusadeChampion = new Equipment(
   'Silent Crusade Champion',
   '',
   120,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     5,  
     5,
     5,
@@ -3566,21 +3566,21 @@ const SilentCrusadeChampion = (starForce: number, flame: EquipStats, soul: Equip
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   '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'
 )
 
-const StoneofEternalLife = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const StoneofEternalLife = new Equipment(
   'Stone of Eternal Life',
   'Boss Accessory Set',
   0,
-  starForce,
+  0,
   true,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     3,  
     3,
     3,
@@ -3604,21 +3604,21 @@ const StoneofEternalLife = (starForce: number, flame: EquipStats, soul: EquipSta
     0
   ),
   'pocket',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEfklEQVR4nJ1WixGqOhBdZmwgloAlQAlYApQgJUgJWoKUACVICVKCKYGUwDsnHwyI97371mEIicnZPfvJHsTL/JqUH/JtOEjyo5F9maNxIv9DDhGoe1JViDYDwTG/BbeA8zSJDIMYPMe2DUr8lQKHFSgfJSXe44L0AZ8hWMGS1iJpKqooBCqIxlw+jn/FwiEaB/DMvynB2tlaGUBL6Nb3btPlImnbygvjNMtEQaGkaf6VhQDsKFZytV+Z6gB5B+X98Xx6zy8ci8OtXK9OgSBQJIDTcq5N+I4U2AUPwMb7dbSgo6k4d6ry1/To4M/xA2qMszoWgMQSFJhvt5/gMdWB1vFcnzue/3488AWQAuyDRgs6DN/qY45WS12vpke4g9b7AFyBHxg4DKAgdVVnT1pptFMlgP4HoY917IZg/Y5YiwM4/TnZIAKoAn3KrGlUiDlEsqV6S/cP0dpIh7Mqo1dWL1QD3JlNDYOFsT+DAgTnevj26yYEVwRojzNufX4rSU5mAQ/ALkcFMXX3m3k4QWKAH1aO9/tPwCvCRBUKxWZdBKPgAqhGNdKoIeFPBPWAZi+oNkLQABgLQe/ruPsAj7mWDH5Wj0pMrV0F8WAE7cHABRGqocSA7wzUpt4le0F1I4P6KPXJGVEwZiKlFuCM1QhWm7bHIRmYBn1qkLFKZQQgQZOzKyLvRyFUqUf63ObSHZCjoE2ZlLC6IRhAA700onKg38GFk2Fpw4HYUk3asZH0BdD5ifd9kFyn8kJ0Uw0qqi6z9GOCWvvCnsRmYbDU1mHGitn3cZIcj64eg8psoKV98JA74OpAVVZIqRxl9gqj7+rEUlknyQIWS/q5ab+pdjv8FgRVxqoFJTRYaOFPW4HEgV6VWD9bX7JiiSsUhXYZsBdgWzl8zWzysyjhz+ZuaZ1scDnQFv59vZkmyN92XdlIrYmo3fp3C5xAfD7L587FQ/A7gBo8IamKaGMLa+19qtaXxfft+ieLw1953fnySPCrp/Tq10ltfXIpdPNFojlpC57C4nGBVWgmlBxzM0/P9zF0ND+BCcoyaG8d3j4ApzIhXxntIWTUpbRZQGFK2fE5lfKdiekxNiWUscGqQkezBXZ0T5/bylatDSBmFh8SvE76D7E2DcX+B5vYYcD6Ul7d9Rz+QvA9i11qseuQTx0ONXiXHf/mP/ozoJgVjPxa2aDsnhlDfeXwX1QnSZ7Pc9cJw2VbDpmX2taEtTLM5QIuUkUpeVNLWVyku/moiNopgv/0sQWvqgU8NJ57ltuASpVkaI2wRxQ6j+ety5FWygwa3Vz6CO3UnyyOG/sTDnqHhelyWRQQXlrsC0ArL4kjm8GKZyOsMNcOfZpxzbKQamM0uEZn4YvUXnu7feqgDA6/xQqQ8tw3dpAmEMAbjLVZ69T6Ww2qBy6VMCDGJPnJHDagafTeWk9pvQKXSOHW07eUaPqe0MrSwqzsR1hvVKoAmn9RHdf2rSO3382Ptc/YuNBj32yMQkZqU9+bZf0QbdAb8O0lE+b28mpHUeV+8Gk/9F97/gHHrobYGURoBwAAAABJRU5ErkJggg=='
 )
 
-const CrimsonheartSavior = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const CrimsonheartSavior = new Equipment(
   'Crimsonheart Savior',
   '',
   130,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     7,  
     7,
     7,
@@ -3642,21 +3642,21 @@ const CrimsonheartSavior = (starForce: number, flame: EquipStats, soul: EquipSta
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAABwAAAAgCAYAAAABtRhCAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEHklEQVR4nL2W8bWrIAzG4zldgI7gHcGOYEewI+gIdQQdQUeoI9QR6gjXEWQE3pcAitT23L9ezuvjCiQ/EhLgRESG/p8kDCTzq2geNfUVUV4UNA7D2obS4rc8FKmMSE9E55ume2Qx1i87IqWUzGVhYJL8aPOLgZwUpXlO+TCurZeRrIJX3EGg5+VdX3udxAPl46cic8dgPo5i3Leh3J2XTtl478J5sX5brfNXD3chaxGGTFbNhqxMrs22qYbceDzm9dpoO46A6ypgxFwjBd67IJzi4RT0e3Cgl9CBnOhY4slG5bxPOhxLPvR/lRP9VWDXLCkl53ktI/4O8uVP8g3oDfPKkySxoGeJTMSGzYgh4BTMiXX+DBQlY56gXMN+CWHesFeg9nUMo0DvIzgGGlY4C6j6tEgaq1q8PJZKorxs4B30dKSQujzI0E56O/q63LZ519AMDxtA62kbz5ye6H9YcAg0q0JqO7h9lJF39Qzvahp6AAB8Ok/Z47rf9KIFvxW+hPJ2QSj1THdOdddeKk3L4vaNjfF/uqd7gcQZ1qQhnFT0uqudPoNfr31oAw8rOxFLm2dN6aQoKzV1sHmWbKypSN9D5JkPLIDna+ixPjtu7e1DuwHnmf8JqGg0DbW2hzkgXYEzcbTGX50tCZZbb/frnnMYldwg46ChTxt41odA3BgI6y+tIA9lYZjXS+FmWpaSNLJObcfvuZYFe5gHwy7Rp8O7uhGVuZ3MnnJ4PWzBYs4/fqbNFF6Dcf0WiiTprWfscXVwlQVJ01kjA6/cKvXTEWwv7IGH8vySLIyztms66iR81S5pBMYghbCoAlOmemd0HrmQSxwI/RvQGA7ve7+S2FakR0Vs30PXkPIVI8+HvKIBK20ahLSFlxi7INHKfhBoAqhZKikDhtWXQTzLkFwlvCpQGjX2PnMwtmuCV5MAQZcGg4ahs95iz0YY2qOCCcb5KcKH9gvXvYXpFbZGBFM9TMxb71bg7qzjsM7g31Dwj07R0G7w5sHHUEP3vqWsKZDyPfXB3rJ3rMfZynbCrd556LeDvePcewJ0hSLDOFzTbBOnvqFccpyhrwbbjOMNXiy/2iYMW2gtjPXZjnsNmE9ACSkEZZFIioewqfce8r61As3mWvp9FjOU9aQGCwNYsvMuBrp4JxJvORcnGxY2epUXFu/VAC+1QHt34jwDA1wSF96G5B12BPSTDNdR4+rx0m6DzRMLUQ9S/dU/AWWcz1Jff07OZB8gu808vPFteQB02/VfoP0KO5w1vq2fN3msoQSW9SW3sI6bqv0vBsrVGTwHb7Q9k/L4oHLffC23/jM5UxM4lQcwvlfmEKjc7+ra1P1UMH4kcX9LX+TQw70Du+8aRd/4k4a/D+bGf+9+p2hwjqBHXl0B5cS8RP36y/f69z/ymjKrpARHSgAAAABJRU5ErkJggg=='
 )
 
-const ExpertsHeart = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const ExpertsHeart = new Equipment(
   'Expert\'s Heart',
   '',
   0,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     0,  
     5,
     0,
@@ -3680,21 +3680,21 @@ const ExpertsHeart = (starForce: number, flame: EquipStats, soul: EquipStats, po
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAABoAAAAhCAYAAADH97ugAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADrklEQVR4nL2Wi5GjMAxAxUwa8JZgSiAlQAmhhFCCKSEugZSwlBCXEJcQlxCXwEn+gM0nt7Nzc5rxwtqKniTLMifIZYJ/K0V8SUHT9MS/VWTdlxXbfTZngpphy5S2cJbO8WINAj2i+baA34ud366XfCUD3RGkWQWsqqFi5CZ37irNP5qvq0VXWw5WK7Slj0HDa4Ku60CbK9y+SwCGkdsCzu3rI+gmct2qsjAMT7gXS3ZO8J9kAzLG4FBgMY2m0sA1uP8/iSUdtuhWO5lOQQWKKznGL5g+fFaJMbNfeYwP87sO1Xe/392Ag/KeF9Do1EjMPUPvrIdME7kZ96oEqww6wqH4wj1VVEQKeklrXQY4AmXAvu9dhNObo4cCxrEJy9yNy+UC70cHX2663wX8DZQCHWwcRz+jwn7VtZu7iNy534Km9wOgabkrEo7jMeCeyB4aBBrOoZU1PISCJukCPwXN/Y4gZIggQmDq6IzhiDVIc1JKkJDBdiPcNFUUoM2mbhIjcRBMEwH6oOhgOEdrdMiN4eiYLztfJCaL8LSGUFmOoz8IGQRTJWpqNyEaHI30sV2vV/e7c+d/xzGl0xsy2GkLGYEp3xzFsEAeaLm+hczY0j0e2NsIVmNhRFgUykYKSyIqXSQE+f7GzZEGWrcfOockUgs+w0her5dzDI/FRne/6joDY9jyI8gWBnP0e7KAwlViawat8u3mKjRCPl8RJHirAKrOkdAeOVuxJyWggnJJVUMbSntDlXSd1crwzK+L1FAU6hYUGXWT4svbziP6kZSHgBlu7a5OBmLV39NEzZSaKKXrE2gtm/LmfISu931NYd6jPQKkosOeR6AJy1prt0fnDtwBxoa7Lu9QNWj8huVNV76UDdS9OvQ+AulbYzTOW6D0FoWZC2IdEfj8+0WC6OAyle0DjlMVIT7s8nD/NsVALUZJf+8MN6og32qofIXIdSOEvGeMYZX5Lx/6n4ZWe+VdGBd50/C5n1FnFsG6TA5i3I8IoUEHNaaLnqJy3dzZXkc0w+jwUgroiljDODnB6EvUG6Q+54uIw3PwHlAkAVJ6bbARxMI4I+wZydPbQHleIjNWwfM5YPeT0J0NRr5AhosJV/os1F7ILaKbUwLh4Rk7IsNuIeijpES/qFNQNKOR6LE/KykkRCDDbzeHKY0IdpR6jPDmYXgJYjpl69MTU0fpCpG0KxvZOIUXs4Kl7y6d/nOLO22FV0h1c7gIKRN9u/d+Sib2e4cXVyjZjFzW4AfyBx4VBMQUpAHwAAAAAElFTkSuQmCC'
 )
 
-const GenesisBadge = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const GenesisBadge = new Equipment(
   'Genesis Badge',
   'Pitched Boss Set',
   200,
-  starForce,
+  0,
   true,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     15,  
     15,
     15,
@@ -3718,21 +3718,21 @@ const GenesisBadge = (starForce: number, flame: EquipStats, soul: EquipStats, po
     0
   ),
   'badge',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   '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'
 )
 
-const PapulatusMark = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const PapulatusMark = new Equipment(
   'Papulatus Mark',
   'Boss Accessory Set',
   145,
-  starForce,
+  0,
   true,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     8,  
     8,
     8,
@@ -3756,21 +3756,21 @@ const PapulatusMark = (starForce: number, flame: EquipStats, soul: EquipStats, p
     0
   ),
   'eye',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABk0lEQVR4nL3W3XGDMAwAYHGXBWCEdgQ6AiuwQhghGQFGoCPACoxQVmAEGIFIgDnX2EYibvViwxF9Fv4JNzjGDOEjMm+Y8Nw0TVBxmiYoimI28RsIY0u09N8ZpAhW6DiOy3WSJJdxERzHMdR1vYAU/1axwkOsAzEcKqxw13WQZVmQNk1THhwK1FsWTHNYluXSD9HSTmDB3KABqqTUN8MFimETevZYURpbnz1D2bCqSMcHx7MclA1TMoVSW6Ha4GJtsc0/5Cgb1itdbwDgm4ZBuyVB2bA+ty12HwhXPV0DPFuc6xzEIZpjCprbfhkN9vE1V90fwYetgvKA84se5PZFrX65ju4KbNufD0Sjb/xiuGOLf8tz7Zrf6bg2OLANXdJhovken6DgRZ2wD93DOPvNAybYyaUnpWrxe2CrekUkKBs+JNoOD1/Vb8Nmon2OtwUmrZQFuxIp/Crqhc8SXUB/bWwrzB29sFL6OxkUrsP7HnJtJxfuC+4B8hVF0Q+Ej09YK7W+aro5bA+psJXjOoQnz/Xh+RcYMRzu8jHcegAAAABJRU5ErkJggg=='
 )
 
-const AntellionGuardian = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const AntellionGuardian = new Equipment(
   'Antellion Guardian',
   '',
   33,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     15,  
     15,
     15,
@@ -3794,21 +3794,21 @@ const AntellionGuardian = (starForce: number, flame: EquipStats, soul: EquipStat
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAABoAAAAiCAYAAABBY8kOAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACzElEQVR4nLWWi7GrIBCG15k0gCVgCViCKSGWkJQQS9ASkhJiCbGEawlSQiiBu8tDMT4unjl3ZxJQcT/+ZVk5gTUN/9cSAmn9B/9FyHouh6rbvivphkk2v90ryBvQRlHfousygd8xNbu6XmxrQE8ECf6ZHj4YPG/KtNVZzl68DNy0bTa/X7/5+A613p5tOoKSp8Q1kim8axc+9MULZtriyseXijtA5pwMCOyagBS8Y1q0czVGKfHJkLgHllQBPApUeGEgO+u4eDMDEc5J3ih43Rl0Zzd7Nzap0lDoSDrB3MYHty7Vtwzgzgcbggwdo4rSKXpRiILwJVm68BHaCbbNvNDIzKgkIK1L/bVG+HwXEANaB2bDIcAREBQc9KvGDKzUCKAcodStWtCd/DcsCkTGijFlvVPNBSZGqyDGokA043MO+k0VJLfl6oH9c64gRk00yMPKXI91qsxRpenFVZRokLfXML8uM61bmfzOGl24VfINgbjliQMRZASQYzb1m87CY1QdCx2bYAQ5YofXiEy6ysNwL3W9VZUlHy0h3VS1C5qFzUNQUY8gpaxACXF2SBHNXgj8YZ8x+x0rsDrgRxQGzXZVxe8jhHBGn2obMi5tCSJYj/fv133YJsiHza8HZ7BrzXMftgoK14bzCfZttF41Oq/wQylQXYuZWIj1sQsQh88iAUiNdJuTwkbho1Be3MGjri2MJgWxoFVjDiYnyPfMmaCj1baLfVBYCcDOuO8tLJx509pW1D8AKb8p2fxe11mYD1uFJyGOfdnuTnkJomyhrKHsUXICkplUDsLjId46PMwWj4OKjBpuT7HdSl0rS4SISYnEMdeaCqyC6H0UqhJuxiZkX58FWnweXO/ttU1FHkb9EEihpBAyl4U+0+6PbTW7IA+j1gM91Jce5RRed7ItCvQNNNAUQ/qxMCnsnqpytRj3I9AMqqaQrk1ky/4C0EBQBsSlT3gAAAAASUVORK5CYII='
 )
 
-const MechanatorPendant = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const MechanatorPendant = new Equipment(
   'Mechanator Pendant',
   'Boss Accessory Set',
   120,
-  starForce,
+  0,
   true,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     10,  
     10,
     10,
@@ -3832,21 +3832,21 @@ const MechanatorPendant = (starForce: number, flame: EquipStats, soul: EquipStat
     0
   ),
   'pendant',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADEElEQVR4nKWWgbWiQAxFh3O2AbcEtwQtAUuQEqQELeFTgpYALViClLC0QAn892IyPwzoF805CAw4Ny/JhPkTPrPhwXj22x8/AQ+wcDqdwmaziYN934eyLM2hhw68CxZols3Pez6fQ9d1oaqq4RH8HXAKnUxsio/H40P4W4oZXlqe5+F6vdrEab4zQg+HQ7hcLhP4W2DmkQZohPO8Xq/jOwqTd+bgS8ED84dQymTMo5t49CLHDNy27QS+WLFVMKE8/JhXZIoJJHi1Wo3mWQrOttvtcLvdAs4yYBEI0wLKzAHCqdwX21s5NihNoYttcY7lB8upaZo4+EvTyOZUvwoeATOqRH7P+30okT+5RsiZx6IonnYtq/xXwNIwZKaqulcriwkOSMGwwDBZqRGo69pH4POWSegXoDlgF13HeygOtowQQjpT4L7WpeRtaVWL2gqggRPDKoXyPtvtBEIYoQJHGniv1R5V++bykmLmNKcytfY+eIegW42MuSdA1/czewYWtQUUHhV4xXWj6iWjcKiAE1E1HdH8l0iNU70ILGpX7MUa3tY9YwxqqCsYjdY9cSFtdVyX0CjPKXiyFHKq9IUBZxpODqAlQD4aFmKmIckn88v26vPswdIK6SXDw2XDHmwvU7VVM63ARHUCiJbk2Foq4DHsBp7tvwS3UNsj3MytqLHQInSFLqGWIB6W46nNbgQ8NFMPfwoC4IYffkIIBai3xgE4zxuO896q37VTH1H/QRHFrS8O5yEd4MuSMzcZ26S0S4zZWdRyHq2HA+71Gx3Vdi4Fr3UuNHcxOqEqJaS2jrXYYnHh/Y02HFNrlR3cRiAzZTNfmJ9nnNCg2pvjR8IiwmfckcAh97mUQvVQrzgC3LZUxawlFQK5/zlaTJECLcS2I7Htj4b8Hw7moU9DnfltKc02dbafknzDogNUmgBNKR12+zAO0ptOjz7N8V96BcX/k3EhYdKjOWBqD5pnB6nuQeiOet2HGZsrLoZjp+eVG6Od1IGvmf/5PRBhhbtOjwmYg50DheTabBfmlfRP7kfPvgEiUgFsaYqxowAAAABJRU5ErkJggg=='
 )
 
-const DeaSidusEarring = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const DeaSidusEarring = new Equipment(
   'Dea Sidus Earring',
   'Boss Accessory Set',
   130,
-  starForce,
+  0,
   true,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     5,  
     5,
     5,
@@ -3870,21 +3870,21 @@ const DeaSidusEarring = (starForce: number, flame: EquipStats, soul: EquipStats,
     0
   ),
   'earring',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEV0lEQVR4nK1WC7GkMBAcqs4ASNiVQCQkEkDCImEjASSABJAQJBAJDwlEAtcTCI/l7ffeTRWVXT7pTs9MJ3/ovZgP/yP6T/EOgRlBo3M0js7fUOIcCP2ayCsCG/g5SbabZvjaE9mTOP7/NQEfK/g2cVCgrA3pQgXQmYndIfU7Arz6O+EBGDy7lNQ12hOydqRPY09gODwTb3wfMTiTWMj+O4EBcVNousiZUAT5X0kbBQXC/08JDK0xHjxXantQ1m0g8Y60/9wNWwpW8E12Br9cS2oqbZHr9FBwdwMdI6Mo6j8mEGQ/hAD4ILML9V3zMr8AjzGkGC1IOHozXnWBAPhWnJeypkYXj0woxSVxWVxvq8AExE5uBjtWP/8fAOzT8DVN1HV2S0dYOa5yHWPc00zkHSUeKrBOzJfDRExizrKUTnFMPOpiyflu5elOiSursKbjqRqBwD7fQQUGZ889Mwl+iVfO4DxyYHITg9A0TWp9n8GtUkoaY3I8n+hFhzxSgEmoPThPxLLzyjkM9ogGT7reeSJSSgIoATyVlyvfm3gfwfh049oT8AUXDIknpZ/1ECbxk7ZYcy5j6tqJTBaT1ppJJGHlATwbZurEfSI/FNi74arEXUvm1bPoF1xd1VCUa64JtRZeAPEjg3sSHR5VyY2XHAkIGJJvO2kG6i0+0Oq4R3DYLonSzmChuvE3uDtW1e7bNUiYaSbl8E3zTeJeDfi2Y/AB8ooSczYo5LE6KoEeiCmyemvNV6GURYpSUs33vUdFKHjlDC7T+J6rzGuBkSwHiw3Lt2D2BZnP0UO79uDakVciWd577oRYOYO3tcReUe3rIRRY1GsxMAmLVAB8v2fQkUieVAC/UoHxlQJLrLIzuK8JJQKJeQdk+2qEEvAQ3fiNi9XJsXUc1ZDmim3dehIq0W8Q+A7B4Du79kDr5IO8nogVkFeQBGcP3t+48JwZpEfDyOr0AwUOJBicfUIIke5MxsufQoFx6QjLqTh+zISyMiWbV16JRn2mwBaaF3Y17PEbCIMfSNyelEsYFQyDayADeIbKquf5zEX8isDRiMRaBz4yVDP7Qd+MtjYXNE6z/3ZzwTZlH3ce3PVcL9LzxjU+JVBD7kKIHyTWMQb4xHsC7C8t1M2ncyjE9gTwyqFqY0rgA0O7CXfFO/0zAoLBETFy/vXoJYXcho3J7w1usecIN1h2Bvcj9z/AqwLyt5Kcc1WSJO4ZAX8eEAyAXY5zj0XwGPPIwGUaO62SWMGSvSvC62dsShFyPaPVotzSDFBP4hp7J7zAU3qkoaiopSdGFA4jBRJbK1nHBq0WSKzgpHlsjSfBVcdKRMXS56yAB4+WelyLHl5SUo3n6Ea0Yzm/UoBDU1/UqqdNCYPVehK8BS+naZfCtlEL/ptQi9FydsjXebh/3HiSA1tEg60Dvx92Ab887kj4ExIOG60HCMyqbwCrFZ3owmWAU2lzW5Lfhxo8FFGOlbtUUjz29BfgS4lMrxowwQAAAABJRU5ErkJggg=='
 )
 
-const UrsusSSSProcurer = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const UrsusSSSProcurer = new Equipment(
   'Ursus SSS Procurer',
   '',
   100,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     3,  
     3,
     3,
@@ -3908,21 +3908,21 @@ const UrsusSSSProcurer = (starForce: number, flame: EquipStats, soul: EquipStats
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAABcAAAAiCAYAAAC0nUK+AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC7klEQVR4nK2Wi9GrIBCFNzNpwJRASiAlYAlagpSgJcQStAQtIZYQSriUEEvI3YWA4Ctm5t+ZxCDyncMCa84wxRv+Lk705eDv1+sNSbJ8ahyX97TWUVvp6aFhGKBvKzJ68s4J3PbKdP4aWtkxjAsQQiDc3vdwArd1BUwL0266BGQ+mquH1Bmwsvdt1y97O0bDAKE1Bz/J/GZyXrDGzoSPIHA6dB0rbp0xK0DBO+37xSefUlWg7CyinPsbUl+NSKZIxDpK7jir2zSD4jnleFQKx8iIMXcehnngmsr36EXACGUNLpYUBkhRIbRKl9A9uHVkB7zVZ4FZNgDN2F0/z2yCd+EEzoo7pLjIFBlnvqNXditSv9t2v8KhuZc02LhDYHjIzKyC/p+dQz+osGmAoctZ/2G4cclx7z2fL7jdLqb9ejRwwYWm33R/9vwiNXO4hbxsBur8Bg6acG52Cf2mRa6l7XMizkAoct6DlmVhoBRDXcPQZyCyHjge8QY/oYgbe7mcvAjB36tQUVholRtoKTpIGG4+JaDuh4WITK9Y0MZIxKeFwFtQrEe4eBrasQUGCZS82BRJrxdoHv/inGusrQReg4ah8ehIVXuRHutY1Sp4dAzmYeBhHW9xezUInkPn4UQoSGgtNvd5WJyoaFGb1dqkIM115JRKr1n42btgFU4Lwz/QMKoWge00IxI57ny0J47yzwP3TuReTM4pnHty/h3uNMYJGAvcET5ErtcWchceQsM2HST3AtmDqs8L/OychsFZgk7je+S8HaecO+cUP++WX8O9nXbhheB4MAbImMAXcmJ2Tvi/xAW5ZYlNzWA2wtK9hzM8SaQuyhI/VKgkHm86qZkXAbWE0g4qP0d/E152z6hwTSKuHGBF1HwBJTkC08kmA0XziOAnVybXqmMkggu6BqUQZWeuMvc7wf+dMwX+m8hDqEPQRVrWRBpMlRGppReRVf0VugWPHnR/8ZyIxHJ8BPoNvilyBHoUvibyFeriPyjIxlnNF7+2AAAAAElFTkSuQmCC'
 )
 
-const MasterofOz = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const MasterofOz = new Equipment(
   'Master of Oz',
   '',
   110,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     2,  
     2,
     2,
@@ -3946,21 +3946,21 @@ const MasterofOz = (starForce: number, flame: EquipStats, soul: EquipStats, pote
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACEAAAAgCAYAAACcuBHKAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAFTElEQVR4nK1XgbFsMBS9Zn4DlEAJlEAJlEAJUYKUQAmUsEqgBEqQEvxzE8Latbt/5mfmbZ4g9+Tcc0/iD923lf5/c94N3oFY18UncqftUhKpxvyr8Oe66NWl53H9c4xhUI3mb8ZQIvXCXoDcMtGXM42jY2PO8wnDD/25+VhP6NNtuwPhJI1JR46Xu/FBbZvRv7Ysayn2Eyr7Y95/AWFfaGZaRRxTIxeqBzCUEMUP9BH6d9dbX2A8jZHI/j74LyBsY4oNx5kOyK0fc4qhlb4Xph+5b7bxBvJoSbn0U/sGYuV09P1IwyOhuT9mzR8Fru96RXkVUJLUOp3MJn1g42OJDhUAdKA1jKgpIU6l6PemtB584H6I+8r4BoL8kEik/hv572XI164pTXt/v3ZJoaRmLtH5M9yPwvQSRv9lht/b13TcUfVubF1al7xMXe+vA2iP5OeA17n4WQaxopHjOFcgtzl00ydt2Of8GKmTt8y9zM+u7HjzaphQAV2AnIG9WVkK1Xda9ftzKUshhohe06fnmFqiILNA1mVaaO48/QCDcBjNNM10CUysyXZKMdY9jZVBR/W0Ur1H4S1GmXG+383H5rcgeFEwwAVXOqgGMKqRksIscNeEEwQBgEw7ED242/26wvrsjtDaJWZORi3CZUFK7QAAqdkn6lM1cRH5J9NaFgAYASBJLMNWmBxcSomJUg1Eg/BNUOlsOyhmduGGKDoS60ghvDFzevwCpNvh/fSaCg3O31YzMQPzCPPradfDmQmkMiAhJipLSXme4kWfwtDcEmsOIBgPc20DHRyMqRdhS8kMTlVMUWSYY0BMAkJpADuBPKY2ACIX0IO0oW06nMDooqoEgJToK/sQMyGGkiQC5TGA+AVVE2vAoWFZKfLQY9OKok4D2gFkUY7esMhYJABUAHDWwxnEky7OAGC4YOJBDR7P64KawrViqSaTtuFhlsqBekAQggGkGgC7pdroqPLcAIgOPVxB6LqVEgLb0kHbGgwTBZjAhtSiLzd+e4+cMSaQQGFqhirRaG0YJlKq6257GCnC8YrTsaCsvOLwjScmWCgrBMdBBNJyZBNURpUG0GSYwS/0sh2Vg7WcokJhxt5QDgA7E3se9mLpoaU8lHDbIxVXEAYIPGFd+ZUdhKGSRdngZcsE3wFbsY5y1CADYCBcOawNOu1twn8F8A7EBqQHkOM4J9aOVFdQitOVZNFClF5fE5+4Qkzv4gjlSLAx9LpK+FgTigLAdwDYUZG64CTGbyAAwFAJT0EQrMyBFlCO3QhttFwVMJ2pIKdMSQKAgo7WqofgYFQ5pwQvyprPW1YTzMSETAbF6570JMz9H22/6XbC3raCbkQ+6/LQBC9xPm1kG+1GE401Lhc+NsMSYBHUdS+xLo6JylDQuXvKb9c5uy4p19VRHZrAY0s6kocAg99bAe6a2H2C32esofDJF4NW2owBH+boZfTkmI6xUA8lVmlXDCE69gE2pAoAGpSnQApksDHBOJAKnbnxzESumdA+MXGPFMGuZdMAjNwqyLrla4kyIzzBmZEzEAaQwxCkKmzaKuyyvBc9BsMES/VgwgBgeDmMSsG5XHwTyBOAK4gXRnx8NsVxCgA+ldG8McLBagAoQGkNy0bVKPQRrlUKKUKMLQAAWF2bw/HYwUcBoDkYCM5B31UHb/oLM2L0UNq80v7JybsoGJBYCwdmP3jA6TPjYfAP6AkP8nnD7wN9zYexbS+OyCrtHoR+EIwML6OKPWOrDJyu2D9oxCo7A7BFOZ4/eLzXL8dgA/AVhC4+Oiiz0zoRnYB19KWdKVeX/qn9BZPc4WaWXAsXAAAAAElFTkSuQmCC'
 )
 
-const ButterflyDreams = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const ButterflyDreams = new Equipment(
   'Butterfly Dreams',
   '',
   200,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     0,  
     0,
     0,
@@ -3984,21 +3984,21 @@ const ButterflyDreams = (starForce: number, flame: EquipStats, soul: EquipStats,
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAGrElEQVR4nL2YjZGjOBCFe6omARECEwIOAYeAQ4AQIAQTAoSAQrBCsEKwQkAh+N7TD2DP7NVe1e2qyiODW9Kn162WNJ+Sym16yq/KufuQv1E+f3inDt+9/MXyeVBE5U9ZSeWs2ATjYROg/rRCR2UIUvKjlDTpnUufP6LQc3nmcf3H5WODyaqUZSk1YCrU3jkxNOzGr6f3XpRS8n8U9PWRQGqppIUPZjybTRm6hooQBFh0Va1KUcM4TI+7D+1EVcm6/40hx8Pow8svxZciSRFAyuQFhMUGk2JEqAhB8GyojLW2jsZWukEn69fOf7dMVyhbbR73VCSBsPbHmKGVIwAVSS5y0BTGCiAOevQyA01rLU3ThJplaWq5aPPte7Zh3eJVN4wRCIUxQtdIWijHmPEq4gQgTyAPECXu2t+L4lKsDUJb1RU6riCSRd2GOuhknTym6LrzqEPgRZh2s1UcE0DFReTRr2FZerenkfX6lM+6lcbMotW+XtiOcEoYs2jDxl9j8ewNplH6IJ+1JtRZja9u/KZMtmGtjBPtVAYp0yfDcFbukyAZgh79GoqJD4/rqpNRkBGdFABaW9cG4wzCwsGnptq+55JtWJ/cTJCThJUgNOZYTRrr8hIz6lApBE0ybGBoMjk6OwPoRpt5nuVYLrOR95JtWKNtx/4SRJ3H8T4AB5Xet4PNWTRkSQ3rrBY6HTIcwB7rEuOAuQN56JmfYfeVBskqTO99v43rP3OKRwAR0WLAGQ1bNqiRV6blLiEJI1aKr02t7EJgMnBHJsTn8fmgQnDFuqyhBYUYbCfG26AKx0t9+XdlCGRgwE6qkH7nqKKqnayP4KEj1FwURbuuexIsipGqcELXDYL96H2QAwghTBp335uK4YPq+AyU5A2zuFaTeFOGt3wOUEZJ0RVtBsr9EOQ0ntoM0Q2xfS5sfygZxHP8F2USUN4ct1lkWYPb6mnL9Ot0RxsA9atG/DSpbtdpjcOg0L4ze3vWb55wHPdFmbfiGBf0d1M228zyrC7onMvuKhPgA1ATAxd1v0JF2MKGMk+p7b2+b31opyWt0pBmn+3zZxhkOx+ybwyqhjM5mdP+O3eHNLuTPsmjWuIPOXBdfM+yZTTYn0MfKr1XcWc6eOBHGIdVo5zyqBjIwf+Ut4fc5zQIZ5kBGUtBneIka7uKP3R/S2qwLM1dZjOAwMmtf8yAMWnimTuupud1O+SotGCpHs30vcfAABLIfkOHlJ9uI1CX3EagvrxuIBVja3PtkEBGYDh8X0xWpXRhjJx03PeTXosEN3OtYMNMuSQDmaQM/U6lrvjkLNlU7fY9vx8BbkHY6XM4mC2P4NJauhzeyEWTROpOTq9uIojCXy7UWWaVQiQBOYmJjGCVYK+pyhpn1DgxuFVcChJu+9aZECs3touUJozAgnkI18D0ekp7hYEiCcTCtAz7duzKZr8CpF7Wu9i0NZEQcovGiwpHABfYSqmqNjQ4j+fy1t7i4b7DqYwgEWgH6eR1o5R0uKIiAaSFuZYzcoBfU0wdQcwY46Xup6CEhlLK1wHk+FsL9S7zuVram/kGFEHysTHCfAzh1HW8AaD3QCvP21O8jcGdl+o47Eudw8/6QnfYM9zXVvdt6TvYtVhp6ZCiUnK6JogxqBNddt5gOGByQz5xe8mra196wQHucFLoGwSkfUkV4ZnvRwCGTvYNWuVOtwm/euUlZnAMl7gTGriqjsHmk0KyL8EIkUpSJeziDFao07T4/WgTT7ORwyM+VJ72IBfx+73s5+0ggeQZEQSD1JTcjPuhyiJ4lvaucZLDodIhdkuPZ8TIqWEAh4KkTLjzfK4RNxZgtoTDVKsmTPni4xH3GwzvAwNA9uDSMvLQrJL7GCvHa9zULhqBa43VnkGMZe7rqrHXZlGDvtRH6KRRzcRH43IsGbiehe0YUDGAzx+Mm7yE6aYRUL3zIQ9XJ8xqB7g59IVi/WhGj3yi8BxgCcRPVVqHJGgwiMJNoezmS5gDV9W1CavPlLizmtngbuY8N2Nm7feljaubnHiVdRgHdTXMXbOBNJNDPnEWIByUBySfbjmbvHxnNa5a1hGm8pUHQNnpLsQc6qqve6tniIpeZqg22ngm2WCyOih21nO4qXBefgexxpngEizdf/1HgA/qY0tkQCAv87Y8NQuALukgDlKIOJv517s2gXJ/fX11DDbMihmMrvDBPd69gyj5+b8UPirlqRZWuCuxSWomC74qlXfvDX51uMJG2LMzI1tqwG2yanxhZ/kvha68NmFN7IMDqEKm6PSr7T/Gwyz1WuQlrwAAAABJRU5ErkJggg=='
 )
 
-const EyesonMe = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const EyesonMe = new Equipment(
   'Eyes on Me',
   '',
   0,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     0,  
     0,
     0,
@@ -4022,21 +4022,21 @@ const EyesonMe = (starForce: number, flame: EquipStats, soul: EquipStats, potent
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAABoAAAAgCAYAAAAMq2gFAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC8ElEQVR4nK2Wi42zMAyAjXQL9EZIRqAjlBFghDLCMQKMACOUEWCEMgKM8DMCv53XOYGUVjpLiDz9xQ8cvsCXDf5WEtvgoO3xGCDPb29pWJblcHya9HiaCpBSbhbmWUSTSZJ4G2+398BcxnEEOjQXD1SWpVK8Qqr6P/cbNN3o5nn/1RydreuaOGgYBgWblrvq57nAzcLNNx3Ac6hV+5qRi+5ujq8VooG2bT3veCDyu370yfpeeLFoawHfcnTtsvqd42sxArsYclBiggcXkasBUsQVcsW8HUK7rlMPRLLOTaxLaYCtm8Ax2DY/+8k14RquJ2bRIbAo9ABByB2llNqKeVZjBLNrjgBnoHCjMoUgAwYZmgoybBPsDPAuSAGsNSQTZuXIF2irrE8/ssgFIowJASrWJqED2HUMuIPual2o3CrDjIS5tX38QPFNY7wC8L0GelzrrIsqqaNbzw/1thBx14rEqhNigAWyInMwaRJl/k2U41pHQhC1sVmgwHYPkwfhcvsRDmYBfd8rYOiZ42QoFwToKMQgO1gDCkIFleRVZVBC7iqM69J8QoiAM0mxiNaot6oqZ1koXgkin5LJBCPza3dDSPP2FazT/k4K4hUtQScio4Az+Qi0juajNR9R+sGdeJje8orF8UJaRg8QSgjEKwn6KoN0mFWcolc5CUFq9HM/YRs3DXg3nZ2cboQJ1z9m0isxmTC+gx/PQ9cRZDLHpbQdIO4mClfVa2sAP+RY/Hag+dmiVZlrKyupah/ALMRmWmH2hdaEIJfe2z//D8b4G+woAchV/aIh9PdEkjLAWXonvALbMiKEcDChf5BUYeUQptzpilm0W2ChDoiQJ7pzggbK6+IgDPANEQlBl+BNGi4IfFpYvzSY1mtoRWa6xl5Y2Vs9FnSJPBwKw2PGSi1dm0kKe7EQSsPliykV7B1a16FVd7JqfmrL7GWI0vDDBBY54RbFFtl+hbA6mCsP1nFrPNdZ8zgsPKEdux6Mry/6rv0fIJSk2PGpBKYAAAAASUVORK5CYII='
 )
 
-const TravelerofOz = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const TravelerofOz = new Equipment(
   'Traveler of Oz',
   '',
   110,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     0,  
     0,
     0,
@@ -4060,21 +4060,21 @@ const TravelerofOz = (starForce: number, flame: EquipStats, soul: EquipStats, po
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB8AAAAhCAYAAAAh3nDkAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEnklEQVR4nK1Xi5WjMAwU710DpgQoAUoIJUAJpARcApQQSoASQglLCesScAncSLYJ+ZDN3jvlZQ3BeKTRSPb+oWNb6f9Z9OrHI/B1XRIi9e1vOyLbY1T42oep+9/CtSI7GzKzldu8k0CeHDiMfNKG5jkiY+mfLYH/WXL8/Ag8KnpHe42XbamoyYjOXUKnuaW+6XdTLT6K2q6mMdN0aQx1M2IfLenptt5vwLcXekNrC/ezMqFkJDJJT8M8UD9MVFcnGZviRF1dUWLdvIwMafbgAPQT8NeGtCoDJ6aZdA0ARGfVSXKrfrnUT+Ar026MITtZjEx7Q0V7xo+3SdXpTMM0kLa5n2cJBNBoXgvtE/D1q8UCIwvd0hmhMZ0mmajsg6ZvY48PZEHns7vP8KdpjpX+Y+QJVmhLT+Ye6dUo+XClZRE5l5k19NbeCi4u7Ppc17+2f6L91YvrMiiKK/v4bP1yFL8F+y34k6nTHRNbPjlFv2VpD/5Wmd6iKObWyzmh9Xq9UlEUR2wc2YYTwNd15ZW3B+8cEQf4Issy+eED4G3d9QsXubvfIrejwhMrDixDggXNoyPbLscRB2tQT6fTSRjYO/gKkMd5vE0K4BG8F/rYAZ1aCg4soCSOIlC90DRLy0Qtn2W8XC7oAz2+4+bQjDla63W4DlQVlQDqihXpgPei3Od8c6D9dg58o8nEQsVCcY7uZVzhlmUpI6LdqOdrtkQlksMI73GTYuAWfs39czXcCY6FpHNLDSXUDoapIo48TVMaECUDhIXZlgWsxO56QOQVnl+Gi8xv25ZyrV3EveuU+3w/RS5KxiOdGmouvBFjT5/cvggqd1669EY6FboTbNzGzHfzAiNMNQNz9FF6HLlzIOK1VzhwE2/oosEYoE9matqBiqqiJilFdK9MgL9LLDzeAb8C3xTbfq/UeXoZmKNjMdnQR9BUSjzpEkXqzWYK/x7Xf4pcQPcRh5EBb4hwBJtHjy5XZzV2sQQdLyMNxV/pHmX2lSGCw1GwQRY5lXFhQoBS52vIIVvTuig64+o5A511XUNYsQgs0jnmtIg6o0CLKlHnfUW+40kQFg5z3vm+lXUTCYJFJ8gQHoMjz5GPvKROW2yjlXgqLwKo73spL1Y2l12kC+rLzO2gk2PmWl+20mO1s8OsjUZ0O2JdLlGUW7XFuXU44RiiECeCp11lNtUGswqHScKZbUQVgHJWY6NKOjLJuXVMdm/qPDxYLRZmBvZmfINRIf/WH9rs+8NbaDL7II/AV6Zep6N43OUeh27r8zX3c/7E51zofmdgn5AlSaln9l2dj9LprD9zs2oZmHPPOVWgPXS4fbfj52GsUPvWM8QDB+LrPP4hclCMdtgjP9ybuUUuEFme58G7TQf769DZeNPh+dLbG9dkZGHXWhfvgH0EF2D+lyzFprUMvE+7cuMy44gCEEfGDKy+75NPxY4+eS8HU+F49XXvwIveHm0drgIw6/QMqi8uMN2GibzwhJ4fapm7X+el7C28VwGY1ykwXukDtSv/Tf3oZbeNCguLfrmfj+N2Osjp/hCX+jHk+aP/Ui39fBKUhfzp5ePT6qP9BUwyY9YqDZroAAAAAElFTkSuQmCC'
 )
 
-const ArcaneRiverCollector = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const ArcaneRiverCollector = new Equipment(
   'Arcane River Collector',
   '',
   33,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     2,  
     2,
     2,
@@ -4098,21 +4098,21 @@ const ArcaneRiverCollector = (starForce: number, flame: EquipStats, soul: EquipS
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB8AAAAgCAYAAADqgqNBAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEGklEQVR4nL1XgZGjMAyUZ74BKIGUACVACaQEKAFKICVACaEEKAGXEEqAEnhJxsY2JJebn3nN3Dlg0O7Kkmz+wGEb/D8T9E+Db9uC/4OnNZ+/ea8/fq5363eghjn4ETnMZhIqNLgQISm/Q5vD1yZn+2r1xrN10vx0lOsbW1xN0Pcj39CjbXme8n0agwjMc/r+1fN67JLEAPvgPJEkyYYGXdfB6zVAktydB6IogCAIeNSmr2m0bZqe7KcoCgytcIA1uJ1oNInPCUOAHPgEvrEPwAaPlb8GfLB+wEPKzSZAc2VZOk7LsndG/75RoQD1+wb4NQ3QlTVhMbi4ZXdWihIdAp6YbcFiCHAJy4tAtDi34pKHak6cn3CBwcp26LIM8jTm3xYBx7I9CNPr7Dm5wSdjcbIuYV6PajDgxTBAjcrtSfvlGHNpWlq+KLPy9IAmRCTkCifyJG6eZ6ioKh6dCz6PPSvvRwmeqSWBzoC69a1ML4UmofrGQSBtKlj73vHP2d6mKSccqe5n9mwShIDLTFyCTq8WlbqENAnqmBYBcUsyxiGMGEtSruvGytOqwGQZ7SaxKeSWga+UErAQJWwThtpKQJuERcCoj0k94iC4CrsGpvcoIx91Bu3QcpivgTcupWDAMREnApoEE8A5THComgFGjO6IkU0jbI04MvgDgelGHkfQ3TGMEbw1DUzLQXjjBwK20XrHsXLcqVJTdY7rvEW4DjMmA+nH5nSp2gbWtmDdh28IsHpU3TZ4P+tQoCplqSrq2NX22v5KMVmC71N7DzFNVtmbJaBGlNXXPvbmwnhauX2D93VaK1u1Si4BuQesLYhzQyDMXAJaPaYSkjuAffCvzAYeR/gn+xF8moBLKl42bBCzSRoNTIoBcyWvGugpZM0T+/v9FP71omp+pTymGMZHKWhgKhtYV/it/XyAtBhLBKJ8HeNUAXfHNtrXe7/fN6cPZtrucYCkZFoFJ1tTANTdRQ/PI5C93NWqzM0b3GzyAPobvlidD4AUKO1PHVK5apwDJDYBgXV+ppnsXUqEgtdd0umVCEQq/H33oD1HAccxb2vvyk3ivSg9NjtT53gI4LBPmGF1nTjqbQJs7RNOtu8oNrCtumgmPKskiujb02t8vWZEYNkxKZt903O+Yjr5EKDl932dS+xCHYaf/sihvfba8XIh3Acl1RQg3NXYCnk6J7jZXlGt7tsqhT/EMOmOx8Q8ElemK9ECpr42kV/y/3jUp2w3NmIm00OJOuBn6GDgLIUziStQWmMK9Q5MNCfyR35TrwwdcPtDQPskB+iooQufhG0EShYec1gG4Dj0/TsJh2dsTLjcfki3LQ60ITGdwfdNg7mB+8GWYagH8uvb6XNJyn7bPwD0Ydimm+xAF/A85/dYfR2i32X3a7L9LxYJOrzTl8hsAAAAAElFTkSuQmCC'
 )
 
-const AyamesTreasure = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const AyamesTreasure = new Equipment(
   'Ayame\'s Treasure',
   'Sengoku Treasure Set',
   140,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     10,  
     10,
     10,
@@ -4136,21 +4136,21 @@ const AyamesTreasure = (starForce: number, flame: EquipStats, soul: EquipStats, 
     0
   ),
   'belt',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACEAAAAcCAYAAADvANYcAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAD+0lEQVR4nK2WjZGiQBCFZ6suAS4ECAFDwBA0BAhBQ5AQJAQIAUNYQpAQbkLg3uvpZgdE1726rrIGB5j+5vXP8Mu9b5P7mX28++B3ELPje5LLmJwOL1/wdSdj5ocY+iXQMwhZoFfHtPTPp3vHktNJxvvv3TwXAW3CrCHk4Sucp7xoLwEgTd04jl/X6iAGe5j7bMM83rsfz45v75/AxBBTmaQud4lzl5LewiJYQBaPFqWDVO+b0TnvGaw8uzuKc9tMrzBVgJlBDCIAXE4PUqW6ABf3VQDKvXOj27YhCWNyvYjzBSrXwjrXc7MAeciJ4VyHCwCJ9KqECztw35oPwzV6b94I5gY8wM2W8NP4UUAIMbVp7hoQMg1NjQCTrB2/XXZVVB0GlKoSTv0UUPbm/LRZHUOg/LHjlc3vGVB5rDZDvhkOBfhX50+BKD/DQJAOKpQI920cAgSTiJJVQZ7/DbCAIUihAJK8+32kBMruipLKXiffVuv+CfBUIM8IkPftXM6LcLDW2emyVR3bAnnUG/I8dNOm6152Q7dq/Wz7/rBs/QLB0mEz6rKdOyxBvpwCoMDLSRIaQdM0LsV1URQyRjALM8c0a+keCtygupUuIT6YvQxFEYG0WWjDRyROCecpdn673WTuVJauxK+pa4EalzCOJc+GRufmOLab+sqyTBR8qI7DPbRfOqcZAJXoMH+A8w6ODpgv4YAg3vsZhs8fcb/ve2l23PWwPy7WJoDNzeFYq0HCE9p4jVI1gBryJxi52xuc1hoOAxkxx4zhSNsj680MyM4Wtn/d5EPbFhAQSBwb7b90RIeUexwGV8PhCY7pjP8JqJ1axkQh7tFnQBYBMVQxwBpifpmHUD0uj6hOlWBVMO6UuTg8fuB4hWCpmwL3XZCe61qYY1sc5QYQkU5MRks6qpAiJwYAlSUPOJwtVbVYcABcyQSlUlp1dvQzXKw89TFtQYitpeKuS15AAYbBwsFEPCoArxMFMGNO8fDrMffwIYTraZqkEo/Wtl+YqEGQVMuTYlfnM3WX8KydO2nNfjppP5FvEHTH9eehQCVPlNDEmaXijgZKy9/qWa/OTX7YbzcvHYw7bVGO1JclakaoQXvRojrYJVvkBUEGTTApU4zFl6OdOuoJ2OF+CIbcm0sipxJhiR1AxDsbYK6lZKFwG83qI1Zh3gzeL+CwCYdbETsaPHoFIPKgYI/p8+p9Ps/k8bjfSjdFeNxGszLjlthLU73m2Erf8NYNvj4buSueiBW/GzGtobxIlblNE1XaCGALwkDMLqu+Ee/yjPBdGD70QOkLd6ehdHOV0Ztf/R7UXkPwoTEGke8Lje0KVGaj5rPDs59z+wyK+uid+Hpx7P8FvWZXWh0NJvEAAAAASUVORK5CYII='
 )
 
-const PhantomsFreedom = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const PhantomsFreedom = new Equipment(
   'Phantom\'s Freedom',
   '',
   100,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     0,  
     4,
     0,
@@ -4174,21 +4174,21 @@ const PhantomsFreedom = (starForce: number, flame: EquipStats, soul: EquipStats,
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACAAAAAiCAYAAAA+stv/AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAFXklEQVR4nLVXa7GzMBDdzFwDICGVECQUCSChSAAJIAEkEAlFQiMBJDQS+PYRXqW9vX++zHQgIdlz9pGT9AfObYb/29S+80pgnscIQLehm4WnDe9Wuj4/m416GfeRTJmi0xTvJrhU7OBK4hSByXoY3BuANw3t7dqyxr88t1Zmp6EzgQaddGAgywz2NFGCrhveEhhrYXCp9Nvvt9t1tWGtQ9vuKwHVOQqRg8fdYecJ8y0G70uoy0ZmIJfKYT9roLJlINLImGnABQwLJdyMhSIdob1foKomCJ9+rYFlwqkQq0bAiEh9bbhPJPib3cAJ+JemXgfeEVg9xUrip7V292Ejckkk9GO/RWM/tzQTVoITOx/aJwJK5RSFBFx9/EAAYz8xeJ+FGsg1p+G1FiZH/BOIpT5P3v9GYF2Q8LaZwBizfkgKg+AOikHG6D1pDES7neccjX0G/guBtT1qInKs4IS77vR+XPPd9m8ElkJUEgV5X7+VD365rpsjOXwP4PuC/piC8wRtUBEJIMdisAflWlsk+Y7grHh7IvNM6tODuiQzFsXezrwQoFkIpNatR+CuUsFC9kpC5lUxfkPhIl0YDkYP4K6yPDSPLxhid0lBziSYulKwyKo2J+/mzDyhf8QwdZjjWLZIX1ZgMCAVCpd18SFiZGNyfrUpEcHmZbv+yPsAUZZzqJa+qTOoLhYaVLAW7lBAuoIvwPe2BJsP0HShf48BCiFBaxSePCUqQT1mbHNtCO4Hcs4zARXnfm6vFjKU3Wcf4b71+Bx4IZkmQzV6aF3H4H1dAelNWgAVAfcj3JFpSrM7VErkMWHljlQnmsHJ5gO1SlKC0Wv4sFI/sBbKQm6AO3ZpwXr8YstKyrcFHWUIfOOxca44FUufdGBC7zJcXxV4lqhtaxI4pSO6yin5NOzo/CNptxgBBLlJvqjAH0HSSUxGvB5oxNBVBloL2OBSuCh5J7m9mrssmGiugxFEsO7lRoJsaxCMfQS43e4SBZNJFGy3nedk6BGEhoDZg/kBsUrk/ekgjtOVBBcoriFiy+lIQmpKoatB8r8W4RKFJUzLAkHcSFBK6BwoquNlY8BauGoHPRZhHJswV5qORDLIrh/g4P2eAA9guLEerrIQkWX7iLfgFVeuswEc+8+ngO+JEMFIe76HqHgDp9y7Bk7nw0mKSRwoG9HuYPM2Rq8BXq9ZlWQAQy/PjsIdSLf1FmYmTbvGwqmdCDwfGuJEjtlQFnLckmfZkz1fwGtUN7qIVonF208g00okaA0dUHQVWID3tj8SmOwEpZYaeGWcXxQKUQB/ZCxmTVHDDSu96ya4oQzkSfA+rCUbfQZcjGT7awR0RoqDl0hcEF65ui95yoU2LYKGV+K86CDzGrcdVjwS0NctYrQGFZFtaC0E2HbzewQUhoh3A92OEfxwP6QwV1gLEgUHLV7LCLzAFNAlmrynOcMOg21YmOlKHsL/9VK6RuG1UX5z3GY5ghOJggyi5wROBThMBsrbtBdQatFqs/lDCpYozE/2aD7wmOT6RWCui6B9eC44FphcvsHL/QBxn0RWxWzoEias2+kvV7IUc3mP8M8K/d26tp6jQCx6kmcMbZGL9y3+UVl0gvKPjTbv/lprxA3++U8EiOEFRWQMUWB9pbySmJDSLQVGUTA3z9nKQqGSLFMKaCfhcC3es93iDdbHCBCJFBfeae/S9hlQwQjc04Eq3kFa6Zp93MY8zuF/tmUv6wJ4Gjze/z4S8CFEHAmsBzrYUEQ8G8R7QL2VxXrSrWFue7G9E5z4xfafIrBnqYLBWYiIZyYc167ZFlGl74B//T/wjcC7diACzZsZzXmff2v/AEqdugJxSgzcAAAAAElFTkSuQmCC'
 )
 
-const BronzeIncenseBurnerTotem = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const BronzeIncenseBurnerTotem = new Equipment(
   'Bronze Incense Burner Totem',
-  '',
+  'Antique Totem Set',
   125,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     22,  
     22,
     22,
@@ -4212,21 +4212,21 @@ const BronzeIncenseBurnerTotem = (starForce: number, flame: EquipStats, soul: Eq
     0
   ),
   'weapon',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB0AAAAlCAYAAAC+uuLPAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEhUlEQVR4nJ1XjXEzKQwlM18DXAl8JdACLmFdwroEpwS7hLgEuwTTAiWYEo4SfHoCsdofJ84xQxbvgp7eQxLkj/kf7Xk1Vv/+2Jvym/W/Am1guqMVeg/Q8i7426AN0KneQalndJqT3wF+C1QBenQyPC6+X+iR2vhH4B9BF4CBDA6PezDWWRMv0fjgzccujjTvptZ8C7wJCiAsUnvoBPD5rCRzzAyY6AknCHig+WhF9Z9BO4j/8s/rISlASDpcj/j5Rf3A81NMJqVqWwFjf+Ewojp/C6pktKTd0F53lvgxnP4lhrv6geQFU09fLudobrHbD8JUFNsEXUWmDQDNAvrP3vjK8mBcuPOz5NKZjsfAMp9ODmx9Y5tfySxMp70L97pp4TqauM+7M4l9smY4VpYuVGkliISp946BCd/w3k8yr/L3D7OkPWRJK8PmxkBITz+WsxmGQsz2zFLkDWNgtmgMmLLBz9MpmHOM/LqxFcYTaI1SDhp8SMzUBmfKrXwe9nYcaa0lz6zrwCIv9hVPH5wRFBXNQWReshV5Rfts4u5GDI8kbcm5Vp2SPwngyl0id9kAnFowQe7WJE5mbBm05aQETjH5gr1093tTm5iCpcipG4KpjymoMGUgBx5HJ2zhgdWR3FNmBlxumVi6nKqE1h4aUzNjCif03oIQJEb6YI9b04fDTN5upzKNGXZc26tqdJupZquZQu4WUKv2qvay9dtnJCae2bLLbnJYHKiB5GdMwVIx7fY2QZvEUk2oaGd3pMXeT2BS9hiChmVB3tJU+IZYklwV298xnRVs5KCkBOTmUoU9o25LqZWpkfKuPTGokbxZ/F/KS5555NvfXTRIFAGWNlARADjSw6owAeD+3HPVN+Vm7SVTHMw4JzWwNLAEa8lH2WoNiDXtcH+bqTFSN3fRihFDBq+Uf7mUKrGSlfHjDPDlmboFqi9exagcq2dkNlDa2Ypop6BBsPSqpNZqW2vQxU3BkRGHm8LHx0UiEU+850uSMGw3htyckjUOc5utvFmRFEsBDAoQ2S8UsNAjkNLuIuvwTS5mhdb4tlaKvjNqbzdBcdvDos/JqFwzZQ43HN6t6uj96zJi/4n5qA71ubzLW/s3rRt1UxqtYiDH9fVIJH4ZvXzbm5Jc5JFxn9PYOHUT5O8prkphb8tTRjxKSGyE/9UYMSpKdCZpzsY1O+wIAFuQ9bNPvN4+ZUxLAco3AD8Cn41W3m8xARgaAC+3zALJXDZKf2T6ViBRjRs9ohZNLl0ILLCDIwyapuIgYF5VKcXaU05HmuvoBGT8Gagcl3+RJgSCo419oPTAGEC47Sm7zAjxBHaeviOi2VE3lcWv0Tjc23CtArEZaEq1wjxO5kZM+78QkjqaGZ8+dHjG8/QS30UZNADej+xr0cfgHJROKtu2gIAjkttsNCmH03jOvEW8eXzRKNfCYU0vMAt5ySPvWOWYrXEEnEgQ1xKw10+aB4N9SzBeJHlhYqUWBVIPHWzXFelGG009qZthv1TNjNrV6bEqLKyY3f4PfbM4tEnlF1Vqs736H/U/EbYLzbRhm2IAAAAASUVORK5CYII='
 )
 
-const EstellaEarrings = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const EstellaEarrings = new Equipment(
   'Estella Earrings',
-  'Dawn Boss Set',
+  'Boss of Dawn Set',
   160,
-  starForce,
+  0,
   true,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     7,  
     7,
     7,
@@ -4250,21 +4250,21 @@ const EstellaEarrings = (starForce: number, flame: EquipStats, soul: EquipStats,
     0
   ),
   'earring',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACAAAAAfCAYAAACGVs+MAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAE30lEQVR4nIVXC7GrMBBdZmogVwKVECSAhCIBJBQJIAEkgIQioZFAJDQSeLubD+HTvsxwL9A05+zZb2+Aa11XcOsF2yroT5Ik4cW6PuGwBF4mfpEk3a/9p323GLy+J7lyx70/K5Ep6POYRAScuku7y8DvJa723GLwfiEyGR+X/SX5DxIEnAO0LUDT4P2Ml/phtXAXHEnc4gc93SF9LHh8Bu+3PJAIBzvrCZwWkygjFY6WOvAWD27uRxK3sizX59MenkrBJLpGw38WHtCgE9unU8B/4cpS95/BzaUCUkrolwXq+x36l4QKxZVPVCBTR2APQIeg7I2CLQbgh6XH/3sCxgwwdQqeLyRR3IEDcVLQP8I+dEPrvi9yB6CvDz1a2h4yqzkRSOp6Xqs8RfozVOObFJn9BlUn+YBPAm0jYq/lMx8AHEEGL/akWg5ufxYGORni9nSbAkRimPUKs0b5NcxqKvLKHkzg5BY1KJgHekUeaMcILKSvD9hNNQeM3zfG7II6KDBNEzwerHWcZysGJ/jgpCXbFXqT8CH07A4Cn76oVAzA9xjTDA7pG8x0h6vFChCJbVnH923OupNldYHx8MpA9kgCeQp0lwdoxzR8c+zTQJDuKasInDKrrK8z6wY/lhAp+nwBrQ2SyAIJspYBHgKM2sfg+yNRFXUCR2V8XBXx/q8E6mZGFZBEWkGaalZC4x+0MZDQYEn4RfeqVkF22kNqRevUX74RSByJ1ZMgJQqsE9avGwl4IBiVb6BKarh+fAGHIzgT+NaxytL6zGiSeGAStPpFspXyuZGQvWQwL7sHJ0WyP+Xl5xpwxIsVuOpWSTOotcVy39wTtp7A6fDNHRImg1FuMIXTlMHTylrOREXIFJ9+O5xbBH7qVj4NO6yOZDmGWMTNyj4MI1QkDoKiB+DRb/tkj4q5fU2R5O1rwQ8GqkChhd/gR7fquo6Hhf69oJRI4rH5j1QwWLhEa62lTDEzXtKAHvZ+rifKjgX7xjC5IhZa+A2+d6u173NMRet79CPleEg/kpekJonJcgKvqhLfa36vB80ktxRsBgtOa2vh3gXH/m3GMU3Kcl6JaFtJSHNboAicop1AhFzY5zndV7YmUExsn1MAhHO1tTwMMcEF8dqNWZaEXvkgpEj/6HCsTwHcAzGoK0xeIVKACpMt0R8E7ppoeOE0ux3AL8csga/r7A5P9PcRHIMfn4HjwRcmrwSR0OBrAce4nx8us+A0ZtW1fo99u/mGwUXIc7q3dYKifgs88j/HhyOxrdal4jYTxDFw8hGlIVnOXx1TB652RYYroxtcuOHUth+EIHUNbN9F21CSYxdoK3tTdp0ZqX+3T7EDJz9TSsFkgfrXG4Yy2wWRzxZaEt3SjvdTF41ngpiA8T6inH7SYLj1GQb3KaWUymmOpJlhXNbZDyRESKuBSVBlpK+TgpbE0R3OBfEvGU/EDSig54lHtKLYrERlRJZlBe554RxRkIyfz4ep/v39NfSeZmWKFwN2GhPi3LZ9U7rqhgIPJscv9lHB+F7CNIEg5ASJe4h57t75Xi8tIHB2kBpkQF3s3bRT4AjurhQBKF85h/BeRJ+fe2y0HLGt5c0dxv6iUQVjyQmD1m8z4ZUC0f2xO/76/Rc+c+TDe3z2Jf76h8nhEH0gIeC8Ln9o/ofwJfl/GYHZxgGtt7UAAAAASUVORK5CYII='
 )
 
-const ArcaneUmbraKnightShoulder = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const ArcaneUmbraKnightShoulder = new Equipment(
   'Arcane Umbra Knight Shoulder',
   'Arcane Umbra Set (Warrior)',
   200,
-  starForce,
+  0,
   true,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     35,  
     35,
     35,
@@ -4288,21 +4288,21 @@ const ArcaneUmbraKnightShoulder = (starForce: number, flame: EquipStats, soul: E
     0
   ),
   'shoulder',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACAAAAAfCAYAAACGVs+MAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAESUlEQVR4nKWWgbVzQBCFxzlpgBIogRKkhFVClBAlJCVECZRACZRgS6AE/9xZyxLJ+897e473hLX3mzuzw4X+PuYf7nvfbv4FQITn2dXP3tW92k44BfktwGyFdf05wFApnqhckLfJvwGYsSiE65qobCsjFqa7SVq3dKszYgYKYxKQM4hfOaBZ2YpDOPZ9EdnN6RW1eqQyZ5A0o/ujpnlg9Yh2EEeAb/lakx0tqZ4HPglfy9UbH6WcFdebAep9imNlXCqMG0eINweQW8/zXEoRvqdG3420LI9R36ifJmo6vqFzumajuKMsBBepOuidpCCjoZIoV+HHyzM8IS9UmJzfHtl6boeNGg70k2KQmqLAlzThsBDO+t5pDWChZZJEZCOx9yB+je7UNHso3W9rYP41UTR0AUVJtYNQatuuLsDcII26lkXDEPnicwpk4fw5mlkSYSXiZTmvbuDacbzu5tnmxcB5te4UFLB1wQLMKA4KD00tNCkBTBNvIIiuyJ25gObxaExkFgaAaegRdF2IltdRanNgE9dfuubiyosdsRAQhBhgjHhF+ZXncM3gGtLX9yPztfRi2/XEoJqX8rdlL3ZxiLdP5PxcH/vYTOXiUvkucnuOXaHZJjgFcTt8P6Rryc/dav5/BsDk7dMT8Wfr0zR9oCBYVwuEaDpCKNSm8ijlIuUmuI5p0vRIE1ob5WHrLgAmdxA3xP5u0thNaB4bBDkQrDZ0mQDgwEDxTa1e5+c1577lbohaYBeeDuBlrfwvAwv7frQDEQhs1y5bI4XVdnRNItvPDj1VbH8tAE2zbdkLcpJyody5ys9GpSbKaqMaJD7BnKKepIqxCCBQOwCwIys6+T2MS2AcIGDi8M7R15KOpZ2bRtRUgSzyuI1UlMFqOyK34hLVa6Ik9yVFUTbRQ9HaWlHhodNoh1HxjlB0Z4ex7V6Kd0bbvQV4SWPkLRCqvGCbx5GCgLvXFXYmImaL0jQjA4TrcELSAd3S7HUbPeoqjivZYD1cRqpbegdo+8DD2wm94BZrEbdF6Bbj0PC9JKJP46FMTag4obrvxPa+N+Wl3R59BHB/xE7x78SHgaIokvxbN5b/XlEvL63HuUBe9OxQLFvTZ0fTw3eDAOBr5Zq8+O3FDabefOq6UF40EHfBtJaC27VNW5AGTkvRDZ0n1yEuW9E33wS2AFcA/lTiH/y5pFGIM91upitGEaKMVjcQ9Ym4uGDdgxOqz+SF425DbFFEH545YBcyteDRs+Ca6sO3hvRleLydZylELrb0ziDxBoKaQG0AbukjHz/JZMQfdM+sdyHw5xwk+Uh+BPCW7zWuar1zoe97K/KTLcECMrog8vAh+jOAdYKpbu1ex+M2g/+Tm+sC0jgvoLd2ewbgL0finONID8JnEGev0WK5jgPdTbvzjgBWLHT+u2L/XZU/QK3jkwOfHv622PTl/Hh8BMBNTT9b7X+A+QZ8Cv8PaowwmAcPRCAAAAAASUVORK5CYII='
 )
 
-const RoseKnight = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const RoseKnight = new Equipment(
   'Rose Knight',
   '',
   110,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     0,  
     0,
     0,
@@ -4326,21 +4326,21 @@ const RoseKnight = (starForce: number, flame: EquipStats, soul: EquipStats, pote
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB8AAAAgCAYAAADqgqNBAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEXklEQVR4nLVWi7GjOgwVM2mALYEtgZRASiAlkBJCCaSESwmhhLiEUMJSwqUE9hwjEUG4d3Z33vOMwR9ZRz9LPsh+m+S/b8l24Q08TdOpqipht9a2bfwPw/BXaOM4xjPgKX3fT1sBDnsHbrdb7P932zV7kQskzQQ/6TmXTIIMMq+IlPlV6v6IWYn9Tpr8KV0/CztgxejtfJ4PEvp98DdzFHkqY5+DCSyBXoENnVCDFUd5lkvel7oqcT70FXZbuevaLMR8vshHgI9b7OmgwF6ApG5HzDvoVS6UBszWdUGa8i51d45/zqMQ2K8hQKMWkqh5J/0cMl7BiGdmNwFsnMyA3SRqOorRgTEByrKIwBHMCUDNy0jfz6Avfh50WduNdgRd4olMiEoe8l2bNT/ZdOVK5bui9+AJCXgt+McV8YfjuJVTFCIbnjJbZLZnP1DPC/w7vIFGofJ8AXaKvcAdcOxZlk0hhDdGvP91e1yt9X0nRVFICO95oCzLrcaLZQ9+gUQmJZJCXPeaR+2RcCiATzgQdElEHoSfrpsF00STuL3kzedKMDVNE+cEAePJtLY1MrQGCy17RgslVvvyVXqlVNtgYIPJVuP6tASTBEc3hCBmBwO1s9R82wwvgtPk9PHGNLGdz2e5Xq9R02dRUg0E1iin8IJPCar/Du6qYDWCeuFVsEnz/fqqbaJ7aTTnwuRxl6G+SXurpTGG+j/pmJRtXUvqzG5tq9hXJXUJqPZykYqJ+f4hXZJEc88JR16mRqcwtROAFpCN5tt2kD9p/RA1ttrQKViaFdgKEfRf2h+BdwCQW5iLBHoJ0Jpr6A3GjQqwVLF/BWfg+TtcInhu8GGuwGTeK2hLUHQzbqqdrincY8Tx3fc5N/ek0zsazXxTAbhCYIo4qEAEjZZBwgn6gmHy2QrA/5fR7oVglhsB/gTrXjM3cpWEZTwLwh5NDrAMV/JKQXn3N8+uLzXfEKytgMcC/Us9zgC+qwCWUClEplbIEeHDTmLZu8rfXrVV/naanmVcgbK1LEag73E1+WgZxkEy+b69+VwlTODrOGfAHRFwTwRYPsz+55d+Nv0KJJQKnRoHCGABR7dpgUp2MGZwpM6lfFpUziVyBiuQXo94zVopsZeNjZlQRoAydW6BjY+PdsM7sN4iDy/+MAKt6SsBgj6n7RJ5s3ZamDwwz5OP5xstB2DiHmzTN+TzyUC3ApBp64qK1UJGOWk9cLQMCw34odRun1Vy4KLXnuMwX5NY6axEmgBxjm7zVF5l1ANzjWPwQQEMD8X4SXkx/iRu9DmB6QdjgAM/CGyaYH4mDph8mOT2mHCvHvvXeksa1f6BObNvgzO/FO8H/0u0u/caqmH+qX4SPZipksgd4erN58FF4tVP9SwD5Erzgl8DmgvW6KXl/u7l9k8Q8oWYYvwwt2LcqCC1Ctu4Y1bYRtB9gO5i58DrrOu0wE9dH3fBNSpjjSAxDv3S9eOG9CSvePPn/RkDi67c0v8Gxm7PR/z+EDMAAAAASUVORK5CYII='
 )
 
-const ArcaneUmbraMageShoulder = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const ArcaneUmbraMageShoulder = new Equipment(
   'Arcane Umbra Mage Shoulder',
   'Arcane Umbra Set (Magician)',
   200,
-  starForce,
+  0,
   true,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     35,  
     35,
     35,
@@ -4364,21 +4364,21 @@ const ArcaneUmbraMageShoulder = (starForce: number, flame: EquipStats, soul: Equ
     0
   ),
   'shoulder',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACAAAAAfCAYAAACGVs+MAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAESUlEQVR4nKWWgbVzQBCFxzlpgBIogRKkhFVClBAlJCVECZRACZRgS6AE/9xZyxLJ+897e473hLX3mzuzw4X+PuYf7nvfbv4FQITn2dXP3tW92k44BfktwGyFdf05wFApnqhckLfJvwGYsSiE65qobCsjFqa7SVq3dKszYgYKYxKQM4hfOaBZ2YpDOPZ9EdnN6RW1eqQyZ5A0o/ujpnlg9Yh2EEeAb/lakx0tqZ4HPglfy9UbH6WcFdebAep9imNlXCqMG0eINweQW8/zXEoRvqdG3420LI9R36ifJmo6vqFzumajuKMsBBepOuidpCCjoZIoV+HHyzM8IS9UmJzfHtl6boeNGg70k2KQmqLAlzThsBDO+t5pDWChZZJEZCOx9yB+je7UNHso3W9rYP41UTR0AUVJtYNQatuuLsDcII26lkXDEPnicwpk4fw5mlkSYSXiZTmvbuDacbzu5tnmxcB5te4UFLB1wQLMKA4KD00tNCkBTBNvIIiuyJ25gObxaExkFgaAaegRdF2IltdRanNgE9dfuubiyosdsRAQhBhgjHhF+ZXncM3gGtLX9yPztfRi2/XEoJqX8rdlL3ZxiLdP5PxcH/vYTOXiUvkucnuOXaHZJjgFcTt8P6Rryc/dav5/BsDk7dMT8Wfr0zR9oCBYVwuEaDpCKNSm8ijlIuUmuI5p0vRIE1ob5WHrLgAmdxA3xP5u0thNaB4bBDkQrDZ0mQDgwEDxTa1e5+c1577lbohaYBeeDuBlrfwvAwv7frQDEQhs1y5bI4XVdnRNItvPDj1VbH8tAE2zbdkLcpJyody5ys9GpSbKaqMaJD7BnKKepIqxCCBQOwCwIys6+T2MS2AcIGDi8M7R15KOpZ2bRtRUgSzyuI1UlMFqOyK34hLVa6Ik9yVFUTbRQ9HaWlHhodNoh1HxjlB0Z4ex7V6Kd0bbvQV4SWPkLRCqvGCbx5GCgLvXFXYmImaL0jQjA4TrcELSAd3S7HUbPeoqjivZYD1cRqpbegdo+8DD2wm94BZrEbdF6Bbj0PC9JKJP46FMTag4obrvxPa+N+Wl3R59BHB/xE7x78SHgaIokvxbN5b/XlEvL63HuUBe9OxQLFvTZ0fTw3eDAOBr5Zq8+O3FDabefOq6UF40EHfBtJaC27VNW5AGTkvRDZ0n1yEuW9E33wS2AFcA/lTiH/y5pFGIM91upitGEaKMVjcQ9Ym4uGDdgxOqz+SF425DbFFEH545YBcyteDRs+Ca6sO3hvRleLydZylELrb0ziDxBoKaQG0AbukjHz/JZMQfdM+sdyHw5xwk+Uh+BPCW7zWuar1zoe97K/KTLcECMrog8vAh+jOAdYKpbu1ex+M2g/+Tm+sC0jgvoLd2ewbgL0finONID8JnEGev0WK5jgPdTbvzjgBWLHT+u2L/XZU/QK3jkwOfHv622PTl/Hh8BMBNTT9b7X+A+QZ8Cv8PaowwmAcPRCAAAAAASUVORK5CYII='
 )
 
-const LegendofCrimsonwoodMountain = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const LegendofCrimsonwoodMountain = new Equipment(
   'Legend of Crimsonwood Mountain',
   '',
   180,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     8,  
     8,
     8,
@@ -4402,21 +4402,21 @@ const LegendofCrimsonwoodMountain = (starForce: number, flame: EquipStats, soul:
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACEAAAAiCAYAAADRcLDBAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADr0lEQVR4nL2Xj5WbMAzGxXtdwCu4I3AjsAI3Qm6E3AjJCM0IZYRjhPMKXsEjuP5kCQwYyL1rqzzi4H/6WZZk5wctJUr5np47/X25pucmvxutLCHi72tPr/eBdgAifV2a1TvmvYmeqO0KEa99d6jwV5fbhyAVtqON+JGL3uTXt3HcBYe++8DtzWI7nA+0gkl1nkbnyZg8syXPZTDtZmJjBintVNe1llprF/2gpxSFaECFARAo3SzS5zqn40NetXN3atur1OXCmnk85irnW+mYtgMzYK+a1BC1Y9kJ8u7cyrSOv2+Xjt4f90oLLcYnicW8ZdsVEDd5Gnn29rGp1EUr27TTvifal3XxdhTeWrXCjsTWtuRDIJTOu3gyhi0t88dCL0M0AIBDqhN+ZVU+wBKBnpQJBM4q6aBZOCZ+SOjQvxKdf+2YEyW+kjWeSUrxoP7Qis5vLb1O22ymWoiWyj9uPcf6MM7bgNyQx04JqgpTm38DIaRVAIRjKWaOjGls13ZkraHHMFStUpt/A5Eom7RvMe3bIowA0KXJx2QBWCFMiSmUeUGUWLr0vYKQwqzm3Yeo0ar5obdNII5BEM75nZKB4Ms5XHNGdKmDgBxaYReisAb17XxGQDmUqhUQni33X4ZokA4+9VeLSFRU/aQKAQHAr0vPKx4dVm3YEVUBSpeUI2OGgkHbDdfnPgC5FxZ5GkJFzhuCJXuAyKoBBX0A86JYU7gCoISTnskhhCqEcgYJMwj01vLkGmAYHZ3JEUSDmMdeljAAwYJrqaQEQDmMcvcIx0fB6XawiW1g5Y+0qvKCEkLdIcsowHh3crQcQcSLXOngpIaMKMjmVRg2uwxQ5eoFHNTpBoYEJpn0a9GRJ5lFs2O52i6FL25cllOx2/TtuxRd7ns+wQLPR6i+PYackmm+6ikAl3oHFQuhfAbgFIIXbWaQ+ahoOXEhSSEC0ndK6cW49D6M+TpgzTdDdAIhXHAlC8o78kfQDQv5vHiM6pCzY2qkfAvif8jJdkhSECmtgIix6Q4xSjIK2VsW45/ZijOIBpdXY7pqY86IsyN4vwWYzo8c1i+ophx0i/3ZgzDyIL65ApGxlnKvoQh9XBEpOlakFeVenmlwDUIBQP0qpf6TXmwFd5bV8tYkpQBZOeKdTq7jR5aYFsxfciboTdyniLDpM90d8vkwgRSp29G8BeVzCKEmK0Fekrk/8SdH39GeFH+UfaT8zNAM8XOlsGqRPUtsaEkcVX5rKqyeBeILT/+B+gORYzQESpCHDAAAAABJRU5ErkJggg=='
 )
 
-const ReinforcedEngravedGolluxPendant = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const ReinforcedEngravedGolluxPendant = new Equipment(
   'Reinforced Engraved Gollux Pendant',
   'Reinforced Gollux Set',
   140,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     23,  
     23,
     23,
@@ -4440,21 +4440,21 @@ const ReinforcedEngravedGolluxPendant = (starForce: number, flame: EquipStats, s
     0
   ),
   'pendant',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   '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'
 )
 
-const UrsusHandgrip = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const UrsusHandgrip = new Equipment(
   'Ursus Handgrip',
   '',
   100,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     2,  
     2,
     2,
@@ -4478,21 +4478,21 @@ const UrsusHandgrip = (starForce: number, flame: EquipStats, soul: EquipStats, p
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB4AAAAfCAYAAADwbH0HAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADnUlEQVR4nK2Wj5GqMBDGl5nXAJSAJWAJWAKUICVgCWcJWgKUcJRwKeFSgimBly/JhgWDo2/e3pwgIfvb/+YPpWWm/ydZ6mEKPM8/9rO62Y/zZun+/LbplnstHuuctDJ0vDonnuBJj9VoES0UdvTvYujc7K8mwXeArfV9XVJ/ruh6V+56ukw0DAPdL4tB568btW1L3191fA/X62QVjJ+BMwt1Oa6qnCalnbK8GYguBZVV7Z7XVenW8B2C9Z5a9wzrNHnj6YMcx5fbq3IGDL39UMe4CChAtQWxjBe/bvesdHzi8a4BVZm7h/CqDt41IY/vAt8FR/mxXh+vxlbqRMpWq1IeVOG7NmGd3pZX4FUvVwi3UIyikkUm1uW+Xe93B8g83/xd6NOs8F8BY6iEY31+hN3a93HRGjbirT520CJb9zArzQqrVUDRNrxWFHKHocfN10TRmachsgVH6O3s20QZQ8b+F4XvjccATzycoQzkPbzv0Pk6gAFbuASvoNjIYmvH9mbpDDi0JsLdtTArI6s8j1fWAwO28JdVDVCe54sB2hvDcFzPTRWNRHUrjEoMF61pnDTtiQRnWdbNsOzQTU4hoCrAFCZYf6ZxnKwB2kERhfsY2sreo8/xPqD8DPt+rc7WtiLSYovQeb0KtYf60HX3KW5mAbRp6giH0tp+18rfE5UxNRDMGyUAZkT0zMrjp/zieo8KFwG0tMYAzBFICfYB+t2T8/b7B9466H6OkVu2lD2GIh1CuIXyc2kkhznlbRKsQkEhVwgVwgYFZVlGo5xhwoiyzCklqJOTneHsdSrHrrB8Ty7FwlDksQpgACfkOERAQmGwEW34FMm9HF9OV3o8NJkJrbKECaBtJl95uifS6yXUCiPSe4VW4SJzvRlaSXr8Cip7fyvs9R/p7deg3fhLQQHUoViQ70/DzGKnFy4hx8LbGAC9KJEtwxW8B2VvMUwwXFBYlxE+5vZvHeosO9LcL/M9jkCne9MWqRCnoNVOuGWonXxZ07i4uLK3vbwXSplThmLybb2VQ2RVXHDs0pYOHi0UFS7H51YQCBiwhTrDLHTo8+TkcuFGkZ0OHZ2WA6Xz4Hfw92xAUy8GSG/5B0NCAcwbs4JKsIdjiCAcR5T6zUXhZGHthdwA+Q2noUOX/rkDEALoChhOR/Ld7ch0nrMReMAGZEdtTxz+JT7SsPDvNE6ZCEbMZQK4B5YvZt6S7unAFk4SKclwGgoHw5fn67/RGG5nd35rLAAAAABJRU5ErkJggg=='
 )
 
-const KingsDignity = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const KingsDignity = new Equipment(
   'King\'s Dignity',
   '',
   0,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     10,  
     0,
     0,
@@ -4516,21 +4516,21 @@ const KingsDignity = (starForce: number, flame: EquipStats, soul: EquipStats, po
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACIAAAAhCAYAAAC803lsAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEk0lEQVR4nK1Yi5GjMAyVZ7YBUgKUACVACUkJRwlQQighKSGUACXEJeASQgmcnm2BCZDd27k3Q8JH2E/Sk+zkiz5jov8LdfTgE5FpevJn+s7lvr4cy+2bxj8y0XJLj5Q11rFdMh8jolue9qLo9xjnsz/nz5YfidyZiI5SitKc0ghuxgR3ex1Tni7fwPaes9VjTKPueSz9eyKxwXCa2uhB10dCFHFkR0XZZeAJiZ58D+dAeH6t1rZn3dB3+Egkh6eYpCvI6jY5EQ0TXydU1AMVjTsHinriyBF112Rj2yg31q+JCLKio+6syDyeFN8VFe1AxtxpuJV0Sm7WZrgpSsobZZptq7XtmZJv5/hERGW+fCPTk+Y0wWPA8PXr2djwv5CNMWEdED3OJV3a2zwA3oFtHYz5EyJSp6GxPR9NORU87zXqKR3tNZNg77PMm6FMU07DSGNTEmuTRc4ErDTKIwKr+YTIxHB3lTokVNf15IxB4k5xHNvDRclwCg1Nr5jUCVVTfySAMYgans/Y3iJEFAhMU0w4OONHhOxzcy9tBECiaVxFVFVlyfRNSOaYAIdObFYR8WTMhEEoSvwLKd/MVt1w7A1d7guJ6cZ2TU2Kz0Gm5rR0+aZnTK5NXyyBkcVzKtZObsQKlq8Owlwxtt50V7L5h+d57gpSl6UtcQD3ccAGY/Bkc1ThEJwMSKwwa8R+vFy+YYxDnqWpK5dL4+6BRN+76TNaIAQv994uSZFfasZxtOP3/n2Zhx2diX5RIFSHO0V5Y5eJNI02gpRvrTVVHJQ8Xd4sGj0TDd8R+7yKF+OIvB4rDlc5fZEXqjCVSBR1OpMQQUpkMGhX8YRX78DoGlbHa4uQkcmB8/nsI6BtygQuReUcEXsShgqTALMgHy8WpCGlXSJWJALA45DMMAzUti3KfnGiR+TmVw7FaoWZyiIjKA21/sYRiS0ZsiRwHGDVFt6JTC5vDggvwqraMBIxfQc4UmnbAO01xhB94dlUxRL93Yh40SZWqGjX6JRIDwZaeyaL2LAiEFTajIhLR/Qi1SJCla76TmQWrQgKfSO5LD1ji+SQQAgRN+yi1BKY55STXY2M2BBx6ULVxyRcl7UTeT2lB6YQKgQM/2KzJbFHxCLOmUS29AMpX+zK8oDAO0JCMh83szWZap/sHhGlknFCboXEtZsIW86mVpTX5tBzAXd9ao0VHSF9Sum5fH3pblblo42RkrYMgIT27mKgjo7TgA13KwGzG6ZN9P795wTWE6yoiASweKV3yQgJiSY6KRCW7xE+bhVZ7TYqstcIIWQsYe00EZJ4X6N8u//VLz3gxAO8QhIYXCpJWrkgJLHTUdEVwWyk8JfXN0Si4ChYL530FvQVpAyTwcsXb6A077gKZeYIgIRUhxcnWmzqCRh/rMjsERECsf9+zG2fXx0expKZJzUNl+0ypiVnN1bu+Su3GyFujbTzI/lnERGU3Alv693VOLf+MnEpECEDsHl1rov63VhBS0p+nBoJX0gm40XqKef44P7yhIjDivCCTDyZwf8tcHobexdHEdlj/a543i830webf/ob4S++IpwATgXOrgAAAABJRU5ErkJggg=='
 )
 
-const PatienceIncarnate = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const PatienceIncarnate = new Equipment(
   'Patience Incarnate',
   '',
   0,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     0,  
     0,
     0,
@@ -4554,21 +4554,21 @@ const PatienceIncarnate = (starForce: number, flame: EquipStats, soul: EquipStat
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACIAAAAhCAYAAAC803lsAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEk0lEQVR4nK1Yi5GjMAyVZ7YBUgKUACVACUkJRwlQQighKSGUACXEJeASQgmcnm2BCZDd27k3Q8JH2E/Sk+zkiz5jov8LdfTgE5FpevJn+s7lvr4cy+2bxj8y0XJLj5Q11rFdMh8jolue9qLo9xjnsz/nz5YfidyZiI5SitKc0ghuxgR3ex1Tni7fwPaes9VjTKPueSz9eyKxwXCa2uhB10dCFHFkR0XZZeAJiZ58D+dAeH6t1rZn3dB3+Egkh6eYpCvI6jY5EQ0TXydU1AMVjTsHinriyBF112Rj2yg31q+JCLKio+6syDyeFN8VFe1AxtxpuJV0Sm7WZrgpSsobZZptq7XtmZJv5/hERGW+fCPTk+Y0wWPA8PXr2djwv5CNMWEdED3OJV3a2zwA3oFtHYz5EyJSp6GxPR9NORU87zXqKR3tNZNg77PMm6FMU07DSGNTEmuTRc4ErDTKIwKr+YTIxHB3lTokVNf15IxB4k5xHNvDRclwCg1Nr5jUCVVTfySAMYgans/Y3iJEFAhMU0w4OONHhOxzcy9tBECiaVxFVFVlyfRNSOaYAIdObFYR8WTMhEEoSvwLKd/MVt1w7A1d7guJ6cZ2TU2Kz0Gm5rR0+aZnTK5NXyyBkcVzKtZObsQKlq8Owlwxtt50V7L5h+d57gpSl6UtcQD3ccAGY/Bkc1ThEJwMSKwwa8R+vFy+YYxDnqWpK5dL4+6BRN+76TNaIAQv994uSZFfasZxtOP3/n2Zhx2diX5RIFSHO0V5Y5eJNI02gpRvrTVVHJQ8Xd4sGj0TDd8R+7yKF+OIvB4rDlc5fZEXqjCVSBR1OpMQQUpkMGhX8YRX78DoGlbHa4uQkcmB8/nsI6BtygQuReUcEXsShgqTALMgHy8WpCGlXSJWJALA45DMMAzUti3KfnGiR+TmVw7FaoWZyiIjKA21/sYRiS0ZsiRwHGDVFt6JTC5vDggvwqraMBIxfQc4UmnbAO01xhB94dlUxRL93Yh40SZWqGjX6JRIDwZaeyaL2LAiEFTajIhLR/Qi1SJCla76TmQWrQgKfSO5LD1ji+SQQAgRN+yi1BKY55STXY2M2BBx6ULVxyRcl7UTeT2lB6YQKgQM/2KzJbFHxCLOmUS29AMpX+zK8oDAO0JCMh83szWZap/sHhGlknFCboXEtZsIW86mVpTX5tBzAXd9ao0VHSF9Sum5fH3pblblo42RkrYMgIT27mKgjo7TgA13KwGzG6ZN9P795wTWE6yoiASweKV3yQgJiSY6KRCW7xE+bhVZ7TYqstcIIWQsYe00EZJ4X6N8u//VLz3gxAO8QhIYXCpJWrkgJLHTUdEVwWyk8JfXN0Si4ChYL530FvQVpAyTwcsXb6A077gKZeYIgIRUhxcnWmzqCRh/rMjsERECsf9+zG2fXx0expKZJzUNl+0ypiVnN1bu+Su3GyFujbTzI/lnERGU3Alv693VOLf+MnEpECEDsHl1rov63VhBS0p+nBoJX0gm40XqKef44P7yhIjDivCCTDyZwf8tcHobexdHEdlj/a543i830webf/ob4S++IpwATgXOrgAAAABJRU5ErkJggg=='
 )
 
-const CollectorofFriends = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const CollectorofFriends = new Equipment(
   'Collector of Friends',
   '',
   33,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     2,  
     2,
     2,
@@ -4592,21 +4592,21 @@ const CollectorofFriends = (starForce: number, flame: EquipStats, soul: EquipSta
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB8AAAAgCAYAAADqgqNBAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEv0lEQVR4nL1X7ZGrOgwVM68BKIGUACVACVAClAAlhBJwCaEEKAFKCCUsJfCOZGxsyN7cX1czuwbb6Ohbyn900k7/jgL+Z8D3/Qf/w5dzXvzy3XA+bqXzHOplDb8iR/nKigYGPAgi1rykvqC/pmV137bLeie12EdPc7OxJ81MwzDJhlldKopM9nkNY7L3zP6n+2ZVaWqBr+BykKbpDiKlFL3fI6Vp6V2I45DCMJTVkHnn1aV5fgmfqqpg2sADNuBuoPEh7gVWAGZwFeBv6A/AFk80f4+42HbULcvuCsBndV17TOt68NbrvtVCA5rvLfB7HknVLWMJePDIS9EUKnoCXJTZf5AMIVxYfzBEj7MNLo/0WXC/4QOTE+2k8pyKLJFnRwCP8sMI8/vOOX3Qn0iUW9qa1u3MBgtejSO10Nw9dD9OEEvzTy8vdV7fLhiBWIhlo5vwrNy6rtRwVnTKB1+nQTQfpoUupF1CyoKa/PbyvPSF0HXjFCB7NrQNg8dfor3PMgk41npYhaMNEAau8+AGxs9VcVYkBcZJfMYDV0xHgOCR5oLDGAlSctm2XTTPmgrBMrlFYtfIvQD7leyk/vWirusoKRqA+wKyEI4AVvuEtQcOwLXZDTB/xxHZtTn1Yy9m/gTMexm0yOFHpgnf8zuvSXzeEQFmrC1R8xxpgnUnWDaLcQmrgHcA5o0CX6oSfo3vYC4luLutd6l4f8F+Et+OxN/JcaB0quk8h5/3GH5YEQysP4qT1Vp8+5ppPT6YuloAihcia4BKxdOuQ/nwhJUVRz2upLmCgjqVF51RZ1c7cvsjPYuEecgadTriX0VM3Zogdc6VvV4UFcVJhlqvtVxUavkcxUXwjObuhvR19pVr6nbQH5VOfqePh3SqCSkKHyBO9NkwKBr7nha01k0hBqoZPk8JoYSudQJfwT1ywVWZIqCgEZoETYrzjzYMEqrDYczpNiGgeqqajaJoEOC/oV/B30i/GAxXaFRD8Reiv+10KpbDSq+jpR7+8/fazvJZl4l4d/uQNb+CMw3rBj/Bj6+elKNMgQ4yLBw8C4VTJ3qee9rvw9CJtbYsprVUXzW/BVyiWlkriM7g4aFZAfNrs2OIQJQvqrZ7BNcvCKwChYf932RPukDbsnsOkFy/t0CC7QnXthgE+nGXVsaQTShZI/TN7BzpWoAK8RIc/HTFo3CnY1Y4W+qG8rheRjA2O1O3ae234/2b2TkDWADW3B2sFkgfZ2ezs3mOIUDMPs8ztUgNkbaO2Oiidef6/IvZWeMNFtmm2mpdPWfMKikdPvhlek0S+kQsgMnyb2ZnYDNM8uTDgA7f3/OcfYXaIH88NrHvj/4Bc+oc19RTY/glvd17zxU9oGGV6dEqiPRJtdzmBD/am+Zp2yqbPwITXfG0rTh1eDB8HrP4J1rh+wsw17WZ+TL/rmtv0W5pQnPhS6ke8HMwGCVKSQvBjKUJVT3F8LVZp1VPr+xjNvUBzAkyMz/mm2W+Sz1w94fAQXy7BaOnmMYKMXDBl/5vVgZlis7Jlsucx/DK3ws4zNgIuMK9ZGJcUtwKMdONgrN51eT/YMth6pH5Xun2c2lZhv34AWCGYVfc9AD6AC9n145i3iPw/Tn42mj/H6CyqgVmT4pFAAAAAElFTkSuQmCC'
 )
 
-const LudibriumsCollector = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const LudibriumsCollector = new Equipment(
   'Ludibrium\'s Collector',
   '',
   33,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     2,  
     2,
     2,
@@ -4630,21 +4630,21 @@ const LudibriumsCollector = (starForce: number, flame: EquipStats, soul: EquipSt
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB8AAAAgCAYAAADqgqNBAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEj0lEQVR4nL1XYdWrMAwN5zwDTAKTABJAAkgACSBhSAAJQwJIoBKGhCGBl5vS0sK+ve/XyzmsQENubpKm3R86ZKP/JwF+DPi2vfk3fDrz+Q/fDcftWjj3oR6W8J/It2wB0cCAB8ENzAvqcvq1qMV9Wk/jVXplbz3m5sUW1zMNwyQvzOhKnqfyHmMYkdUz7z/pm7FPEgt8BpeJJEk2Fur7nl6vkZKk8BSiKKQwDGU0Yp4xujLPT7FTliWHNvCADbhbaJhkvcA6AANnB34jX4AtnjB/jazYtNQqtbkOYK6qKs9oVQ3eeH5vWWhA870Ffs0j9VUDLAEP7lkhTJmi58CJzPbmxRByCqsPgeh4buWU3/RccNXwgcmpduqzjPI0lnvHAU+yPQjz62o5udM3EXKqqWhZj9VgwctxpIaZu5PuxzHX0vzuKLv3zFx5k8sSs0PKOqFWujgPcsuyUI1V0fY++DINwnyYfMPGa/5cgMf6SVlbUMhLErK2iX7HRRlFykZF943DgfRR0zoMnn2p9i5NpeDAelikcwQucJUF0lBCiu2HAD0LdLCU4wgF4jkQ3JNMcIAR85JU67oJ87QuuVgmt0lsGrmzwFG9acA8ojHXrNlTnlPUDjqM0BEn2kCK0nHAso/BnnEYXIfdAIMzKrJtMupGAFce8DjvoMtRF3EUy4WWP7FOOs7iu3WAH7nAqX6MNHF0J45sGkUoFA3eMjBe5ByvvuCSjo4wnoEzjuv4HC048o+cp7FOyZTx/GvmXUI7YNPEjONYG+71UtPrnPO8RZyHhYsB/Lk5CWsAxykYkWVsgLMiE1Bcn+RZkjhQNQF1D66FrGeC2kGlV9Sxq+1r2yue6GxRrR5bM56ldXY7d+fbm4vgGebuC9nXkSuwhvcinEcJ9w50HlF0ExuelskuQUgsG5pmz6XEu9YBfAb3xAKz1BwCxUYzFFSU2vwacYE14O/kR/CiJ8/QUAUcjScNZS7OQPpVXzj1rP1AC+s8N529dvHtrafnr+CfZOEcExdf65x2cNsMV104WPTf7X09QCrnYJJ3m7DXZz39DqsAexGykDVaxzBW10ONi3M6QCJcq24MjxJb47FGDTCkrTSYEbRqU8Si023H/S7Yipuedsc32s8Kx5a6DgGv88Nomeplgo0CB4PxodnVHWjxlR7suTtL6EVnB5XjwV33eRtJ/j5KD6fsOr8VOuwzd7KmSYQ9wGAcRo1Y5s7m1zq5NbqmMcEOWJePmTedBJsj0U/rPHZiCq/T2jcmzN2c83w6HUVn9A1rnHwA6Nj9eZ0rTmDPxnC9pc3q8OPaxg85b3XOTVrQfMEUwDha8a4mUqrLOcGv9rp+uNvqjVPxNh1P2FRIC33MOeYA+AEYfW2GXdhv2+ZS7QcTLt9dCbWZsYFRqpS0E8n1DGEFoMgxQr0DNwCGPdhNU78zeuDuHwFjDwbYkJSR68RZHns7vh1zqBLP4Nm+V3B8xuaCy10lc2poRME4MdNFgiMiFfl/2DKO4gi7Z7n8XVJq2PY/AOYw7Lqb7EAf4GXufPQ1zze2+97t2mr/C65vdVJDV7XXAAAAAElFTkSuQmCC'
 )
 
-const SleepywoodExplorer = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const SleepywoodExplorer = new Equipment(
   'Sleepywood Explorer',
   '',
   50,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     0,  
     0,
     0,
@@ -4668,21 +4668,21 @@ const SleepywoodExplorer = (starForce: number, flame: EquipStats, soul: EquipSta
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAABMAAAAcCAYAAACDBoQZAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACgUlEQVR4nJ2Ui7GrIBRFccYGTAm0wC1BS9AStIRYgpYgJUgJUkJogRYowXc2iGI0mXsfmUTDZ7HPN2fHWNn/jww/KYwNdcue8+Tfx6bb39OB+XYamLOOqXFkvZL7Ws7+MJxzX9dvYVFVqg6gvmlY/Xwy2fVMtDWzzn6HxdujOV1VeQBMik8MQV/7pjSFZWT/mt4YlUTQ2Penw9oYf+6TsqyqKh/VUoigkADPYTiBANGkOAXdmokx0eEuPRwO7qOtSyaVvpy7hdVtG2HZzfIqRMnYL2HZ4/FYX68X67ruksjTNLGfn5/bi26VCfIXgRiAGNYeKdBQULBugvO/w8gEUrX4d6XUPh+B87xE6GqM/hyAsizXZVn8rQV96rr2831PqUFODxdIn1/zPF+A+TvIGuvNSIexhnFNeF5AOeOkcpTjBZi/g7jgpAxA7kFSKrbQoYp8VVLeFwUCqVhb1t6vE1VJ03SrtSa7DQAJYFprXHJZ8yCYv1VSKL/wJ39X5TZHC869qpbKCz4EYERZbX4kl3o/Ih8HJDml0Z9aUFByvFvrTs8dhuJ2BpvPbQVDUorEWtVkprHcU2PXiGfy9LbgdL5DxjF00ZqcDfML8j7ngr7FpsjGzpHAaPJjF91vD0r4Zf3ogTlFLev6bp2GyTv4SX0LgFEG03pShyB0vaT/pTezpUaA81obirjwlULAIzXcFl5ETintN8W5VCEiJ6UkU4NGmH4yE+qQyVAFdbGQ8QQUxV2S3/wFBMU8LkRqAAxVO2xzZkYOX7EhFvgRmJD5UbUPyrYvgk6wADSZUm6NiQn/vMcF6mBaqugWFhXSRt8Ug6PPtEO1+11zjBsj9G7tbvwDNu2iteGLiGIAAAAASUVORK5CYII='
 )
 
-const MagatiasAlchemist = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const MagatiasAlchemist = new Equipment(
   'Magatia\'s Alchemist',
   '',
   95,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     3,  
     3,
     3,
@@ -4706,21 +4706,21 @@ const MagatiasAlchemist = (starForce: number, flame: EquipStats, soul: EquipStat
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB8AAAAhCAYAAAAh3nDkAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADxklEQVR4nKVXDdGjMBANMzVAJYAEkEAlUAlUAkgACSABJIAEIgEkFAncvsDSEELp3e1Mv23Jsu/tTzb5buJaZvHv4nxbvAKf59kjNVyY+XZkZ5y/EbiOfBxFlTnibyXJr22uwT1EPopCBupnW7dKP56PzcR8lgZye+9/wJ01dSIIXPIXCI/085mJYeiVrut800EQUaKkeDVCvBwF/F81VzJTyR2/E1J2YhqXfOrAkImwmqZQ34eSuuB17fcncC2Fzt13ZkQICcNP6um5WgdXL/rJ64/g4752yMBX8+/L1+B9Mgfr19DxnX5N5byuhaZ9WDm9QIXWlK82wbomfwZfgWN6KeVncEibXn2nLuzJptCA0/ewrK3pZzLwVdDHSuAAzsBeKlJR0X6NcyFHNNqSetQZJIiAAgQYtO/faQe8hed6wqUegf1IXQg/Y6H8HgjczoDpBUSWCotoBDZg13VtpgJ+zggw+LymavlVqb9WYJPA3TkHXn2mmj/dp7NFXqYtpffYF2WdUgpTAtvP775vFQGk2oy8LmshOymywr7ZUQ7ILu3SskcAbAoDq8iIFBPY/HRLEK6aD6a/z7a9fVtk52fAug0IsJxFbMqNmsDdak0yvK+Oz4XAh6y59nl/mialORM6KeAi8kO3+Hf/kDIGHOUkHo9QtG2vdJ6Wyil0FC9z1db9WDfkCK6aiKLXCXCqoRkQGusATuJU6T4eFPB7fu92ARPk/a+DqykUFk6Kjq+6YkcAWq8xRwyN47Upui1yPXNMAGVgojx4eDpuDcfTyiRgNhc7AjBEpboQW+Q6AQD74V2d8wwMnHEdzBu4Dsyp/hY5ag8CXdNZa6qAMXL790bAGxccTLoNHFPIBowIudZMwKw5ItJrrgOj5rCr81Y8s8dGAHhEoAH4tGfcHrqdCZg1N7sdYpt4WGcCOHhWmQ7gysGXvY5U8zo09rleayagvBv73JDpRinYgSPqM2FQPTO8dXi4mBNxR9zVskm4h/FqGy6Ijp1yE+7nwLCd5xCUBNEWTSFMOZ3tgeXmN1mu3voc0JuLhdNsnhOmbOCv4nFqZDvtmIDtPEfEvK9/AVcnSxm3Ef1rEEe5lzRZ17yaR3z2Isrxy00mj+ouKeOoyWRDQTSVzBDJpIMrITCZBLk7ZZEb51GM/zyugPU7nE1W4GqcZKcDH8CxAIPUrUWXuTBKqibbGSDVAC7jvuqyUdS0zYhAwrdXlWr5SbcsJnRdV3SvQ+1sV+ep6J4NTaCRPhU/xFUYoCpy494OOyLQa793668mtG70P+9+iTZxWhpPAAAAAElFTkSuQmCC'
 )
 
-const MagicEyepatch = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const MagicEyepatch = new Equipment(
   'Magic Eyepatch',
   'Pitched Boss Set',
   160,
-  starForce,
+  0,
   true,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     15,  
     15,
     15,
@@ -4744,21 +4744,21 @@ const MagicEyepatch = (starForce: number, flame: EquipStats, soul: EquipStats, p
     0
   ),
   'eye',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB8AAAAXCAYAAADz/ZRUAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACF0lEQVR4nLWUAXHDMAxFlbsRMAUPQgehFEqhg7BCWCmMQiGsFELBECYInb5sxWpiJ91dp1xWz4n9/pfkvNAybvTcGHoPPFyh+7ibJnYx3r08ptQlsFytkDXezJ0Qg98Mik1S4k3Yo+ENOCGDwRXsoc8Mv6cJKSIGdQ4wXAa5/jNMCERAwFTzMqHj/xSRjWYRExxAS7+v9TOE+GaMIRBznlscNRNRVT636XwPAD4g/x/7g04ABmgoF4QE3eA+A9zIiBfq3bJY5UYvT86xEApN5TWNughpigLixUmo2ydsHiqoQmk1DD4ITM+gweEYAghQcX2AuFDdnlSUvCfzZ8yjjg+2R5E9+Jo3BYTItL+OdJG5K+e0coj0KbYg4BJyS+qGf/xMzBtuIUDHApAi0LHU+SwiRoBk/iAiEkSgNPR4ylvwSUBtOukHrWlUfxgHNF/Z/RLKc6rG17iW8h5cH+IE7AQYxNVXjCoCacb/WH6UiQvlrtdWCLXZeqWfZ6MHzwI43ZBeiIiltvgMHTgLwW5Hua3htsK73oLri5/y51REIKy+VFI9lhPAuev64LVz3otTEYG9perhyvxjlOiO3pbzuestePC/6jKP32xOPi7f9eVS+zmUJ/BrWTfJbMFD5/aCbHx2zj5Wjtc7oV1Eb7m5BTdQdL8euvYN+6J28ruSes57C9ePcH88v5twPEi0TG9L4CMueeUZ/QIPPB5UT9flTgAAAABJRU5ErkJggg=='
 )
 
-const GoldenCloverBelt = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const GoldenCloverBelt = new Equipment(
   'Golden Clover Belt',
   'Boss Accessory Set',
   140,
-  starForce,
+  0,
   true,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     15,  
     15,
     15,
@@ -4782,21 +4782,21 @@ const GoldenCloverBelt = (starForce: number, flame: EquipStats, soul: EquipStats
     0
   ),
   'belt',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACAAAAAcCAYAAAAAwr0iAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAD1UlEQVR4nK2Xi5WqMBCGJ+dsA7EEKCGWICW4JUgJUgKWoCVICVqClEBKWErI/Wfy4L3rvXfnHA5CQv4v8wI/6O/MvTlPvbvgTwATwevxvUXLZgG6CbQF4NYErTU4Tt+KZ1mD556UmXitKf/sI9ACZA4wEW5tRs/WDItrTZq+N2uPpNsztQ2LH8geLtTdLzK2BjIGcFvC/2P9EzA4dACxtqeiko2qMYBzD8Su+j3hNZDmZkibGzzcxDxRkxB8J26yloy2k3s625iMMPTteq7wfY08icYAsntVIGY/iFbtbML8Ohjv0ODgBLTYOe9+wmcPkqjshdUqGAvPRN+qb3GvbLL3cc8qwNZQNgHgSCcA8JyPoMi3J+Ij4bebyhpozPxHXVHWn+ARn+mxTBlAqZ117isjtWvopNOu/0V4E4Yz/3q8UasN3e+lhJzGSdjsOyQD06jfFJ8YQkPuUdKleDCS3EsA6BnU5JyRjiE2OxcN7Vn9cG8y1tXe7V58sEkSHl85IDqBkNUGkLi4q0PsEKY0NrunRkAiLGOXK5l+WbepDMlg+7qj41UBwj/PeYG26NULL35+ZDJvUlh97udVHiKKRuG0wbqgpnoksLyKZYgqaKsOtavQw52Eg383eydA7LbaFEn89uk9fbpmGPOAPHauPQQWHkTDy6M+l5SdMAfr8HorVcAecFKbLM5QVgOiZG88/ewgbu5fcnn73JF+vcighV32Ow+IcnajMKui9D/gibvxCXh+FIsqGCCoEy88K4W6DaGMux+Z4fciQPhcWEuHcP8M116qcIaYexQJhEW7ehCPHkiw2KEzdS7hOBiHpkELY7fzzqO4ujypbpaAMdvjWUAM9xqbxOcAkkw8gT3BfYFNcqAaxm8lFri/kjhbdYRIsYQQj0CYw8iHxY7cV8kai9exN82iahQOkheOd6dNAhxzdvu1Lag007pm2Nai5II471oqCwD8gSIN7ytPEBMAxYUP43OYkExqHaUWQ3AM4eiLIux0KNnxzqN4NK4wnudbv115G/Z54hnfliYjyeUhvLdw/aLUBy6+D0i7ZYslnGUj8ZktAEClUEYOmcoA8ROQzzkW70jygd+WA9+oE7IVeDbFhWPOFnNKSlxWlHCvfxVjgR1c5ACzD+LxKCESWxujaMCeQ1mx8denCWNxQ7UHyYcQmSFZ1wBEDA8WWPyFxavRfbZbOGfDYvY2mzM2huoZRFr7zLb+F8hCEP/EQ3cmH4H0cRIAayw8arzD2MrvPea+BALuj6/9NQCebBPEznJWajz4EheakO2+qew3nt+6DtU1fHP8AQuM8uZm29RhAAAAAElFTkSuQmCC'
 )
 
-const LudusLakeExplorer = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const LudusLakeExplorer = new Equipment(
   'Ludus Lake Explorer',
   '',
   40,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     0,  
     0,
     0,
@@ -4820,21 +4820,21 @@ const LudusLakeExplorer = (starForce: number, flame: EquipStats, soul: EquipStat
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAABMAAAAcCAYAAACDBoQZAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACiElEQVR4nJ2VCZGsMBCGmyoMZCTEQpAQJDASQMIgYZBAJEwkEAnEQixEAq87B/e+PXprF8jx5e8rW8JmC/zdCvqzh8EyCwAxxw9bbe97w3HPJ7DWgmQ9FJVdp0r4hXnvgf1n/h6WVe3UEQjMAwybQLoanGvBM3vYdoGtpyd3QBdgESB8vT6JS+aOrAOsQP+XabK4Ia1yjwOIGVSUV3OAaoj7vlJW1HUdsjq/4gADBMkIyhYh3QF06ybZ+H5D1ffbwFAf5ttGgtLmsu8W1rQtdBFW3EwvQkiM5c9gxePxWOZ5hq7rLoU8jiNUVXV70K0yIQSBgIBkzq1hh+fzGeapaL+FoQuoagrvWut1PAM/nylDF2vN1wmQUmJpxFZh+NM0TRjv+wHfZTpAgcNC+3w+F2B5Bjnrght7s1id3CCeM1IOHFUOargAyzOIC47KCMgDSCkNE26qMVYSBDBGidTQyibEdRzfCOwW52xxmwAUAMYYOuQyF0Dkfmqp0LPpozyr8inQgvOgqm2bEEMCDMOwxpEamOJI9fjGIqcy+tUVFJVs7875w3OFOe+A+tt7B2dTWCIyJcWgm9bxQHWJnPeU+9Ni0PkKGQYVng0Gm9xnGH3OBf6ypMiBsaeblhb6vf4bv3xSwi/zsO4tMWtF13fL+B5DgF+vVwAMKrrWozpKQtcr/JbBzRYvgnDxGvw/IEXoFARupeFTeilzWpuwKI/tFVLmlFLoatRIrh/cJHVUyaSK1OVGpidBqbklxi0cgFAapwOpNAhMqlZYCmaBAV9oQW7wLTGx8rPqkJS0LoMOsAi0hdZ+yYVJ8TnnhdSRa3tFt7CsEBeGSzEG+kjbVPufXY55YYbezd3ZP3jKmZC9NwM+AAAAAElFTkSuQmCC'
 )
 
-const NihalDesertExplorer = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const NihalDesertExplorer = new Equipment(
   'Nihal Desert Explorer',
   '',
   70,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     0,  
     0,
     0,
@@ -4858,21 +4858,21 @@ const NihalDesertExplorer = (starForce: number, flame: EquipStats, soul: EquipSt
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAABMAAAAcCAYAAACDBoQZAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAChklEQVR4nJ2Vi7WjIBCGx3NswJTAlkBKwBK0BC0hlqAlSAmxBCkhlLCUsJTgzgzgI5q79+7kJCKPj38ekBw2W+D/LaOfPQyaYoHxT2i3N1jbe6P+/rcHay1MtQLts3Ushx+Y9x5/i4/jl7Ckaq+OQPTezAa6Xwpk7yL8C1jaPblTZwSwoEu5PnFWmAvuIyxD/5fKzgiUq8I9aCjJxQ1g4M7rPinLyrLkrCp4cQcBHitog5gWDqBLN8nGvoe2u2+Ly+N4U2EWJ3NadwmrmgZh3WnnaIuUCuCbsOx2uy2v1wvatj0V8jiOcL8fY/WlMiklgYCAZM5tQa/rmsepaP8JQxdQ1cztaZrW/gR8PucEXaw1nxOglFrmeeZdC/xUVcX9XTdgW8UNNDisxefzeQLm7yBnHbuxN+ssCIN4UZByEKhy0MMJmL+DhBSojICCQVpPMOOiEmOFhwiKghI5QaMqjus49ghsF+dsdpkAFADGGNrkNMYgcj8ey3D8wkv+rsrHQEshWFXTVBxDAgzDsMaRLg+KI9VjT0WOZfSjKygo2drO+cNzhTmPV4qlycebgExjiaiYFINuWieY6iI5rcn3u4WgixUyDJqfFQab3C8w+kJI/BZRkQOzK94Ac+eL7t0vH5WI0zisa3PMWtZ27TL2Iwf48XgwYNDBtQ7VURLaTuO7YjcbvAhovTEWMy75pCBwKw0f08t/FJPhSalvr5Ayp7VGV4NGcv3gJqmjSiZVpC4dZHoSlA63wrjxBgilftqQSoPApGqFxWBmGPCFJqQDviUmVH5SzUmJ8xLoAAtAm02TX1JhUnze80LqyLW9oktYUogT+VIMgT7SNtX+e5djmpigV2NX9hfT6ZrEqGcrxQAAAABJRU5ErkJggg=='
 )
 
-const NaricainsRevival = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const NaricainsRevival = new Equipment(
   'Naricain\'s Revival',
   '',
   190,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     9,  
     9,
     9,
@@ -4896,21 +4896,21 @@ const NaricainsRevival = (starForce: number, flame: EquipStats, soul: EquipStats
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACEAAAAjCAYAAAAaLGNkAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEBUlEQVR4nL1Yj7W6PAwN5/wWqCPUEXAEHAFHgBFkBBlBRpARZAQ7gh1BRuDLDbSv/PP55JwvR622aXKb3LbBf7RRMq26yrbRFhubQTCArSZmILqhfbeyUKfrHglFh6Zzv/84fwaiu8VnMtZS2dZrxrqzSuWL14mv/LFfGpvNxQd0Yq3pZEqv40B0r+xGZV3TOWVDNb9US9Y23cQQHJDoVnXfYXI/hrm76jRdsYjWCaWtEh34gQ3WFSAAwSF9UXHMvQIA6DiR95KojPsrnsipqA+WnhdN+8JKf2wyUrzSJalNwx+19wO/0WHXrRJTK702RHnV9EYZQHrNqMwr+X3IC4pXgEPsSr+AaAejoRgz71tGVADy3+cFfgEiQm4cJ0AaJgPTwoITb43EF+ZIoSnOSNJjTLWq6zgB+457A38ilw4BEuwOhtn3vwPBPOgcH37TBclLbs+23x0OgIuEkwjbBkDI/A7ArzBBKix9IHKODNtzZH/zidnQnT7EuyojEMjbFOVvksQfRcGJRBt+Qr55EDzQ8cC2JX0IBABCfx7E/wTAS+hvCye6rnvKsT25xP4sm4lJB87tI6Et8i0IiYItj3JW2sZuisamSGgcUtcLZ6Qi/fjezvZ0DIJofA3iixqxJ2S0H3Wagr5KCfz7omY68WNwfBE1ZUmJVW+jsWJPCp9/KFRvMU7KZq0ki8J2KQqQRvONVyhX4MzmLeDqBr8/nJgCATg4jKJ9WMyK1LwnUMwgCpDr+TzUFVwS/tQWft5gZwbAidQTcI7OWU5xELGBfH+Qsaay8v3aPaiOjhTnJbtsKdcKpRidM8W1Z0v3TFPC7/xkyB1oYfilLOSuU18A+XqC68KWB9QIiKzikdP1Fi/m25ASEE5soAJ9zAMAtiPAjpX1AOBvKBl8OqJjbSQaTTU6eEaCoitN1CgaTtBfN620S3WuAwD7KAfZH9FCUSPSGu2BIJwuArLK7ElGKv2d16+FAz/RMIrDj3RXzIFhLu8MiQrswv5UJpVV4wkD58gxTkUu5tmSoirvnWVBNNCGUai4RaozzgQVraTrzDsmTKfjwhIIEeRK0GorqzcD21OQjU4DQLfsfDQXabhl7uFHU80rB2+U7cdgN+TCGgjhxj2NqW6fFPPjneKdCKaDXE5wFgg3OF0IM1r8FgOB3g8HqLenD44Lu9Dp4t1RWa4b8bSdPLk0PzrDpQsWH0YZ2D6Voep2eph3BpCyvnOKOE1Sj+5m85ZA7Gqze6Xxi1K1Z0NiGHFXwziIUTDbLyCck2Pl9SjQOzGQ2/OyZwC8m8zORWH0f8ISCFHI9NGtbB8ACIX9tnc8kw//URzC+eGi2M7rzhHtMzEbX73KhRv0+20YfXhrvrX3H8hnU9/8eMUEAAAAAElFTkSuQmCC'
 )
 
-const MinarForestExplorer = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const MinarForestExplorer = new Equipment(
   'Minar Forest Explorer',
   '',
   70,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     0,  
     0,
     0,
@@ -4934,21 +4934,21 @@ const MinarForestExplorer = (starForce: number, flame: EquipStats, soul: EquipSt
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAABMAAAAcCAYAAACDBoQZAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAChElEQVR4nJ2VCZWkMBCGi/cwABKyEtISggRaApHQSAAJREIjgUjoSNhIWCRkqyqEo6F3ZrbmzQA5vvrrSCaHzQL8v2X0Zw+D5jfAICJT+2x93xuNd8UfcM7BKCowv7a5HH5g8zz/c/4SllTt1RHo7kp4wAStKEH6AfxXsOQ9hVPZjAE9VOuTKJLW+s+wDOMP9eRWj3coD6DWV4fNTsd9n5RlVVVxXHKIAy2COnEEEUSDPoAuwyQbug60btfvCo6KmlqBGe1p3yWsbhrQbXvyvFiQUgF8E5aVZRlerxeq06dGG4YBbrfbpaNLZVJKAgEBybzfyna/33memvZLGIaAqiZ+H8dxHU/A53NK0OCc/VwApVSYpom9FvhT1zWPt22P72pxYMBjLz6fzxMwfwd55zmMvTnvQFjEi4KUg0CVvelPwPwdJKRAZQQUDDJmhAk3VZgrhX1fFFTIERpVc16HoUOgDt677LIAKACsteTkNMcgCn858/H4xY/8XdW8JFoKwaqapuYcEqDv+zWPmFLOI/Vjx02uw4+uoKhke/d+PjxXmMcrYHa0+P1iwbxhi6ilKBbDdF4w1S/ktCffe4tJFyuk7w0/a0w2hV9g9oWQ+FssijzYXfNGGA5+vEVX71GJOM1vd2COVct0q8PQDZzgx+PBgN7E0FpUR0XQrcFvxWE2eBHQfmsdVlzySUHg1hrzUl7+RzFaXpTG9gqpcsYYDDVqpNAPYZI66mRSRerSQaYnQelwK8wbO0AojZNDag0Ck6oVtiQzw4QHWpAO+FaY2PlJNRdlWZdAB1gEumwc55Aak/LzXhdSR6HtFV3CkkJcyJdiTPSRtqmev3c5poUJejV3ZX8BEpeVK2D9R/wAAAAASUVORK5CYII='
 )
 
-const SweetwaterBelt = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const SweetwaterBelt = new Equipment(
   'Sweetwater Belt',
   '',
   160,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     16,  
     16,
     16,
@@ -4972,21 +4972,21 @@ const SweetwaterBelt = (starForce: number, flame: EquipStats, soul: EquipStats, 
     0
   ),
   'belt',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB0AAAAcCAYAAACdz7SqAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADO0lEQVR4nJWWgbGiMBCG15lrAEvIKyGWoCVwJYQStAQpQUp4lPBSgilBSjAlcPuHLIQE9d3OMIRA8v272V39Q/9v45t3u99s8FvoDLoeFSmt5heDG+bxxQ6poJcCPkHDJt/n4wywliF2WH2EpyoK2hBQwN9BR4H1nQt37z3pY1V8qPGN9dSxGHkrAiJ8BX4FDUCB1UZPHomniYdiNcR4hjsfwD1/x4901hW1zq/AW9Dx2xjq2i7EzJgjj+0KdK2jiGHBduypriqqGSLgAOdxDs6hE7Drps0FGGM2+AnYWbdexfOGN+4YoKoy/LkVnlb686KjWr6xUJKYrhT15PIl4dzdlJi7zTOtoJaTpussmfMSXqTGpV9viLkjC3VDtgeFAATza12lp67vyVwNnZo2hNMyMC2ZLZPkQuh7SbRJd4iKy6Kx6SnAsHEcyTlHh8OB6hdnhTIyMbF6W4raWlZAB1bV8fV8PsOz1pputxs1TUM/t3MkcTkkXttkPPgpc+Gc4TJC/X6ELgoXiQAHT7iMVKZcIichRMmgS2rl6av14cwhScc8SaFzz4SX9/t92si5wtvUTFSADH6MZlrfuAC5tI4eHJivluh5V3Q6LR4DOiKUVRb80PIYhppVSlFd17PHEIML72TVYdeF+53hMo4NjfaHYfI0gRawEDbuNoCY2CzEMIdLonBGj41r0H2+GPiIYOkhCLGdvpk70m6/348IKTYTmHgFg5eYF5Dl7IYQhHcYykQhZ+mdiac7LosZjM0FKp7LHICXtp3Ps4jUxlx0eLPhBzBqc/44np0IwdmmQOiRo0L2zoWTlJDPgDl0rS5CYHKm6a8KgN/Pmv7u+wDGm+eNk6ahj5ZCx7QhAIROBEO5iEliwVski45eH5l8aCa//LAI+wSdywb1KBvL8/V8pkqp1WKdnGuVdvho+VluQqX2Yjh33CjCASOlwlkas6kc5wkAuAjxbgnxntY/OAU0JJKM48dhEW/4wGRar11ZKug5PxF4inM6AXq58kQSmIp3uUR7Wid5zeD375LAUhMgTnvIoQJRyT0FfP5bUVoRkq2SSTfOF7zIx+JdPl5dOVRC8C6MMrcl4J3IefwPRCO8mW4oc7MAAAAASUVORK5CYII='
 )
 
-const AquaticLetterEyeAccessory = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const AquaticLetterEyeAccessory = new Equipment(
   'Aquatic Letter Eye Accessory',
   'Boss Accessory Set',
   100,
-  starForce,
+  0,
   true,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     6,  
     6,
     6,
@@ -5010,21 +5010,21 @@ const AquaticLetterEyeAccessory = (starForce: number, flame: EquipStats, soul: E
     0
   ),
   'eye',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAABoAAAAeCAYAAAAy2w7YAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACLElEQVR4nLWWj7FsMBTGv8zcBqIESsiWQAmvBUqghFUCJTwl2BI2JVACJeTlhHiWIPfu3m/GJBzxy/mTxBcmKXxebH1DIDV07ccpQZSoNcx6hL7vTwfeksy0z7a6hPTjuHv2BQ8RZBiGaaZB4AX7EegT8gKRB+SJ7f8a6B3ADtQ0DYQQkFK+38axG8TDWF/11I79+y0Xxx6l6RQaIV7bJGnIX+v30toq3L5PLXl1CNrKJl893blhs90Cr+QEEeQIYGXtBPSB7UA+kC3QwiTnEI5dYQfyhfSyRtT8BWJurlylKPXz+PGgJF2DvADZH/1FDWlDs+UXs61kDHHbOgvhBXTlzQK5p1A5B9MRYnyyqUeGtBKIkgRV1yF0bNDeHlkIihrMujHkUDOsTp/IU+rUQBj+HGSkIV3VLLeRrnCmYXlc4Y7/YXTJCWK36ezZhpIgYSjAknqyt7oflCg1rKx1LIsAVeUOv7dHBiJSt5FSUtSn450gV1GsIYt9lFPebqWZSJRRevb5eQHRgqOFp1o9kLvXwos0hOl9TSEDu981pDgMm9OjvpdT0VzBtF3JKZdIuakE8sYeFaegVi84WgtdhWvYKJeJIWGn3uxANJs1DJCmylwyAND6kgZivfECbWGk7mCiBCBdQCgutMuOzqqzMPPBGbiVBdj3D0QGKv7egOjn8egH0gLPdLSRrkWgIIoiv2Pye7phDhvm0FGHzmW+eok7BvL53a3Gk/ul/w/jtiWLMsravgAAAABJRU5ErkJggg=='
 )
 
-const VeteranHunter = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const VeteranHunter = new Equipment(
   'Veteran Hunter',
   '',
   0,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     1,  
     1,
     1,
@@ -5048,21 +5048,21 @@ const VeteranHunter = (starForce: number, flame: EquipStats, soul: EquipStats, p
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAABoAAAAfCAYAAAD5h919AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACy0lEQVR4nKWWDZWrMBCFh3PWAJWQSqASqIQgASSAhCABJBQJiwUkFAmNBN7clPACDWza3j2csEmZb/4S+CG/JvpckW9yD0RUCprUnU5FQY+moag6v3rjrhe83o675vZBs3KVryf0zrreLLwLaquWFHtMO3barCL1+/uXmQ8i2igpSwpReERbzaka6pooTb8AzalKpPQCrL6PCB3UOB7vFHtZ7z5rBrMXoiia5pFIxq8/iiJ39O6fv0AucGqUoqKqXhad+UNICMgoSZZiuwbfOj1CQNHleplyboq26xbjuUyDowkFGY3jSNP05GhujOx6pXcUAposoOYIRCJoGAa6zafB6XTC4tc1MhAAJKcu5TYWScKjpK7rKBGCHo9HEOzwNeFCAICqqiClGjMHdW1LjzvDzidbv+DXxJKqnr0uuYVX0uv7nE+GmjftnWHQ+eyPbgtaUoUI4DXuLazid0/C6cNozj/ew0WW8XpDbVtzwwwMvDPs/ALzpk5w7uP4eRJgtOmKRUyYtmsZQ4S511SWiiOrzLM++UEcjTWGB/GHKFLUhVsb61l2pXTeyHEsDCSZ6xgEst5DaGMYR60sxMpCUKOWa6Tm9O7try0oqut2kjI33YQ6DH1vICYirg9QWo/U8zz2EiCAASBzfo7nKaAZzI8ul8uk1PM9g+IXDEEttBMRUgrj2MAQUo2a0btfQSguvE7N25PrIhLjMbqsud1MJDiWclmaaE3ncYr3dHgyjFyjgT1tmpv53waEUeblXDcbYUxHOgTBkGavUS8rpHLoO251wY6MNHK9UNNxXNJqiatX7ha0uGVTxK6SbdqlRjxgT6GdLaAqssUXB6LtZUHx5so43zfChoQxTqEVmgCAvu4XS6hV/+y2aga5EHy+jj+OceGMUM2wkg4KvFFNO2mD3IjI86PXD4W19MH96vqh/+G5MF8LxT5PPXNe+D9LQV7XQTM+SAAAAABJRU5ErkJggg=='
 )
 
-const MapleExplorer = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const MapleExplorer = new Equipment(
   'Maple Explorer',
   '',
   70,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     1,  
     1,
     1,
@@ -5086,21 +5086,21 @@ const MapleExplorer = (starForce: number, flame: EquipStats, soul: EquipStats, p
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAABkAAAAgCAYAAADnnNMGAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAD7UlEQVR4nK1WbbWsOgzdrHUMgISOhCIBJBQJIAEkgASQQCWABJAwlTCVwEtaKPN1Zu5b9/YHZZUkOztpEn5wrg3/fkX8OEC2baGnPHCGU8xW302ZXdTE59FqkXbO8SgwWTWZLiL83bLhrVTnaQAZGIQ9qieMcYXC9hgzOutOVlOrkTcKU0n7cFqRmURHun3coLItKTWAfgWJCMDHSsZQgmgTdUXKGXJ0c41WdWh0TUB+b2VHdmrUWYcVJToioUitgvRO+xA+5CQcoEg391Jb2Mw6AF7OMAEVncLIu2Ymxn0Xgi0KJA1L5qet53C9gHX5lnT+QCk2rF2Ca6Gxrn6vZgmt9avu03oHcq+wlWWNYegQ6XciFKj9+28A30ACiw9G/qi2voFEeZ5u19sVl+TyYnAcexRF9ZsDfwziDDAArXCwrv7qpOnlK8A7kMNStL+7/Xq9wujTVrzX3DiOxKTYnuXvbLxncrvdkCTJdpsUklxv15Fdv0CoxQvYOcjaocBCtZc2CPI78Ecm0QGw5hoMINQN7u6u+WnceiqybN2+oMHA8r3AxQN8rJMAIA4AyxVGpSxvTkBXCRnfWa1pADOmoW8GUx0j7+wRuhcQF8tHALq6cf8cUcxUjSKOEccTjDWQcwXVtihmcqiz9/aeWv3mPTU6uQMgD+kmCSkCC9Uq6KaBETWBxL7iy54/YlwUdSWNbfQtP0rtY6vn5EKUe7c24TimZrnOM3Xa7IURA6j7nk65YvV5sA9yP47FEjsA3XRQ/cniSLCQMrAwBCgEj4YGUrVnCNHTfKswjQJ5Yag7U+sn/IqI/XgHYsT4n8t6z3Fo7g4ZY15E31e81SRckt6rQkfTqcy84ZlYxevpHk8Sazh/j3o/wYtg0O8+2SIImr0L16UgUe91RnninLG6Y/Dq0y9MiIUlhVg8Hbvw7O/n6xGlU24Pl7k7Z5AoKex2G+kGkWGX/LZ0vUqoDXxfNM15WVO7yHOMVKwN15Iq99tVesh1QKYETU6fdF6VZ39e4TirXQrXpnFKHD0OwUyG+EfhztfAoqUCHIaBWIsHFnKvK2jzEK4oShpX8RP4J0CjbKnQOqod2VOdrKQoUfcTcmIjiUUmM3fF2QGjib30nivLDTMk5+2PxBYvVwiaE0VhyVNyZvA/dzPqIMiVvprVGed1DyB66knVY5N86cI0iNyAslGEiiLX7/WmaQRzMt3f0m68VMKF6B6gqr53YR+6KPKTcAdi41Pv0kEhEiH2nGTH5APAbyABaFkWlGkKRW3nkh/pPothrAXdRkPfFxrF6VuATyBOgRTdZeBHr94LceC6DwDfQILi3rLfLPPR+LH+A38r/1gwRKcBAAAAAElFTkSuQmCC'
 )
 
-const MondayMonsterPark = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const MondayMonsterPark = new Equipment(
   'Monday Monster Park',
   '',
   100,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     7,  
     7,
     7,
@@ -5124,21 +5124,21 @@ const MondayMonsterPark = (starForce: number, flame: EquipStats, soul: EquipStat
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAYAAABX5MJvAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEZUlEQVR4nLWXbbGzMBCFl5lrgCsBJICEVgKVABJAAkgoEkBCkQASioRGAu+ehA0Jpe3tj3dnOpQQdp+c3XzwQ8+20P+3wL3ZQyyPW+Q1hJEiih6v3anVnwpJzeGfCH7P8+KCuBAeQN/O+prl3DbHb1xG9Mmqyviqa9MXcVwQFyJYH9C9Ng1ht1B/8ZQ7tGl+//w0LjSkASnuGFdbPPmzT4d+wB1NXQQBdcvnEjl9eH4JTLx28oO/gniiZAeaYlm+r9cgsG7eyvlDfzDk0HH4Z1tzj79eIX4LoYcfJjbp35As8l43JnRJp5cg7yCWK4+k4JGoCVXtVZ/kJnjXJu9NW+UegnhT1HGyrPT6HrPGmVa0jGvHdFvYxtJc08a0OakImkLpAYVh6CpyOEWtbOWVFx6l3EcaJE+IrlcdnARGqYjmYUZwC9MOZAHkfVZUg8iA3RQ9pQMP22aiprcQllgAMFOapuH/PJdHAyBtaVUZkMlzq9VBauF/bx4EcpckEeVlwr+tDXJi1AJAfUBlufBKWD216ZSsIGtq9ACgLny7sQ4hXBDbcVIkAFpXO1W3+jpq+8YEYpE0JKdwo2SAOjcAXXf9ynF6KTw1oGZ55ZkyKB0DBnXQ7imhAQZTC8luQ8yynOJzxWvGllM1bYm/32rq+5YuVavvAX0Ecso2nxILEDqRUMHCMAAUgEnOi37iwixtnx5qJf4OOjFUkpUaDjB7EAGQ4ENvQvyILKgDqQFJgWvXzK/q/QYOFUQdqIXnogoM0zvJzVs4JuCIkJdm3fAL0wHA6FFwdV3rqXdkSvl7eJ7nVEeJTZteL+eJPhkgbNG4BgDZOc/ns77ebjevzz5AxADoe+d+AIGVZc6paM3awYebOVoPSrRNU1EicNcCvAirqkJ3lOACs7fTyZwossyAari5ZxVLXSd7k1ObVxME9Z3FCE7atrUAaWoKZBxHiuOYRxzpGqrrq+5bFNtxaRgqC3VkmIFRFK4QvhKeAaCPSoqmwhup2JxdaWgu/K/QINhnACiLFhQYhkjD4heG0bact4rmnCzISwgocOdD6bmX0Q0m+FoDd+Q0H730yLMkObFyZw2O/wAbR7+WTP9tg7Q1gW1Zp2QtSASY5/lQCbdQZfRxnOpRCwjA8QxtgJLdNcyNAlyDOq4L4dTEQ5+wbzkOvJEeYZL4a8QtN8qgX9d1dLlcrOxdV/N9ZWHMlUGawaZDQPZKeJZ168dOlerqzjKz1PX9mp9sWZ3PXJSF9+40+LPBhRJzVXAhnHT8+k4ZomlafcXUxekIs8WdelgfeOkyAdreD9i09MkOlYBTpAFXcYLgLQdwT1xo253AHB/+giR29O3hfYFZNVIDgGVZgGB6Km57GOdZ2X6oB7lO0+C1HxiKwtI/fYG5ICawD5A624i59/vhdO22yyndeXe3NR6n45dBHnKiFpt668RWGd/XrjJOO+3b13fxZa3IUeEVhBKQg2fuKCBpys7Hg34xt993bb/74GL/ALoZjPB0+Mp2AAAAAElFTkSuQmCC'
 )
 
-const MuLungGardenMonsterCollector = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const MuLungGardenMonsterCollector = new Equipment(
   'Mu Lung Garden Monster Collector',
   '',
   33,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     2,  
     2,
     2,
@@ -5162,21 +5162,21 @@ const MuLungGardenMonsterCollector = (starForce: number, flame: EquipStats, soul
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB8AAAAgCAYAAADqgqNBAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEeElEQVR4nL1X7ZGDOAwVM9cAKYGUACVACaQEKCGUEEoIJYQSoARcQighlMDpycjYkN3bX6eZxMQ2enqyPpx/aJeV/j+J8KXg6/rh7/jlrZc/vNfvj8vNe47tMMf/iXwpZhCNFDyKLmB+o2dJfxYz+7+Ww3iWzrjHgLlOrOl9or4fZUJHX8oyl3mMcUJun85/269jl2UO+AguC1mWrSzUdR293wNl2S3YkCQxxXEso4r+xujLNL1ET1VV7NooAFZwP9CwyPsiZwAUHA34i/wC7PCE+XvgjU1LrTGrbwDW6roOlNZ1H4zHecfCAur7Dvg9DdTVDbAEPLoWN2HKFAMDDmTWDydDzEdYf3HEk9cWPvKLXYvOO0Jg8qKduqKgMk/l2TMgkGJzwvQ+a86u9JsIOdPUNC97NjjwahioYeb+ov9yyrE0fZ7yoy7q0wY1CEaYhU7Gg9w8z3RHVrRdCD6PvTDvR0MHsUdCnYCGub0LsihNdiNs3dgNyB93Wvo+0C/R/sxzCTiw7mfR7gIEwHUROdA4uXNaJbTwXqSWjmBl5tYZgYrpGRBds0JwgJHyfrMsqzDP7xUHy+gXidUiPx1wkt7p9Xo4q+u6CwwQg+KHPMMIBKVngGOfgj3jMLh1uwKDHCKybQp6Dk/n5jipHLACPh4lNU1/8oAIe8cZMLGhDdH9MdDI3h3ZQzkbyq6y4C0DY6Jkf3U3DqatbCqwKoVrb7dWnofhcQL+ZoAKzjtNreLOpprNcz7nNcG5cTCAPxcnF9GqFEkA10LSNBW369rrdZdx5Pf73rh5OR5m/WSnZUXHBG0qG7u2d7Utt53Ycwa7mZUlVLAxYIuPCsDQMNQjWBvH2QFTXLGezu3fiosL6FNXQ5BoBVNgjGgcRdHQUXKOYPWIHwPO3Ytlz6HEXWsHPoKfRIF9A45z3zyiXmnbnn6TX8F9kIGjH+eJTgVmz2dFbTcC5atHrPEx6QksX4rTn5iraM/WM03598x7kmQ3EjGQ5whILlrzz7eaI/jpAqnMNZrt3CJeUEZ5noC8A8YHe+Tmwp750ipc2d0vkKjfSyTB9qi4gzUh8+/9BoG1SLR/EzUY+prOVjyKV9ruCntLXfqI83x/EfXAmIYbxbqnzo+yiCHK2hg96I62uiLC6ijJ92bn8pwvAeL2aZo4ZTLHXlmrAXC5z0qlqnK31x+VdfWYuOlkaI6C54PrxIrq5bPPrhHfUmyfHM0cBBwEQVVVpXtW6dpC3sfNB4Ce3p/z3HAVQgbhg2sTrK5vVyqrl5ztsvkR+HrWCrosJgDG1Yq7mvWMOd0Twmi/3x9+W73wUXy04vWdLXvwmlY0X6Sfj43zmAeMujZBL/S3bXOKdieoTNsmxGbBCgaJUrJGAODMgRwozhiu3oBhzQR90JvnabA/APf/CKg+KGBFUjt9I44CUMhlX0M/DRQe9QcBx3dsDrjS36QRJP50Rkxn8K1piG0U/mEr2IsD9B7l9HfJmH7d/gDoZdg3N9uAvsDL2rEg6O8L6/1sel20/wv7K8MSS9gsWgAAAABJRU5ErkJggg=='
 )
 
-const WednesdayMonsterPark = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const WednesdayMonsterPark = new Equipment(
   'Wednesday Monster Park',
   '',
   100,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     7,  
     7,
     7,
@@ -5200,21 +5200,21 @@ const WednesdayMonsterPark = (starForce: number, flame: EquipStats, soul: EquipS
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAYAAABX5MJvAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEZklEQVR4nLWXjZGjMAyFlZltgC0BSoASQgmkBCgBSoASQgmhhFAClBCXsC6B07ORsQnJXubmNJMhGCN9fpJ/+KJnW+j/28m/2UMsP/c4aIhiTRT/vHanV386Iq2ivyL4ztXig/gQAcDQK3MtSm5TyRuXMf1mTWN9ta3tizg+iA9xWh/Qo7UNlboT9fmvQWb1/nlPdyopJ80dk2aLJ3/26TAPuONaFzlV7OCfbc4ZhGHmMPgriCdKdmCB2sfnwRuXxtO7bl/0F2ZzmNCntuYef4NC/BTCqBClLulvR7R/V967TSldsvklyDuI5cojqXgkekZVB9Una8npXZu8N2+VewgSTFHPybLSm3vMGm9a0TKtHbNtYZtqe8062+al4tRV2gwoiiJfkcMp6mSrr7zwaO0/MiBlSnS9muAkMFrHpEaF4A6mH8kByPusqAGRAfspekoHHvbdTN3gIByxACzLQl3X8X+ey5MFkLasaSzIHLg16iC18L+3AAK5S9OYyjrl39YGOTFqAaDhRHW98ErYPLWZlKwga2rMAKAufPuxDiF8ENdx1iQARteTU9i9c9T2iQnEImlIz9FGyQBtaQFut+tHjrNLFagBNesrz5RRmxgwqIP2QAkDMNpaSHcbYlGUlOQNrxlbTvW8Jf5xb2kYero0vbkH9BHIudh8SixAmERCBQfDAFAAJjmvhpkLs3Z9BqiVhjvozFBpURs4wOxBBECCj4MN8SWyoA6kBiQFvl2LsKr3GzhUEHWgFp6LKjBM77S0b+GYgCNCWdt1IyxMDwCjR8G1bWum3pFpHe7hZVlSG6cubWa9VDP9ZoBwReMbAMzUY8tze6a438NtfR8gZgD0fXA/gMDquuRU9Hbt4MONiteDEm3TVJQ4+WsBXoQ1TWU6SnCB2dv5fDbXorCgBk4NrGJt6mRvcmoLaoKgvrcYwUnf9w4gy2yBTNNESZLwiGNTQ217NX2rajsujWPjoI4MMzCOoxUiVCIwAAxxTfFcBSMVU8WVxu7C/yoDgn0GgLJoQYFxjA0sflEUb8t5r0mV5EBeQkCBBx9K80FGN9rgaw08kNNyCtIjz9L0zMrlBhz/ATZNz0dEpbYN0tUEtmWTkrUgEUApdaiEX6gy+iTJzKgFBOB4hjZAye4alVYBrkET14fwauKHhsuJ7iUOvLEZYZqGa8S9tMqg3+12o8vl4mS/3Vq+bxyMvTJIN7p0CMheicCK2/qx02SmuovCLnXDsOanWFbniouyCt6dx3A2+FBivgo+hJeO79ApQ3Rdb66YujgdYbb4Uw/rAy9dNkA/hAG7nn6zQyXgFGnAVZwgeM8B/BMX2nYnMM9HuCCJHX17BF9gTo3MAmBZFiCYmYrbHsZ51q4f6kGu8zwG7QeGonD0T19gPogNHAJk3jZi78N+OF377XJK997dbY3H6fhmkB85UYvNg3PiqozvW18Zr5327eu7+ILS5KnwCkILyMEzfxSQNGPn00G/hNv3343f++BifwDD8owRoWDe2wAAAABJRU5ErkJggg=='
 )
 
-const CursedGreenSpellbook = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const CursedGreenSpellbook = new Equipment(
   'Cursed Green Spellbook',
   'Pitched Boss Set',
   160,
-  starForce,
+  0,
   true,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     10,  
     20,
     10,
@@ -5238,21 +5238,21 @@ const CursedGreenSpellbook = (starForce: number, flame: EquipStats, soul: EquipS
     0
   ),
   'pocket',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   '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'
 )
 
-const FairysPupil = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const FairysPupil = new Equipment(
   'Fairy\'s Pupil',
   '',
   0,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     0,  
     0,
     5,
@@ -5276,21 +5276,21 @@ const FairysPupil = (starForce: number, flame: EquipStats, soul: EquipStats, pot
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAABoAAAAhCAYAAADH97ugAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADrklEQVR4nL2Wi5GjMAxAxUwa8JZgSiAlQAmhhFCCKSEugZSwlBCXEJcQlxCXwEn+gM0nt7Nzc5rxwtqKniTLMifIZYJ/K0V8SUHT9MS/VWTdlxXbfTZngpphy5S2cJbO8WINAj2i+baA34ud366XfCUD3RGkWQWsqqFi5CZ37irNP5qvq0VXWw5WK7Slj0HDa4Ku60CbK9y+SwCGkdsCzu3rI+gmct2qsjAMT7gXS3ZO8J9kAzLG4FBgMY2m0sA1uP8/iSUdtuhWO5lOQQWKKznGL5g+fFaJMbNfeYwP87sO1Xe/392Ag/KeF9Do1EjMPUPvrIdME7kZ96oEqww6wqH4wj1VVEQKeklrXQY4AmXAvu9dhNObo4cCxrEJy9yNy+UC70cHX2663wX8DZQCHWwcRz+jwn7VtZu7iNy534Km9wOgabkrEo7jMeCeyB4aBBrOoZU1PISCJukCPwXN/Y4gZIggQmDq6IzhiDVIc1JKkJDBdiPcNFUUoM2mbhIjcRBMEwH6oOhgOEdrdMiN4eiYLztfJCaL8LSGUFmOoz8IGQRTJWpqNyEaHI30sV2vV/e7c+d/xzGl0xsy2GkLGYEp3xzFsEAeaLm+hczY0j0e2NsIVmNhRFgUykYKSyIqXSQE+f7GzZEGWrcfOockUgs+w0her5dzDI/FRne/6joDY9jyI8gWBnP0e7KAwlViawat8u3mKjRCPl8RJHirAKrOkdAeOVuxJyWggnJJVUMbSntDlXSd1crwzK+L1FAU6hYUGXWT4svbziP6kZSHgBlu7a5OBmLV39NEzZSaKKXrE2gtm/LmfISu931NYd6jPQKkosOeR6AJy1prt0fnDtwBxoa7Lu9QNWj8huVNV76UDdS9OvQ+AulbYzTOW6D0FoWZC2IdEfj8+0WC6OAyle0DjlMVIT7s8nD/NsVALUZJf+8MN6og32qofIXIdSOEvGeMYZX5Lx/6n4ZWe+VdGBd50/C5n1FnFsG6TA5i3I8IoUEHNaaLnqJy3dzZXkc0w+jwUgroiljDODnB6EvUG6Q+54uIw3PwHlAkAVJ6bbARxMI4I+wZydPbQHleIjNWwfM5YPeT0J0NRr5AhosJV/os1F7ILaKbUwLh4Rk7IsNuIeijpES/qFNQNKOR6LE/KykkRCDDbzeHKY0IdpR6jPDmYXgJYjpl69MTU0fpCpG0KxvZOIUXs4Kl7y6d/nOLO22FV0h1c7gIKRN9u/d+Sib2e4cXVyjZjFzW4AfyBx4VBMQUpAHwAAAAAElFTkSuQmCC'
 )
 
-const SourceofSuffering = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const SourceofSuffering = new Equipment(
   'Source of Suffering',
   'Pitched Boss Set',
   160,
-  starForce,
+  0,
   true,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     10,  
     10,
     10,
@@ -5314,21 +5314,21 @@ const SourceofSuffering = (starForce: number, flame: EquipStats, soul: EquipStat
     0
   ),
   'pendant',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   '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'
 )
 
-const SaintExorcist = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const SaintExorcist = new Equipment(
   'Saint Exorcist',
   '',
   100,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     3,  
     3,
     3,
@@ -5352,21 +5352,21 @@ const SaintExorcist = (starForce: number, flame: EquipStats, soul: EquipStats, p
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAABwAAAAhCAYAAADK6cvnAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEGUlEQVR4nLVWgXHrKhA8ZtKAXIJcglICKsEpwSpBKsEqQSohLsGUEEoIJYQS9G8PkEG2Y/95791MApLublm4W/xGpS30b0ylSQ64LD/8v4qYXtEfm+M0lmjXCRG1BRSzw18Ayqw5lM8FoB2JDK+o/6TAlFk6/03jONLBTKSn4Ge6MObPZ91R3/dUV/s1dvy4XUAOqN5HWrTW1DtDvvZU8ZaczZm89wzsyJqa7OxI97UEzB+OmmMt3+BzPp+p17TGGtI0jEZy32X4zAAmjEZ38+5V2wIqY8yi3ol+ph35ww8dqx19eM0sLFV1Td45GWFpjhEMj9XA7LjyzjtSsu0lu0cMxUEqq9vR5XKhU9PSwO8q01BTHwQABjDreMu1ZR9Dtr5Qu9sVeZ4xvAFu21b65Ks3AmpN5uHsCsbnTzS2D4GeASYBUCkBCiqUQVM48hHQu7ku8E78S4CsAgsppVLDLsuFCTCLwYyF34mrkruBVEtX3xD7EsNC2hIoDywInPiy0BASpWzLkRvbnnnyzS/3AYyc2uZ73BYSEM1xccizUSIIDcd99Wl7SeYVA85MejqEWMSghrEASJtqf2eoAqMQCMMZab1Qz2CoCbBcTnHB7NJxC01QHPaBb82V6+ibardPYE/bQvS0OYUEMEhb3zOp8QoE86liGQw+TdPIQjW1ZTX/AhjOIBanjolgXddRnbzqMki+oSetpb7hw/ZBtJcTtux6U2wBBcyfFc0zL5qrv+GtAzNJ6GbZzsD4JGPfD4TZMM7k9JHPcWZRkPakmRmeeiQtQW+2FGBIPLZcKLGPQSiAKQHD1oFR2xpWIrOCdtk2Tt+80L2iqWzbFVDY5XdhYpMbwHAFkVUs2mDIUsaLgvxNx613yAW/5QtXUWD5lm8lzPnojMLIzioxAxjeN8Dlsg2grTBdbROLWz+BvuWreWZSGHMAo/93K63+AIQKheK0149+U9bYSjABIxtEmoX7IlUMdn4u/SudzSsGCbe/Smd4BX0PYEMpmVwYihMvKygsB7v1D9boK1hiWNhRh2CMsnV1aAtUYQ4KK8DQFprbwoe2SDm2VvymEZasgWvF1aHxRa44IUDxLRVIDgaf0XEV14OwmiJYzu4eQwXFhygnaUNlQkHQ1N0DuQIzgMGXO5O0Z2mzFC7lV7QUYKL6YMYj5Mr/UpXYRjADWBLvhvZ3fe9rqQvqgkAIMcVzeWT4hm0EM7kpbABbPmVLH2qpWLqpcZbpikHgK4bzWj736zwzrB+S4reA+MnFXcPLvF6eHQdPAvrgDLPSH3g8ZQscIhAUFYficsAq/okoRbAhPo+cqD8mudqcZwQbY7z40gPbMqzi+JHNV8MNIMcRgaEmaPC5K5bhY3yaF385oI9BOVAB+uiXWLTthvt78/8AI2UxcJegAtUAAAAASUVORK5CYII='
 )
 
-const WhiteMageMinion = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const WhiteMageMinion = new Equipment(
   'White Mage Minion',
   '',
   100,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     4,  
     4,
     4,
@@ -5390,21 +5390,21 @@ const WhiteMageMinion = (starForce: number, flame: EquipStats, soul: EquipStats,
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAABwAAAAiCAYAAABMfblJAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEZklEQVR4nLVXga2rOgw10l0ARqAjwAgwAowAI8AIMAKMUEYgIzQjNCOQEfjHgdCQ0r4rvf8sVYEk9vFxHJv+kCPruoYYmiAIWvpH8uO9F0qpJkmSRkr5f+IEb4BgVwBkABg9Ho83DTjyR6ta67e9/Ny27WpBD0CEcWKweZ5pHEcSQhwG/kaKoji9n0LKYWQgBhZjRlnRk5waSpwxy6o3o0KMb/t4rDpFfd9/BnQ9EhlR10zU6jvSaKC5iYgjkyWITLi+FHRAYlppfgTU0kKJDg+9okiMPUTvIyDWAmOtSBbSE85AIqw5UQljQxVQmW+jzp4UihvV42t+9+DQC4LosPuRoV2cZLRONVEWS9KVpHBEmCUnhjRjGCvSzjuPdl9Us4XoBPQN8AQsVL4iVnTH0Y1ipirLKSxms4HHCvTtfNmeda/kG+AhwzBQWbPbOZIJw5h7O7Z53lebfZ/lN4ABjKzL8qTbLeWrcuW9WY+im9n/t4CHMRSH3Mm44zLziHW7z53/MyCMxjB6KitcCHbhOyO2bSvtGX0YH/uR4jj+WpWuGCb4uRpB348rnw/CWYVhWC3LdgW4KuV5bq5R1zW4pz17Urr37isgs2NAjAJKi/UeACkqxgNgpgpZkVKQB8aHWPn6l4A7GP/C2+222JBB+EIlTdNw+0hsrS2KDCVNWpYW7E3fB/3ZwbgPhns4zTmwZFnGw0Db2R1SVRVN00RJaNaJmV/pX4Z0Z5bZzfC+Yq/54Pnc0jQt0K5MSMES8yh1IjTsEtnQiFByO4PeA46Mrv7z+TRnjOdXadszcnRCatqBEorCJKS9EWvuIgZQYl7F1FUdTbU2hvnHXQGAk6/vZ6ybNBqxn9krMQoTzjpt4f3MZ/HkM0FdplDGHEPUUi57kop4oLasabgPxPrMdoJ+Af2c9cE23TL5rQHr/Sy2xguDSisDwlnIIsFOK2RqtcfCk6Nhu/r+GTrPK98vOcmjJ3ZdR23d0/xkFghZ0VBckWHHUnQxSYQuUxvL+/1u3l39ujbX5cjYc8fHOU29BBONToAWNQlUAEl92xpmstdoRdvHVbyvm2dsZlKsr5BQE/RjT/+KIcUJl6UJ+Z2Y5LCSZAl63/bOYVew7q6bk9ijyUni638K6VGAy6g1mYjWSsPcwHNJDRpim4+4exUAEYU9+5idUAh3E1OLTOUkKbGP9RX079DP89LYf2P4kvD0xoaYJTMxP3y3WEYuu5f2Wf8TwxPLNCoNO+sdRjPPLGOw5E8dnx3v4ytgeif0fXZfGPKH2vvnIBcBibvH9VspfE5yZn34dO0u9D8Bus3U9e5gmd9q432dn9hxkedYRtBbPn0B/Kbj2yseWpZFFaMSFRRno7svoWvheW1/PqDtGim84z8YfACZs9aCZWfKHKRpKntGvQfYQr/j0QHktFYuoAWLrXHnmZwRnWI6NWKiy7TsL+boiqEVPx3su2E5z3fLrvX2+s+n34+3qDzQK89NyAHGIU9/4eDp+T8bTrL2pn67RQAAAABJRU5ErkJggg=='
 )
 
-const FridayMonsterPark = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const FridayMonsterPark = new Equipment(
   'Friday Monster Park',
   '',
   100,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     7,  
     7,
     7,
@@ -5428,21 +5428,21 @@ const FridayMonsterPark = (starForce: number, flame: EquipStats, soul: EquipStat
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAYAAABX5MJvAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEZ0lEQVR4nLWX3ZGrMAyFlZltgC2BlAAlJCWQEqAEKAFKCCWEEkIJUEIoYV0CV0dGxiYk2X24mskQjJE+H8k/fNGzzfT/7eDfbCHmn3scNESxIYp/Xrsziz8TkZmiXxF8n6fZB/EhAoCuneSa5dw2Hd+4jOmTVZX1Vde2L+L4ID7EYXlAj9o2nOLIwbyz8UOX8hRR0xsy3PFYrfH0zzYd8oA7LnVh6FF+lvj0QYxjY+TajmHwVxBPlOxAgOb7if5qh3P/5G/PvugXhhx6Dn9tS+7xNyjEv0KIClHikv52RNt39b3bkNAlHV+CvIOYrzySgkdiRiQ9qD5dSw7v2vS9ca3cXZBginpO5oVe7jFrvGlF87B0TNeFbSjtNW1sm5eKQ1MYGVAURb4iu1PUyVZeeeExxn8kIHlCdL1KcFIYY2Ka+gnBHUzbkwPQ91lRAdEB+yl6Sgcets1ITecgHLECzPNMTdPwf57LgwXQtrSqLMgYuBV1kFr431oAgdwlSUx5mfBvbYOcGLUCUHegspx5Jaye2iQlC8iSGhkA1IVvP9YuhA/iOo6GFEB0PTiF3Tt7bX8xhZg1DQkvsY6SAercAtxu1z85Ti9FoAbULK88U3j5RgwY1EF7oIQA9LYWks1qnWU5Hc8VrxlrTs24Jv5xr6nrWrpUrdwDeg/klK0+NRYgJJFQwcEwABSAac6LbuTCLF2fDmol4aYxMlSSlQIHmC2IAmjwvrMhvlQW1IHWgKbAt2sWVvV2z4IKqg7UwnNVBYbpneT2LezMOCLkpV03wsL0ADB6FFxd1zL19syYcA/P85zqOHFpk/VyGumTAcIVjW8AkKnHdj6f5Xq/34M+2wAxA6Dvg/sBBFaWOaeitWsHH26meDko0TpNVYmDvxbgRVhVFdJRgyvM1k4nu81nmQUVuKljFUupk63pQSmoCYL63mIEJ23bOoA0tQUyDAMdj0cecSw1VNdX6VsU63Gp7ysHtWeYgXEcLRChEoEBoItLisciGKnalF2pby78rxAQ7DMA1EULCvR9LLD4RVG8LuetoSknB/ISAgo8+FB67nR09kCjNfBATvMhSI8+S5ITK3cWcPwH2DCEtWT7rxukqwlsy5KSpSARYJqmXSX8QtXRH4+pjFpBAI5naAOU7q5RbhXgGpS4PoRXEz/UXQ50z3HgjWWESRKuEffcKoN+t9uNLpeLk/12q/m+cjD2yiBN79KhIFslAstuy8dOlUp1Z5ld6rpuyU82L84nLsoieHfsw9ngQ6n5KvgQXjq+Q6cM0TStXDF1cTrCbPGnHtYHfB5IgLYLAzYtfbJdJeAUacBVnSB4ywH8ExfaNicwz0e4IKntfXsEX2BOjdQCYFlWIJhMxXUP4zwb1w/1oNdx7IP2HUNROPqnLzAfxAYOAVJvG7H3YT+crv12PaV77262xv10fDPIj56o1cbOOXFVxve1r4zXTtv25V18WRvyVHgFYRRk55k/CkiasvNhp9+R2x+btu9tcLV/5eyQH6dZoSAAAAAASUVORK5CYII='
 )
 
-const FireRaccoonFinanceAuditor = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const FireRaccoonFinanceAuditor = new Equipment(
   'Fire Raccoon Finance Auditor',
   '',
   0,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     9,  
     9,
     9,
@@ -5466,21 +5466,21 @@ const FireRaccoonFinanceAuditor = (starForce: number, flame: EquipStats, soul: E
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAABoAAAAfCAYAAAD5h919AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADOklEQVR4nK1Wi5GjMAwVM2nAV4IpgZTAlrApAUoIJUAJoYRQwrmEUEJcwroETk/GjiHklsyuZxhjWdbTk+TPgZ7bRD9v2VqwBUTn85m01lT2NbnWy1RDZKpL1Nmas9ZS13WbyJtAACmKgnSh2eLdC4tcZFFnYw5Ar9omUFgwGkuFyeZ/GByjztacte49INCX8AF0tg0bOnWGx2pMxuzcMPRvAWUzmBRFm0RjHZowbKwsiGv3Ai0Am56mtgqGH6EJ7Jr+ofu/dqAdDcZutxsdj8coW49/BSgxGj3n8fQO2C4gpRT9tO0ByvI8n7hRlmXx1LhcLk8sfwokxgACMFSeMYbqut4N8g5QYETXT6J6EEFg+GuMpklOmoGmL7b6h6SX8R1xpV1guxg5PmLU50n+7+cgPIl8b/sOiNnwYdmPpLBX0+LjseMTAfNZPn7L6hWQVBeM4EDTpWIwR/r8ULC8iSHH/HTTlB1tqMhNwBQolm4MDw4zxYeNBpVRWMjZE04ivk5otCIIa/JucXFG0AUjVBKSjPjTyCyME6yy8ke3aXzsrAEbJ45ARzDBrnB8MF49QnZ6ycjvla95xIs0R047NwMoKq+YZANuIFOzI1DjcldyH+qZ9Ukqcx3CdY4yVprul6XQe08CYptBomn4JK9Ktutorr5RdPLuGWQLaFqEb84FGMFw6zyIKplCjxtV8RXuldR8zU8VbVbhYQlyfYCQrywYA6PSKGo+ZmQGKbWXjwP32vnw4cpVV4KvnKMF2IIREnhPShhhhxGSguB/7nsGrypfcLEoxKlwr59C+F6GTtBRntNfNVvyVSX7B8lgw2AiD4ZSs5zD180VV3r9zLPe966LIHYGGQHsJIxgZnoOF8LEct2WZE6G5davI2GGMl08idZAUPjDyfxC5emKc8YuO34KKU1PzbEjih0qrxcGq+ljEJAPejwpXPgOCUD6eRAuDMRe43FifdIxLT2zURwumW8HASO/SYsVCDaGPSTGddLHnS35Yn3kCkm+06OHA8hPlg3iVOL000syZRQjwl8dZJzcFmB5J2sbBmlDP5Ux+fXKuFt/h4ReCpb+H9nYbY49dI8reb5y3m39/wMWS6CNNQ5mSAAAAABJRU5ErkJggg=='
 )
 
-const ShadesCompassion = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const ShadesCompassion = new Equipment(
   'Shade\'s Compassion',
   '',
   100,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     4,  
     4,
     0,
@@ -5504,21 +5504,21 @@ const ShadesCompassion = (starForce: number, flame: EquipStats, soul: EquipStats
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACAAAAAiCAYAAAA+stv/AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAFLklEQVR4nLVX65GzOgwVM9sAKYGUACWQEqAEtgQoIS5hUwIuIZQQlxCXsC6BqyMZwiu7e398nkkCtiwdHT3sfNB+jPRvR7J82QIYx2dKlH3F1yr+2vhs9TXUe7Vpr/MhVRGf7kSC83TuxMEZxI4BbwMN7sDAwWB9izHtCZvf12ir3dQegGEnHeVUVTm/ZYBEt9twCOB5VQTnLjtcb5py1mGtY93uVwDJzYEiR4+7o3BhZu/sS2jp2hqVYCyd4/fKUGfbCMToXG7IRRuWWmpyS+5SUX4fqOs8xaUfc2AS2CViZ9QYgFxLI+8AIWv2ZRyGfxjJduIIwOwpiK/4y1q7WHgBORdK/bN/sbGUbXP2OvOUh1Wy/AlAktTKwmOzFwaevRfjfRVzoM4kDNtc8MxI5y11mp87738CMG8opGzYizyfF4rPnI07+hx0Ds+FySldVJ5zmHtv+C8A5jHSkxJ3Xs0VklFu97zaQ+s9/wfAlIRAn7Ci5bus95EQH7S4QfVyPRqf3zf7VwAOF8exYsv2aE3m6tlhS5u1ZGs46jp08kMFRhZIVsZcZ2WjTCgQKc+xjIHuudPV++dkCC/ZuB+6toYnUDEEtYBQYwpEEsjoxkcr72I8BDbWcrZfApmg7ba94IsBGE+QAQjsOfJ6AkVB1z70eaC0Qq30MxDp7SwUhpRMF8Rm5/n3mokhw7avz1EOoK7g9sNzEELHgyzawfjNatKDAyDqxXkBAMmpDuNXaalqThtJNa6GEt6U8bvW/vVRka87ctzfGwZlbh4IV7Jd4flM2bFAyrCwl3ysaIlsOD4R/fIwY4X+VJFrLOUM3GGNj0KcnBXxYdF0RAwgT9eyGNPZkPFaXqWUlqr4m4Xh+IeG3TID3HablLtXoJQpnNqOZ8fgTbgOkvAwjnB3n+o5jEsIkALQzfmQsWyZZeQGNLCXH9CdkdpYMiCjuSsLeaUs2JsizRDyTr2rHiNV7GFXxJwD7fyZjFcN7+eP5QS1nKDYu2SglHuOgpjuCxMAYQGZm+VaTkvkVaOxh/GB2UYi4r2NVQjjJTPoBgBmz/nwgYyzmi9gFHrDQCvvlwBkQkptLBUxn4UQliPWrk+ktNRku12035QMtrzGdIl3FwDE/GQcsXeGdufDrhWjdhGNNHvlwPVBcjmx/Cm5xgYovyYctpHDdRZAyBOMwSgzuMggVBXCwMmK/LkcFMQOwPcjo1OhHqOeJ+NyN3hoieWkIGZHBjAQ6cY9glkrL7oXIIzf634LwFttJMiBmhEbbg04eGB8+OQcGKDYCwjLCQiGEG8AwnPDl2PkCUDUsa30lSajt/uLyQ5ABs5YEPfH+KgD9R2fYQAeN5WGwEgDelB3LujGDTTnNLrcdL/ojNUgus3PDCRMkVQDjgE2LhzzyTc3aGQ7Eg4gvE9mBigUs5LpBjbt5/iPuJJH+n+9lM4s7ObhUao1XH4ppCkJvU15XWtfKuImy+lKp/lDCCYWcJDUBY2MA5E8Jyd6fvfZbMz7E+EwBB4vxl7GE409zsic7d77B+bE+DmCmhv9X65kedz0ear9l4BAV2u9ZDiGhIC0P0TjHb26+VaXj5/wDkA6eRxZuGOSmZAbAoPYXfxNvaIWcilXUotZ9V7mP4+8e8cAQFx44x21i/LJ4j8ODmNH70dgyqXjt73uW4QjbD5vAWDRRxBnzocnJicgnNHX938ziL56Dcei4SwvGbt/rO8YWKJMosJxCSSPgXDmtQmZvjD84/+B3wAcjRUQMgcSZl/nv43/ANJ2uo1o+m/jAAAAAElFTkSuQmCC'
 )
 
-const HorntailNecklace = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const HorntailNecklace = new Equipment(
   'Horntail Necklace',
   'Boss Accessory Set',
   120,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     7,  
     7,
     7,
@@ -5542,21 +5542,21 @@ const HorntailNecklace = (starForce: number, flame: EquipStats, soul: EquipStats
     0
   ),
   'pendant',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB4AAAAgCAYAAAAFQMh/AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEGklEQVR4nLVWibGiQBBtq0xgDGEIAUPAEDQEDAFCgBA+IUgIEoKEICE4IbjvzeXA13+4u1M1DnL069f3Whbrfr+r1Wpl5D+v9ZN7JcA7nNrvd9bE/RWBGTDZEth/qDebTfMO6u12qykD8l4qEYE9qPaAJy9AxGzxGb7V+ulpJiNKKzEjztydqcKJEjMF1h40x1FhFxFQetlut5A9eRGvTvXpvJ0lKhKUSBUA+Jiaetrtdup8PgtOMcbI5XKpE4SfLu8ip8i1eShQVZXBPhJ8nbxckekwDALwAPhtkKQruAtyDnMlRM6Vkd6Y6M55VMOffZ9LURQEHH6bVnw/+NLfyqHEkScUKG/XvWVOxebA8OcwWCyrlffHt+BpYC4e8T7rQqkULtXjcQCe6HynjQStaO5hCZ4WmAWgxv1P6acR/ffbB0ALqwfk8tt9BCZIBL/MwbHHRBbzvE1AiwDo8jaDNMhGivE0sGK2bUWpjsHK1yjTRXXimwf4TUV/+GfBBWX6n6D3u7YgeN/eZEbgN3HFNQQrU7YnXvTxp8CY4ocEy/11DqE6y7LTQ6iW/jjJsbdm7Pz3c+RHhqhZAVmAmycmZ2SWKCY5fRYKjEgH0EF6OKLQljHdID6dPmUFZPfh+lmtfiz6ySmeo4rl3kcytFs8Gm2Q7j+07L2FWD6zg4okZLHSe89qdR5rrTe3zUHLMoPwDyn2vlZTrcF5xuDY1iqWRvlmpYxthHrTylCvZIDHTjBe0bhopS910YsybAyuOXBvtk5AkgU/Aw5sAyhBHFhYmf2lWUER25lz6IwcuhnLH5fYWKv9tkyLEu1tWtkHZBRysm+Njd7HUjOWvymxaZNoriffWwHS7tyD5g4LTBuWftlXGwBLSJtQVMbfgqbAkV2due+bUkvdOVfxXnVeoeppuTRTCLb6XVALnKYQAYq8kKIapT5MYHuHS53JaYHmahBcCuAmVrV3B0Myjv7doz7l51GGHVojruuVAyUtli4GU9FopE0099vTqAWm9hchG/xTjGrn4OakpD8YKVFhDWD6lqklgTHNPfwNsF01dD9VsHq7keLCIQ8BdTS2TnTtvD35QvHXjO2yU55tgEZGmDhHHewRwZr1MJSDMrfDwj9lbHHpQzsziBx673zNBgB9PDhTzTNu0anYUJR8saDgU6sQOE4faD3SdqOc4duqN1IDfGzdi3b+3Y+2CaBZdOM4TsYNb7m8WBh3DBsLT+5UCQvst2iAUtLusFASJi6UAz2dTgMnUfZl1/AfIK/AudFOSXAK4OswANB0HHEtuyCwdGTGfpKDWFAQHQmqUtCvGL96FmcuCBpgFr7I3mtbrPTOsZizBwwBhlvYIhyLpwDL63QvTR0mD1v+uK/Xq82ehJU1Vbj3jMnyXvr/WYD9AW8Tzy2Z1W7EAAAAAElFTkSuQmCC'
 )
 
-const UrsusDefeater = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const UrsusDefeater = new Equipment(
   'Ursus Defeater',
   '',
   100,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     5,  
     5,
     5,
@@ -5580,21 +5580,21 @@ const UrsusDefeater = (starForce: number, flame: EquipStats, soul: EquipStats, p
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAABsAAAAfCAYAAAAWRbZDAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAD1UlEQVR4nKVWi3GjMBBdz1wDpASuBFECLkGUgEuAEqAEU0JUQijBlHAqISqBe28lcdghTm6yM4lBWu3bffsRv+RYVvm5nB4XjsDW9Yb/5op/bVqa7jXC5eMpn7Z8IX4JUo3q8B3gYWSLg/mGBi/y/xKktcc7h2ATweBpV5cy+yCdLWWBt2ONtVl0rS6L7d0YPDsf12YcdN8HOwFIc9a1RuZ+ltEGeTNG/DhL19W6lve6oZZzuSgA1wg2RUq/lbOsuI7Toi+dK+SlWITszEu0lH9f/CKvCyICfVn/COgZmB6AlxphM8JgZ+B8UDop+fc1FLqvaz58CvQV2BZh23YwOKalsDesQNyfpvEp0HfAVK7X4Zmxdbf/VL4F5uZl/5r7Z+ujh/0fgZ2ac7UmqlbmDtStbAvmVCk+VyJfUJjB8mjKynvPN0ACyVCKrWsx6CmWuQ9hT++d/s5OthkjMzc0bRUrb/+83jqpUIP5nQ1c1U7QuyqsEYuGdkvQSNncqTLVMenjufSsYCcaS/RI3aPSknenalwJeBqcmCnIMFhpLhPACjmjod/Y0GzseyCNyrqgg0Tp7rUnT3saNSoBmIHrKO01A9KRMZU8o8mRUfhMSl8a95FORjRvb+uvTFffQxnecK82Jf4E827Rgw4jiEZVRwHTbMTE8Ff89ls1rjyrZzhh0PgeEb+/WnXmQzVSOY+izhoCRgAYLfsYCaPzuIHePDwCEMHz2SWd3dvJomD0OA/WvXBK8BBNMZfMS0wo8kHV8l+hkPqQQPdikbPLOG9gOgMzNfRGPfT3B7lvpNAioXOciUrjA0CZEko7Nl09eWZqgTBnwXv1QHMB6q51ITYVAlKJv0KHr7UxwkjZEssfem2KktdLTz3ocI93IXWRs1ggqDhV1Mk+R55poHh9B8oo1o1KnRpCVASjY3ugwnZ46aRtXphG3aPjsR2WfzRmCjiG8jMN8yABacji2aKviqLYCiCGPUen6A500sWp1D1eOY/VqH1yu91A0ayjiIBZHC5Ja8L9ewLJDgZTyxXFdrn0d0BHYCvL3Y0XMHJFf08y568mFALp+t2QRqP5GrpWzg8Dv8XehLtvPxg+A9v6avHNZjRLXaa95fhKqTGkCfRYyZ+BbVPatq24KX4vGi3nmCtG04+T/ipAyh1LfZ5nabvukMLDyDIoDqwdPwCDV0rVoJs0ugxEyXsC6qUoPwV6BhYlxIYcQGf1OxZBrxRFGrWBnZPbn3e56Gjy8kyef11hELNg+qaSoa3vNvdzLzvy46+rPPmz5OTv5+CuIH78daUGHkGPdL6Sv1UVNkY+RB2vAAAAAElFTkSuQmCC'
 )
 
-const SnowfieldExplorer = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const SnowfieldExplorer = new Equipment(
   'Snowfield Explorer',
   '',
   77,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     3,  
     3,
     3,
@@ -5618,21 +5618,21 @@ const SnowfieldExplorer = (starForce: number, flame: EquipStats, soul: EquipStat
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB4AAAAgCAYAAAAFQMh/AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEMklEQVR4nK2WC5GsOhCGm6pjIJEAEkACSAAJIGGQABJAAkgYJIAEkBAk5PydB8vMgZ3dW7erqIQ8+kt3upP8oWvR9P9JcNV4BdaQezV7e9FWv/4u4qjLYtdX8Hew1ivR1ErK6p3+u9i5XSlIDeIS/o/FvFqGlvNKfV8d7Wme0jQtGAClQlCaxjSN02v/6b8sO6qSiGJBl/IODtzqqItD6kM7a3g0VLRwJ/8CWqY5+nOqBMZMoxkzLQsNXWfH+fkoE7szH13tB+kJlsVhSCG+duxN3cuyLTTGsSnP7TwuT1Pato14/knfR4sPGbcdijfzeWHLWdgqtpD7zm12Udsx/zu5Awd9EtnQLlN6PEpq295YaARKp2ky5bnNj4P/4ebx1tpvLT4m9ZNuexs0vjQcV57bTvVb4E/AV0pMugXRS/tV20f5CfhlEQD4A0Z/NQa/gt6Cz0dX4LRyG9e5KxgRSONizwnkr2nDMD/mTsdHsBk8VS+LCMbKKmYo9lI/Z4TPRkVW2fzjvnb8Gl/Z/dZd+nOLD8vTjoIisfVhRqgD2gK6zseY4YlDIyoo2EPSjxx7nRhPaIXxxXir+xLsXKoZaoAoR9roW9ldv4dKBINaL9380WJWEmQJrBrg0sLuaRkaq7zVbC3lJdzfwiO9g0X0SW6Dy+zp0yoPEoBmWFFXNqhy51IWB6XyQaopDVRxfkFk1r8E3Efw4WoOJHfyMVQ3nQ0oWMkW9+irIoCUA9W9cVOU9eZfPcvfufqA1i44ythEMuFYzim8mkIjLxDntUgb2l1GFNH+c4vPUL1aSzhQcMGilOa/W5V3hLFWBtJYKpAFDFXKprCUAeB0Cb8OrhPULIYDRrJL1cuw3F3yStt2Cd2rgwozDweLZN7jH8Q1GHfpOX323bqX3bng41eFh47O9OVUhrsF2/L6CXINxvVWSKSRms3aK3YxoraS1luzOw0ZyguQzotpzIcJrJ5tf5RF6C9/Bj4iGvUicCkDKOHUUgDWMCkBiOtsUcILXLV5ilVJQKl4UJTYhZSod6qh36fT7tzErws83ha6lhQ7MW3sGzwA8fzNBe/pfgu9BRto3dKzsUGRATx0JWWcn4haAZcmzhthXBpXs6VPHDJJIql5NiTYA7L49QEiMV758QPcWrg6Q/elohVt/OopcKoxlC1Nkh77q0wby6xn1sU/Idmj6HiIvYPF6TPSGSisQGq0UMxQzlPhIpetzADiIGqGzkCfOGqzLPEqYgfc3Le/gz0whLXPoOipAbTiw0PgKYvoEW7WOUHE/qrAbA2gM2612rq6g9XFJ1d/6YTCOrG3DYuMelJriYVMSBns+Wr3kSEpHvad6syesntZGLp/qVu+c7V3h8AKI63tFeP2iFc+c53LQtZIo8xMiQ10ID8ncHfiab48A+8sPlb1Hon+36faXd972538BbYoZx3reN65AAAAAElFTkSuQmCC'
 )
 
-const SageAsceticism = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const SageAsceticism = new Equipment(
   'Sage Asceticism',
   '',
   135,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     7,  
     7,
     7,
@@ -5656,21 +5656,21 @@ const SageAsceticism = (starForce: number, flame: EquipStats, soul: EquipStats, 
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACIAAAAeCAYAAABJ/8wUAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADtElEQVR4nK2Xi3WrMAyGlXOygBnBGSEZIYxARoARYAQYIYzQjBBGCCPUI+ARuPoNMg5xHm2vzkkNRo/PsmTolt7LSP9XNrHJdyDjONREqnyuYZvIXHV/2yt/nZzsGIN5BTKO30Rd1VLaVvQ3se7vNdd0Ky0dGnqAeZkRrCRtDTEP6bIm0zwC6XHeOWvJJEnUj9ju2NftSXJfgWzmNJJWe6K6JN1eiG5fRIfTpDHciNJiCTgMRLt08SC6Ymt7ZMP5/gmIGIy03093GIuG/L3IF9fRac7W93W5DnUxdn0U4hOQSfp+WnkYEMLb4eZ6M+lghJQ5UdMukEHWnsknIJuN7ceBV6MaTbZrlydJe6+ZHh6MxWaunmg2PgVxDhJsUfOL7llsNq/UPgWJOXJnzCap5Jlr983ufdC/ggQE43g4FHRIDddgzuXRrqF+LD8GEYjb7eznikJ7CDx3Fyxru9j8r0DWEH2PjGiq69zdn8/lWBSN15Wgzq7Y3QGJiM4dSKgEhfV9qHu5dNRxJwHCmOkIBwTD+GuxB0R91tQZRQIUxoTvbTgRKsXu5dpa6+erqpVseADJViiAEAEUDto8myDhexsGhULTWj6PlF9FaHA7f7ttwfZcrzUdj9OpeeJDLuVDS2vt5rLs6GBlG2Eni9JHPUPZaZwXtRUItVcP9KEBHAiM1soFF7lez3fbIlKW2T3MKSFzwTG/ekXQqkYQcH9U1HdmIm96N5rezg6m1GdZxjVyoS8c3xFBNrrpveJtAKl4t7Dejv27t7V7hw7ka8QaQ0emR0A9Z0YCu1Ep5+R6G5zTI8Mxh5OwqJFlVqWmufg6QlYgyEzOvlHYiuPAl9i7jIijXbrh1e/JldjFkLLkldND4lcmrYqsoC5gm/qXGoIrrxMWNaRp8PTi/K67cBuuCjDECciYHJkRACTJ6tIFULzkdQDI+Vy7ugEgdNxWd91D98QgPMg6xbsEQNw9GW9BvwSVACJ5nrusoFiR8pI/gKri/hsW3YV6abn9oPfRyRqehAKE7PSU8WdFHrN3zkNBTSCoPItl7y1IDAgwOui2qSOmdBuDce9PVmuWbVh3VJ4vNfVya54BhcW4htgfFwiDdjT3q5c2Xs/H5O1Lj1kSZhnQMTg5RXr+NHQgq9SbOStt27mD74lMJ+WHIEp+DJMyzDVdfXs2VUPPBB2zlrlY8S8AVmRCmGcgAqFlZAcVw9T0B2EfT7+i32VExM6OPvlotS+u17+3IFAyK5jYhj/sdQTgFZyXf2XpSe8y3QcDAAAAAElFTkSuQmCC'
 )
 
-const SoulGuardian = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
-  'Soul Guardian',
+const SoulGuardian = new Equipment(
+  'new EquipStats() Guardian',
   '',
   75,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     2,  
     2,
     2,
@@ -5694,21 +5694,21 @@ const SoulGuardian = (starForce: number, flame: EquipStats, soul: EquipStats, po
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB0AAAAhCAYAAAAlK6DZAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADhElEQVR4nLWXgZGjMAxFxcw1QErIlgAlJCVkS4ASoAQoIZRwlBCXEEpYSggl+PxtZGRjsjs3d38mC9hYz5Jlmf1FoTT9H2XyQUK1fpm/+cpdgvf+TrMxMxGdauuMNxh7SlP7D2BCxW3fFkCnnkiZmTW/yXlsvJ2XL+r7nrpRUX6/2/eWurZX+dzeLtQ0DZ3zDz+2/0xPREKzsid9uZjBs6LlvFBuwjOqkZZlMfCFikmZiQ1UNJWb5OenvUcf3hnHkZoL+bGKLtT2yto+9FQqn0+7NgDlNb5/N/YdNFNK6awkejauYV5m68VEy1tDNhrzTNPonk3UCL5S5GUK6l9CqHF9NgMN54pGE/abUkkg+s7nM1X5sMI2OykdhjeED1RVFXZAUgAOg5ncN7CfQAO4Mar1EwSidl2yzjwjnKVb1x/vNYbGlShlIDNrrbHW3cs1YIut4TwCJu0CqjuT5s1jKxpZFlYQHqxfoYXCTECbX3byxoMx2iM19deMWuXsWk8rUzXQyGC8vIJJwuq2slnKQra6/skRT2JMBASjXfPQr2kM9t6bygIYdF8rEKttW1uFyut1g5t59O0eKGWheeEKM4MhCYxhLFQv6PF42Cvgz8dETQc71ncPBENCbYIgMxk8YIOvwK7rbEjzPA+AaCuKImgD3ILvk48eA1FwSCQSSTBCg4IP4O22xUWuJQ4AhDUlTLKsWwu2troQKKEe/EzYmiY3c3iWAsp+qUuxB8ZQN7BxXnJmwmC9HmUQvGcIvEcysXjtsRRlXbgw97RTsiLJ9TIHQLCeeOYEgtepPoxVB3U6hup487MX0rBc27gPIDkpCMu1Hh7HnyssDmEsCYkz+qcKE+nkvMV6YrZxaCGZRLhHiOUk4kikavNbTwGOPYZRHGMQjrtYqTGxdl8OztvJbPLCDk5VIyQKA+N+ZDomhsxNbZcUdCfeLlzqEPqUh3Jbfafk54r0Vq4pvvbgJSIgr7ynoe+8PII6GTso3gzGOvJW4D3MQFksAOSPMyOecZBdR1Bfi2EE1QVQeJoSZywD14zFOVMI4MK/FBSze2Hr8Bc6nxqAp8T9fI6uBQFJwDWSgViHOYbmtIXEnhCYuTd2T28F7keBx/8uUXh3H8xHnl5NMj0wY/4HCCFry80TbvPeNu6wEB9r/J/MEv9iKIcA4A8z+EucEqW/6emZbNve/RD2KL7/A1ZO+RSmv7EWAAAAAElFTkSuQmCC'
 )
 
-const TheEternalTreesGuardian = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const TheEternalTreesGuardian = new Equipment(
   'The Eternal Tree\'s Guardian',
   '',
   200,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     0,  
     0,
     0,
@@ -5732,21 +5732,21 @@ const TheEternalTreesGuardian = (starForce: number, flame: EquipStats, soul: Equ
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB4AAAAgCAYAAAAFQMh/AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAFFklEQVR4nK2XjZGjPAyGxcw2QEowJXhLcEqAEkgJUEIoIZQAJcQlrEuAEuIS+F7JNn+bfDc3c57ZgxijR3oly9wXxZHnebpd6N+PjP/x3q8TX6cFy2tq4EVznPVdmOPrafh5Pk1sxhEN5UrRpeiWBP8EJttbcvOIP3960tPfDq1yqkv/9tkZnFWdW4zOydYTTepGxfygKa+o8MN6NZpoyDuqfEPW0cd11BdUVJbO0R7ArH/Mc2adX3IFpfSDeOabBnrpDsYBVQHKygxNQxU/9w96mfCcTeQaVzgEOyt0n99fEe/gVCqSnJYq5LulhiDECu3LJ2lb0aA14I08l3doe6/f2f2T1KvkfXFZmsHAe4LJIOsAwx7aMlSkVgM9HMPjc8x1WO0d1lSXtxL/Aj/vZp28tpYjz5CfZXhBMuKKZmhFuUHuUMhsnCQdWhSgEvlG5cPPNa/vIj2Ad9C17PHSwvPV5bIuLvA3DVFeRJtkR0ESdReycd3QaHb+1xY6gPdQUxs2tCRn+PeExN4AEYMxh94GeRlqmieZcjP4mCtR4RmU+whPUguUm4SpSV5igwxgaAJ2XZCuaQay3ZV6iwKyqO7nlia4JHkXe62lTyOBM46UoRwF53ipuzVKByCb4P29OQDAI0fnAuxqaY674WdAzkePHbB1tHP9CJhv4oMsyszSLNwKuZAY6mGTi2aEQWNyaYt1rQTK494YajsrUX5XDvBnxBy6ndhmFjO/khcJnjzi5mF7RArjdROiMShtaz2l82RGW1WK+3H8zQ6VWuBCWsJ5g7Ts6yfbSx3kxcKl2eWTDTVbZArRCtzl1PezRM3jdrOkdLg3WGww38LBEL1eUC8Zw2lXaCs4ece3CbofHtHlKoTq0JkUwq5azHkjUG285LYLC+heKqmtE3zLMR2HQEspogBpW0f3uxbojCjGuUeedZTaISUOJ5nFDsjxXk0pD93o4j3LrldVf0WchnMzDOi1byucCgx3rsV+xd42HGEwrnDW9v1IM7pYTnfiZp7yzs/m81m9G5969XpYzPb4MkP7DrDc0L0G7lFDYo5qlsgYms5yi3N9et759vOxGEc2IB8V8jJDIs+FokuUEyoXzcWOXYyEt1UAMbTvejikySmNoOGYDT1gD82y7D2YH8QCE3jKS3Ft18XT9KRr1aKaS4l8RhExFD9IgnS9ZDQCVxhv1bR/30a892p53aWLTc/nOneGtrdWnDkPrl5t1H7q0DzeSX0YGoCCP20QfFFckc/7Acry3locFqMVB6pYDg8dPvJitIfmcehcq1vL8csW9UPTB6cYytXMKWGH2DGGF25bk044Pnw0asLZ+Xfn2jeQS/UdwM2PXI2/kXmobRvhGiSvJfr9tpEuF1uqtGJ2LUCJ3nWuPVRDJm6PfDjw6XRtw/ao0JTVWOFQ2CRnaAJf24pedz67B3yh3BKc5V34uge9zfGjeYTIAOa8NXWo0q6vxKG2C5XO93Pcs6zI2DtKar2GH6j4kII9Qw/g3XaSU4ZH66O0sZnk9UAlNwp0xnHupIXOZfg6IShR1no1nByAzQW2+avJx7/fEWPBBete/FJd1oiolvnejmgkRhxQlD5/G3GAdw0XlDgwVvLMQXp2IikAmxNssydzgu/BcjJgwRULn/zCUAYw7zzrcNDjdz+OB8lsXsv3Nn+7bylpBfp/45zjfP+jinKl0Y9v/v+0m6veADjXf5KaJ2Uz8EKWh/7B4PTtgWn8B74W7s31/roKAAAAAElFTkSuQmCC'
 )
 
-const SweetwaterMonocle = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const SweetwaterMonocle = new Equipment(
   'Sweetwater Monocle',
   '',
   160,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     10,  
     10,
     10,
@@ -5770,21 +5770,21 @@ const SweetwaterMonocle = (starForce: number, flame: EquipStats, soul: EquipStat
     0
   ),
   'eye',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACAAAAAeCAYAAABNChwpAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADn0lEQVR4nJ1WgXGrMAyV7/4CzghkBGcEOgIdgYwQRiAjhBHSEZoRygj1CPUIfEm2iDCG9Oo7ztjYek9Pssw/+HubfrHGvFrwFwIMPE0Zfjgthn4McHzzsmiTyCsCKy818OkY7Vp8Kvtc098dVM7C9ONgHDycujBtkdgjMDEYejacR2jva+BwuUMFTXxXG7t3AxYJXW4OXFvBF2yT2CIwfX9WMF4PMKKUAn46GHaXgC91A7XyGpdBCInILa6/ns1LEpsKBLSYg4f+Dq1r4OIikMKXEDxw3tO34QEtXCYmQSHZIrFJoATeI3jt4ndb3uY8EUAGzsEQIsuWegoJ5cUyWDsEVp5XEdzCbgs+hSGkkPjLNEBn2hZDQTLdWoDzALMKu6dAwBvbQFXtgxMW6v/wKheExF4rEZj0UXOY5WSjqVZh9z7mXvQ0oPcKVOa57TDfVEC8Z8/twkwYKdlCtE9P7jXIaQgUdzypOy0n8HSdkiY0bLCtYcCZmqYRfPQCLnFW3uY9JmNt7bYEmgBLb4zh4kNbaB89ZIviKx4vYgzLWOuYN5i3VXeApv9ZleqyAv4wv1YJeJb4BbCWfQa3mfxoaPRlAnwszDEsar/YLiWXBtMkZvAKfRDvMYK0prtm6ImASC9nk0lQ9froDHw00yLJoCR36hHU1jXFHCM3g9P3IdXHdYsKKOl5PR4ui1VLpH/gXYRyDqU4c6YjsKvBieRL8BPbE++xRANkpViknyfpLndIgC4SOEcVJB/EW/LSocwstY1HlIA5BBvg2wo8pafe0IXx46IKQgK9a8d+Glleu7j+18Ab4Ln3mkCeB6wC6UkkKB9Y9s64J6ooYZfAlHA+xvzwFsGxjhTBNYE8D1iFrx5mElQP+EIpNfIWCR6O4wKQSzraxRAL+OoXbQ6ByoNFKIgEVXy+SquNipa81YBEgovaE3BS34u34bxIhSKRsBySePXEWiztPMDstQIsSW6SXa2GWV1G/mrwf8xqlib9xQARycEzmbUzpSbzs6M5AXPskFlXjpkQWWwwCyxJpDxW6yqUcq50HT9ZohL+A//vOyZylAVqntqb2lvKUl0vv2feSeESAZueEy76SnNn2izAmdyf+FzT+yX1Xep7tf+WOVT8JRPwKvViiMZXBBYASr1WGeR5Ne6z8Q2H77j/LgoI4JYC0vLYdfodDfZqPuD4lsbvjPIEPCVbh9xmToCv/4xE6fDL/3X+l3HMxrq6Fa/D/+cZQoG5JA7LAAAAAElFTkSuQmCC'
 )
 
-const CursedYellowSpellbook = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const CursedYellowSpellbook = new Equipment(
   'Cursed Yellow Spellbook',
   'Pitched Boss Set',
   160,
-  starForce,
+  0,
   true,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     10,  
     10,
     10,
@@ -5808,21 +5808,21 @@ const CursedYellowSpellbook = (starForce: number, flame: EquipStats, soul: Equip
     0
   ),
   'pocket',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   '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'
 )
 
-const IgnorantoftheTruth = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const IgnorantoftheTruth = new Equipment(
   'Ignorant of the Truth',
   '',
   100,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     4,  
     4,
     4,
@@ -5846,21 +5846,21 @@ const IgnorantoftheTruth = (starForce: number, flame: EquipStats, soul: EquipSta
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAABoAAAAgCAYAAAAMq2gFAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACgklEQVR4nK2Wi7GjMAxF5RkayCuBlAAlsCU4JUAJUEIogZTwKGFTApTwKGEpwWsZBLIRn83snWFssKXj618SwSoD/08q/MBBYEwDMBbnaYapGHtbnetxDHBLLCGVQzhIKVWYroSPhMB0GqOS2qPgXaW1nUL9wzJU8IQWKtCbEuLn2q+970Ik0KTnba1XOZS5Tfzall6/1stA672AJZCC+5eBrpve4gwgsyN/CyUuEipNeVJT6hjqdrjgCIPS1EBjN8cw2qSVLRNQjwRMrmz523Z5A/Q2WVF4I99TdNCmbBI3BcpNyy8I6/N0cYjpmhzq2p/HM5DTH2vqa7ubDPt+SacgPBuUfOf70o5uzkCbXULv9gC60Rf1DeLkBkM/QlOOdDBP1yYEAY4mLV5GCkYICiHr+0gDVGduPJAAM/QtFC62jieHdht7U9q+3+cg1HwGlhH2/bAJKkvtAQmgs+yaI+qssxWQJPEmiNoIiHE4rS3IbjwQQY4AJGqjvhiHEIThdAYyHsgtdLYmokNHo+bibeHU0oYhCF1HC4iCCJJlyZKUw8K25tve5a/Wc+Xy6dgDiweWElGdYBwS9pPk1m1wIIUgt8PIDUrn2o0yhIWJsd/Q9y4O47krBtl3hMESTIJckNoF7cE+gCw6vFSLRyWuA36XduNHIGlNSHyD/AtI4f3GN8TewksbhB8LuiFQtNtOHYWQKxvkzBGErugQcggqhFH9zM2uI3fSc70k5yIY9TsQ2h3pIRDehHfr6od+HiiJdLmGbYKbioHwMhyiGYIPRj0s7Bt7Hv0eccDk0rsFasked0Ry/20ssOFAz5EMeLAuY/hEzB6HYT2dgR0c6x68j1L9L8vro+y6Y4MhAAAAAElFTkSuQmCC'
 )
 
-const ChairKing = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const ChairKing = new Equipment(
   'Chair King',
   '',
   0,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     8,  
     8,
     8,
@@ -5884,21 +5884,21 @@ const ChairKing = (starForce: number, flame: EquipStats, soul: EquipStats, poten
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAYAAABX5MJvAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAENUlEQVR4nK1Xi5GjMAwVM9cAWwKUYEogJZASsiWQEkIJoYRQApQQSliXsC7BpycbB4Jhk73TDIlxZOn5WR/nD+2Lpf8jyd6PeyCs7fmzvPFHxU9HNBz53bpxVFhvSFZrkoNsZhPILhPjSKTUkQx9U0pHec+UkTHplF+MU/Rj6OnImp9kF4TRzoFJ2bHhb82OzDRmkK3TUyWxQ6cXW/MvIJJDyzS2hr6+1j+Og6HyaoXj/jOh8pSuDRQBwK9jIizO81wCtD+5SdktfmwHPnackZ9Tc+f5j85fBbEA45jJ6X5h+tnxdTjgHGSsmfbimC/0XxWA2I3cGJjiTPbCwV/6nQ9Mxrl737kXOzHxDhCRU5XSx9Gd+fctZRA/B2AMAD4EhLUcYEnyXJiSDXDWfvPkh5l0AMbPbW5mml/48H4fMYEJEXPmA244uHjqTvI9MyzOiOnHcfARyCKMMbcBJNjBN2U1B9FlgRAgErBw9/PIecgNmaB6upQHOg+PHbATEejbG0+bROoFV8XnnYtcSmfndvIKvMFxaGTIsSUmAxOqto4FbKptqOIa0BwSqntLdYRfOJcHaxmwVREd5UEfDmJnbBLWrUVf2DgngQma2JiQ133vAKAFcC+Y6sJckJbSRwBkpLgOuSOidNoQ7AqzLMJGMgcRJkB9TaUD4I2nWRZhQpNp3U7SNK5jtBYgpByjCEKKBG60WHWMWnGwZfxozn8F++q0VOJOlRrfnVKFzrb8nQNFmpm3MXbbFSAGIjkyG/bmAfDRjWfNnfFJS5zGAsFj6LSshQ1sJv90tl8F4a3AkDMgokfnWLZ3Za7bpf58Xj/6t9iInOYrIBJcRHCpGThhSmGj4wzKfKNo1itm82PbCQtYW9UhfX93qYFI1I/zlxfFB7X5xaUmFBm07aHzqRgQLS1qjv6sujxuNxHVUTtb0oEfsmBlDsKG0i1WksBAw7RmSEO9ZkJ35/Wcdp21nqozh5K9Pmz7mhSALJlgx6ZzcfXsD+1Kgkw9sTPX0W7t1E+7WehkWeLWVut1i2KF5oMKh7qA5IPBrnMsVP3sjme2btuPpO2OZ8L1sqpmJUSF3rN5HAHIzTcxGKkvsMCD4UDvSIVM4nrZnEfKBjd3HNYAYiBECcXqfnJMjEDyTlbMxZ8b6kTRxgFsgRBBnhPHXNdq0r/EkGWaKuVttdt628Xqw2cLX+cRAYgL5QNyLzAhSEuJBwC4hsZVkNzLJW4Xd8EtEGh+OS/+QtXErX7wj3RM/xdjYmgqy8a4Z5pD8/IAkMc+uEj7JwCJgUj940wr5wxGm3G5h7tvrMUT1bVfs9PfFrLHRI90xV8JAAC1jSteoTqx86kcTXOAeIUujhBr/b0TegU9juLH44DCXeJhcMEM5x5A8QS0oLXkDE6KSgWNMdyqcc19Lzv8WYZXek9En/+KWNdB95f/BRCs47eM+QoIAAAAAElFTkSuQmCC'
 )
 
-const SengokuGuardian = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const SengokuGuardian = new Equipment(
   'Sengoku Guardian',
   '',
   200,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     6,  
     6,
     6,
@@ -5922,21 +5922,21 @@ const SengokuGuardian = (starForce: number, flame: EquipStats, soul: EquipStats,
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACMAAAAiCAYAAADVhWD8AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAFbklEQVR4nLVX7ZHiMAyVZ64BU0IoIZQQSoASkhKgBCghLmEpISmBlIBLWJeQ05M/4oSE3ftxmlk2OFh+fpKf5D+0bSP9f1P5l09g6Lu+/Mrj+XGn7nuk407R1+l3c3bm/jb2CYziCWNXnT46vQ8PAeLsjtpbSefrnS7l5znH/iH+/wWMTOCJb+Gq9PR8KufvisIDhPVu2y8+Xqd2LCrvQDUHtQpmvD0FgLoeFK3sgBcZ2eTZmgOZo6KKUd3NQJe6JF1ZebfbO1qbn4DcKo+e58F+Yibhm31hIAAw8FpY/NRqup4Hun1pcj3xs6OS2ft+aQBaMrsKLoFZMJH+T2tPsWgOg7ABADV2JVZQ+/RPuiZqGaA1JMDqcuB303ylBqylJDwSx0FCJGAEyKUM23+Oa0BM44M/DJadaypqD+AwdDLeXR9pwvHmk/dZH+V/PWjZQFkWwWEpgCKAN2aSnTR99+246xuVA4mO6tZnLkBUPMSHh8rjg/SlSi4AbOhOdHUd9Zw6z/ZILTZi/FzT2ASINnXGWjC2aWXtZiBkLAKpivQ7TZWMEwNCJBIoZioCym1sQ4rgNCEsYGMLhISGGQGQW3aMBUhXv09gYLqq+b0RhiADAIX5AGQOOGklrZkwE8LyZog1ciSs4XccGchCI1vHD+L/8D7/ffXlcwn+4DdanjtbR1t0BKcGyYpdIRd0G3SBzV170ni0YQa0otAeUIGTZCfmOAUu5wcdbp3k0MXgxD05b9Qsb9bAjFFHTpKwxZQSRZYbdUHO8IJ4aR2XA0fCIQOS8Xr6bZwX/UAU4R/r5IA2RQ+CBh1JrORhQbJHRmzQ/AGMlNN3Gz6KKWyJnZKT2b2fliWYEZFAeKCssAQkbisDosECFh/8gHvwAiwDGH8DhMTmkyaa1HnlxjpYr+lF4We1KdWbPEQzszax4TJGctbcvSdHPnQCCn/WzkIsG+FQPVjD6m4kZBbCFcEIELQBMBQ91BpIPBRV2KHAjjjWkh9gQoBk6+A7AGmU88hQ4U8axuHvSUbqF9iJa2L9CEYB2av1oUH1RdH7nwb/2PAlaM6O1SUPk9o3w4hUEcS9L3owiJeIHIVwxDBxfggLizDJeDxd5MOEcfiJKu/6gtfxGw8dxFs/o/jFeON4gsa2npQyAqJQp2KSIj8EQLQsgQVwSHABkllk3zR+XXxsHm0IL9oASDjqS+zuRD8Wxxr54ULCpsRGXkkCM6jGT0DHgGMNv+VKFqyBUWiI0Bi5sGGI6uWa1yJ/vCOA3CKgCATJi3moVVe0F4FsnNZlJ7jFjABCY4R+BBLuKCuKcjqGSWUtJfUFADlroKGaF0QRO2bJsKLm4fkJjBg6NBS1Ng4g02IeZfmU9CcClfeZIzNkj078GvWzAr8ZGiv0IWVnyB15BWgLNKSaVBZFUVQYySuAwmRmR1SZTfN88VMWtGW/bcgTIJiAsplTBhLFcXY7gTqHOWuN1Y9g0HkhAXf3o0Jr6FtPHwY0RuhHEkvBYt8bAUUTNkKO5K2r8iH63ANLC8j0a6vpZdtx/2gSIG8+h9CP6PbKJ8YvAHlP5nt0fzswU45EC0D25HN+RmQCI0CQlL3N32PCnh288kE0Rv7eNF3aIJL+3lSIoEFHcHxxahbJinNU8iXuKx/Exv/MgNgZkAgG2z/TlJaa6brkN0pUX4CSWlNTqmtBR/IbvgwAiNwmozHDoynHec6Adgjs2QDpjuY9RE7plQHdhCX2iTYA1RdFT2pNM2PBLXw49r0fq+dLTmTWWggYNMXftks3BFAWHm1gJ2cq2kFW67liZINBUg4LEMvNOKzprymhSuYXf5weeje34nRp0n4gbDu/B0W/tOWt8i/C8vulSHa/hgAAAABJRU5ErkJggg=='
 )
 
-const HeartofaLion = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const HeartofaLion = new Equipment(
   'Heart of a Lion',
   '',
   110,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     5,  
     5,
     5,
@@ -5960,21 +5960,21 @@ const HeartofaLion = (starForce: number, flame: EquipStats, soul: EquipStats, po
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB8AAAAhCAYAAAAh3nDkAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAErklEQVR4nL1X65GrPAwVM7cBpwRSAlsClEBKgBKghLiEUEJcQighlBCXEJfApyPbPAJk7/fnaobNxtg6R08rf2iWkf6dJPizBKfXg6ir+VEN3QZNddZsTjlr6f26kTufpjX1etPpXJNK083+qKdymqob0bmY363A01TRtXHU24pKq0nn1UbZ0A+klOJnsYgvaUlpnm32Rz3XVPMeHHK74ElyduL6rOz9iu03yth0qFzqCOsD73e0K6wn0RSBkz3w6cVg6rHFGWt3wbE+LHAy7JP17fbWib4V6BH4REIjAQe9WlTsWrAX8OW6oDoh4KxZndELo/4W/PPA+OTc+9FecVGsw6ELn0WO8f2+Y8DfwMedgwkrFAJZheTK/SrH0rH/LcJtkbBfgTd6P8HH8d1QctKHBEgj2Ia+yC7wnt5Vk3luy3pP8Ti+1tYPnfsrV4eQTAQiuCiEEtvx22PrBQAlOb48KNx9MV+BxWrolS+ME0o6mS1XFcezmwksNm2U8bviPNfavRQCh3uhD8ko+aLQuDyRP5HZoDVlTSMEDIqTS2dBYKGtpDrxpqLA0FB7syIQveCBjaOBE7K8emDgRM+K5a73wKbWlLMSPLrF4yZAEWcE2Abgx409UPs9IBBzJsSV2sK/a64kVdEbTeWtEbxouZRKyq4Au2ThzvHtP4sAuJTnIyWVcS+vZzJBp5DAnZSEu0dfmAC76PpQAmxDhxLwaPXl4lZWFiev1AOV7MJOLIXFALamn6zHZ1pWbKGhS2ElrEJeeX0JG9CI9STWE7t/crssGE996VpxIyt7Powof1BHfe+oChzx/xIYe6OAfMo94RYMisC7bo8Wywf5+53E4p5MZ6msDBkGw8WItShYa1h/x3s8kRy3idzd6UInwvrp9ql1vu8+TrGUcPjFFuOmTDm8IFBxuaj8Tt3F9/Pq/mCFF9IctjLfAt9QMScneRBbcWxIU52jBk07J1ucSeLkcbt6b7S8J0sLASXXCYnB0jRcnE9mOr+ca4zB1RtKTrvZ7TR1LUXP1EnGLxuJjFcdZ+wtxK6bXZ5miqrGI3fayt6JsO8Tkull6Q0M1bSZ4ZLPhmIDsLXcLJwn4rhjZAwYr1GEwXFcVKokPNj7erjVrAZgcbX+i0mGZbScROnkdsduV9RyC2vYDFiY5d7alhVe2fK2tZTnc9PBWeiAHF06h5MMD6NjuLcEGCXlE9xKthsz54fu4jtPsg65c673QX8D96A86tY1TcCSyH5c4/jxtKq4irlZqNS/w548n88G8EP5Cg4L4b4h5BeAm+ud2+WFbyojcxxszPgyGHqf5bgP8nD2N/k6w53Y9W+24FKHmr0/qf75YQKKy82TgdSt4YxvuLdr2XflMydv9emDx2q2/mp5FEkemkdpK3OzJxBjb53dO7r8FeEWn/J8AxfGfT8TgLub+52znq8pBo3aco4/whCbSj+3gc+fMBFYbDkCV+EpuLoeGBSQSG3tCZTNPOzB4giMOQDtIIxVmr64HPKr5SwXVnbHwIr4w6pOr39MVGtQSMzzJaD7fI7Ao2sigTP+5yR64gtIQEDkA/TnwEq39/83yx1tlUjDQBXsrf9f+Q+b7Kali3CHfwAAAABJRU5ErkJggg=='
 )
 
-const EmpressMaker = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const EmpressMaker = new Equipment(
   'Empress Maker',
   '',
   100,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     4,  
     4,
     4,
@@ -5998,21 +5998,21 @@ const EmpressMaker = (starForce: number, flame: EquipStats, soul: EquipStats, po
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAYAAABX5MJvAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAE5ElEQVR4nK2Xi7GjOgyGxcw2kJRASjAlQAlQApQAJZgSoAQoAUrAJYQSQglcSUaOQ4A9d3c1w+ER2/r86wHnF5zbCv/egqOHZxDrOuFfJRzt+5el+L2reRs6396PzAJRzRv7AjlVwvToOgvg72xxV3l6PuoMIiBqFTcQqxHCMIZ5HmE0MaoDEMMIc5hCOPd4FX/dg4GveVHNCv6vcLDRIroscD8N3KCArNIAuCMdFlDdOtBLBtmsv+5JgP08c+HnEuLMsvkJXRig49Wd9RLw8z+xS4i+fcCC8pvQgJop0WaQLSVmgA7VLcIJ9BxAAgO4jKSx/XserfNTiH3m8vW9oOcJdDkuvBjnp1wqyMIG8j6y5zmB+qbtjxiOEYdmRfKx1s6cP4FY17WBICiOSojvs5YmVaBizQAtOy7YcYlnui+3e2MQ0Jw6Z3+vRjYIgadEjiQgIP4CAsb3pq5WHApjVWAlkKFDPheQ5/z73vm6WwuoBy1epv6yKqxQ1T02lBlIEV5lg3m9nnC/P2Shdeg6SLLscJek1vb7frxzzuPqEkKl4NVkrMamRMsAXachyyqUc7Qw2B2jJHMgBBsEwZXMATmU8QRQ1bVz/sgUKBVDiX5q9EMtRZRgI8ekEIHwhEcE1Jmek2GQEwD//SLPAwIgkATnDblh52Tdc3KDyZ8PEZD0tHNyrIcJm9R7goWhypj9HbtQiW0hczAGy2PBKolq9eGcqrxKIphKQ6Hg8VtOEEDrBtNAkgU7MT+j+yiKXFjE+Vg87FgPSMJQVLXbEK/Zs7BugxFu7tUYPye2gTbdISSZwm0iWBgxrTXcbiH0+HJLO9o8tue+hzZ5QD48+Xex8GAN8eHbYTj8ibTTHiuHnick4zQ5gJrUmBs8cniViQOhXKDxNE+l6QcMqXEUDmv8naDsBFFmk9Be118AJR4xjo+w3O59hyAZgwwI0ra1lXO3joRnrwTTBHfKjZzVSPMSlOiHuUG7IfocPwpsDhSsAANj8oX4cMYLgx8uI94rTMq2teq51yeeDdJUCOer4EN8qJGWFkAy+cuWFsY+hxEVYICeSEPsAfgl1b8/ZGSuJGiI3wE9K3SsxFuNl3FlSfb0yquuKo55jZKvQwRBNbACBPBSCX43LFDqDhUxGLrOCoCqFN5G9ip8K+GBRImCaTDYQTNoGlsReZnbBuRAElQEGW43B0AdknKnqvgdAuM4suOkVdy49gBHEAgADDAMHb6KK+ygdkcjliE5EBNFRlbfAohRTxEQXZaQ4Dw5S2+4UuLDfIARJaadkJEaLO20coX4gKWyYxgAe4aAqBjL4zsdDiG8cGSsBoWBQVBWPdhBU4phKlLOkVJrzgEBiLdSrFvblWJMXgKQ98hPwnEI4ocBbvSmNS5PyBQ5woPGxer9oUBhoflXAGcQhyASArJ5e2GIEi2GI0+//7GgvGCQC4AriEOQiEF6XDzFxTOs/Xf7IxUoHFQFJwBUpzRhAf+/oguI23ZECDLtc8RmP4H0ThkCqI1i5+zxE4DqVW3O5+1wIEcQAhBu5wpBtA/im3xncPJv6bADOKmJnynh/OBRIEgjINTE6F8xCYuUJTneAWTeGvvjEkIk80E+QoNnIIXXVbP8SxuIU2lGZA9vPTi4/q0SX7SbcbLCluVBUK023PY3+rPvhj+x/wDKYBrzTE1eTQAAAABJRU5ErkJggg=='
 )
 
-const FinalHitter = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const FinalHitter = new Equipment(
   'Final Hitter',
   '',
   100,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     4,  
     4,
     4,
@@ -6036,21 +6036,21 @@ const FinalHitter = (starForce: number, flame: EquipStats, soul: EquipStats, pot
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB8AAAAgCAYAAADqgqNBAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAD3ElEQVR4nK2XD5WzMAzAw3tnoEhgEkACkzAkgAQmYUgACSBhSAAJQwKV0C9pSemgcLv7Lu/t0b/5JW3adF9wLAr+TgJf4xkclKoBZPG96sl85IjFpRxFACJGanI87QweBEGhhhJ+JWREYuwOjsacek4TkwrULfo5vJvOwZ/AtdTTWhazgKxId2PaugcZyhX+gd6P4NIpi0mClHI/iNrhZ/IJPLhg7LVLZcQAatsesmb1vs176JzAypZ5fwHXilCh3fvuDtBPve0saFu474O9PoPz+d4qCFCxmmtTqT0Tw+Po9urcwpVSLzxjF5+hSs2mkDSm4O79q7zg0qD2UIOC/WSt963v661/oEulB48ounCS6qYrIhfmC8IOuFQDSAw6NV/9BqBe0h8khe1juAZfM7NhtLZBaAdZcLpAx2XSmGXv+qcRl/65NUCRvmuy6HYM8AYcDWQDXHC8ONpcDXR+tru5weUCYdbi/Ewb4IK38rX1OhIR1E82AN7AhQO9Vg2EWN8aULctFLgi4dUYQHqeQ4Rz6SqYNIe9156P4wrW9W5vKYHjNIVnmds2ArsGNKPZkDQvoW/udpzRF2n9ZADzdsue5xPcK7w4ykpHNQVXk2XWW70t+CUjCCYwfTGUpOtNWUSxzmgz6smqEh7lBE3zniTe4M1YQA5o9VStVjtBxV7zl0ARwqumw2Az3tDqjL05Mer10jEAWl+p9afRmiYtfAHiVlT2ETH1hV1an9zSWBtAYBpHK3DHZeM5VOcYQL1aP3IUGWLh3LHo1MdD0JF2UlPQgb5Ewsk8GtRtWRn00hf1j0epDaGVWF4YVj87yJ7vbqQwu1kPSMEtGnGvR3iQt3iemzGGI3FjoL97X0LawS/w38W6kyu0xxxk7ncL5GAj0dvRd66+HeM0q7kebION9puElp3B7GWRGCglofDkCXgKLxKTpLeXCcE4wsk7hon2CTK76jK9/cLfvuFQqV76Gi+H/NF5I17eHripBhw9n9QCMi5hSCsYKzrT0/+94WJU2CQRzEMHQbFktdIcFYFvZrFAp3tPDRYcm0eVN71+Dp9RSQjaADUYL4OCU6mw77Y5r/SJsuASfxWcyrdPZ5OZVgM0qG52A7vC9DE4MeBQWwj+t+UZnN27oAEvNoCETlTm8Cm4Yta/gq/alhUsnd8hXHh+BRpQkwFjKIDiLJ3W12sU9eYf0wq+L2AWhk7LT/rgDIucL7dXaEBJBuAXc3WPuRlTLD6jqT6s4MpZNQZ75cjzo4l3BD34qwYDpjqCqb3wzJOenxfOS+MaIDZjkqUtwXw9LHVu3xorD8pa/gHpPhbcflMcfgAAAABJRU5ErkJggg=='
 )
 
-const Noblesse = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const Noblesse = new Equipment(
   'Noblesse',
   '',
   0,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     0,  
     0,
     0,
@@ -6074,21 +6074,21 @@ const Noblesse = (starForce: number, flame: EquipStats, soul: EquipStats, potent
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAABoAAAAgCAYAAAAMq2gFAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADO0lEQVR4nK2WgdGrIAzH410XsCPwjYAj2BHsCHYEO4KOUEeoIzxGqCM8RpAReP+goLZque9e7qxQYn4khMCJZrH0/yXxjSWI7As/0vPaecDc9k3pSUWn81+9oaxZq61AfQfz14R+Jya0yuJzdAVqAepEQaVEgyo8DTUqp1QIKkVLrS5nY1PfaE1VroJ+24PSdV9AIidRFFQXUExrTBIfEv7Lc6oBV/0MqmXr+lopqisV9LuuwIThnVa7oISUsvxhz3EvehI9vjUas+7pR9f0oiwo/+gHfvtxHPPSEsr8bq6zvT2P/CAW0lKT0auaB150A+ax2Uf0KLtlKxuHodsEInimql1ymcWCh37bej8Ps+hEx+I+Ns3dsrFXdQ8DY/revwJiQUGsfVCSzPtpeKZ0vhqKlRiQhQDiJh5mD4idYJYivIrzyAQ7qzLFFSBWvoGcN32TcINcWdJIDuS/4TzAfuHMHJPm98ngIBoQWeHdnqkrB1JUksK+GsQFpSaNhu2BAkQsILytcgGjUtK5e9KQX6NhWyAH4XXhjSgQrhSFWXEbEI2QCQxovV4f7h7BdjxqsS6Y/ePhjog0B6jtScETB+lQbqQI2t4rIWlXtkEwzovtz6EO+9LWGSX3P6MngAzygtJoSMqUYuQdZO2AMHQpQmEC5NpS8uSx+kJGjYYZ4v4vjfWwo/BtetTDiJlOzgLVnyEe5g+4EUIBkvLJgIjipIny6EO8R974cuzdoyPZBMk8paIw1Fxwbv6ZPeIx9mLZZkjXGsLZ6EKH45jCReIbSADC6+TD5MPH7RyTeJKrb6tEcGnP3VRGgZLkPCYEz/LeY+aXEcCesRg1A1iHhfUwF8vrk93cfSF2H62lrFKE0W/QeaNyuJSiKNkFOQ/gDb8Z4rx7E/aCYf6NmJO7OESCQvgYwvtGSOOMAXYOEIm6Ksb7godMYWOdeYF3QH51fwD7y7A0N1TkI5AaM3jF3O8XzjIkwARBnpJcQIx/TgvA+3MDLFx7hue4VlwwzFRQx3uDnh53gVhWOw9xCqeFYbF4e3jjvcSRXdKntIvZL3ftx9F7ilDy/Tt9ijlor54Tze4tYVs15WOBv0xs1f4HD+S2EwdQpSEAAAAASUVORK5CYII='
 )
 
-const EpitomeofBeauty = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const EpitomeofBeauty = new Equipment(
   'Epitome of Beauty',
   '',
   0,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     0,  
     0,
     0,
@@ -6112,21 +6112,21 @@ const EpitomeofBeauty = (starForce: number, flame: EquipStats, soul: EquipStats,
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACIAAAAhCAYAAAC803lsAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEk0lEQVR4nK1Yi5GjMAyVZ7YBUgKUACVACUkJRwlQQighKSGUACXEJeASQgmcnm2BCZDd27k3Q8JH2E/Sk+zkiz5jov8LdfTgE5FpevJn+s7lvr4cy+2bxj8y0XJLj5Q11rFdMh8jolue9qLo9xjnsz/nz5YfidyZiI5SitKc0ghuxgR3ex1Tni7fwPaes9VjTKPueSz9eyKxwXCa2uhB10dCFHFkR0XZZeAJiZ58D+dAeH6t1rZn3dB3+Egkh6eYpCvI6jY5EQ0TXydU1AMVjTsHinriyBF112Rj2yg31q+JCLKio+6syDyeFN8VFe1AxtxpuJV0Sm7WZrgpSsobZZptq7XtmZJv5/hERGW+fCPTk+Y0wWPA8PXr2djwv5CNMWEdED3OJV3a2zwA3oFtHYz5EyJSp6GxPR9NORU87zXqKR3tNZNg77PMm6FMU07DSGNTEmuTRc4ErDTKIwKr+YTIxHB3lTokVNf15IxB4k5xHNvDRclwCg1Nr5jUCVVTfySAMYgans/Y3iJEFAhMU0w4OONHhOxzcy9tBECiaVxFVFVlyfRNSOaYAIdObFYR8WTMhEEoSvwLKd/MVt1w7A1d7guJ6cZ2TU2Kz0Gm5rR0+aZnTK5NXyyBkcVzKtZObsQKlq8Owlwxtt50V7L5h+d57gpSl6UtcQD3ccAGY/Bkc1ThEJwMSKwwa8R+vFy+YYxDnqWpK5dL4+6BRN+76TNaIAQv994uSZFfasZxtOP3/n2Zhx2diX5RIFSHO0V5Y5eJNI02gpRvrTVVHJQ8Xd4sGj0TDd8R+7yKF+OIvB4rDlc5fZEXqjCVSBR1OpMQQUpkMGhX8YRX78DoGlbHa4uQkcmB8/nsI6BtygQuReUcEXsShgqTALMgHy8WpCGlXSJWJALA45DMMAzUti3KfnGiR+TmVw7FaoWZyiIjKA21/sYRiS0ZsiRwHGDVFt6JTC5vDggvwqraMBIxfQc4UmnbAO01xhB94dlUxRL93Yh40SZWqGjX6JRIDwZaeyaL2LAiEFTajIhLR/Qi1SJCla76TmQWrQgKfSO5LD1ji+SQQAgRN+yi1BKY55STXY2M2BBx6ULVxyRcl7UTeT2lB6YQKgQM/2KzJbFHxCLOmUS29AMpX+zK8oDAO0JCMh83szWZap/sHhGlknFCboXEtZsIW86mVpTX5tBzAXd9ao0VHSF9Sum5fH3pblblo42RkrYMgIT27mKgjo7TgA13KwGzG6ZN9P795wTWE6yoiASweKV3yQgJiSY6KRCW7xE+bhVZ7TYqstcIIWQsYe00EZJ4X6N8u//VLz3gxAO8QhIYXCpJWrkgJLHTUdEVwWyk8JfXN0Si4ChYL530FvQVpAyTwcsXb6A077gKZeYIgIRUhxcnWmzqCRh/rMjsERECsf9+zG2fXx0expKZJzUNl+0ypiVnN1bu+Su3GyFujbTzI/lnERGU3Alv693VOLf+MnEpECEDsHl1rov63VhBS0p+nBoJX0gm40XqKef44P7yhIjDivCCTDyZwf8tcHobexdHEdlj/a543i830webf/ob4S++IpwATgXOrgAAAABJRU5ErkJggg=='
 )
 
-const HillaSpecialist = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const HillaSpecialist = new Equipment(
   'Hilla Specialist',
   '',
   170,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     6,  
     6,
     6,
@@ -6150,21 +6150,21 @@ const HillaSpecialist = (starForce: number, flame: EquipStats, soul: EquipStats,
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACEAAAAiCAYAAADRcLDBAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAE90lEQVR4nLVX27GrOgwVM7cBKIFdglMClAAlkBJCCVBCKCGUEJcQSohLCCVwtYRFHB4753wczTCALaTlpYfNf7SVif69ROHLHgi63e/UtR01laPu7ChLU4qbhsa6ptoU1Az9ottmFV1st7zrvOpb56i6plTWRCnbsbbf+NsDEZV5LmyYm5EBE8eUZhk5vt+dJeJ7fWlkLuWrz67y3LT1Mq/6Ft9nRM4Ncq1ZOGRCFaNkEDAXvlyek7tcKG3bxaGsnMHoswr0iPUh3ThSl+w7/wZikellGIylmzE0DAMZNhqGoKjPNHhdHVe9ku/XS0zndvzVxzcQEdiYpoYfaqo4vh1zW/QtuR1ljLccAsNslQwiAHDIwp+AWOTB+XEqB6oGSz0nmHFbGIMfRwjA4GBl9KttgFiXpKKWcbAw9L0AuHPV5Ig107xr2o9DL0pyAeLBT3u2QxBSkojjYAeU0OL8lHwm3B7Q4v6gPj8dOoCYmJl8miXRV/4EhJSkTNh5fVgBADxeE98jGua8ipiFybMhxgDAZEw7V4hraxlb2PL5JAC8nTnJZx8KAHqbnEjTWXEGEokBay0pgIzrnzNVdDF+rlu6MpCseROgQFUfdqoqFruXptnQ+gECq5LuQrQghqPQcRRtEz1vP9+hGwIFk6gSADC+1A9BvNlI3w6Y2oBiju1zo++CSoEDBarfgd2iKhYAGvYNCGkwZm7TMXc8xxXRlaWsCEb3nJd5Kfdx5P0B3zAYLAArhqNwAdYZGnnOeQAh8DcIPwkg9c9J+nwIQB2EAJ7PB5VIMN7sOm5QWVGI3uhGBjZSyo0tBDIGDKQcetcNnyAEmZ1ZyJqLsBDKOo5Y/anuxJmwF88AAeBIYnZsOL9s/ZlECiLilUsmdQcs7AFx/J4yc+ZS0XA+bwEcsAEWbCd7T/TBBAQMOM5mpUkZwtkiTuMP+6Dect6MDBjHizBUoaSG8yDADgDY5ql7n0FCEBGHwHfLiX5WlGGVeiDJskLuBgeFkBkG7M8MHJ54CRHkbIO2H7CwBjFpbcM9YufadwgUAIzjWYF8ghiIXc+gORSsuqwa9gZmAT5aTuK6lg67CQenQCRttrnx8c5utyhZHWh3exv5e37E/Co9Bg5zxYOnMl+2gT0mRLDRnH5yeqJdM3LQV1TVMl89HtQmCR1JOI/4o8oKzp+Kn2sGgPa9PuRsO2YMmvdZwOp+AwDB/ByKeJOAEGPSjf3dtn29vjcvrKJnQ2AD1TAD2q8EjKN/QIrr9c0CfwsWYHeVy7sgOC1qOc7ReUZb+VAAiO6A2hX1GRsf3lGm4xhL31AAa4l2Dr2Hx7uQDQHhWUB7156BKkGZKlParscgcb+xcARiZoPPEyGQcEc0fAGIJmzMeQQAaMupi6nnn569METJX/536KkI5QrBmUKBoKOiT4R/Uxk7hHMI9PQbfH/eKcs/ASEf8IcTDPmT1XJY0ff77bYo55wDyzuHJPfHAHz/G4BvICbdxBQUmhkeXq+XXJAT/lm57G4MoOXcAEAvCeuLEubKeUv4ayYUABoDMhF1+YPnJEkemDDNVfrBubc09ks/yP3d6DMDuPsx2Bhp1U+PQMTq0BuL/aVzCH6TcU9AqmVs02dH6/XXUnvHmHP+WoDsgVCHaXDX8fDOh6m2QgV0c/l2wdxafv0Z/Y2JIwPhe911HTpYvTO3fl5fi/wPpLQgnKyChJsAAAAASUVORK5CYII='
 )
 
-const DarkDoomTotem = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const DarkDoomTotem = new Equipment(
   'Dark Doom Totem',
   '',
   0,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     36,  
     0,
     0,
@@ -6188,21 +6188,21 @@ const DarkDoomTotem = (starForce: number, flame: EquipStats, soul: EquipStats, p
     0
   ),
   'weapon',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   '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'
 )
 
-const FrittosFriend = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const FrittosFriend = new Equipment(
   'Fritto\'s Friend',
   '',
   0,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     10,  
     10,
     10,
@@ -6226,21 +6226,21 @@ const FrittosFriend = (starForce: number, flame: EquipStats, soul: EquipStats, p
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACAAAAAhCAYAAAC4JqlRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEDUlEQVR4nLVXjZGzOgwUM68BUgJXAimBlAAlkBJCCaGEUEJcQlxCKOFcwlECT2tbYByTfPd+NJMh+Ee7Xsmy+YvSNtP/Y1ncsEeA2utMQ5fR9/eDdK+outTL853FY7++TouvlO0RyHjCf6aCB08y2FXAT5iNMfbl5TmOuxPjsXvgnwgsQGaaiIIn7NwNy5i6LKmqSzc+MfadfSKQMZALhfItau2s2icVRWklViHYduzu6v+EgDiYL3VNvVKhwxnghtuCJNsb+68IWCvy/IUYEhUqGKU2HX30LoTDuSGBONs/sd6M18PRhoLGtS9QZPb+ZrSBqB6bjTOrgMQS5rdfSMI6RVJB2oQS1KkT5b69rSom09ixMFbDgZtRwDcLXEJgZSwLYb8wF0eypfooswFctVeafP+gB5qwA9gw1+ZDty8qCGQs41yVd2ZuyKx9YTKFtnhj8LmsWvt/mtzMoqx462qQyLB6ISHKnYdho7AokLE8LrYjhfK9SBaD50WxrF6eOcJpxhlKwAf8IYSp8IW7YAEC87gtBrdc9RC1F/HQTPzJogKbYwJLx97hIcB5/aS8XFczjS7mkzr6ceULESFxa1sbBsFI1gF0+KxOHkgAmuLUKFr3Q78ZaM+MT1ApXCkCGVaKZEIsQQRJ5Va2SixJJxm/AWUieclk1BF5IFJmUShs+9tKaLRbZlnLygTUvIzdkGMyQkjCFhDZWJIABvOqZ3E6qoGcIh5kcvEXZcirkCLjG+yusHPMlvyuAo6xWUnodFwvbUF1tSbd6ewK1UJWCPlKq52flzrwloQAwfrB2P8Xrn790FlwpUdP0tDjVtOxUbwzzBufq/3RaWgBr08kBb91loTRDSnGqIqg71pRczzQ815Tcx6o5ksKxt74eVbjkrC/JlCh3DLA4dgsSozWWc7KlnQ4HOjn58cTJKuI4TwBOKxAzVBp38lC5J9rZew6ut/vFhxOH7xSlGEQGrjUCnjTNNzuxhR8sCE5jZno1Gm6+u23dxZsLDoRGbiyYDABh/0877Z91IdlLvIAkvecAxcmceZj2B7R5IqQVEJ6UwderuSQ+fvhs3jQdO5P9v+N7/0g4YDdLjFclhFvu1rj4o4DCcDYgvAVWjIEGCxywQFuxrJqPOrLZQMqJDEO4BjblprU1NripVXv5mJMlIgxAVsqGXhp+H7UvLcN3WmwIOFBs94FRguOWKPt1hqew+G6aW6bbBGDz8SJ+KpAfPMd/X5uejyZyGV7I4LkDYcFZ8YKvtaAaz3xVYxXzds1uNy8TcJNoWi6LeDxnP7YQKgg9ZfHAKFjYzb9RJ8/TrM3764i4naDZPKlVv7HNT40/9Hy62/D0Oz9H1fwRcbwcvr5E+yffxuKAZw+fzP82v4GV8Vv0sJ7yFwAAAAASUVORK5CYII='
 )
 
-const l01stTimestheCharm = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const l01stTimestheCharm = new Equipment(
   '101st Time\'s the Charm',
   '',
   125,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     5,  
     5,
     5,
@@ -6264,21 +6264,21 @@ const l01stTimestheCharm = (starForce: number, flame: EquipStats, soul: EquipSta
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEfklEQVR4nK1Xi7GjOBAcqjYBvRBECDgEEYIdAg4Bh/AIwYTwCMGEYEKwQjiFwE2PPghsfL7dVZVLQr/u6RmN5F+0X2b6+6XYduwRmGeBr8LnPdSHF1OnfTibtzUVtZ23JN4pQEURNy/oT8t8e92/T2DUBBNu3zOZlj87SnVeTOtVGbt71reeX18KGgZLr8oegSLIRXZ05BrUJDWR2gWOxTmX5qNGOfV+308JxMmehAV7TZEQSj96TZur37M//5MWVo2v83W048e3MYBF5/Frvocg3Gy4Am6uX+k7n8frd8E/ISDlcPByg4i1bjX2fS2lvtSP0OPk7Ajwq0PzOwTmGVtOHBgHavUj9Xe2pK727TYTBoSXNf+fQJ6A/PJx4igm+mkQTCU9jXsyaR3mDeeJjsfX9uTrtwRmyUBjiaSRJhV16Ge8+UopwRQlxcQSEtcyhrqo1yRf7f/rafDZcdLfF7B8HYDzzZKQY6/0haanhWF8Ifm8fySQDU45UALXSpOuNCnt84CdHPX1xCAT9aUmUxlJERjlNEDWWR7PSEpMPO2fKxAHV6YLuFKKKlORatmpWgtCxUdNDVpADI9ppdI6aVqw0YnE3p2RCMS8P7+4A0FANWxhVS0IrATsOEbcSsHsYD6JYk7bhIvTgOA8Xl8TiIGygUe3FgKUWUjOJlClqzAWCNgpjat1ynivwH8WPoqJhOAFUBU7wJWBXSDLSkR8++bG/oiAbI/0imTAgehdoZ4nQn4Xm0v7XdklAH/Bb/PM0VzA1zoEF++qrPd5TkJ8b+MRkGpi0823pfIiM9Ll9hGBZ+MQUOxzhJ4KJLReg1tB9dexs/RJSXngExUqll4zgBJtQ8RHVSZPwPHPys8m63+aXYw5KbB6AxrO43zq8Cr6IWzC559fN203idXKcVKCxVV0OAXZPXgu/froLfsDD8YtLpAnmKNzjdos3W1FpvFS4zUGEpKLONHoPOJD9oPljc9+1DxauvSWjmM8Bp5wOcZbasgSEV8ODQNff5hleL8NeP10/GugMFvXDbwp5/1wITqoEQJxCmcN4OfaUHgUkTKKAdmIzgWDlBiE/WBRIpCDAxhBXoUgH8uJWnxrQ8MBlvmHXn4zNzdPGuBXTo+4KzpeB9GN8qdX1O+537Cbankkbq7jAH40y4WTvIfsW/n0OxwMXRpFj8fgQUsTXEcCLoo4/0hBHdfGgfZk6RT2fTqGmCckrsx9WqewnJxI2x9F2ggKwkN4tGJeNEB/L8qKolmCAoEZwQKfDCebSGAB1mNywEzk0FeFB4WAH7W8gHLgOM+oRdkxqLIlIOCOe09upIc2yVpMRNBQt6xA39biY3gGRXXivOmmaUSjdymeOp7ak8RQsRDwASGdpR1TwqhujcQ4pk+8OUhCcgBn4ZGkjvUUwCu+sie258SnZ3MvfOUKbN+tGERE3bHByOcYxw9HBoR6bhtnkkVMmJPV8g1wKEl4D/J8IeGH8OJx2W9xwaZIXkOjL9MfQSy+B6UODHDPLNp+Cy8hU/ePLIwtvbgf/wW2OYZJ4rHs8QAAAABJRU5ErkJggg=='
 )
 
-const ThursdayMonsterPark = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const ThursdayMonsterPark = new Equipment(
   'Thursday Monster Park',
   '',
   100,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     7,  
     7,
     7,
@@ -6302,21 +6302,21 @@ const ThursdayMonsterPark = (starForce: number, flame: EquipStats, soul: EquipSt
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAYAAABX5MJvAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEX0lEQVR4nLWX7ZGzOgyFlZltgC2BlAAlJCWQEqAEKAFKCCVACaEEKCGUsC6BqyMjYxN28+bH1UyWxRjp8ZH8wRe92kL/v538mz3E8vOIg4YoNkTxz+/uzOrPRGTm6J8Ivq/z4oP4EAFA385yzXJum89/uIzpnVWV9VXXti/i+CA+xGl9QM/aNrTyZ34bZHrTZeLYCfcx3PFcbfH0n3065AF3dHXRZvTe3ogx9fyDrykM/hvECyU7EKC6o4+tur36O7Iv+gdbc/gxhPdeUIifQogKUeIA/hzR/l19rxsTuqXTryB/QSx3HknBIzGoLAqU0Jo5/dWm701b5R6CBFPUc7Ks9HKPWeNNK1rGtWO6FfBY2mva2DYvFaemMDKgKIp8RQ6nqJOtvPPCY4z/SEDyhOh+l+CkMMbENA8zgjuYdiAHoO+zogKiA/ZT9JIOPGybiZreQThiBViWhZqm4f95Lo8WQNvSqrIgU+BW1EFq4X9vAQRylyQx5WXCv60NcmLUCkD9icpy4ZWwemmTlKwga2pkAFAXvv1YhxA+iOs4GVIA0fXkFHbvHLV9YgqxaBqSS7RRMkCdW4Cuu3/kOL0VgRpQs7zzTBmMxIBBHbQHSgjAYGsh2W2IWZbT+VrxmrHl1Exb4p+Pmvq+pVslO45AH4FcvG1AYwFCEgkVHAwDQAGY5rzoJy7M0vXpoVYSbhoTQyVZKXCA2YMogAYfehviS2VBHWgNaAp8u2dhVe/3LKig6kAtPFdVYJjeSW7fwjEBR4S8tOtGWJgeAEaPgqvrWqbekRkT7id5nlMdJy5tsl7OE70zQLii8Q0AMvXYrterXB+PR9BnHyBmAPR9cj+AwMoy51S0du3gw80crwcl2qapKnHy1wK8CKuqQjpqcIXZ2+VykWuWWVCBm3tWsZQ62Zue2oKaIKjvLUZw0ratA0hTWyDjONL5fOYRx1JDdX2XvkWxHZeGoXJQR4YZGMfRChEqERgA+rikeCqCkarN2Z2GBieWQkCwzwBQFy0oMAyxwOIXRfG2nLeG5pwcyK8QUODJh9Jrr6MbbPC1Bp7IaT4G6dFnSXJh5a4Cjv8BNo5hLdn+2wbpagLbsqRkLUgEmOf5UAm/UHX053Mqo1YQgOMZ2gClu2uUWwW4BiWuD+HVxA/1txM9chx4YxlhkoRrxCO3yqBf13V0u92c7F1X833lYOyVQZrBpUNB9koElnXrx06VSnVnmV3q+n7NT7aszmcuyiJ4dxrC2eBDqfkq+BBeOr5DpwzRNK1cMXVxOsJs8ace1gdeumyAtg8DNi29s0Ml4BRpwFWdIHjLAfwTF9p2JzDPR7ggqR19ewRfYE6N1AJgWVYgmEzFbQ/jPBvXD/Wg12kagvYDQ1E4+pcvMB/EBg4BUm8bsfdhP5yu/XY9pXvv7rbG43R8M8iPnqjV8Cm3OnFVxve1r4zXTvv29V18WRvyVPgNwijIwTN/FJA0ZefjQb8ztz93bd/74Gr/AfD7jKjTFBeHAAAAAElFTkSuQmCC'
 )
 
-const TwilightMark = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const TwilightMark = new Equipment(
   'Twilight Mark',
-  'Dawn Boss Set',
+  'Boss of Dawn Set',
   140,
-  starForce,
+  0,
   true,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     5,  
     5,
     5,
@@ -6340,21 +6340,21 @@ const TwilightMark = (starForce: number, flame: EquipStats, soul: EquipStats, po
     0
   ),
   'face',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB4AAAAfCAYAAADwbH0HAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB+ElEQVR4nK2XjZGDIBCFNzNpgBawBK8EbSGtpIX0FEs4SwgtUILnA/dEAouob8ag/OzHrgvEO22k8DMRWUpJ+fa5Nd2esEWLrVvcGoHt9Pl86Go1TTPF8HuqozFGNPR49GRnR97vdxGas5UES+r7HsVtuZ/2wC8BsxSdUzUYHsJTS/tCXQSrChfOAL/ANlghSIhhGKjrutNlEczSWrtLzSG4oqzKagx4Pp9uMGaNwXhGPXuBe+j1ev33g+ISnotgHTXAGC6eMYMgX4eksK5PqNIe8AWug/qcaNvtdPdCRbAEZfBRaBZcgqJ+HDnc9dANOD5vJCg/GmOJhJNqV1aHwyXoCiQ3AR1nZcKGCE4pBR2G+TSeXzASC+E2But163UJKoJT4YWngGqtnKfWKlcHOFaVUnYXNAvmdYrMxeUTyQuesu229csO7ZzlmIjftfwkqz3GW1/XKXtGC0Q56DjaAEQuEuvk5b9HWXAcMoQSXiCsDOOy6+p3r+xeHQoh47AxHJ4fhWbBOSgL3qMqzqPTW6YE9WD2PnynF2yZEtQD9SZ5ctDq87gEhfg4lKCSsuCSMZ9k5X6B/AEugb9GJP4J7plc3DRfhuEh2FlH6I4cc6x47N53/DN/5/wepmK/tsmDsiFfnQw1Ks3SKTCVMp88hN1HpA2f0/dOfyipUg1Z3erhAAAAAElFTkSuQmCC'
 )
 
-const DarkHelliaTotem = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const DarkHelliaTotem = new Equipment(
   'Dark Hellia Totem',
   '',
   0,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     0,  
     0,
     0,
@@ -6378,21 +6378,21 @@ const DarkHelliaTotem = (starForce: number, flame: EquipStats, soul: EquipStats,
     0
   ),
   'weapon',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB8AAAAiCAYAAACnSgJKAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEE0lEQVR4nK1XDbGsPAwtM5+BIqEWQAIrgSsBJIAEkAASFgmLBCrhVsJWAl9OaaCwwH33zcsMw0/TnJwkTct/4i9knueKbvmNyhBFUfuTnb8CBzAZT64GyTnc/jm4s0rAouheIs/O8b1j0I3+Ffj8+n67h7qsCViJTEnRDnrTkEIkUonmNS16j/TWgV+HHcDLfYnq9OqENlaU/nvSNc4BbYxz4s6BM/A5eOZJjjWAG2dcCm2tGEYt0kcpVJIISVGw5ISl75LGnQPWuPT05ePUgSP4/H5v2HEcuZckKwLGtXg9O3dP8qXgEwLXFP2sSoQhcIGLRCEP6jKI92GfiK0iFhAwZcB6GN1dD4MbG/p+mQDWSVCEHviK/S24DZ4RajB+fJXrt6Kqdvp927oosBizpEApeWr/1wUHB84EkYEzcEAmmfsGUOtSIE/Zh+Bzlu+ZOO9pMoc+fL4STgc7ALHWnuoy+PyavkXb9tsEH/RwGoCPzoQ6RxCEHez5fgW+GM8yl1OElu3AINpI4gGt2CIQQgHgjv0Vc7e8UMGroYABHoGLnMKBnqJTVIV7H7VfUnJx8iq8d+Cr8NJZSmQT106LgigpYmhoTRuqamqviXQOWPuZIui7JaiWXhBGZgeOVngUK/ZsnCEyuBqFM04Qfin2SfgF84GYhDkC0+MaxhhAcw+K56XDYS3ftLGfwK/kmEN2gJ/hMLdY80O+x/YLt/sO55UEINjwUfRIo+O2LI96MnD8LNcf4G55jFvFT2Q89d/XPDOwF7Sr2GiRBCcqLtp8rYlz1gweoe2h/YkgdI8QiBwIN5JQhwF5vGka962u6z9a5ztJqMXqoRUcAzAYPegSnY05dIqq2TnVUr+o8g30ivUpeNdRlXf7Ss+y5R2nF0TIUHqaQKcMwAHMrO+AQ/A19CUBvJ4Ntdn6dALXBfSmZ/MxDmBEiOzdAofgm3EKeUxH7qJ5fSgfl1MaOMh9AhvInwAfwaNwv+3rx5xVz230tHe7RbWpUOVjPz8Az+JToiP4hwLlbDnDnezzLAnthKNfhmbsY9J9U/RWQJ5rfQs3equPK3BQejNzFE7znByrLjjJYIPhVCynGPE+AiKNZ6zPwGOxHPu+z4AhbT/SbqZoNzMeYPlpqL/SnZ5Uyl3KN6CAMUclCsEdW37hNssGaXKvkrwA2BiAhsIOAQig7AAiQHN3uqTzPjJPvRO4nmA/+DUM4Cwvgv8zyjUZxY9CP7jqLsnhDnMAzg4cJYhAHIK7E5LYnyPWUlYZdTc9uusonlVDOtZHBDao7Q/f4lNifjgytyuglNRJyxWewqcRPqPH9WCeVZ0+Cz82XL9RxOJGrpeatelqSqqsaSrzlaZUjHb9a9B9nT2nydQ11cQ4KN2zI5vOnfwPpVFhXegsTzcAAAAASUVORK5CYII='
 )
 
-const ElliniaDonor = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const ElliniaDonor = new Equipment(
   'Ellinia Donor',
   '',
   0,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     0,  
     0,
     10,
@@ -6416,21 +6416,21 @@ const ElliniaDonor = (starForce: number, flame: EquipStats, soul: EquipStats, po
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAABoAAAAgCAYAAAAMq2gFAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADu0lEQVR4nLWWjbGiMBSFLzM2EEvIloAl8ErAErQEXwlSgpQgJUgJUoKU8FICe05yA+HHWXdm985AMJD75f7GnQQZ5P9JxlsEyXAXqY8ipx8RtxfpN1bkQynuuxN36f03S7G4DNbXeHeCvuw4vdstP24rI4WB0jjxcuIqG5QDYkpsAb/lpxeD0WBefplkPe9utYkVqLjgo9qMECoxD1V+wmixZbMPkFIh+l1cX1dra0dQ300W5S7siHeDZ0OfVLCgxFwGyBMjfssFI97H7yhdZfzKqG8Fcv1kkas0RvC19UotfveS5yXujeQ2vLe06ok3+7Apm1jk+m1QdmhC5lnsqFMfF9zhAfFCPPIrXNbtkRDJiIzoNClaVZRj/Znrm6B3K0Z+8qtyHnjSxdylbY0nGsDc9zRKbmCZ89bxqrmwcjPAFmgGrLW2COyPDkAoqHT7Os4Aydot2cl7GYFltExfUHmjz80fAJ+ARmDDen4ZaSrNRpDuyLjs6zPIp6DhDv+1MK28aX21ThrQb8iWc+td/E8sEkfIA0HH2PdGWDIWraOr5WN5Bxqb7ONikPLUjNHGOBm9O/8+ZqrKpnVboGEYjHcPpW1VuV1/yCkmxvMmvojbdoR+lN4BghphgyxoDcFsKdpmemjvHZov5ovMSQurpGSBswQ2Nb6PEYPvIS8GA5rzws+zg9tr7q1pq1YcEqXEdw37bSFvZQkaXnBD22Gn3wqxjAc1xCZjxufiEn43sKSsQ03dYdmxWWdiChpuvJ/VBd5dPINwTFy1fvDMzEMrnc2xpXaM0zls4RbUzGAzi04PCRbQL4wJ3dV0I6zXdOaY84ioQvaVV1gFD1gQTjg1O8b4/N51GSp9GF5r/3pAbWZznR509rT+/hAgb103F80wWkJX9RvFSYi56LG9Pr1n8hbEFI6l4+OxsMjPXybt7i9Aw/BIQKiTCAoBXwtjlMKisIDhvvfJUH+FjPNH8mB8nYQUntzE2OT+n9EEr3Fe4ZQXc+axsm3aLBmYkuxdbCuseOcDransJqCfXVhCSFeGKjsujvGVRXzJXkUXtljiK14JTOElgJZQijZA2Bk041Z/L5eg0R90GdsKK57FyDrx4qbAR3cR4s+qbtzEGN547RJAvMT/VUXRlafQVljx9iYriRDf4wBh91YfFwnE/7XYJQCr43eWuWtUxt7FtsKKXwoDz9nD2AU8ZLN/pxalX5/jHAJ7pTFsK4ekrTzVQg38WeYl65bXLjEvhaXP1P/U3nVIJp/6+Guxebf1/Bs93LanynhdGgAAAABJRU5ErkJggg=='
 )
 
-const RockyMountainHunter = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const RockyMountainHunter = new Equipment(
   'Rocky Mountain Hunter',
   '',
   55,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     3,  
     3,
     3,
@@ -6454,21 +6454,21 @@ const RockyMountainHunter = (starForce: number, flame: EquipStats, soul: EquipSt
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB4AAAAfCAYAAADwbH0HAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADJElEQVR4nLVXjXGrMAwWd12AN4I7QjoCGYGOEEaAEcoIYYQyQjxCGSGMUI/A02dbYBtCSu893XFGtqxPfzbihTYoz/OJ/iEZY7J0bgUM0O+bIVI1Mx/B7sbxGLdobGN2XN7fqnxKwSNggH5dDXUdUat7nukT7SkfktqcrYuRoDMFX3msNUAVXZShy6VkI3o7pjRA0NOpKFZrmMNe6GL/V/sjYFjU9PmU56xM5ZSrE4/ajimdigVgva7nvWYwxDppN9QCzgMXF6OLwg1gKC6KCz2kYM+PiksEz52ZbvROxaUm3bgxkhmHTY911857zp0N8Qr0IbDQMBo6MYAARWs+xw48MRxG8d492gPOGm2mRneO67rHkunawm96+wx4tVEpNd0+Rjo3is/pmIHHcUHlgqcD9EK/IJWPsGKy4y/pEDC8Ym+n+1dJo3Y3lXj/X4EFPPvTBnf5cdCfAguIAEzTlxhB9Ppu17NENpT/NTBN3zV5L62y7I2o4KN7jY+2BYVRWH9GPwKWfHrKBKRapl0U+IuWyB4GjkKGcN4/57AS3kPCXQIv758tZCLj6OjNhfDiG8sKJwGX3IaEPOPjdCWKQMW4pAaeA3NOSbybQVWcVBimVAxedXN0dmkLeAoKxHqKQjpXYJ0xBYPVn5P99p/PS04xX8QfsjDkT4HDtsVuqkuyngmhqELfw+rO9Vx0c8i3wr0FPBeTgIB67np0eEOi9/J9lsiUsbe7DeOjHM8hFipL9E+u4BD2tgrCfnXziJR0REiXv2CIjhQXhPXA+ebqRh5tOL2HycURdZj94Ixpearpt0GfAUdKw3a1Su4IMUS8rWsn3+w0pXvANs9S3eClyOBR6RvPvl9AxVt3ApajSAdCHZ7FV/C3Wz0fHRggETidlghAxkbI80FkcCaMfzaBc/+EdLeXByvUru3Cr8T8i4E5qQM8lveF1TjD4T/KdPSPSYEF1J5Y760FCaoTzZSC8iAiHd9yl4BvOT1p+a1oy2PQe+h5cP3NJaZwtFxMMVexzNUvDX4/0RLe8FkBG68kDDXe06+rnWMv5ZMh/zKviZx58G7pL5REkKUS61glAAAAAElFTkSuQmCC'
 )
 
-const BeautyofPatience = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const BeautyofPatience = new Equipment(
   'Beauty of Patience',
   '',
   0,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     0,  
     0,
     0,
@@ -6492,21 +6492,21 @@ const BeautyofPatience = (starForce: number, flame: EquipStats, soul: EquipStats
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAABoAAAAhCAYAAADH97ugAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADrklEQVR4nL2Wi5GjMAxAxUwa8JZgSiAlQAmhhFCCKSEugZSwlBCXEJcQlxCXwEn+gM0nt7Nzc5rxwtqKniTLMifIZYJ/K0V8SUHT9MS/VWTdlxXbfTZngpphy5S2cJbO8WINAj2i+baA34ud366XfCUD3RGkWQWsqqFi5CZ37irNP5qvq0VXWw5WK7Slj0HDa4Ku60CbK9y+SwCGkdsCzu3rI+gmct2qsjAMT7gXS3ZO8J9kAzLG4FBgMY2m0sA1uP8/iSUdtuhWO5lOQQWKKznGL5g+fFaJMbNfeYwP87sO1Xe/392Ag/KeF9Do1EjMPUPvrIdME7kZ96oEqww6wqH4wj1VVEQKeklrXQY4AmXAvu9dhNObo4cCxrEJy9yNy+UC70cHX2663wX8DZQCHWwcRz+jwn7VtZu7iNy534Km9wOgabkrEo7jMeCeyB4aBBrOoZU1PISCJukCPwXN/Y4gZIggQmDq6IzhiDVIc1JKkJDBdiPcNFUUoM2mbhIjcRBMEwH6oOhgOEdrdMiN4eiYLztfJCaL8LSGUFmOoz8IGQRTJWpqNyEaHI30sV2vV/e7c+d/xzGl0xsy2GkLGYEp3xzFsEAeaLm+hczY0j0e2NsIVmNhRFgUykYKSyIqXSQE+f7GzZEGWrcfOockUgs+w0her5dzDI/FRne/6joDY9jyI8gWBnP0e7KAwlViawat8u3mKjRCPl8RJHirAKrOkdAeOVuxJyWggnJJVUMbSntDlXSd1crwzK+L1FAU6hYUGXWT4svbziP6kZSHgBlu7a5OBmLV39NEzZSaKKXrE2gtm/LmfISu931NYd6jPQKkosOeR6AJy1prt0fnDtwBxoa7Lu9QNWj8huVNV76UDdS9OvQ+AulbYzTOW6D0FoWZC2IdEfj8+0WC6OAyle0DjlMVIT7s8nD/NsVALUZJf+8MN6og32qofIXIdSOEvGeMYZX5Lx/6n4ZWe+VdGBd50/C5n1FnFsG6TA5i3I8IoUEHNaaLnqJy3dzZXkc0w+jwUgroiljDODnB6EvUG6Q+54uIw3PwHlAkAVJ6bbARxMI4I+wZydPbQHleIjNWwfM5YPeT0J0NRr5AhosJV/os1F7ILaKbUwLh4Rk7IsNuIeijpES/qFNQNKOR6LE/KykkRCDDbzeHKY0IdpR6jPDmYXgJYjpl69MTU0fpCpG0KxvZOIUXs4Kl7y6d/nOLO22FV0h1c7gIKRN9u/d+Sib2e4cXVyjZjFzW4AfyBx4VBMQUpAHwAAAAAElFTkSuQmCC'
 )
 
-const MasterofAssists = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const MasterofAssists = new Equipment(
   'Master of Assists',
   '',
   100,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     2,  
     2,
     2,
@@ -6530,21 +6530,21 @@ const MasterofAssists = (starForce: number, flame: EquipStats, soul: EquipStats,
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACIAAAAgCAYAAAB3j6rJAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAFBUlEQVR4nK1Yi5GjOhAcqjYBHIIcAg4BhwAh4BAgBAjBhAAhWCFYIaxCMCHwpkcSCMz69l7dVN1aBn1a3T0j+b7oc8z07yM5evgJyDw/+W9291+r3evefUy349GWX9l0/WomunQ/L/aRETPycmVY6EZ/H9PSqorPPT8C6QGEd1bniuoqo643y2fV3qlvtuDCs33fTvMk4/8HkjAI8Yi1E90aTcMQ5DGkslxabeu22jTj8ixVip8rKst+3ZR1c/4VkNSbdPIDRzu579bNBmAI7Jiy1rfXd6HfaBdpkqN5/wgEoZ6K7MXOfpAMPJWjTFSo2IQ6gF+C+20ABBATs5Q29nC9r7hj/OJJBZ3o3ebPmtj9kwBoWK67I0Ska5UWFlyf98VeKqMzp1O8VmBnwwhYeFjuzDsK9O4j40VifADwpz4hjHFSDXVO19Ru2FmAABmkSJ8FVZwlGJSzBJr9EWmaJCeasePz5SoS3dt8AYRneMd9pG+YGwxATW2szJllKaWl3XhlwwhenC7d/D0ULkULNuNo3sAw7TNAQIZx9YMAg2xHIPJMiZExpzC+M+wGiBjKtzFIs54YaHtNTNBMu8EvBhykATMHMm1A2GkKG5Z39IERLgxK2EBoGNHr+ICunRaThQJ3E7Ou0qCtXAGbw5iGNwEQY8WSMFs9M0w5dJripd/SN+GF59pLQyWzwrtoq1z0BQNh0bDwESMAIBvhMRgLMACh0lQYHjtN9FtpOp4LgzFR3j4IU5dn58Lh2+VseW5oeLoR5UVHbcfoMOA7G9QoATWqzdH5WZqXZyPzuwGI5nreAGiuLjexsO4K3x7X9uAM3DRKPuuKZ+65zRL11gSZf5RGdMU5gbMkjjzLGNAggNoBnoFHal5Yy/Np7LlN0tZNuYBAn66PCgrMmrr03bMSgMwwIE5JHF4wor5Zl/e0HlxxGLOCwGLt41vacaSZehsHjwQv+RIgYL4CCDgbLwAGaYaUA5A4sMOm7BaGYhBktYDTxnBmOFPGgblg1l4bqT8gBesEMIs0SC+kKsomyvv1NtLzdWeq3c754SpT3a4ghoeA0H0vIPBeR9IGeR580TtzFqK83+vUHYycxsrv9ct1hhSjDE/8aTXU2x2FyKtqkUZAMMAAIsiD9pE8d54zNmnKtaRiYEjnhRGcR3AzKMS/oq3e2JBJU7UC8iDQzlW+sAQWjFkXDKwUmZHrAs4b5W0QAkAS3DNiEGZb9NZI1aY9ae0A4TnLE0AgMn9b27OCqfnskroEb3qGkk0dkSzhQU9O0T0bh7g8Q7prnDQsVVNeFzBxBFaetaVulFOdquiCJVmDIgZzAkQu6H9efB/CCps39+3fBGRB/56lCWeYMHJVzlwA0RSWnr9CEPmG2xOzGUvzKXB81FryVy5ICPGIubjTEhUvb7gxkEvFsGDsjQOpfgKB5wCKT5hXLt2cjEXPHuE6I2Z1p/viEZTZGeVdG5wZOeutXUn3xeqQFA8AgfrxUx+A6EdNdcHXARyAXKfua5l/u7MmXENmFLQLH2o4MXGuLGB2TMCUiLa18tNSyjYvVhX5kjEhhQMIZ1JLuAH6m/7x6RvAoPFAkevUwsw+AABxusi+eXK3wwAojsBEVSgpXnsQR0BChxkGfqqCi4zmsv/uCwdg/TnA5Vs2EAAhrC9IKNavIaOTXSrur39giYET95uAL9Tv/z2xv/zuAe3nCz/OjkAg/gODQTH9NxI3YwAAAABJRU5ErkJggg=='
 )
 
-const PollosFriend = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const PollosFriend = new Equipment(
   'Pollo\'s Friend',
   '',
   0,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     15,  
     15,
     15,
@@ -6568,21 +6568,21 @@ const PollosFriend = (starForce: number, flame: EquipStats, soul: EquipStats, po
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACAAAAAhCAYAAAC4JqlRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADyklEQVR4nLVXgXWjMAwV790CdARWoCPQEegIyQhkhDBCGKGMUI9QRjiPUEbw6duWIxyTNO/u1NeQYCN9f33J5heVzdH/sSq/sQeADmdH1i50GVYy40zd0KfrPcvnHseamqal6VQV5+8BqPiBwMLwuRtsXVf/n5u1Nl3NdEw+nwEgDzjtTF+ftGpv4B6AEHBZyGKV6go7nqY0p29b6vo2zC/MvWePAFQcKKRijnfm62B3+Er5nXWw7dzd1f8EgDhwQ9/TOM/aoUNwy/cg2Ciyvbl/BcBbU9c3wCBUsGDneTMwZr8FsH5WA8hr/hHqzXwzvfpU0HIdU4y46M/5smZgZnnfOPMMSC5hsfw0CO8UogK1BSZ4bKS2V/2BgwzxN7PhpKfE4JsFphR4GttG0Cfk4kjKb3ygbLV6D8Lr4bRPKgBUTKPr2g9GbklVuRZTsr5j4dlr81kCsBRBM4jVCwhh7jhNG4aFgYrpCbldSNOnnbsQ/AqxaRpg1uayq/cBf0hhKX26Cir1kMvuueHQ+ZUjaAhekzEpup/fxjExYUeYyMzlANKAzqO2rpVuZ3VwkuD5vtCxpsxinQZxORx8GiRGsQ+opiJWjZPxKcDKtQbA6oFqmtYAqOY/G4HYpbBRxTGJUQKwJ9lqNosHoQ3B8+0JuY6BtovYpsKP/bgTUszZhYSBIKiZVioVZusFalM5Ez23Hd+ciERgL8bQdxcEOTLtEhzUt22Yg7G8PCmWdb6dF0WID1AN0UH143TdegHkTZzUtecBOqj5g1Ok/WxWLMHjrnnTB/IH3YEfOE3oAwudWblTbEi6lKUqjmMACIHWNVNf6Jal4HsA/KS34ynUNgfh7/R5OSdHYhL4Y+jofTQ7rriBRSZLB5RHRzKsxgmI3M59Qz0ztUZQWP263h7ZELzUBfcA5F2wEhCgFkHFadtuSxJBUPpx7o2QpQnRAw3kO2ICIYFhOjhqHsBOs2HxdixG48cbL0yzmZeDKIowHckzg1Pk+vfHQHuGasA8rxUGC0DYkBAY95qMtWIKMBkWkQZWONextpPgdL6RfzHcR4UYiE5tULhns/0iB+CbxTHWvZwHJLjvblHJUD7EB4ejWRMYAYn7ue5s4SXmhgF9BvDHKRUcvQD0IhhYwFVWju7Xc0R+k+MOCRq4S9a+itJ5QB1uHjaiZIuqe6mEOJJdmTEGg/Y8y0rX8NKSL+weA/mEpH7d3SQ1X3gvwGaE1eHE00D1awoK8638zjvCj19McHLGEZzitoovr3bb2V5iyW3ekgrt91kA3iS4AvVP7A+fWVYwX+suwAAAAABJRU5ErkJggg=='
 )
 
-const AransStrength = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const AransStrength = new Equipment(
   'Aran\'s Strength',
   '',
   100,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     4,  
     4,
     0,
@@ -6606,21 +6606,21 @@ const AransStrength = (starForce: number, flame: EquipStats, soul: EquipStats, p
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACAAAAAiCAYAAAA+stv/AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAFWElEQVR4nLVX3bmCOBAdvm8bwBKghFgClgAlcEuAEkgJWoKUICWYEqAEUwJ7zgQQBa93HzYvAklmzpz59R/ZrlH+3xWtX94BjGMfiyTn6TWfftvpuQ2vvtiKja/hu4/DkSHeHPFukLRWAxcQGwaG1kvndhTsLMhbrfmOf/t9rirffNoCsDDSiZE8N3hLCEkul24XQN8EBGmd7O6XZbbIaFsH2e4rgOjiSJGT+82BpwdeDuJ9JU1lwwlgqR3ecyt1W01AbPhmrLhJRyuVlKaVg+/lEadS14NMW7/GwHxgE4i1DcoIpMmsvhOE7rVP5VT8y4reP+wBWCwV40gG6GtXG08g6TFQ31+fbKzPVmaYQuElWP4EIIoKsnAS17xuUEF/HVT5NZ9ioEjUDe+xMJBzG8GJQeZ/AbBcOGraDGKMWTaOPwbKnfx04Rufj9ZIvMo85/jts+K/AFjWvSGQ1wg+6qvbPL/e+S77LwCiwEJ4nn5H6W/So1545+WYYPsnetmflP9q/QzgXfguiHMm48+6HMRGktzDOduKh7Nwz1fl4wwA9XdE1EUfgVB5eRPGpILAcTnQJVOAxq6Tx8jIlZHKV2f3QIxBZ47z7eyCQkGo9ieQxRoViHtZeZAz8up46eU9tQ71DWdPOENGHrgTLYBftI9TPfYhXf8Jz53EOWv5dQGitR2HfBfL5eRVeXfxCoZVrXEn9A0oQ9Phc21uuqdnhWcBHP2pjHcawCSXRYIAokPhQV0reXl4Oxn8SytoOa2zUJDkidRyk+pyQtfzcslvkiSJAspKUaC8YzQNW9lbR6sVKtIgXGiZ2HDoiMPUzFTQuRczpFD8gImR3MtUKa9g8WATgT791iHys2ZUBkx+R71I1YVcLCOJiSXOguAHnmm4MoBg0ODJYeGAtIpR0JayQ+uh3DTPNn4oqtDk5jV0+q3yFsojAB3l2h4knRQvxyA7kaBjzYCu8hZYMHlgob0EpBXBrJQTpFysWI3BUZISsfIjqlz34KoByslWnkRLdyQQo+0igJjnhRmAsnCvAk3zBUW9CnYNOl7lN+zb05RlcfW08C3mElwho5TrO3mxfg1AP6B2Ix6C0xJwb2svTR+sp3KyQmDNPZcSYU6qdQwrrFTXXDpMM/YENm6BhSvuFmkk5zz43lnZ9IdNKWZxoDfilY+pnFWP3TnDXDV0nSRZJkNRIGCRPU0itmgVhI5Ub4tBzWQ47STEBsDjnsjhGHiv9ictZaKKBwAbMKpigC07+Pt1Boynd5M8Fa9lfwRAoRp4RpYAWizR/h4spcW0nMoXRvDLM9mbTBLD75T9lQEWGcHBeX5koFW3EV0v0rynj7tjKxeEtEc2yGXQ57K26ray4fjNXjXqXU7O2QRAZdvfGYhAkWYDXQkcEShcegMFEwQLDvRqMJIJLioxUwbEq9ynDPh/5Eg+0f91KF1YwBprNpMVC37llgEj9JySrytYX4dGNFLUecf6TwCUBT48rkifPHh07QpaWiL1iqzXGbW06VRkntTXg0FOhyhmYZusZ3F8ViH5ZSKaldcpchsmmqpXJuYCRX8PU5Xis2vZB2Sx3JyvEqUF8DnUkhzyWK49+/hRQi/3nwBouaNyVyPiG7Rb0BdFqU596yHZMyK5shBk6Moz7eLQiNjkPPinHNOs/lt+ccG00MxZAVE65+BiekLBZtSsn0OHB1b9ZztnHO+v5a2t/wSAm4coPT5GLcOFVkcWEc3jVprPfzMQbNfg9xY+573Q6ukOMv/3f0Yo5i5az4lLYE5A5qBz9nmJ2bOqdGFMRpObH/cUfRvLo/fnGYjYndN2m+fyZTT/F5t0sBN7ADOWAAAAAElFTkSuQmCC'
 )
 
-const SavioroftheEmpress = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const SavioroftheEmpress = new Equipment(
   'Savior of the Empress',
   '',
   0,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     5,  
     5,
     5,
@@ -6644,21 +6644,21 @@ const SavioroftheEmpress = (starForce: number, flame: EquipStats, soul: EquipSta
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB8AAAAiCAYAAACnSgJKAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAFU0lEQVR4nL1X7XGzPBA8z7gBpQQoAZcglyCXACXgEkwJuAQoAZUAJVglRCXw3kocCOxk8v55lCEEkG5370vKmbYx078bJ/xKwWmeZ3LO0e12o3FUdHoONJfXOPvWEuksztNfdLLf27r02TqaH5e4ht9hfZ47GoaBpgm2r+u6HTiAMSE+THz5eOehvKNiAaesIK2Thcnz1LvEYFyvVBbsuin5dgA/5Xk+bw/8y/jNvrNkrV58Fj0insFdRsHzUvBTDhtTqvj0UXn6IYw+n0890VgTtaahqmEzpo52nzYYD3cbFRXTM8zjG10avMnfbf6g/NMIC9nQXGQRtOjZeFFSHox/RfMmAmNUfU2Ta34F/Sv4SoINzvNLsSrPZBqqzZDLx6bPX+P6bSP9v8A5283pBEeHv1v+u2IQZBmu6pRfW1QENcG2SdcKcK2HiqOM5OCIXPcZ9hs4xUU9gPlefn/PqqksMkhbdzdFUdDlcgklycQeCWk8Ry/Ya1vqgQV4a3Q3EadFP908fRhH8BIK7zd7r1udMbBjUBChruvWMgTQ6/WiLMvW566LGV8UGdd1Dq8YU3QIguX79InAeVEpwFAxe0924gxm4FpA+z6W0P1eRaU3EHGkCrUqfzza0CtAZCFR66JTrB5zhpO4R8AR1+XvCsCsGgVpHD3LcRypqu5U14FXqFUAXfI76eFBJouMvxq/Euha9gCDNc2TxuFFl2te6qzlNc9rkbVqctXqgdXtnFgKigUYigWYFbzFa+rhHrbTZeT57ly0eatiMwGJ5rkRYOAYluzBjrz7FXxRfPHeKwEGcwHmDLaYzdmbNlXKWHp/yGdWaRcSGgSefZ8QeHjCD1qegDMwpGmOZwFga6cADDeWCbC4VlyPYbnhvDjvQXL5rlmlxSUELBfMMIx0vV7qTNWOL+9848TtSNtVVZapnZoUmDPXAkB2QAwAQ7G8jwQewQNhM5p2NkMPwHVGrIHH7jZQDYMooai6s0dgyRZsu0WhuRJiFfgQzwMB9bBMTKMsUTG4owwzVVq+1JlXAVyREtXZqtgfKhOPdroF49uIlZCq3eb7nc3EtuJv6vyx9XwYxhiu9QiMnHg+YxOHemP0Gm/Mk3D8NPyi6rxp+jBpuR+NAbjvwxaw3NtA4GcLn62fg3Nw4PBuZaWUEooLwM6bARDxFPNcJaz4lXzfz5cT0ub2RflbXBNw66o1vryLBlDxQlwWGGfpeoQBZbqU6s4dRw+eN0MbOAZiJ10OjKNb23QmpcBxjgmgWOOZV7rbARj9fgfuo9897Us7KBCjfcPbowlNiF1MUjKrqiNI8FofWvWSgG+xxwt/5tLx3CAc+bLnvdpgM5EOJy3WGKfRSLgzhWBK7Qo5ACsy6zeQaVvSWy+YCGcB2FCkkaFMx3pxO+iGTeVIEQYQ6wgcYqzQJFLlCzCc6Nm4lZIDMEBDgvJ9GZgb3BPAeZtz2G3ImYbV11AvqiXR0hg7/9w1GoABNPAQQnxWByBUgwj3dahGc+A90G7gGOOrHvOv5kpOKzZWwjgIwK2fYozTmcl2MV+/41CxAWtxN4639nseRjlUrOB4wa4NzNmteC4BiprFriT9WQ7/sp+33ZbBAiolKVvyAtwzcJmeZvb/LvnGM/AkBHhhKYmVNo6Y0Wrdz8tsey+gGEdgvhs5Fb+BL/H0ShmcOpFIHucwcW3c8YZgNJLya7bj3CYtVsQtMQbrid/dUuCP4Bje95y1Bh5A9kKm5kW7SjgerdL/PpdyCqBpjFPgH8EDAerDcYcN4e6O2fzLCPMp1rI7nlj/BL5ZCmUBcPVXcDSQP8yj/wBzS4Q+RHTJEQAAAABJRU5ErkJggg=='
 )
 
-const CommercisForeverFriend = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const CommercisForeverFriend = new Equipment(
   'Commerci\'s Forever-Friend',
   '',
   0,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     6,  
     6,
     6,
@@ -6682,21 +6682,21 @@ const CommercisForeverFriend = (starForce: number, flame: EquipStats, soul: Equi
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAYAAAA6RwvCAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAErklEQVR4nK1XDbWzPAx+es4MgASQUCSABCZhSAAJIAEkDAkgASQMCUMCX9I/GGNs57tvzriUJk2epvnpveDvtJi3+IuSvwJZlkVi7kf4iQL0v8GcAdnvdG+IQOSY2gr0w7PDEZhltx74APYTEDKyQAjhFLBRIaplFdAggnTBzRNoihcwOFwzEIro2HNHQBQIMzBThVO8pSDNFc+Lc+RkBHOD5bkRUN8eMM1u6ll78LP5DcweyKKNFaSjQdHM+JdU3ryPYN48MhXVy3ec1+p9LTwMaYFrG+Oe9ojakmZ5LtN8mp8QKxnm6XeNezkpfl9l6MfPG9sDEWG1nvFNAjKQBhGNbxN5+YaInqUkAHJ0Cx+3BhhHiP7uZDF7bn3PYJtXW2dAXgSaEUsttSIvoD9BTW+JZ97ArygoyFbcCoxsMzdxVTPv5mTtPprx3fg3IC+gfN9fhq7DzB6eMnpL907HCHfCM7dAlAlM6fAmMxGAKElOQfwCBPM8C1K0ICaXj5InIIqOOUZiE3NbnpGNkqvS8c3OT5WVFMHrr5gCinoTFqmXKG9YGmr2SoLJ69T3FOg1vPYX+gWIqitj6COs6HyCdss6ENd8lq09D+kwwI+ir+X/GxANotXKB/JINDVgx9zppDCSbqnBUMKgphjNqP5w/WIQar7v8fwBzE9Hc82ubsxgOJHCZMZDncKqO6P0zKm28K+yMVQVGOIB3+i06bE3Ql/g8dSb0dlBAMjSI/Y0mKf2hgMBDYJjxkv1utCPvnrl52sAlQsovdnr/NweiisQLTXNdMFPdNj07IC7b5mysVXhjapm2K+Z4BHfZpI9DpbhjfMaBsrf5I29/m9NbyNHBipqPQ0rg6mu0KmqxlLrlVKoORgZXsNruQg2rVVs1BrQ++vAFogBIZAZ8CU14lu6AlCgev3wLvP7gqLneOzwLBNllHmW8pxl9Jg9Y/tpTaA74iXVCmbnEeEQBwEHph5rV2sjd89kDR0PXxgqc0wcsMyX8ypryY5ZzzThkLZAOCQWvkWxJ3zKWI70lvqENXY3tcESx85SLphl4o7AEgOyAHickxuiLFOe6FvlDeDsPkKyrlNyujEY6KYFvk5IT+9epS+ncircruWumttvC4J18nHc5LlHFNVkt9llepDG1Dd6XLlvGOX3UXunL15lx43TGIiM4zejRza+XwOMVyIq87awUdtxFJfvteTxoLlex1ieps4bZ4Z2WcOBcnbb1iC4gn669bEXwlCDOaCPNi57AWaQwJMEPSvIXmG+BfGNLBiuLf7VeePFBlX9ZQvmogSGVcDo8sVG0AYX95XQn7+C4TjhhsgFjdfylXNvY9YbdjaURwoKuDzmmrCWd/7meW759bDGgQXD1JWrcX0FMDKdTlEmLgV9dm6DSQEpO80rjUNsJnDhqq5uJ9p4DlfO98Rg1Pq1Tjg6tdFrIFTIhGsxWwFfX0PotNVZqIcM3C0geVAPNgBeEptslCc2xGWVO7z3MYjAgDAdB5UxmDOYOH0DYf972QdSRTZyvNNbr9mmqlUSbOb2CVuQ4fIpdaU1IIoD2e04Md/bB3sgW7ICE153tt9lRK6198Box5tPvt+q0H87AnCLtE2W6AAAAABJRU5ErkJggg=='
 )
 
-const ReinforcedEngravedGolluxBelt = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const ReinforcedEngravedGolluxBelt = new Equipment(
   'Reinforced Engraved Gollux Belt',
   'Reinforced Gollux Set',
   140,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     30,  
     30,
     30,
@@ -6720,21 +6720,21 @@ const ReinforcedEngravedGolluxBelt = (starForce: number, flame: EquipStats, soul
     0
   ),
   'belt',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACgAAAAgCAYAAABgrToAAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAFWUlEQVR4nKWYjZWqPBCGwznbAJYQS4ASpAQsQUpYS1hKkBKkhE0JpgRTAimBb37yM0Hddb+be7IokuTJO5OZ4X6of2n3pX7ruf3O/98l/gaYgerQlbi+ah7G8ZX7n4DfA2Swn/rPgNt+X/j6BujPgCWYDp0+r7ru1R9a5fwMFxcgHfU3QJ8DPgdDqFNasKr+wqfWdU0bAtgpQf4C+giY4RCqkWASal0v5Tg/hqtX3j4KUo5dTxtQG0Af/LMEZLioWANgn3JyCTUOZzVbreo6uqBWr1qjjVquj7ACdBSQTkJmwFK5A6qWJrrDbf2lpnFU05yBMtzPzdgGeoS1CVaAfgY1jaJDdAcl974EFGaNcDhR3dRqhKHjdFZav1bpVfO+NPdsauiggPZquWRQVLNyLp70eJgCYFaPzBrhjNdqaPMCzrkEqWGOQ51/a16wW1hqdrhaw+NgPM4zg6LzoNQFjg6CBsjPygbIG5it3fuooPS91I6DK8wIYqpe2/R9mNVb7ULnl8chLC6H86K6T+aIHAQqAWtp2t1RjAClIrmcEHb8FqA8wQjbg3lHE9MKWAqgcc1kauNsYAITl+mLPxwQxxVwvPMSChzbUlzhlq+l29VFDAywfdgxGhTNvQlazPJ9rwsF888YXQaAUwkuglXoQDJt+Q1ceeUx7Fcc7NdVR1CERA+yrqSD0YnnaSZp24liXlUNtEOEq4iLgHLSD5Osje4Bwgjw+GxeMvTKMA3NGdS8gR77od7uS20AvZIidt2cIGlCOH0AwXm40UUADL5zKO4ZN282oteDbuSYCNeOrGSBkgEfqdGKTdMw5KJlQKXFtnlYPpPuCb/bQmGLwToexrv6VjvVSkSywIfwoUS6nO5qN+0Jsu1qApALrJ+L8hNkJNWpZfkilQly59RS3x5g5EZoMTAzmzTLNXoRHmJ0P7cQZiAYQlDMT+IHWFxmAIREVSmz2IXgaSMAhyoTEMAxJKuAoPOhVaeL5kMH6Rbn4YaWLtcY4R/55WgnKdhH2ER04IniEOz+cMguFTNIN1h1CwWXhIvqZUg+CBgzhxmD/Zm+6+C6OB/C4SZ2vqXYmOKrT2VYkYtzERna9WTUcWJI8g/bUibZtu/vnk+9AIsNnz8dcHFWylpbZCY0a4Qj9c42ll8QyVsB2IGZr3e8YavZjZQTKaMYCtrzzqRJ0fzPmg+R3IcwYryh5IaLy1Jrd8xm1f2Y4QZrVflqoKSCWUUPkFM2Nd5armeFrz3dIJ8ewUw1XbEIcU7MIhoqth9UKjKWq1VzMOc7uTwDHkHFCx0WXMoApEcl8UY8kc9MjI7/fXIUy2jwRmAEQ38eoZbEqJBPL+Zlr/o+xdGmOtpYiaSoXWaSASC/bimVwYmiFJUqXwQN8+/g0eXOgBEOg2438dwWCyz0Qah+zi/c4gy14dmgib9yocCQacBjqoPYA5CsJJ9uDc4bQXvyTTh96GO7/ajuF0fBNsKdPB9zDBs4mn0w2p3Ni2BFi+8z6XtOac/f6s4tO+rnLUqNqBoc2Wff5F8iHKvoGUxtqp5N0EbTRgUfWll8/PJePAbQ/poGVUc/RZNLgG1tWHVzqmzRv7bPY0NlMUpQ/MST3FncXYqBvwPGZkbPAUzj1VUtxKsazVBzoYsO3k1WlIY+fKYKBJ43wXlpjCy5kIfhDMZA2FRdOOw7gFCbW+hUuXGtntlY1b0JgdKHvUdSz8/4xObxT9WOLoCSsgCXXztxkGn/qCDNHhShVOQRWLGKovnyjyjhvPivHB4Dl6qdZobGOesHuHcBYxqsBUWd1QqrFWDF8AxLm4rvQynn5cxhuofx/wEFnC8sRgva0gAAAABJRU5ErkJggg=='
 )
 
-const TristansSuccessor = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const TristansSuccessor = new Equipment(
   'Tristan\'s Successor',
   '',
   0,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     2,  
     2,
     2,
@@ -6758,21 +6758,21 @@ const TristansSuccessor = (starForce: number, flame: EquipStats, soul: EquipStat
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB4AAAAgCAYAAAAFQMh/AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEdklEQVR4nLVW2bGzOgwWM38DTglQgimBlAAlQAmhBFICLiGUcFwCLgFKiEvwlWSbNZzl4Womwas+7fI/OJOD/4eS7eQI7NwkANI+TMvwHcJ48FNbrTfEy8+t8FuzOCFaM0PWskIL+EnjebCgTQW/IeSHFM/aw3elR3laOgM/USkDEspS4iwlUUCpGf5CdZ0ud4fBIE/zI3CiDJnEwPhlINEjuCLHyyXOg5k1QP7EeT8QXz9+DGAC70aXUEsNN/uCt6igbWcIW9/6OB44BVh+9/YiAcZiWOcBlAC/oeS48Al40QyM95e1FoQQJwFY46ZczixkZ39XXrvoCjhJKtL6DqaDE+PppXcaZ22xuzyTbZ93uAVefwFeLuScBhrcCJBVAWBeBTGbuJk6DSgw+v0a8DfAOwGSHJwQBk0uWcNXqXmzGrww1hoG/QnwL8ALjeMIeZ7z+K5iofAqd10HTdP8mlcE3kbxpcRpmvIXzZxgsLntuCgK+IF2GATs3FtyRKC14NYsB44CJEju/X5DlmX4LWF+KvSncGQJXLsSmvm9sbKKwuOQ2/4xw5txSIDuA1fmYFoDudrX1gh+u92cTy25LH4HyoAl1n7TRL6Lxos2BA6iBtkpGOEEHscJmhfHNaZrE6P7eIbHlAkgEdR6tAhKf/vg0hkym1FCCSm5TK2SExMykZ/0y8aEeR46D5vzVm3ApT9ntYFZ702xBy4mEIhmMDrTY6wgEzc2XJTs0LC2zBTnYw2XRGcFxuRBkTWq2cy0YzzoUUJaB/lAJpoDRIfMKVblT3cYNPj3aBEf1Wg6qxJf6ki5eu8Pv/iAe+ZLUo1uLb/Q9s8G2saACSn99dpplRCIe6MFwxqV7wjOGluFktUO41RxIGCU70GRCLR89DA8vfRzlXPHpdim07R3r04FxGdMSFeBFhmGjalF3bOoJMC879kcNNM0gdYaG3yN0jdQdKwsgwp0S4p+lhLFxnwcx56q264WUBqRtpTGJfaWZog+Ri0tvhIomqU08C68Ofp+xEZ+54qllIJYnShYHuQ6ZBC65dI26UvnpSxRu+dOWwxuKNONxhGUqxdKrwfS4ByqVVX5soERLmh/SHZ7kWLnIh6mVRysJCyJvTV1QmXSSQ9KkVmgOejJovWwMCMtxDxAz7lDv4a1JYYdcmyfeD8tF80J3CJD2icwMjMJ0LTeBWvlyn3NTu3q5Hmely+/QnjWMygVdnF4yW4bRdSagOkhQqBJvvp9W0A4AmlAVYpeGdT4U7xBrZAawbPKFtBPRMBUt+kOAY+dT2xOzUN6nl6Z/JfHDoWRjAVAIiMCZTNHUOoowo/JRd0DzY1nyK9ae5Rbtee7pcs3F7GmgRqad1xcihSBGrW7QLGhWA5ev2+2yOYyfOPvI7A4/KooRJbpfpqKEyhpXGl+wLdhScKeIuAcfvYIHMHSzTeuU5ApBK+nqV7AIyjtxXMfQE90pfHVJeyac5skqnMO+zEWFV/TWVN7cc9++J2Aozm24J+0uCP4Vxjn3wl6tfcfrwREq6zLLQYAAAAASUVORK5CYII='
 )
 
-const OutofMyWay = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const OutofMyWay = new Equipment(
   'Out of My Way',
   '',
   100,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     4,  
     4,
     4,
@@ -6796,21 +6796,21 @@ const OutofMyWay = (starForce: number, flame: EquipStats, soul: EquipStats, pote
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB8AAAAhCAYAAAAh3nDkAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADwUlEQVR4nK1XC5GkMBBtqtYAJwEkBAmshEQCSAAJIGGQQCQsEmYkgIRDAtedDwRIGPZ2u4pKlgl576U/6f2AsC3wexb5Xl6Bw7I8AOby/daTHuYXTs08SQBihqhZ+LMr8CiKyuVZwX8Zkcg07yi05lI5fZi1ePx8dHatoQEJNfDTCEmzrZPpJfAdcG1NvM3rAqoCwbrzuFsn3297BzyC9M8Cz6f+K8kBclQ4eEZyOlmW6e9+AVxvlGULPDAApxmBahzZeXyho8vyFvB3wPWGZbl8oWtbxPpKPk/j55sA+wm42vhTmvw3J3wYbwP7wcdRR02azodfFKjKfTQpShDNCH2dAu/1O0pNS/LOniHlDD+gxcMRFKZA0cH3i8nIKIWNxDjmZv46fnIGJ3aj2iWHovhaHmwHKuszLipe50RgJdEWRKLFZ/CcZEA5KUZgqCo8XjzWZgMVvN8tFZjPf58PKEUNEjOB1q3rGyyPbVtB13koh499IcUEbP26gjIGV0br+lrs4iHqlBtOwXgZ7fRhbwh4LU2V6unluBPJCeYE4hS+mHzgiwou/IiOjo7V1GkwQQiXZn4XPZ6AEMoFFAMmCHfqb+X581GAHAZojVIyq3anGq3iCbRyurPtCXyvmvwshQGZ4VHkILvzjcFYgrHJIUGCtM68BAHa/yH1GzgVgsCRkmoyXvCT0m+bxpk3cF2BKK9V5TqaUt03CrhD5cyJeFL9wguFRms8iTFMUEivM2StDbi/whlHlfcfOOG0Bz4V5bWAc+viAjcPPbeA7shzdAscjp6dMoUYtYj7+kAGUjGh8te2fT936ypbQKRSm6yKj0p9ZtX3fHsnYlReVRRERjmZLqkDSgPuXBw+IyLke0vohafgjmQJizf1AOvFA1SGq2rY+9wSsOYUhmOAEYAF1n+zdZymQIq5hcbBOaaa6lgp3XhTnvow61syO749ftNTRjqRvl9k3MDygdnfXOV0ybj+9pkPXKsfbWHoVIVzVfvIWbPVjYCvVIfAN/aUn1jPM1N8iETIstJkCdV06dxqWytPDGfzBMGp4KTYCIx0H6sNRk1kBfCZAaVyTIDqGqbbsKVeoqOIo8iczHOI9g04hqYpII4lfsgtc1Wfm30nY9XpYxKuSj0nYMaoMWGYxsOR71l5nmsHUvR0XYmNgEpS2xpZAJfE8d6O1iuiEyiE4X+NM3CObY5cVfvAZ2Q6Y2RJXGgXZWbDp0vCZxso2NkMdT0ggRhFgbNnQHnbhq6tyADozlRfErpkbg2kv2+v69n3+h/R2AXf7XAWQQAAAABJRU5ErkJggg=='
 )
 
-const ArcaneUmbraThiefShoulder = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const ArcaneUmbraThiefShoulder = new Equipment(
   'Arcane Umbra Thief Shoulder',
   'Arcane Umbra Set (Thief)',
   200,
-  starForce,
+  0,
   true,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     35,  
     35,
     35,
@@ -6834,21 +6834,21 @@ const ArcaneUmbraThiefShoulder = (starForce: number, flame: EquipStats, soul: Eq
     0
   ),
   'shoulder',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACAAAAAfCAYAAACGVs+MAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAESUlEQVR4nKWWgbVzQBCFxzlpgBIogRKkhFVClBAlJCVECZRACZRgS6AE/9xZyxLJ+897e473hLX3mzuzw4X+PuYf7nvfbv4FQITn2dXP3tW92k44BfktwGyFdf05wFApnqhckLfJvwGYsSiE65qobCsjFqa7SVq3dKszYgYKYxKQM4hfOaBZ2YpDOPZ9EdnN6RW1eqQyZ5A0o/ujpnlg9Yh2EEeAb/lakx0tqZ4HPglfy9UbH6WcFdebAep9imNlXCqMG0eINweQW8/zXEoRvqdG3420LI9R36ifJmo6vqFzumajuKMsBBepOuidpCCjoZIoV+HHyzM8IS9UmJzfHtl6boeNGg70k2KQmqLAlzThsBDO+t5pDWChZZJEZCOx9yB+je7UNHso3W9rYP41UTR0AUVJtYNQatuuLsDcII26lkXDEPnicwpk4fw5mlkSYSXiZTmvbuDacbzu5tnmxcB5te4UFLB1wQLMKA4KD00tNCkBTBNvIIiuyJ25gObxaExkFgaAaegRdF2IltdRanNgE9dfuubiyosdsRAQhBhgjHhF+ZXncM3gGtLX9yPztfRi2/XEoJqX8rdlL3ZxiLdP5PxcH/vYTOXiUvkucnuOXaHZJjgFcTt8P6Rryc/dav5/BsDk7dMT8Wfr0zR9oCBYVwuEaDpCKNSm8ijlIuUmuI5p0vRIE1ob5WHrLgAmdxA3xP5u0thNaB4bBDkQrDZ0mQDgwEDxTa1e5+c1577lbohaYBeeDuBlrfwvAwv7frQDEQhs1y5bI4XVdnRNItvPDj1VbH8tAE2zbdkLcpJyody5ys9GpSbKaqMaJD7BnKKepIqxCCBQOwCwIys6+T2MS2AcIGDi8M7R15KOpZ2bRtRUgSzyuI1UlMFqOyK34hLVa6Ik9yVFUTbRQ9HaWlHhodNoh1HxjlB0Z4ex7V6Kd0bbvQV4SWPkLRCqvGCbx5GCgLvXFXYmImaL0jQjA4TrcELSAd3S7HUbPeoqjivZYD1cRqpbegdo+8DD2wm94BZrEbdF6Bbj0PC9JKJP46FMTag4obrvxPa+N+Wl3R59BHB/xE7x78SHgaIokvxbN5b/XlEvL63HuUBe9OxQLFvTZ0fTw3eDAOBr5Zq8+O3FDabefOq6UF40EHfBtJaC27VNW5AGTkvRDZ0n1yEuW9E33wS2AFcA/lTiH/y5pFGIM91upitGEaKMVjcQ9Ym4uGDdgxOqz+SF425DbFFEH545YBcyteDRs+Ca6sO3hvRleLydZylELrb0ziDxBoKaQG0AbukjHz/JZMQfdM+sdyHw5xwk+Uh+BPCW7zWuar1zoe97K/KTLcECMrog8vAh+jOAdYKpbu1ex+M2g/+Tm+sC0jgvoLd2ewbgL0finONID8JnEGev0WK5jgPdTbvzjgBWLHT+u2L/XZU/QK3jkwOfHv622PTl/Hh8BMBNTT9b7X+A+QZ8Cv8PaowwmAcPRCAAAAAASUVORK5CYII='
 )
 
-const ChaosVellumCrusher = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const ChaosVellumCrusher = new Equipment(
   'Chaos Vellum Crusher',
   '',
   0,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     0,  
     0,
     0,
@@ -6872,21 +6872,21 @@ const ChaosVellumCrusher = (starForce: number, flame: EquipStats, soul: EquipSta
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAABsAAAAgCAYAAADjaQM7AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEEklEQVR4nK2XjZGjMAyFxcw14CvBWwIpwSkBSoASQglQQlIClBBKCCWsS1iX4NOTbcLv7c7ceSZrfmx9fpIss79o3Tz9/5aliyXM+y/+q454j/0jV5+btwvSRQRkW5gMqsuMJkf/3HJFdO/Xz1awaSABaa2of7VUXpq5R1teb+/7p6PyyvPu3NeKJuvE3hksu3QhZjkpqvkGBuAuRTqMWF7v7p2A6lrLNRbNJsTuobL4wt/vVlaXVoqGZ/VVh77W831lLHUjK2HD6AG6GUfDtAYdwWRACKqLcvHX0oP7Ig+ucfTuw+qT8TDnCLSFpTTMDgb6vmKlj7fR1PcFUTkcG9/YnGH+2d7o2nR01orKpR2QRSPSFzdIOZ1G0a6Mn5XZaToaKyvzvmXfNvR1J/pdkzd5TuM0+dYEN/vXvJ92Cpd2AfP3wrBbdjCfIPj5XtG101QYRc45AnDg9P5sbYwr8TXRR/PexGiwC/v1MHpRNllLWikynLWjdUENVgsIA8l2dC01KaV20suH5hiEkpFd1yoN71fYhf2kjIqioGEY5AWCjglDqlAMKmveeXvO3C68FfoqGOyaGRjtBfsP3htzzPDiwZJ5MTKwr+KkD4Z/TgJEgwtznfNq324HiN0nbhSFAoKXLFV5voqZBDG9gKtGNoQ091UctQgnQNbZGQj4aINH0AAtcoQkj+8sqZgPgGUIHm5ulRF37lqDghlU2VjSAUSTOA52NwVxgvsa3k6jHUVwcqPsGRcDiSKa3OlTWVy4D4CtO+8qqMI8zEdyJHt0dMRYfmmR1lpLj19qACT3LfttQ+y1jHVib9lWVb8ZsVFzGVjA37Jk/vE5WU0jPXIzA9BD3Y2V4YnisoUKg3mTbCNNbG9WtVMmK+NA5xKbeakMZLU4mCMQECgtogvNDa572wDQHWyVHaxg6TBRRw8i5fsn16VnR+bqqIsguAjh1LcwrhtxZ2XeUwU7f4N5SfVxo1RpPtdGBsJqc1pFlk3FbYDkyuzZNwiFLXWxOAZC+UlAaSxQOz3HzRxkfayP9NI48Y+VeayCQyKgYKllYMPHwySZJ+o4v9vuQaUz9GKXDSa4TwoBb1yAUuxgB0D8LlHdrCyzidpyOWzmIvxsAQyVo+Qk6e8T9QxGlnb1G4RTYRj5Y4czEkcPF3pReKQspadUEm3eZ5j/DDGC68SdNoCQiMv4WRtAqYjDxsb2/oOHAT6pCwG7RXW5lKqyM7zykc+nEJGlKoGOONXTt8tPPngi0JutO0OhTnFJoKQKMdOFkpNiCzqDrYGvABQfP6eQocYwaBRQVsY0Z/dR3qaxRx8/p7AZmAzBPXISf2Llb5BAVFJzDvoONk9cfMwgU8RdcF18R/EsO4X8FLaCysV19W/Vt4Bl+wMvtGtqyhrFHAAAAABJRU5ErkJggg=='
 )
 
-const CursedRedSpellbook = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const CursedRedSpellbook = new Equipment(
   'Cursed Red Spellbook',
   'Pitched Boss Set',
   160,
-  starForce,
+  0,
   true,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     20,  
     10,
     10,
@@ -6910,21 +6910,21 @@ const CursedRedSpellbook = (starForce: number, flame: EquipStats, soul: EquipSta
     0
   ),
   'pocket',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   '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'
 )
 
-const SweetwaterEarrings = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const SweetwaterEarrings = new Equipment(
   'Sweetwater Earrings',
   '',
   160,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     10,  
     10,
     10,
@@ -6948,21 +6948,21 @@ const SweetwaterEarrings = (starForce: number, flame: EquipStats, soul: EquipSta
     0
   ),
   'earring',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAABoAAAAcCAYAAAB/E6/TAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB7ElEQVR4nKWWjZHCIBCFlxkb0BJICV4JlxLOErQEKcGUoCVcSoglmBJMCaYEjiUBlwWUnG+GCZINH4/lxxXE0ok2AR+Kg/TvY+Js1wDSUYTQC2DJWAqykKYF6A/POGzTWpfCdO5F4KgdPMR3uNsIXQjTc8x7UEYiAQsG4yCvFIG2Z42u6FeCw2zj052HXK/XIpBov4T+uWmQpgz91DhDPSzX0TAMixxZWMahgEx+XF7QWdd1UNd1lMtUjoIANo1JDgHqHKxoMczP1CKIYnOwEpBX4X6ysPv9HsCWgARZ2m9jq6oKYIscwbJpDLQU5IXbYF6hRbD/gqJt8AmInw4RjMVFMbiJ+75/CdLkqIF3IqvLATW2IUQpZduSF1/J2UUkEIIrTEo5LX+5906coovPQdA2fpg7Urgwdqrszbl1BHVp4LSX/n1w8dnhsaniGy/nyjmx+kaAgakKIHEyJDvhGy8TN0GOZ+MG4GSKwj8C7TOg6KxLwAL5xDcHC8P0nwxXHZaBUBsDeyCM36SYy7adho45UfP/DYTRs5GD1uxJ67WBdTh6KrKEnWpTRqwYyI07WmcKhzZm6o4Jx5S0nZ8I26Fp7GNFOpXkmXOHurDfYyJm5COhjnJB0UeZd7welNVcGSCdF2BtKeirgfn6H9ctGts5cEVpAAAAAElFTkSuQmCC'
 )
 
-const OneWhoHasGodlyControl = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const OneWhoHasGodlyControl = new Equipment(
   'One Who Has Godly Control',
   '',
   100,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     8,  
     8,
     8,
@@ -6986,21 +6986,21 @@ const OneWhoHasGodlyControl = (starForce: number, flame: EquipStats, soul: Equip
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   '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'
 )
 
-const LuminoussFocus = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const LuminoussFocus = new Equipment(
   'Luminous\'s Focus',
   '',
   100,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     0,  
     0,
     4,
@@ -7024,21 +7024,21 @@ const LuminoussFocus = (starForce: number, flame: EquipStats, soul: EquipStats, 
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACAAAAAiCAYAAAA+stv/AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAFJUlEQVR4nLVX3dGDOAyUZ64BKIGUQEogJUAJpAQoAUoIJUAJoYS4hFACLoFbyQbMT/LlHs6ZDMYY7WotyeYfOraJ/t+m/Js9gWl6B0TRw92m7tq5fmdvTXY0G7R23AR2yhAcphg90KUUBxcSBwWGzlCvTwBOGux5bX7H7K5rK9LD0JFADSc1xZSmMe4ipkRN058SeFeWwaWMTp/nebLY6DoN2/pPAqrRLJGm11PTEI4UjSEZU1BV1HYGuJQa92lNZVc4IrUdi2vSDqOjgvK4o9C8aQwuVJYDuUdfY2CecAjEsrZgTKRKarlnEvKsW8EZ+EtT+4EzAounGusY4dp1nfdgJXK5Wunf7aqGP7eIBxcKm2D5iYBSGatwodfuXQZ4t4OAt6mLgSySZdjHwsCa14pCZ/O/EFheuEraDBTH8fLgeo8Brune2zHuX+uYAi/ztOaxz8C/EFjaq2Ii2wi+yq0+9Lfv/G37FwLKqmD77jq19JZO9nCy39XmuQP/6v1MYG/8lMR+AIJTl4RUIebSlKPl+/yTNs0EUH8nRJ36SCSh9JCWDF48EeQg0DQyZzE6t566MyKTxUyB2c1LkAkJQV+JzODUQnABHQzdm4AqrQS8UwVlz4rGnHE6Svsn6l6yvHujbOrJT2ELLM3Y8X9sv6cg5VreLkSktmPSzeVQAGEQ7MQVunHxFtO2uAftTdKeFWEyG0C/wa7pOWWMEFBhZqZHAg/ycDczWDw3d9T25ySFpUgVXVREDDHBYdVPokJZ2sBMkjUidNnRWbvWUqGUBKHPktXQ2BEHbzO71wE9LGHqjKE84M05QeJpSL7WB21qioNtKa4dPu+EURxQkFjDI/rsuCiAYIACMArLgzYURLSY7dxGOBeZVIdUXnLiX4MfUx/x7uXe0jhmdA3JiwIs6stesysXcZR2shi+AtLyp1UhTq0KXbPdz5lAYJSU3SfA9S643o+UQkeivvGIZc5rfS+NKBCLOJbEfF6YCYgKr8LKJEScBAZAyaAowYKXKj8FP5B4gMS9FiXu5Sq/6WnjvU9ABlC7EQ9WwAgeNFChsMFMg3oB2rY5+pPCVkH/8DU++NmEw4gtAZwR89rrmg77w6EUc3F4uThKoIKVE0vUXqnOcoDHVGPtRR14UhVvylxaMp8GUfdOMgGebbDXvFU48E07EBhfEYXXgdLIStf3KTyPSOPAUbQNXREDBRRooFCM8TlS9uCdzpFJWL7YSCZ0w2r7K4EBM9kYx0DtLTWfdm4J8r1VINEJid7tgDP4A8XrkgXUFogcpwrb4OIVOdt/KhCx65jonx9jhFOS1xTAUKgtiT5jk3YSg7dBRhnqRRSgQlSQoPFsRtYBsV1/V0BBIskGJ5tKdhvMg7ODD6aIBC5GxqwgDM7NeMqxDSTNxMvp5P/zULqosNxzQnEqlUqAGgC8cCzrsxhVcl33Im8kvc2uhCw26x+WYFZhGqV6TWZgoeGyeool6SfuNEx8rWRpuNWNS1RPAeCOXA1VKOAXR2ih+OeJCDXxhlry3A7azzRWIYi56ABcdrdtgcIWVgrDtTHVwf3NJwJs6aJCejsVeOfnFam950hP6YvLZU+N55R0kBkFUCrrvYzfzxz8pACD3PDik3OX0ydyXxxYxuWoCeD9sdNAcvmyLVr7ngO/OWL+/yMBfjjMSiAeZJOfiUCM6vNnBrKkteXZKzj+IePwxfpJAZ+lcgYnn0jsyrX2yitHugf8y8H0t++CMyJ0Utddmv0EPLd/AVR1ZS7/wJOoAAAAAElFTkSuQmCC'
 )
 
-const AriantCultureExpert = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const AriantCultureExpert = new Equipment(
   'Ariant Culture Expert',
   '',
   90,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     3,  
     3,
     3,
@@ -7062,21 +7062,21 @@ const AriantCultureExpert = (starForce: number, flame: EquipStats, soul: EquipSt
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB4AAAAgCAYAAAAFQMh/AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADSElEQVR4nLWXi7mrIAyA4/fdBTgj6Ag4gh0BR9AR6gg6go6gI+gIOkIZQUbwJoj4rNree3IeSMH8IQmB/oG9DPB74kwPW/DQPgG4wCcX/9jCBuXAW5GLaZIdT+kU+JlelHME1hKHOwM/EHX4aSTW/R24qAA6xqF+dtjWwOEByWMcy1sGsa9sO0maAiTJ3GoQeq5hOQQqhrjhqLc7BTsNuAMoBcx1gbscyHGBGawMdGr1+qSCBj2UlggNZ0WcUwRc/GGgKpyjYyffxhikHAe9EA0AH17lPCYMlFoHXuiaMbh96WvoFp4kMf5nVuepqw8NQGNTKSEuBOR1oaEDeKDY6O6froY+fVhog97yEjgEXoK3BoS0zYqCfgm1SbsHfrJ66TIrL8FLadsX+L5Hj0eKhzTNjXuv5SMw566FHI0HQQB35ROwgzIMQ687ErO5ih8g8tr05Zk3/gls4D92tW0eaXjS2NJ1u+J8CtbQV5sCY6PbBbo/wG3lx8U0/t9XPKQBFgQEKQQpLA/kXmn2Mo2R4Opvwe+Ch+UqSZSSOtlcrrB6zadEHWCRTapL+B3w0GP5Yu4mY2Wj4cyl0ulquFJjQalTcQm/Ag9t+YRPhQy4gn+aXLeFDpkzuQSTCymCWzXk5nH8+Pxdxv07MMXNwM+Mm+JLwhizhn0LdsKsMdtovzLaSkcLpnwzReX704lepr3Zbu8uMK4Mz3u7WupTbP0wO4XeBWslqExXrfJ5fBBQMUmq+6XzDLw8gZxJGbme2qlSkbyp1dv3b4OBCkcSJlB0cncMUukMoggauhnMYDtPYKCF4GTooe4zsPPjhbpqRd36hiixT9AqK0A8Iyi1IXw3x0C/KiAaHvH1Lk7LVK+0w6xm2HIRoGey1ZxqTPfVjegOeOXawMSTtk+Uj9AK78mUxZW5L6dYWjM8Gl22AvcLNWSE3XxbML3WD+ZO63ihjlW1uIzHj/lONW0jGp/mdEa1fg/hC139Er4EW6hsGvDQeto629gdybvyKNAwMv6FNxXSa+C77049TZig06mUJYV2KUn0FLpvLWXrL2iUxUXR2M+pT8aTvlcO2gB81ifWytVePCv1V8ky+q/YJND2C1rRyfX8bvbEUjfJX73ipj0sckxOAAAAAElFTkSuQmCC'
 )
 
-const SweetwaterTattoo = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const SweetwaterTattoo = new Equipment(
   'Sweetwater Tattoo',
   '',
   160,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     5,  
     5,
     5,
@@ -7100,21 +7100,21 @@ const SweetwaterTattoo = (starForce: number, flame: EquipStats, soul: EquipStats
     0
   ),
   'face',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAABoAAAAeCAYAAAAy2w7YAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABz0lEQVR4nLWWjZGDIBCFyUwaICVoCV4JWEJSgpaQlJCUoCXEEpISzhLOEqSE3D4uOIThz5/bGQWZhc+37KJ79mkvtr3tcDNBr/HnsTnlkJd4+Z2tiA3DEJz4Vdaq/X40Ucgg5dTfsxkGyDiOf296OCTBFoHW2CwQFECJ7v8baAnAC+q6jhVFwfq+X98K4QbxTNDVkkNFGXNZ3XJe+BVVVTO1nPOPZ3P8fL6rZ926/KDKC4INzycrjkcmjTqYVBPENpefbU4QIF1dM3G9bgJxgrAYJgPSliUTVcUyAq+BOEHmZEC6y4UJGkMG8aJw+i0CmQYlgPAsU2cgp35GwLmQKAjhghJ90PZUY8/bjR3v9+jCdqi9IO2IcEGJgtCF0e50CsL0PkdB9tsgXFCCUUwfqD58MBfECfJlFxbF4oD4YCYkOXQmRFsIFoJEQa4Q2DCJY4aSRVJm+iBBUCiFNQwQ0TSq1rQqnzlBKXWi9oaUAAJ/QLnxWYhmXWoxqj2hcAEIiDkvKeuSIcbGayV926rTxGWzQaHsAgSfmMwIoQ3y72IiRI+7IHDfvyFqFs602A/kUjMVlXmeb/9PTP+adEmAVJG/YbkBtk0fdbbJwPPU/wVzqDv/vVhJ4gAAAABJRU5ErkJggg=='
 )
 
-const VictoriaMonsterMaster = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const VictoriaMonsterMaster = new Equipment(
   'Victoria Monster Master',
   '',
   33,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     2,  
     2,
     2,
@@ -7138,21 +7138,21 @@ const VictoriaMonsterMaster = (starForce: number, flame: EquipStats, soul: Equip
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB8AAAAgCAYAAADqgqNBAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEYElEQVR4nL1X7ZGjMAwVM9cAKYEtwZQAJSQl4BKWEtgSoIRQQigBlxBKgBJ8ev4Gktu9+3GaSQgG9J7kJ4n8omia/p9l+PLgWq/8nd+T69c3z43x53ZLfuf2sOTfIl/qBYFmHjzLLoj8Rv2VfmxqSc+2w/Fsgwo/d5H7BS0+ZxrHySz4Y2rXa2XWcVRTS1XThfN39/vjUJYB+AhuLpRlqdloGAZ6Ph9UlrfdDUWRU57nNA0tzWtP5UVSXlzDemrzfDd+mqbh1GY7YA+eCg0X+b4sEICDQGAZaWjtngPYHJ9E5Udcp+L6HXDAM5HrVdA2KuIgdEoA16SUgZnWPb0yEKAFYmMx3SwJB+ifD8ArazovkGILzmJTJlLdDHwiA4EDhkaK5weicysO0FsdeR6ftdw5SFqUAaZE7UTTBztaTBZA5o0DKmsXKVkS2GUQSIBfmUbWtlHSkmgygldPdjSQki+9aJFTEJixJRLxMrP7zyW40Yk8gJHuAuIfjuBYUXJ3MbLWZlEivNwBOw2ieuaZzLq8xazYvhEJ5Nfe+E/NqH31OhI9Xcq9QAAs6yw0lL6ywPMTD1lniBbrcrJkRAGnOwIZtIQtzUmZRiZH0ibyvGFHG6e8DS1IW+Q+AMO56G0G+kySyixw/bmaTiy6CyEBCA4kkIWEgDH4F33PDUcC3KXdAYuGH+gEP8jsHr1JcwTuSdW19VLZrkXTuaNx8qhPCTAj2fLa3SodmoIvZO1XYMTAVHC9T7EB74FHEo9HuLZNI+1aO9msZHVO+nELBOL9ivJKsKYUDTcZ9jwrB85wZxtN/WUFJF3tIJIjsNmq6mrLPQBYleaiYgJ3Q4A+XNSdrYxHr4zipetDyVRTu3nuozYEHHBIu1sDAZrOUwwEYF6E3i5xTLyeahCJdDfZqNlDx1vRcghdF8mBiDn37c6Xke3tx+jRGX1n8z6OU+21MTAiVdyvBZdeOIKAuNO/2s/AXcRC693RrI/n2zflcq2SteV838/AnZlIUV5cakcBeqAA/AP7/gUSYJx2hSjTPVdOB3+f9tB24wskUrllRmwd13zd2m4leFlllsArYpurtU3sL63NjZSbEfDXDrbjUa7JvSvEkbqN2W7coT+jTGa/kEQdzL6TvTU8L4p4rlpMtTjsQp1zDZq0z9xh2rY8Rc/fZ7UnQClxRO3PfdRNNzPX0veiN2+vIubPR49WKXrL2Oz1H8wD+6hzN6ITv+/rHM4HfhAfvG+BdSBgMlCaiI8kiipmwAP3dzPVjDUvSO/U/vnZpe/eF96K1Xc80ybd3BazJbGx85VuO1CfsQQYwpjhF/6/vtqT2oNNPH3cTdBmzQ4eRqWUkHhTygDFHiPVDhglMsMf/FbVviR24HjxP/qDA3ZkpJ6SOBpATbriNZ6PtHN49L8THL9js+Cu6U1+ZJkiDyRmOlkWq07S/g9bzVl8wO/RTn+XlBq1tAP3w62ldEsH9ALeXDvOV39+Yb+r8xvU/hv/1UDa07kC7wAAAABJRU5ErkJggg=='
 )
 
-const NoPlaceLikeHome = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const NoPlaceLikeHome = new Equipment(
   'No Place Like Home',
   '',
   110,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     10,  
     10,
     10,
@@ -7176,21 +7176,21 @@ const NoPlaceLikeHome = (starForce: number, flame: EquipStats, soul: EquipStats,
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   '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'
 )
 
-const ElNathExplorer = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const ElNathExplorer = new Equipment(
   'El Nath Explorer',
   '',
   50,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     0,  
     0,
     0,
@@ -7214,21 +7214,21 @@ const ElNathExplorer = (starForce: number, flame: EquipStats, soul: EquipStats, 
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAABMAAAAcCAYAAACDBoQZAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACe0lEQVR4nJ2UibGDIBCG1xkbMCXQAikBSzAlSAmxBC1BStASpITQAi1Ygm93EY9I3rWZBMLx8e8BOey2wP8to58jDKRq4TU9uX8vu61/NBqfhhqcc9B0Dpxttrkc/mDzPH87n4RFVUd1BCofBtqn5Lauip9h8fToDrUEIJdiO3uHK9TapmEZ+r84J7dF97uGvq9Ba7O1R/N+5H2flGVlWXJWhah4IAUiiNZnUNJNsr5tQTd7lspyPM3XlQIz2su+JKyq6wjLEtOLlArgl7Dsdrstr9cLXdGXQu77HmN5Tx6UVCalJBAQkMx7v809Hg+ep6L9EYYuoKqJ++O4xyoCh2GKUMy8/ZwApdQyTROfWuCnqkJGm6bDvloPMOCxFodhuADzd5B3nt04msO6ExbxoiDlIFBlZ7oLMH8HCSlQGQEFg4wZ8SYMeIUeWPMSioISOUKtKo5r37cI1Iv3LksmAAWAtZYOucwxiNxf73y4fuFP/q5qXgMthWBVdV1xDAnQdd0WRwwpx5HqsaUixzL60xMUlOx97+dTu8H87GF2tNjDuxksEbUmxaKbzgum+pUc9+TH00LQxQbpunC5Kww2uV9g9IWQ+C1WRR7soXgDDAc/vqLb6UGJuMzvb2COWct0o5e+7TnAz+eTAZ0JrjWojpKgG4P/FbtZ40NA+611mHHJNwWBe2nMa3opc+NoeVEcOyqkzBlj0NWgkVw/uUnqqJJJFamLF5lagtLlVhg3PgChNE4HUmkQmFRtsDWYGQZ8oQXxgu+JCZUfVXNS1nURdIIFoMvGcV5iYVJ83vNC6si1o6IkLCrEhfwohkCfabvq+XePY1wYoam5lH0B1gKjYbgC9FkAAAAASUVORK5CYII='
 )
 
-const MidassTouch = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const MidassTouch = new Equipment(
   'Midas\'s Touch',
   '',
   0,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     0,  
     10,
     0,
@@ -7252,21 +7252,21 @@ const MidassTouch = (starForce: number, flame: EquipStats, soul: EquipStats, pot
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACIAAAAhCAYAAAC803lsAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEk0lEQVR4nK1Yi5GjMAyVZ7YBUgKUACVACUkJRwlQQighKSGUACXEJeASQgmcnm2BCZDd27k3Q8JH2E/Sk+zkiz5jov8LdfTgE5FpevJn+s7lvr4cy+2bxj8y0XJLj5Q11rFdMh8jolue9qLo9xjnsz/nz5YfidyZiI5SitKc0ghuxgR3ex1Tni7fwPaes9VjTKPueSz9eyKxwXCa2uhB10dCFHFkR0XZZeAJiZ58D+dAeH6t1rZn3dB3+Egkh6eYpCvI6jY5EQ0TXydU1AMVjTsHinriyBF112Rj2yg31q+JCLKio+6syDyeFN8VFe1AxtxpuJV0Sm7WZrgpSsobZZptq7XtmZJv5/hERGW+fCPTk+Y0wWPA8PXr2djwv5CNMWEdED3OJV3a2zwA3oFtHYz5EyJSp6GxPR9NORU87zXqKR3tNZNg77PMm6FMU07DSGNTEmuTRc4ErDTKIwKr+YTIxHB3lTokVNf15IxB4k5xHNvDRclwCg1Nr5jUCVVTfySAMYgans/Y3iJEFAhMU0w4OONHhOxzcy9tBECiaVxFVFVlyfRNSOaYAIdObFYR8WTMhEEoSvwLKd/MVt1w7A1d7guJ6cZ2TU2Kz0Gm5rR0+aZnTK5NXyyBkcVzKtZObsQKlq8Owlwxtt50V7L5h+d57gpSl6UtcQD3ccAGY/Bkc1ThEJwMSKwwa8R+vFy+YYxDnqWpK5dL4+6BRN+76TNaIAQv994uSZFfasZxtOP3/n2Zhx2diX5RIFSHO0V5Y5eJNI02gpRvrTVVHJQ8Xd4sGj0TDd8R+7yKF+OIvB4rDlc5fZEXqjCVSBR1OpMQQUpkMGhX8YRX78DoGlbHa4uQkcmB8/nsI6BtygQuReUcEXsShgqTALMgHy8WpCGlXSJWJALA45DMMAzUti3KfnGiR+TmVw7FaoWZyiIjKA21/sYRiS0ZsiRwHGDVFt6JTC5vDggvwqraMBIxfQc4UmnbAO01xhB94dlUxRL93Yh40SZWqGjX6JRIDwZaeyaL2LAiEFTajIhLR/Qi1SJCla76TmQWrQgKfSO5LD1ji+SQQAgRN+yi1BKY55STXY2M2BBx6ULVxyRcl7UTeT2lB6YQKgQM/2KzJbFHxCLOmUS29AMpX+zK8oDAO0JCMh83szWZap/sHhGlknFCboXEtZsIW86mVpTX5tBzAXd9ao0VHSF9Sum5fH3pblblo42RkrYMgIT27mKgjo7TgA13KwGzG6ZN9P795wTWE6yoiASweKV3yQgJiSY6KRCW7xE+bhVZ7TYqstcIIWQsYe00EZJ4X6N8u//VLz3gxAO8QhIYXCpJWrkgJLHTUdEVwWyk8JfXN0Si4ChYL530FvQVpAyTwcsXb6A077gKZeYIgIRUhxcnWmzqCRh/rMjsERECsf9+zG2fXx0expKZJzUNl+0ypiVnN1bu+Su3GyFujbTzI/lnERGU3Alv693VOLf+MnEpECEDsHl1rov63VhBS0p+nBoJX0gm40XqKef44P7yhIjDivCCTDyZwf8tcHobexdHEdlj/a543i830webf/ob4S++IpwATgXOrgAAAABJRU5ErkJggg=='
 )
 
-const CamperofOz = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const CamperofOz = new Equipment(
   'Camper of Oz',
   '',
   110,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     0,  
     0,
     0,
@@ -7290,21 +7290,21 @@ const CamperofOz = (starForce: number, flame: EquipStats, soul: EquipStats, pote
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAABoAAAAiCAYAAABBY8kOAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEBUlEQVR4nK1WgZVtQAy9ztkG5pUwSqAESqAESqAESqAESqCEpwRTwk4JfpLBesu+tef82WeHEblJ5iaZD7yOBf9veMeHI9AyzzO01vuCMeZPmll+miZYa1HX9XIEe/GobdtdkC+l1J9nvqIoOhlxBPJWKxAEAaLEIgss2ryBzXIoCxA8KYJTSnKWFlXdIKtytBMwjQrjOMr1LnT7S/JqSYoAQaIRjQHs9IRuSti8gqpKmLKh55SeOyCyJBdBK4O2nk4APwGdBhkv1k+jkdlQaPX+vL6EuPt2XAEtHDreWDPy5hIhspgQSGMQ0ky/wJdZntsOdpzAYvwdR+PKqxO9m6ZB3/eYeo20pxVVAn3ws6n0Pi4dU5XSKIroxLhLj5jeDPbXIRFYr6txIkMcx/8jaX8N3ZXQUhQFh+P7uyVJEgkzfmDab0CnwQm4AgnApjjLsg3o13EHSMLZdQPSNF6WJYLnjUs3DKB14IY3d4FEGYO420F0p38AeQe0hWcnxvKJPSmfBVE50vBjcySOd/juFtAeHlEOB5CG7rabPdS8Lb3B56Bd/aO/B4GyvPfArYQVywRkWZD6HqTgKJf17mW/3z9iqW1ItMUKsnl20yP6iEGaRiMsFebnE74fUjJO7C5bIoLDSgiWS0ODZwWSv++ReMAfx6Xa92Wen87c3BcARRXErlWAjeky+izgUnSvMrhBsnluMLBHuVuqyxKlnlA0HeI0RaGTvcE9K0vyCu8q16moSti4SKsIecsd01nIjrHFCblbB+qlLeQ1VXuSy/NJCPJwbPz5zLBr/FK9t/aWGlwRJAiIHIrIULc9IqwtW+GqH12eGWiPE5o6eejmlP73tOm8+Qm8MkZRVaRW74pVFiHuczrRkDa/F09U4No8r42UAvGBGBsQEalfeI2ZU7ccugAJtXKmszCtDNEmgWum1OhgLIasI5CQzhcJKTXQVqHILDNvG5enIMlsLcx5jQNbWZA/dT9CMRiBVDrb5b4i9/Ld+8OJZDi5nlIyFsEEV5yVe2vW0w+fFtSX0iLoweeSIlPkjT2BXAHtI6OP8l6OIXLE4p5UqYqqK+VR9srjnFp9k01Hj070+A4kphuj6TDJeWSJqi50j4erL5+fC907gxmcxyB55Ixb9W/HXbtdHweA7YqpKg+0/1SGXA4xCHdTK/ce1Totolsz5OTuBkXEEBCmQnQAYSXmY1WuD3MjBZKMZsp22oGlcS8CTPfUl+MRmuorFAziqI5qBXsZ30PHFuRUhXkTSiLGrmqZiQDGkaLInGj4qi4lEE7E9OANVo8kdJt7W0VkbWv32WdFFg8suszmCBBiKyFu9g8GH+fdI16Y8H5InjFR1gp9u40fge4Oz78omHfGP4NbArN2Jev3AAAAAElFTkSuQmCC'
 )
 
-const Courageous = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const Courageous = new Equipment(
   'Courageous',
   '',
   110,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     0,  
     0,
     0,
@@ -7328,21 +7328,21 @@ const Courageous = (starForce: number, flame: EquipStats, soul: EquipStats, pote
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB8AAAAgCAYAAADqgqNBAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEw0lEQVR4nK1XDdGjMBBdZs5AkBAkgASQABJAAkgACSABJIAEkPAhoZHAvU0IDbT0683cznQCIcnbn7e76R+6l43+n3jvJu/At+0hicTP/toQqQ6jwE99HpUyw6L0b12Jkk4b8qLAreVTtdKyeLQq824hfhN3ncRDGN+vvQP3dm0phQPyNSTRr9RlPaky0ccLwChXHaFIViPlfUYqC6mTE1UL5hdz3r+AHxuGlbY+hvrpSinGtfsh+YMwZC1RX8CnLYmxoCUoScaSwhRrMSbTdAv6DbgjNqbmcZlgTh4hNnAr3ie8i8MJ3wbod/Atlww2kZzAAfzWGqDrc8Ea++Ydyqhq1usU1vO+bn1PtG/At7mGVQO4jvgJeJhkoEnv2uXaueJ7o9et2hNzSRQ19wp8tFyGRCUzzvH622d3pHOafZKPhPMT1vqXE36Xr9z+zj3X960sS2qa5vptS9OUhmH4CHbFseDb4/Eg3/ddBWx5PR0WI9128FP5zfPcgl+B3DO2cRwpSRKNc1g+gaFXBZz3Q7BRz7MIsMoC8vwFkPq+pyzLjnkGnkz+k2u5h0UbL74CWiBXiiLT1S2U8gDv+5EsE11OXoHdkLkxdxTYoIDxVAHNFSxE9cRoDu7rlbIiPDaO+UpJVThHGfi6rs13AC/L8sKVE+EYuOs6p1qRBh7bgarmIBollOo1/C5hfdJJpJXJihjE69OJokqQzT0uUg08xMpUVfVCuJPlTfMkjthbZF02xNjbtpHnGeVPz+i+XkAamHTbYU4Y5zNwCaUAfGv5SYFpGg7L1SCoWXLSfX0H1YurCGXQusgM2RBTGw6Al7q1s5TIhCvwO/Dt0Qu4rHIs3w8Iux0aHBgm8lWs3egVFc1iQTcz6xj4KcbtHMofhD+ozrXkpcKJFGjFM+gK6DxXFeVhuV6Hm0JMpvS6tb6YEPPSptOT8yLE2ku1PIqMMZvID+AwvoIs1nIBl5Wa6fbAQKaUw9QQ4CIOKRgUDjAHMxGLjq8vywkoQjKwV/1MHYXnD+3VjQsGKY/auiUulZZIbDkzmfN52zCP61Vdp8bq3bMCFwivmxD/lbxo0BngStu2OtUQAKRdr/t/01Qbg3u2qLDlTAybUtbyvkeqiRIKNZpgHr6zG3U288UC3v2RDGxTbQFvds04FIWpAXmt3Ep4lFdtpuczkVcKfEdzvV/CWuQqX2Dh7scKwk1ATEMdxlkuuELtVoJwJuXlKeZzq8hP1IHlxvwQTivl1Ee150uWyXMc1f4Tp2ukLjhjeSYWH8H9/Sovec6E6PtWNwSOE3OBS2mbTzTsJOYYI/xIM8Q5PwPNcG1UGc/Z2JdljjT7Is+5wDC5eOT4cF3mPM06ruWMPtDORRP/aH/e/1+YsmpIFkURcf/n/dfSegU/ajv3Zma8dqOjgFYdW9M41VngRdNhnRc8PcDAlljc/1neKfC2tvMG27eRCfp5nmcdfw5D3y4IS0g5rJrgJd3VOqME72eLWVhpZjorw7KXWP/WcgZmQKdp8I7aAvOo26lT2SwwiyUopIHS5X5z0YroyaZ53Fq+P2cA7jEeTZqBORyusKJhGNKNcGpkAOZzMCSjxXlnuf1gG3FAT+PgyWim7yVwnq2bXy6WfwFYAnf0K5n8SQAAAABJRU5ErkJggg=='
 )
 
-const CloverCorsage = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const CloverCorsage = new Equipment(
   'Clover Corsage',
   '',
   0,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     1,  
     1,
     1,
@@ -7366,21 +7366,21 @@ const CloverCorsage = (starForce: number, flame: EquipStats, soul: EquipStats, p
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB8AAAAiCAYAAACnSgJKAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAFZklEQVR4nKVYjXGjPBBdZtyAXIJSAikBSjAlQAmmBFwClGBKMCWYEqISohL07Vv9Ejv3zdztzF0wlva9/d/kRP8o+kJXs9Ltb+7+CdyJcq3JGFP9BljXNPHzxI/VTwV81/Hd+PHl+9/A3ffXTErX8qHrbm5d13S5BNx3oi/X00e1uBLgcrm4+33mJ0OWCZw/usP3/2O5ilA0T40QigQA+M2AZwZkEmRppfs3kzx7b0E8MHRoNoLPf91fCLwDdzio2N0Ahmp4YJ4oESgBIdtu5ef1TnTr+JB7isUAjkZA308CJbiw/gkMJd34KQeMTWerj8rK+YlxbAirDd9/dJ+kwvPz8R107S8EIrjEGCxL4GE5i+J+8orh7n1LrgV7F3gdZJr9T8VGd+NZ3D73riAwM4HBAdx5N1HhJg986Rv+tDGVB1k1UMOh109v5vBJrm6UXIHybbScB1f2041faQ9OnLRTKx4blkoILLchkRTLl9sS3GpomnxwYbEWOg/m2/p35IE0Y85PELAEAtuSgQFklQmRboU4qVb0jaPX09R1Bo/AkHEcWclGV85wTVcBtkU8Y+yL+ItsNvcZnLXB7Xsg0LMHxnZj4OZouYYpRicCZveX2flJWYwhhcBo6GCjbq2VrNfhu8hJCFh/B3qiDs2uazshKglX8QdJonnqE4FkBWVgCYXOVgOQu538LN+hqSE80QOQkKw0bBLiQ6nJh2FcHAjANW3Fae0mVjAmIgDeTSBSuH43mSCea330wMYHb21S87bJODSJoVsKq22yCl41wY2wApYBQRdACBdyCee08u+1xD0lyGt7Zdc51Cbc1TOBhbtU/9DcPm+S1aKsyZaIS3f/LGCbJ6XqHOfoaqukLKUq9s0e2yuAv7gPr9YnVwRGfHEB5STyKGJrMwnJARO6XADDudVScjX0KP53uShaB5Pba3OBrlBmn9l9Vsz1FyHIaiRXjD0qBhbWIbEohCNOUPT/eBd6bIwFy2XiGTFytoMxhgRPpBgTh0lqWbNh+uwq+SKW07oF94e5se25rBACkBIP9Z6wWN4r0rXyecIyX9F/fXul/Vhe1dIahwsARudCA4kuTwlmAwGV44yYwzY8X1QOlYSOyeyDJ2NoFC+dYD4/uGIew/pqX6yLLbMUKEZYlB9UoqTpszfC/uEtro+tOHoWIxhhye3V+PHIcS8yck21nMrGeKXi6thQgg4d3pd17svUDyusVc1k0gg+heSoxpVcPyfSLi4KsaFEgrXO9R5bal10vVrnDhfv1xzv6wONxkg1xfAmy7EoLoORWdsOeeypYHWqb8qgKCe4r0jkNPnSPChChmT0y4XivbDzCeeXvWuIm0mMMY8xFqP1tggBYo06Rjl1Z5tWqlLyIJqZXOyveLnz/Z1Oecv0L7FpPOY79/lOFoE6zHOlsgekdaojUKNmTs4hhSSvn/7+tsJqRzkbOOZgkJe9kMLRddSkeRzH68qewYnYMnGtmRS34oHLEhZC15osxn1jcw7EVRr7/An/4YP/0hPA89TcaeTsQGY2lzYl1M+Wic6l2NSGFyAQgORkbWkZ6bDD5cD5bK+wTfqtlYL1Wg5OzUy3ZWUFvq3tW3YzGlB/5S5IvnOt3M1QLcsg/YLiwvJ8PClvwhR+gRCSKdtfCABUfMEvpv6ato8yzuiE8RnjOEq5lGAtm6Z7cPeegKPlURKBG/uqruMGqt4CxzsUekIcKH3YCY4EurSYlvLmNxabtkvIH4BF/BqFxLNCIDYR3oroweVrTHT30ep34BWW+TfWvRWMRkwoDIowFQ/n427oybzqeve72q9gPwVV+tkN0uXo97D8Kv/6x4Hxb/8wAPkPKE0Lfb0CJGcAAAAASUVORK5CYII='
 )
 
-const EternalArcherShoulder = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const EternalArcherShoulder = new Equipment(
   'Eternal Archer Shoulder',
   'Eternal Set (Bowman)',
   250,
-  starForce,
+  0,
   true,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     51,  
     51,
     51,
@@ -7404,21 +7404,21 @@ const EternalArcherShoulder = (starForce: number, flame: EquipStats, soul: Equip
     0
   ),
   'shoulder',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACEAAAAeCAYAAACiyHcXAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEJElEQVR4nK2XCXXjMBCGx++VgApBheBCUCA4EGwINYQEQgQhglBBqCBUECII2fl1OLLipLuvO6+5rGM+/XPYfaH/Y9cfxrtng7+FiM6v1/Nzgm5fIDdhfgNxLc6Dsw8niV4tkBnmDqRAPCV9BADnVlsKfXLSK7ma5KwnofekRkVCigizBfJS7coTuk3SLasB4LxnJ631Y0/Of5HJMMOB/Vw+qHs9rvxU4TA1CD2AWRLw9V2nCxfDmhcFABKSCn6IYPHFMFqfycxJlRakQHSQ6ftc4je0quQEPPH7uCHLTC58rFWQDBd8vB5BWC1HZ1YvgdT2Up/uqB0pO9NwWoUnfq8dkjisIfh3T/k6xtm8cSlUDKN1n0JWgVy+RqgZDxqVwAXR45SGF2sy08y0Njs3HP+JPBwh7sVR5bCA1IByQEhCDMs4HEmbYQVCpFdKdCC6fFEEkcPAL5MOzc5RYnhJN/NvijBEH7eTN4rUIIAGiPUjDf2RE3RcKghJXdRYciJJo2lUghQvHg5DdF56AL7HjclmwMBAYXG2CcKfPQ9558iEA4PoBUSbQCUzlj5RpMdxveVFs+GQhOScrwEmeE9S9QtUAXKelcqhEU3IoESQDMvQWG8t1twnZjQzvcXTYyHCgZgW52VzIXveKG3Guy5AfVQ4bWxdTyIq9EHC7njwzL8F8VIeO9BhmGk2qZhbiG6vPRdnPn2RV/T4SzA+rGBgUCzZDUhV853kHHP7paOm9euuulKiGBImbhZr+XZPEFXcb0C3DWsgXMd8hQpgYMvzpZ8IW0xHxWpYbgf3EFd0MWyEXhFhkBPZMRKJ+87iVDQtGlA1UIy99sthlNSkORSSs1SpsDrcWomoewIIInU/649ZHp/ypVGiOMSNqrW6FAESK8OlbouDHni/3Pq7G0RwtGWn87g4xoY2A0CldHeU/CkXoGIFDDBbIFtKdLihoHkUNYoi0/64WlBU4jInw0PGzHQeZXRSknPaa+qHT1JiJg4kydM3d+LdZlLWENHqWMtlwSm+e38v+SODSoLjL2MV8bqpIzGOK6UeQjwzWVdC3gwq0FLedpU3izX54lgR1SR2DRFDglv5tJuoKLAFge/T9B7X1HNSlaRcsXpHmvvDyFwhNjmumIB7yi6Ol6RsIfJO9wkqm1huAEQ1vhVOLSuQPXeKW6NCiTpzX+ItRFLjgoSc8u39r61729v44IGHIyQpwoOnKRiqCgCoNvaxOsSPOfFEBbEx/RVvDHNBQwJMyRNV9ZbWtiC6/PzHD3KcG/KzBXgj3NGTbYHAdhnms8CU8s0qvP4EEefCgbbhQva9vo6MVY3zLZBy7DnDHKpWjfhAXl/mPYIQ+bXLnyUm9WP1v9gxO9yMybOcqB21ix8HeD3Wfm9fTyEwwdPPst/+0XgOGZ6M0R+MeUUNU59xSgAAAABJRU5ErkJggg=='
 )
 
-const ElNathMonsterCollector = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const ElNathMonsterCollector = new Equipment(
   'El Nath Monster Collector',
   '',
   33,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     2,  
     2,
     2,
@@ -7442,21 +7442,21 @@ const ElNathMonsterCollector = (starForce: number, flame: EquipStats, soul: Equi
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB8AAAAgCAYAAADqgqNBAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAFEUlEQVR4nL1X27GrOBAcqjYBCMEOAUKAEHAIEAKEYEKAECAECAFCgBBMCGzP6IEE9t37tVN1Di9JPT2PlvwPnXbQ/2cB/zPgx/HB/7B3vuc/5g3n7f5y7kN12cL/RI6yjYkGBjwIImb+ojanv7Zlc5/2y/Vu3WJvPebmxRFXMw3DJC/M1bU8T+U9X8MH2XHm/bfx5toliQW+gsuHJEkOGHVdR+s6UpK8vAGPR0hhGMrVmHnmq2vz3Ms6RVEgtIEHbMDdQuOPGBdYB3iBqwN/Y38AtnjCfB0xsG6oWZbDdYC/lWXpLVqWg3e9vrcsFKCZb4HXeaSurBlLwINn9hKmoOg5cCFzfNAMIVJYfglEi287Uh6pb8F9hA9MTrVTl2WUp7HcOw54lukgzOt95eRJfzIht9QlbfvZDRa8GEeqwdz96E6OUUvzp5WHUnvRFRUVXeM5xE4sO92cZ3LbtlHFXdF0Pvg2DcJ8mBa6mEoJdQJqent5V3TkbwogLnFTc8YofpxOKN04HUgxfh8Gb32p9jZNpeCY9bDJ6mrSWKiiywJPUAwwW1/kkCZ2QDlmnEAoxXFQlvp5JpngMEaMllz2/RDmaVWgWCZXJGw7HGkLdiZ28BphM8DG+iKl146K4xTEFS2hMKLgNXhrMfuY2QMH4CrsBpjJcUU2dUbt2EqYGfjIVa4DQq67iYIhUY71M71euvTDSoCPXukzAxfQ/nZG5Gqi6j3ShOhOiGz6QGhwFfAGwPwiR7y6FwC0bPrarZwImsSXb5PClCxwt9/nc77j+KEDqCZJnyPPxwN52FAMzB/iZCuaQ82MDXu2cZ0peybn8wfPYGp8EsEZFAlm3SJLSdaBoGrlRXXUuavp3j4JGa+RT2omxZjZzzNXD++dhhNl0RMKtJocUwoS8aMCkdpjr8VF8Axz94Xs60bBbDuVT80QAAYoiqjT4MfnI3vyiMkZyyry/14rqjGNHWD2KCXsWifwFdwzt52MMUMGY2AGlMAwMJ4lAoEvisaBHQ58s6/gXe4DH6uvp91lfLt+qPhBwjqw3R34Cl4MjbRYX6klX5EprrPMi+MskfIZUenIcoqwt6NyvskAGjdfHft5gIwhGJx65YBaeAQgh5bllkPNjBlY5Tyw3401LMdhR7GPaWX3PEAykz2QYnsDTxxmB/hgmKo2y9AuAqwB2C1mHGiHsqgW1mw1gLdQJYjXqzvek/EQynzvAAkRCNDnDvOHbjdsGgw+jgXrCAVw4Mpw1MDj5y1zOpx8JrQin6q0rogtWOqRnvNsn+MQIGGf0cd1nVj2DNwDmANvCu1a1fzMjLmN+RRX4WQE1YH4LZZ18Z6x6SRmkR+n1/jMkLAPVcanDTselCtlajq0bKlz3wGw6nsKt3M+n3wY0Fn3d58vcB97h/wRJPXdF5BazXnCtgvlWtfCFn7fq6ousScsCHWjN5oW56oaBRRESvWK5XZO8Ku9qt7uthqB6gcZoCLUhwjJX4n87shvZR2oAbiFg8ScQ82MGbjZBZj7dOZ1ef2mqW/Vbm2CLutBXJsZLeXYKjGTTmAn9rBG7+/Ur28BXsLBhplzzKHWjLlqZl6P101Tv+k8cPeHgDYeXUO2JbaH4wTaAD0O6vEgg95a4qLzZMvK4i14Xd8rOJyxUXC5O8jIlmijdWI2n0+hDc4dtiR/x88QxZHXvdrt59KyDIf+AWAOw667iQaa6W4J3X8lmucI6370urba/wUOhqUqfbA8/QAAAABJRU5ErkJggg=='
 )
 
-const WillotheWisps = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const WillotheWisps = new Equipment(
   'Will o\' the Wisps',
   'Boss Accessory Set',
   130,
-  starForce,
+  0,
   true,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     7,  
     7,
     7,
@@ -7480,21 +7480,21 @@ const WillotheWisps = (starForce: number, flame: EquipStats, soul: EquipStats, p
     0
   ),
   'earring',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACAAAAAeCAYAAABNChwpAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADsklEQVR4nK1Wi5WqMBAdz9kG8krAErCEWAKWICVACVIClCAlmBJMCZsSHiX45g5JNkRcdd/OOTHkx71zZzL4QbPd6Ms2tLTv1v7bQODGRrV11PBgu9veEqDb5XKhjtcqHtRtna79GgEBN2aiqpwWi1prsjxVkCJVzGNjzG/izwTgOcDzl2Mc5ob7s7ds/CNlQGDjZRdrmoa6rpMxQpOaY6WwF0pgXzr/0/CEJIwHAb4GDBvGIRCkvu9pmiZpUKnSFY1mfJvERzaOCdmXhQAf6kNctNbG5+12G58bJgNTIGTNWyQ+1iZTcMgNj2FlWcpY6YIafSTn3IJMf+6pUA3t9/sg4VMiKYEofQ4OYHVsyLQtrxFdj1r2FUUh/efn54LI9XqV0LxC5E6BHFzphqqmoKooaTzzc6FpV8934tofhQQa1Dhd5lDsdjshgYaw1XX9sJgtCADcTbOswXNrOmotE7jqKPvfy0l6EGmaORyjM9KLXWYS8siFDDlifCLboVvkyJ0CaS2ACufzWZ5rY6nXX7KjB5E/+5bJtkJEnGBixinS/XyOwzCrBTU4fkadaOzaGJqUgNQDXDPIBu+Px2MEBDg8DrIDCD3G8L7r4OEwgxeTqNGZgaxuYliCIVkH40SNXIFNKEIxLB4ogKUkAABAvoBUViW1h5b06RTPghTmQchUZ7LjfI3rQy3q5gpEEhIra/NSe0cC4L0uIxlicNwU9JW/ogLO+wL4ZORKb0KoV+tADhpUSA2yw/OwjtvBGUS2rITErqyiCglwdDDYUwKBhHjoLZUb4EjQ4CFMMfhkR0Z16WtWa8F3BDZcWG4oMsH7r+rHX0n+BejIEtvRyS2Y82GeBziSzdj5E+8z/47ESwrA+wAOMhXx/4KTEqm7rhJFGHGpAmc/kq1qTqSUe/juZwREhVDh5LrVy5chthb/KIQERSVSMtYr8xMCYnghshoJheKzH8YoMzxkeWcSfm9qWFOllrb2pXyFwMbUh1vtKxsMVwseAxQAKLeh4gUi6XkPTPTTHJAXs8eItfNKQOogsnGzEjAQgim9IPL61/CBbTjWN3hX+4lwv4OhsBRludhPb/4feMugRkg056Z8GYnwx/ewuw2vEFBZv2WvPldiHBONPy4YIhnKZHlK+okyMmsE1IMGa5nECfGF97684idllYKnJNCcb5FETiCAFUkf5tM+PzNwph89mXzPQ/nXCOQg+eE49t63yVq9to+W0j8NQZApJZF7tGPwK/oV8tM341Ul/gF3xj2RM21LQQAAAABJRU5ErkJggg=='
 )
 
-const ChaosPierreCrusher = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const ChaosPierreCrusher = new Equipment(
   'Chaos Pierre Crusher',
   '',
   0,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     8,  
     8,
     8,
@@ -7518,21 +7518,21 @@ const ChaosPierreCrusher = (starForce: number, flame: EquipStats, soul: EquipSta
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB8AAAAeCAYAAADU8sWcAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADhklEQVR4nLVXjdGiMBBdZq4BLAFKwBK0BFIClKAlaAmkBCjBlPBRginhKIHbl2QhKCrezLczTrJhs29/kgf+oWcZ6fckiZU1cBp/iLRKqSozv3DhhfN+Njjx+tVu0nVnqWoHSqLt78ATNuTsB6oMO7gdeKq8w6PxugBs0Gs7UL1/zvpl5sHQl18cYvwfffa3KfNZmoEsot51Ts24+t/qtFLuLeCu/PcTz67BUQTwSSfel7wo9xZwtzG/hvJHGTRBPzCAufq1+jHD63vgLeCPDsa2SknpIQZw0pZEqvsM+C34QsqKgfUEMspYoj3dd762gMek484BeMCNRUpJP4geBzTZfwMuGycnAKCfv9zjnQOaAmgKroClOy2Bq6qipmmormvSWj/5iwOKwceRMcjOWQHUJgmB52w/8OLIyIkHjggNAeTYz8/3ex9J3/ckOs9ddeAo2U2tWmY+cC+NTTFDljR2HYEqqmh0J117ZAQkUhSFAxRgGYfB23Q6pUM22z+CJ7uzp1WJLFFqBJhSyhkYGfulEwGSrDEimKA7X3xD3pZ98UAEGbdoAShTXh4mjBGNShWEZPKQ/Tvf706777uAQMres1cAIds5xtFhrQosB3ZrhHzm6/gkH7ldRVy9kBXOfmQ5oeZX8grc9QfAl/udjtczFc1lYdBSNs1VOPpZfaZ701JeK8rKkvKjiv1tKvtILTs2Aw22oCzLHHDPjkUeA3klKR+6w2Vwr/Z9bp8CWNxzmbgPkUPqaBRZQJCRCNbsKQqA7fuQNchFshfp5suxOPECPv7cM2d01ctrFDuCY7AX5Jznk01flRMws9q0bxeunoXLwmdVck7d0VdhyhzAMCr5qX2+xk7gGOCF7qhl9nLHnAlHsZ5z56U6sIkzn8q5rMJcdmQM4FiMMWStpVUBsJ3vN84BAOMDZ7RisCxyyLYRQQF8Krlk3L3IHFw9g1sHnIELeBxMv74JgIeQFEb+SekBnoST6KWNIuUPh5x7e7vdSCXzQcVRU5IBj9DPfK3QVqX5RXRryeCaVekcgAs48LzXpp6LZx8EaLSYW6CPR2qrwh8aCD9uzbIdchdQjfPxod8IdPb3httVqEIAKuH4VDg+1xy5oddyCD+5hBMv9iS9/viPxRuEt5B7qYQsK55XKxvsylsOAXTztf2a2xefRADI6bPc1/2sysdP5/Dp9NGRSP7FN9w/wj3SBhBUSaIAAAAASUVORK5CYII='
 )
 
-const CursedBlueSpellbook = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const CursedBlueSpellbook = new Equipment(
   'Cursed Blue Spellbook',
   'Pitched Boss Set',
   160,
-  starForce,
+  0,
   true,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     10,  
     10,
     20,
@@ -7556,21 +7556,21 @@ const CursedBlueSpellbook = (starForce: number, flame: EquipStats, soul: EquipSt
     0
   ),
   'pocket',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   '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'
 )
 
-const SaturdayMonsterPark = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const SaturdayMonsterPark = new Equipment(
   'Saturday Monster Park',
   '',
   100,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     7,  
     7,
     7,
@@ -7594,21 +7594,21 @@ const SaturdayMonsterPark = (starForce: number, flame: EquipStats, soul: EquipSt
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAYAAABX5MJvAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEZ0lEQVR4nLWX7ZGzOgyFlZltgJRASoASkhJICVAClAAlhBJCCaEEKCGUsC6BqyMjYxOSvPvjaiZDMEZ6fCR/8EOvNtP/bwf/Zgsx/z7ioCGKDVH8+96dWfyZiMwU/RPB8TLNPogPEQB07STXLOe26fTBZUzfrKqsr7q2fRHHB/EhDssDeta2IZlqhqm+Bhmnz89zqqmligx3PK3udpVwD7jjUhcVDVR/hUi+PE9HG7kdw+DvIF4o2YEAzfcPdfHOyfX44m/PfugfDDk8XI70V1tyj79BIf4VQlSIEpf0jyPavqvv3YeErun4FuQTxHzjkRQ8EjOiqoPq07Xk8KlN3xvXyt0FCaao52Re6OUes8abVjQPS8d0XdiG0l7TxrZ5qTg0hZEBRVHkK7I7RZ1s5Y0XHmP8RwKS8zS43SQ4KYwxMU39hOAOpu3JAej7rKiA6ID9FL2kAw/bZqSmcxCOWAHmeaamafg/z+XBAmhbWlUWZAzcijpILfxvLYBA7pIkprxM+Le2QU6MWgGoO1BZzrwSVi9tkpIFZEmNDADqwrcfaxfCB3EdR0MKILoenMLunb22v5hCzJqG5BytlAxQ5xbgfr/9yXF6LQI1oGZ545nSG4kBgzpoD5QQgN7WQrLZELMsp9Ol4jVjzakZ18Q/H7zPdC1dq1buAb0Hcs5WnxoLEJJIqOBgGAAKwDTnRTdyYZauTwe1knAHHRkqyUqBA8wWRAE0eN/ZED8qC+pAa0BT4NstC6t6u4FDBVUHauG5qgLD9E5y+xaOCTgi5KVdN8LC9AAwehRcXdcy9fbMmHAPz3PetOPEpU3Wy2mkbwYIVzS+AUCmHtvlcpHr4/EI+mwDxAyAvk/uBxBYWeacitauHXy4meLloETrNFUlDv5agBdhVVVIRw2uMFs7n89yzTILKnBTxyqWUidb01NbUBME9b3FCE7atnUAaWoLZBgGOp1OPOJYaqiub9K3KNbjUt9XDmrPMAPjOFogQiUCA0AXlxSPRTBStSm7Ud9c+V8hINhnAKiLFhTo+1hg8YuieF3OW0NTTg7kLQQUePKh9NLp6HobfKmBJ3KaD0F69FmSnFm5i4DjP8CGIawl23/dIF1NYFuWlCwFiQDTNO0q4Reqjv50SmXUCgJwPEMboHR3jXKrANegxPUhvJr4pe56oEeOA28sI0yScI145FYZ9Lvf73S9Xp3s93vN95WDsVcGaXqXDgXZKhFYpofaKpXqzjK71HXdkp9sXpxPXJRF8O7Yh7PBh1LzVfAhvHSEB1pANE0rV0xdnI4wW/yph/WBly4boO3CgE1L32xXCThFGnBVJwjecgD/xIW2zQnM8xEuSGp73x7BF5hTI7UAWJYVCCZTcd3DOM/G9UM96HUc+6B9x1AUjv7lC8wHsYFDgNTbRux92A+na79dT+neu5utcT8dRwb51RO12tg5J67K+L72lfHaadu+vIsva0OeCu8gjILsPPNHAUlTdj7s9Dtx+3PTdtwGV/sPQlCOMmTP7hYAAAAASUVORK5CYII='
 )
 
-const SevenDayMonsterParker = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const SevenDayMonsterParker = new Equipment(
   'Seven Day Monster Parker',
   '',
   100,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     7,  
     7,
     7,
@@ -7632,21 +7632,21 @@ const SevenDayMonsterParker = (starForce: number, flame: EquipStats, soul: Equip
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACMAAAAiCAYAAADVhWD8AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAE90lEQVR4nL2X0ZGzOgyFxcw2wJZASoASkhKgBCgBSoASoIRQQigBl7AuYV0CV0fGxAaSzX35NbMLsY39+Ugy4otCW+jfW+RufJilz4mu6bMhKb3e+AWniU6b9fA3xaSIqlEEiPYw2wCt7X2q/Z7zRV+ZUu/7k+TYdoABSN3akXFi+J+xHfEbDzp1TExGx3J7zd/DdI0+APkwEST7aXlOZSUxwe4+Ucasf39bybCXJpw4iBl08ICDBP0fu4Qp/b5/OHdb5Nb1YZb7nFKRqa3DtzXIqG0fVJeK9Mg+B6CqaWAlSv5PHPia2EWjoZFyqpOROpVS09z8hfcWrPtFH9rvI6Hv243qKzN0DIOsm2rqDGBYb+ZQIOoUt2mq84GawT2n6RP7BEZUidfUijKv8YUZM1C0pnb8TMlT1U9hFDv9xFVLzzureGdGIfRl4miFWpb6OGGxMrvn3XPrPMHcWE95wfZOGedPmZylXlbJN1GiLpKTsUE2sxIdR2mZSrDKGM9FEUBOgA7KLKW3Q08dljtIUwHCYv18ty2m4EYbvB1fll/b3PNfxXHrQF5t1KmS80k/DrSIMjjoEs4KzhNK00SABg7E6nb0d88rRVHBPloYgA8lBC+CGQLywdh1HWdQQ3MdpLNsDvNhbt+MNgyTMoyybipruzhzCC2A0OYUQ1tXmWWZbQADhMaI6nqRhUUVrw2WrUBZR0vd21MZ8zpzqvjif/kd/kD3oPQpQw5EdI+c8k8PnLXJRlkINRlKrzHtDaoAxq2/BTAGozNO4oAcIG1pQe73nv6PZUVl3TVZoDUbN0N4+JCAieACuETe1vqpW7rbTM6Rdrk1fHY8/W681/PPo6WRI7Fo7CED+CNQaBBg6OT2eQLr3SEJkHatZ1ycVKPiAH6m3gj10vDVqxguzWuBBNQeSO/e1P66DiaaRi/dPNf41udhJuxLEqgiu2UQqId+p5KzvLRPjQPiMuZSQtQ6L658EKiBwGzbVlL2zIwJJS3Lklp+cTl3yvmrw1e2VtZdicTB03UBzD6rACIpy3a72bfv4/EIJ94tlDAIxv7wOADB6rrkFB+sq7iogqvS9JhdQXHlnyWYANY0lUA6CAe1t+v1Ktc8t8ACybVG29YSR3tTrI5SYUAHxZV/qGGyYRg2kCyzATTPM10uF1YgkbOobXsZW1XNNtE0NRvcmSGdk/UImcYPXpQAGZOaElUFO3em856mruC7SoDwHgOoO/ygyDQlAo2/OE62U3kYDOmSNqA/YaDIDxfmt9HtdrIQa4z8ICvKOXCb60vTKyt5kw3gHoDzHMaaHf/aTZHUKPMzcLGQXg+CvTJ+QDs1LpdMVHBA2AD60AY4d9bEpVWEY1TWPYPxYuaXxiKiR4kKPpEdp2l4xjxKqxTG3e93Kopic8f93vLvZoOyVwbqps1NDuiVMoHl97U4aTLJhjy3nwjjuPotX9ZFNAdvFTyrpjB7fDhne1X2MJ6bvsPJGabrBrki5eM4luzyUzaRCt3GQDeM4cLdB9+69EYZTA734OomA8TAC/kVINp2FaE3h1eGeLYWXd/78XuYpzqZBcFx78BgksJemZp1ZhuHeHFXpaag/RM7UyYAsgAhSOa9puzvcBzqFr/d1THes1DlIOcrN21Avqlxm8y9z2P+/ZhPPlkwbt++Pvvy2+ndp4oAnbXvf6POPRt30v72I+4/bHTPDdfydToAAAAASUVORK5CYII='
 )
 
-const ExpertofOz = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const ExpertofOz = new Equipment(
   'Expert of Oz',
   '',
   110,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     0,  
     0,
     0,
@@ -7670,21 +7670,21 @@ const ExpertofOz = (starForce: number, flame: EquipStats, soul: EquipStats, pote
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB0AAAAhCAYAAAAlK6DZAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEfklEQVR4nK1Xi5GjOhBsqjYBEQIOAUKAEHAIbAgQAoRgQjAhmBAgBCsEKwRej4Qw5nO77+pUZUvIo2n1fPEX9mPCvx/B+mELOk2vCFDP+bEBTDuvFT/mYI3NnpvN6D6aW1ljiSzAO6Z9pTGOgRX2Kn47tvKK98+jvdwWNMhaZ95ChHOFIgb0Nca1VB8K1wB+fW801F2jGfncGTS9tRXwg3kXgVZjquMIMa8apxGeHZUNJW5Zh+9HjtuV8z13z0OOMmwQpTkvOiICZQV5A/Yn0ONhFPqxQ0LG6Du7Nfa9pTh2/Uzb+fknl5yBTmJerTVMz2DgJ6u5IcExKw5TftHxAWfFOSkUhorses1zxrpHrHXE9jBlhtqRGVuDSkAijbT9mUElgf/t1orC9AaSZg98yDSKFUre/DNauFDGzfKDwn6tXMgbPaeLPr7cYSCFmZn2efjX41fmPRTkmF53hfBqtr9PsxnPzu3GFpTHUZ8dVvkH+8VXUSxJfWJLJ1dhSdk9aD1NOYKg8wrXQRAEAcvkJAuZnZxjbwE/2Pvz08BFYomcgsIw57zCzQUWYLe82+0jc89usIBG762wK4Mi/LqPFri6dDgCxmcn+gB0zAxkZi2hr3dW2DP15nrdDepnjibbAVsLQAf7fQJVV4XpaZjjLrhWwXcOKgKeZYkR5WMHbCkkGZP/Nn4wrK4MivsaMPL+/jMorN86GzBtpkFOC3AZKbJnlboQ8DUhCcmWrTdLHMP64QA7mlWq2kGAnYLOwNgBC3sZ9dMRHh5wFUj2VoAFE+/iyuH/6jKTmCYItEVus0BaqxsC0ocIxxTyfhHlbtsDxvUDl2vmffmrgr8I6VXhLB4CHLoHgl9MgbIuyIb+R29Lr+1uRQ1fPqXTHOldg1p7CSvadZrn5USWZejZ3kr/6hFFNLlCo959R3p2qnoURWGfE9Yg8XdwWQqET7Pgy2G9086vJVqlUMio4x58+0DNw2F/Q5mmiAmqOAdsf9Oj58WcnEZhW5p0KjMqm3rSfVyhcCYX0EDYiXKfU+vcut87tPRfP/ICjNrX8xtBxWjOU74oMpXqHkli+zsqyqVK49o45w+lsanzbghmYQpvb+94mSXkxUTixJSMcvpO67l/rv01t1MxveI7kn+zeJ+nZX94BV1+iCIHoPUI1VcMpnfKvHKNsOkwRO7dyPCrKAza9nsOpvf5rd4j0EXI1eCIihyg6brlR5XHkEqI0TMlP84SQ23bzIXBAoZHyk/zdHpRASuKFAXxXdWIcnd7YSx12ZbCwfGRO+W5KxLBZSmB1IJkRVkfgYrWlwSwlDpRrKmNl0c9374JXMAlYYdbYVPCDll7Y7gU0R6YT7jOgPbWXxtAycSMKfpwKUNABkNpAa2M/LEpVGQsiKTFTKJlsBQ+SocVMMf3b8z78DkqQKv0qeaLNUz00vfNed8qJ+BtSTteaBqMFIUbbLLZ25ktqJlNcGGX8X/bEioYZr94a4hcafTCsl+dv1D+uZplhNi8Wm6Z+tusQ/yoUwRnxXy1d/pm+B+Xb4vUU6caBwAAAABJRU5ErkJggg=='
 )
 
-const NihalsCollector = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const NihalsCollector = new Equipment(
   'Nihal\'s Collector',
   '',
   33,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     2,  
     2,
     2,
@@ -7708,21 +7708,21 @@ const NihalsCollector = (starForce: number, flame: EquipStats, soul: EquipStats,
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB8AAAAgCAYAAADqgqNBAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAE0klEQVR4nL1X4XW0OAwU710DpARSgikBSmBLgBKWEpYSoIRQwlIClBCXsC6Bm7GxMbDJ5dfpe18MttFI8kjy/iO7rPL/ScI/HnxdX/ibfkXr1Q/fjfujuUXPqRt0+p/IH6Wmo4kHT5IPen6TvpI/y6LjN3MarzIs4fHguZ9Y1X2WcZzshB9jqarCznNMMwn7/Py7/X4c8jwAn8HtQp7nK0SGYZDv76fk+e2wIctSSdPUjl78O8dY5vnL6qnrGqFNDsAePCYaF7EvCQZQwdmAv8gvwAHPev79xMa2k25Z1tgArjVNc1DaNONhPM8HLxyg/z4Af89PGZqWWBY8+Sxv1lO4eDDg5Mz6QjKkOMLmTSB6rBkc+YdbS647jsASsV2GspSqUPY5MuAg5RaE+fuqOf+U38Q6t7SNaLNnQwCvn09p4Xm8GH+swKX51duXpmwuG7xBNGIxcjGezmmt5c6s6IYjuJ5G6/k4LXISdyQyWNBjbu/CLFLZboSrG7sBxeMuZhwP+i3b+6KwhKPXo7baA0EI3JRJAFVIpxRpZbSxY1FkNsW6dhJ+WuZMR7j+OhiQfOalxSEGdSzGrNbz4l6DLFNcJFaH3AfgAm55QDviGBTOoqgeqGkGKaWRWloyzE2IO0kZGRC8V/QeOAB3YffAdI6M7NpS+mcfwvwOuH7UeC8AqzG3sNLAgMwaoLIM32lnwAyOtCL3x1MmRHfCfIF1hsmCdwDmRAWQ4QYybWWTwFWlwAd4hPBy9MCZutNsALv8ZugNvKmqDI7sBnjheSvlFA8u1Vye45zXDB9rkIH+ozgFRr8Dth4bTxwqXN4aAHbAayP9A4QsBzjoUnlxGbV3tS23g9BrTy4LzFq+pWGKjmKMtu/OCOOiYP9h/aTHy1ZcAqEvXY0k8RUsZrUfKdPQhCZCT4nIHLamndHFnTmohK61A5/BLxIDs2tpjGOH9lmrzThlwRmF1DgiIpdkmIz8RX4Fj9lNYEmdh0PHlNrPmuHXG96yOEONNQb5vC2YN8XpT57fe1dWx7axyhhpEorEKtAyObFM0wa+uKOAPL56FJ3yT55fLpAErutCGvRzpmZ9r9AcRnem0F/dH2HtDkovk0s7xcqHFG3e3wNC2d0vkKzfJrFkQzZJ2TrPKVl2Dsn+6G40JoT53X7qawdX8SRdZbsr7C3VjAlSav+AR8oQa9xKH0/XLZapwfPXVljIhwl5v904caiq6qXPWmtIhlqgcdNVkSELHMqKvdmFPMclwIZ9nmdp2zx474k0NC5PFDofU42hT2VPN27DCeGocDQduLEVIe91/ZjR+XI2R5Gf8lwpdfB+6DrbbilkvL7lltE+/rzBeiZzLexj98rczYeAkd6f85xsHRB+/ue1iVZPKFM9GG/zGk2kztT5Mzvv13lvIzCvVuhqVurlck84sv0O9kZt9QNH8fIVz18k2eE0c1kdyxizyzeSEzDDMVMv9Xdde2F7kAnNZdtEbpZQ8LQsFWfEtBVrvVyrGEF5xgz1BtwSmPqotyiOETuAxz8EvD4qgKKHDU1kxFkIasO1r3VyqvJn/QfCIbQgXBVv8u61doM3Yr6Cb03D2ibHH2wlovik3rNcfi4ty7huPwD8ZTg2N9+A3sDbtfNZ+PcP6H1tegPb/wUcJMobBzsMTAAAAABJRU5ErkJggg=='
 )
 
-const EllinForestGuardian = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const EllinForestGuardian = new Equipment(
   'Ellin Forest Guardian',
   '',
   105,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     4,  
     4,
     4,
@@ -7746,21 +7746,21 @@ const EllinForestGuardian = (starForce: number, flame: EquipStats, soul: EquipSt
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACAAAAAhCAYAAAC4JqlRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAFMElEQVR4nK1X4bmqOhBcvu80wCkhlIAlQAlYApSAJUgJUIKUICVACVCClMCb2SQYj+h7P97e41VDsjM7u9nEH/lsm/y/Fh0NfiKwbVvIwa/dPvkRmdL3sXTE+Ml6OE2Hiz8q0ORYO0zu2+hRZGgLyar6cM3QNn+ecX0raXb6BHNIYJuvRkwWS3O2UXW3i76X56ukzU3EPMe8HT3jGK2+plIMqySX5U2FQwUITvnSgqsTaZtZ32XsIY393HIiP4t8fjYm9h2+jByrcEQgYr62LZKpB+HegnRFsUfEsfWOHJW5/b4aifP7/owKlL3sa7NrhBqwvv8LAUsiYsVFUrj8r9Mi02JrYmK0aypz2uj3ZELeAZqeire5PSK/RMfg3wjsC+BAt0LatDLUyK2JtbYeCHGBQksnMt8j+e0KLUJZVjFNocChn0/2jQBtm5HQHgFfhgr5FIkzt91KcEHAJKBbsF9s9Ng52CtyzUSQNUmqb3v3OwHUQQaAAeDPSABgmwNABwjST4MYVPg6LGHE22WKQWBFBEaiZPlIIiTwlWnwXAFQqLKNJwXH9pJg7RajV8SpkSTvZL4u33ztBDTaKBpeSSwLJRQz1lpYa9Vr9HVdSlmWoq4h80ypE1srBGc6VrzMvVQS0O0FPMT6CcH+kIgonYK7HNA5P2dZJl3X6Rg/p2kqjwe25go1TrlGT8LC17q+qEMMYoUp2EpzSEJNI8eLTr1l6FAE9RaLexYvMo93SwJVCMU8uD1ZAnBidoD7sZKKVPki7d3sJPABROzkMKJtfkDQRc7nyimAYkTl326tJRKQeInaBUgjFjG7ytWAyYzUcBqSoK9tQwVH/b717gDx4ClIxTEgTQoSomOexCr+ELM+GIw41T04MTn44wcJ7EnoBGqERewDrHKCU/pVnvkjOFOxuK7HGqACqmpZSNP1LnL8YZs2jezgxPE1EDEX4ki0iKapQKK0a5NLLKGF0RPcGLOrUFUXVcGmJrMEHF82M1XXBdzZ8ecu8HVQ++N84SVi3YuPQD56Lz3HaM+CnKwKgTFyK/erCp0toWcj4qTW1UrBAiT4NdsdnapK5ttdi85L/9f4LMY/HkTDMOwKshmxLYcYXpqdgM8J2TX2kLPV73qAFOhs51zast6l38kHnyGPgnfTpAH4jljGq9aY9+3NE9A6YN+mTN0aaxcjuG4/+i2MfDOSmCZbjAQn4bAjdiCBlqZ1gAanmC8KeBVsobzmUVMBR0xB1z1DCCPvUWV2NzzT5smLew+r/68Cuwq1nmrxczFszGpUre3pbDrZE0NJLOgbi+Z9whmBLocUdb1NwZ5CsUXoq/+IgD7Q8/t152nVh8ZKJ6AvRC+9e6r/31BMObZs2MKT6hX8iICdsK4vP0r2Xg9r26vud1Z8COy3399tGEx4A/9EQCfy6NWj1aVCGwtKuHaNwqtA4/uEeSTHU5JHtT8VWYzBofRmh78Lwi90EiW/8pjHfW97FSwx0dxzjKnKwgI59vs1BTZq4aVzwnUMV8viVQV/4rHlerkLzCE4n7Es9tQg+hHXU4MD6bez9eIuNYdFqJcP2pz28puz8FIZC5CA19/kpCos64SLseuCIOJJMD0+el98BD/1vLAioPuE6zuIAmM5NW9XMsvObz2sGYtJF/P1wO+R34tREjSejL4HcAv61OTujkBwu8YSpS9eYsOtfaRA5O98UeWHrJR0RIfLtOqpludnOTJ/FcdRgTX2ik5LBu9r3zWf+8CRY17Fo9O/z0PP2S472Od5of0DHZPxSWjMaRcAAAAASUVORK5CYII='
 )
 
-const UnderseaExplorer = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const UnderseaExplorer = new Equipment(
   'Undersea Explorer',
   '',
   40,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     0,  
     0,
     0,
@@ -7784,21 +7784,21 @@ const UnderseaExplorer = (starForce: number, flame: EquipStats, soul: EquipStats
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAABMAAAAcCAYAAACDBoQZAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACiElEQVR4nJ2UC5WjMBSGL+dggErISqASggQqASQUCUUCkVAkEAmNhI2EjQT2/nnwKHR2Zu+cToAk3/3vI8lptZn+3zL828KomGb6I8PzRdPyvDV8/106MsbQjSS5KlvmcvqBOefg8uP8KSyp2qoD6DI6moShX0bSw1pyZL+GJe8pnEwBYKmyYhkpQexnWMbxz2aayPkNrIzX7kCaVhCW9JXf90lZVlVVqOp98kMFoEygaAxp4/ovw4QNjwe1XbW8V/1+vqklqVHTu53C6qZhWHfwHG0uS67KN2HZ5XKZX68XtW17aORhGOh6vZ46OlVWliVABCDMbqp2u938PJr2nzAOgVWF5I/juHxPwOdzStDZGP25AFLKeeLWgNeC/+q69t+7rudnGR0ostyLz+fzAMzfQdZYH8bWjDUkNONFAeUkWGWv+gMwfweJUrAyAEPjKjXSxJuqG451SUWBQo7UyNrndRgeDGxna012WgAWQFprODnMeRDCd+E9HL/wkr+rcjHRpRBeVdPUPocA9H2/5BGXB/KIfnygybmNfnQFBSXrs7VuNy4w6/hKMVi8vwlgiltExqJoDtPgImCqjeS0J996C0kXC6TvlR9rTjbCLzj7QpT8K6IiS3rTvAGGi26r/yQuF5WIwzwte3OuWtZ27Tw8Bp/g+/3uAb0KoXWsDkVoO8Xv0ofZ8EWA/VobrnjpTwoD19Zwsbyo3Dhqvyh92ypE5ZRSHGrQiNB3YUIdOhmqoC4dZIyA4nBLzpt3wFB8h0O0BsBQtcBiMjNO+IwF6YCvhQmdn1T7osR1CbSDBaDJxtHNqTGRn/e6QB1C2yo6hSWFvNBfiiHRe9qq2n3vckwLE/Rs7sz+Al6om5BYfqvjAAAAAElFTkSuQmCC'
 )
 
-const JadeKettleTotem = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const JadeKettleTotem = new Equipment(
   'Jade Kettle Totem',
-  '',
+  'Antique Totem Set',
   125,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     20,  
     20,
     20,
@@ -7822,21 +7822,21 @@ const JadeKettleTotem = (starForce: number, flame: EquipStats, soul: EquipStats,
     0
   ),
   'weapon',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAFJUlEQVR4nK2YjXXiOhCFxTlpQClBKUEpwZTglGBKICVACaGEuARcAioBlRCVwJsrz8hjYb+w7CrrtTG29OnOn8SL+cu2v11tfe+4eUvP9vc0EIPoQ1qi7wCUngF7CkjBOHXgMwCiHPTcH6v1rEIC09CA+wXgI50GBvu3QAs+MoO53W755pCi6YfBxBihyh7q4DafHzbfKpCYpTXO9zSMgsHhcWCwzWZjzj/XDBN6HL1hCM/vBDOa7yG/WgRimOwXdNHRuVcwuO+pY5yNKOTbzvTOmdA2UAi3GupH/CtD4fybX90BKZh80H+NYT84vW/bFOkypayKt668F8hkzo2fu+8vMZ3007JfidM/DqSV6PAPAxjXfHzu7Nf5TBDW4K8P5C9mtGSgwSNbNYVYOmoOk7+zX0kErrYZENSBzxBNS9Nq5T5d28uBZp0nZjNt55vyXvKjQmgAC3EaM8bZ+Hmi4ugMOlNrBpS/vF0DPxygEME46jKdqOt+u/PNvjOt96Zhc+UHFYxu+AzF2NHTOLcClp28dvYlkyU+IkGcDsYd6Ayndu35Kx1f3y0c1zd0sM+EFZAYgkl0zYoAArKK2RaT6J3JzFQG8gtxTHCB7zlyaAuYtmnK4AImcHDuKHKQmhx1xkzBosf8lFdnClXloEDRXHulWm6AKRGmutcmEygohaiTpuHRdpu3A429E9VeFEzOLzhzRCBM4zByWL7v6nCvGwYUEwpUFNU4GnGN53bvW8ORVyzzopTJ2ZcG7X4o2b1uNoASdYoWgNE2xWdx6iUowyqJWsZMcQ/lMElhwFlM5liBTjqBEtvNW8szQBR43Ksb8pHMHi0on9ImHD6PEzBllMgKciv1svgQzPTDZSAPRLWJoSRvTJ2nUfqWchEOgcI7BWbgOHBTbZZ+4OSNv1skzIHgMzCTQB2oNtWmyArQPZjJe1dARCGBAVgGQZmJy1VCq7oEJLlgIKhGTKNfwOxIrayagNaqCEweTBTCJKYVgNDVS5pS316QjPhhqcZuy9GExo43yX06lRyEVodxPfMQg6lagYFfQQSGSSUxMlTJmqZKXgLl23amQpmeACjzCIh3HoVPJnW3ITDzzD0rHclUCdCp0oDKve+6EuZahTpTj8OosQm0oXclY2OCp4+d5KDZmHUtm32pB9TZWZxafAmfxcEFqjZdojUUJqXDX41pfiuuixGgoy5DMSBgEP6f/SnDS2IMMC0/Y2kdhcQoaySVFGdjrCok0nsOa2my7KhzEWChIu7BxzC4Z+fXi7aFyS6bjB07V3g6n5C1YXeap9nzrPKywo+lA2CJc1Hrp8qPiQAsuLiosjaZ1MvfFJLw7wkqh5UA5bwThnINkzm3XGhlTYSWzZUm19yPi0BZ1szW2HcrRvZ8eREPNjovCYi0Oup0YbWk4CwVjAkyZpgEmBSIdrY1unPqGsrw0gN+IQmxLinzRKi+YxjkJHFu2rXQ6zEmLCXpfzLh+ppaQ9FyNWaxrQ3dz8WeXt8bQ5Hh3fpaSGDKDoTMFLE9goqkTnf5DnEYUqKl7bi8va9zqzvXYXeE5Mk6OryL3eUcaF+Wd6N6e6ObjqbIKiaqafjLMERMIABKsr97GCg7YQjjBfQllPb8TYDWnd626zJVrbteIlb6aHQK6Iv8Z3XDuP5jQwKJzXY2NkWbUl7gwwLd9ax+F1IlYrochzTjZGC5AjFO7492rnMoNPhfP4SVH6mWCmYa79qc9Gyu5B9/9+vHUuPwTCtV+//eebj9BxXgxIc1DLArAAAAAElFTkSuQmCC'
 )
 
-const NoPainNoGain = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const NoPainNoGain = new Equipment(
   'No Pain, No Gain',
   '',
   0,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     0,  
     0,
     0,
@@ -7860,21 +7860,21 @@ const NoPainNoGain = (starForce: number, flame: EquipStats, soul: EquipStats, po
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAABoAAAAgCAYAAAAMq2gFAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC8ElEQVR4nK2Wi42zMAyAjXQL9EZIRqAjlBFghDLCMQKMACOUEWCEMgKM8DMCv53XOYGUVjpLiDz9xQ8cvsCXDf5WEtvgoO3xGCDPb29pWJblcHya9HiaCpBSbhbmWUSTSZJ4G2+398BcxnEEOjQXD1SWpVK8Qqr6P/cbNN3o5nn/1RydreuaOGgYBgWblrvq57nAzcLNNx3Ac6hV+5qRi+5ujq8VooG2bT3veCDyu370yfpeeLFoawHfcnTtsvqd42sxArsYclBiggcXkasBUsQVcsW8HUK7rlMPRLLOTaxLaYCtm8Ax2DY/+8k14RquJ2bRIbAo9ABByB2llNqKeVZjBLNrjgBnoHCjMoUgAwYZmgoybBPsDPAuSAGsNSQTZuXIF2irrE8/ssgFIowJASrWJqED2HUMuIPual2o3CrDjIS5tX38QPFNY7wC8L0GelzrrIsqqaNbzw/1thBx14rEqhNigAWyInMwaRJl/k2U41pHQhC1sVmgwHYPkwfhcvsRDmYBfd8rYOiZ42QoFwToKMQgO1gDCkIFleRVZVBC7iqM69J8QoiAM0mxiNaot6oqZ1koXgkin5LJBCPza3dDSPP2FazT/k4K4hUtQScio4Az+Qi0juajNR9R+sGdeJje8orF8UJaRg8QSgjEKwn6KoN0mFWcolc5CUFq9HM/YRs3DXg3nZ2cboQJ1z9m0isxmTC+gx/PQ9cRZDLHpbQdIO4mClfVa2sAP+RY/Hag+dmiVZlrKyupah/ALMRmWmH2hdaEIJfe2z//D8b4G+woAchV/aIh9PdEkjLAWXonvALbMiKEcDChf5BUYeUQptzpilm0W2ChDoiQJ7pzggbK6+IgDPANEQlBl+BNGi4IfFpYvzSY1mtoRWa6xl5Y2Vs9FnSJPBwKw2PGSi1dm0kKe7EQSsPliykV7B1a16FVd7JqfmrL7GWI0vDDBBY54RbFFtl+hbA6mCsP1nFrPNdZ8zgsPKEdux6Mry/6rv0fIJSk2PGpBKYAAAAASUVORK5CYII='
 )
 
-const QuestSpecialist = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const QuestSpecialist = new Equipment(
   'Quest Specialist',
   '',
   0,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     3,  
     3,
     3,
@@ -7898,21 +7898,21 @@ const QuestSpecialist = (starForce: number, flame: EquipStats, soul: EquipStats,
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAABoAAAAfCAYAAAD5h919AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACwklEQVR4nKWWjZGqMBSFLzM2EEvAErAEtgQoIZQAJZASoAQpYWmBEkwJpgTePZHwIgTE9ThOINF895dworBG+rui0OQWiJq6IVlKKoozNc2DWtWufuOvV1VFSqlN+ibIKcvil3ttdHBd69f5j0FdpylN1wAnpZ7r7/SxR0tJub9+GOQ8WsqFqm01G/MFyIUqTRc5WuTia49QQXVdzxZvJdutd133J5DthSiKxmnkzdbxwbw3BvvnHcgHjg17VnCfLOXN70KOgKySZK4Gf8OPnh5HQNH15zpKDl3bdfPmMksPe3MUZGW4GMbxyTHGUP7zQ5/oCGh0AMUexElMwzDQ7ffXzp3PZyx+nSMLAQBVl3LnxknCY2bLOYljejweh2C7x4QPAQCqqoL7q5nLvWtbut8fdLmcXf4OHxNzqHq2uuQSfpF5vZZlaZsbMGgCrmBL0BwqeACrce1gVVFQwuEreGyahkgQFXlu19tW8dNjYOCdYZcVLBi6mGMvhLDXGF24xDQfT2s5Q9x1WdbsWWX/G1IYxN44EP6ID7xJkRcubawDkk55EyK2kGS6PwRy1kMoY2yOXDmIEyDGeiL5mH8+gK2XG/21BEVKtWOWSVtNNedh6HsLsR5xfrC54SOk53n0EiAoCAAyyf/jeTpQDPZH1+t1rOvS3iD5gCCUxvMIIcXm8Rw+YcNJn74FIbmw+umF4eZMrMWosuZ2s57gjJLsPQwpOdztzpm0+2TQnKOBLW2am713DmHMZDnlzXko9rbaB2EjWI18OSGUQ9/ZUteDtkc+cqr1HFZH9Ft7BZrNciHy+2LOEQ+CPUA5O0BV5LMtHsS4rwOJxTfneN8IDYnNOIROAAPQq37eCV73z2qrJpAPwcuGPnmbx94IKYaV9Oalw5OijbBBvkcU+NH6ReFVZuf65Xui/+75sFAJiZClgbkg/B+q2mepLWUeugAAAABJRU5ErkJggg=='
 )
 
-const PhoenixofAzwan = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const PhoenixofAzwan = new Equipment(
   'Phoenix of Azwan',
   '',
   170,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     5,  
     5,
     5,
@@ -7936,21 +7936,21 @@ const PhoenixofAzwan = (starForce: number, flame: EquipStats, soul: EquipStats, 
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   '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'
 )
 
-const DynamicHair = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const DynamicHair = new Equipment(
   'Dynamic Hair',
   '',
   10,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     0,  
     0,
     0,
@@ -7974,21 +7974,21 @@ const DynamicHair = (starForce: number, flame: EquipStats, soul: EquipStats, pot
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAABoAAAAgCAYAAAAMq2gFAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC40lEQVR4nK2Wi5GjMAxAxUwaYEsgJUAJoYSkhFAClAAlQAnZEpIS4hJwCUsJPsk/ZGOYu9xqhsQ/9CRZFj5BKAp+VzLX4CClfvA3t6wlg49F4usC4KvRhmcxSIvo/gPApLyGfQdS6lFCUwm4P97rbNOEq8cx6DaDDKfbYp27VUA6s5vQXnmPhBDGkrI0A9MEcL+vWnibpl80VK7Tl61XTif3KKsGkwijg3BJQILpGILvT+jsNBjdHOQGFNxuwTsLhWtZfL+JbBjvwTTkYbiTWWcUs7diyPkmgrUz7kEAOZ9hgbTEoOzr9dIhfD6fmKbrZtcR5IkQyebzutaQKuFN0iO3oK5rD0xBuBBkD3AESgIh75MQnD8EHIH8aQ4ULJ0tGc+/Aah4blPr1JtyfQOzkziY1aydNF4pmhRn1CP3SxDIEuZ+gXMnOUwxxfoX224sWofd7woGPEipyuBdpQlaMPdFCBNUXiRfy8ciiIAWqwb9Oz2n1dXMhUxLUeQcRmEA9UbF5WwhOjSHkOtFvw/OowxFL1SPNUmHl/B74a0vwyKqwW59YxxPQfgeeZi2CiHtGETUQnifEdGI9m6gKQgHrTD/lfj8YxtDYpCBVSab2NBOm4kLqfWsm+RmyfYcKZdoH3xpCYiwuSevwrO4U4Ki8yrWTefWb8asFJcg7TcgG7I0QL7MiwUUQf9bgkkE642T2KujouoVFq2CojRGSHtPMFYjBEBXAZd13Ig9j8KzYq3TFrMlhe+E67RBFxbOA1BGRdAdwsFmTjuaAhnvA4eQN3o9PlfLwrBpnWmPrOhQIMCddtNPLET40IAPG0EIMPfHHpF8oVc/xpN/T2+XbdYbqmc0QF/4xYFy9tAHJ8fy/+j1LSsLvBnsJceN8SSwRbaz3dJCaFCeGKBg/1pnN0FL4eCb3LorHrtGUCJ05ho2WB2byxD3yAlf1GEY+vjw7Qi/EC7xc2LucRhvV2wsdW1bDvq+/Qfr/HtE0quZVAAAAABJRU5ErkJggg=='
 )
 
-const AzaleaCorsage = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const AzaleaCorsage = new Equipment(
   'Azalea Corsage',
   '',
   0,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     1,  
     1,
     1,
@@ -8012,21 +8012,21 @@ const AzaleaCorsage = (starForce: number, flame: EquipStats, soul: EquipStats, p
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB8AAAAiCAYAAACnSgJKAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAE4ElEQVR4nKVYi5GrOgwVM2mALYGU4JRASoASoIRQApQAJYQSkhLiEkIJoQQ/HfmD+WzenXuVyQawrCPJx7LYE/273Pjb/c3Eb+AGf7Iso2makt8AK6J24C9fbnUw1/Bcf7sb/w3cfN49pZmSm7LszDiOYfIW0PRvSuqziQGKojD3e89XE83swM+5XI1/A2dJ3a+ivs0FI3bAA7IT1M98X7woGS/Gj1tg2Mg4CKLP+75z4AjcQDHldAOYaJYM9C0FBwSQLKCIZvRxog8//aGajHlJxAD2QcDe1oEYXLzeAlsjJA5oHXiVuDQLIInmJB+55jRbG94B2NI7Bzy4rDG8PAL2Bl+PG0+sZeKDCgFrONIhisDaieXIgV7sANzYNFGUpj2wfYZ0CwlNHoOcf+RncWJ2c2iXgaGrg5ZEPnR22jRP1LZtGLw2pfzqpzXUakXV+2EH9Rz0+vcnOHEurfEsSyWOx60PDjRNI2O5Ugu4B4ZA4VZVIVKVK8oUWym1Bfag4wIenLi/We9MukqF4bNestANw07/FLycsuAAFG9VIREDGIUi89F60HGKzGRrqzOWik1Oc7AXNNmraynEFcIlfCPM7dtqycC5ZkqRRAzT2ke7AqWdI9BTUVbGMwPf0gBcN+LIaqvJDQ8YOJA1M+V+HV20zXg9Bt5Izgvd3l/LA87ccOa5rVoBx+AQ8+DCObJCtQEGaMs8x6bqWWeivRMZf2S8eOz4AK6IA0fllellKj4rZoomRcBeAAyA3FUtzfrKXXf0lPFVdooNFzZyAnBPd45F00zfBRED+ImSy/eteVKT5DIPzzGexeQb/f6Go8Iag300rNYcHo6arvy4+gI8u3T3DFomSr6g9t1oGpPClVhaOxCJ4SCx9sxmHEiuvOYpnUdLf3I1/psgWg8KB3Cv6P8loZKMfgl/mN5md6qNsMKVSgrGRlKO6Im1XUVu01+zA7etC8hokVLNhWe0pT3BsesPo5Pkn08opIQ9k6in1k6AgA8QEEqSxC4g0oyWNccXz71O7xavHi8cDWMWKGILo7A82HSryF/se5OPUvF0MTkDZXBiElpqYTjoiWhBPM/4G+Vuy7kzobD1PXVnC9qqfsqFPeTBEf3AUb+kNWNnO22zxj89Gga3fbKIucqx3gMr/vhxyRanHJG7dNvg7JHsYw3nuTSKl6mjT9XLxkd5lXXfFIyYyVh/5db5iOH+oGmjXsGYj1yXZWkJZ5s9G3V8dqM0esi4eCxAT7462JyOaMv8WFKbO63ptHSZ9iG8gwPqjzbPn8q2Q7JyggfbVmclcfSRYD2hCXL1xWs9p1gi3gdhW2kc0yf8sQ2fB1ByXbxvchhIA7FJH7ahZ7Lmb91d1nXB6WM+7CxR+8AWtifoJm3XSk7JnuDFuxIDepMN7I50mo1iBzQTsudd4utCHDHmb9NtXyCE8YHtOwe6YbTJ5lpcZHnoPrxxbpGSmcn71r0UjRt/sH9xPvimxNoYuS+8u3TrAOwjp60D3dCQUnaNmSo7YC8cdcIvCVIdZznpJkJLfW2GdVfEjWjcmHo5eGOZQ3cJ+Q3Yi2w0dypipS9kM4au5cHb1/dx26iPwBP3UrB69gWY264XzY2W16Stvu8NrTN7W0fvar+CHUndXPzLwtG8r7b+6Z8DDIp4/uofA5D/AMr4iwrlnmoMAAAAAElFTkSuQmCC'
 )
 
-const WhiteMForcer = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const WhiteMForcer = new Equipment(
   'White M-Forcer',
   '',
   140,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     7,  
     7,
     7,
@@ -8050,21 +8050,21 @@ const WhiteMForcer = (starForce: number, flame: EquipStats, soul: EquipStats, po
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB8AAAAgCAYAAADqgqNBAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEgElEQVR4nL1X27GrMAwUM6eBpARSApQAJZASkhJCCVAClAAlQAlQQiiBlMDVypYxj/P4uppJeNjWSrK0Fl9kZKH/L4GC09KFRNEk93Ea0eVykfuu6ygvW7kvXplc8az3+2d/bhzHoufz+dDQjURjSNM40S036xQ8CNLJeR9F56buQc/Gv3Xziv/JPfrg7gVkHMclshbA6mkyi6riQfdn6d6rYBzvMf7M6804rqxvo1/li84lUAMUWEFej4TKut+8h+D9fq515BT4J/DVgM+dmmKiNofC5qB8/5xRTlmGvc3J4J4D/wYuC5ELSMaMDaALQj6w8pjjaTQjiWSMrwY9FENuz5+B/wLuDLBI1Dz2+hi4Ndd7vV33m+K/gG8UMcDyrojC0Hiq4f6Lp2fgvxGMr3Bhsbex/Ic26Rc2xkZoM/83cNaIsho2SkV4X7k+nQIAT/V3zk1CVD5fCHEll40+59HVgrfPUQxWcpGQWrZbZpJMz6pIgGXsTOFoEs3NL4xBxJGZLPeMK7bzPMA+Onq9GAvSNNlMrFP8J0y3HyqDkZJwHet52Wue6FkmNvl4/n0d75reOJWtXpPH7ZLRzUPssxFI6PV6UeRxLQgjTUsqYGfoec/upXczX88EecvsVpaleK5e24o40usmAh5Nq8IkSeQ+z3NK+n71nN83TXMAtuwmHuOnHuscH3yxCUMmAueCSBRFIQZ0r4nSMjwA7wU5AI+9hNx4viBRguvkIvCuesIZglDC4zMDUjbgO2B4jZBXWe84QNhScKSCZM8XKbUeBbvytZKIhnAPgPHH4zxE/oln9HgHTmsqCAZYzwcOh0TitIh7b39hBH5QqhHRcR/0m20IOArLYrPegseHWajZKptc6FUQSgjCDgMwT9/t5yHku8PPyGiiYcA/42HcEU27eqGeoW7Te+7mauLt50ldj9uw+7Lp4ZQah2Gg9BlTV5h997sa8YpLppt7d4yWXCFgnf08jKf5JPq4n1sURw+jw6k2z7NcL5HJZrqwgjTdzAG7lV5Phmfs+n4egKFH9V6v14PngUn9ifTEQj/24U6kGyLm/d7wtOVuhBLAe3rthl4yWUPdtpN0NHCgrAvp76A/CFxOe62zBUYHiv0WcuLyw4GCgyerOMN7NoCVvhavveV8wdMBuNLyNfmDvg+dr2+AAxcerteSMvF8s4KbeJ7Go0RCDKhPEtQCI9TdsMg6PRlV4BgaTT/sImh5lVhg4ecxM+Ba9pIDsdmKEL7uK8QCm3nruqabzXlge3ptrX3woK3zJXsU1FSmVrEgytZu1bTGCYcsPuX+e22yGoI9Vke0/OAQcolxBG/juRowMghKxv/60K8UfP4gesz9hVAye4+9ttxd8vgLWY3k0i3UrxxwvQV2Kb8vtSsrmBEBfwvEsjVLCzSQpvsxYjlCQoZyQlJhnTrgebyh0rPuNeaJAwyABwq8zHbUEsvtuSbTUpj+DYJylPlsALYKe2yBOQPRVJE7APbgerTdeMHbLhKDmAtsh+lAnRdmbJPZNzbg7T1ffVCVfyBmkO9Fd+cZAAAAAElFTkSuQmCC'
 )
 
-const DarkAvengerTotem = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const DarkAvengerTotem = new Equipment(
   'Dark Avenger Totem',
   '',
   0,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     0,  
     36,
     0,
@@ -8088,21 +8088,21 @@ const DarkAvengerTotem = (starForce: number, flame: EquipStats, soul: EquipStats
     0
   ),
   'weapon',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACIAAAAgCAYAAAB3j6rJAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEnElEQVR4nKWXgbWyPAyGwzl3ARwBRygjwAgwAowAI8gIMIKMICPICDICjMCfN22xYNX73T/neCu1JE+TNOn9of8nq2cu+Iuiv4IIwH1+ckwLURYxRRDYyX8C+gvI6gJAhnGSseFhXVdqhonq9Lz+C4wP5JMCgVDhcwJGrcArdiyuD+ryX8HImp9PPx7nsFvI6Rxvk/PjvltU9k+wX8Bsrj2CrFl7p2uhbKytghVKLcQyPY3h2cK4EC0ShmW53Kiv07cbYzsvIGJs7DvK9aodDBQfIcQQP7swVvJmkPFaJazvBcaFCHweeRrgz8yLTwyDl3wQRxhXkuKiIRhoGgdSWcWbbCQU0LscdFgQ8cayLBQlGfVlzJT3teUQQaG2tn81DMPdswu5rvPmlcnM36/Qc6E4r+X59PTG6vUI8iNnCHxP+aXLpdLeMCACcICQeWFdKIyiFwieFAANY2oO5yJveAvRD5l4ndNSjCA/4ImyG53tfoYwP5L7S5Epqht/KK3MTp5sHmnbC3VcEyzENPTijTxNdxDhOxADY/Plers5G5lEvytVpu3YPNyFhl3FH126SwZxvfEVwrJwaGwYL1VGdd0IBIogwoMcHDk2KgoF5uR6pBs5SZ82gvgUrLfHvHlDQyD2x1zfITiOCQUAcoRIlM4hwJTxSezhj4AUvLLuR/IKIFiBQCDLZLcuUKgZAGo8FvIaCwBxIbqm8ZrZQnNhN3mXKEX3ttK7YANl06HLGRi2lCg2klCLkWd6XoNNlWW9g4EAws65xWwDQWimN8WKxpHipqfIHEufICdqhpvYY8s0wu8yZ2FwbOGVdxAbCEIzsGsbvxVaOHGXUIPIBl0oGB97GkNyIrYQHfLa1hAfxAYCAb0jQXo+rWGk5GG+Xd97g3TikRnhia4u5bm9tTu9XOK9EBYkQHNLuEtOQ7eDYTcLjL1zqOj1+FoISFPmMtoaAgi8j7By03sLYUFEsBgww75LCgwMHLure27sMXcBBFxOG32FcEECXGAA4pOqvb50V1cilchoa4ctfDgAY1d+hXBBtMK9V6yCAPdP6c6ek2WrqIxcym1SYjaOc1JFC5ivV0YXRLySMYi9l7oXI1yYICordgrksDCgHFvSxevGMKm0+0XKPNdyQvLTb3KEnDspCtLI3smqK/VNLpNWuQCFnpqCOfbIzXgEI/pIwgkO76BlfILZeSQwt7GMq2RZd7Kb9rL/1wEd2ebCUfCbvcOw0Z3Ortvf0shX0I7ilmV7PI1iqs1u3drRdx1lRbHNOaCiKa97KoqEYXDve16YP4HIDpBgaOdQaIoQ5MyfB5IR5lBTcH8BhJugKtJ9KdXvoSLGHN57Uczs3ex7ZXXkxFk+4/QYiNzs7DGbHMJDYyBsTrjiVFNlvyA0n+QIEprPhD8JJ+vQ5LCEW9LSc2NDcR24SfZI2kUf0Rd5XqDwJXs8HhNqCw54708vr0fw8sBHMpzG3s7plsKdeOB6MQ5md/vTYwuKe+PHmQ4bPoVKRUuZxvjBi3IEwUJUrWboyqiqKpo4GRAClq5nAF0vtOOWsaPj+6HKjiBDV+eR8+yV/wA15rJo23zonwAAAABJRU5ErkJggg=='
 )
 
-const TheOneWhosTouchedtheSky = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const TheOneWhosTouchedtheSky = new Equipment(
   'The One Who\'s Touched the Sky',
   '',
   20,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     0,  
     0,
     0,
@@ -8126,21 +8126,21 @@ const TheOneWhosTouchedtheSky = (starForce: number, flame: EquipStats, soul: Equ
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAABMAAAAcCAYAAACDBoQZAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACeUlEQVR4nK2UiZWkIBCGy/dMwA6BCYEOgQ7BDkFD0BAkBAmhDUFCaEJYUiAEt6oE77n2bc3r4RA+/jogh9Um+HfL6N8WBkopGDuARwvQCAvaq9OuNN8pC08jwHu/fMvhP9qvYT7ATs2XMHJxbCw8tIKyQJecWL410vP4VXl28StYZq2dhBDwUQv401tuE+AKFBVmnynLcAFnlUAjbnyYM2jjZrbdfBmzvuugblv4aPl8qP3c3uO4KhWYwX4fM7Kyqhh2PDnaJCWWzA9h2e12m97vN9R1fSrkvu/hfr9fHnSpTEpJICAg2bYUns8nf3fOfa8MXUBVI/eHYVjmE/D1GhN0cs5+ngC8TtM4jnxqgX9lWfJ822rsq3iAwcINCH2dgPkR5J1nN7bmvANhES8KUg4CVWqjT8D8CBJSoDICzoVpzAAjbnpgrBRIKApK5ACVKjmufd8hsJ68d9llAlAA4G3gV+RoDCL3wzwOgTrzID+qCjHQEq8VqaqqkmNIAK31EkcMKceR6rGjIscy+vWrEcLa9z7s2gXmg4fgaPH5eTFYIiomxaKbzgum+khOe/LtaXPQ16dFa8NticEm9wuMvhASf0VU5MFuineG4WTY6r/wK0Qlp1cswLI3x6xldVtPfddzgJumYYA2s2stqqMk1K3BsWI3K3wIaL+1DjMu+aYgcC2NENNLmRsGy4vS3FYhZc4YA/SIkpHrOzdJHVUyqSJ16SJTS1C63ArjxgcglObpQCoNApOqBRaDmWHAJ1qQLviamLnyk2pOSlyXQDvYDHTZMIQpFSbF55gXUkeubRVdwpJCXMiP4hzoPW1VHX72OKaFCXr17cr+AiTPnEosSMFmAAAAAElFTkSuQmCC'
 )
 
-const TwilightWarrior = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const TwilightWarrior = new Equipment(
   'Twilight Warrior',
   '',
   180,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     9,  
     9,
     9,
@@ -8164,21 +8164,21 @@ const TwilightWarrior = (starForce: number, flame: EquipStats, soul: EquipStats,
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB4AAAAfCAYAAADwbH0HAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC8UlEQVR4nK2XDZGkMBCFM1VjAAuchKwETgIjgZEAEg4Jg4RFwiHhIuFiAQlsvw4NSSDA1G5vUSFMyJf+Z+8qkizLJvVDMo7jLfVbAAb09XoprbXK83x5bq3led/3SQjWxNK27ZSCL2BA67pWwzCopmnUd6UoCoX9UvBAY1rA4CzL43VkhTIJMWZrCexTVVXynQWMU3VdN5HmgZkhYmprBpXrYjMaozbvGGN3zb8BC5wGDq6M/iBlqcm3hu8B2Rt1roN1I/7IeoiJUx/78L7vpqqseS6bseYJjeN1w9AfRvQuWMRYEz6A3+li80XjZu0FSYFvxgxBPtP80oaIkTNtj8AM9ycUPBOilAIQWt4wL8uS/Yi5rINvr8gRONAYJvXye8KccjRee6rpGXgi2Ty05tiXvz4+pqvwI40ZlFP53IMOg5sjX5FKEGRC17eX4EkwQDDnUjy8YoDUERh5n+da5+odSYLbtvc2wwHWoDHGgfI84wvGeDZP+flbpr7BZJWqGeAXB5Gu67mLQQYDC9R8IGuvpd39bAEAKRnM+4XjEvj1+WcJKvj42XTU7kouiaQZ5XIxyfxHwSJ+YCHQHEwFUNdKr1vgNJ1EoK0IYLHm6k051RjaIrhiwAp3VSvux1VdT13b3mR8GwyoH0RidhwkNreIpgPiHRn35BSMFMlYo9CcfmBhlAMB9klB6R+0sWoydNBDsJ4BZs5HbCLmNt7pfR+L5jhgVZXLelQ3v/AkwYD++/+X74foU1ZKpDlIHSBayvtC6rtNt8gFLNA1b0eFeHH1euRmwOtoU/hN/CouYJNr9+0lgYayCyvFZt5o7IArqCh0AGWNaaOazOnq9ApwZTP8R6CuS/V4sCL5bJDFBPc9bQUkAYMNBAAfOk1DQGn13KVGPlRkZtjeztcYaCxtMBa3iWuNxqwBs7d2/cTNAwX2hMHwwfz1EMhef/j9CLsP+Xi5XzrT9j2cZmvqWRAA2XyJ+Pf+s2UDrw3GITwm7lm+AJb1E2u1VenDAAAAAElFTkSuQmCC'
 )
 
-const CommandingForceEarring = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const CommandingForceEarring = new Equipment(
   'Commanding Force Earring',
   'Pitched Boss Set',
   200,
-  starForce,
+  0,
   true,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     7,  
     7,
     7,
@@ -8202,21 +8202,21 @@ const CommandingForceEarring = (starForce: number, flame: EquipStats, soul: Equi
     0
   ),
   'earring',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACMAAAAiCAYAAADVhWD8AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAFSklEQVR4nJ2Y4ZmjOAyG/WMacAtuwVcCWwJXAimBlBBKCCUcLVDCugW3oBZWn2QZwSQzc6tnGAgB+/VnybLyES42TXN4Y9FdU78ZIx9Zv+Rr/sZdkjxJVPXoDUX8o3CxDvMNhB0eBkckIm62ROmdP6IjACoIRT7j8D0Tyd8Jhvgd+ngDEi/XOJK7h+tsz7XGcVX5q6L3KkATYPnoA4jHQNoRtRVu4eMNyCsYO3KDkWfWdUnXBub5uSgiYKpOSAzVzw2UsDZYS5ncq89YZzjX8Nmyfc8Q0tA45LAXCinF1kkKy3KTEY7jVNpNitGa7z7TPpOoEy8w0XXWn3TXgwcBBMxASun9hmEY+V6CahlA8SChdq3aiDrReokfrrPkO2zKGEz3Ee4gPOaBO6cTCBQxM7DWZWtfIiuR+A2mRRSpUElcnM0rkx2MffbKBANJ3EG5RCZC1wPhc3+XeujgmqR/BgnwqaiDBtTVZ67OKEp4W7canvMQrjaNE3+3OnU0SuHg/F0Nzkus7bY2JBl0dDD80jO8MMz9Tw1AJ3Ao+XiG+/3WG5kmdWoSCKgUq0IeMMSjuAFonmceVQ21lvDObsve1CniN8dY42nuGC4yiCkUcs58XjPf728BitXi6aJymiZ+iZZliQCCfQUEyzkKjHTCU4TOXz0HEETYvm/2bG5hb7Etq/U1mmQUDBQMqJTt1LA5qakz88wsqzqv95nrOwDRASr8xkDc1x5akJCDsUiKn4HGE5CLkvDvfQ3/PSY+PvvVfd1lus2xfaQBCEqxYsNjfq4tj4nPJOmxKeOj5x2QNwPyEKqogsCPMH1XIDeotuSpAxMD9NaOFfLnQB4Ca9C2lw7y7nlT586pg3PZ3dIBIukfBvo9jqM85B0XcN8BeZBTdB2NfKOOZPbuM4WBFgaaAQQXKmX/sULpouYpur5RR/3zzv1Ouw/tauuBAg3/CwhhXpwqn4DeqFNrbeLFU26SZZmB4t8AZV6pkSCHtvYggf5UIePyMOh1xPbgOY+8jmwvgXJOAqSjOVRZNzhtlrMBjQMDpa8XRL9UeBhEVQLIytGATrftNZA985j4PsucJX9VDvOdw3wQIBhHtwI1hb6yFBP5RPkbZyjiDUDeMssPkIk3V4giA8IqjKm5r4DEGqp5C8psfI2tx7aTTKWpAUjAIsPDj3o6YF9Zw7EK+/lN8CGo4VUwEDtbWrDtpzdEzcbCAhLnUo/76XDmHtp2x3Z3tv+QDRac+rYcQNtedf3h6ZjHQ6FXaQFmPgTVVN0gKj1n7J/7WiPKxP4J2upB4bzRQlILBgT9DMjs122VzTmc+WpwbDRrj6t6JCDwL85Pv/yiZ2rYObhzr5sMCCZQzmJLA5gGXzHAqaEMgLDjrHzcFw2GdZOkfJNCkBvwMOW4JvOaKkc09WKyOsugEHWYe8CYvwDK9sq4j6m1CJO8pW1gDwwq2Y5jFfL7GVVCN89RdhjUSuagBVgjFLV5+9g26WufitQ6lgjatblSzuUXrzckLQMkojrQ0ja4becpn+uzZKW7FqWg16pQymm9hyjUhL+sr9cRzjlWOZINlSqxQPvG+2sa8khaQmk6OC3TyNj6BsXWRNV9vFY6WnzhX5JZACLOKj25qqTpTLXgWWo/RQCl6rYAZ1qrTDfxNuJcqmCV1YLM6nmbOuzg+xY6ajlKHCLR6u7U/MwKehkXA+wCofV+E50qtV8CvHFJfCpVQhu31lma2Gi8lB9+1EGn134EKG3yLLZrlDIk2TKhoEU/Wbb29nEt0gwa5y9+swnhWApsXaJvnhVLnAL2dX/50B8s76qFcS43ygAAAABJRU5ErkJggg=='
 )
 
-const SpiritDiviner = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const SpiritDiviner = new Equipment(
   'Spirit Diviner',
   '',
   46,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     0,  
     0,
     0,
@@ -8240,21 +8240,21 @@ const SpiritDiviner = (starForce: number, flame: EquipStats, soul: EquipStats, p
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAABoAAAAhCAYAAADH97ugAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACyElEQVR4nLWWi9WiMBCFh3NsAEvAErQELGEpAUrAEn5LkBKkBFPCWoKUYEpg54YMO2TD419355woCSFf7szksaPBevo/lsgDQP3r9aIsy1xD13Ufj/58Pl25Xq+9wEQRXS4X+pd2PB4ndQdqmgZ06t9cSXkSNqHOvlxb91VSmQ5qKzuovfl6w/Xs0lBd15Slh/HbZE+uLQQlkJjnOfvNkM0spTxea1qy1pLhklFHDbu09rMsnoZKdjXe/eDSti3V/Ll8i7EwSQpiNLG02//hhsbH7cp+n7Sl6eq3ISgxxvTJieh9GxqgBoWeluZt6IMEsn4O+wq/ZqImVJT4ji7Vf9ZXdkVJOcfPwK0Ry41x2VqmjQf8HmdOkTbX8cS5kecdsVIin/qh4R3icTLzgCXQCIQ77/c7FUUR7aDeLULWQFG4///2TrIGSnjGThUMz/hXdQ3/CDTCyrIkbFUwrBEs8q2QLSCnoO8HT8k+iFWPcjgcxIUfxagXAA8Y7SAKPfCvss5BqqpyKYy18ng8RkXYmeE6vMc7ANdgMZCDYP/CGrndhq1CHx/YmREztAEE8BosBI1KcrUbxM4oOQYEhgRZgkVdB3dhALgL8QFUb/vn83nS5jNw0TTIqcHA2cyWs2ZLqlbXEVRtaVuz8XKCmazdFxA7JEF4TIcWU7WoCLHQaS0ZKCZpvsXGgw8zkAUYg8G23JAQ3yRxQr4XI4HBYot2q01OWFGFWMjsYJLq+AdA0l+/xzNcG1OzqAhBd6erUuKuXxH36b5bFE1UYeZYlHCPKAkhqAMCU2pwFcL1aHKrCUHosGfYW7tQtiS4R8NQhxIFQTCPCmKl7BRAl4Jhd33QCUDvGpLuHnLxEDGB4MNupwbP1L8bn2FuMwvTXmAe4Pr6bzVkYlpRrJO7+TPwSwMVoJr5zoZlp+Rp2PSuy9c8tDHwoepzs7ex518tobOpHg+fbgAAAABJRU5ErkJggg=='
 )
 
-const SuperiorEngravedGolluxBelt = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const SuperiorEngravedGolluxBelt = new Equipment(
   'Superior Engraved Gollux Belt',
   'Superior Gollux Set',
   150,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     60,  
     60,
     60,
@@ -8278,21 +8278,21 @@ const SuperiorEngravedGolluxBelt = (starForce: number, flame: EquipStats, soul: 
     0
   ),
   'belt',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACgAAAAgCAYAAABgrToAAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAFcElEQVR4nKWYgXWjMAyGlfduATMCjAAjhBHICDBCM0IZIYwQRggjlBHCCHiEnH7bApmQXPpOfRSaYPnjlyyL/qH/sJ9HauTaqs+3181h0h/9yn4FeA9APBvOAmf+Mbu9PFKMsW4o/z4nnwN/BBjAdg+7glKA315bWuHc+WtO3bn9APQt4AYsxWHX6yqnO/3GWsraoOSEow6g3RvQXcA9sABXa6jD4fArwMfj8SXXjc3OAloF0H4H9AlQwQEqD+c6DWAa6vG4xINtG84cy/FZlHjs4xvnkwcdAXqcUxo2kBFggBPFAPe1BdNQbXOmfkzJGEnDlF5Zng40X59hFegpQE4acgHcKHekoNri6M5fpd/UtS11/Qq0wr23Ycz5ENhxgVWg19JD2pyVHAOkVlCHdYGDI5MbajtWrDtTmr5W6ZVZG4e7HwwfrAKn3nxZQQNkST43V0Cl3hJWgRtsSk2xTjBN0wKZsp+jqoL5C/aRp+snzJj7cTwefnpWtG+ILhU50AB5K2xWsIoGKoqCOvciOzVTFEYWk6p0XP5uevrIAOHXgofFlPALdXd8gMOtbA2IIwptclIjWCmh1w75iT8C1CsYsBWHtx3Wwj4wNOaUUENFfP7nvu6nUbabI3CmCM4/eQzVUzaoHUO2NFJphySo9BiBrcITYzkg3JuiRSmHeaugIkRNbQj4AieTMNQYgOweXNjStFkuzKjGLo3ED0ABiQwap82AwPNyqyuKztW8w6FxTwinA2UAWlaY2oermlODt7J+B1pOcqDmuQv4FDV/WI+sMeuIYG/34rLsF0jYke6G1YMKptrswyF33FIQbFatC1+boF5+Nc9bJeCK1iu5tZeAKAN5nntILpyqoBrtXEzfs3z2eNRbv/oeKdayGO90o4QK+Toq1Dqf/OD6TkmXOciiNA5AT/D4mrkNmSijkub526nsIJOJZvPzBKMfxE3Iy9aHdGGh1sb1ZkIdzLjb5ZW83iVDeHK9AwASqrqdZZwdvHsQhoPKDojhPKRXAaD9saD6kvpFx80E/HhD0Y7naPkHeZmFLS9SMKzAbqSsluQ9Ho/r04QdpGxG+gmB03Ci3grplyVqZtOj2J/d32moavAHODxEYgtXG1V9jbc63URqFa/1QKfOQ7r8GAu3k2ztdqv8qldgYri/PmJyr9Q4jtHOhLAKnFZv0s1CwWHmFyB8gPrGBT77EhXn6+CKdp8Mi1OEf89sqOTIL9hgB+cQk+tWKzmtYU2rVsO1pMrRAij+yRd1+OwGFWoIO1/PNPNV2egRLYfJuPPEI6dJeVIGxbKGliZjvo7Uh3D+ay9fAKHizS8WTDM4QYKSMFmReyFG4t/qydUy52AjMMCQzy33kqgK6+rFvmypqpY6+sUqYu6lYkd1sPSQLkHlNRGFGe8iEWjwn2Sc5HcPKHAoumXn/Y9osJCD3P2cX6TFmXvD84AQfy/tFkNmTwpuIEVJQLrWp/Og1ZKbvPqQYwmnzf0yuWIrcLX1yxxlAx58DkrcfXgBFpm8z3hbvtzdSUr/nwB7faCPWZLWgbZW56b/RuC8itaDUdz1bIs2QisK7tjuInmyUwD9xmuhDTuNoe4cILWF8ESfFWPmO9SU8r37YVAWVcLVT7+Sy48BxfqzxUbOv2gyvjHrTiZb3p1N7gGKnoGsexJpuDAG9wyZSfxyxk8et1zIJgc3+Tc73fh9BDh2PE/qXMsUfnpx1DMAb/OqW9UdoQ2PgZ7GA/MmkpiMlVuVTUa3tgG3FOmPAd0soQZb4xYPg1oT1FE3RU1gXA3Df3GMNPA83g5mSDio5H2CarLFmxf3d3zkV7VoR9YGOPlto3ufx1t/Ly6MjwOp8fBmt3Cwv6Q7OKNyh6yEAAAAAElFTkSuQmCC'
 )
 
-const TaaDaa = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const TaaDaa = new Equipment(
   'Taa Daa',
   '',
   130,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     9,  
     9,
     9,
@@ -8316,21 +8316,21 @@ const TaaDaa = (starForce: number, flame: EquipStats, soul: EquipStats, potentia
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEpUlEQVR4nKVX4bWyMAwN57wFcAQcAUfAEXQEHUFGgBFkBBlBRqAjPEawI/DlpgkURN+PL+d4Wgptbm5u0/pDf9tI/2/Jpxd/ARjHyf1fOD74cBklh2G0D3jBPEkS9xUAf3Tjj2p7bo5fHPxhee7XQwVgbQJgxyduMv5VCD0RC6E/s5TSx5P8+SgtzPqHcqC+ymTM+mipO/NPACSIXJ1XSmsHJtYMXHjwqM4rfKyhj0VRIBxeQluJRftZxk0axqyfZbamzEckCoRidtcACvmKnY+/YcFk7/9XhGN/Syk/paaFQ/zyR2m/mPNR+OmoqxsaupZni4io6zpKnSOvLWzuZ+R0jIaB+5m0MDivG04D/2StJOmVCbCS/PCv5YF2dp6I6C6cx6ZbhuK953U8XbxfjDFSbgNjlT9z//lGw+2S0vk4WEDiXBiIP0KUIa28WD4IiOt5mkQnFt3jif5xnnQM/aOC/WXVtOVRdG7R3ysWMK9ZuLcdsQTQNA0DQJp25MqUqQw0utZPIABMbWtfil5Kde7UYcvzqfW0ZQsAbdtO/bzyJFp3gQWIJOSQGUGikvfKhOj35ey8c4F6CFACLIf1lAWAxYKlarXqB7o/Aohi0CgY1DgOOiWRZ9jQDYTsdbz3QZ45R+5hRf7GVmIARqu5rtwJ+uqeCfXlwbOgwwKdCl1SEXraLiPL9NHUn2coGakAq69BU0glWFykAM6Feo6ovA7KQPxBRpcol0at0zFxSEvaYWDA8TsbB4jbPRPgEQBEEybBOXbX/deY0veMWoqgUm6CzCmwtXZs77FzAAIAH/F72jyMRo46mSKmlFPSkIDLoUSf0jcDEFThRtm4MKiBtQMQMag1ADl0xtGrBkIhotSL87x6CQPYmvnFBxDTQmBoL5HHzoVi/qZmDQEE3nWdpuiemY6SmIEJBJWa2yZsx+SwpzQr6PXoZhDKkGt3ITAGEDtPzl4OpPFOknOIcO38YwpQiCTCNkxK7WST3M/OY01Y9JYGypapAkBj4C0F6wtIPMlxYXnd5or4TQfYraAbLPRFGKuvfop+y3Aa3mi+gKwQDJPC5TF2/kEDMQgYnOenLwAQeXRJqERsjqYybPUgMJItZ0sa+Pt26QQg9BgJ+5/oIwhJgTqXYihH8XN2XvVzhS4PgSFUyakWqC7WxQgnoNm1DCAgQKuEdlFdiXC6vE7Ozak47g3Ici8P0aM5htN4DM+PDRa2r+UulEmzE/JY+eiAir2nC1HawYPCg2hdBM61f9wH4iMeThF99eD2jKN55LGw53FAzeal0pnlJpN8mE5ERJ+v5LMFQAsRdDDIrUhAsHOAoGFHre7jk24rqZBurxVPozTxccG6XYImzDnqAHRQtriG1puFKAIxOwMImAABA/rcqj6+aSCO3KrgOFZdXddvDCxB9GEmbjFW1JrrEoiY5t/r9cv2f+zYChEif71uuFUUHKXstQmAXZP1ccdIXzLevyeviWqD90thbVW9Q23f1FeO3L8YxW63O2P6BCB5K4PyByJlIG937BjUWtmzs4WJs+jXafvx3zFeIkyEs9exKTQG1dNnO9B0Yi3Wm/ocfWkP/wBo775WOJRzkAAAAABJRU5ErkJggg=='
 )
 
-const AMemberofTheMapleAlliance = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const AMemberofTheMapleAlliance = new Equipment(
   'A Member of The Maple Alliance',
   '',
   70,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     0,  
     0,
     0,
@@ -8354,21 +8354,21 @@ const AMemberofTheMapleAlliance = (starForce: number, flame: EquipStats, soul: E
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAABcAAAAhCAYAAAAyCTAQAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADZ0lEQVR4nK1Wi5GjMAwVM9sAlOCUwJYAJYQSkhKSEpYSkhJCCVDCUUIoAZfAvWfZfAIkNzunyYyxLT89S7KUL1EZ5P9LRPBhGIyfP/148N+H3yNH3aDMm06axi3Nt38NnGU6fjkjuQz1RaQtRU74uOel1/LazRbCci+cS4EDPMcu+DzC+vCMReI0lWOsi+ZHxy5fY7/uhXMH5RUF5tOBLIXWUUcKFR8W83iNnlqRIsaen4dzVTuqLMC7phVjK5HbRbpDoYsJjNa4PRhms7FLZqSeDxGc4/m5zMGjg4XvAZpBmQcab6D6Frn8IVtk7CmSEvPUX4a6FOrmdnLJijk3oDD8JIULUPrQICmwkTKK9Fum4Nu2dTpXWQJvgTuFKx+VPzB44C7p5DIMCwMJdBjXLeA98NFAAHaB63u3celruCB3fsdP8ll2vANflwAPLI96sZzBUJMgoqfds4tURAkI+/7JW/uiv05Hk3q3vSJ/O2PRjPlBWXqQDiXBPP0o22KMpmaQ1soYjznzSR66a8QiiIl07nstBJJcXeTEttImuXTdGjxiFXPVsUAS35ADcYYgDh44uGhy1WWYQCklgI9Ief801s+f4l6pO9SwYIi6aeP5A9S2WxVtzdxJg1zOerK/KnvPSo0ETAIuQfmIyPpavAFXwkeJH5UzYE8ZcDM1QgN2WTtaOLg9Vy6ITXvESrUPbkRLZ5OU7gZxAYa3TLYkAJMxa82pNpK+wG+U3My7JlbXvLhFpxmAaPgoVVG5BrEl61R0gVwguYFpaZ61FrI+Gw3QUXxM7TwHd8HjqytSBBoZF/nUQETTjjWGBk51CGgl94/gQc7X6fsGVmczGnN+Tpa9z2y8tHUnQlkwPeuLfzCsMQT2/ifj8GDmgBteeQkoukqXRM4FTENblDBkxpvQeGUnpnzMJwT1ftYcuaF5VOGfwys4myxanStp8b2RmC0MBtikHSCid/QMmX4Ea7FPZ9GJj3SZVYseCtG66xu0OZday5FBnBOXBYvtjYEkcJhfwThK3BPd76FC4v4GT8ag0MCxExkYSdEzCSreEBlfJsafe2i4AWNANvyzJL78EpCdn52+32H8DnxxA0qMfwFsxgTLMdY/WEcQ4x3Gn8AXNwggYUx9Du4x/hfw8SBAXE8MI24xvAMN8hcgyIWbazW15AAAAABJRU5ErkJggg=='
 )
 
-const MapleWorldSavior = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const MapleWorldSavior = new Equipment(
   'Maple World Savior',
   '',
   120,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     7,  
     7,
     7,
@@ -8392,21 +8392,21 @@ const MapleWorldSavior = (starForce: number, flame: EquipStats, soul: EquipStats
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAABsAAAAgCAYAAADjaQM7AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAE70lEQVR4nLVX7ZWjOgwV52wDTglOCVACKYGUQEoIJUAJoYRQApSAS4hLwCXk6Uo2OJnZ836t97DM2JKuPq+ZP6TrTf9+FQmM3iv/VvH7XZIriEqGvxaenu9NzkccxtW+8fthxbxneU/FmeXtrl8UbreLlcAK3pDokqCLxm6BqL+cqCmj5MNQqAI1q9FDrOpM3axOif7q+K0KEajIwdLGOwniTZWRA+/sIVXBmCdXYc/s2855wo7oV0n/ANrBOHWQa/jpOPSeVUWwiUauj57ut04jpWTE0YPU+4HPyfssEpVhu1C6S4YL51NkjYKIAEtyufhwovCmyzmC6OLzM87gIL9fenjRDMQMReefmU3xKYFZ3Xxz8YqSD5/8ABCKdyi9N0PFSWqEgIf4pvlu6DIEiYLlhgwIdqRJkv28ZvQbYBIkYzU96ff4Lstd1X4CcZeF04ftH2BIdg6YEIhWirXG/gPvn7qfQGH5PPwAGy4F3efyG1DqmH6GsQS0PQ2driHVuUypSxGNY/g7GICWzlPd2wi4G6e+5v+C12IHbQXuIGpLs8vkZwM7AXtd4X6AqYRzDJQDsgFujKToRy+i6HLn1Ot7y7M2GurvtAMtgzoOe7n9BDaxV42kYWMgVgyTJ1MfigCyrbIE3KjjxA4XnrfZSPf36q/o44dIf0CcdrA4N5J3GIdwAqr7jYFPEaii89irq66ld9+JIwnwwjQ2PzWO2w3sItE72P+umWzUTeBaGEkVUgkg0xxAr7YWYdBicWWifU474PwqmQMc3RtDj0egscpKRJ90ZbXrOJVroGlCqo6VAzGz0DQu1D4fDEgC6MPBk9ZSnkIb2cb/yQcxCSMF1gQpuNSgqSRtk6aFrreJLKvVLDMiWWmeYkOc422QxoQx8FwRmd0HcV/V3lnouho/e0dLaJXdGciw+w1Y35YSqw8K8OyPCI0NQjFx/izAfBpa+stCc83lRBdOGVJHMaozp3KrO20mnxg/fGm7lM6d9V1kZj3NqAheXbmtH4w4kwIimoUBX81VOLM6afqi0d/syD7AMF/tt3Cq4Xzna94HunAdZr6lN47Q1FMkZgVqakPP+oNJvu0gjRJZvF6+eG/ltmeVhYuPKYHByy1PkdqrraFpCVw9I45JJ2Z2sqtJa5bUX+y5bS1dK0/ToHsLR9UzJS2L1gPGsZfeCLBlhJGL1tZW5pPpktaXEVLIlkR2UBVHB5p6rhunpxCDCUhBNaVwLwdpuEEABBnPTwICKcgXVqSsP5GqJg17ZbYguSLW7S2AduGvKf6HXMfPDE5VPsBGp8T+BErjQ1/fIDG6QufNKE2tW7l3GjwPX20dYloRHaJFA6UbAkCoFaJiJz+JeNvKK25mAeSimsYK0wMQitXZfwB5f0ACBKvjiEDIKIVcqlvph8F3XacTvxPx6eRC35uOBR7FyVlcNWgWAMIw0qMoUaHU2wALNzK48TErdQFoe5X+evPjNAlpWsqGGhuGPQAdjSzYAlCmn798baPXTbowBTP7mHk8tG6xxen1KgMDTcsSPvKeXzHiOnuCAozPp63r2pQMKvtIbU1ZdKVepOROTFNqk0vh2SHXdX5hIE/KXfuTwEI0kQAdP8v9buy62rq0ptZI83X8ZQF24E6cxtEvnJ0EchT1l8jClxANQ3D8oFNxJzV0fDPmC8an89l7+p/1H0y/PB7QdaprAAAAAElFTkSuQmCC'
 )
 
-const SleepywoodDonor = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const SleepywoodDonor = new Equipment(
   'Sleepywood Donor',
   '',
   0,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     10,  
     10,
     10,
@@ -8430,21 +8430,21 @@ const SleepywoodDonor = (starForce: number, flame: EquipStats, soul: EquipStats,
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAABoAAAAgCAYAAAAMq2gFAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADu0lEQVR4nLWWjbGiMBSFLzM2EEvIloAl8ErAErQEXwlSgpQgJUgJUoKU8FICe05yA+HHWXdm985AMJD75f7GnQQZ5P9JxlsEyXAXqY8ipx8RtxfpN1bkQynuuxN36f03S7G4DNbXeHeCvuw4vdstP24rI4WB0jjxcuIqG5QDYkpsAb/lpxeD0WBefplkPe9utYkVqLjgo9qMECoxD1V+wmixZbMPkFIh+l1cX1dra0dQ300W5S7siHeDZ0OfVLCgxFwGyBMjfssFI97H7yhdZfzKqG8Fcv1kkas0RvC19UotfveS5yXujeQ2vLe06ok3+7Apm1jk+m1QdmhC5lnsqFMfF9zhAfFCPPIrXNbtkRDJiIzoNClaVZRj/Znrm6B3K0Z+8qtyHnjSxdylbY0nGsDc9zRKbmCZ89bxqrmwcjPAFmgGrLW2COyPDkAoqHT7Os4Aydot2cl7GYFltExfUHmjz80fAJ+ARmDDen4ZaSrNRpDuyLjs6zPIp6DhDv+1MK28aX21ThrQb8iWc+td/E8sEkfIA0HH2PdGWDIWraOr5WN5Bxqb7ONikPLUjNHGOBm9O/8+ZqrKpnVboGEYjHcPpW1VuV1/yCkmxvMmvojbdoR+lN4BghphgyxoDcFsKdpmemjvHZov5ovMSQurpGSBswQ2Nb6PEYPvIS8GA5rzws+zg9tr7q1pq1YcEqXEdw37bSFvZQkaXnBD22Gn3wqxjAc1xCZjxufiEn43sKSsQ03dYdmxWWdiChpuvJ/VBd5dPINwTFy1fvDMzEMrnc2xpXaM0zls4RbUzGAzi04PCRbQL4wJ3dV0I6zXdOaY84ioQvaVV1gFD1gQTjg1O8b4/N51GSp9GF5r/3pAbWZznR509rT+/hAgb103F80wWkJX9RvFSYi56LG9Pr1n8hbEFI6l4+OxsMjPXybt7i9Aw/BIQKiTCAoBXwtjlMKisIDhvvfJUH+FjPNH8mB8nYQUntzE2OT+n9EEr3Fe4ZQXc+axsm3aLBmYkuxdbCuseOcDransJqCfXVhCSFeGKjsujvGVRXzJXkUXtljiK14JTOElgJZQijZA2Bk041Z/L5eg0R90GdsKK57FyDrx4qbAR3cR4s+qbtzEGN547RJAvMT/VUXRlafQVljx9iYriRDf4wBh91YfFwnE/7XYJQCr43eWuWtUxt7FtsKKXwoDz9nD2AU8ZLN/pxalX5/jHAJ7pTFsK4ekrTzVQg38WeYl65bXLjEvhaXP1P/U3nVIJp/6+Guxebf1/Bs93LanynhdGgAAAABJRU5ErkJggg=='
 )
 
-const TuesdayMonsterPark = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const TuesdayMonsterPark = new Equipment(
   'Tuesday Monster Park',
   '',
   100,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     7,  
     7,
     7,
@@ -8468,21 +8468,21 @@ const TuesdayMonsterPark = (starForce: number, flame: EquipStats, soul: EquipSta
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAYAAABX5MJvAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEWklEQVR4nLWXjZGrOgyFlZnbAFsClAAlJCWQEqAEKAFKCCWEEkIJUEIoYV0CT0dGxiZkc/e9eZrZJRgjfT6Sf/hDr7bQ/28n/2YPsXw/4qAhig1R/P3enVn9mYjMHP0VwddlXnwQHyIA6LtZrnnBbXPyg8uYPlldW19NY/sijg/iQ5zWB/RsbMPQ4//8Mcj0oYuZWNEU15mSeounP/bpkAfccauLnv6ziQsG6aYw+DuIAGZ1IECPfxH8cuDvyP7QX9iaw19DeO8FhfhbCFEhSh3AjyPav6vv3ceUrtn0FuQniOXGIyl5JGZCVQdKaM2cfmrT96atcg9BginqOVlWernHrPGmFS3j2jHbCnis7DVrbZuXilNbGhlQFEW+IodT1MlW3XjhMcZ/JCAFT7PbTYKTwhgT0zzMCO5guoEcgL7PigqIDthP0Us68LBrJ2p7B+GIFWBZFmrbln/zXB4tgLZldW1BpsCtqIPUwv/eAgjkLk1jKqqU/7Y2yIlRKwD1J6qqhVfC+qVNUrKCrKmRAUBd+PZjHUL4IK7jZEgBRNeTU9i9c9T2G1OIRdOQnqONkgGawgLc77dfOc6uZaAG1KxuPFMGIzFgUAftgRICMNhaSHcbYp4XlFxqXjO2nJppS/zz0VDfd3StO7kH9BHIOd98aixASCKhgoNhACgA05yX/cSFWbk+PdRKwx10Yqg0rwQOMHsQBdDgdoNcZ4cWjdaApsC3Wx5W9X4DhwqqDtTCc1UFhumdFvYtHBNwRCgqu26EhekBYPQouKZpZOodmTHhflIUBTVx6tIm6+U80ScDhCsa3wAgU4/tcrH74eMR7qX7ADEDoO+T+wEEVlUFp6KzawcfbuZ4PSjRNk1ViZO/FuBFWF2X0lGDK8zezuezXPPcggrc3LOKldTJ3vTUFtQEQX1vMYKTruscQJbZAhnHkZIk4RHHUkNNc5O+Zbkdl4ahdlBHhhkYx9EKESoRGAD6uKJ4KoORqs35jYb2yr9KAcE+A0BdtKDAMMQCi78oirflvDM0F+RA3kJAgScfSi+9jm6wwdcaeCKnxRikR5+l6ZmVuwg4fgNsHF/PZfO8bZCuJrAtS0rWgkSAeZ4PlfALVUefJJmMWkEAjmdoA5TurlFhFeAalLg+hFcT39RfT/QocOCNZYRpGq4Rj8Iqg373+52u16uT/X5v+L52MPbKIO3g0qEgeyUCy+/rx06dSXXnuV3q+n7NT76szmcuyjJ4dxrC2eBDqfkq+BBeOr5CpwzRtp1cMXVxOsJs8ace1gdeumyALvxGwLuf7FAJOEUacFUnCN5xAP/EhbbdCczzES5IakffHsEXmFMjswBYlhUIJlNx28M4z8b1Qz3odZqGoP3AUBSO/uULzAexgUOAzNtG7H3YD6drv11P6d67u63xOB1fDPKtJ2q1qXdOXJXxfeMr47XTvn19F1/WhjwV3kEYBTl45o8CkmbsfDzol3D7c9f2tQ+u9g+JL4nbbcIHbwAAAABJRU5ErkJggg=='
 )
 
-const VictoriaMonsterCollector = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const VictoriaMonsterCollector = new Equipment(
   'Victoria Monster Collector',
   '',
   33,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     2,  
     2,
     2,
@@ -8506,21 +8506,21 @@ const VictoriaMonsterCollector = (starForce: number, flame: EquipStats, soul: Eq
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB0AAAAgCAYAAADud3N8AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADcUlEQVR4nL2Xi5GjMAyGxcw2QEogJUAJUEIoAZewKSFbApQQSkhKwCWEEnAJnCQ/MLbzuJub1QxrsLE//7Iksl+gbYXfs4yg67rg3/zq9Z+evD9ut6r17nPdzPlb4qGZV4Jm2YGUttCf4GOTs/+kgja2QbrbzLo3w2stvycYxzt32Na306nmfmrzAtx7tj/1vm2HqrIc+PLeyaqqWtFgGAZ4PG5QVe1ukaLIIc9zbq3ZZ2p9m6Yrr9N1Hboyc8AQygNoDkwTQ/An9gqYgjow3QghdgNCjLs27PcWAG/+DvgMmnpxXTC4czwikRDe45jCIz20ybmRfcGH1hjR0yMeq47wV+ZDbYGIVJYYI9PS84NoBIRmN0JwqXidaA1/bVeRKHjsWfgvUz9mGcP2ubkZZUNZbHCd93uwWZ/7uSJN31044J5FkzlYj2da9r0Z3RRLvBX3DU4VzoDdOuwR5FQ/A1ckkLiqbBq4zzMPiBHT5dE7oIZpxTLbYM33wu3SH2Dy4BRsBKZN9KcO2uMR6qJw8xg6K8UXDWxA4QF73hRbrasM3OMKVKITeg+M6QpVi/la1CyoMAWEa++PlOsJgQR2LtsBRyhvNzem7iPsj1d7IWtyWG+tA1uz6yIHwK+94zyz48ktNkJp5yGQLK9PwM5yCw+6v6wRfGUwYCSLs1abVa7ax7XXbNmpZLABOveaPgLDPf6qEJiM5ov9CSRrL39XbcXRKnHmBXd5xi1fLu5F3gA/2+CwwaW/jaHadSK1Wxq9r0gIJGUSc7jE0Hctgcsr/Iu9hxqFpck123L/GL+upPGp9PqCovJx7WVllCaYMmFgWYADvrHXUIKgeyWp8s9UmnP+D+7l30r0CWvOurqU6EmZaXBqQ8rkjCr3Q0vXgtRZBJcu/uQllVL9pHCfbIen0pn+zfPUaH5ZpMeinyu4q0gt/o2j15s0e0dJKu1zSmUK6syqpZJW9nqOlBJemQValXn9mdKd2vPggVlxxQpDeGEW94H0EwZjJFL5SukBwYutUFzOjuYDMGm4wkUXaHcwsgBIB09hprwrgube1eDE26o/mRv8SSoSjM6QXGqAFPK1B5vNpXyohRVee8YFOHR9eGiXzrhnG/sxayT/z0gptWYncJI6+ASRZVv2iACkEtcOal3gg/37ygASWB4LVakn9/AHFxK+BHpfS7EAAAAASUVORK5CYII='
 )
 
-const ReinforcedGolluxEarrings = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const ReinforcedGolluxEarrings = new Equipment(
   'Reinforced Gollux Earrings',
   'Reinforced Gollux Set',
   140,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     12,  
     12,
     12,
@@ -8544,21 +8544,21 @@ const ReinforcedGolluxEarrings = (starForce: number, flame: EquipStats, soul: Eq
     0
   ),
   'earring',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACUAAAAiCAYAAADYmxC7AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAFgklEQVR4nL2Yi5WrLBDHx3O2AVICKUFLwBJMCaaEWEIsIZYQSwglSAlSgpTgN8ND8JFkv3vuuey6icjjx39mGNwf+FTGidnP88nAPyx7qAACwPxFdQTlwP4B4BrKAdHF/RUACUTba5z2o/xl0AjlgAJMPnN2Sxtm2rQLWFAt9qVOBgcw6i8A/iRAAUogUJ1l2arhPM83BOsPofDe+HoxTZoG6U5/DpeaLyhkgeZ5TB5dwdXNFYIpC8lZng50QiUJDOkYNtA5LtQ4WDD/U70AZVUik7nJBYA6Q1bEhlTnwSzMkZII1g2cPc7aXKjOOEUNDKP7LM6/gvtJTMeWWiUtEE60VAXYALNWsgnANYJJrBBUO5Hq2jQ0IpB5B+zzC7Af+GUhwAh0pGQVwASCGFSd+ft7pmyQSEbm3fvjARTZO92HaEm41lcNCcRM0RfBvJLTE33pEoETMJYqa4NEaU3RKYaJ9cVnHwtK2X0IJ+7IBGtFZBh413kBSoDnIfE3JZe2zLsIY8CGaYbilL0FS80XwKQ1gVdEy32noGTZwQo4BbMD6tgHiXIOzFSMcayW4zQzzpx1sM8K0EGtTbg0aK/OQ9Oy9y25isT0ebg/KU37DScwUgxdDvcVZvc2duBjW0dfNbhRtOAeZfrNxGQicvJESfInv+qdqaectkCgrSRHSyMSbbRG55y9pDbFa5x0mexlu+jDqKni5nm1dawSMD4knK8OCHJ6dl4p2WQc7kNrnT9dgHWi5Hq9XrSpCrxUo0yDN3TPHsMEVx8AC1TcpMCv+OxW+cLBRA4aZ7/btc4I0OyUPF1aaIuoJOQhcStvAO7FonFsNsh7zA74hEtlep14ygLFXVdD6YJCOMKRapjLsMvT1+L0X5VssjZRir4YqJ+4GP6CsiztM1QtLzqt0J4cJzf8NmjdFmaBEswGi0Gba0wTnaG1+vxmZBqC3UZJnE+InZL35x2A3Ay7ymtnbdFdKqgHCc8aJ8HJzuczjONYnxrVgvUza7AIhaFqva9i8ChcauDhGdHG7Csxhwio6S8TcCqLnZKrIijk0PyGIpCBxJFz4aCGm1k219MVQ9RA9CnagYMJewMlxi5XjtyZIJ1E9eBTG0jjFNwqqfDHXDHoK1xK7/xCGx9cyrk5QRkeg51OF06dga2ij1nF4CYNdFvHT1W73yQ06DK1h9sqGYDFydW09hiGgcEr6CR+r10G5KvDTzwU/Gwq7yTDHU1ZGrPdN5dGuaCGDizULWWjpPJbX07GG3OQ6G+VdoIdr9rs0kzjVmY68IvP/Yw1ppUWIarKrZDAHgwjrtmMuVEyR2TyPVajczSORGs4LsYt0UJR7vF+RfI0fvG0PfTTNFfnUwbD3YF1nQuqd+VIyY58z3+/1RK4DyGd2sIsf6JSAYz5Iyy4Mzd1q8LqaDCMfuj7OBb/ouQypz8bi4eASyGhFjuZlry7cvSQretpAv8iwOgtZp7mG6n1rF07IeIwNwQtUNtPSjLuFkSkBCSCUmszOihZmsOTJ72JsNGCWYEzrTsEqwmMysPPqhNnfafkOloiELUlf7SnilKG17e9Uitsyto2t9nGEk+OhhSjigCXgl1QoSMl2UGUkaJZuQB1EM7wvnw+o9Mh//7QNnlhEkPFWjIGwh36+icluR3C+dobIGu671A2YbX+3MFpVENXpmgHBD/N0pQhLE/htmBUqj4AWSMrdzEdgL5BuR1Wa/cqz7SDiyxmacbcZ3ahII9w70pWdL3bfUghBFKXg+PwZzAH4GLaWCK2oglQzB3X0Mxloxz5aq83fpz4zxJSSV2/Hoe3g4TjRAKZvrn5LZiyO70GhHv7G76HRYUO8W0ez56HyeabUqsXic8t9fr1pR5Y5PZ49F0WX8f7D+KoTZNCe7P/AAAAAElFTkSuQmCC'
 )
 
-const EternalKnightShoulder = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const EternalKnightShoulder = new Equipment(
   'Eternal Knight Shoulder',
   'Eternal Set (Warrior)',
   250,
-  starForce,
+  0,
   true,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     51,  
     51,
     51,
@@ -8582,21 +8582,21 @@ const EternalKnightShoulder = (starForce: number, flame: EquipStats, soul: Equip
     0
   ),
   'shoulder',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACEAAAAeCAYAAACiyHcXAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEJElEQVR4nK2XCXXjMBCGx++VgApBheBCUCA4EGwINYQEQgQhglBBqCBUECII2fl1OLLipLuvO6+5rGM+/XPYfaH/Y9cfxrtng7+FiM6v1/Nzgm5fIDdhfgNxLc6Dsw8niV4tkBnmDqRAPCV9BADnVlsKfXLSK7ma5KwnofekRkVCigizBfJS7coTuk3SLasB4LxnJ631Y0/Of5HJMMOB/Vw+qHs9rvxU4TA1CD2AWRLw9V2nCxfDmhcFABKSCn6IYPHFMFqfycxJlRakQHSQ6ftc4je0quQEPPH7uCHLTC58rFWQDBd8vB5BWC1HZ1YvgdT2Up/uqB0pO9NwWoUnfq8dkjisIfh3T/k6xtm8cSlUDKN1n0JWgVy+RqgZDxqVwAXR45SGF2sy08y0Njs3HP+JPBwh7sVR5bCA1IByQEhCDMs4HEmbYQVCpFdKdCC6fFEEkcPAL5MOzc5RYnhJN/NvijBEH7eTN4rUIIAGiPUjDf2RE3RcKghJXdRYciJJo2lUghQvHg5DdF56AL7HjclmwMBAYXG2CcKfPQ9558iEA4PoBUSbQCUzlj5RpMdxveVFs+GQhOScrwEmeE9S9QtUAXKelcqhEU3IoESQDMvQWG8t1twnZjQzvcXTYyHCgZgW52VzIXveKG3Guy5AfVQ4bWxdTyIq9EHC7njwzL8F8VIeO9BhmGk2qZhbiG6vPRdnPn2RV/T4SzA+rGBgUCzZDUhV853kHHP7paOm9euuulKiGBImbhZr+XZPEFXcb0C3DWsgXMd8hQpgYMvzpZ8IW0xHxWpYbgf3EFd0MWyEXhFhkBPZMRKJ+87iVDQtGlA1UIy99sthlNSkORSSs1SpsDrcWomoewIIInU/649ZHp/ypVGiOMSNqrW6FAESK8OlbouDHni/3Pq7G0RwtGWn87g4xoY2A0CldHeU/CkXoGIFDDBbIFtKdLihoHkUNYoi0/64WlBU4jInw0PGzHQeZXRSknPaa+qHT1JiJg4kydM3d+LdZlLWENHqWMtlwSm+e38v+SODSoLjL2MV8bqpIzGOK6UeQjwzWVdC3gwq0FLedpU3izX54lgR1SR2DRFDglv5tJuoKLAFge/T9B7X1HNSlaRcsXpHmvvDyFwhNjmumIB7yi6Ol6RsIfJO9wkqm1huAEQ1vhVOLSuQPXeKW6NCiTpzX+ItRFLjgoSc8u39r61729v44IGHIyQpwoOnKRiqCgCoNvaxOsSPOfFEBbEx/RVvDHNBQwJMyRNV9ZbWtiC6/PzHD3KcG/KzBXgj3NGTbYHAdhnms8CU8s0qvP4EEefCgbbhQva9vo6MVY3zLZBy7DnDHKpWjfhAXl/mPYIQ+bXLnyUm9WP1v9gxO9yMybOcqB21ix8HeD3Wfm9fTyEwwdPPst/+0XgOGZ6M0R+MeUUNU59xSgAAAABJRU5ErkJggg=='
 )
 
-const GuardianAngelRing = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const GuardianAngelRing = new Equipment(
   'Guardian Angel Ring',
   'Boss Accessory Set',
   160,
-  starForce,
+  0,
   true,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     5,  
     5,
     5,
@@ -8620,21 +8620,21 @@ const GuardianAngelRing = (starForce: number, flame: EquipStats, soul: EquipStat
     0
   ),
   'ring',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAYAAAA6RwvCAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAExElEQVR4nJ2XjZGzLBCAYSYNkBK0BCzBlGBKMCXkSoglxBJiCaEELSGUEErw2wWWrKh3+d6dyaEg7MP+wR3EP8rz3ewN1bE1+Od0HL5a72uQHcULpfG9ZeMG530Dk0De8y11HuXPHgRXnCtFaUFpw+fU6mHmOQxKKf8GiYJT/NdznG3cmUNwxSul+P4eC3GsbPoI5wNMWvdbkAiB+i7wu9MCda6YlCqlhIz9/l2/tnT+CrEAQXcEAC9XgOhgNwuIoAgUy6AYIbqz9QC2t2JPuEvI0nn/VrAChLgFi4gph+gqK/hze1f+2YN5SIkWw+jsxSeIc8GNLCJ4C6RjLQWncLDh/mJFc1XBEtXyub0XmxopY7glRIi1gfoQfpE1DnclLASYIwhvjXnWSbEzVkywz1oDnHH+ubnGWJHTyhofd/uYayIErv2M3w1bFpkBYhVYbnKhBQh9n7PRSkwX8KDWm9aIIKD0fopKhwhx4t8uQCY3Sa00tjXvR7f8AMw86lUtQPPqu/g1NmBzp1pdsMXXWqt2mlyfahJmYQIB5dSmekHpWkJmoHuY6ZMAAKV0gqiVnZ1o5PMtSDm2pLgFCCGyCnyIi1DHol7Mr2BuWQJkzE5WSwbeRoiotJC1GoRWzRU2NhEAn09Cug9bEK9HIYpG8e+FRdcAGELheLkE6vMdgkVEhFgAUKa4qVxUYHLNCsIOzruEBJ9xjFyEwoDSbmhj0dUf6846AaAgBHfnqo5wiDweygjqF7XBZXuVkiDIvZh5VH2rXqwC+yCyepFB9Hxl3G3JfBy+LwH+5dso/We9GVJbClUXYuicuELW+VKwcRysLIK1IpNFKvKTlvpQWdGmyrq4Gui79nXm+ggQ/SXGGsxn8Wm2SvxKsDDFSQTllaH1FOhXbTj6R+itgoIBf5jawXXSB7u3CrjWxZT+xSKj2DuxGUwSHsyUUXsSXFOkQN+KkT8lu+4Z6mOQjYie4Vbha3hLxKMih8C1D3xhMuUIVqkyH9KEzEUoyU08tXMh14Rv1mv/r8szgnAYOJewcvaUTT61o4soC5dZ87FKLgTylVXwGQ9FJjd4l1i8chh0FVrnhpcmUO6vENDmhSyBbAUhCfN3gkGlaAmEUHCZc6KbC1UM1oXA5QGMUD6rtNoNUoo97pqVVdCsGzAoeHHqEAJgwCLndGKjNTAeEIhDZYej1xWsy0DyIPzAhGK0hrFwlLseLWHcKVykxfKQzJQTAOoycBu8hi5H19KPRaLv/cEB5j8FmGEFQwqccG082JqooBljTUVLPN71YK1LIJfK4Mc+UmEuXCyFO8rEsZ01SP141YrDoIwi+LnK7hR+DCCwzFu6Vlqh4BpW9JdwH4E13hAnFQ6VsusIahME/rdJZfVcGnN7aIVAUhp/u5rfRQRaH1oIMcE5dYL/Vm/P2poezBEON78LgPiJzwhg4y/BLP7BYoIOVz/nybbXYro/a/8uj6bgQFzkMcDdntoacAqA2HEc26qqyD3bBWTLIpn46Os7OzXxGYA0B+ICY36HxtgJILw7AILvzm38/gQh83mAofMLq6JQ3kXgrjotE5NlMs7Eb41Y797tPP8JwneQpIPAu8L9Av6ZmvJs1TUUO7ip4nh32T+F9+Q/bq9PyFc/Xy0AAAAASUVORK5CYII='
 )
 
-const Bookworm = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const Bookworm = new Equipment(
   'Bookworm',
   '',
   100,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     4,  
     4,
     4,
@@ -8658,21 +8658,21 @@ const Bookworm = (starForce: number, flame: EquipStats, soul: EquipStats, potent
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAABwAAAAgCAYAAAABtRhCAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADt0lEQVR4nLVXi3GkMAwVM2nAWwIpAUpwSoASoAQoAUpYl7CUEJewLmFdQlwCJ/kH5rc3lznNZLFlS88SD8n5gEVm+H+ShcEaEOYn/hQBVywLpn3vUvutmi0qZaAc020JoJoQps7gd2LiqKn2qwmgIEBTQdfgADr8G0GOOTCWQ9FIUILvHAS9MRp4p6PdKBBtmt4A4n5WcBg63MgGPOwItSigyAsAyeH71cP4NcT93beb8xyzoxXa6WgncL9Q14A2l0a1c3YDeD4V5ArnxoDWGoZBQPvZ4LOHvm92c9pn0L8uFJQleWqjz9MI18BlWVr2hCQGkKNnkJvFKA+BrgATYAlyJh5UrIK2r6CqHAjHJ82JJJOZEpsrOQMM30YWnKDTef7BAbtDNbjPhHMJt9psgda2fwU4d10HSimQUs4rwwzf7dzkLaaSYZQGSbYHO7E9BZwfjwfUdY2n338CJPcX+RFw5y2I237dg1n7I9CktAWweZ4xnCyAzuTADlDffmZQFN4AU0xR0zgckPY6/THoxxFYKGsL0B1/Gwu2rh6idaBGMnyXMon05+F0W1ACtHnfgjmQtWAan6nGBwqMGwu8FtIdgX6EvJOS0hjA2s8WC7GrjKqoqAJgxXHOcIh6Zj92xpjXufUcbehgmX2/ZscFAsw8ejhJXLxjDa0RtRsaGNsRmoYOR6nG6CoGUhj7pK5gUE/rsncpDmArfzGlYTIXyIY1IGswaaOO8xxrKmXDHo72Yk+ip2EGRiXtOh4JDuS4H4b0hP5nhDOWyum1XpxJpeKTItyun0kCmOd5HNvU44t/AIF9AdgmwTAi7BKWLQgyuNQBmVX+sNzAlZzWUsps77sFD93cOvRjwlFbUklLmpOacQ1IEohB5JHoWqDTNXECqYoKy5noI2mCrDN2CRhZ5olB5MkpJBGIQYAqkooXxlLlgjTXgNhvbfdv2gmosLT+qkAHFjUCoRIxrJ50uv2y+0Tt7MKdIJLwHWCJneCJBCle1FzJvPeRT6CktleV4Y53Hf6Ka3RKgyzNv3RoWe8jpKtEKkMyY7zCckbRajveCrMpXXwQ4S4BwwYb3dzAv0jzjTnGKPuT9fReqtYvPER3ZroR+zJ1EuU+YxtAKmu/iS5IjHIpk/R9UPrMjjQF3kuJHAD7O+Va3u3h4KuQdwsubJ3+b1E4IrCeinTaUCNQ55wQW8W49MQ9mONCCSlx1oC3TE2bNrqXwf9zQm/7PMYEpPSKXUpJQW1z/bXuvtyeDp46O0TZzOP4D23FCT0xmVEgAAAAAElFTkSuQmCC'
 )
 
-const BlackHeart = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const BlackHeart = new Equipment(
   'Black Heart',
   'Pitched Boss Set',
   120,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     10,  
     10,
     10,
@@ -8696,21 +8696,21 @@ const BlackHeart = (starForce: number, flame: EquipStats, soul: EquipStats, pote
     0
   ),
   'heart',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB4AAAAgCAYAAAAFQMh/AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEdUlEQVR4nKWWjZGjMAyFlZk04CvBKYEtgZRASiAlQAlLCbiEuIRQwrqEdQsuIacnLGII+zOzvvVBwPanJ8kyR/pje68eemvyNeG/Phy+nfcncIYCaHNHi+j8Ln0HfwH/VkEBrbjX/L7Lz3u+TNzDd0avwD8pKIaaDbS93W7knKN+Orzz2EueV87ZB/9CQdwYhV7xuFqhMUb6bdu62iq0rmuqqor6QRRc8zuT3zflJIWi89hpRwzRJmQlWNQo9H6/0/l81nd1niTAx+NBwbEbBg5kiuSnE1lrabtWIQZtlXTHvcFt2wp0miZVYODSj/FBVUs0nGbgtgGOcTkfVEib1bOZc9Lh/e52CuGZkFhIJto11KfTyzyNMTzDi4uxmJefddn1MCocszWqWOKBmKWUaOxu84J83zuOzemxQMtYAqBQhEmeTTO0+5yNreimcKiKu67u2pGssRJHMdFw0rARg/snBm2hSEJ4qes6Hpfo8M+Jh+puhvroeT0eU2yuY1arW6MBIIZIKVqasorEoanZEMQQytT9aICK1cYIvB/m34Ai+RSavQQpsr9VsYDlhgF10xBfyFx5QhyoMh0n2oUafj6RFzgSUHMBXtArnsHdb9eDuLeAai2QwUd6Zl9zGz/YgkqSaLE6dBTdsEqgEqpq1RvwwNgEuiS4/yLuxfuc7T6HZwEb2mlwVYxX9kBFk8cC1eLeEqwNcGxBQNUIHsleW+URqeINLPEkQxwacfMMdeJ+H3oax1GyHgCtbsMwvMRavROZpaEo2wqsA7yL1Nw4yFy40oQ8cssYXVS3jcZU56rLy/X2GsApdwpxYvs4uVpL7oxcsLxFLF16LDLXYqjdlMfV4VDCoH4DX1gKRg31XCSasavJDY5M/c5biJOkv+oyAlT3IsO994sHypgDBmNKaE6sVVZTfoCZTUgTVbamwJkVDbYVuzE+FwUUqtH3VG49UKgOmTO7GqnN1ghYVTc1jqNGkgv2VTVnaZoWZTi5KF2fIO+X+4D9U2EbIt68dXxStQLeOxYBx+qNQGxi5UY8E1NYZWtxXGY1z5iXiWWiUc9q8ViagDeqHY6yaOZxiCugZbvfClBWG7QQv6odtmq3iomeiTZp8d9CRfGl3C72RankgQ9am1/UrsBZtczVcxTPtvBtfd6DYkyGamxfPnW//K7GOWr7B12Gw1KL0bGoVqk9KH53DE0CTYH3f3Lx7WX9deUqi4kjKZs4YUK6yIJaOFTtnlKBpjjF5GNInhfb/7xegZHNrC1hMh9rLaBojfmUo03VlvtUjcG71n76EF1kKAd1siqCnoKW+KzAE59E1tSJ61No7QeX7Df5qkTC8qK85MluXa0xb+ydE3uA8YY3YFlTFRhpp3KhYYIJyRnsWz7AY23e5TCcveGptmNijxgfzsvCDORPssD/nFzTnMCrb+kfXa0TEj7pcCqwLYbBKc/nX9zYJ2bkioLzjqtp8gkJhDn8c+XOjYu/dLW6I8Nj9sJqAFuB7ZXwBy6gUtuIXs7A9MW9tP8yvUPw3jnnLgAAAABJRU5ErkJggg=='
 )
 
-const LithHarborDonor = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const LithHarborDonor = new Equipment(
   'Lith Harbor Donor',
   '',
   0,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     10,  
     10,
     10,
@@ -8734,21 +8734,21 @@ const LithHarborDonor = (starForce: number, flame: EquipStats, soul: EquipStats,
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAABoAAAAgCAYAAAAMq2gFAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADu0lEQVR4nLWWjbGiMBSFLzM2EEvIloAl8ErAErQEXwlSgpQgJUgJUoKU8FICe05yA+HHWXdm985AMJD75f7GnQQZ5P9JxlsEyXAXqY8ipx8RtxfpN1bkQynuuxN36f03S7G4DNbXeHeCvuw4vdstP24rI4WB0jjxcuIqG5QDYkpsAb/lpxeD0WBefplkPe9utYkVqLjgo9qMECoxD1V+wmixZbMPkFIh+l1cX1dra0dQ300W5S7siHeDZ0OfVLCgxFwGyBMjfssFI97H7yhdZfzKqG8Fcv1kkas0RvC19UotfveS5yXujeQ2vLe06ok3+7Apm1jk+m1QdmhC5lnsqFMfF9zhAfFCPPIrXNbtkRDJiIzoNClaVZRj/Znrm6B3K0Z+8qtyHnjSxdylbY0nGsDc9zRKbmCZ89bxqrmwcjPAFmgGrLW2COyPDkAoqHT7Os4Aydot2cl7GYFltExfUHmjz80fAJ+ARmDDen4ZaSrNRpDuyLjs6zPIp6DhDv+1MK28aX21ThrQb8iWc+td/E8sEkfIA0HH2PdGWDIWraOr5WN5Bxqb7ONikPLUjNHGOBm9O/8+ZqrKpnVboGEYjHcPpW1VuV1/yCkmxvMmvojbdoR+lN4BghphgyxoDcFsKdpmemjvHZov5ovMSQurpGSBswQ2Nb6PEYPvIS8GA5rzws+zg9tr7q1pq1YcEqXEdw37bSFvZQkaXnBD22Gn3wqxjAc1xCZjxufiEn43sKSsQ03dYdmxWWdiChpuvJ/VBd5dPINwTFy1fvDMzEMrnc2xpXaM0zls4RbUzGAzi04PCRbQL4wJ3dV0I6zXdOaY84ioQvaVV1gFD1gQTjg1O8b4/N51GSp9GF5r/3pAbWZznR509rT+/hAgb103F80wWkJX9RvFSYi56LG9Pr1n8hbEFI6l4+OxsMjPXybt7i9Aw/BIQKiTCAoBXwtjlMKisIDhvvfJUH+FjPNH8mB8nYQUntzE2OT+n9EEr3Fe4ZQXc+axsm3aLBmYkuxdbCuseOcDransJqCfXVhCSFeGKjsujvGVRXzJXkUXtljiK14JTOElgJZQijZA2Bk041Z/L5eg0R90GdsKK57FyDrx4qbAR3cR4s+qbtzEGN547RJAvMT/VUXRlafQVljx9iYriRDf4wBh91YfFwnE/7XYJQCr43eWuWtUxt7FtsKKXwoDz9nD2AU8ZLN/pxalX5/jHAJ7pTFsK4ekrTzVQg38WeYl65bXLjEvhaXP1P/U3nVIJp/6+Guxebf1/Bs93LanynhdGgAAAABJRU5ErkJggg=='
 )
 
-const EnragedZakumBelt = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const EnragedZakumBelt = new Equipment(
   'Enraged Zakum Belt',
   'Boss Accessory Set',
   150,
-  starForce,
+  0,
   true,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     18,  
     18,
     18,
@@ -8772,21 +8772,21 @@ const EnragedZakumBelt = (starForce: number, flame: EquipStats, soul: EquipStats
     0
   ),
   'belt',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACAAAAAbCAYAAAAdx42aAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADv0lEQVR4nK1Wi3WjMBBcv3cN6EogJSgl4BJwCVCCKQFKMCVEJUQlRCWcSohK4HZWH8vY5Jy72zxFGCTN7OwHftDzttL37PDMoj8RKKAffUO6U0S6iTecj5MJpCdNZnDUXeLctoF+DqEmvEtmj4Bsfusa6npFwXtSjSKzBD7ckrVK7sffoYAKCVkfCmHsrcjcEdkSuAM2CxFPZIKTBbNMgeaBbn/zzPrQMjApvuj7wOqwYHzW5wUONHQ4ujsiNYH186JkIYDnkT0KQQ7fM4U/BrPscac1hZDCwmNYIrFgA03MqCFP67uuFTnUBAo4ZJ1deAj0yEJa6jzL37bknLvdq0jOC5aYSCiKZBJFgSu4vzmgScjG7SshBPixW6xct809YfweoQbO1DGpXxe/gsC6fnbkRsexvve8An6qrGAcklIBNZkrCRUraqlywLoc8+SRCBG+BVxZ2ZPJ1ETYc1o7LdcPyzBF4W+Ad8mACEgUk37irgRazXKzPP8Z/IbIHQlKCgRjuZu1rE1JwFIm/2h33dCmJgXMQmDhZOgp3oAwb28TvZ7G3e71LPDUt9whW/KcW6dhlnvSIbl1z8eKgOJFx9lQ6iNSyx2H5Hw+ZyKH+uAdO+TnH+wAQA17plLmwbFf3IgQe4DblO8xBLwY4PB8GEdajKG+64QIvBgXWw6G4XB0IGOtNB/YOC7rdDmT5z25GWEdzhI1+NnLcaZeewHPFVGS0CfP0XjgOYjAQCSHRbfxYF2c5neGdtJep6mncWAAJmxtlBfnGCbQ6tiCYRk89RfphIfsIdjmdgoiiF/2IJtZlIBCylY5Os1MGJmd39K8VzNgm84BuHVocl6cbDZxywpI/C7TVDwXT3lzz/M8JxJco+gfxvE/Dw17BrASDp88BDAAFQ8o4VNzgxqciFIFFeZtIxLP+Z1w7nu5Pp3G+jEZH+Pd9R6LRdYjf5BgPSUCWTHLwACdORHrENCmqmoCh2E2KxoUVEDsddvIZigATxCWmN0cHsXgc/QGIDkZsc8m6SUZUyLuNbhtKz7wwvUjVQMqw9m4E9nN8hSpF07FpvGcCo2oZlLi1Qpk6V+jkg/7yeN3QQqFKNDGrB7Tq3Zrhq6vb5SsY4IdKofVgjLb74NnCEgo5AqqXsFf0nO1mbO9Y13HpKFWUHi3eBlsrxSrN1RjlwDsJ49POSB6eEp0tsD19Yx/vOdcqZKzuK2AfRphj4BK45jmJo09z7c2PyC4+zm1p0ANst381bdZ+OJ6O3YJZJn2pK7vPSLzFeG79b8ByjwzqTC5qkQAAAAASUVORK5CYII='
 )
 
-const MapleIdol = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const MapleIdol = new Equipment(
   'Maple Idol',
   '',
   0,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     6,  
     6,
     6,
@@ -8810,21 +8810,21 @@ const MapleIdol = (starForce: number, flame: EquipStats, soul: EquipStats, poten
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAABoAAAAgCAYAAAAMq2gFAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADy0lEQVR4nK1Xi3GjMBB9zLgBuQSlBFECLgFKsEuAEqAEU4IpIZRgSgglWCXodvWzjHCSu7nNMAgh9mnfvl05B7yawf+zIn3YAkGe73F8bRUqCehLhxlD5qlCC3HtMa/AZVji/DqW2doUyDxuAqJq7IOeNUDfziON6S86rgfoqcUiRsx6YAS3KSGiI0V+jo02aVQpUMEvRX2LE7e+QlW7iNgYBBVthqJTBGbnfERNN8fv9HACfqJOJDuLcx6ARm6CwSoKlaNGn32nkVsGtK6rvUspnx/S7jkKB+aNQOx8lX+7Z1ugAnNjlbdWNwyTxCQF6mWB4vxQFPpyJrpGlyeanyYG0A5kbp5+foqI7WGT2dCmHS2jOONzIapKBasQfz/RPAavxqXDZytwGvaIy4G88gQNBCnvKenj0GYff6qLvSvGJXIpQL/JV8XtARVu0euuzF3gpjpUtAGtmSq6Fk2KFCjK3Qh+RV22iJwZ8yUwES3a5/vcR5Bs/Z4dfl4Cczu7wq2vXnWkuGnUuJLiLjMymv4VCI1+wNRHai3C0sb0ScpLSfOUvd+4eAsUmysrqeFCJZlzabnqcpGJlXLnlJY2493o9oCMMcJXPd1mt3vIfKH0ar9fSXmS10bQ39WRBVECrO5OPXAn2tih5QxedVrg3h5R4oF+ofc1N116P+x6fJ8jTr4FUaUDUa7X6G6B7JUNcB5mtGuBrjJoLwVkhbeWFewX0TAvAp30IJLzwR5CdxZxXLX+mUCGmsCmAjeKrJnwbcEa1A+UlGDmPtClO+oUvfbRkOpGTtfrHBf4VRc4SUN1pi2NmI5vzyOY89FFwLwEuqYlgjEIG99Vy+eOU19NxTt1mlpSAXWmVkQ5Lqf31BXFiRT3lfNrAcbXc2r5cM/ynK8vXQv8/uCL5hXGkTBVIZrUGES0vtftN+2fgVjCoXRsPsadk7d9etd/AWTMZwJEdRKAXMJz4xylYMG4gIm+92IoxgeE9KqjYuQ6qfwxFGji3KgvHYXANjYaipR2Wkl1XQB+7YEvYmBJcu+yhyhVPBcjgpT1E5BtGwmDXFcXQDN5f2+A7EvuVUxhPx9txXMxsrGEtwAcCVunHAh3Bq+4rKVvgSIfTFnrK56Lceqe6gqJD3QxiD2rlriJmN5wHRKA5w+3ynXvmmkaXcVzMW4tgNgeRyDcvT3HVQLCZ/J6SACkv3dF4X/+kHHv4rbCFb+1kHhPVwDZ7d9pROnqS5ijxPbcu2xbuTwXsYT9e/j1euPj5Tok4aVg6bgkNd5974r/JhDo3ef8Yxvo3vgPiK7CIr76xcIAAAAASUVORK5CYII='
 )
 
-const LudibriumSheriff = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const LudibriumSheriff = new Equipment(
   'Ludibrium Sheriff',
   '',
   110,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     5,  
     5,
     5,
@@ -8848,21 +8848,21 @@ const LudibriumSheriff = (starForce: number, flame: EquipStats, soul: EquipStats
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB4AAAAfCAYAAADwbH0HAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADDklEQVR4nLVXj9GrIAyPd98CdAQ6gt8IdgQdwY6gI5QR6gg6go5QV2AEHYGX8McCVV/t68udRwkhvyQkgf7ACjHGFHyR5nlOYt4LMIHe73dI0xQ45wtfSqnnNK7ROI7B3JcTQqgYPAAm0KqqtJK6ruEblGUZkM4Y/MVjXISu66B9PC1O/XV0bLiEe/j0/C1P3kIPUF8HDR5TAEwWNU2j0HOjxEaPR5tiNcO4vjZ4juyG2oHjoARGmltX/dMjY/g93CM7T/Ye8j2dAa1mNQl2DaiHDSE7RetTOE9zbw0NE3hKKYZJXDXnBXQTeLF43FiI+ByO0x5wUlxgvZ4v8C4lWwu7HscbsY5VWZaACUh1mtA8z3OdPDSHA/QDB4maiG0sym8wR+kQMHmFjUX1fa+bDHUn5/03gePzTRz4+XxWMX9L/hNgmFQGoxywvACK36fiSVUgZwGcVXBKhHKyRFfsVHm5yH+cXJqokU0qBwYtzFCjIULzCXxSiIJc+oZhMBvmv+s8nFwxjbIxWPItvPeByYkKk5dx0/8YCOiQR2WkoUxbx6jgkSAfb9O3GsouMJ3vQjMsIGatC2QzBodoF1iczVhYzNTmCtkgwZ2slfV+v2PDFrC6gQmZu+ac79Smb55gY0cypIx4A2xn9qbHvjf/g/45q4nI2xGOUQCMd7iiXHXXL6WPO6/RG/20ktGaPzqdJCOikAfATuFkwdveIDfiKcOwXArvHZjaqupLaiiG1+KeU6FBXwxZBR6MVUtrJECGGZbbrBl1/aKBtalXIv3kkebV4V60swyjMawkWACMGaysHmN5hb0Xw5Da1KYXyVap3NC4kRnjSMZ1T2ufGvZCDbCdJKSMrl/GXvlzNN/QFYjGoT5ZAfoexGtvsHStMjenoJQ13qqhBx59rqtk6aKvhmdl8qdECOwAuTO8EMZLmtGbnLNksVtrm8256k7mudd4nXaL4lC7SLXuactZrtlM56i9ieBqzJ5NcpEBlCCzjQAZkeX0L0I3uV/P69VQuxaswX+Xt7QrsgY+pCW8Pv0BvsxOn0VdZt0AAAAASUVORK5CYII='
 )
 
-const MuLungExplorer = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const MuLungExplorer = new Equipment(
   'Mu Lung Explorer',
   '',
   50,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     0,  
     0,
     0,
@@ -8886,21 +8886,21 @@ const MuLungExplorer = (starForce: number, flame: EquipStats, soul: EquipStats, 
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAABMAAAAcCAYAAACDBoQZAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACgUlEQVR4nJ2Ui3WsIBCGx3NsQEsgJbAlaAlagpawlqAlSAlagpSwlBBKCCWYmRF8b25yydmAPL755wExbG2G/28R/dvD4CsRkHx98tilH+t432gePl9gjAFZ1pA6u67F8IfmnPtx/RYWVO3VEcjit5sGkB8PsO0TkhP8AgvWV3eilAFJXq59cMzAe1iE/s8TxmK16JUEkM3zw+Han3unLMrznLPahxkEiGk6gBhS1wfQrZsMaluom2abOCmqigzUqC/nbmFFVQVYdLM8S5kB/BIWpWk6v14v9KS+FHLf9/B4PG4N3SqTUhIICEjN2q0wy7LkdSraf8LQBVQ18Xgcx3U+AIdhCtDZGP0+AVmWzRNmjqwm+FcUBc83TYfjzBtQYLF0hmG4AOMzyBrLbuybsQaERrxISDkIVNmp7gKMzyAhBSojoGCQUiNMeCjHWGUgIUkokSNUWcFx7fsWgfVsrYluE4ACQGtNRi5rDCL3/SVZrt/yEZ9VOR9oKQSrqqqCY0iAruvWOGJIOY5Ujy0VOZbRn56gRck2ttYd+hVm8ZFzhjZbODeFJZL5pGh001jBVBteGH8m3ltbgi5WSNcp7gsMNrmfYPSFkPhLvCILele8Cwwn376iq/VFibisb29gjFmL6qae+7bnAD+fTwZ0anGtQXWUhLpR+J2xmxU+BHRea4MZl3xTELiVhvPppcyNo+ZNbv+SeuuUOaUUurpoJNcPbpI6qmRSRerCRaaeoHS5M4wbG0AozZNBKg0Ck6oV5oMZYcBn2hAu+JaYpfKDak6K3xdAB9gCNNE4ujkUJsXnnBdSR67tFd3CgkLcyI/iEugjbVPtfvc4ho0Berd2174BJv+cXzl+UYwAAAAASUVORK5CYII='
 )
 
-const WorldTreeGuardian = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const WorldTreeGuardian = new Equipment(
   'World Tree Guardian',
   '',
   110,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     3,  
     3,
     3,
@@ -8924,21 +8924,21 @@ const WorldTreeGuardian = (starForce: number, flame: EquipStats, soul: EquipStat
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   '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'
 )
 
-const OneWhoArrivedinParadise = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const OneWhoArrivedinParadise = new Equipment(
   'One Who Arrived in Paradise',
   '',
   200,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     0,  
     0,
     0,
@@ -8962,21 +8962,21 @@ const OneWhoArrivedinParadise = (starForce: number, flame: EquipStats, soul: Equ
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACAAAAAhCAYAAAC4JqlRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEWklEQVR4nK1XgRGbOgxV7roAKzgj0BGcEWAEMwKMACPACGGEMEI9QjxCGYHqCds1gZD03393CcGWpSdZkp0fdI6F/h9c3k2cEVgY1FUj5a2iqhnoUfTrjO2I8pqUGuTVORPHgNtYUd8aso2jui/ocrks70icR8DBQEbWufV1nuU5TURazeRs4QXnOBYQ1qw63uMdgeV5Z+bXSl5aupMxmqqhoVYZyrWmaRjkKcbYOn7PbLRhg5AlttsMJX+IoOtajodROCKwLM8+GJcFrGgh74j7pSlXirTRcUGmFTnyUfo5sHz0WtbDuNe5I/FKQPad94xeBMPvZRgm+gKvnl5g3OvekPhUBTs8a0NjVVHR99hoTsDVczuNVJiaLsNA/4I9gfdJw2H8RW48j8CzbenaNMdZf6B7R8DZaCBVsug8E4/FU+99ilwXNA6dRAGyk5036190vyVw8dlKSdJQbxSZuqZbyaFn5UNXUuYyMRYwwTvFPaCr6HFvWabjqnGpLiQj0YckDAIL2GIhntNk5QnFeKpciwF4DMxc/yCIOVPr6CnKD7KJ51+VYYzE806iwHiDKDy8B+QcGfGeCZKfC4RBCMD7keefCGxwKxsJfQDI2Jnbr8vl3c5WxoLRsAYR+4QzAj4fRkL2I+mGqWF3rex/3+tYhqbVXJqjkAA0d0utVhKcjKLrvxAQBOMwBMXisRsPZY3+6zHk+6Kmq21O9YNAeuRuygbZj4wHovGkDEMTQm/AmDQoXxmTr3noCNXwqj8QiNkayg51DPZQonUes17AoYUh1H0KjKEaZJsQDV8VSEg0p2rsQm+I1YXkBIGY8WECBrF/JlOiQCcKAxlEIkVaimk1IF8qviukJZxWxi4HNmXGXk5J+3ydSxHkUpkoN3aHc3ELUsBzoK8hzPWddNyY5Tpf5xJolcf5tBxJWdEV9L6WZiAQt0HWqJq6GGE2Ng0UuKP+7XERiGyeDTH8qaxigs51u8aURiCeA33BiadUMsVbMd1WE3nuFabzK6QqnO+Mqqf8ZX4Y511X3B1G+KqaGx+9Sag4IlQ8E0sItV3HXZcGgGH8y3aLLtdmY/gdgc0ClOeqq6TrlNFTz1shWx6ufZX1Xh/i8E7Ytg/eKz4BaSUw8M1yeWRU3mZuwXzuj8eGi+JOFbfkIGvaNRoGW8pb13Bk6Yvj+BBdh8NojsZRCY0/jFrOdOz7OldE2W9weB8AU0RhHP+GLs8Lbj6dGK44xJNTFHaoHHM2x91Tr/8PgmxY770n+pf7QCCBK/hgj++JJ1srKIpC/qB44z9JGrmEJobnHYGMTjA7rHcHY6fIvWHnP/M7AjD+O3gfwmh9R5HbDvsxuG2VG8kD/FJRFmsRBejiKOCP5S57v07Cup6pnNZMR7LdzXZ+8nMTH1JB9gCWvtiC32sTsvKRts9BuXSOy0sho/ji4ZtS0oSMdMiJ7o9EVjCKjrpo0Vuw8HMZ+q61H5dcPL/hbGU/4w/jIZHMP8+c+AAAAABJRU5ErkJggg=='
 )
 
-const NautilusDonor = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const NautilusDonor = new Equipment(
   'Nautilus Donor',
   '',
   0,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     10,  
     10,
     0,
@@ -9000,21 +9000,21 @@ const NautilusDonor = (starForce: number, flame: EquipStats, soul: EquipStats, p
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAABoAAAAgCAYAAAAMq2gFAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADu0lEQVR4nLWWjbGiMBSFLzM2EEvIloAl8ErAErQEXwlSgpQgJUgJUoKU8FICe05yA+HHWXdm985AMJD75f7GnQQZ5P9JxlsEyXAXqY8ipx8RtxfpN1bkQynuuxN36f03S7G4DNbXeHeCvuw4vdstP24rI4WB0jjxcuIqG5QDYkpsAb/lpxeD0WBefplkPe9utYkVqLjgo9qMECoxD1V+wmixZbMPkFIh+l1cX1dra0dQ300W5S7siHeDZ0OfVLCgxFwGyBMjfssFI97H7yhdZfzKqG8Fcv1kkas0RvC19UotfveS5yXujeQ2vLe06ok3+7Apm1jk+m1QdmhC5lnsqFMfF9zhAfFCPPIrXNbtkRDJiIzoNClaVZRj/Znrm6B3K0Z+8qtyHnjSxdylbY0nGsDc9zRKbmCZ89bxqrmwcjPAFmgGrLW2COyPDkAoqHT7Os4Aydot2cl7GYFltExfUHmjz80fAJ+ARmDDen4ZaSrNRpDuyLjs6zPIp6DhDv+1MK28aX21ThrQb8iWc+td/E8sEkfIA0HH2PdGWDIWraOr5WN5Bxqb7ONikPLUjNHGOBm9O/8+ZqrKpnVboGEYjHcPpW1VuV1/yCkmxvMmvojbdoR+lN4BghphgyxoDcFsKdpmemjvHZov5ovMSQurpGSBswQ2Nb6PEYPvIS8GA5rzws+zg9tr7q1pq1YcEqXEdw37bSFvZQkaXnBD22Gn3wqxjAc1xCZjxufiEn43sKSsQ03dYdmxWWdiChpuvJ/VBd5dPINwTFy1fvDMzEMrnc2xpXaM0zls4RbUzGAzi04PCRbQL4wJ3dV0I6zXdOaY84ioQvaVV1gFD1gQTjg1O8b4/N51GSp9GF5r/3pAbWZznR509rT+/hAgb103F80wWkJX9RvFSYi56LG9Pr1n8hbEFI6l4+OxsMjPXybt7i9Aw/BIQKiTCAoBXwtjlMKisIDhvvfJUH+FjPNH8mB8nYQUntzE2OT+n9EEr3Fe4ZQXc+axsm3aLBmYkuxdbCuseOcDransJqCfXVhCSFeGKjsujvGVRXzJXkUXtljiK14JTOElgJZQijZA2Bk041Z/L5eg0R90GdsKK57FyDrx4qbAR3cR4s+qbtzEGN547RJAvMT/VUXRlafQVljx9iYriRDf4wBh91YfFwnE/7XYJQCr43eWuWtUxt7FtsKKXwoDz9nD2AU8ZLN/pxalX5/jHAJ7pTFsK4ekrTzVQg38WeYl65bXLjEvhaXP1P/U3nVIJp/6+Guxebf1/Bs93LanynhdGgAAAABJRU5ErkJggg=='
 )
 
-const SilverBlossomRing = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const SilverBlossomRing = new Equipment(
   'Silver Blossom Ring',
   'Boss Accessory Set',
   110,
-  starForce,
+  0,
   true,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     5,  
     5,
     5,
@@ -9038,21 +9038,21 @@ const SilverBlossomRing = (starForce: number, flame: EquipStats, soul: EquipStat
     0
   ),
   'ring',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACAAAAAfCAYAAACGVs+MAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEuUlEQVR4nKVXgdGqTAwMM6+BswQsAUvAEqAEKUFKkBKkBCkBSpASpAQogT8bb+87lc//zbzMMCdwZDebXO78I/9mq17Jvzj4ILCua54kyfA34PM8y263W/09ibzf/z0BBXc6ZDqOSmJ5B4wcG/gwDPjm+TBJVu8j3F8uFzmfz9I0DcadPj7p1ca+3xXI9Mr1GvUaIlABoHMuAMGmabJxWRZ7D+u6zp6DiM6Vuq4TH9jsfY5xgH/iyPW6+NHleZ71fR8AEK0+M8cAadvWosM7/MYFu9/vNiJqTwKEaw+ee+743RgB5DyKPKMSAG/bSUbVIs9HAyeJoiheogV48bjZs6qsbLxer7GyrVdVPE4ZUoCCgyR+ApWQqprUSSq1qtyUi4I6A6+qSm63m4HjHjYqy0I/zSSV8XaRThYjQhKQ22Mg8lLVQTqSkAKfj4GyA9ydUymV99SO0vepbNnhcLDx8XhIWZZyvl0tBpDprmcjy5WCevDWIDVaGxII0BAJrCgmqctnoQIcxYdcwyGiQvRwkN16SZXbfr+3ufVhDL5c2ppSx+MxFLAPdkV9hBRE+CuKCiSyLNNicuEFCw3gcBSDF3B872U8TtLfNSXKe9G0VU1rxNzlZuqcTicjztWxRcAmkSlBqQzAWfk0gGcoG+crbJFnFU36YyhkwfvUyXS66Le1+QeZaHUkJLBSpvdlxbUOOZkiWOrLYpRnqhyGCdHrkm1GcS/znLDzQF1gfCjAyLHU3sCt88Ufo+gs7/1dCgXoJp8qDx7bNMLPIkt21tRVgu6oRUm/rymAc1ZnBG4jJGP7pYwk0R2fq2Ff5bE7jXuQpZkMfGk7cU4+7IUAnD9lS4P03lb2eICTEElQkVx7ACTnp2N1sNThm8lNpiAs2sRCDYToAe4+qSbcA9Bquf5R1SEd2VW/dc+UIBjkRZ9hLmTHXHRQNK/I//qxHfMlJutH8X5vo0YRdkWNzHY8kupqbceXTAZt4YvKsAw/siN6dlL8pjIkkEASSIMJb/ayv8crAc9UtRXKMR1GAopqxC4dbOkhnRjhm/sIU/n1RBRvOjSN1JKf/HQTG+OaMCXTZ1+JewsiBzDudS4mupjApgr4yBNYI7BEZV9ZrHGeUROmgN/CfaSBDNRSDIBj4n5TAeaHVQvnMMhNElDCTw/Lk+cERAj18BugMBDFHL8CHp7E8k4g4RkPcsabBqL1xDYPoiDMUxHJABxEqAZJ4F5FtMW6pcBLTkEiTX+244gE55J0II9qJziINE1qOyz8sPjo71sRhmYTF2FE4oO0H1emgOD5Veuoks1zxf/9L3hpwbSoSyLiXTR/jtUCeHrK0BrkEE+aZ6dq/RxKvxjWj87dzSRBcBQmeoJGOXMywbl87RnAD89TFTYhVe+gCt3UX6X3028E3NtV6mR89HJGIBi3V5DDyqH8yDulB7gSLBUcO1auI5bYJgGCptEYjB0NFgPzHVTAczzDb4KrVQ6oWUZ5zlpfwzcFaDw91OrIGgKK0B74rZvA8ZKDQnyvdqQffd8qD5xeGxyGtwj4s80LCf62WtIVcI+JwLD03ruf2j4KAKQWf2//kPDsNwU48TdLPJH12/st071iUulL/jX7D1e5OQZXTneCAAAAAElFTkSuQmCC'
 )
 
-const DefyingDestiny = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const DefyingDestiny = new Equipment(
   'Defying Destiny',
   '',
   200,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     0,  
     0,
     0,
@@ -9076,21 +9076,21 @@ const DefyingDestiny = (starForce: number, flame: EquipStats, soul: EquipStats, 
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACUAAAAiCAYAAADYmxC7AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEtUlEQVR4nK2Xi3HqPBCFlZk0oJRgSiAlQAlQApQAJSQlQAmhhEsJPyXEJcQl8O8n9jiLsHPh3rszGvmxWp09+5D9nO6Xc/p7ebpH6V5Q5/8+P1OTm5TzsELXXea2a8uMbrxHXieT8z3AHmEqLZfz1DTT9Ki07SnNFou79e8GdTweC6D9/v1hUKvV5iH9e0E9bdfrklNN06SPX7/Scj7vZ2Sz2aT39wvg+n1w5N/l1Gq1Srvd7snknA3U1EacVxYadJD94XDz3uKXzufz036/T+v1+u9AmaF4W1K8sw1ONtrTqZ+3NjrLdDEV36Mf1neyaQ4+DkqLLZfybDbDYGPPtmbsjZBs3t7S/PW1zBbatN1ui/7bbtc/R6+9sMTLqbHZGludzQXcGLBBUCw4XbwvYDDoA2CtGWu2HgbmT2sXkslk0j93W1A1czsnA3SyELaWDqPAbkCJoel0KkAzY2tqbAEqA/Tr6yu9vLwUVti8/Q5RzxbP0TP9JucsW9nH0QaLOhySI6OgIkMGBA8LoMPh0JA32KcCkY0lN5vTLpDsnVXPscWz/C0l0c1h1hztvrXr7kemqjwCyHSxWEzxFkMwYs/KRva8UC9WIkvyHFA44MAohObj40OqnUYdxh5UqLRsm5ccYgYQYGCJTRi6R7ZVicd7HLiQfWm+DqipQdm7K2DPNSAWWTI2eGUNMauv4KnACBDsAXJIAAMQ6dLHtDbkWGPrSZM2MjZUfUXZADVW5pfe5MbE0pDEji4ACPoKPcPzDlw9KHt/ZbQH5UlpDbjpK4WNMMRm0eshlrgXIDp3FCV8YKoAMz2iwpzpXTegvAVkM5B1LSMKRQRAAgN6uVyWpNdQZUp4Rm7F0HNPMVmOlX0A5vt2V6BcCiCvvtGQKeExTvKKQdYoBxVCdBRGB9NXb/ruW+zbM/xcnW9FEePyDuWY3DULPFfIdCizcR1C6WMPUAq3g+odYYyefQCLpR+FsGkDBAACIcNiUsn/iIyCymPfvSZsxAAY4MWQGIMphe1P5Jm+UIXwippYMTVrOjYiIOUR9zAdjyCuFb6x/Yb6VBfGTRkzyyhVBgg/xwoIMQSDeode6E/lPeEf2q9n6poUO4lz7hV1iGIYQBiPvYnnqkTlkNhFal1CzexOREBXwK6YApAZAltrBkoDVUvAmLwekphDgJIjutYQ0+zjnfxHpoq4YmvetDQ0zj+AXf5m/F/OgcUci1UmVt1R2e2Z9Yi02qvGUECFZO9cqWUR5x925aHCUIeplphDb/ZZjD5Dx409K/uYI+whtq6/EgaAnejsZjz791Cjs47BdfwKUD/Td5PeCwjAeO5JXtKDYQUBsKI/91+1m/ABzL+3C72A48iBbQBSYeriCslPQpWFr8+S3FaVrTlq5tpSWMz66RgEhfiXZaHXvziJfVbioxNbRZS64UrPw6mK5o+mMJXKH9tt4dyAArXOO0/E7BWEQf0E5KFmWgNjQ3OmgAGEOVzYhybAeaX/HhTi39adL2ZV4z1rGv5Ocv7+YkvOYtyBku/zh+Fha912N1Yoo2cfiyzxterkmzIrjPGXqQal3lOc8vy8+nP5oz/kuDBWZbq0jFyNWka79U9gJP8Ds+wJeR7haAgAAAAASUVORK5CYII='
 )
 
-const Herbicider = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const Herbicider = new Equipment(
   'Herbicider',
   '',
   100,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     4,  
     4,
     4,
@@ -9114,21 +9114,21 @@ const Herbicider = (starForce: number, flame: EquipStats, soul: EquipStats, pote
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB8AAAAgCAYAAADqgqNBAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAD+0lEQVR4nK1Xi7WiMBAdztkGsiVkS4glYAlYgpSAJUgJWoIp4VGCaYESlhLYewfCho/ofuY8TQwh997JzCTvm+xbL/9u2asHe+B9P0G/4/Bi/WAlO7T9qwnvlMv9uLP4G3Ou232+B55l2SD5WRlpwk18G6SwbmqjLcdzV8qhBnDT7TJ/p5wv9q4wcCH+jJVchvbs7DQpdN00zlbn1/vAn4D3/VP3Dd2TFO6mg7fcSdmEWduGVp8dmhO+8OJzf78/AU8t86HsPXvNMODDvI3z5MMsWYH3X49rdjxd4kJkn6iQn9VzcyEqV9Uzb/2B2wkseVGhlSWBCBrdOwMe22f+GF44nN4Cr8AJuABWTqlai0DbIpCSeIDEqTnt7vcKPBJIf5MMl+0au5wat35luWnlE9sNOAD32AbtG/FKIKp+DdyJe1TyZND7y3+L9hlwVVjpRoFMN2eM5ntAehfHGr6y8s52azuVUjEt1COBEdjXWnfF2Bx5XimBaL5DkZFOrtj7y87eL8HpY58ORNAIXIzABM2rQjokecCkyhQoavu1/B24XxKIoWOTPo3AjAdqlPqzANsCX7oll4X6lES3geOslQbjpm2ks/kfgUtCgMX7jE+pgC/ymS6nu438myn41+OnHE/fl/U4Q7nsWbVSCgws7m9ovbp7UO1w5Ho91aJrLPo8Ys+Ye+/8ZtARPCMwCQQovdQHjs+ILPWXWPRmCx2nuyfgv1FOI7BD6byilDpELxXdwfoAMo+FeqoiATeqTIE1DVEIWjzjc+sQmM0qhGbgGRT317GGE9gUTs7eS6y1YZFGJDA/SQfgIjcaC5c1XoVPnQ6kqTYRaJo78vmmBL7aQo44Kq/jiRVJtBthT8UDcJhUX5rZCTcjsMxzJVAVACrLIaqRPvx98brIRMIZt/IGCVExgXNXyEauxDyst8AnC7gyuVDiDpgj5XBHs8MVikoYwbQ01eK+R2D+OjWrc53g05k0getFQjT0s9prPR4AgWC7RlqTQ6kXgxbnG/bcSWox+M5uIKYBaSukZB3TLGZQPlNOYBSN89hXAslkBUNVkZs7qyLr1mkVCxJBlQyu0JzngpP7cLik6ufKX1kYQRWAlLk4PjZJrxh8UClnxISCJgQfrdH4oR2TtFPweH0a+4zIilenH/eLVAD2CCzcXKeXGIB5kWttUHDfzoCXHqluNy3HzKK0mk7Kk+uTAsfzOfwG1q3QIjQCsCUB9QL2985glIEAxwl8q2Q4dnHmG3w4TvKIq023Z9+RbqxqnoHWuSlw+FIETN3q8E8DY9giQ0iAfXohb0upmy+eRNwTpO3gqXpI2+zVnmfj7VPdGY0v1V4+sYxBdteXDpvP+fULAng0wy5bIjUAAAAASUVORK5CYII='
 )
 
-const KannasTreasure = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const KannasTreasure = new Equipment(
   'Kanna\'s Treasure',
   'Sengoku Treasure Set',
   140,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     5,  
     5,
     5,
@@ -9152,21 +9152,21 @@ const KannasTreasure = (starForce: number, flame: EquipStats, soul: EquipStats, 
     0
   ),
   'ring',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB8AAAAgCAYAAADqgqNBAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEC0lEQVR4nKWXjZGjMAyFxcw14C3BKYGUACWQEqAEUkIoAUoIJYQSQgmhhHMJPj2BiCHO7eZOM+THwfqeZFkmv+jfzEfGkk+dfAoX6OPqaRzngZE/TONEvTv5TwV8AveAwqZxhqrZ1FIxXamfPhPwU7iAnSNyE4OZ3gxHMoZk7FLco3MiYxthP45cwacO8w15fzvob19f+aMw7QZcZ7OgNE3XwVOTbDLzE7i/t34F//4tUI6ZLLvOOA+DtUZuXDLhC3vVOiAaiCDEWkvX2m8EfAeX1GmqZ6a8yMXrXjdNU6c2I0cdq0kZ7rD2Ol8gvEQ+JuAdXKDX61UKK28SWdfCtpTn57vhEIui4KuksnQ0DD3V5UUmTpOTObj6vtcok1DA39LuAVXDmtV1TU13pCK9Ul20ZFLH45n8nmUFX5kkYxyHdc40TSIwJqBMb9SNuf8VA4fqYPq97yuaektmMFRfOMk87nhNkAleHBE08fIgeoxhCf5mIXwFhxUKQwoRBcYB42gYAN7IY1YgxswCtzw3Z61p1iILBSlcwADAkLI8z+U9NASIiCRShyIcGF7KfcY4UudI/zzXSDDaD9Q45Xh7FtyyPnQ+n1cBi1pZp4yjRsXLFpoq9mup73pxjgtzrU3ndruIfmYRgp3PzLOWNHLPtoLVWdd1khHscfgaxrmrPRMKy2ROXV+iYASELJVlSW5I5XMz5BrUc80B2xeaphq2gNfuVOWJb7nldp0TAQAgSjQcrYGqqmQ7wjcvAE1u3Ph42WoqYCmUZYxillSnxF/aB2eNNFM70ZZ9nKU/dONpA97A7RtCGH1MwLk6+LK+8eYuuBPOKceOwDWOPaHVYs11b0cjR6MYhmGBvafFrGvy6LgUIrdagGM+AU/YpOjCM1oNWwTzUHjHKtmf175YKnhwDWWmls9yoCxwFKBD00nj8Leq27YFUJ5cIsI3YJnDDQdbUeeH0dd0f0n9Bj53sNeWGIme9LxWWJFeXsSH0cP2qVf4mvp91aLzHU+JHIXwp/s+eHbbOMZ37BRJ9y4QaTjDK3y1LEu58MaNQwg4sQCNViNewNIF4VhrRs+GmIBY5JvojZlebpwFHPfDAkZWANElUEPKwyJGO34H3whAuw0NzlGAoXEH8/oYjSiRCe3n+52zy1QUHhWwTx1A6H4KjkWtpr1jD47B9fnsyALusQzsj1kdg3M0qtjvbCBPi+81khCuYLu8n1nABQLwdKJFGNq4/HnAoaPg2+22pnw5Gyp6Y7HI1aCwYgEtBJRluskCTjF+Cl0/I736MCKCZnC++AmvKNwFqQnFyBLgC0QoQIUgWn1YhAj0iQX8tfP9beTuzY0SIgpRBx6Px8uz3uFw2Nz/nX36L3V1yqD//pv8B6yNpzO/czT1AAAAAElFTkSuQmCC'
 )
 
-const Bard = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const Bard = new Equipment(
   'Bard',
   '',
   0,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     0,  
     0,
     0,
@@ -9190,21 +9190,21 @@ const Bard = (starForce: number, flame: EquipStats, soul: EquipStats, potential:
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAABoAAAAhCAYAAADH97ugAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADrklEQVR4nL2Wi5GjMAxAxUwa8JZgSiAlQAmhhFCCKSEugZSwlBCXEJcQlxCXwEn+gM0nt7Nzc5rxwtqKniTLMifIZYJ/K0V8SUHT9MS/VWTdlxXbfTZngpphy5S2cJbO8WINAj2i+baA34ud366XfCUD3RGkWQWsqqFi5CZ37irNP5qvq0VXWw5WK7Slj0HDa4Ku60CbK9y+SwCGkdsCzu3rI+gmct2qsjAMT7gXS3ZO8J9kAzLG4FBgMY2m0sA1uP8/iSUdtuhWO5lOQQWKKznGL5g+fFaJMbNfeYwP87sO1Xe/392Ag/KeF9Do1EjMPUPvrIdME7kZ96oEqww6wqH4wj1VVEQKeklrXQY4AmXAvu9dhNObo4cCxrEJy9yNy+UC70cHX2663wX8DZQCHWwcRz+jwn7VtZu7iNy534Km9wOgabkrEo7jMeCeyB4aBBrOoZU1PISCJukCPwXN/Y4gZIggQmDq6IzhiDVIc1JKkJDBdiPcNFUUoM2mbhIjcRBMEwH6oOhgOEdrdMiN4eiYLztfJCaL8LSGUFmOoz8IGQRTJWpqNyEaHI30sV2vV/e7c+d/xzGl0xsy2GkLGYEp3xzFsEAeaLm+hczY0j0e2NsIVmNhRFgUykYKSyIqXSQE+f7GzZEGWrcfOockUgs+w0her5dzDI/FRne/6joDY9jyI8gWBnP0e7KAwlViawat8u3mKjRCPl8RJHirAKrOkdAeOVuxJyWggnJJVUMbSntDlXSd1crwzK+L1FAU6hYUGXWT4svbziP6kZSHgBlu7a5OBmLV39NEzZSaKKXrE2gtm/LmfISu931NYd6jPQKkosOeR6AJy1prt0fnDtwBxoa7Lu9QNWj8huVNV76UDdS9OvQ+AulbYzTOW6D0FoWZC2IdEfj8+0WC6OAyle0DjlMVIT7s8nD/NsVALUZJf+8MN6og32qofIXIdSOEvGeMYZX5Lx/6n4ZWe+VdGBd50/C5n1FnFsG6TA5i3I8IoUEHNaaLnqJy3dzZXkc0w+jwUgroiljDODnB6EvUG6Q+54uIw3PwHlAkAVJ6bbARxMI4I+wZydPbQHleIjNWwfM5YPeT0J0NRr5AhosJV/os1F7ILaKbUwLh4Rk7IsNuIeijpES/qFNQNKOR6LE/KykkRCDDbzeHKY0IdpR6jPDmYXgJYjpl69MTU0fpCpG0KxvZOIUXs4Kl7y6d/nOLO22FV0h1c7gIKRN9u/d+Sib2e4cXVyjZjFzW4AfyBx4VBMQUpAHwAAAAAElFTkSuQmCC'
 )
 
-const FreudsLeadership = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const FreudsLeadership = new Equipment(
   'Freud\'s Leadership',
   '',
   100,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     0,  
     0,
     4,
@@ -9228,21 +9228,21 @@ const FreudsLeadership = (starForce: number, flame: EquipStats, soul: EquipStats
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACAAAAAiCAYAAAA+stv/AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAFAElEQVR4nLVX67HyOgxUZk4DpoRQglMCp4SkBCghKSEuAUrAJRxKwCWQEkgJuVrJzoPwuj8+zzDEtqJdryXZ+aF1G+jftmzeeSQwDDdDlB9jt4z/Pj577fbV2q0563hv1KQzK5M+dLRtZIEjiZUCne/pEp4APGnsb9bSO/3D/9TqcjW0JuB4kYEslaXlXg5KdDpdnhK4tcpg2+RP5/f73ejD+8C+w0cC2SlAokDXv8A63bmzob6vqa2dWjCXJnC/dNT4OhJxOmYdhYjhqaa99bTpb3Q3W2qajuLU2xhIBqtAbJyCgUi7c9IHCZnzEziA37TsceAZgXGlZAPEYPn8bGIisi1U+tt5UmNuW9suhsIiWL4ikGUVVPil0C4nAHA7dwJ+LmMMVLlsw2MsdNDcZbyJ6vP/EBhfKCRtOrLWjhPFwTJ4oMNFx/BcOEtmlnkhYOw18DcExnZtQWQZwYV0w+p5+c5n398QyFQFfY7/A93+9Omy0/9DtpiP4G9Xnwg8On9KYjVi4pasC95XwAlXFBiGgaMuW6/yuTMd32xeOX1u/+B3GErG9GkLKiEhVhMRNdp22u+C1Ae7P0v3aCqquPiYfArOvu+5lB8SiQXQvK/Gmq4/+nwhU6KWn+dEKDSehpu+kG0ZfFcLyDk/UG4Ng10oN1PqGU6DvDxSGQ5DG9+DjwVwBO8v2LteCGSbqh+OO0/lfpL1fjbkGlQRz2A5E7FMwnEZCgxiaMM5n9s914Q9JRWbrYIBvOe63/FpVXhL1zqMRFIrnFSoTIJwzg5qBD4RO57PcxQecOik/tVcD9rbwDZKVMErAUvAIIH+psEKLR3zICUaZQSqmZ2eknd+xsJ/VG3PCvCJv2dZQ09QNe1szn5+mYRjh6nKm3JH4AwisBc7dgjyZQnbjrej5fO/ITtTHrY5KcZcAWn7P7W0pargT8vzHHK7cKKaQU15F/DNrPTe7fN6n05HKGBlBUoi3RcSAVHhWutK0gtj44OJAyuufhDZAW6Mkt73jYynrXGsX81jLioIRUWhCy1WPycgA1y7OR60suWMqsYUM6NCSooCj+ApLmCPmBluOfc73gq24xhIex8crc6HVSlGzmI3wFrBUQsKlZlvQJ/AEYggiiWIPWf3X9nLdfLX06qtCNyvOW2K+X6i8BSSfqnuGtYVWwJwKCNKcbqpzdo+Aa99P72Ussy5xkDltSCxhuPKEIxTqyRgEzgINdtMilezDUgzXUKpwQjfHxXIy1zyHqkdH+laopBgRRqZHWfDfPXzlmoB/h1vJ3ygnoCA+HbvFchYIskG3I4BLmq05aqSzVcvqkiWVCM45uqE5/VKHuX/eCkVpp7fTNEPp3Vr6MoyF/4kNgB4bHNwlHE8txwTCOIjAtF9sQVJBYCHJlvIOpGwkg33dukwZUQCV9UQE4PGEl8fiWZViN7eiPRLJxUmFBe+/Eup1fE9kzhJfEyqKDgW2sZ3NUbGLy0EURd//SsCRp1dZO+xctR2/lIhx5cQJ4WET7pOKyNqBU47/LsY9XS/s+y/nBn9uCWv2isFCk6h6/18iftI6lCDanXVZHCYYLzn8Dn64leqIYoRwGM6FnHV6feSQB8l2vKLt/GLmFuJw4Tj7MVnhnxBHM8cwHxNzrLFLTldNFZfrK8USCznKTNAZlQzFBQbz+bgJgNkz6zSfXMx/e67YO4QGSI998TCrfP8U/sPIBSzFeZex28AAAAASUVORK5CYII='
 )
 
-const TheTrueAbyss = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const TheTrueAbyss = new Equipment(
   'The True Abyss',
   '',
   200,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     15,  
     15,
     15,
@@ -9266,21 +9266,21 @@ const TheTrueAbyss = (starForce: number, flame: EquipStats, soul: EquipStats, po
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACIAAAAgCAYAAAB3j6rJAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAE9ElEQVR4nK2XC7WrOhCGp2sdA9kSqASQECSABJBAJICEIqFIIBIaCUVCI4H7T0hooNB91r13urop5DFf5sXsP/SLJEQz/U8yEV3Oxk5BAsCDBAmBOymJ0nQ7yRgircnaKSg6FEPWXTu/5xHQV4swxJWRLBQO/KX/ICm1QOpORr+CDDiJEES3W+vuazXQrS3c9TcJ8/jKUpbf1/waI9YuAM9H4+6lTNaxe5v6OW+n1N3iBuEdxfOv2bEdWhKzIns5A2E/XtiPyvs0KGQxiAm+nxAfpTIfi2+NIDtZNx4D56UhxdBRfASIM5B1kBcJMnOJHZpiOemR8liCRYL03UDdwNYxG4i9/OoaBzThNJ2hfyPLOrF/zH7mwGMjdX8Fsj8FtpybQuKU+vCEx+N2P62Nrp8gLVUI8aEiKnpF/WmYSymgiGikim+TaGgqqV/Hv4iit0XoA2SBIOkLxulWWi8nrGmYJThQ8nBmS9pnShjfHvKdIbRYYZNKO5AChEPLFkGYrU+Xk9uEDQ/lzuyv14usRgCi0AmJLMKzpgBUiiKYlQcmsKeB+gECd3Bk5QwxUxLeMZ12VKLQZNqxueFXQuVPhlop3Ke6N2TqDmDa5cbzcUcxNpTX/XwjecXaKY/2vNB0WuJd7aD1JpkxmZ4w+5UmNSIOGKJBhR2g0CBFV4h5dGv42l9y4oqjUMA4Tx73O6lSPQtKAUMTOw77hf0vRyAfECyhXsIdz7GAlyvJhcJBBOVuHiIzaYoNDItA9lRwW6mHJy1F0iv7hNm4JoYYYY0cEzkdHw8oyBQV3WKBAcqKCMKoJZ4CTBjnMa0nVNaCctXP2C/s+wGzAdm/xrFoLt3TCR9kBRTCJjuIJbnClWFWCMzndaGejZtM3+o7BWFqXv98jpRfS5ekvGOskBzU/b3eF48AyEnMaV3XA433Cu+bflPaTkHYFaOP7DxMw+tX+A9LCjMHCL5yChsoTpvtc7cUMOvKiCBYJj+LkXgwuIXbgBQL2SIxhNsbEDpf6pLWHcmxcTUlwLhfDsauICH29nr/sMIwEOd5CFSLpGseqB1pQkdi6VzYSvy1BjGmu81B9zXlz54uRDM7JvNx0mW1t0iFjeU6l09fjO3qGiG3sAal0PiATZe+imvTnLz1vC1ydJKQwsL/MW4rLPJpGmBYEf+WstncxxBcaTnnUq/0etJib0DYTHEtCTR2/Qh3+himv9Tr1NT3pw6icx2vw7A+f2Jha1y+BWvMe8fkLFco1S11Jd446KQXv8utZRQs0cqP5xowwgo03wW/d9x+OX3+68GHP22M4srKActJKD1E/7O0EdWr/VAej7EMHCNmURvKQ+6c9Ra2zFeLsMCgP6XSr5usVghr7ao0hjkam/BGVr0rbhnznh38sI4Ean/NYI261/qWDJImO63nSdCiBIV83Y9NvaZBu16Xc1divzZ63/wcgXCCcPfDkTjxJEx++UWPHFGArOnysmzuLcOgFfTNNMcABydbYvKfpkmdLfPaBXI/LfvEENmdBP7xEJxuHe5VAGGI1gMpb5mMIYKHsBnbXOEt6pzP7w4+vDXCdWcJvJOkvDxBp6CDWzetmofg3sQyhAdjmBUk9IWhT7XeMtdon/DKyBxo2T+Wh8IPIUl9r2q5XGzFRq7weWy7ABG7xtKumUVKvY5aunVn30wd1Yi/kRyvRHLfRf4BwxrFbRy2EzkAAAAASUVORK5CYII='
 )
 
-const AnEqualAmongGiants = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const AnEqualAmongGiants = new Equipment(
   'An Equal Among Giants',
   '',
   150,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     8,  
     8,
     8,
@@ -9304,21 +9304,21 @@ const AnEqualAmongGiants = (starForce: number, flame: EquipStats, soul: EquipSta
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB0AAAAgCAYAAADud3N8AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEhklEQVR4nLVX65GzOgyVZ74GSAlQgikBSgglhBJICVBCUgKUEErAJUAJ6xJ8dSzMM49f1zNZwLZ0LOlI8v6jdTj6/4fCny0ouQXWbff8HkYfvs0ZrVzft6BKKXJ1RvTsg9CwLNpHQ1FZfcT9tH7LUrr3ov8dqB/XLKZ+mk/eJvIsRqKmJYo3c9vxbh1zs757P+22n0DjaqLMEukqIdOM/knD5p0H3sP4tK7nuTiLTmc8gU4NW9oR/0Rxf50Xwhwsua7WeiOKD3thaWR/gqrkPrktgeI0xHWOc9rS6NJlPVHDbs0ffCOf3EXvV0uPGyZKd6kEhne9o2cn36NTzMDvOo7jH/0eWwX+ANdMPjywTxfzE+gb6LsCoXbzDJI/+dFLHtDtJLvfv9dzAnWti2hiYvRWGGeNJVNalw0xZUyIe2JJpYbckNIUC0FUKulQj5GX69PJ6UdEkRYdkIs5lQplHR0qkgds2ILJx4o3MhMhqB9s1d2S5W/sYWEPvB1BFnIBEAeGLuyMV1kPvHOv5U22FwsmijjXrShoJs45nltzbhdneMc0Ipe18QIYdLGWbRhW90IwQp5xqHBadusCjKGraHb7Oe8wrysB3gIGPdA7bYpSAFUcL4e4XEexJjgQCkZWmLBCrWN6N/pCNGJf2q3zYHnQBz7Qmy7jgY8K/14cQy5AblzJicYwK3BuI4F8dc7SJd8BLctHS48LLuL4ATAtNAMOfqm8V/R8Rl5xmmo3DIbURQBcK4ByQAGeY3rK33fFwZ99uAYFAEwpL65UtzXFdU1pntMw9B6w/vvjLsJ7i4SBIw8IubGylPSLvo9l0IMhrp3fHFwjFgIQtQdR1a8XA14EENsMx7QdF+AgCyIhrpuwnfP0aSLeIKQotGbieFHK8D5vjPwM0YsBn1beDQhm9j0zKeXgICSKy03bXZ4ugL1UF0+Q9maYsfg01PMaXa8UOhfsyM+ZsxvjIwCTQpUiBm6dVCZv6REQjBQGWl9rDe48k/hW05tMhZWHdEo7IVxgegCGtAdFfTSZZ5v3/fScXRlHlLK1Qw1yKPQxKvgsr2h2q5xYAPMLOV5QKAaxMDrooTkbgAO6AHQpDE0pNMcpwV45MbfkwnKR15w+3LzrF+VzMf8EuMqKtwBYPdYCcapIvRU3FSYUf6k0iif+HprdfgGLPFB4In4ADBUJYCjyugZotHQo+lyRrNx/tYQxnBh5dymNEASW4VKjBBCEE8DVytgXeB9Tmjvv14rk1OGWCcBgMQAA2OeOn2ouBLIPgMJ4Hs1Oxdc7kgvFYbhxQ39OVLB74DJ95Vtiww3cX/KctwTAY6U8UFYxyzn+6DYt+vEtppQTeVMc3t8cQvcfbkgZ6+PhT49+2c3O5hTq7+K+zvRUzcmLdTtZaudwUGe5dkeUG1S5PfDO0qX8aQGDMH4RcwsKvZ+YUK5Nqcxrqup8cSfWfYp1q6txaPTXjvZjRyTch/xLGdJfnkiXaf6nCFUG15XxkYeK48mEEXP6hKuML/blrjT+bG3b4Q53IjWDu8M7ra3/+3X0P/lgiGLWGuHwAAAAAElFTkSuQmCC'
 )
 
-const SalvationInYourOwnHands = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const SalvationInYourOwnHands = new Equipment(
   'Salvation In Your Own Hands',
   '',
   200,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     0,  
     0,
     0,
@@ -9342,21 +9342,21 @@ const SalvationInYourOwnHands = (starForce: number, flame: EquipStats, soul: Equ
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   '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'
 )
 
-const SeekerofGildedTruth = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const SeekerofGildedTruth = new Equipment(
   'Seeker of Gilded Truth',
   '',
   120,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     5,  
     5,
     5,
@@ -9380,21 +9380,21 @@ const SeekerofGildedTruth = (starForce: number, flame: EquipStats, soul: EquipSt
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB4AAAAgCAYAAAAFQMh/AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAESklEQVR4nLVWi5GsOAwUVZeAJwQ2BDYECAFCgBAgBAgBQoAQhhCGEJYQnkPg1LINNjCzdVf1tDXLx7Za3bJk/qHQNvq7FrkbH3h71URJzncx/5QXg7bz8U5HdGv+2HntSrRMRN+dEIvOwGJFcQnuLuBfxq7z6jx8DoA7jkrxX11rKoaEnu1CTaVkrO/1Pq+y75zdjbX8LmsSGsuFuk6xbx2s8YGjaYUUmtokpjiOScULpUpRPq40FfF+7Z8rVZkN6KkvY7iqWBsfiaZhXS9SnKWWgcf3ukliSvPSOYbhujYp5bF5XplVPs77GOaaAV43TfwLAd8BBwFEGUkAIyvgHCbMIq4XUqtmVmC9SCDLwYqKhe+ze8DfgP0ANnHkDPeTe3B5m98G/3+BxV4tl0LzuzNCSR5zP1pQx+8co7bLgXiTfG4wZWz7wHvgSx1vIy8opnvwxUq7/SjSi5F35nfzgl3Ngi9mvGmOuXegPsZvUm9gMTDb/qfnDVZRyouHjhvCqyfFSFXG5deaQBBElRnmVp2Pm2vbfni/XOXZts2A5WNPejKgYBWH/UNA89YwRxCY86wVZZ0OwLF+JMPaMI57/lfdgvoGpgBdwyYkks+ZAXU2cacCoejrYK4S2itilxoRu2hG21djnrgif2u1y3tEkXAtl5wCU99QBEwdOGSfB8Wya5H95QXlgKMoqkRu35auEglhnT044HxnOXDT0Jp042oc+msJUBhzECoOfeJdYTuZ5HiPRpHIAyA0ImHIbPVkkjp0RmNI3f9gi1auJYq1pZd8Zjqz3Gli2Mur+JxjxKoVpdybl0GLxGhK3bdhWI8GsCTjeF7CJDtAletAod23LTcoiA2GPAtwUvciLa4rX+EfOXc7vTJ9l1m2ogC350B2B+jmgaVccwMG+cs6DOa2jvPaROn1fXFWfVVSz2luNpIEYxsInjEHa+bFW2fr3pXcct7VYAs2acJ045bmpqIyV8IGOW4GHYC3tvz8MYD6awZ7+CO3SB9A1+UAvt3Vu4Txxlcuw+Fg7urbKKJ3aS9rvI0HwOJ43ltmhEJH/WouEeQDThE1HJhdbXv0YtrnnuP1YOwUOK+BFacPgiDHaI1DVhnJ0R7ZoWHq9WMfVHTUsqsx17RLb01+dKs/XEeP4t1X5no4hDRgkZ6+Do2cIWPfXOfChmoQaGlUSj99ZSL57mPDNJCNN1O0O8NiV9tHv9YBIKxj0HY8ysv5ewcc8ZeDHIP7obFGIpcrFVjs2uDJkWuVEgQHrKfwRDx/wVy+MtHQW5axthGDSWpr07HyD4PzfT+SgMq9rfHBBPlFrqHTfQN58Cb4g/JyZ6sz5NbU+v09rLLtsrXn88M8YzCxOuGnz8DK/jIuryfOZDQKd0qheTibb+79esYaW0K3X2B3jN02Lbix4DAhBCCOp4o+mu1KjyPf4KtvfhdgvFw9cMkLB/Ci/2Zfnj+6uad/AZ23Rej3ySMEAAAAAElFTkSuQmCC'
 )
 
-const Webmaster = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const Webmaster = new Equipment(
   'Webmaster',
   '',
   110,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     0,  
     0,
     0,
@@ -9418,21 +9418,21 @@ const Webmaster = (starForce: number, flame: EquipStats, soul: EquipStats, poten
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAABoAAAAhCAYAAADH97ugAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADXklEQVR4nK1Wi5GrMAxUZq4BpwS3QEqAEqAEKIGUEEoIJYQSQglHCUcJ5xJ4WsXiDPgCN/OUIeCf1lrr4w9aykT/T05hIwSavr6+yFo7d4zj+CfNmD+OAz+OmqaZQrCFRW3b0jAM5Jz7EwBhunl9GmMpSexmSgh08rvgiQnZdKQyfZBxBbkiobYeNovLxpJ5OHLmTm2f0dgn1PcdPy99vwHNg2zVlNcJpWnKrZRcaunBSrrnSHnGyp4DpZnlfkMm72XO4Hi8GTYAvwFFxbw44R3zmTE1A79Tk3B/wNmOxIAmUCcHy+dlHB9u76i98W4Zp0pb/26oviZs/shwg8zHOrARs2rj3rfbjTnuaegsFV1F8AuT8B+34STGvCxA/5AwYsFtU3GPlbG6rjceF7UIu8rzfKF0IQzgDI8FlDn82KXfeezGGbIs2wQtYisWU56qmN5d6mKTJljIdKzHJmzAA0U9bQ9oI3BzDyQAqrjMS+q67oiKQ0BC5+PxoKIopufzSWj7N9EBa44CiTKA4APnAvkLyBGg2TFggQpcGHSuHOct6DugiUViCuItEECcFx4F79khmus1Gqh7QNP39zedTj/rQspW9Ikg0K9vwKIpCCDn83mOE1imoDqm1gkwuzmDvAWLWqRBCEWqFGCQ0/Ui/RLEOo8L5pk3opYetWiWkBrsuLUj1bzrrKqoNiU7hKfwcqE92STVmQ4UPx/5jnz+soZyTp6N5MCfnKblH+s0zmgvqcbEOEOtVNySGJ6rb0JN13O5Szdz1UvfWSROgIyNLAD3LcuS7vc71/iLUAZrIA6VIU8oayuxAFYj6eIbTAQxFr2cnPjgJ19PZAEuK8hl4nXsBC0rNygT/SAF6VnehS4kXaUOm8O6XepWCfRlASvlXCB0EYOhwtY2j9Ns4qU9Wo+ChLmUUR1gWdxAG+hTNuhoHKloHGmJxu+MOGLKQvn8/FxkEXrdWBa7WQOJ3RqwahWo08ANMwMyAeSyjSO9QSrYqEAmeDIOzqdPJzKo6Wj9reMr2tCZehA8uAOYD6/crt6s43oD2DqBhnkPylU8SBOjbU3deoKAaQPnhWAEjXBnZIOVd1bB+pkytewjME8HQ/9U8g1bJMUH7h/cEy6x3UcAZ4scxReEInzF8tgR+QcCWc+x8jgiOQAAAABJRU5ErkJggg=='
 )
 
-const EternalLight = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const EternalLight = new Equipment(
   'Eternal Light',
   '',
   200,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     0,  
     0,
     0,
@@ -9456,21 +9456,21 @@ const EternalLight = (starForce: number, flame: EquipStats, soul: EquipStats, po
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB4AAAAiCAYAAABIiGl0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADbElEQVR4nK2Xj5GqMBDGl5nXAJaAJWAJUoKWcFeCV8JZwlGClCAlmBJeSriUkLdfwoYVgsLM2xvOEJP97b8s+IeWxdP/k2I6sQT2/sH/6x/+96Gm2/xq90lk1a0t09gaR4drcOIJvuix6RhzZoX0SdvFpdHHKb9iEdwyuKdqNv/4Zg++ylXzZVmyHrMJXLSW/PFY0f1+oqbp0ueZo12xPWvn28hdneOwuO973zSs7NZz9Pii4/gt8op7+VTz9xsR9vH+LPQdOMEPTS1aw//7xVKcc+HzfjHUXGNaZK0xy9A14IhzY7HcTgz9qpIR1lraf5Z0/zB07ipaK+/A/nFhL67xrFTVqBhAyOVyCeOm7bmYxvm4b36M1oKpxnG4hmHBSv0hjC2dTqdkSN8bOh6POqde7cvKW3BxeLI+wOq6Dp7hAlDDu67zv7eS9zkxYjPY+1/euQvQBJBQiuh7wCF7LnTAd2e3KdTBM4FKDjUAXk8NmApDX+Z5Cvbe/4SzaFR+AJHKRm7fSxm6FopyCZ4NNTydQr8v32SskQJaJTDycO2yYddg9tbTbrcPGwAzZgxnDqqP15KUZcVQO4MvFpfkUDePKRDF5Jwdqlyvw3j+INGyqnNNgcY8P3EArapSwctwvwHcBg+6LnqLMEXFsaqnwBxcL4lnu076cuCQ36KIuUeOBQRFMIAbQ/JYoo8WqTPxHO4o2DfkF7fZ4gqCfMk5xRhwgHEBgojoooKRUK4Fa1jTaJCZG6TA+fepCLTJKCjUBQcjZI0uMjF4SRaLa9qdoORdx4rfxySrh8Y6MDa3bTdsrpOinCDMdYUodNnvdbSWwS6+TUqjH8fz/EjbRG7xt1S5r+TFOR6B6LsQRAOXhBDzyKk2diu44P48PAZtAgkMgtwiBdIYYhG5VGgIq5xbfKLd1jXm3oX6Ce6GCo4AyVN8tdHRiE8h3bUAlfstxRXg8cCbBBePYEAMRvQaHkHgnYZrY4fHIkQ98+ZgaNxzl/krcJGouJoBRcaWaRIQMkDPUEHxF5abgsvhwoIzw2+Ahy+OjsM/RgAhnDYHeAhm+LFH8V1tkOyPr5zHaQPDf+Qm5n6MwPR8ipHDS5546TLXDIxJO4Enuzn3D8CpTLaQ+YrOVHV6CED2Sh9lxjOwLJh3jIGNwstH7vWrbE7+AQdYGMLVplqwAAAAAElFTkSuQmCC'
 )
 
-const Brainy = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const Brainy = new Equipment(
   'Brainy',
   '',
   110,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     1,  
     1,
     1,
@@ -9494,21 +9494,21 @@ const Brainy = (starForce: number, flame: EquipStats, soul: EquipStats, potentia
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB0AAAAhCAYAAAAlK6DZAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAE20lEQVR4nK1XgZGjOgwVM9cAKcGUACWQEqAEKAFKgBJCCXEJoQRcwrqEuAT/J8uwBJLbnZvvm5zB2H7Wk/Tk/UPn5un/b8n+5Qjq/VMRpV/xdSRy0z+hOOPCz1qi6xQM2YBPls69JWMSwnxKeTFJ/yugw9wU56/y87wjaBJPRQ0bTDdqhpEK2+x2irvv225sUSNN/YCnlsaZwo9+oHebMFnyj6qkvNL0qCvSd0VVbV/7Fv3tdTzvDFW6pKs+g/0N9NUC/GfhmAmWTGwAnnN+h69yE/v4nftg8g/++ATqmd5ZG1LVTG1TEel5+9gy23B62wBgtvKu5b3CO6/j9czWO2vfpswyMCD2pZrGFv5FvwbJT33Pz2lNOUCXkqiYzsBvLVV5Sl2TyjaO6YrbOvRp7FcatzGSeZjvLFKFU8b+nt7kcnX+HKL/3H5F79uJaP55T+lSu+N3v3Sgcfy47tSOoA/8yk+L0+rF+s1Xih1IH7iUeRyF10+gpfcVJYn2HfYZ7cvpkyRhmWT+0fsSA3O03u7nBaB1vYeiJlkw5KOl5JAaEXjt/Q1L2pgxAIztEXAi3QFonfeEUPBB/MIafJawkwxiE5xegPtsA6ZhGKiCQklqSPbzmFJqW1zXdQBKCgE0mn19ioGzpRwUfHoGHr4qGq8rMDKwv23zOq/J9AqeFB9M+MdAfS2UmkmCaxdkn0F5wmplB3noHhU214EyPbXkZhSBsqI6a1FB7jSbmUw60RMabLSl4S6AWqe08/ffQSkEjEag4PRXSxBAygexuHt4jCWkoTv3L0/FJQkCscDCKyh9LCsgSlrn3qXXR1DigECkEsuhhoBW6beGNw+5WCR9gTIUB6Mg2QjYQItBBO0D8EfQEIEPRCAs7bqB9NjHL9BgiPnFqRBESdvTkhqUv7gOoDnmZ31POyH5EXRTHWvEFw0qjM5gabkCO9wIFBIvVPm1+oWmXBP8PYJ+awUQseCPebyCBs7YkaIAkiac4MezZqqiBqblAE3LnDIUUg9lX+ln/ed1RU9bIEWBWC98yR/B+r4AynMdFuhJjGArG0RxgvsT0xqsjBamDZRpMkgXQwXqGOoTceoulUx43ilUniAUNoiGZ1AYl3ihIo05qkLPJzbWhDRpL60kfj9Cg5VUs9mEDb+UBSD8CXqNMeEGyHGxdPaQq3azdONb1Ego4chliu6O9cdJCQW1z3ymC99/AEzw2wJAxcq6CUAaNHdd/64yvZPBwLJSoplsqU3772sPP1i3veyvQ6xKqRXq18qD/X6Xp6sUMp0Twn94sgJJwqVlSZ7zGPx50Ee7SwS7ZcT8L1jJ6fZOAj+CBilECZtqCgFkOeODcZrqi1jLwnAtZJgViXuHNBsw3l+/Kw1aTt9JYN+BhgNzAPfITRZ8BpwRxTdoPQOW7gbNheXFBUp1B/1ziNo7VAi6QSXmsv72ISCDP3EkpIMABl7+HADZEVek6oNz1QFwQjBAZKhtOTpvHFI04ap4B8d1MssiRG02ToFOLZdsWOw4N7m1v6E3AiJK69c0mhBAZVUhXZitGYVAbfU0RwAVO/l74kbpFwAXxPUwixS7I6iLFGRQo/XPtoLpYeEW/3BNFTnkzftev5xW5oV9M/TrHhc6CNvR0vU0+zBP3lUKzunDvGNF+Xgz/A8wDaBQ/dgPSwAAAABJRU5ErkJggg=='
 )
 
-const HaveaHeart = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const HaveaHeart = new Equipment(
   'Have a Heart',
   '',
   110,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     0,  
     0,
     0,
@@ -9532,21 +9532,21 @@ const HaveaHeart = (starForce: number, flame: EquipStats, soul: EquipStats, pote
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAABwAAAAiCAYAAABMfblJAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEFklEQVR4nK1Xi5WqOhQ9rHUbCCXEEkIJUAKUoCVoCVrCUIKUICWQEiYlmBJ4+5wkCIKjrvVyLyaQzz7/nflH6zbS/9ey5w/PgON410TqN75eiHwbxwqPD0OPsfJP30PvbXgcPlUXEX4ButKwPzmyNpMNL9sMe6tpyGz09twzYFa1waR7bOjqmm6mp8NFk3H7CcjjUTPFrGrp5+iosiXVXUen/nHeO8BpUetoNMaQqSFxh7O1pWP5Q5e+QX8NvUFvG9L4Z2r5pfbSbQL9BTg1P/0Gn7neyZD7Up3JWffWvJ8CjmJS58jjcOc0lf5Ivbek1R69E5MyjvZ4Nyes82SdElewdV5puZkWv2dsgmXqtqUDPhgCKPUC4ogePR5gwL9EByzcUwuBiG7H7Qh9qaEyis57NY/22Md0WH0PvaQDp4X7zqRZXvnxK8dst49NurV4vF8V5Y1/nhsHmK+4vAb4FHDVVLnQePKPlgz/w4ZvAFMdfZY2y3Iue2zvSdvYu631L89aaTiONU7vthYLKA9UXeK32zLxBDQOmCjWUqxKG4MxqO97CsHzaLfbjYxhsIrO5zNxJaqqarGG95LtEthnaeG7fvLZ/T4i7zz1vUWuHeTbwHnatpMQqQFcwGxHL9t2WjRBM/ZZURVgDysTrJEGFeRNJ+MJJM49mfGrtJAIKYqKhsHCzvw+sr0FPI1lXQQZrpaKxsDUNZ1Op680lOaFhjxAWRMbhQjuyk6FAM1b0ZRY7ybNvwZMZny0Rnyb+1ICJjucaFBW6CuKGHv1FaCowIHAAaJQpdlnc3CusyXpwFizjbzOgV0Oh0b2z6J3Mw9DkETfSOgLrS/vCTtVg3RrsIdGFBvatZ5G5ZYKzqUP/l0A/ws4bJdrWMTTPqNfRCghFbLKh2KAuw6bUrQTVfH/WOJ7Dz5zlO064rqqDdNXNfk49RE4Y8AsVJaM7jeUqmpp0hpXB8zjUA6WC6qMDvcaCMMl9NcwGLgT958DyNp3nvb7vUTqrLAvNJxeUmXZjDRd0x0XqhwHapiTI3jQDuP10rR/i0VWpU2A8xxpOFJe5Gsi8IGH+UdubjFyOGBYCNYuFoPvEh+8jbOWIc5Fm92dNfDbcTtYZtZJmxcr/sxD9uHwY2O56igWl+DPXRzHoLhBgOKiZzhkZmCpd8+Ak5HYLHxYcQiVhsGS9NnOPsZFyNEKYANA82oqpklVHx+5d80BGYhFHCQ1bKiRt9t5Ony324nW96um3cnLhkRT3HIIyaTMFykEDDiFVkV126SWJopJbCDmgyR9z9R1oaMrEx8uTVRzpvbJinZuTh7PAb1ot6SYBWcjYYcAvGCEYrafc1b+9IrXECbLfAa61vAVU6dpxuMiPnvfWkOJU+lNlH5y1UsE/W7t5vx/v/f2DEOB43cAAAAASUVORK5CYII='
 )
 
-const BeardedAmbition = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const BeardedAmbition = new Equipment(
   'Bearded Ambition',
   '',
   0,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     5,  
     0,
     0,
@@ -9570,21 +9570,21 @@ const BeardedAmbition = (starForce: number, flame: EquipStats, soul: EquipStats,
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAABoAAAAhCAYAAADH97ugAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADrklEQVR4nL2Wi5GjMAxAxUwa8JZgSiAlQAmhhFCCKSEugZSwlBCXEJcQlxCXwEn+gM0nt7Nzc5rxwtqKniTLMifIZYJ/K0V8SUHT9MS/VWTdlxXbfTZngpphy5S2cJbO8WINAj2i+baA34ud366XfCUD3RGkWQWsqqFi5CZ37irNP5qvq0VXWw5WK7Slj0HDa4Ku60CbK9y+SwCGkdsCzu3rI+gmct2qsjAMT7gXS3ZO8J9kAzLG4FBgMY2m0sA1uP8/iSUdtuhWO5lOQQWKKznGL5g+fFaJMbNfeYwP87sO1Xe/392Ag/KeF9Do1EjMPUPvrIdME7kZ96oEqww6wqH4wj1VVEQKeklrXQY4AmXAvu9dhNObo4cCxrEJy9yNy+UC70cHX2663wX8DZQCHWwcRz+jwn7VtZu7iNy534Km9wOgabkrEo7jMeCeyB4aBBrOoZU1PISCJukCPwXN/Y4gZIggQmDq6IzhiDVIc1JKkJDBdiPcNFUUoM2mbhIjcRBMEwH6oOhgOEdrdMiN4eiYLztfJCaL8LSGUFmOoz8IGQRTJWpqNyEaHI30sV2vV/e7c+d/xzGl0xsy2GkLGYEp3xzFsEAeaLm+hczY0j0e2NsIVmNhRFgUykYKSyIqXSQE+f7GzZEGWrcfOockUgs+w0her5dzDI/FRne/6joDY9jyI8gWBnP0e7KAwlViawat8u3mKjRCPl8RJHirAKrOkdAeOVuxJyWggnJJVUMbSntDlXSd1crwzK+L1FAU6hYUGXWT4svbziP6kZSHgBlu7a5OBmLV39NEzZSaKKXrE2gtm/LmfISu931NYd6jPQKkosOeR6AJy1prt0fnDtwBxoa7Lu9QNWj8huVNV76UDdS9OvQ+AulbYzTOW6D0FoWZC2IdEfj8+0WC6OAyle0DjlMVIT7s8nD/NsVALUZJf+8MN6og32qofIXIdSOEvGeMYZX5Lx/6n4ZWe+VdGBd50/C5n1FnFsG6TA5i3I8IoUEHNaaLnqJy3dzZXkc0w+jwUgroiljDODnB6EvUG6Q+54uIw3PwHlAkAVJ6bbARxMI4I+wZydPbQHleIjNWwfM5YPeT0J0NRr5AhosJV/os1F7ILaKbUwLh4Rk7IsNuIeijpES/qFNQNKOR6LE/KykkRCDDbzeHKY0IdpR6jPDmYXgJYjpl69MTU0fpCpG0KxvZOIUXs4Kl7y6d/nOLO22FV0h1c7gIKRN9u/d+Sib2e4cXVyjZjFzW4AfyBx4VBMQUpAHwAAAAAElFTkSuQmCC'
 )
 
-const SundayMonsterPark = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const SundayMonsterPark = new Equipment(
   'Sunday Monster Park',
   '',
   100,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     7,  
     7,
     7,
@@ -9608,21 +9608,21 @@ const SundayMonsterPark = (starForce: number, flame: EquipStats, soul: EquipStat
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAYAAABX5MJvAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEYklEQVR4nLWX3ZGrMAyFxcw2QEogJUAJSQmkBCgBSoASQgmhhFBCKCGUsC6BqyMjYxM22X24mskQZFv6LMk/fNGrzPT/JfJfthDz9z0JFHFiiJLvn82ZxZ6JyUzxrwgO52n2QXyIAKDvJnnmBeum4xuTCX2Sura2msb2hR8fxIeIlgZ6NlaRTivMOxk/dCn41/HPcMdjvfrTP9t0SAN3dHXxoM+SfmjPRvvsxtD5TxABzGJAgOaC/ixR92pvT77oF4IcRufPadkbd7DjgkL8K4REIU4dwNsZbcfquNsjpUs2/gjyDmK+8kxKnokZUdVBJLRmonc6HTeulbsLEixRz8i80Ms7Vo23rGheqjXKvAKu7DNrrc5LRdSWRiYUx7Efkd0l6sJWXXnjMcZvEpCCl8H1Ks5JYYxJaBomOHcw3UAOQMdzRAVEJ+yn6CUdaOzakdreQThiBZjnmdq25f+8lh8WQHVZXVuQMTAr0UFqYX8rAQRyl6YJFVXKv1WHcGLWCkB9RFU1805Yv+gkJQvIkhqZAKIL276vXQgfxHUcDSmAxDVyEXZj9nR/EYWYNQ3pKV4pGaApLMDtdv2T4exSBtFANKsrr5TBiA8IogN9EAkBGGwtpJsDMc8LOp5r3jPWnJpxTfzz3lDfd3Sp7TYJ6D2QU77aVF+AkEQiCg6GAZplm9acl/3IhVm5Pj2ilYYn6MhQaV4JHGC2IAqgzofeuvjSsKAOtAY0Bb5c87Cqtwc4oqDRQbTQrlGBYHmnhR2FkxlXhKKy+0ZYmB4AZo+Ca5pGlt6eGBOeJ0VRUJOkLm2yX04jfRJAuKLxBQCy9FjO57M87/d70GfrIGEA9H1yP4BAqqrgVHR27+DLzZQsFyVal6lGIvL3AgyE1HUpHdW5wmzldDrJM88tqMBNPUexkjrZil6UgpogRN/bjGCk6zoHkGW2QB6PBx2PR55xIjXUNFfpW5brdWkYage1J1iBSRIvEGEkAgFAn1SUjGUwU5Upv9LQXvhfKSA4ZwComxYiMAyJwOIXx8m6nXeGpoIU5PUAU0EEnnwpPfc6u8E6X2rgiZwWjyA92pamJ47cWcDxH2CPR1hLtr8s0+AAi3AsS0qWgoSDaZp2I+EXqs7+eMxk1goCcLRBByg9XePCpoJr8CUSXk18U3+J6F7gwpvIDNM03CPuhY0M+t1uN7pcLi7st1vD77WDsU8GaQeXDgVR2U1Hfls+dupMqjvP7VbX90t+8nkxPnFRlsHYcQhXgw+l4kfBh/DScQiNMkTbdvLE0sXtCKvFX3rYH3jrsg66PnTYdvRJdiMBo0gDnmoEzjt24N+4oNvcwDwb4YaksvftEXyBuWhkFgDbsgJBZCmuZxjn2bh+qAd9juMQ6HcEReHoX77AfBDrOATIvGPEvof9cLv29XpL98Zujsb9dBwY5HvefP+NvTPiqozfGz8ynp62+mUsvqwNeVH4CcIoyE6bPwuENGPje5+rR9Y/N7rD1rnKP8m6i+3P1U/zAAAAAElFTkSuQmCC'
 )
 
-const PhantomForestGuardian = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const PhantomForestGuardian = new Equipment(
   'Phantom Forest Guardian',
   '',
   110,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     5,  
     5,
     5,
@@ -9646,21 +9646,21 @@ const PhantomForestGuardian = (starForce: number, flame: EquipStats, soul: Equip
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB0AAAAgCAYAAADud3N8AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAFO0lEQVR4nK1X4ZG0KhAcqy4BDEFD0BA0BA1BQ5AQNAQNQUJYQlhCkBCWEHw9oK6ud/fdj8eWxapAT8/0DPhF97bS/9+i880n6LougigZt9vq47UKnatDL+bw34nw2IobmjOWUumJHMA3plY50qb+k/nG7uPcR/9uXXV7dAcdQEbB4tfoaKh76mYJSzP6a1t6c8yLWzBXd0M+QaPJsCswsICX+Ql6IRJ6PoJr8zKY/hwV5W34PxbhXa2KyzznHGE9v+6vTLcBNzEdYB3Ahmpb+XTv253VJ+BPoKFpxAyLVDpYvLdUFrTMitIcfa/8/RnMbfMK/ePKP4JGUc1sB6rslcEyw1/bM2M4hvoSc2t4Fn719yx/Z7pNyL3cDSVJWDitMy+WvV0AgZgPP4P9E3Rd1z3pYr9KFL2EEF5UDDRXBsIJgM7ZPQS/gv0KegLknlXi5bkgjeI6sAyMwv9nt9//rd1AN8D94sZK8bIQCUvWwt9LHVE6733y9zT+HvTUBLQCfwLUUrI+1jLKo8f6TCjKAdi9KBri+YVKGNecY0uMNGL/E2Wc8LH7aeEL6IllQzxVeJackzMMUOu86riMC/TwrCMPXMcM2PrxrGqB4OKHtWbooPw3U57k/KVxWbJQSCeaoS2pc7NLTV695lcYw1FGtNcEwDYeATzA1R2/80akVq7ZS0TmzvgKynXSgVcvHtS6aXB109GDOggoTfNmaZ4BEPytQxpt6t2AO7DD+4iiOB1Xt0iwNqtYPJXIpe4GujYvAevZtYnMU3Zyk/k1JWTkQkowO+DaWPt7DwwVKTuFRQDIkhvhgUil/caay4ShU4V5M9WBZSvScVzY4tgPleXki/ZrfAWGADQA41LXsMZsSJuZejCUsBSgSKGGt2Sxcn6zyktcMCmwfYPawDIkiqK2dJQhQxoADZwwxnmNGYSZAfuuIzkMHng3gBvvnxM8YpC341Ptq+8CfYPCigCIyz/FaYCtbTGx+diEDaxjQDsYDzSFFCazFQpOZaMC2+OE4ZMIit7Yfu2AuHlsjKnOw8iCh2aHge/WgDFAM58lSOJ9n9sRcFvL971XNZwArByX/czTYxuz1sLFOdY/AcLFnLxMStD9PLS3icX0eIJ1Qj60KBiI7fH+i+kybc4tvBj7vg/rG/PtgsxOgga7uB5amnGIq23rn5/bgHhnQf4kpQy5K0Lq7EyZjt8lu647QFutLgtxHDlFGg4BAHsuXBzzIWzc58brnEF9UU3gNrMJaWNrd7ZVVZEF4BO+iWIvtAF1tltQKDgnq6Sh3jaUdJlXsGeGnx9Xpx3X4xqhEUVFWmsUDxSKBKRY4OacMmyJC2yLAqpklsXuhsBCbwqdPHABttejqg3TIUvBNdivw6AW9VjMSWeUaX1M9wnsay5Zq3u2UZv70/Z+NEI6oC6OU0ktymKDpeElay7GjNQpTdrL2FgUb+AbuHVsRs0EXO0mrgLs9ot6daJd0hfFoxwlAHrW0owQl0PbNDiiVbgGmmB/dkSQASsqDPpEkc64OOwarLLKWmELlzlntOFNhJV8TRkJt4laTfxhAZCprFXTd6HKDEoVbzeGjXZnymDcc/UiuF2ihMEwbYyGXzNrtlQQvO+hXUAd4oD8dPwSnrAMLAcA9xX14MEYweWWlEoQM3tkK45O/mqlRgAqfCQ4X+QtfA12fsPknnP2fnIQ2Dy4ARTgyMLetlL2t3EAnr4526LwS3gC1sB8OEMkgjZAmqbpo+CTr0LHlxDX0ifN/izQ+CP35dz0XXPHlaAI2G3//KbG/AdL+NOI9QVluAAAAABJRU5ErkJggg=='
 )
 
-const SpringFlowerCorsage = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const SpringFlowerCorsage = new Equipment(
   'Spring Flower Corsage',
   '',
   0,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     3,  
     3,
     3,
@@ -9684,21 +9684,21 @@ const SpringFlowerCorsage = (starForce: number, flame: EquipStats, soul: EquipSt
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACEAAAAgCAYAAACcuBHKAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAE/UlEQVR4nJ1XjZGzOgyUZ64BpwRSAimBlEBKgBKghFAClHCUcJQQlxBKwCXwVrINhoN7d59nEogtpNXqj3zQv635ZF/9Qv6bzF9BiLJ5PsaglAoHsSGIT0QWd8aQut/nPZC/gJjPjEcCMRi1PGMt2WEgO5rD5/4eDjsSaY0b/lh/3YGZ3qQuV4eo72kcR0qqirRJaH5qUnW9YeMIxN5d79F0hkq+x66jpCjcFoy+ipxSBggGkiwTMOFsv2IQPt5T5CVTe4lAOQW2qeWqYYhlDX6nz4yGsqTs+VykB284s9bjRVjM95AEEAfxdkDm6UWmblwYeAce6ypBktXU33rKXy0l2v22oNuBd0azry+59o8H5R6IDYBOmIjWcax5fzQjpaYjM+hIlqh7aCpeT6HbdD2lRUWUpnKWv9/UK0U5cmk80PpxyoLPZNM0lLYpQgAG8gL3BQ0P0ApjOXsqGIyDjD0mLA25wV5rpy9HmEt1oXQ1spTzjgm7XrgCDFeCo3rooAggUGtINORB50X7Dmc9cqGQ58bBAETqKygmVVP7+UklQlMBe545ODdl5o+tpF5iL/eJphSZ3T+cRTs22E1dtkBOAPQAlScOa2ccCyP0ZQfh5CrBGnBsegNGYybY4yTZIbfeG0sZanxAWNgQjZzxqYgxAAOD7JTBfZpVDoB2pRmMurCsFcd+Gldg0ivWcCCeIx7UnkYpJQDTcoRmgyTr7zBUkbDhYDrFQ2dFP+ch6whLuA3OeRDCaQRAQMzTdFGXy/RGfXNXWxRIPTvlQsDgwmRQrcb2MIBqaA01Dw5hAgCpAEjyXMIoIJEf0sQ8I+rx2BhfQHRdJ5ZjAEIfuyW8jaRxzw7pIQErPRcDsFmq70hWnGkYSXw5BgDCYsFM5jSWNV277hCAgCjrulpLNGokHkBQrHXOvRGUJEIHG09yNpyslG/WmgNJ29IbVwCZOdxoWL+Yohw/ZoO90lGWs3fYrxC6ES1ZZ/n2uTHuhtvOmFQFFWCjeGu6XexPA8yjX7J5t6KWu3ifRO2HzAJ21Rc55td7zumq+gUIg1A8/5eQBDv7Fr/73cCrtn1uNzdhiQCE3EKT6nHlKL7mVBoVbTomV0MalHwfMnQweLgNtwI+nB3NGxIAeKOSThkWAPBl0yeUut3mGYPmm554DPt3gQYjO/f0lsqFtuU5wl0rxurHNgP4gvz97g4bN8YOc0Kp63WekHQ6jeO8LjbOapgv3wvRnTVxeyph6Gy1/ipAnFOn1SFJUdf1qTL23kCJ+BFaMhqU3EWJ10MmMJVFzw90vDbV8ZoSevSO8qzWiweLEihnjkSCOyN/uAsGIDtDCwAGPJxBiN6suGysNfSZr0Bibxcv+QuDkkcyj+a9HLMwMPoSgy33fcSHV6TCu+YRE6jbzUGH6O+ZYIkhbLYOCDfjGcZKr5zPv/DueYd0WfZuYG0Nn/754URo9oeq7+eZEw/esRr94hcdxDvVqPfgMQkANlbh/BNdtjODk2mtnGNd6IcVQDQn50pZabHS5YLy3A+p5iaZfu+Ckpv9KuaMiqW4BigWmbATt8Lljfj//vywtStj4B/PdEJSPiR3PIDaGwil0SCs1YGeuOaD8dF/7E8gwt8sbgsPKP98zw7A7SKJ2/mz/QrEBK+zCORBK/4dE2GVABLS8ryZfDfW7Pb3nx9BBMpiIB2tnsZAjzz8aQRuzv4DqfVsfiE4iRcAAAAASUVORK5CYII='
 )
 
-const EternalPirateShoulder = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const EternalPirateShoulder = new Equipment(
   'Eternal Pirate Shoulder',
   'Eternal Set (Pirate)',
   250,
-  starForce,
+  0,
   true,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     51,  
     51,
     51,
@@ -9722,21 +9722,21 @@ const EternalPirateShoulder = (starForce: number, flame: EquipStats, soul: Equip
     0
   ),
   'shoulder',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACEAAAAeCAYAAACiyHcXAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEJElEQVR4nK2XCXXjMBCGx++VgApBheBCUCA4EGwINYQEQgQhglBBqCBUECII2fl1OLLipLuvO6+5rGM+/XPYfaH/Y9cfxrtng7+FiM6v1/Nzgm5fIDdhfgNxLc6Dsw8niV4tkBnmDqRAPCV9BADnVlsKfXLSK7ma5KwnofekRkVCigizBfJS7coTuk3SLasB4LxnJ631Y0/Of5HJMMOB/Vw+qHs9rvxU4TA1CD2AWRLw9V2nCxfDmhcFABKSCn6IYPHFMFqfycxJlRakQHSQ6ftc4je0quQEPPH7uCHLTC58rFWQDBd8vB5BWC1HZ1YvgdT2Up/uqB0pO9NwWoUnfq8dkjisIfh3T/k6xtm8cSlUDKN1n0JWgVy+RqgZDxqVwAXR45SGF2sy08y0Njs3HP+JPBwh7sVR5bCA1IByQEhCDMs4HEmbYQVCpFdKdCC6fFEEkcPAL5MOzc5RYnhJN/NvijBEH7eTN4rUIIAGiPUjDf2RE3RcKghJXdRYciJJo2lUghQvHg5DdF56AL7HjclmwMBAYXG2CcKfPQ9558iEA4PoBUSbQCUzlj5RpMdxveVFs+GQhOScrwEmeE9S9QtUAXKelcqhEU3IoESQDMvQWG8t1twnZjQzvcXTYyHCgZgW52VzIXveKG3Guy5AfVQ4bWxdTyIq9EHC7njwzL8F8VIeO9BhmGk2qZhbiG6vPRdnPn2RV/T4SzA+rGBgUCzZDUhV853kHHP7paOm9euuulKiGBImbhZr+XZPEFXcb0C3DWsgXMd8hQpgYMvzpZ8IW0xHxWpYbgf3EFd0MWyEXhFhkBPZMRKJ+87iVDQtGlA1UIy99sthlNSkORSSs1SpsDrcWomoewIIInU/649ZHp/ypVGiOMSNqrW6FAESK8OlbouDHni/3Pq7G0RwtGWn87g4xoY2A0CldHeU/CkXoGIFDDBbIFtKdLihoHkUNYoi0/64WlBU4jInw0PGzHQeZXRSknPaa+qHT1JiJg4kydM3d+LdZlLWENHqWMtlwSm+e38v+SODSoLjL2MV8bqpIzGOK6UeQjwzWVdC3gwq0FLedpU3izX54lgR1SR2DRFDglv5tJuoKLAFge/T9B7X1HNSlaRcsXpHmvvDyFwhNjmumIB7yi6Ol6RsIfJO9wkqm1huAEQ1vhVOLSuQPXeKW6NCiTpzX+ItRFLjgoSc8u39r61729v44IGHIyQpwoOnKRiqCgCoNvaxOsSPOfFEBbEx/RVvDHNBQwJMyRNV9ZbWtiC6/PzHD3KcG/KzBXgj3NGTbYHAdhnms8CU8s0qvP4EEefCgbbhQva9vo6MVY3zLZBy7DnDHKpWjfhAXl/mPYIQ+bXLnyUm9WP1v9gxO9yMybOcqB21ix8HeD3Wfm9fTyEwwdPPst/+0XgOGZ6M0R+MeUUNU59xSgAAAABJRU5ErkJggg=='
 )
 
-const KerningCityDonor = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const KerningCityDonor = new Equipment(
   'Kerning City Donor',
   '',
   0,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     0,  
     0,
     0,
@@ -9760,21 +9760,21 @@ const KerningCityDonor = (starForce: number, flame: EquipStats, soul: EquipStats
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAABoAAAAgCAYAAAAMq2gFAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADu0lEQVR4nLWWjbGiMBSFLzM2EEvIloAl8ErAErQEXwlSgpQgJUgJUoKU8FICe05yA+HHWXdm985AMJD75f7GnQQZ5P9JxlsEyXAXqY8ipx8RtxfpN1bkQynuuxN36f03S7G4DNbXeHeCvuw4vdstP24rI4WB0jjxcuIqG5QDYkpsAb/lpxeD0WBefplkPe9utYkVqLjgo9qMECoxD1V+wmixZbMPkFIh+l1cX1dra0dQ300W5S7siHeDZ0OfVLCgxFwGyBMjfssFI97H7yhdZfzKqG8Fcv1kkas0RvC19UotfveS5yXujeQ2vLe06ok3+7Apm1jk+m1QdmhC5lnsqFMfF9zhAfFCPPIrXNbtkRDJiIzoNClaVZRj/Znrm6B3K0Z+8qtyHnjSxdylbY0nGsDc9zRKbmCZ89bxqrmwcjPAFmgGrLW2COyPDkAoqHT7Os4Aydot2cl7GYFltExfUHmjz80fAJ+ARmDDen4ZaSrNRpDuyLjs6zPIp6DhDv+1MK28aX21ThrQb8iWc+td/E8sEkfIA0HH2PdGWDIWraOr5WN5Bxqb7ONikPLUjNHGOBm9O/8+ZqrKpnVboGEYjHcPpW1VuV1/yCkmxvMmvojbdoR+lN4BghphgyxoDcFsKdpmemjvHZov5ovMSQurpGSBswQ2Nb6PEYPvIS8GA5rzws+zg9tr7q1pq1YcEqXEdw37bSFvZQkaXnBD22Gn3wqxjAc1xCZjxufiEn43sKSsQ03dYdmxWWdiChpuvJ/VBd5dPINwTFy1fvDMzEMrnc2xpXaM0zls4RbUzGAzi04PCRbQL4wJ3dV0I6zXdOaY84ioQvaVV1gFD1gQTjg1O8b4/N51GSp9GF5r/3pAbWZznR509rT+/hAgb103F80wWkJX9RvFSYi56LG9Pr1n8hbEFI6l4+OxsMjPXybt7i9Aw/BIQKiTCAoBXwtjlMKisIDhvvfJUH+FjPNH8mB8nYQUntzE2OT+n9EEr3Fe4ZQXc+axsm3aLBmYkuxdbCuseOcDransJqCfXVhCSFeGKjsujvGVRXzJXkUXtljiK14JTOElgJZQijZA2Bk041Z/L5eg0R90GdsKK57FyDrx4qbAR3cR4s+qbtzEGN547RJAvMT/VUXRlafQVljx9iYriRDf4wBh91YfFwnE/7XYJQCr43eWuWtUxt7FtsKKXwoDz9nD2AU8ZLN/pxalX5/jHAJ7pTFsK4ekrTzVQg38WeYl65bXLjEvhaXP1P/U3nVIJp/6+Guxebf1/Bs93LanynhdGgAAAABJRU5ErkJggg=='
 )
 
-const ChaosCrimsonQueenCrusher = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const ChaosCrimsonQueenCrusher = new Equipment(
   'Chaos Crimson Queen Crusher',
   '',
   0,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     0,  
     0,
     0,
@@ -9798,21 +9798,21 @@ const ChaosCrimsonQueenCrusher = (starForce: number, flame: EquipStats, soul: Eq
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB0AAAAhCAYAAAAlK6DZAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEPUlEQVR4nK1Xi3GjMBBdz1wDuARSglICVwKUACXgElAJVglWCVYJVgmhBFMCt2/1QTi+i5O5nXEEQtqn93ZXUn7Rz23l3+EnE38Kut7vdzoejz8C/g7omh4AaLWhj+uN3n6/r8WYlxbwKqgwW/xM2hjy1pGfZ6r516qW+r6VQb+H7iXmr4AmKXedbdOQdY6st2QHK33ncaJBn74ELkHXZwMgYQTMjow1q6prtLt+ABbAz+zwCCoAkG/s++CkG2hmCZ8trB17OC/7xCHGN5WiNkpujZXnOPYT00NKishAzA1dcsgyf0if7owkEpyfry15jnU3GJFVW2nJab/5CM9ZkceYRuf33DGzw3deTNMoWmbLTJbM1DkvgOjDd35nec95ruI+nrsDfAYqA2L9UXKA1nHSwLljEcbLSJ7jfObF6U5TpRaqlpr6VnFWB4ailt5k/wo0Dxz0kMEbzlajHct5FsAGjtGeL2TMTFVdbWCFj2f2ZcmEQA2ZtdWcGMwQgDUDgv0yA1QJ4CuF+hXo4RCzE/Km1nKGs6ZEJ50Hzi7IGgFfrtO/AvNvHaeRalVLYsE8g6SFQFrFTB0rQv9rR8IfXbCCLUX9Lvw4ky/Hf5vpbjeZxlDkNbNB/LZW7d4dK9Cy5MtCUjoPPv9ZMitbWD0vH3VZmlLpaWbHG1NfsFYcAvzySP5mrd+x3+29l3PPSTJQ047SUdVtBpYsZRpwiO9Khf4Bm31FOyBZCDOvQhVRy/VbAv8qARNYyTBJWEsdVlyTjrA1pwX1PUolxDNJXQImK4EzUwA+ytnxHnu59BkY1veNAI9Tm+Xk802+N/x8cpsP76HMA3pkun7cpgyIVcIRAJPBYeovDWyDMkYAXSwnsHwExHtim5ka40WqxLCPx1tiC0AwRIskGul1A2DZCiiSYRwbYZM+BIY1TdPEwCfee0NWer87X+PJs+8L/Zz9tZw8O38ZFFmZ2OIZJdC2TR58vV4YeJADHqbi5DIHTIzrjiEDtk2b322MN0APDLJCsiCdp9vlSse3d7p/3GSQ5gPb+W3FWNTx+EbIhcQ8sN3HvO9H6UfNV1X+lrP3oI1dEwtfXC1gWK1nlpC6ZgU0f0+HeQINW+FnmSEp++ZE2/r2d6TbJInjIV/BTDFQy9vR6XSi67iyEydjAYzkgmOEpaJqB5ZaLNoWpZQ3hyQVpEMMH80Wixj7EO+UC7CK6wSvaVOouVycsyIxgBtedApRZgpAJFKyadqKYuEryCXGd4nXkbTzJEbhG7NVe/BtURgnc7c6TXurTMY3nqSN5ixuJcEQM4rEkHRNDFLa+h4tifCsnDJoSnfI0J06uvBVpGSbzDgTnYbNf55DqSyfcfO/HjDENO5IGfSAeys6wQjx6cJ9d3dslcbjCYcE5kBmsK/VBr5E9imBmiJ9d5fteAo82l9vAfGCXTB7OjfesXK+HP4AM4ymMX8r2CYAAAAASUVORK5CYII='
 )
 
-const TemplesCollector = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const TemplesCollector = new Equipment(
   'Temple\'s Collector',
   '',
   33,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     2,  
     2,
     2,
@@ -9836,21 +9836,21 @@ const TemplesCollector = (starForce: number, flame: EquipStats, soul: EquipStats
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB8AAAAgCAYAAADqgqNBAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEa0lEQVR4nL1XgZGrOAwVM9cAKYGUACVACaQEKAFKCCXgEpYSoARcQihhKYHTk7GxIbs/f27m3kxiYmy9J1uSnX/owEb/HyJ8WfJt++bv+Mt7X/4wbzge14f3HJtmif/IfCsWOBpZ8ii6wfMH9SV9DL34v9ZTe4XS7jHw3HZsaTPTMEzSYVsfZZlLP9o4ITfO9r8bb1uVZY74TC4vsizbGKSUotdrpCx7BAOSJKY4jqW1sL/R+pjnL7FTVRUvbRQQW3I/0PCSx0VOAAycBXyCX4gdn3j+Gnlg21Gn9eYLwLu6rgOjdT0E7bnfeWEI7XxH/JpHUnULLiGP7sVDPGUXAwEnZ7ZvToaYt7B+sxA9v1t5y2/mXXQdERKTF+2kioLKPJVnT0CAYl+E+XW1nN3pN4hzuq1pWY9scOTVOFLLnvsv/ckpx9L83cuPeleh2NMqDwVBhF7pIh7OLctCDbKiUyH5Mg3i+TBpOsFsCSkhRW7b/P7mbLjdC3nWnEVpcogwdeMQkD8bWochsC/R3ue5BBy8Hhax7AIExHURXUiBOEndM0TImF0EKqYnILpnhfCAI+WU1Ou6ied5U3GwTH6R2AxzL8RqCklrjriv8UWP4u7aswgulr4A530K75mHyc2yW2LMQUR2bUH92HO61BdPQZQmprShXddFWivIF6FuLGBmsS1R8xxp4tWdeGVzzOdWyDsmRkfJ66UeTJiQED8rE/2qa90+WeKuNnut2tr12z7Azo0yLUGJ/U5TM1eZVDN5zvu8JbwPCwcD/OfiJKqbfqT/ipYN9U/OgkKxg0aQNhl1nGp7bgfAUfcsEzv4r4Cgaofg2LPFRUzj63KqIUhQwbBCCJy84jOWt6XpZ97fgVYdltEz4rSUzMlxmg2d2MGecyjxFhzEZ/K3SBJUkYkDjVehOY5Ne6gtvCh4jLkjTVMWXsv+m3ndr7b/SA5ok/vUdpMTUD73eFgVezoIMd77432s167PyIEn52jLy+kEcDqWZUxdt1LJ4WyJ7bhP8FcXyIpJFFccK6Dj9kz8AVzZPS6QqN9rJMH2rPgEa8MZGoVor8sgxu+mYc+VEQIB8NiejD5gr1Wm4lG80X5XOI7UdYg4z48Jez1w8IkHheg3N83miYIzOAH+wQEbvh3NDiX5cdi5POdLgCz7PM/sQea8XzxFlhjo7M1lj3oEoRUA2HnW6+o5810lw+FI9FOeI2p95XXdyeWw/+r5gphTg1K5Xm+pFlW5khq0zMN83HxA6Nn9Oc81VyE4hw+uTVCtOZmRv59i4fEgxtWKi6QRpS/3hDDaG95AW0Sw/DdeJlvxIADoez4W82tU66kTb4ETMeraDLuw33XtJdodJg4YDMrMBb9gA6NEKRkRhuB9HoMUe4yl3omRMzPswW5+yoSA3P8jYO3BAM4XWRpPxBkgBW7HOygMDJ7tBwHHd2wOuNIfZI8zyXonYr6S74eGaKPwD1vBSz3C7hmXv0taD9v+B+Dd3bvbid5Vw3fjf7X7L5YAYnmnpGMgAAAAAElFTkSuQmCC'
 )
 
-const Icebreaker = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const Icebreaker = new Equipment(
   'Icebreaker',
   '',
   100,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     4,  
     4,
     4,
@@ -9874,21 +9874,21 @@ const Icebreaker = (starForce: number, flame: EquipStats, soul: EquipStats, pote
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB0AAAAgCAYAAADud3N8AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADJ0lEQVR4nK2WiZGsIBBA26qfABMCPwQNwQkBQ1hDmA3hTwgagoQwhjCEsIQgIfBpLgFx9qjtKUu5+tEHzfyBumj4fWnCRw2qPz4+gFJqG1JK+/xUlFL2GcdRB3DV0nVdfwWG0rZtNCBIDdr4XUEPC7wtAPOwD2JbDuqwiC7kMA/b9zV2vnRvnLDCoOldw8NsYezcwHoHmHBLXTL76cZp65qTb69OTQOFnEEjfBaNhk5HRSj4xrYFJ/0p0KyrAr8CzcDs3wr8vc/AKRDHx65/BdQ1aDgq5QILVjMDLq6xcy5mJePleqt30xouTXO01A/oykLo+x4456dWJONZP+pEGYXrqLu3NaknhgM4Sf1q8SiPRgAGmDmJ51A2GTeNB3BzvV714/Gw5xfP8rQsMA6D9QACzTgk8zVuHoEBFqSENuha9vSGEGYCxQ9g/AgWrEYxH6NDmugF9BbkQPXuEuykIiWNChjq7rX9Nicue5VQIcZiCHOspQcFqkyGHJzFyRmljc7GunMNxUomOlSefNbSoISPfF9AmXtCewfXxQC3J7N6yG1xG5fZ5uPazL2EscxKVIJyiQWARcUoIQxiFbG/TBrc+PbcEwrjitA8eQqxO2fMe+lwBkFJA5zazN05kGVASBKp4Z2LSU3MiXAWtDRTHoAhjsFKQsyYn3Pp6okUpLHnkuxxRLem7iTmGuGzAPbmrpMA5GfXrhjS1vnVtm1LnlSFtQFcAtNYoqVRn6+3qRyg1WQoBMFnwJq+Ug4VKYutcc+leiMCDO/noJRj9Fm9r6Bugqu5oP3tIKWC74qUDu3rcSanlzgCx0bAz8UFFi8IX68//Y+0W0f262raCFwvAh5bG/tqbQpuDaUIPgb8K39Xko3I+B47tykEhDb1v8/kW9BSUsD0RKtUhAcR4hiiF+7FyQS+Krulp2souEKlatBslYtLvhF0582eKgH3gdj4p+2etsmaWK6wExuyhBL/mIS7PjDz0kRYTZG6Lcq+Q3F9m6SpULuC/iYMaO+YZ/s9ppBXlg4GfLgB7nPRwT9pGwP8FuNTQrFTJuC/UA8sgf0iKdefteP3f/UwwfR6APqCAAAAAElFTkSuQmCC'
 )
 
-const EternalThiefShoulder = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const EternalThiefShoulder = new Equipment(
   'Eternal Thief Shoulder',
   'Eternal Set (Thief)',
   250,
-  starForce,
+  0,
   true,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     51,  
     51,
     51,
@@ -9912,21 +9912,21 @@ const EternalThiefShoulder = (starForce: number, flame: EquipStats, soul: EquipS
     0
   ),
   'shoulder',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACEAAAAeCAYAAACiyHcXAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEJElEQVR4nK2XCXXjMBCGx++VgApBheBCUCA4EGwINYQEQgQhglBBqCBUECII2fl1OLLipLuvO6+5rGM+/XPYfaH/Y9cfxrtng7+FiM6v1/Nzgm5fIDdhfgNxLc6Dsw8niV4tkBnmDqRAPCV9BADnVlsKfXLSK7ma5KwnofekRkVCigizBfJS7coTuk3SLasB4LxnJ631Y0/Of5HJMMOB/Vw+qHs9rvxU4TA1CD2AWRLw9V2nCxfDmhcFABKSCn6IYPHFMFqfycxJlRakQHSQ6ftc4je0quQEPPH7uCHLTC58rFWQDBd8vB5BWC1HZ1YvgdT2Up/uqB0pO9NwWoUnfq8dkjisIfh3T/k6xtm8cSlUDKN1n0JWgVy+RqgZDxqVwAXR45SGF2sy08y0Njs3HP+JPBwh7sVR5bCA1IByQEhCDMs4HEmbYQVCpFdKdCC6fFEEkcPAL5MOzc5RYnhJN/NvijBEH7eTN4rUIIAGiPUjDf2RE3RcKghJXdRYciJJo2lUghQvHg5DdF56AL7HjclmwMBAYXG2CcKfPQ9558iEA4PoBUSbQCUzlj5RpMdxveVFs+GQhOScrwEmeE9S9QtUAXKelcqhEU3IoESQDMvQWG8t1twnZjQzvcXTYyHCgZgW52VzIXveKG3Guy5AfVQ4bWxdTyIq9EHC7njwzL8F8VIeO9BhmGk2qZhbiG6vPRdnPn2RV/T4SzA+rGBgUCzZDUhV853kHHP7paOm9euuulKiGBImbhZr+XZPEFXcb0C3DWsgXMd8hQpgYMvzpZ8IW0xHxWpYbgf3EFd0MWyEXhFhkBPZMRKJ+87iVDQtGlA1UIy99sthlNSkORSSs1SpsDrcWomoewIIInU/649ZHp/ypVGiOMSNqrW6FAESK8OlbouDHni/3Pq7G0RwtGWn87g4xoY2A0CldHeU/CkXoGIFDDBbIFtKdLihoHkUNYoi0/64WlBU4jInw0PGzHQeZXRSknPaa+qHT1JiJg4kydM3d+LdZlLWENHqWMtlwSm+e38v+SODSoLjL2MV8bqpIzGOK6UeQjwzWVdC3gwq0FLedpU3izX54lgR1SR2DRFDglv5tJuoKLAFge/T9B7X1HNSlaRcsXpHmvvDyFwhNjmumIB7yi6Ol6RsIfJO9wkqm1huAEQ1vhVOLSuQPXeKW6NCiTpzX+ItRFLjgoSc8u39r61729v44IGHIyQpwoOnKRiqCgCoNvaxOsSPOfFEBbEx/RVvDHNBQwJMyRNV9ZbWtiC6/PzHD3KcG/KzBXgj3NGTbYHAdhnms8CU8s0qvP4EEefCgbbhQva9vo6MVY3zLZBy7DnDHKpWjfhAXl/mPYIQ+bXLnyUm9WP1v9gxO9yMybOcqB21ix8HeD3Wfm9fTyEwwdPPst/+0XgOGZ6M0R+MeUUNU59xSgAAAABJRU5ErkJggg=='
 )
 
-const BeginnerExplorer = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const BeginnerExplorer = new Equipment(
   'Beginner Explorer',
   '',
   15,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     0,  
     0,
     0,
@@ -9950,21 +9950,21 @@ const BeginnerExplorer = (starForce: number, flame: EquipStats, soul: EquipStats
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAABMAAAAcCAYAAACDBoQZAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACkUlEQVR4nJ2VC3G0MBSFLzMYoBJigUoIElgJIGGRsEgACYsEIqGxEAuRwH9OSIBl6T9tb2c25PXl3EfSXHZb5O+W8ecIk+X5FKnrtTNN+/fRMO61FmutaO8lu922qVx+YR6bi2PfuZf5a1hSdVAXQMaIKQopx1EcWoWx/8K206M7BVoC6BJbBWBA4NvB1e9gGfxf5nmWMsmHAlOWAWAAZrsBlJIKfYnBv1KWVVUVsjpjczAC7neRvpcUoQA5gb6N2fB4SNV1+8C6cbOm1jJORs52CaubRtoVll1ML2UJ1T+EZR8fH8vX15e0bftWyMMwyOfn5+VBl8pKBB0gIZDmDvV0Q5Fy3p4yeQmDC1A1h++JdRYtAZ/POUEXa833CdBah9LgqQX+6liwXdfjW8cDULCouSeu3hmYn0HOuuDG0ayzqDHgVUHloqCyH/s3YH4GqVJBGYEqgMZxkhmbKsRKS8nCRyInaXQd4joMDwDbxTmbXSYAAlBahoe8zQUQ3Y/X0of7uXbys6r0EpS4LlTVNHWIIQF9329x5AVmHFmPDxQ5y+hXT9CqZP92zr+0G8x5J95y8esbRRtRIjomxcBN61SgukhOe/LjaWvQ1Qbp+zG0NYJN9ws+QQqviCqiIifmULwrDIP+9NCd/fJRiXqbl21vjqxlbdcuw2MIAb7zucFkP66udVDHJLTdiL4ObjZ4CLjfGPwf0GW4KQDupeFjepm5aTJhURo7KmTmRjyaSq0a6fqLm1THSqYqqksXmS2hvNwacQsHAMpxHsjSIJiqNlgMZoaAL1yQLviemLXyk+qQlLgugV5gK9Bm0+SXVJiMzzkvVEfXjoouYUkhFoZHcQ30K21X7X/2OKaFCXo1d2X/AD+go+Tqn86HAAAAAElFTkSuQmCC'
 )
 
-const AProperHero = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const AProperHero = new Equipment(
   'A Proper Hero',
   '',
   100,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     4,  
     4,
     4,
@@ -9988,21 +9988,21 @@ const AProperHero = (starForce: number, flame: EquipStats, soul: EquipStats, pot
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB8AAAAgCAYAAADqgqNBAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAD20lEQVR4nK2XC7GrMBCGl5kaAAmpBJBAJYAEkAASQAJIAAlFAkg4kVAkcHc3CeFNz52zMx1CHvv9yW4S+oBzm+DvzDmqvILDNFUAY3rvWqrHOGBRl4UAcH2kBufDruCO46RTn8F/GYkIlG7nrM/lzGlgUMIUid/DW3kN/gbOVklbdj8uxGm469NUHYzeaOFf+P0KPi7KrhxhHMd9J6qH39k3cOeJudfolwETqGk6iGs7+ybpoF0kVqzH/QWcHaHDOfZtDtDJbm5MKSym7YtYX8HN/t46cNDx9KnUS3Uw0DvP7kOfW/g0TT+4x55HQqfpowpBrQrL2P9kT1wa9O4xyNkPZr+rtseqvadDpYMDm+jACcqIX9zEhc5b+3dKrI/euDSvYwHol/w7QTq3GTiDX7EKGK2t482dZnCIULISwZXvY4KrmUud5237Ag92Aiby9wq074WAw4SjjkbAEuwjO3bWYDIBLguIhKsEjA2Oj1nAEry1x3bWwhVQvY0AuAVvBYQuhqSLwXspAeTn3QtIX3QUSOaY2fPMh8GC+b3dKyVwhrdF1Kj9LQclIE9bFObO/bjITVag8ifYPwkwvN2yJ4mEHJOnyUrOakquQbdl7wieQc1lyvSmiKCoItz33X72Q4qzi+CDfuIygyKTUNfrS2IFr3FAAhkeIOWqE2V23yS4ZB2EYYg3llKelt0sYqgH2JleEOUvY/+hsNfkDNdADEU5f0SQYxfskm5NYBhISJy3LKCt1QrQ0odAs7fXC/pl/8iZSMgMNw26H28Pl7b0YgGkXCdZkiRKdIfnevvNHWb9mwk+Ng1708y2G6AoKoxbzeB6XmbcCX7CIaiyEGp8uueLtRTC2X4EdtQefcKz7LmCEjTPcxRQsADYhEPgNxMJSPD2aTG7aTvSPXBx3ju3t9q4WO4kKljA+92v+lCslSBlfA74FNd14m7t+huOZ69OLNmpW5rAJrGiJORyi3EfpIp7SeFAcB+WV7O+hbPVnoBPj0dlGjGEgPQ7NQ0eStrTEq7sFu5jxtWBwCOxZQHeK6Yj6xBKadD7Cux/8VF1D/+gEw9mAWROmuhWm3SfpOTP5RmcjXchv/90VnG3AhhU1buObaraDDhQYE8rPFyGK7iZ1hMF/BgBZLjl8QPSdqQ/FvMyW/CLtVjwuPidwt2DX4oCKhIweC7gjoNQ2qQTolOpZcG5BhszUKl/4xHcwMTiaepLFJCRAHziXd3hRRPCGz+j6b234BLWJ9Bp5p3N/GxgjqDCPKdegekdwVSfHowbD36HcLM0SwHbkzrQdQH+A+31u6nfih1Pymz/ANLN+cAabjK2AAAAAElFTkSuQmCC'
 )
 
-const DeepSeaMonsterCollector = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const DeepSeaMonsterCollector = new Equipment(
   'Deep Sea Monster Collector',
   '',
   33,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     2,  
     2,
     2,
@@ -10026,21 +10026,21 @@ const DeepSeaMonsterCollector = (starForce: number, flame: EquipStats, soul: Equ
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB8AAAAgCAYAAADqgqNBAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEuElEQVR4nL1XYZW0OgwN5zwDIAEkgASQABIGCSABJICEQQJIoBIGCVQC76alpYXZ/b735+Wc3Q5tyc1NkzT8Q5cc9P9JwP8M+HHs+B++nfXyh/em66esnN+hHrbwj8hRsTHRwIAHQcTMKxpK+msRm/skb+NTRmF/eszNxJE2K03ToibM6EpZ5mqexzAmu8/Mf9tvxjHLLPAdXC1kWXZAaBxH+nxmyrLK2xDHIYVhqEYj5plHV9b1rfS8Xi+4NvCADbgbaLyIfYE1gBXcDfgb+QXY4inmnxkb2556IQ7XAF6r69pTWteTN97nLQsNaN63wJ91prFuGUuBB0lRKaag6BlwI3PsSIYQR1h/ccSANYkjj/Ra8NzhA5MT7TQWBZV5qn47BnhSnE5YP0/NWUK/iSIn2po2eWWDBX/NM7Vg7i66L6eIpXUf1ENd1I8NxiA2Qkh6GM/ktm2jhrOiH33wbZkU82kRdBN9JDQq0PGZTVp5BAL5ZYSuG5cBedeQnCZPv4r2Ic9VwDHraVOVwwYIA9dFYEH340oO9pFJLh45yIwRXDEdA4IkKxQOY6RISSHloZjnzQvBsrhF4tDIgwU+jmfpvxdSs0dFeuUZYNmnzB44ANduN8DMmSOybwsa5uFyM0puUAX0Hnb6TUowmqD0ve9URZE2YEWMtERNN9MC7y7wbB6jNGJU4D2AeaJMYxorBNNZNhmYFfVTQWLZ6E8yOcFqDBjOZz7vNNWKR51qOs9xzkcMqzcEA/NHcfIiOk25Pi9UtRG9uyd7w/ibMOuhQxYUIwjqVBZ673WrnblthVnn70ONsTJYnvMhzTiG4ixo5vdchnbOiHofx2XYn8VF4Rnm7oS6100FE2CafmHqgmhgegCb9w17hBJurQv4Du6xDnFLfT5vSpKIZIPUwOWdpzAELhNCK01TbVgxfgHuE3UrJkkBfdKyd+UrOMv+6RCQPh2pawBAUxgg7LMra5dS1mr3hjiqz/qiKOqx9z+AfxM56QAwTYQUT41Jcc3JX7qaO/iXBlKXEXY5p4kQLeWlZh0unU3JhxiPbPJZiegqu1cDydVJBirY+OoMgpr2vaOhSanu4cb0FxBIiaZhGvXhS+pxbAOWBSVwOetrR13xKDzo7BWuK1VOAfL8plyy0liD/yIG2DMAhonbJQXHUZxfl53NczQByu3rulLbZsraKGlV4O2oOhG3UiEryJF+XHJaCqdGvTz2Pb2aRo0UjninpAWtalUvlvWrW9GrZHw5Ev2U5xzJRvh2YgPmd6wURslEsgTAeQbSCeG+1RXx2FewrhUwv8+dDwM6en/Ocw4mznP+289viKLaYMCCXi9FpMcU1Caxr0uVb0BwhNsz9G2SuGPm1iqITiLieXRetDdNZ69Vdn8EN6kgqbQBdNb9FSRSbrkaSfYjQWSoYJv1mAPMdW1lvay/79tHtFtZECS8KdMNfgEFMxvAvDgTri76yYRBu5d29QncMjDrY7157qeMB+5+CJzCu1so6pRrHCPuwqAs0bXGweEpvOv3Ag49NgKudDeZEtWqDcaI9Ql+XhosNfkfbAVcPbPeuzw+l4SYjvMDwDTDrrnZCfQFXq3d66l5jqB3P/XaaP8XLC53nqo8MzgAAAAASUVORK5CYII='
 )
 
-const OnewiththeLabyrinth = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const OnewiththeLabyrinth = new Equipment(
   'One with the Labyrinth',
   '',
   200,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     15,  
     15,
     15,
@@ -10064,21 +10064,21 @@ const OnewiththeLabyrinth = (starForce: number, flame: EquipStats, soul: EquipSt
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACAAAAAhCAYAAAC4JqlRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEHUlEQVR4nK1Xi5GjMAxVZrYBtgS3wJVASnBKICWEEkIJSwm4hFBC3IJLiEvg9GyLGAJscnOa2Qm2ZenpY0n7Rfs00v+jw9rmHoBRa01KlaRKFTZqXoM6YyYmZ93sknP2RZDznuwwjGsgdj2Ai7rsqFCeytLzTh/2tT5NPFYVeyLIu4KMKclunO8CYNRUXAs6/vFp57TC5WmPbndiAGbzfA9AcBcrH8tC0bWsyHpH5Y8ley6nX6HlPu40duD7bpL1KYAXgrNDKFg4NYrqezed2WPNSnE+kKP3aQLwGFXxfXA+fSPbLK8h68CWjw2LtWzROdiSFM/syvcGKqvoMdqxfgYABiYQuKXT3mRMxSG43Qb6PgSAm0Hl+/rB+d42Vcih32gZAgTVsZATK+n5z/M3pBzathmd09T3NijZEtj3is6nkhOvwTJYnzyqCw4SP8iO708GLAFYMCcGWF8R/BmFHL8P5oaEvt4LqpSaXRxcdNYpJJ0L/Ok+UicAZuW+IH19jIYExJoH2IVBOBRX/A0hNawWxarwtHx+NWegY/H3RwTD/LcsVAYKoydcwZ6o+XcOALFnBnlXQAwGK8rvDzytC0VLmlX3AxhAAOT17lI+BBA+6TDjqK+ol+LpL4lRHpcUK50uzZTH8+unIKCDYj45h1AI/1dKECEbrVcosO5wMBXcHl3+Oa2BSGRWcyCFAQclQIgQeBAWw3Ki7RBsgYBdRShTdHl5BSk55inNblqz/hPFOUEO5HH8B1E+y4FUfDbQ/5v7X+XM++FqCKRg5Hsd58vz6f1OSMCc8CTzmrFM+LwXTMrzLBUhT0sirQHKlQ9usyXppMtMIZCD9IuuUi+F1CGH9r2QgwJ/Z1f5xfoAYqoDFEtmi7fK6zq/AWHGFNS2UWB/KzY9cDrG/cul4BEuhnDDG0j+XjwgReelfS2Vg6BkCSJXDor8TxBb9DKQAJXU/aVyleXAwMNnDIusHUUn0sQrkxhAEI9meIrosLAe/QA1QQCAFclxoxRoeYJrynOCdTmQJS8M0NovC1IIcV4HTCqT0xOERRCMWObuF4LAjkfyoeWiebFxvZKkUI4KOrjzqgF5N4QXAKRKjUNXDxUEwLX5YHv98aE5NW0cwwCi7l3Ii+b89Abu1vrCj7qlhidrVEI5k6e+W4ikiEBQBEKzfqD1wvWclH0/54NyeQVJqYnzAM0rYRo8dLY2cfSKJRQtGQryfiCg1qi152B1Li8p9QmIffEAxTFMCbp0KT1RqwUESJJLKF8jMcXlWVWVIAbrpf9IIarSIVDZvFZTKhjRI1bGtV0AmfJZ601d1+bNT17B5vy8GFim5jSYgb+fwynWzpezeC8MWe267/5nJENlL3mxzBHx0PPbnegN+hVAboX8v5CWXTZizdbvKgf9BYgZrKIDoP5gAAAAAElFTkSuQmCC'
 )
 
-const PinkHolyCup = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const PinkHolyCup = new Equipment(
   'Pink Holy Cup',
   'Boss Accessory Set',
   140,
-  starForce,
+  0,
   true,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     5,  
     5,
     5,
@@ -10102,21 +10102,21 @@ const PinkHolyCup = (starForce: number, flame: EquipStats, soul: EquipStats, pot
     0
   ),
   'pocket',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEk0lEQVR4nLVWi5HiOhAcV10CIgQRgghBhGBCMCHYIaAQ7BBQCCgEFAIKwROCX4/8wSxmd++qnmq3hGVLPd3z0x/6H8dQXxQpRcRMhWt4/e63wMM/4BZESpMxlkIMeI5/A5wBb21PIUSy1pBzHc4yFGP8dnb+OJx8R9eyDawo/Q3wMAOemlNe6ML4IobwcYawpCJTW16ptIqYlBXifdXyrjuHn4AzqLCLHMjCT0bRj0PjO43vxK1JCaSVRWIFcIz+chNLhH36yFiY/gQqIAK2HgoyK63JGj1+IGsyW7xgrhBngSN3H4G74Oh6uWaZA+JxbcAW4Dw4JvLYYAyTrUf6nHBASBGg3cT4KfVQ19k9srdwrmAOg0h9qVrSQJoNMKIa07fjUldZMW482QrfQzqwdPvu+OrjwVoBtFSWJXnv8RyKgL/UDOQpR+lsQIL1380CeISRcqAoZKsyMHPHaSuqJde0riCLybvFGGMCmCOVNORDZHdjmshIEEvS5uuQmJDRAlFS7wDFoE5AdKVDOPDj8jASBYwT/2S2wnQGlR3MYB6Wk1Vp6WbENZx9OBoLA+bfYgzz5Kmn/xNoSiA9PaOMrlUbHZ3/QFIefPD5awEVrRL7nWseQ//IxQcIOE2PW22JQPEjwIqtqUqKZ7c8M46S/cVu31OuYjk0YnR8FnFGqXMFMJSZAhSvQ7ZSrY4W4PRkONn/VOAX49DsRMWsZAbOrOHTSV4ugu8z2/UQUG0mekZsfxoAtnmuS2LnV1vSzHqYWc9jSScEEtM6UeRgO8n8D0MMyIZ0fvP958qVkH/YbIWkXknO29Km9L4u4EHX+NX8HljyMiVUK7hEPRdfZJ79m1lJMrhXdk1EV6RtQzeB0cB3O3foK3SYqFCFkMO1mSTfCKacVqt1AZQMpeilPcpS8XXPB8ZK97dbsz8dL1rfRzxVLT153ZtzsQPAVPQWQJEelW8T9DMwuhsKir3X7WnX7K+ypPUY5eKC1zm9zQIYxsdN0E3gvrpY9M9KSSXD/Kiux313Cme337z+TABf5wx4q4fcolHU0tEVLz4am4RcyiAvZ6a6UiVqN3agVEprocflLg38IIT27jCn3HBBgWnGKH9jdrUDbKdSl1QlTx2eYX7BL8D5yoBGoeSmMDId34o5FlWDqaKpga9BZUzgbwUCyyBB5Wp+ufBl4FzfQ5ILUxJ5M9PcmUERcFiVQg+vLgYXAjY87lTsD5uMJU60Hcu5zAh6/Qa8c2eeFiN8KrU8M00emZqSC+iBYhfaXj9vFA2lsMjsk1/7fycei7hwqGCSqchgK45J39+rBcQo5XUuIMk3vsERMQMOt+vy3ensl6ZxL6tl/eC7Xm43XTifFDqgTkbjyIir1Nw3eRPYxY4qSG60TR3yEaAPkXQGyYAY17Zc5nmtxgVgNgIGXLvQQC3j0ZdhfJjrbm7sX4EVWrcGoFIQN+GSmlfnWo2VGXB+lrLZVub1EFwcCJf5KO4ZE+ztlrZZQFK+FmbLBPhcFLt2GPrXZjEBq69rGFPAnaZH3vh/A14DLgTwfwD4nX4/9qvzaOM3/QfI6cHgVbdmqAAAAABJRU5ErkJggg=='
 )
 
-const HelperintheClouds = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const HelperintheClouds = new Equipment(
   'Helper in the Clouds',
   '',
   70,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     3,  
     3,
     3,
@@ -10140,21 +10140,21 @@ const HelperintheClouds = (starForce: number, flame: EquipStats, soul: EquipStat
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAACEAAAAfCAYAAABplKSyAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEo0lEQVR4nLVXjc2rSAw00tcAKQFKgBJICVAClBBKICVACVDCowQoIZQQSuBmdteEEMh3p9OzFMH+2J6dMYb8yLEt8vfM20+cgZDlWYn4t/NQ8/1grnwfjv7b+JLNh6FOQTCgdynl/9kr6fDlPKcg7ClmyYeH5JkFEz3a13rTyXTvzNwYZhLcUvHzdF3nHK1pK2ni8CvUMxAeqDN1kQb+CkADr4AAQucIYL/OMf0bjGOr3kc9fAOhDh8FegTm23gX79C+gTDWTZBkM6YMTMQrTRPu57f+v9lvIDzouZDOAcnWU95fiXSO9aHzOhdPGMdm7pSFMxAqgbe9IuAi3kGs73P7xeVo/pCJZWE+b+uw8BGLoIsXHgZ/d39ApsYU4yKb2nJxPxyO5Rh74zCWDQIVJsC/BGDWsW95tvYRtweoJapyE/fItiDWk3vxdVmGP9LB6Yk+cS/RuMJO/ouxO96SVG5VZfyjMRDE1UO8yfKzmRAmJgAdV0CfZZnUbStV1B5SeWZkch4nKeDfomG9Ldk868F/NHmZZaszrbyi4qfJ3JtAj2FbK99rwsUoXMwMHTcIgjU2ZbmhiVU4HMEQhKH/mecGCBckSqT6Y1t0FsZmjqBI7S9AFmWAEhg/d4DVAIBzlErlWWuiw6m5cAXqtq1RUrZdM1CDgDkA+FFg5p7DIJc43gNZWD807uP+xgGZRsuoj6hkpUWezrG8ykFL4dTBKfUDbCzkBmZm35d705j1GdckiiTFO8LHdQfEAFCQHbpmP44yzrP0hY3l456xGL+fRuSrpYjjNxAeAzIwE7BNx5YqY21dm2uAJEygQLa2BcD1aLTrGUDoQQYnywyAFwvg8+kowEANKZhgQLEaCUHbFfWAygIzgTxR6aSXgLQ+tOA4TwAXUO7PoBu+LWorCoIVLAEwj0q4MqEMGOShpYhgzOmhJANlANIOtfSgNYleQXNXB8oU19v6Bqqvxi+YbWI9pGF2x8jPVortBoLhCSb8giQxhcbAZCTBPb8TEtRM7QAxOd+YPeqKDHB/D2amvpcAYzK6TU5TSd5qgjcPdzLzqDqjpgRCAGSIyTUx7/WaRLjHup6YAFiUtNTJRQtdQW5r4m0ixKs7Daw0qmXuCrMDECbgUxOglww3+zlHADFe4xN6AJ8CH/v4JAl+XWEBje6R7KZxzaW2f4EZWeauk7LDKaCp7ZqzlPcGbRzPfmIT9/cSDCSofjz3dWUAJDfbnnNIZZrVLZcUa+yWpumlidRp/dFjPt6iTicjC+krcBIWLRMZQ4KSPQMJCeAPgF1x5XjqO6lAfwK1ktquU/8aTFLekB+898+/CnsQim6hQwJZ+PIKXPERVAmdK6cz+rhcSwuApxe2fgBsIQd9LEP2JdZbGT6kOGRis3GpXXEyUOa01f4RUx4k7R39TD6Afv600WmTq5UFEH2U7AiE737qaJM/HhKH7qtGX+n56xN4LAvx8DMfQ6gP7g/Dj/8bpNQW2RcQCoCbM3elVTsApg9fL55Bce0anZuxbv5rxS8ApUt6+tl9xoSaOp79H9zO695il3A++H0FwQ3TDogvn7Z+QB74n41PmfgHJ4+iw9VIzKEAAAAASUVORK5CYII='
 )
 
-const SaviorofAzwan = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const SaviorofAzwan = new Equipment(
   'Savior of Azwan',
   '',
   120,
-  starForce,
+  0,
   false,
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     4,  
     4,
     4,
@@ -10178,13 +10178,236 @@ const SaviorofAzwan = (starForce: number, flame: EquipStats, soul: EquipStats, p
     0
   ),
   'medal',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
   'iVBORw0KGgoAAAANSUhEUgAAAB0AAAAiCAYAAACjv9J3AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEhElEQVR4nLVX0bGrIBBdZ24DpgRSgilBSzAlmBK0hFhCUkIsIZYQSwglaAm8PcByAZM37+cx40WB3cPZXQ65P5Q2Q/+vFfISgxqzVnQcW/tR30eau5666Z5Y3tvOjuV9vkbs0d79RMVhMQKcMF1morKq7LsqS3rywPl6owc7kNb6sSePSU9KhfkzA2FsYnvxtcxTsqkYtDidsZuGaba0qIo0A2zLQpPWiVE7XKgBQ+5Td2TXj/zcq5opcwQY8PSX8P5OzJPN7Z2BiR3obUsW3dae9GGknvvLYUzmNABLZcESn1+Y7sH1YhRtdM9BsSEeu+lxN6c0b9JFZgeWg5pvi/q+p3EcxRFX25WW6Teor0dFnBYHyLmtOI86S0fULM5PPhB/t21Ll8uFbreb7c27tIAepCiOmzFvHYABOPE8wBl45y9nKo7DBAAnz0j56mQQ/usA/TIL7MeormtrA6YRcOw/BUUIASTNA1rnTdOYyKigVETsdzZvAWN/8J8zLeJdfWrzPMur4faLWBQmmw9tWZbwHhdXck4z4DgfBTO3YDA+Ho/BkWyAwXc23/ztjkwUprgQLCDGwejqq7PkvAHs+XxacM862GT+QkuqF8acP3ssimJIFoKVAKJKoTqK39/8fmQb2ObN+bnERbrXXhVpaGLLLBBSACJz7etFNTMEU6iVAL/fb6zbnfncbxAHGAyDZ6dTaZMGEKZMFwas/VjNOg2Nlmik4XF+7qzBPoqJOBTYIcLw4IPuFGehT035BxsA4MwaW3dXXn7erV0WRRCP+1zbtFEWXoP48x0RFKciVh/a7M5QIIgEDJ8cShyFzebYARbDWZiIYwN7+IFadfVAHauZExLH1IiejpNiUXCAVUm2Z0E3pc8LItFwJQJY4eriWwiAIgKl3bYDrOyHA8Z832rLGsA/v7FXVoWwYOYehrjIO4SJPR04jysXFIBPZw6lvtPGRYT1XdfRmVkqCxullLYgp31bhfEfioTbFUZtQUMOGXjatAUU4HVdQ+HgAeCDwyvAYLmkNx4fM+21OyokH+9wqwzci3LCIQDh8OCUh39ctGFzGAcgxvQ0W0CwrKNLQwDjQgoFYGzCL/bMnfhstsx0aM6BAfIEhwgpQFWU/2WaQ1ivXomi+/a7DJLqOeEjzlAADiHyAHrbH/gp+gUhgPmF/wnUskST8yXAkrsh01BhhU08vAxinQCiQPGD0LP9LINgefCau/IG7OKI6Ys3IA06jJyh8MD67M6o370DPLg8sq9UqZKcssgbCSMMZLEchXgDCCFyGheTMEeDvXICkxTRnqmfgBKVnvnzMVGDA84FVXnHyJ/kNBSYH1+jPC6Ugn0DDeBb9n8NfmpeGWjwF7eEV4QE87E0bBGJfwGF7SqV58vd/khnwJcsEqab3xC3Bn85RU8j9eCK5+iXhfKOQcvoaWDsx1GycpOhykpOfg+2/uCP3qHo3MA5vPpb6uLHtX+2GFTAVNQP2di39mlONvKx5Uyl5Qb598Bsr35j25d124cnAcWAzoA/MSgj49M/bnLH+A/esdtlQuoLGwAAAABJRU5ErkJggg=='
 )
 
-export const Belts = {
+const BeodogFigurine = new Equipment(
+  'Beodog Figurine',
+  'Afterlands Souvenir',
+  90,
+  0,
+  false,
+  false,
+  false,
+  new EffectStats(
+    20, 0, 0, 0,
+    0, 0,
+    0, 0,
+    7, 7
+  ),
+  'totem',
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
+  'iVBORw0KGgoAAAANSUhEUgAAAB8AAAAgCAYAAADqgqNBAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAE0UlEQVR4nKVXi3WjMBBcvZcGcAmkBLkEXAIuAUqAEqAEU4IpwZSASohKsErgdnYljH2xE9/pPWK\u002Bmp3Z3ZHyQf8/lodr89sP/xd8WZaOyA9ELpDjY99LML8K4F/AV6YCPPY0jEGuPf80BVE/3anxNJB3wZkpzzvsyAGJGQPY5vrQO6LulFPeernG/VdK/APz4XY6BWFr\u002BXSMwAMDV0UmwfXj65nuwJlVYYyZ0mX8bfnocT03/NfxaVWQO47CLM8UGL9uUMZtTEMORfw6Pb7u4rn5C5xHAT4U5eVAKAGL3DKO5NqRqvNCw9EIS8KBwWxtBEvMSw5g9Kv0HerEmFauH8ERXaNAPZ1Konq85ZmqKwMqMD\u002Bhqsqo7QPlLH/VseRDkGDAHEo0JVTg2DiAiQPAfOC2nDMyx7B8QOrIGMA0zzP/RbJyBumo4pcPn4YuTbaJ8Ydkpnzxa5cvVSz0O8oaC0koRHU\u002BYo5xtBzIvN/vLSKsykyqV6oaoypE8upcsuxHst2ZWQ/U8XtkNTAogRyXNgFXolBg/TOkhoGRmtHpnI\u002ByIwgLYLTQ5LZkJ5qmcGN1OK7A03Crqn66fRJiuQOsTNPwOeavef7vwFvkA3nhz5UNj0Md6NJFlnkjeULlD72X9MBsEBxMpkCrMciRa\u002BByyqjib6QeGLTKJd/4\u002Br7gNm1mEABO6tQ2UI0nHPogUp7OuUiICV3b0rBhnGX6DQoNQQsrf5sL8yPFr0zmzpUYZ7Edx7M3klPKOZ\u002B5E1uz5ZVO406CQy3QWMs5xjkqt2vD3ZxMdP9bh1v7/DRrG\u002BqwaAq9LhsOAlG2ApxnGRVWA8jydR60cQlgXLxhrwDUCoTJiJ1eynjdrvYqIXGO0U4o2IYF6oeQGOADC8nfYW7gSstXLhaKjkENtIdRUjDGrmhrLwGAeeoUABdI06RSR2Dcad5ZWIz59AuKSKqe86xjlIVFjMe7lTmCGyYF5pWNOu6CVgOwF1bjwBbxDnjM\u002BxiP4/3TCIxNBSTP1FIFMAFjDgC75HD01tgAJrDc6nmsbvgAZ5wObez5GAB8A0FBjRiIeQ98A4K8KgMvvZ4s9nBQWkWscCw0KDoYkPOrAt8uqa\u002BG5LyyavPRpmXAikftYylABJNYwiXh94/AvwJPbZGuT2wa9RDu3oEYJwacvC6tGJAeOceGg4uLsBHBTqLd7O9\u002BBN8Cy2UdlrTqJalTBDliijUAmQFexOJCxacASIN4Dv7ImOK2Cr0OIEhdlcWt8AKJq2GzgTYrqpz9OJBRbzdxi3bZEvkWHMC0cSJKbcb\u002BPfEqVthMi23TXqyzyg75wXrQ9zYDC\u002BHdevEt\u002BMaJbsz9p\u002BL4uD6LayloYl4wZThaA9vl9b\u002B/1Qbewk6p/RE8BbD5cMeVfoVZNJUyg6WKbaKYPTYR6OtMO4CBcX9isvPcjdbaa1LUe\u002B9CCBPvmMZXBZdtjvnKliqrU9DqRcuhlSAzgFHVKYCa1/xBMjIRg\u002BDMXa/XarfbDTqDbKizZ\u002BB3//xJkcUqZgUUmKdcmmxN\u002B\u002BNAZe/7lQSbkvOP7zwD530yXbd7dWN0P7YCf0ULc5Gl23RCr34wN/KPI3J99F6wXWQuxzNwPNxx3q\u002Bbe1IDKifNUODxGd\u002Bb043YYhio1FDXddporQ/\u002BALLkwerRqWg6AAAAAElFTkSuQmCC'
+)
+
+const BillyFigurine = new Equipment(
+  'Billy Figurine',
+  'Afterlands Souvenir',
+  90,
+  0,
+  false,
+  false,
+  false,
+  new EffectStats(
+    0, 20, 0, 0,
+    0, 0,
+    0, 0,
+    7, 7
+  ),
+  'totem',
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
+  'iVBORw0KGgoAAAANSUhEUgAAACAAAAAiCAYAAAA\u002Bstv/AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEZElEQVR4nLVXi5GjOBBtqjYBOwQ5BDkEOQQcgicEHMIQwhKCCcGEYEJYhWBC4PonaATmtupuVKMCC0nv9b/nF/zsGHEWext\u002BksA4PhH9sk/i/yAwbqwxIIJP7z9BgIHHkR4tQH8FiIp\u002BnUjtgu8SwItDURTdR\u002BD3AeDwFvDhC8DhbxiYxJ8K\u002BeDz2v43Hwg4LQEBfiAkYkJEMHecv0YBj/289CiXJLaE2iOAcsA9gbPEBIKjxIsjknB\u002BmDb3Ckx66ONfC7UkQAx1U6W/X3Vd\u002B6rywOrlxxe/OweTxAkwZsD3HvIR8oUFAVUPzTuB428/ks6nc6082N70xD\u002BHZJSId7JMhIjMtwcmaszgdwlko5MDpVlq1rvU\u002BVghKnEiAi4ggQCvKoD3PkUNPXu9v/tI4HK5VCL9tII4a50mv2BtwNIJIXbQdWLycy8hi1pdREXuA6T2M4vPB28gam\u002BW4BwBaoZkd5X6gMuDfuZtTsxBEdH3awFyHzjPXB7icD3eEsIG6BwBJDXhD5kT5iR8ZG0scsN\u002BJsTTdMYFDbtyMN/mV3I6h97StAI2\u002BYAhwfv6bpUbtghINHK4oQGQQHnv5Kkb\u002BN0EVNQoSJImRa3kUX\u002BwJHICCt5PUtKlbTcD0yDw1qQTu4ePWWsZpW0NSyADH1gqynrg1gerLKKt9zMZZ0hEcaM7\u002BnLI7lpqIIF3A19AFxFQW8sl1W/85m\u002Byhwj0DWuJagN9T2ZJpgC3BE/jKvlswwcScKuSg74/0FxtATW6RfUy\u002B5FMWzf4HZ/XZvINnwjADP58Um6RNcqQmKZXPlBQHadSGk1V48JzL9jLyzyTDy1/J3C/YSbSBPnd841a6yLK13FS1xqxGQXFqZ47HNpYhQMqRfzBVQcGXaKIxBSKTLYX0yVwvgNNFYdvUvECfIvA9FFVBMVx4ObD2bCrxbWdmom0QzNpjUH0fXyJD5UPru6r5mQvEU2bkYSUBVWzs/UplWIERO0tzoYQxhiDgkuqBy1CqTH5256Q/eNbQ88pEVv/c9US3iN0cLxydS9snbFjRUDbpucWCTLL\u002BEeizyuZVF9eaKJzvdsDbvWXawLYAT2lZNtzLaqgYfDihGCkUSXglQSC87qSgDf63FEausJc9O8EAgVuX4htyyekLogckRySQDgX9bP0SRuGxGp86LBXBEZPt02R1k7ZDsobkmihvgzgv0cJvxIzU2wmjycc0oCV/pPtJwKmEZ0DrSQtRplc5GfylI7rc4EZ8ba4yFQ46FIIstHA7ZH4ZRpRPUN3fM07uHoomKZqHlGTe\u002BrITCbUXH\u002Bh7gvv\u002B41PulBb62kKgYxQgW3T6F0rYKUCt40A4\u002BR68BBnZMYPyEf6X4I9A8GJaTDAqlohsXJC51yNzib/F7xUSgYXJ\u002BRUMtf4BvPDLSNxeL/ft\u002BPxaFvoj13BisAwcE0mex3QaiYf8B13XPs2gJHXrss1BL9noMPG3CZwOp3IggedpySV3YOANEjCbm/NMt945/EPxhNGcog13msAAAAASUVORK5CYII='
+)
+
+const AdlerFigurine = new Equipment(
+  'Adler Figurine',
+  'Afterlands Souvenir',
+  90,
+  0,
+  false,
+  false,
+  false,
+  new EffectStats(
+    0, 0, 20, 0,
+    0, 0,
+    0, 0,
+    7, 7
+  ),
+  'totem',
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
+  'iVBORw0KGgoAAAANSUhEUgAAABoAAAAhCAYAAADH97ugAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADvklEQVR4nI1Wi5GjMAwVM2nAVwIpgZTAlmBKyJYAJUAJlxJCCUsJpIS4hHMJPj35g4GErGc8BmP0/KQn2Sc6bo4\u002Bt\u002BIXa\u002BgIyDmnebhvphs/WMPdUnE2cTOHgCsgtlwXRTG9B6EViPzzLImMoeJL2L8F2zKquU9vt2UvHoANSyvLNLqfY7AtUMu9kyfzIFJsWJXLVzyrbDUDWl42cddXon890Z/uNdgJ7gpMAELzPLuqBIiNU6E1K5dFJsCuydB447FiZ7PHy3Z2l8tlBXYKMUHvGHTmBRXiY4dRyKlq472HH8Hiwbg9s8CaOsyhsY1j1w3DkECU5q2W1e4HVXprWhmCXMAEgK3eLYWiZiZy2QFN00RXJicsyiclKafGKpyK5D0V4gWQhiN7xTjKVAEQHqsItgMarI\u002BMqhsviMTq7oHrkqbOSPDR6vAZILdxsQXj7xg5qAahgdtG3hqMqLYSQDsWKQa6D0qMMs8BSVi5AJYEEYFEXn\u002B8sKlnt\u002Bl7YITGrBTvWAM0MhO2pQ9QaGAEZhDGfSP1CDSELsy6TJl97w35oJv4n8QFzMESbDDCOGL18xMM8RiTeJuwLiSd5IP\u002BW6W80TwvKovxqXViHKUOl14fPolFtTDImkI9zIFW7hNjioXzWCe5xCcKhBlGNgP3PsQMIHY0yVbuup37qA5FWcZM5mAh4jC7ZGY3\u002BSK7bDjusj08j\u002BxQsOqcKFCzL5MSY2z2vxRwUwTLSbwCcgji2BTivmUc/ciiiEqLQngFtp18BVRAKfE80oF9TFCJ0WRWtfWVDVpX5KMTNhx6eYxSXjHWbZH1mzbkLwkoLxfkk9qzmsZFylAVJ2kX1ASgZik7vzvKM5Dlz2IkFIN\u002B9u8ewMjRIN\u002B/EkBLH9rOdRkzGHD9rKm7\u002BG33d58fEISvd6n8DNl94zPQtrTLJLtMGNT\u002BwFGVoQfjak7amPVhU4f3jRXQprRnMXLLxQTMotxRpxZWy33jE1AESy/MRtzEG46XkKxY83zFbCtq29ZlHpGrwdaNh5UBBVSKJTPCQYj966A\u002BCMMOnYxd1xUb1X5mFJp3Gxt9NKCQnU3k1dfPPr\u002BcfkicrLXIm/wytkrpLdCyMOxcqrK8exZQnm/NkltgP44wHAuSzUbpEUhtesO7TPdhuRVV/igYzkYqNHIsa9339zdlQDkIdmJOmfEyG9FiCVFc8q\u002B\u002BIsvub7yJazg96fl82vP5nLts57bcdepgkbwjUUOTh3iRZJDuxX92208ZvRwsf5a6nZ2WU/Z\u002Bo32S2lfP/wHq0wJHV\u002BDTLQAAAABJRU5ErkJggg=='
+)
+
+const MansaFigurine = new Equipment(
+  'Mansa Figurine',
+  'Afterlands Souvenir',
+  90,
+  0,
+  false,
+  false,
+  false,
+  new EffectStats(
+    0, 0, 0, 20,
+    0, 0,
+    0, 0,
+    7, 7
+  ),
+  'totem',
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
+  'iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEjElEQVR4nJVXjZWzKhAdz/kaMCWQEkgJWoIpwZSgJWgJsYRQQiwhlLCUEErgzQwgaHSzb866iYjcOz93IP/gF3POVUVRzEePf3m1gD/avy/PK7y2BBjYvZvP2dYCiDsUxTmS\u002B0rkG4EOr34F7F6bKVMCL0sAcwP3Izz62Xwl8kGAwg7e8y7cv8ZxlF3XbWbq8Nl6EgQeSVgiYMC98Lu2UNyY/C6JDwIh53T1BI73Ej/hT7YiEe6rFn66Ec7jPomjFJC7YyAiPx9r\u002BG4\u002BCiBaEA1GaLS7s/YIRHCo67pzjkJ8Ax/qPZvSV5uBlJjFsvFE5Avcc4Sinj6isEdgiATmec6AJ/hfZmd/oSpAncGsg9YFnOIoBaHiW\u002B/VrHhQ4Udzz\u002BS3N15ixmyGpscF3CGXrCDJSbdL4Af5ncd0TwtoTGfTkcxSWyBgKfzFZKoQchvmIBGj0nxjPrH2CBShYhcTXQOCImHXcWyGav0mK0Au4GBSTZAD1fCCTl9gnJf1D1NAIXKmn2AKmMODvMsEgcHor967VlKxRzK\u002BCW3BsR2AvjF4jnEoQ5T\u002BG6gJDryCAjMqEENSQl9PHpgaFFU8Awdw8cQxzakoUclazyCR8FUl4Gh7BFxqPHdgzUvUslyHf3je1xHhlqH9O/q0RGCcQoSQgUOuxcWupPhlL6AFqRrLg8e4TcjnZjBVGhUveS74Hw4IipRazV4RCK0XUqebPDimQG06GVW\u002B6KpsrvZlXs7MIUpPhqwQeHFi8OMUIPgFuAdsvJYNNA84sIDEGhMsU6MTWS9nGz3/016APBQGo1mToEVI\u002BFXlx8vsWZQoup2D2wa37vHy65nguAawchdNR5OVd4b\u002B5X2fwdMtSbdBzUspY1ovfyUQK7Sgau2qGVh54qAIyQIweR71TlU/9YiJJC5o8ItFAqH3O4r/IhMC7yfvMRXyUlCZ6cxzbsvgq77Fd5gEHB9GIoGg\u002ByvmeJmHfajinMrS\u002Bopv123XTDOP6X7mPcKi67EsKBqRxHh0pM0IFMFroG7rqNqbdpEegw8NmB47oUwbEBPSmsFpnt\u002BoLMtPcBjor8SNzR6ehiIBCA8dLdL3Fgahwiozt1/aE8RAayCgqBmQPb9XsN3ouQ5o54y7807a9gh42aF7w\u002BBJSGwozcO3ZNEoSF3RG\u002B\u002BEpMzgPaWAzi/NA6Wn6iUN3yyrAdIOsPy4isMtG7VbXXOI/eGj8q6pias\u002BzuPvpkeFWn6/E/vnwJ0IXMMK2MVUYE6rmdqPC8HdkEqcQ0tdb56CPBMIEe9vvuqOnN/2hVCE2PkeEAoIUzB52dFi7d6ZOOg9B8\u002BN3onytEmmVA1225SWIiyu8ZRiWQ0EMFCoRTxgmOVERCMUCMo7HhO4Zj5I4pA0icj7/X6eTicKtcmZ552QleAepe/nxkeAijIapScuSFKkMsDTGhcfA4bMxTn0SYcQBLdlWQoM/\u002BMoAgkktNRwesG9xAKRUgh\u002BVfBhj1CBecOhXZrSwBLEd9DzOgNfhWtLID\u002BQnsNnWVxt/EUa2S/Vh6TyX6vnQOYnI3TihfEnM\u002BzYfwt1SQ6NLu3DAAAAAElFTkSuQmCC'
+)
+
+const GuildCastleBlueBrooch = new Equipment(
+  'Guild Castle Blue Brooch',
+  'Guild Castle Brooch Set',
+  100,
+  0,
+  false,
+  false,
+  false,
+  new EffectStats(
+    7, 7, 7, 7,
+    0, 0,
+    0, 0,
+    7, 7
+  ),
+  'totem',
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
+  'iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAYAAAA6RwvCAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAGiUlEQVR4nJWYjZG7LBfFb2a2AVICWwKWQEowJWgJpoRYQiwhlhBKkBJiCaGEvOeAGMxm//s\u002BzDhuFC4/zv0A90uK1tVPcVYkKJF6lH\u002B2WYviXYV0FS3If2j9uIv3rwyQm3USYcZaRM8ixq\u002BvVHkHrKqt2HEUZ8Jm8tyvfPYn3Nenh5zkbMT2Qdz6zO8ecRbzrPgelzFamkHF/rPawrD/ben//S8gikBVVhBIHRUIaT1aKbF8jN/A2d0v96e031FGTfuNkdoo0UaF8zgO0tju9D7RMub\u002B/8BEEG\u002BSCwhD32stmEMM7laG/ZkGZT7lcQSR0Qmxja1BU3fSf/dnwPSbyTCmgKGSeaFc9AboizR\u002BgaHkGi4BRa25Wi31jAcBBlVYg0UxOP3o63NnItURDjTXToZj3wFmKPxTLoDuVLYWPThx\u002Bk2ZqAjVIEgNu1SBEABXFneHkUyL4F4gw\u002BybaTLRUo7M2a8wTYYJ3sOISUywRbW5uKCxNpgsVVljhPHhHF4a0GqAYJALMs9upEYreYaQAiK3EqZ\u002Bf5niimobCFmPc3TETxAE5JMyh/pZeYuUxAqwIK9mb6IrsIRRTZIhIrz8bBlmPIo0cIspXIq48lxkD9fYYXePiprnbgsia5RPs3q2TElEYCMhQR/cJA9AzB8gbsivwwKR2/TopKqsPOpTXmin7bP3EWJ/KbJwq8iAGS5QK3ao9pd5tnJuML6osPMHFQ5LpbkApl2eIdbEFaGIuJAavjr1u252acEMYs4JN9GJYVvQ5jHOdJkekTanGoOOrXVp9SVEVqFdYHKrjmEzdp7T77UUhEK\u002BUhGk8X73vXs87/w1xgHDYbcxkiePrnBbV/BvwvDd/vjqn8eSJ0L4Q/y9qxznXAtdBlHLJe2hl8uti9TNbQJMtRWNk9stRFz5Mtkc6zE011sn0hYhqNCpX0HVMvTnXkN/RpirjUFBA/70BiOfG8eOH7Y32ghDUoIQ7PdmRH3c9BrUsOHkpDmnZZozVlNtVUC9\u002BaEKy83KMaeZODZDjKCkbf82ju0HSHNBQWp7bK0JhtFOSR/TTfYVKiVSghnBzOgXg7EeYJXcoFr3svUAfwlBm4TgHO13v5k3g5TVGkrYCMFGKc\u002BdShkldTLqU4b0y0DuB1Qj3nGxGgYfljEvd0SIs/2RMVKkLzckaZpnhcyZnpNd8j4JrYzZjMoBS/cEeMDi71qnGsM7pfGhHIuSin5cEIN13wZmzEE\u002BlPjgsbc0OHHV6nncVbvr46JSrPxxZKRLFL0XkiIj/nC4wltE0xZTuepjqWjf7UQQx8AzadsftAxQpt23u8uEFRgdNo7LQZqTk7HC2GC54NzO8ai2ZmW8JbcoxE9UInu0vBLIcjTkictAlRrqjRhwqnociux2Gy2DtKykKldh4aFGvYWBikEMm4PI5/Pr12jjYgNiczRWzMD78nK6PUJ12CscwDZbftf8NJTfd2clPLp4uhTScVZC0NZYHJnegb5oIJ7csbEioEYeVuDPM6B0WilOMYw01IXHGYH2DXLbCPfU6frC419Vzsi\u002Bl8cVAQoiBaloA/YUrga77wygk0jpP4DYJe8NAPwg4/UicbdZBoyNnTDBdzd1zJA5TrDHWUO0xTYv6/kExThZLiDoJj6HjeGEMXUDz2KBuK74XR6oXwUtfw6gQ4UB12VAByA8v/cJBr5uPeTCfuEzDCvvchwExNn06INJEVvHkRD3YQFQxQKP7\u002B75VOLpyyMuDQPnDFS7e6iOlap5xEImnVHOTj6dtpMSQ4TQmjUkQdyuU6A7CgC6ZJYPAfsOUnbgwBaXykAP1Oxx8DK7Nk424Yx86BvxRy/XukcNSWdz21zk0kSVFAGGIaSUDfHMzHqwqqGV/azIjNqsVHSUTmSBsXdSvdJNp5u64ffdBBgGVSs3fM9hJppExlzgrVRheBAfejcEtvgJREszP9d4x8OXMPEDK38E50\u002B/JWJAii9aFoRUGfh1IaeTcsyjpjF1zRXbWyxu/Ag2CwAVGwaUtRhzs6YCkSVOvqohpYs2n5wviKiDmoNTqUSCRkUQFTckxT3Iu/bk7QQ5NMsq1PBQ6HA8cgEuyh9J1rv8Usd\u002BjZGy5VqZFpIOcUGWyoDaMFRV1dzvN0T3UQ4nCmizK8I6VNZzZvhw/QkSFumKghpShnM/UCaqhYxx\u002B\u002B/qyrda20MxR\u002Br6csOf/6L4lyK/6BlQI26vn0Z27z1Gd6Bz49ki/D73pv0P9y3Bnkw0prYAAAAASUVORK5CYII='
+)
+
+const GuildCastleRedBrooch = new Equipment(
+  'Guild Castle Red Brooch',
+  'Guild Castle Brooch Set',
+  100,
+  0,
+  false,
+  false,
+  false,
+  new EffectStats(
+    7, 7, 7, 7,
+    0, 0,
+    0, 0,
+    7, 7
+  ),
+  'totem',
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
+  'iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAYAAAA6RwvCAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAGjElEQVR4nJWXjZWqPBCGx3O2gWwJsQQoIZaQLQFKICVACVCClGBKMCWYEkwJfu9MAoL67b03ux4Ukswzvxm\u002BaDMeZiTSM74lotjQr0NFJfOIL3r7JNE/jINv5fq1Aiwj2gyjJ2xZ5U8Rvb8mRbYyNAf/InyZt733R7ivz7chpOkMTZNfQNrY3vk66rEmhecqVlQ1DXlwpBQhfycM8y9l/vE3IDYCW\u002BUJomI2MV8VaVLK4C7fTG10t/H2oPZ44JlatLbWkq50VLqf/EC96d2roLLm9jcwGUSxVqZABGBomEFVuBrnXc8bUnTLOi1bTSGmNFe60dTbntp66EfTDTthWLOBqbPRCkfSO6AviQ8GIU9i8kobAFhSWuO71bhQRECx9Yvt\u002BN/P3poRAa3w3EEgPNkOQweY6al72CqAdZHjSsOd/g0kk8MaGiDGaLYCsXSlYBmDX1H2SCGsG85\u002BaOz9/NyfxxwXmGaB4TXKLMEOv3OmVY2lMCVYPiH\u002B0h5E5mGBx8MqMi1bQ1H0MXpfkTXrNIF4nOnj2MCQfnmmJK6gZFWRAcwkmr2DtME9\u002BDqmphYYHWHCGGJEdsAtMSYyuLWHqOhtrDAeayJVqVgSNoAWgQOc5tm74G9Mgdg57C1Ca5RfR2pa7BAHPzULchwY4oZvi4s2ED3XoVYg1r0APB9\u002BqLJF0ei6UfUDrM4QY//Mwr1FJuwxQgjDuONh1FOgpoES8zamwrsVXFtguBKXOLWY84wpeBm3rCI3uI636EsWikwtQZb2BS3OUiX6DEOx\u002BDkHKua7qWi/gVitMBWYsubQbtaSuDYVq0smpSfoziJI4\u002B/Dsb2L9WkWmOl0WDdZs4OFM4zbuyJ/z6DpUD91i9mizCMQ4SS/D7VnmWuhW0DUIqk9DTReOqFuLlfAPDddBfa0h8i64x6kdQEVCYG9Hjl58F4MwRZyw\u002BpuRSVz3s4a9qfAnI0UeN4guBcYCvRxIDOR8m\u002B3eY80ZUswBMugvR7q46GHLKfJeWpYc2hQ9Vdkzc/eCla/W6Xh0zpr60uJ4LULBAc\u002B7x0\u002B6PEG0owdTe0gyjEMRzub1D4uko6WSz7vxJmxgkAo6h/xs3ZY9\u002BKas4WoSjKxjPY47OR\u002BPXd6OrXpjUDwYFP2ncoZtQyOBcmQ\u002BQnRmHzuoKRrWCWGtK5Z3CEQ2Ps1Y2iTvopPxoft68PRXR9XU/I\u002Bm1dVL7VjCVh2T4gZwiwgRg5ZVYTltV6msUIcrN9t4ow50YcSn\u002BT4N8Y8qPs51MP5PqocKzP9PlhVif0oIMnP\u002BAT8ZBlPBXgvTuV6kFLRvm6TQfjkVQEHXWdxvk8P07eH1o3XLsvZOW4N0iKEY4XbFwbhMwlu03GTFIlWt7ReIIay4/azWIT7z97Kycid15RmLHDfQ4tm5wV9G6RLJRXQTMoQ3EEs2UNFhwIxbd2xt4h07Xg4uxmmrRDes3RrGPfLLX2famW7l1Vnu/\u002Btsi7y9WIz6MBmyXHSekX38yXh6N/YiT41Rty5\u002Bwj7zdKsdOj9jJaTRjwT8qb2UnFLiDhloROpx0i7UWfXt4iF8aIp8KnP/VW2JHdnaLbRGwze0aaqZpBYtOPWbUa\u002BnXs5bcqC\u002BWp6OjrXXfsc8SNg3CnmCOG6svQndd7bYdkCwWJqZN7N9BOd4JXOWFHQNGf83jbU2w6t9JCnqcaCc1nQASjdqB8WGNei0poEQVpgpMh12ZUMUaG1dEhPzmiWLRAZQG0U/Hl1z6cSn2TiAIt2pl\u002BAbt6k\u002BuekrFY5kwQG30s6ZYiUO0zEyw9C73ZBXBjdbADYbJE\u002BBOwryHYCL2wBpBag6/2GvndGijriMtH1fAyAG21hg15uDkreSAwOqa4RlysGSMMsKYvBy5BPabWGUdVniwTMRXxxF6NXMjc5OUk626AJ11ydDL8RBEfdxQBsFpkd9ymm5Psckh\u002BmiYWKdPzhRUjMF3EnUlq1lhes5SV4efXLaqAIKc39v8olQioDKRe9cqjanbX8VqDMVUq8ZuGl02eL\u002BWEu76FJZ/UZJsk1Pa2\u002Bumj3yrlAFCson6LIhrE1aJiE/\u002BUvuMEH58z1cs49CAcNLFT/tBwzvpifUnYHpY32/ze\u002BfnmmMpRokQ8yKVtJDARrTcf61NxuOOrnFtmLuFQ6uyIvE5D4LLHpw\u002BePIKmYTm1uqCQvJ3zKZE/Bff77eJJCgqA7rRIyO6U9BH34/lcWeaNebl6qXc0/vM45hYEDU9xIf\u002BEWHv8Ba6LSNP4/\u002BtAAAAAASUVORK5CYII='
+)
+
+const GuildCastleGreenBrooch = new Equipment(
+  'Guild Castle Green Brooch',
+  'Guild Castle Brooch Set',
+  100,
+  0,
+  false,
+  false,
+  false,
+  new EffectStats(
+    7, 7, 7, 7,
+    0, 0,
+    0, 0,
+    7, 7
+  ),
+  'totem',
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),  
+  'iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAYAAAA6RwvCAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAGxklEQVR4nJWXgbmrKBCFJ993G5hbAikBSzAlmBKwBC1BS5ASQgmxhFBCKCGUkD0DajDJe7tL3ruJCszPYWYYf6hst44Mz8QUaYwN/a0pjiz9gvSOXD6K9H9aNaavnxVgbTbWCaZjRzMp8lGvj7j8hnnuuK7HOM\u002BeuDS\u002B9ivv/Svcz7ebYqRRQx3CCCO5mfP4SKCXrmKooShozdqoaMmzCjC1M4b\u002B16X/8a9AIgJU2UAgNQVIzHlxCr9qLC0pb07jfbo/qT0e0jNhbdg0irTSoRnc6IiGun83JGPoeLj/F5gEUrOnGVsgMBrrw0o1QPBH1d1pHAaZMPQbcwSdjS5wVLqpZQJF/WkeADPujGFMASNKJv8TzbHoHdBP9g\u002BfYBS2pIZxxbphUkqTbqKeMWGLqddNynN5x40eZGJDLlakL7h3njvA2NfafbkAVtmvlIt2DlS/gaCJGgLSwDMUQAQC41hhkNJeflLE0A3ERnOfzHaZFh8YMFFgzAoTPdy41ms3TBpE7cbHGDWH6KOKOxBKmiiE7IygVTM2CUDMHtaDx2VdhDIgHtP30N7BvDUJAMMGm6h1o7pmDs5T4S8bSHOyz2Tn2lQN\u002B7mBIzosiSV\u002BIXEIkWxtqIRgqv8IY8\u002BaTPCkly3FJvIYnce2KxvsXJ/8XSNBwHcOOxBpS2Tc3LVuYT1w60yM2WQVDT2nCRPOHxA3vlOljglibY/rQL\u002BtoyflLUXkde5qRou8w2c/Da8o3Cti0X/CBglMXx2moCN1cFnnXj4lEO8qVDFH5pUnOqk2q8uaLFla/UfD4xrMRSfbya3hlqPQhmVNmHqf0IJLWUI6AobWBYrTyYNTbNPqS4hVBYEQmLX9WluMpbS10laIIgr3iiCMfw/H8fFMdlwaYE\u002BH3SSr8bQVcb8V8ltg5NnBnov7eazwpJziT\u002Bn6UM1ic0t0KwivOrankaZrl6jN9QaYai\u002BaGNe0gyifpbzjpc8\u002BgcpcAiEK9eP2LG3LXpGlyX4mmEstCT5N4Ps9zOqwH2ORskrfKCGizUoIhNigsOvCXw89gwi1/UxmoKSpHrCa1u5UUMhF5bWkW6TDVBik5hdHHV4Q4vgyt9\u002B7R2ofIGbqyLYj0k6GSd4OSZ/TlQ6AYePTqiUyxmJZSICIJ01tmCUnpxrliexbQsicAiE22uO4s7uCxFJPM9QJYpVy6DhH1NKQ6FKEjJTPEQ0IA\u002BNIZdQAR84zqQvWMet2JAjM/R4xVIQvp\u002BP/bipEzu15q5MSq1Ox1rtRq8PK9lBQUAeJmxs5TvCNsTifrA/F2JnkUhYkzvrbRomYE31J8ajLvNQYdX9vzoejuzwmzr7i6O8NNZEcitn7AgzO5DyqpLgTOc0loZwqw1vXvk\u002BTQHC2YCUBx65udLQ23Lv29zhOUiG8ibE56ZphxVcafOLycVi656zU2pJvgLN1CWJclCj/Z5BUGvKAzdAaJ2QzR\u002B/iresrFEVTvXeg0knLTMrLnF6ON\u002BSQ1Q1W7ds5QVj6Q/36I4UynqDe6p1RWqNogX/n1Q73W2yPFTfdflCn1ZepMmpncD5FqCIWFxqBkLn6l8NvSmwgcuXgIcRzECVQuceJmwFQyVqP/Q9S4GDqp9F0OGEEqtWezvQwZdnBdPQ5imKP0B0CzZgN1VXyoQ4lUQfBbfShDa6nIqsmkARB4tc6CshDXdJpswxwdDFUnW0n/iJAj0HTb4\u002BtQSEpx/xan7wgUAIMDAifbCXnvBh7wPNJNY1BPWK0vuC6LKhfCS0uxSw6VBhwWQZ0AIrthcYMwzS2KBXgsK24yQKjhzkZFYgJjt\u002B3cGWs7\u002BwyxAAAUaRY4Pl9e76l\u002BCgdW3IKQMMGdGtiVZ1Q1VKSewiBesknSm3bMQBCnknkCsRwu0YAmAJAZAv0xWHfQcoOMrAFEG9A9weN3pG3LcnpfmsCyWnuW0WX2hNcIkHoYaKLTlvGCcDbHLLpIIpxeRnLthbH/1QkxPzyEWkLjTbYHhlITbUxHUpfgl84REDEvt/gMx6uJIOaaYAfZ5\u002BRQrx3qI5iXMxKblleksWGXK/LTi9Yy0vw\u002BuqXmnSXzKXW9yGWDEat72cAcVebZpDKHkbl3MEbzgbQz47G2c4LgMrfiwohln7x2qLylXODyBuEaA0SsZwOEOZcOMkX/o14Jx7btr7cLkhwEvo6KXQ\u002BtSL1vKlAy3f4msN27ecvz3iByjLy8puXj2J7rs7mDhi4Ep3lgMS9QoE8OqtA9JnWP9/0vrS4SMfFHd7Grgopno/H0yXd0\u002BpUmHsp8pqPvvz\u002BT4p8UG939296h48\u002B6XQTZ5StjH8wvW//AO0G8rotIy6nAAAAAElFTkSuQmCC'
+)
+
+const ReinforcedGolluxRing = new Equipment(
+  'Reinforced Gollux Ring',
+  'Reinforced Gollux Set',
+  140,
+  0,
+  false,
+  true,
+  true,
+  new EffectStats(
+    8,  
+    8,
+    8,
+    8,
+    200,
+    200,
+    0,
+    0,
+    5,
+    5,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    150,
+    0,
+    0,
+    0
+  ),
+  'ring',
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),  
+  'iVBORw0KGgoAAAANSUhEUgAAACEAAAAiCAYAAADRcLDBAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAFZElEQVR4nKWXgZmDKBCFx+/bBkgJpgQtwZRgSkhK0BJiCbGEWEIsIZQQSpASvDcDKLhm9/aOrBuDwPy8GQb8ov9R5nlWe/VZltm/jPNniOI9qVopKmBeE+GOVE5U435gyxb/btNsDe7493A4/Ar0ryDYsIExvufvEcNbMa6YgkEqbcmwtUbR/WztGT8YwubvyRrmKY8fYX6EuE+zGtAfs8RkSWGUnEkYwEgLi0qlWBjMvGIrZ0sDAPieIdi+kYavt/kE8hGCATRZNsx2GaKYc9WE5z3YWIIa9fz7plS9dI4iJdO2cwKi9vl2QKcUZhciANyVeh+tvTLAlKsLAs7ZgPVpmooT5lnnzuLpdJIoiC8uCN4mG81AEkJSDD3ekGwF2YUYvM8ZwEYA8+wna0Y6HA4MosqypNfrRs/nw/ce/eVsuH7SsQZMR+JdATEB5BsEAkn5GChoD0AaVfS4eJCXkqbdsfd2ORoURwvdXh1NDweyqDKYXih5nncocj3aBEK5VcACF9ZBXMKzLBuoRs39huVQVZTnlhpep/mbukNHzQPhUrGM+Dv30qctGwF53zB1s6hyyXpZSDa4aIUAQAjCAIBAlI5PoBSFa3ZtLT1ellrYeTROcvF/8DAEq1SBZeFikUGaR0cG5hjGgzRZpw25gE2UWFZBDDC/N0kRy8KOOq7AdBDGV02KpRpcrSGTdBOmIqlScjUv9RVU8JXcrPkGkKccyD7ReKP7b0eqDq6ms46kwarV/l6G2UJYt5i/lgpnKt8DsJh936dTWIpmI9UCor1fCs6mU0E6a0UFvU1T0e8Ygq9L0hAAXelat94DdTobMXBrRmo77lyJ8UpVpC7o3Lq+JvXMN5gv7woBSVQAend2u9N1kOUljY6HLBlDfAghbuRAuPRQhPx9g6Wce3eaOJR+UGJVwAN8Khdo1sFQXTtfM8hdjasNv3lU94rO5UiXak8D2k9WPxVkPJqnWdRAkhQQjpV6047hZfaFA6iCEpFbVEhtfWn/86GGB2RDyFs0rAuAdNJqBeC2x9a59XDVHOZWObEWJbx4wSOYJl0dMaoelyXJENLuosbDh3HlpZYRdjZrViw7LQDsM6P4UsEdR5x83hNJLt8UtXt4owSEyz3sa9EInPu5P8fK+brWT/eiOkIJBtB+6X35KUiQZNr0kttl1nfq0Vv5wZ5NpEZv+LIAEcztiuFShAnAVTW7zOcZdoVyrlhK5A4KufyjGolbOs2XzCTAJGpxu6eLl0RR6/KkjZR3EHzser252mAFJGqM7arlRhElEPhkrXa7lUvDar4XSZ9tkdiJ6tfVYT+rsR3wue6GYhQQdi+mKOcAb78xkNt+diD43PcUNTQCr5PtNlJjI+miCJcAEx7L9t+szfOo7+KGsfxwvFvV0Ai81S1TThrBuJ1qMBRgQrnBG9UFibxvBSDkh+zk8gNROlQKwWc+PnI5kJFXQQwy9vue4oC10bBydsgbALTLvhE9Mdts8j1j4syHM1mwphF8iSJSCRjOmEqte0RspnnhYGmOApCdgwpj7yEsjaffj/w4k1mqbwabgHgzu9qBT8xLDACG43/szDo/XwRgOAvk6gYsVIsaCUdeGgWnqp+P/MRBNvZqedNUuc3OZsSAkqBjGNeaWSunNAB49vKcAcoe5xzNpJKpIZtKtduHcJFuTQ7onN/z5KWPQUqcCKAOBs9jGFfWrSucPbISGS0oEFTYWcmflXDFitYWFIo/EgEKgxt+DYOxYq+zzJ47Li5g50hfQ7+ujmA4vDsuQL6fS7hOVoQdjI3yXCWJwEZjhG/yLvjTC/H3DiH62L/1a0nRK6jvp6L+utw1ui3/AHGPMED8NKvwAAAAAElFTkSuQmCC'
+)
+
+const SuperiorGolluxRing = new Equipment(
+  'Superior Gollux Ring',
+  'Superior Gollux Set',
+  150,
+  0,
+  false,
+  true,
+  true,
+  new EffectStats(
+    10,  
+    10,
+    10,
+    10,
+    250,
+    250,
+    0,
+    0,
+    8,
+    8,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    150,
+    0,
+    0,
+    0
+  ),
+  'ring',
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),  
+  'iVBORw0KGgoAAAANSUhEUgAAACEAAAAiCAYAAADRcLDBAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAFXElEQVR4nJ2Yi5mqMBCFx+/bBmIJoQQsgS0BS9ASoAQpQUqQEkwJUoIpwSmBe2aS8BLv3r3ZZcWQx58zk8mwX/SfZRgGs1W/2+34t2P9CuI5lMZQgTsLAC9V+LQl7jsi1p/XcAWEZ7mXumzX/Qj1TxDPocBkrBdTj5nlk/FpBKJg8p70ewmC+ojvHKH4MVilPez8R5gfIWT1WJlIbzGwDSBeJMAkVihyPM/DpHWLZ5CKRYkgBdQSojtgvj+AfIR4DXeM7zBKbwMA5ZYeVXrO5EBWSD2ATqdUv3YUR1lDwXZGQATouILZhBAATPDy1B7QJ48AJzgdDGD0ej6f0PkMaa7m+/s7rn26UoEDVwCBz1Afa/1tsDQH+aCEoy2AYSjjMBg2ywTEOOfoLr5o77Fvp/1TCf20Y9kFVQTGX6HKOYK8QYgPBBN8AJBiC7qWEeRRitDU7FtSF9BftRJdHg29bgEkqdJS1kZKvkCRGiBfS4BcnFDtHy4ebb3bdVSi5nqBOYqCLFqdLGY0FwDUVF0vWGsQojsGoPpQKcgTj2T/RFVOAOG4ffqFEs9B9r74FSeIk6WndrwDJc9Du3PNdHsQNdgH1+imPHczgBQmxyYVX/QKUt0a8phOYCJI1VAWGqD7XIlNgOG58ndMzs7RNG+L5fTEZ8QPkaoLtT4Es7EoUz6v0K1rqpc1X0sVtFn1BmBpNSDPxgtO6NhRsQ81DQeSypTwwm5saWcQHObTCZISMRiJqd8BGKtv24VkU+llkmIE6aNGucTTV079rlYV+g/xklcQcp0WLQDQHELvug9VZb5ooRNcEAnqRjoXOnlhCjIwKNWhr19aZgGgSkRTKMhCBaA3R62kc6fbSxtl+91iILUhhLhQAJHSQhGK99XJ6U5SmP4dgDaUmBSIAJ+KBOoGE5VlsLWAXM0UpHQP4iquBR0Pjk7FuxAcWX51lCM80fM1qBqPSwARXylX7QReV58HgCIpsTCLUYBu3/N/JzUyoEyEuEXdtAGoX7SaAKRtVgeznvkQw+tSiVGaULBMOgdeGOl2GoMMwsCkxi26cVFMg5iNXSCK7b5HALGZHBo4hUPrrwyxG4kH0dJXRoCt0s5ApFzTuTYbQdxdkw0AHs+L7oIqCQq3e7dUQq4eh4vE9rDqK7XobeJg92pSQyAk/gNEMdc7RkqeFtAF5+2acSKdy8wWPYdQif6mxtwsiP1yaSqZYOZF292Dv6wexrNrqlUIyf+Q9SiIW6nh6knLlSKm4XAa1qyHkUmh+Gqem4tIq13ffa2ep5Nts6QB79NpqJPWEeatgxUHr9e12nbONkJ8RzVYT4OskeN2rsZiRTwpIiXBpMd6/FdTc2vmXcPB7/Yf0jue1OjbuVleFhX+balpogSTygURtDghkLe1AqT4cOBsER82IST5lCQ0OqiTXTAHce22pcRh54mN5g62AkA9nhuxqLn5bxAJ5PKyaba+WSmilYCRiCkmSmfEHKB6ILH0mQLsjlEFn7XMIZPyh39I+WvYq7whoGh+j+8m6yRjHn0AMHKiu8ZPK49FAbqjQiYzZD1Sfi8ZH4esUs77nrZ9YlaMq9kY7FoDoyJl5KPNHAbUAD2HCa3F84qgNgBk9fpcALqsl0xM3h7xafTljelHJdTTsTrZKtago/F6MvKh3/eAMhjczmFCmY6uMfdocUSKAr0agt9d8gcl9G96ocRAhgGj78FsDrz3FGDyrc6ZyyC2iu/j5D6+tHv6aXfEkrZpAhl3OV7v5IVc5IQ6bA8uc9rOpOcJXd8EfVyEH2s3dfisxLJD2gE+jFW8xuw8ndwm/uHUXI5pv//874B5+QPh0TgnzhximAAAAABJRU5ErkJggg=='
+)
+
+export const Belts = [
   ReinforcedEngravedGolluxBelt,
   SuperiorEngravedGolluxBelt,
   AyamesTreasure,
@@ -10192,13 +10415,13 @@ export const Belts = {
   DreamyBelt,
   GoldenCloverBelt,
   SweetwaterBelt,
-}
+]
 
-export const Hearts = {
+export const Hearts = [
   BlackHeart,
-}
+]
 
-export const Shoulders = {
+export const Shoulders = [
   EternalArcherShoulder,
   ArcaneUmbraMageShoulder,
   ArcaneUmbraKnightShoulder,
@@ -10212,38 +10435,38 @@ export const Shoulders = {
   ArcaneUmbraArcherShoulder,
   EternalMageShoulder,
   ArcaneUmbraThiefShoulder,
-}
+]
 
-export const Pockets = {
+export const Pockets = [
   StoneofEternalLife,
   PinkHolyCup,
   CursedBlueSpellbook,
   CursedRedSpellbook,
   CursedGreenSpellbook,
   CursedYellowSpellbook,
-}
+]
 
-const Badges = {
+export const Badges = [
   GenesisBadge,
   CrystalVentusBadge,
-}
+]
 
-const Eyes = {
+export const Eyes = [
   MagicEyepatch,
   PapulatusMark,
   BlackBeanMark,
   AquaticLetterEyeAccessory,
   SweetwaterMonocle,
-}
+]
 
-const Faces = {
+export const Faces = [
   TwilightMark,
   Berserked,
   SweetwaterTattoo,
   CondensedPowerCrystal,
-}
+]
 
-const Pendants = {
+export const Pendants = [
   MechanatorPendant,
   DaybreakPendant,
   SourceofSuffering,
@@ -10253,9 +10476,9 @@ const Pendants = {
   SuperiorEngravedGolluxPendant,
   ChaosHorntailNecklace,
   HorntailNecklace,
-}
+]
 
-const Earrings = {
+export const Earrings = [
   SuperiorGolluxEarrings,
   DeaSidusEarring,
   WillotheWisps,
@@ -10263,18 +10486,20 @@ const Earrings = {
   EstellaEarrings,
   SweetwaterEarrings,
   ReinforcedGolluxEarrings,
-}
+]
 
-const Rings = {
+export const Rings = [
   EndlessTerror,
   GuardianAngelRing,
   KannasTreasure,
   NobleIfiasRing,
   DawnGuardianAngelRing,
   SilverBlossomRing,
-}
+  SuperiorGolluxRing,
+  ReinforcedGolluxRing
+]
 
-const Medals = {
+export const Medals = [
   HundunsPallbearer,
   NoPainNoGain,
   MuLungExplorer,
@@ -10476,9 +10701,9 @@ const Medals = {
   ElNathExplorer,
   EyesonMe,
   UrsusSSSProcurer,
-}
+]
 
-const Totems = {
+export const Totems = [
   BronzeIncenseBurnerTotem,
   DarkGrinTotem,
   JadeKettleTotem,
@@ -10486,4 +10711,12 @@ const Totems = {
   HorsebackRidingDollTotem,
   DarkHelliaTotem,
   DarkAvengerTotem,
-}
+  AdlerFigurine,
+  BillyFigurine,
+  MansaFigurine,
+  BeodogFigurine,
+  GuildCastleBlueBrooch,
+  GuildCastleGreenBrooch,
+  GuildCastleRedBrooch
+]
+
