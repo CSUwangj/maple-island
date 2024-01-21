@@ -46,7 +46,7 @@ set_names = {
     SuperiorGolluxSet: 'Superior Gollux Set',
     ReinforcedGolluxSet: 'Reinforced Gollux Set',
     SengokuTreasureSet: 'Sengoku Treasure Set',
-    DawnBossSet: 'Dawn Boss Set',
+    DawnBossSet: 'Boss of Dawn Set',
     PensalirWarrior: '8th Warrior Set',
     PensalirMagician: '8th Magician Set',
     PensalirBowman: '8th Bowman Set',
@@ -100,6 +100,7 @@ slotMapping = {
     'Glove': 'glove',
     'Medal': 'medal',
     'Totem': 'totem',
+    'Unknown': 'unknown'
 }
 
 fileNames = {
@@ -129,7 +130,7 @@ def closeFiles(files):
 
 def main(argv):
     files = openFiles()
-    with open('itemsDetails.json', 'r') as f:
+    with open('tmp', 'r') as f:
         items = json.load(f)
     equipments = {
         'Accessory': set(),
@@ -159,6 +160,7 @@ def main(argv):
         'medal': set(),
         'weapon': set(),
         'totem': set(),
+        'unknown': set(),
     }
     slotCategory = {
         'shoe': 'Armor',
@@ -182,6 +184,7 @@ def main(argv):
         'totem': 'Accessory',
         'sub-weapon': 'Secondary Weapon',
         'weapon': 'Weapon',
+        'unknown': 'Accessory'
     }
     for item in items:
         set_name = ''
@@ -223,15 +226,15 @@ def main(argv):
         if 'bdR' not in item['metaInfo']:
             item['metaInfo']['bdR'] = 0  
         equip = '''
-export const {} = (starForce: number, flame: EquipStats, soul: EquipStats, potential: EquipStats) => new Equipment(
+const {} = new Equipment(
   \'{}\',
   \'{}\',
   {},
-  starForce,
+  0,
   {},
   true,
   true,
-  new EquipStats(
+  new EffectStats(
     {},  
     {},
     {},
@@ -255,9 +258,9 @@ export const {} = (starForce: number, flame: EquipStats, soul: EquipStats, poten
     0
   ),
   \'{}\',
-  flame,
-  soul,
-  potential,
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),  
   \'{}\'
 )
 '''.format(re.sub(r'[_\' \-,!<>()]', '', item['description']['name']),
