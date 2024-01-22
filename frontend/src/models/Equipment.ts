@@ -11,6 +11,7 @@ export class Equipment{
   sfStat: EffectStats
   canSF: boolean
   canPot: boolean
+  canFlame: boolean
   potential: EffectStats
   starForce: number
   level: number
@@ -25,8 +26,9 @@ export class Equipment{
     level = 0,
     starForce = 0,
     special = false,
-    canSF = true,
-    canPot = true,
+    canSF = false,
+    canPot = false,
+    canFlame = false,
     stats: EffectStats = new EffectStats(),
     slot: EquipType = 'weapon',
     flame: EffectStats = new EffectStats(),
@@ -41,6 +43,7 @@ export class Equipment{
     this.set = set
     this.canSF = canSF
     this.canPot = canPot
+    this.canFlame = canFlame
     this.sfStat = this.applyStarForce(starForce)
     this.starForce = starForce
     this.applyStarForce(starForce)
