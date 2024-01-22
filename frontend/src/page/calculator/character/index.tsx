@@ -5,7 +5,7 @@ import { Effect } from "models/BuffEffect"
 import React, { useState } from "react"
 import { useTranslation } from "react-i18next"
 import { AllJobs, Bowman, DexPirate, DexStrThief, Mage, StrPirate, Thief, Warrior } from "models/Jobs"
-import { Badges, Belts, Earrings, Eyes, Faces, Hearts, Medals, Pendants, Pockets, Rings, Shoulders, Totems } from "data/equipments/Accessory"
+import { Badges, Belts, Earrings, Eyes, Faces, Hearts, Medals, Pendants, Pockets, Rings, Shoulders, Totems } from "data/equipments"
 import { SubWeapons } from "data/equipments/SecondaryWeapon"
 import { Bottoms, Capes, Gloves, Hats, Overalls, Shoes, Tops } from "data/equipments/Armor"
 import { Weapons } from "data/equipments/Weapon"
@@ -92,6 +92,7 @@ const baseStats = (job: string, level: number) => {
   const critDamage = 0
   const finalDamage = 0
   const ignoreElementResistence = 0
+  const critRate = 0
   if(Warrior.has(job) || StrPirate.has(job)) {
     pureStr = mainStat
   } else if(Bowman.has(job) || DexPirate.has(job)) {
@@ -142,7 +143,8 @@ const baseStats = (job: string, level: number) => {
     normalMonsterDamage,
     critDamage,
     finalDamage,
-    ignoreElementResistence
+    ignoreElementResistence,
+    critRate
   }
 }
 

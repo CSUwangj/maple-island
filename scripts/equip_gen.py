@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 # -*- coding: UTF-8 -*-
+import argparse
 import sys
 import re
 import json
@@ -100,7 +101,8 @@ slotMapping = {
     'Glove': 'glove',
     'Medal': 'medal',
     'Totem': 'totem',
-    'Unknown': 'unknown'
+    'Unknown': 'unknown',
+    'Emblem': 'emblem',
 }
 
 fileNames = {
@@ -110,10 +112,12 @@ fileNames = {
     'One-Handed Weapon': 'Weapon',
     'Other': 'Accessory',
     'Armor': 'Armor',
+    'Unknown': 'Accessory',
 }
 
 HEADER = '''import { Equipment } from "models/Equipment"
-import { EquipStats } from "models/EquipStats"
+import { EffectStats } from "models/EffectStats"
+
 '''
 
 def openFiles():
@@ -130,8 +134,10 @@ def closeFiles(files):
 
 def main(argv):
     files = openFiles()
-    with open('tmp', 'r') as f:
-        items = json.load(f)
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--input', required=True, type=argparse.FileType('r', encoding='utf-8'))
+    args = parser.parse_args()
+    items = json.load(args.input)
     equipments = {
         'Accessory': set(),
         'Armor': set(),
@@ -161,6 +167,7 @@ def main(argv):
         'weapon': set(),
         'totem': set(),
         'unknown': set(),
+        'emblem': set(),
     }
     slotCategory = {
         'shoe': 'Armor',
@@ -184,7 +191,8 @@ def main(argv):
         'totem': 'Accessory',
         'sub-weapon': 'Secondary Weapon',
         'weapon': 'Weapon',
-        'unknown': 'Accessory'
+        'unknown': 'Accessory',
+        'emblem': 'Accessory',
     }
     for item in items:
         set_name = ''
@@ -201,6 +209,9 @@ def main(argv):
             slot = slotMapping[item['typeInfo']['subCategory']]
         elif item['typeInfo']['category'] == 'Secondary Weapon':
             slot = 'sub-weapon'
+        if 'reqLevelEquip' not in item['metaInfo']:
+            # it's useable item
+            continue
         if 'bossReward' not in item['metaInfo']:
             item['metaInfo']['bossReward'] = False
         if 'incSTR' not in item['metaInfo']:
@@ -263,7 +274,7 @@ const {} = new Equipment(
   new EffectStats(),  
   \'{}\'
 )
-'''.format(re.sub(r'[_\' \-,!<>()]', '', item['description']['name']),
+'''.format(re.sub(r'[_\' \-,!<>():.]', '', item['description']['name']),
             re.sub(r'\'', '\\\'', item['description']['name']),
             set_name,
             item['metaInfo']['reqLevelEquip'],
@@ -286,16 +297,16 @@ const {} = new Equipment(
             equipments['Secondary Weapon'].add(equip)
         else:
             equipments[fileNames[item['typeInfo']['category']]].add(equip)
-        slotExport[slot].add(re.sub(r'[_\' \-,!<>()]', '', item['description']['name']))
+        slotExport[slot].add(re.sub(r'[_\' \-,!<>():.]', '', item['description']['name']))
     for category, equips in equipments.items():
         files[category].write(HEADER)
         for equip in equips:
             files[category].write(equip)
     for slot, equips in slotExport.items():
-        files[slotCategory[slot]].write('export const ' + slot + r's = {' + '\n')
+        files[slotCategory[slot]].write('export const ' + slot + r's = [' + '\n')
         for equip in equips:
             files[slotCategory[slot]].write('  {},\n'.format(equip))
-        files[slotCategory[slot]].write(r'}' + '\n\n')
+        files[slotCategory[slot]].write(r']' + '\n\n')
     closeFiles(files)
     return
 

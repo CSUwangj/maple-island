@@ -1,12 +1,15 @@
 #!/usr/bin/python3
 # -*- coding: UTF-8 -*-
-import sys
 import json
 import requests
+import argparse
 from tqdm import tqdm
-def main(argv):
-    with open(argv[0], 'r', encoding='utf-8') as f:
-        items = json.load(f)
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--input', required=True, type=argparse.FileType('r', encoding='utf-8'))
+    parser.add_argument('--output', required=True, type=argparse.FileType('w', encoding='utf-8'))
+    args = parser.parse_args()
+    items = json.load(args.input)
     itemsDetail = []
     for item in tqdm(items):
         itemDetail = None
@@ -19,9 +22,8 @@ def main(argv):
         if 'frameBooks' in itemDetail:
             itemDetail.pop('frameBooks')
         itemsDetail.append(itemDetail)
-    with open(argv[1], 'w', encoding='utf-8') as f:
-        json.dump(itemsDetail, f, indent=2)
+    json.dump(itemsDetail, args.output, indent=2)
     return
 
 if __name__ == '__main__':
-    main(sys.argv)
+    main()

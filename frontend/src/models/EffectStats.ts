@@ -17,6 +17,7 @@ export class EffectStats {
   intPercent: number
   lukPercent: number
   defence: number
+  critRate: number
   ignoreEnemyDefence: number
   bossDamage: number
   critDamage: number
@@ -42,7 +43,8 @@ export class EffectStats {
     defence = 0,
     ignoreEnemyDefence = 0,
     bossDamage = 0,
-    critDamage = 0
+    critDamage = 0,
+    critRate = 0
   ) {
     this.dex = dex
     this.str = str
@@ -65,6 +67,7 @@ export class EffectStats {
     this.ignoreEnemyDefence = ignoreEnemyDefence
     this.bossDamage = bossDamage
     this.critDamage = critDamage
+    this.critRate = critRate
   }
 
   add(stat: EffectStats): EffectStats {
@@ -90,6 +93,7 @@ export class EffectStats {
       this.ignoreEnemyDefence + stat.ignoreEnemyDefence,
       this.bossDamage + stat.bossDamage,
       this.critDamage + stat.critDamage,
+      this.critRate + stat.critRate
     )
   }
 }

@@ -38,6 +38,7 @@ export interface StatsDetail {
   damage: number
   bossDamage: number
   normalMonsterDamage: number
+  critRate: number
   critDamage: number
   finalDamage: number
   ignoreElementResistence: number
@@ -63,6 +64,7 @@ export const ApplyEffect = (init: StatsDetail, target: EffectStats) => {
     attPercent: init.percentAtt + target.attPercent,
     mattPercent: init.percentMatt + target.mattPercent,
     defence: init.defence + target.defence,
+    critRate: init.critRate + target.critRate,
     ignoreEnemyDefence: target.ignoreEnemyDefence * (1 - init.ignoreEnemyDefence / 100) + init.ignoreEnemyDefence,
     bossDamage: init.bossDamage + target.bossDamage,
     critDamage: init.critDamage + target.critDamage,

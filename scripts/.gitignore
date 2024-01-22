@@ -2,3 +2,5 @@
 
 # used for debugging
 *.ipynb
+
+*.ts
