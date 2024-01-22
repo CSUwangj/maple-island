@@ -29,8 +29,8 @@ const TrixterWarriorPants = new Equipment(
     0,
     0,
     210,
-    0,
     5,
+    0,
     0,
     0,
     0
@@ -70,8 +70,8 @@ const AbsoLabKnightHelm = new Equipment(
     0,
     0,
     400,
-    0,
     10,
+    0,
     0,
     0,
     0
@@ -152,8 +152,8 @@ const EternalMageRobe = new Equipment(
     0,
     0,
     325,
-    0,
     5,
+    0,
     0,
     0,
     0
@@ -316,8 +316,8 @@ const EternalThiefBandana = new Equipment(
     0,
     0,
     750,
-    0,
     15,
+    0,
     0,
     0,
     0
@@ -357,8 +357,8 @@ const ArcaneUmbraKnightSuit = new Equipment(
     0,
     0,
     500,
-    0,
     10,
+    0,
     0,
     0,
     0
@@ -398,8 +398,8 @@ const RoyalWandererHat = new Equipment(
     0,
     0,
     300,
-    0,
     10,
+    0,
     0,
     0,
     0
@@ -439,8 +439,8 @@ const AbsoLabBanditCap = new Equipment(
     0,
     0,
     400,
-    0,
     10,
+    0,
     0,
     0,
     0
@@ -521,8 +521,8 @@ const EagleEyeAssassinShirt = new Equipment(
     0,
     0,
     135,
-    0,
     5,
+    0,
     0,
     0,
     0
@@ -603,8 +603,8 @@ const EternalArcherPants = new Equipment(
     0,
     0,
     325,
-    0,
     5,
+    0,
     0,
     0,
     0
@@ -644,8 +644,8 @@ const EternalKnightHelm = new Equipment(
     0,
     0,
     750,
-    0,
     15,
+    0,
     0,
     0,
     0
@@ -726,8 +726,8 @@ const ArcaneUmbraArcherSuit = new Equipment(
     0,
     0,
     500,
-    0,
     10,
+    0,
     0,
     0,
     0
@@ -767,8 +767,8 @@ const RoyalAssassinHood = new Equipment(
     0,
     0,
     300,
-    0,
     10,
+    0,
     0,
     0,
     0
@@ -1382,8 +1382,8 @@ const TrixterDunwitchPants = new Equipment(
     0,
     0,
     120,
-    0,
     5,
+    0,
     0,
     0,
     0
@@ -1423,8 +1423,8 @@ const TrixterWandererPants = new Equipment(
     0,
     0,
     135,
-    0,
     5,
+    0,
     0,
     0,
     0
@@ -1505,8 +1505,8 @@ const ArcaneUmbraMageSuit = new Equipment(
     0,
     0,
     500,
-    0,
     10,
+    0,
     0,
     0,
     0
@@ -1874,8 +1874,8 @@ const ArcaneUmbraMageHat = new Equipment(
     0,
     0,
     600,
-    0,
     15,
+    0,
     0,
     0,
     0
@@ -1956,8 +1956,8 @@ const EternalMagePants = new Equipment(
     0,
     0,
     325,
-    0,
     5,
+    0,
     0,
     0,
     0
@@ -2243,8 +2243,8 @@ const EternalKnightPants = new Equipment(
     0,
     0,
     325,
-    0,
     5,
+    0,
     0,
     0,
     0
@@ -2448,8 +2448,8 @@ const ArcaneUmbraThiefSuit = new Equipment(
     0,
     0,
     500,
-    0,
     10,
+    0,
     0,
     0,
     0
@@ -2489,8 +2489,8 @@ const AbsoLabArcherHood = new Equipment(
     0,
     0,
     400,
-    0,
     10,
+    0,
     0,
     0,
     0
@@ -2694,8 +2694,8 @@ const EternalArcherHat = new Equipment(
     0,
     0,
     750,
-    0,
     15,
+    0,
     0,
     0,
     0
@@ -2776,8 +2776,8 @@ const EternalKnightArmor = new Equipment(
     0,
     0,
     325,
-    0,
     5,
+    0,
     0,
     0,
     0
@@ -2817,8 +2817,8 @@ const RoyalDunwitchHat = new Equipment(
     0,
     0,
     180,
-    0,
     10,
+    0,
     0,
     0,
     0
@@ -2858,8 +2858,8 @@ const ArcaneUmbraKnightHat = new Equipment(
     0,
     0,
     600,
-    0,
     15,
+    0,
     0,
     0,
     0
@@ -2940,8 +2940,8 @@ const ArcaneUmbraThiefHat = new Equipment(
     0,
     0,
     600,
-    0,
     15,
+    0,
     0,
     0,
     0
@@ -3022,8 +3022,8 @@ const EternalPirateHat = new Equipment(
     0,
     0,
     750,
-    0,
     15,
+    0,
     0,
     0,
     0
@@ -3104,8 +3104,8 @@ const TrixterAssassinPants = new Equipment(
     0,
     0,
     135,
-    0,
     5,
+    0,
     0,
     0,
     0
@@ -3309,8 +3309,8 @@ const EagleEyeRangerCowl = new Equipment(
     0,
     0,
     135,
-    0,
     5,
+    0,
     0,
     0,
     0
@@ -3391,8 +3391,8 @@ const ArcaneUmbraArcherHat = new Equipment(
     0,
     0,
     600,
-    0,
     15,
+    0,
     0,
     0,
     0
@@ -3514,8 +3514,8 @@ const RoyalWarriorHelm = new Equipment(
     0,
     0,
     390,
-    0,
     10,
+    0,
     0,
     0,
     0
@@ -3555,8 +3555,8 @@ const EternalPiratePants = new Equipment(
     0,
     0,
     325,
-    0,
     5,
+    0,
     0,
     0,
     0
@@ -3760,8 +3760,8 @@ const EternalThiefPants = new Equipment(
     0,
     0,
     325,
-    0,
     5,
+    0,
     0,
     0,
     0
@@ -3801,8 +3801,8 @@ const EagleEyeWandererCoat = new Equipment(
     0,
     0,
     135,
-    0,
     5,
+    0,
     0,
     0,
     0
@@ -3883,8 +3883,8 @@ const EternalPirateCoat = new Equipment(
     0,
     0,
     325,
-    0,
     5,
+    0,
     0,
     0,
     0
@@ -3965,8 +3965,8 @@ const EagleEyeDunwitchRobe = new Equipment(
     0,
     0,
     120,
-    0,
     5,
+    0,
     0,
     0,
     0
@@ -4006,8 +4006,8 @@ const ArcaneUmbraPirateSuit = new Equipment(
     0,
     0,
     500,
-    0,
     10,
+    0,
     0,
     0,
     0
@@ -4170,8 +4170,8 @@ const EagleEyeWarriorArmor = new Equipment(
     0,
     0,
     210,
-    0,
     5,
+    0,
     0,
     0,
     0
@@ -4539,8 +4539,8 @@ const ArcaneUmbraPirateHat = new Equipment(
     0,
     0,
     600,
-    0,
     15,
+    0,
     0,
     0,
     0
@@ -4662,8 +4662,8 @@ const TrixterRangerPants = new Equipment(
     0,
     0,
     135,
-    0,
     5,
+    0,
     0,
     0,
     0
@@ -4703,8 +4703,8 @@ const AbsoLabMageCrown = new Equipment(
     0,
     0,
     400,
-    0,
     10,
+    0,
     0,
     0,
     0
@@ -4744,8 +4744,8 @@ const EternalArcherHood = new Equipment(
     0,
     0,
     325,
-    0,
     5,
+    0,
     0,
     0,
     0
@@ -4785,8 +4785,8 @@ const EternalMageHat = new Equipment(
     0,
     0,
     750,
-    0,
     15,
+    0,
     0,
     0,
     0
@@ -4908,8 +4908,8 @@ const AbsoLabPirateFedora = new Equipment(
     0,
     0,
     400,
-    0,
     10,
+    0,
     0,
     0,
     0
@@ -4990,8 +4990,8 @@ const EternalThiefShirt = new Equipment(
     0,
     0,
     325,
-    0,
     5,
+    0,
     0,
     0,
     0
@@ -5072,8 +5072,8 @@ const RoyalRangerBeret = new Equipment(
     0,
     0,
     300,
-    0,
     10,
+    0,
     0,
     0,
     0

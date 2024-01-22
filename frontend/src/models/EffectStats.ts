@@ -38,8 +38,8 @@ export class EffectStats {
     attPercent = 0,
     mattPercent = 0,
     allStatPercent = 0,
-    dexPercent = 0,
     strPercent = 0,
+    dexPercent = 0,
     intPercent = 0,
     lukPercent = 0,
     defence = 0,
@@ -50,8 +50,8 @@ export class EffectStats {
     critDamage = 0,
     critRate = 0
   ) {
-    this.dex = dex
     this.str = str
+    this.dex = dex
     this.int = int
     this.luk = luk
     this.hp = hp

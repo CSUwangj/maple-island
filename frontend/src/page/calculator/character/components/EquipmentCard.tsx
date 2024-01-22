@@ -43,7 +43,7 @@ export const EquipmentCard: React.FC<Props> = ({equipment, setEquipment, name, o
   const [ flameDialogVisible, setFlameDialogVisible ] = useState(false)
 
   return <>
-    <FlameInputDialog visible={flameDialogVisible} equipment={equipment} setEquipment={setEquipment} />
+    <FlameInputDialog header={`Set ${equipment.name}'s flame`} onHide={() => setFlameDialogVisible(false)} visible={flameDialogVisible} equipment={equipment} setEquipment={setEquipment} />
     <Fieldset legend={name} className='card flex flex-wrap gap-3 p-fluid'>
       <Splitter>
         <SplitterPanel className='flex flex-column'>
@@ -52,7 +52,7 @@ export const EquipmentCard: React.FC<Props> = ({equipment, setEquipment, name, o
           <div className="card flex flex-row flex-wrap gap-3 p-fluid">
             <div className='flex-auto'>
               <label htmlFor={`sf${name}`} className="font-bold block mb-2" >{t('calc.star-force')}</label>
-              <InputNumber disabled={!equipment.canSF} inputId={`sf${name}`} min={0} max={maxSF} maxFractionDigits={0} onValueChange={(e) => {
+              <InputNumber disabled={!equipment.canSF} showButtons inputId={`sf${name}`} min={0} max={maxSF} maxFractionDigits={0} onValueChange={(e) => {
                 const newEquipment = _.cloneDeep(equipment)
                 newEquipment.applyStarForce(e.value??0)
                 setEquipment(newEquipment)
@@ -81,7 +81,7 @@ export const EquipmentCard: React.FC<Props> = ({equipment, setEquipment, name, o
           { statsSummary.matt ? <div>{t('calc.matt')}: +{statsSummary.matt}</div> : <></>}
           { statsSummary.attPercent ? <div>{t('calc.atp')}: +{statsSummary.attPercent}%</div> : <></>}
           { statsSummary.mattPercent ? <div>{t('calc.matp')}: +{statsSummary.mattPercent}%</div> : <></>}
-          { statsSummary.allStatPercent ? <div>{t('calc.asp')}: +{statsSummary.allStatPercent}</div> : <></>}
+          { statsSummary.allStatPercent ? <div>{t('calc.asp')}: +{statsSummary.allStatPercent}%</div> : <></>}
           { statsSummary.defence ? <div>{t('calc.def')}: +{statsSummary.defence}</div> : <></>}
           { statsSummary.ignoreEnemyDefence ? <div>{t('calc.ied')}: +{statsSummary.ignoreEnemyDefence}%</div> : <></>}
           { statsSummary.damage ? <div>{t('calc.dmg')}: +{statsSummary.damage}%</div>: <></>}

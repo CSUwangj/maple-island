@@ -5,7 +5,7 @@ import { Effect } from "models/BuffEffect"
 import React, { useState } from "react"
 import { useTranslation } from "react-i18next"
 import { AllJobs, Bowman, DexPirate, DexStrThief, Mage, StrPirate, Thief, Warrior } from "models/Jobs"
-import { Badges, Belts, Earrings, Eyes, Faces, Hearts, Medals, Pendants, Pockets, Rings, Shoulders, Totems } from "data/equipments"
+import { Badges, Belts, Earrings, Emblems, Eyes, Faces, Hearts, Medals, Pendants, Pockets, Rings, Shoulders, Totems } from "data/equipments"
 import { SubWeapons } from "data/equipments/SecondaryWeapon"
 import { Bottoms, Capes, Gloves, Hats, Overalls, Shoes, Tops } from "data/equipments/Armor"
 import { Weapons } from "data/equipments/Weapon"
@@ -19,33 +19,34 @@ const StatName = styled.td``
 const StatVal = styled.td``
 
 const EquipmentsOptions = [
-  {name: 'belt' ,slot: 'belt', options: Belts},
+  {name: 'weapon' ,slot: 'weapon', options: Weapons},
+  {name: 'totem1' ,slot: 'totem', options: Totems},
+  {name: 'totem2' ,slot: 'totem', options: Totems},
+  {name: 'totem3' ,slot: 'totem', options: Totems},
   {name: 'sub-weapon' ,slot: 'sub-weapon', options: SubWeapons},
-  {name: 'shoe' ,slot: 'shoe', options: Shoes},
-  {name: 'cape' ,slot: 'cape', options: Capes},
-  {name: 'bottom' ,slot: 'bottom', options: Bottoms},
-  {name: 'heart' ,slot: 'heart', options: Hearts},
-  {name: 'shoulder' ,slot: 'shoulder', options: Shoulders},
-  {name: 'overall' ,slot: 'overall', options: Overalls},
-  {name: 'pocket' ,slot: 'pocket', options: Pockets},
+  {name: 'hat' ,slot: 'hat', options: Hats},
   {name: 'top' ,slot: 'top', options: Tops},
+  {name: 'bottom' ,slot: 'bottom', options: Bottoms},
+  {name: 'glove' ,slot: 'glove', options: Gloves},
+  {name: 'shoe' ,slot: 'shoe', options: Shoes},
+  {name: 'belt' ,slot: 'belt', options: Belts},
+  {name: 'cape' ,slot: 'cape', options: Capes},
+  {name: 'shoulder' ,slot: 'shoulder', options: Shoulders},
+  {name: 'pocket' ,slot: 'pocket', options: Pockets},
   {name: 'badge' ,slot: 'badge', options: Badges},
   {name: 'eye' ,slot: 'eye', options: Eyes},
   {name: 'face' ,slot: 'face', options: Faces},
   {name: 'pendant1' ,slot: 'pendant', options: Pendants},
   {name: 'pendant2' ,slot: 'pendant', options: Pendants},
   {name: 'earring' ,slot: 'earring', options: Earrings},
-  {name: 'hat' ,slot: 'hat', options: Hats},
   {name: 'ring1' ,slot: 'ring', options: Rings},
   {name: 'ring2' ,slot: 'ring', options: Rings},
   {name: 'ring3' ,slot: 'ring', options: Rings},
   {name: 'ring4' ,slot: 'ring', options: Rings},
-  {name: 'glove' ,slot: 'glove', options: Gloves},
   {name: 'medal' ,slot: 'medal', options: Medals},
-  {name: 'weapon' ,slot: 'weapon', options: Weapons},
-  {name: 'totem1' ,slot: 'totem', options: Totems},
-  {name: 'totem2' ,slot: 'totem', options: Totems},
-  {name: 'totem3' ,slot: 'totem', options: Totems}
+  {name: 'heart' ,slot: 'heart', options: Hearts},
+  {name: 'overall' ,slot: 'overall', options: Overalls},
+  {name: 'emblem', slot: 'emblem', options: Emblems},
 ]
 
 // ignore xenon and demon avenger
@@ -191,7 +192,6 @@ export const Page: React.FC = ({ }) => {
   let stats = baseStats(job, level)
   const sets = new Map()
   
-  console.log(equipments)
   for(const { equipment } of equipments) {
     stats = ApplyEquipment(stats, equipment)
     if(equipment.set === '') continue
@@ -199,7 +199,6 @@ export const Page: React.FC = ({ }) => {
   }
 
   sets.forEach((count, set) => {
-    console.log(`${set} ${count}`)
     stats = EquipSets.get(set)!.apply(stats, count)
   })
 

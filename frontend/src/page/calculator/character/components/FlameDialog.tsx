@@ -83,7 +83,7 @@ export const FlameInputDialog: React.FC<ConfirmDialogProps & FlameDialogProps> =
     </div>
     <div>
       <label htmlFor='allStatPercent'>{t('calc.asp')}</label>
-      <InputNumber min={0} allowEmpty={false} inputId='allStatPercent' value={stats.allStatPercent} onValueChange={(e) => {
+      <InputNumber min={0} allowEmpty={false} suffix='%' inputId='allStatPercent' value={stats.allStatPercent} onValueChange={(e) => {
         const newStats = _.cloneDeep(stats)
         newStats.allStatPercent = e.value ?? 0
         setStats(newStats)
@@ -99,7 +99,7 @@ export const FlameInputDialog: React.FC<ConfirmDialogProps & FlameDialogProps> =
     </div>
     <div>
       <label htmlFor='ignoreEnemyDefence'>{t('calc.ied')}</label>
-      <InputNumber min={0} allowEmpty={false} inputId='ignoreEnemyDefence' value={stats.ignoreEnemyDefence} onValueChange={(e) => {
+      <InputNumber min={0} allowEmpty={false} suffix='%' inputId='ignoreEnemyDefence' value={stats.ignoreEnemyDefence} onValueChange={(e) => {
         const newStats = _.cloneDeep(stats)
         newStats.ignoreEnemyDefence = e.value ?? 0
         setStats(newStats)
@@ -107,7 +107,7 @@ export const FlameInputDialog: React.FC<ConfirmDialogProps & FlameDialogProps> =
     </div>
     <div>
       <label htmlFor='damage'>{t('calc.dmg')}</label>
-      <InputNumber min={0} allowEmpty={false} inputId='damage' value={stats.damage} onValueChange={(e) => {
+      <InputNumber min={0} allowEmpty={false} suffix='%' inputId='damage' value={stats.damage} onValueChange={(e) => {
         const newStats = _.cloneDeep(stats)
         newStats.damage = e.value ?? 0
         setStats(newStats)
@@ -115,33 +115,9 @@ export const FlameInputDialog: React.FC<ConfirmDialogProps & FlameDialogProps> =
     </div>
     <div>
       <label htmlFor='bossDamage'>{t('calc.bd')}</label>
-      <InputNumber min={0} allowEmpty={false} inputId='bossDamage' value={stats.bossDamage} onValueChange={(e) => {
+      <InputNumber min={0} allowEmpty={false} suffix='%' inputId='bossDamage' value={stats.bossDamage} onValueChange={(e) => {
         const newStats = _.cloneDeep(stats)
         newStats.bossDamage = e.value ?? 0
-        setStats(newStats)
-      }}/>
-    </div>
-    <div>
-      <label htmlFor='normalDamage'>{t('calc.nmd')}</label>
-      <InputNumber min={0} allowEmpty={false} inputId='normalDamage' value={stats.normalDamage} onValueChange={(e) => {
-        const newStats = _.cloneDeep(stats)
-        newStats.normalDamage = e.value ?? 0
-        setStats(newStats)
-      }}/>
-    </div>
-    <div>
-      <label htmlFor='critDamage'>{t('calc.cd')}</label>
-      <InputNumber min={0} allowEmpty={false} inputId='critDamage' value={stats.critDamage} onValueChange={(e) => {
-        const newStats = _.cloneDeep(stats)
-        newStats.critDamage = e.value ?? 0
-        setStats(newStats)
-      }}/>
-    </div>
-    <div>
-      <label htmlFor='critRate'>{t('calc.cr')}</label>
-      <InputNumber min={0} allowEmpty={false} inputId='critRate' value={stats.critRate} onValueChange={(e) => {
-        const newStats = _.cloneDeep(stats)
-        newStats.critRate = e.value ?? 0
         setStats(newStats)
       }}/>
     </div>

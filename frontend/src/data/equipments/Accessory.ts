@@ -2325,8 +2325,8 @@ const SavioroftheEmpress = new Equipment(
     0,
     0,
     0,
-    0,
     5,
+    0,
     0,
     0,
     0
@@ -3147,8 +3147,8 @@ const ChaosVellumCrusher = new Equipment(
     0,
     0,
     0,
-    0,
     5,
+    0,
     0
   ),
   'medal',
@@ -5318,8 +5318,8 @@ const ChaosVonBonCrusher = new Equipment(
     0,
     0,
     0,
-    0,
     5,
+    0,
     0,
     0,
     0
@@ -12124,8 +12124,8 @@ const SevenDayMonsterParker = new Equipment(
     0,
     0,
     0,
-    0,
     10,
+    0,
     0,
     0,
     0
