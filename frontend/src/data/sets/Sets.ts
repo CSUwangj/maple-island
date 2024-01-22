@@ -44,7 +44,8 @@ const BossAccessorySet = new Sets('Boss Accessory Set', [
     0, 0,
     0, 0, 0, 0, 0, 
     300,
-    10, 10
+    10,
+    0, 10
   )
 ])
 
@@ -59,6 +60,7 @@ const PitchedBossSet = new Sets('Pitched Boss Set', [
     0, 0,
     0, 0, 0, 0, 0, 
     0,
+    0, 
     0, 10
   ),
   new EffectStats(
@@ -69,7 +71,8 @@ const PitchedBossSet = new Sets('Pitched Boss Set', [
     0, 0,
     0, 0, 0, 0, 0,
     250,
-    10, 10
+    10,
+    0, 10
   ),
   new EffectStats(
     35, 35, 35, 35,
@@ -79,7 +82,9 @@ const PitchedBossSet = new Sets('Pitched Boss Set', [
     0, 0,
     0, 0, 0, 0, 0,
     250,
-    10, 10, 5
+    10,
+    0, 10, 0,
+    5
   ),
   new EffectStats(
     50, 50, 50, 50,
@@ -90,7 +95,7 @@ const PitchedBossSet = new Sets('Pitched Boss Set', [
     0, 0, 0, 0, 0,
     250,
     10,
-    20,
+    0, 20, 0,
     5
   ),
   new EffectStats(
@@ -101,7 +106,9 @@ const PitchedBossSet = new Sets('Pitched Boss Set', [
     0, 0, 
     0, 0, 0, 0, 0,
     250,
-    19, 20, 5
+    19,
+    0, 20, 0,
+    5
   ),
   new EffectStats(
     80, 80, 80, 80,
@@ -111,7 +118,9 @@ const PitchedBossSet = new Sets('Pitched Boss Set', [
     0, 0,
     0, 0, 0, 0, 0,
     250,
-    19, 20, 10
+    19, 
+    0, 20, 0,
+    10
   ),
   new EffectStats(
     95, 95, 95, 95,
@@ -121,7 +130,9 @@ const PitchedBossSet = new Sets('Pitched Boss Set', [
     0, 0,
     0, 0, 0, 0, 0,
     250,
-    19, 30, 10
+    19, 
+    0, 30, 0,
+    10
   ),
   new EffectStats(
     110, 110, 110, 110,
@@ -131,7 +142,9 @@ const PitchedBossSet = new Sets('Pitched Boss Set', [
     0, 0,
     0, 0, 0, 0, 0,
     250,
-    19, 30, 15
+    19, 
+    0, 30, 0,
+    15
   )
 ])
 
@@ -156,7 +169,8 @@ const ReinforcedGolluxSet = new Sets('Reinforced Gollux Set', [
     0, 0,
     0, 0, 0, 0, 0,
     0,
-    15, 30
+    15,
+    0, 30
   )
 ])
 
@@ -181,7 +195,8 @@ const SuperiorGolluxSet = new Sets('Superior Gollux Set', [
     0, 0,
     0, 0, 0, 0, 0,
     0,
-    30, 30
+    30,
+    0, 30
   )
 ])
 
@@ -200,6 +215,7 @@ const DawnBossSet = new Sets('Boss of Dawn Set', [
     0, 0,
     0, 0, 0, 0, 0, 
     0,
+    0,
     0, 10
   ),
   new EffectStats(
@@ -209,6 +225,7 @@ const DawnBossSet = new Sets('Boss of Dawn Set', [
     20, 20,
     0, 0,
     0, 0, 0, 0, 0, 
+    0,
     0,
     0, 10
   ),
@@ -220,7 +237,8 @@ const DawnBossSet = new Sets('Boss of Dawn Set', [
     0, 0,
     0, 0, 0, 0, 0, 
     100,
-    10, 10
+    10,
+    0, 10
   )
 ])
 
@@ -293,6 +311,7 @@ const CRABowman = new Sets('Root Abyss Set (Bowman)', [
     0, 0,
     0, 0, 0, 0, 0,
     0,
+    0, 
     0, 30
   )
 ])
@@ -324,6 +343,7 @@ const ABBowman = new Sets('AbsoLab Set (Bowman)', [
     0, 0,
     0, 0, 0, 0, 0,
     0,
+    0, 
     0, 10
   ),
   new EffectStats(
@@ -334,6 +354,7 @@ const ABBowman = new Sets('AbsoLab Set (Bowman)', [
     0, 0,
     0, 0, 0, 0, 0,
     0,
+    0, 
     0, 20
   ),
   new EffectStats(
@@ -344,7 +365,8 @@ const ABBowman = new Sets('AbsoLab Set (Bowman)', [
     0, 0,
     0, 0, 0, 0, 0,
     200,
-    10, 20
+    10,
+    0, 20
   ),
   new EffectStats(
     30, 30, 30, 30,
@@ -354,7 +376,8 @@ const ABBowman = new Sets('AbsoLab Set (Bowman)', [
     0, 0,
     0, 0, 0, 0, 0,
     200,
-    10, 20
+    10,
+    0, 20
   ),
   new EffectStats(
     30, 30, 30, 30,
@@ -364,7 +387,8 @@ const ABBowman = new Sets('AbsoLab Set (Bowman)', [
     0, 0,
     0, 0, 0, 0, 0,
     200,
-    10, 30
+    10,
+    0, 30
   ),
   new EffectStats(
     30, 30, 30, 30,
@@ -374,7 +398,8 @@ const ABBowman = new Sets('AbsoLab Set (Bowman)', [
     0, 0,
     0, 0, 0, 0, 0,
     200,
-    19, 30
+    19, 
+    0, 30
   )
 ])
 
@@ -405,6 +430,7 @@ const AUBowman = new Sets('Arcane Umbra Set (Bowman)', [
     0, 0,
     0, 0, 0, 0, 0,
     0,
+    0, 
     0, 10
   ),
   new EffectStats(
@@ -415,7 +441,8 @@ const AUBowman = new Sets('Arcane Umbra Set (Bowman)', [
     0, 0,
     0, 0, 0, 0, 0,
     400,
-    10, 10
+    10,
+    0, 10
   ),
   new EffectStats(
     50, 50, 50, 50,
@@ -425,7 +452,8 @@ const AUBowman = new Sets('Arcane Umbra Set (Bowman)', [
     0, 0,
     0, 0, 0, 0, 0,
     400,
-    10, 20
+    10,
+    0, 20
   ),
   new EffectStats(
     50, 50, 50, 50,
@@ -435,7 +463,8 @@ const AUBowman = new Sets('Arcane Umbra Set (Bowman)', [
     0, 0,
     0, 0, 0, 0, 0,
     400,
-    10, 30
+    10,
+    0, 30
   ),
   new EffectStats(
     50, 50, 50, 50,
@@ -445,7 +474,8 @@ const AUBowman = new Sets('Arcane Umbra Set (Bowman)', [
     0, 0,
     0, 0, 0, 0, 0,
     400,
-    10, 30
+    10,
+    0, 30
   ),
   new EffectStats(
     50, 50, 50, 50,
@@ -455,7 +485,8 @@ const AUBowman = new Sets('Arcane Umbra Set (Bowman)', [
     0, 0,
     0, 0, 0, 0, 0,
     400,
-    19, 30
+    19,
+    0, 30
   )
 ])
 
@@ -486,6 +517,7 @@ const EternalBowman = new Sets('Eternal Set (Bowman)', [
     0, 0,
     0, 0, 0, 0, 0,
     0,
+    0,
     0, 10
   ),
   new EffectStats(
@@ -496,6 +528,7 @@ const EternalBowman = new Sets('Eternal Set (Bowman)', [
     0, 0,
     0, 0, 0, 0, 0,
     600,
+    0,
     0, 20
   ),
   new EffectStats(
@@ -506,6 +539,7 @@ const EternalBowman = new Sets('Eternal Set (Bowman)', [
     0, 0,
     0, 0, 0, 0, 0,
     600,
+    0,
     0, 30
   ),
   new EffectStats(
@@ -516,7 +550,8 @@ const EternalBowman = new Sets('Eternal Set (Bowman)', [
     0, 0,
     0, 0, 0, 0, 0,
     600,
-    20, 30
+    20,
+    0, 30
   ),
 ])
 

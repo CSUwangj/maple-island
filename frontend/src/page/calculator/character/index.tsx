@@ -12,6 +12,7 @@ import { Weapons } from "data/equipments/Weapon"
 import { EquipmentCard } from "./components/EquipmentCard"
 import { ApplyEffect, StatsDetail } from "models/StatsDetail"
 import { EquipSets } from "data/sets/Sets"
+import { FlameInputDialog } from "./components/FlameDialog"
 
 const StatRow = styled.tr``
 const StatName = styled.td``
@@ -189,7 +190,8 @@ export const Page: React.FC = ({ }) => {
   // pure stats
   let stats = baseStats(job, level)
   const sets = new Map()
-
+  
+  console.log(equipments)
   for(const { equipment } of equipments) {
     stats = ApplyEquipment(stats, equipment)
     if(equipment.set === '') continue
@@ -315,7 +317,10 @@ export const Page: React.FC = ({ }) => {
       </tbody>
     </table>
     {
-      equipments.map((equip) => <EquipmentCard key={equip.name} {...equip} />)
+      equipments.map((equip) => <EquipmentCard
+        key={equip.name} 
+        {...equip} 
+      />)
     }
   </>
 }

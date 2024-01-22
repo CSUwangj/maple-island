@@ -18,8 +18,10 @@ export class EffectStats {
   lukPercent: number
   defence: number
   critRate: number
+  damage: number
   ignoreEnemyDefence: number
   bossDamage: number
+  normalDamage: number
   critDamage: number
 
   constructor(
@@ -42,7 +44,9 @@ export class EffectStats {
     lukPercent = 0,
     defence = 0,
     ignoreEnemyDefence = 0,
+    damage = 0,
     bossDamage = 0,
+    normalDamage = 0,
     critDamage = 0,
     critRate = 0
   ) {
@@ -65,7 +69,9 @@ export class EffectStats {
     this.lukPercent = lukPercent
     this.defence = defence
     this.ignoreEnemyDefence = ignoreEnemyDefence
+    this.damage = damage
     this.bossDamage = bossDamage
+    this.normalDamage = normalDamage
     this.critDamage = critDamage
     this.critRate = critRate
   }

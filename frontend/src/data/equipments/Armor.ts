@@ -11,7 +11,7 @@ const TrixterWarriorPants = new Equipment(
   true,
   true,
   new EffectStats(
-    30,  
+    30,
     30,
     0,
     0,
@@ -29,7 +29,9 @@ const TrixterWarriorPants = new Equipment(
     0,
     0,
     210,
+    0,
     5,
+    0,
     0,
     0
   ),
@@ -50,7 +52,7 @@ const AbsoLabKnightHelm = new Equipment(
   true,
   true,
   new EffectStats(
-    45,  
+    45,
     45,
     0,
     0,
@@ -68,7 +70,9 @@ const AbsoLabKnightHelm = new Equipment(
     0,
     0,
     400,
+    0,
     10,
+    0,
     0,
     0
   ),
@@ -89,7 +93,7 @@ const PensalirMageGloves = new Equipment(
   true,
   true,
   new EffectStats(
-    0,  
+    0,
     0,
     11,
     11,
@@ -107,6 +111,8 @@ const PensalirMageGloves = new Equipment(
     0,
     0,
     40,
+    0,
+    0,
     0,
     0,
     0
@@ -128,7 +134,7 @@ const EternalMageRobe = new Equipment(
   true,
   true,
   new EffectStats(
-    0,  
+    0,
     0,
     50,
     50,
@@ -146,7 +152,9 @@ const EternalMageRobe = new Equipment(
     0,
     0,
     325,
+    0,
     5,
+    0,
     0,
     0
   ),
@@ -167,7 +175,7 @@ const AbsoLabBanditCape = new Equipment(
   true,
   true,
   new EffectStats(
-    15,  
+    15,
     15,
     15,
     15,
@@ -185,6 +193,8 @@ const AbsoLabBanditCape = new Equipment(
     0,
     0,
     250,
+    0,
+    0,
     0,
     0,
     0
@@ -206,7 +216,7 @@ const PensalirMageSallet = new Equipment(
   true,
   true,
   new EffectStats(
-    0,  
+    0,
     0,
     16,
     15,
@@ -224,6 +234,8 @@ const PensalirMageSallet = new Equipment(
     0,
     0,
     110,
+    0,
+    0,
     0,
     0,
     0
@@ -245,7 +257,7 @@ const PensalirSentinelCape = new Equipment(
   true,
   true,
   new EffectStats(
-    4,  
+    4,
     4,
     4,
     4,
@@ -263,6 +275,8 @@ const PensalirSentinelCape = new Equipment(
     0,
     0,
     150,
+    0,
+    0,
     0,
     0,
     0
@@ -284,7 +298,7 @@ const EternalThiefBandana = new Equipment(
   true,
   true,
   new EffectStats(
-    0,  
+    0,
     80,
     0,
     80,
@@ -302,7 +316,9 @@ const EternalThiefBandana = new Equipment(
     0,
     0,
     750,
+    0,
     15,
+    0,
     0,
     0
   ),
@@ -323,7 +339,7 @@ const ArcaneUmbraKnightSuit = new Equipment(
   true,
   true,
   new EffectStats(
-    85,  
+    85,
     85,
     0,
     0,
@@ -341,7 +357,9 @@ const ArcaneUmbraKnightSuit = new Equipment(
     0,
     0,
     500,
+    0,
     10,
+    0,
     0,
     0
   ),
@@ -362,7 +380,7 @@ const RoyalWandererHat = new Equipment(
   true,
   true,
   new EffectStats(
-    40,  
+    40,
     40,
     0,
     0,
@@ -380,7 +398,9 @@ const RoyalWandererHat = new Equipment(
     0,
     0,
     300,
+    0,
     10,
+    0,
     0,
     0
   ),
@@ -401,7 +421,7 @@ const AbsoLabBanditCap = new Equipment(
   true,
   true,
   new EffectStats(
-    0,  
+    0,
     45,
     0,
     45,
@@ -419,7 +439,9 @@ const AbsoLabBanditCap = new Equipment(
     0,
     0,
     400,
+    0,
     10,
+    0,
     0,
     0
   ),
@@ -440,7 +462,7 @@ const ArcaneUmbraArcherShoes = new Equipment(
   true,
   true,
   new EffectStats(
-    40,  
+    40,
     40,
     0,
     0,
@@ -458,6 +480,8 @@ const ArcaneUmbraArcherShoes = new Equipment(
     0,
     0,
     250,
+    0,
+    0,
     0,
     0,
     0
@@ -479,7 +503,7 @@ const EagleEyeAssassinShirt = new Equipment(
   true,
   true,
   new EffectStats(
-    0,  
+    0,
     30,
     0,
     30,
@@ -497,7 +521,9 @@ const EagleEyeAssassinShirt = new Equipment(
     0,
     0,
     135,
+    0,
     5,
+    0,
     0,
     0
   ),
@@ -518,7 +544,7 @@ const TsukuyomisGloves = new Equipment(
   true,
   true,
   new EffectStats(
-    0,  
+    0,
     21,
     0,
     21,
@@ -536,6 +562,8 @@ const TsukuyomisGloves = new Equipment(
     0,
     0,
     52,
+    0,
+    0,
     0,
     0,
     0
@@ -557,7 +585,7 @@ const EternalArcherPants = new Equipment(
   true,
   true,
   new EffectStats(
-    50,  
+    50,
     50,
     0,
     0,
@@ -575,7 +603,9 @@ const EternalArcherPants = new Equipment(
     0,
     0,
     325,
+    0,
     5,
+    0,
     0,
     0
   ),
@@ -596,7 +626,7 @@ const EternalKnightHelm = new Equipment(
   true,
   true,
   new EffectStats(
-    80,  
+    80,
     80,
     0,
     0,
@@ -614,7 +644,9 @@ const EternalKnightHelm = new Equipment(
     0,
     0,
     750,
+    0,
     15,
+    0,
     0,
     0
   ),
@@ -635,7 +667,7 @@ const AbsoLabKnightCape = new Equipment(
   true,
   true,
   new EffectStats(
-    15,  
+    15,
     15,
     15,
     15,
@@ -653,6 +685,8 @@ const AbsoLabKnightCape = new Equipment(
     0,
     0,
     250,
+    0,
+    0,
     0,
     0,
     0
@@ -674,7 +708,7 @@ const ArcaneUmbraArcherSuit = new Equipment(
   true,
   true,
   new EffectStats(
-    85,  
+    85,
     85,
     0,
     0,
@@ -692,7 +726,9 @@ const ArcaneUmbraArcherSuit = new Equipment(
     0,
     0,
     500,
+    0,
     10,
+    0,
     0,
     0
   ),
@@ -713,7 +749,7 @@ const RoyalAssassinHood = new Equipment(
   true,
   true,
   new EffectStats(
-    0,  
+    0,
     40,
     0,
     40,
@@ -731,7 +767,9 @@ const RoyalAssassinHood = new Equipment(
     0,
     0,
     300,
+    0,
     10,
+    0,
     0,
     0
   ),
@@ -752,7 +790,7 @@ const PensalirSkipperCoat = new Equipment(
   true,
   true,
   new EffectStats(
-    20,  
+    20,
     20,
     0,
     0,
@@ -770,6 +808,8 @@ const PensalirSkipperCoat = new Equipment(
     0,
     0,
     180,
+    0,
+    0,
     0,
     0,
     0
@@ -791,7 +831,7 @@ const TsukuyomisHelm = new Equipment(
   true,
   true,
   new EffectStats(
-    0,  
+    0,
     36,
     0,
     36,
@@ -809,6 +849,8 @@ const TsukuyomisHelm = new Equipment(
     0,
     0,
     333,
+    0,
+    0,
     0,
     0,
     0
@@ -830,7 +872,7 @@ const AbsoLabArcherShoes = new Equipment(
   true,
   true,
   new EffectStats(
-    20,  
+    20,
     20,
     0,
     0,
@@ -848,6 +890,8 @@ const AbsoLabArcherShoes = new Equipment(
     0,
     0,
     150,
+    0,
+    0,
     0,
     0,
     0
@@ -869,7 +913,7 @@ const PensalirChaserArmor = new Equipment(
   true,
   true,
   new EffectStats(
-    0,  
+    0,
     18,
     0,
     20,
@@ -887,6 +931,8 @@ const PensalirChaserArmor = new Equipment(
     0,
     0,
     180,
+    0,
+    0,
     0,
     0,
     0
@@ -908,7 +954,7 @@ const AbsoLabMageGloves = new Equipment(
   true,
   true,
   new EffectStats(
-    0,  
+    0,
     0,
     20,
     20,
@@ -926,6 +972,8 @@ const AbsoLabMageGloves = new Equipment(
     0,
     0,
     150,
+    0,
+    0,
     0,
     0,
     0
@@ -947,7 +995,7 @@ const AmaterasusHelm = new Equipment(
   true,
   true,
   new EffectStats(
-    36,  
+    36,
     36,
     0,
     0,
@@ -965,6 +1013,8 @@ const AmaterasusHelm = new Equipment(
     0,
     0,
     423,
+    0,
+    0,
     0,
     0,
     0
@@ -986,7 +1036,7 @@ const AbsoLabMageShoes = new Equipment(
   true,
   true,
   new EffectStats(
-    0,  
+    0,
     0,
     20,
     20,
@@ -1004,6 +1054,8 @@ const AbsoLabMageShoes = new Equipment(
     0,
     0,
     150,
+    0,
+    0,
     0,
     0,
     0
@@ -1025,7 +1077,7 @@ const TsukuyomisShoes = new Equipment(
   true,
   true,
   new EffectStats(
-    0,  
+    0,
     21,
     0,
     21,
@@ -1043,6 +1095,8 @@ const TsukuyomisShoes = new Equipment(
     0,
     0,
     93,
+    0,
+    0,
     0,
     0,
     0
@@ -1064,7 +1118,7 @@ const PensalirSkipperGloves = new Equipment(
   true,
   true,
   new EffectStats(
-    11,  
+    11,
     11,
     0,
     0,
@@ -1082,6 +1136,8 @@ const PensalirSkipperGloves = new Equipment(
     0,
     0,
     50,
+    0,
+    0,
     0,
     0,
     0
@@ -1103,7 +1159,7 @@ const AbsoLabPirateSuit = new Equipment(
   true,
   true,
   new EffectStats(
-    65,  
+    65,
     65,
     0,
     0,
@@ -1121,6 +1177,8 @@ const AbsoLabPirateSuit = new Equipment(
     0,
     0,
     300,
+    0,
+    0,
     0,
     0,
     0
@@ -1142,7 +1200,7 @@ const PensalirBattleHelm = new Equipment(
   true,
   true,
   new EffectStats(
-    16,  
+    16,
     10,
     0,
     0,
@@ -1160,6 +1218,8 @@ const PensalirBattleHelm = new Equipment(
     0,
     0,
     225,
+    0,
+    0,
     0,
     0,
     0
@@ -1181,7 +1241,7 @@ const AmenoUzumesHelm = new Equipment(
   true,
   true,
   new EffectStats(
-    0,  
+    0,
     0,
     36,
     36,
@@ -1199,6 +1259,8 @@ const AmenoUzumesHelm = new Equipment(
     0,
     0,
     190,
+    0,
+    0,
     0,
     0,
     0
@@ -1220,7 +1282,7 @@ const PensalirSentinelGloves = new Equipment(
   true,
   true,
   new EffectStats(
-    10,  
+    10,
     11,
     0,
     0,
@@ -1238,6 +1300,8 @@ const PensalirSentinelGloves = new Equipment(
     0,
     0,
     50,
+    0,
+    0,
     0,
     0,
     0
@@ -1259,7 +1323,7 @@ const OyamatsumisHelm = new Equipment(
   true,
   true,
   new EffectStats(
-    36,  
+    36,
     36,
     0,
     0,
@@ -1277,6 +1341,8 @@ const OyamatsumisHelm = new Equipment(
     0,
     0,
     333,
+    0,
+    0,
     0,
     0,
     0
@@ -1298,7 +1364,7 @@ const TrixterDunwitchPants = new Equipment(
   true,
   true,
   new EffectStats(
-    0,  
+    0,
     0,
     30,
     30,
@@ -1316,7 +1382,9 @@ const TrixterDunwitchPants = new Equipment(
     0,
     0,
     120,
+    0,
     5,
+    0,
     0,
     0
   ),
@@ -1337,7 +1405,7 @@ const TrixterWandererPants = new Equipment(
   true,
   true,
   new EffectStats(
-    30,  
+    30,
     30,
     0,
     0,
@@ -1355,7 +1423,9 @@ const TrixterWandererPants = new Equipment(
     0,
     0,
     135,
+    0,
     5,
+    0,
     0,
     0
   ),
@@ -1376,7 +1446,7 @@ const AmenoUzumesArmor = new Equipment(
   true,
   true,
   new EffectStats(
-    0,  
+    0,
     0,
     43,
     43,
@@ -1394,6 +1464,8 @@ const AmenoUzumesArmor = new Equipment(
     0,
     0,
     245,
+    0,
+    0,
     0,
     0,
     0
@@ -1415,7 +1487,7 @@ const ArcaneUmbraMageSuit = new Equipment(
   true,
   true,
   new EffectStats(
-    0,  
+    0,
     0,
     85,
     85,
@@ -1433,7 +1505,9 @@ const ArcaneUmbraMageSuit = new Equipment(
     0,
     0,
     500,
+    0,
     10,
+    0,
     0,
     0
   ),
@@ -1454,7 +1528,7 @@ const PensalirChaserGloves = new Equipment(
   true,
   true,
   new EffectStats(
-    0,  
+    0,
     11,
     0,
     11,
@@ -1472,6 +1546,8 @@ const PensalirChaserGloves = new Equipment(
     0,
     0,
     50,
+    0,
+    0,
     0,
     0,
     0
@@ -1493,7 +1569,7 @@ const AbsoLabBanditShoes = new Equipment(
   true,
   true,
   new EffectStats(
-    0,  
+    0,
     20,
     0,
     20,
@@ -1511,6 +1587,8 @@ const AbsoLabBanditShoes = new Equipment(
     0,
     0,
     150,
+    0,
+    0,
     0,
     0,
     0
@@ -1532,7 +1610,7 @@ const SusanoosArmor = new Equipment(
   true,
   true,
   new EffectStats(
-    43,  
+    43,
     43,
     0,
     0,
@@ -1550,6 +1628,8 @@ const SusanoosArmor = new Equipment(
     0,
     0,
     270,
+    0,
+    0,
     0,
     0,
     0
@@ -1571,7 +1651,7 @@ const PensalirMageBoots = new Equipment(
   true,
   true,
   new EffectStats(
-    0,  
+    0,
     0,
     11,
     10,
@@ -1589,6 +1669,8 @@ const PensalirMageBoots = new Equipment(
     0,
     0,
     50,
+    0,
+    0,
     0,
     0,
     0
@@ -1610,7 +1692,7 @@ const ArcaneUmbraThiefGloves = new Equipment(
   true,
   true,
   new EffectStats(
-    0,  
+    0,
     40,
     0,
     40,
@@ -1628,6 +1710,8 @@ const ArcaneUmbraThiefGloves = new Equipment(
     0,
     0,
     250,
+    0,
+    0,
     0,
     0,
     0
@@ -1649,7 +1733,7 @@ const ArcaneUmbraArcherCape = new Equipment(
   true,
   true,
   new EffectStats(
-    35,  
+    35,
     35,
     35,
     35,
@@ -1667,6 +1751,8 @@ const ArcaneUmbraArcherCape = new Equipment(
     0,
     0,
     450,
+    0,
+    0,
     0,
     0,
     0
@@ -1688,7 +1774,7 @@ const AbsoLabKnightSuit = new Equipment(
   true,
   true,
   new EffectStats(
-    65,  
+    65,
     65,
     0,
     0,
@@ -1706,6 +1792,8 @@ const AbsoLabKnightSuit = new Equipment(
     0,
     0,
     300,
+    0,
+    0,
     0,
     0,
     0
@@ -1727,7 +1815,7 @@ const OyamatsumisShoes = new Equipment(
   true,
   true,
   new EffectStats(
-    21,  
+    21,
     21,
     0,
     0,
@@ -1745,6 +1833,8 @@ const OyamatsumisShoes = new Equipment(
     0,
     0,
     93,
+    0,
+    0,
     0,
     0,
     0
@@ -1766,7 +1856,7 @@ const ArcaneUmbraMageHat = new Equipment(
   true,
   true,
   new EffectStats(
-    0,  
+    0,
     0,
     65,
     65,
@@ -1784,7 +1874,9 @@ const ArcaneUmbraMageHat = new Equipment(
     0,
     0,
     600,
+    0,
     15,
+    0,
     0,
     0
   ),
@@ -1805,7 +1897,7 @@ const ArcaneUmbraThiefShoes = new Equipment(
   true,
   true,
   new EffectStats(
-    0,  
+    0,
     40,
     0,
     40,
@@ -1823,6 +1915,8 @@ const ArcaneUmbraThiefShoes = new Equipment(
     0,
     0,
     250,
+    0,
+    0,
     0,
     0,
     0
@@ -1844,7 +1938,7 @@ const EternalMagePants = new Equipment(
   true,
   true,
   new EffectStats(
-    0,  
+    0,
     0,
     50,
     50,
@@ -1862,7 +1956,9 @@ const EternalMagePants = new Equipment(
     0,
     0,
     325,
+    0,
     5,
+    0,
     0,
     0
   ),
@@ -1883,7 +1979,7 @@ const TsukuyomisArmor = new Equipment(
   true,
   true,
   new EffectStats(
-    0,  
+    0,
     43,
     0,
     43,
@@ -1901,6 +1997,8 @@ const TsukuyomisArmor = new Equipment(
     0,
     0,
     270,
+    0,
+    0,
     0,
     0,
     0
@@ -1922,7 +2020,7 @@ const PensalirMageRobe = new Equipment(
   true,
   true,
   new EffectStats(
-    0,  
+    0,
     0,
     20,
     20,
@@ -1940,6 +2038,8 @@ const PensalirMageRobe = new Equipment(
     0,
     0,
     150,
+    0,
+    0,
     0,
     0,
     0
@@ -1961,7 +2061,7 @@ const AbsoLabMageCape = new Equipment(
   true,
   true,
   new EffectStats(
-    15,  
+    15,
     15,
     15,
     15,
@@ -1979,6 +2079,8 @@ const AbsoLabMageCape = new Equipment(
     0,
     0,
     250,
+    0,
+    0,
     0,
     0,
     0
@@ -2000,7 +2102,7 @@ const PensalirBattleGloves = new Equipment(
   true,
   true,
   new EffectStats(
-    11,  
+    11,
     10,
     0,
     0,
@@ -2018,6 +2120,8 @@ const PensalirBattleGloves = new Equipment(
     0,
     0,
     65,
+    0,
+    0,
     0,
     0,
     0
@@ -2039,7 +2143,7 @@ const SusanoosHelm = new Equipment(
   true,
   true,
   new EffectStats(
-    36,  
+    36,
     36,
     0,
     0,
@@ -2057,6 +2161,8 @@ const SusanoosHelm = new Equipment(
     0,
     0,
     333,
+    0,
+    0,
     0,
     0,
     0
@@ -2078,7 +2184,7 @@ const PensalirBattleCape = new Equipment(
   true,
   true,
   new EffectStats(
-    4,  
+    4,
     4,
     4,
     4,
@@ -2096,6 +2202,8 @@ const PensalirBattleCape = new Equipment(
     0,
     0,
     150,
+    0,
+    0,
     0,
     0,
     0
@@ -2117,7 +2225,7 @@ const EternalKnightPants = new Equipment(
   true,
   true,
   new EffectStats(
-    50,  
+    50,
     50,
     0,
     0,
@@ -2135,7 +2243,9 @@ const EternalKnightPants = new Equipment(
     0,
     0,
     325,
+    0,
     5,
+    0,
     0,
     0
   ),
@@ -2156,7 +2266,7 @@ const PensalirSentinelSuit = new Equipment(
   true,
   true,
   new EffectStats(
-    18,  
+    18,
     20,
     0,
     0,
@@ -2174,6 +2284,8 @@ const PensalirSentinelSuit = new Equipment(
     0,
     0,
     180,
+    0,
+    0,
     0,
     0,
     0
@@ -2195,7 +2307,7 @@ const ArcaneUmbraThiefCape = new Equipment(
   true,
   true,
   new EffectStats(
-    35,  
+    35,
     35,
     35,
     35,
@@ -2213,6 +2325,8 @@ const ArcaneUmbraThiefCape = new Equipment(
     0,
     0,
     450,
+    0,
+    0,
     0,
     0,
     0
@@ -2234,7 +2348,7 @@ const ArcaneUmbraKnightShoes = new Equipment(
   true,
   true,
   new EffectStats(
-    40,  
+    40,
     40,
     0,
     0,
@@ -2252,6 +2366,8 @@ const ArcaneUmbraKnightShoes = new Equipment(
     0,
     0,
     250,
+    0,
+    0,
     0,
     0,
     0
@@ -2273,7 +2389,7 @@ const PensalirSentinelBoots = new Equipment(
   true,
   true,
   new EffectStats(
-    9,  
+    9,
     10,
     0,
     0,
@@ -2291,6 +2407,8 @@ const PensalirSentinelBoots = new Equipment(
     0,
     0,
     80,
+    0,
+    0,
     0,
     0,
     0
@@ -2312,7 +2430,7 @@ const ArcaneUmbraThiefSuit = new Equipment(
   true,
   true,
   new EffectStats(
-    0,  
+    0,
     85,
     0,
     85,
@@ -2330,7 +2448,9 @@ const ArcaneUmbraThiefSuit = new Equipment(
     0,
     0,
     500,
+    0,
     10,
+    0,
     0,
     0
   ),
@@ -2351,7 +2471,7 @@ const AbsoLabArcherHood = new Equipment(
   true,
   true,
   new EffectStats(
-    45,  
+    45,
     45,
     0,
     0,
@@ -2369,7 +2489,9 @@ const AbsoLabArcherHood = new Equipment(
     0,
     0,
     400,
+    0,
     10,
+    0,
     0,
     0
   ),
@@ -2390,7 +2512,7 @@ const ArcaneUmbraMageGloves = new Equipment(
   true,
   true,
   new EffectStats(
-    0,  
+    0,
     0,
     40,
     40,
@@ -2408,6 +2530,8 @@ const ArcaneUmbraMageGloves = new Equipment(
     0,
     0,
     250,
+    0,
+    0,
     0,
     0,
     0
@@ -2429,7 +2553,7 @@ const ArcaneUmbraKnightGloves = new Equipment(
   true,
   true,
   new EffectStats(
-    40,  
+    40,
     40,
     0,
     0,
@@ -2447,6 +2571,8 @@ const ArcaneUmbraKnightGloves = new Equipment(
     0,
     0,
     250,
+    0,
+    0,
     0,
     0,
     0
@@ -2468,7 +2594,7 @@ const OyamatsumisGloves = new Equipment(
   true,
   true,
   new EffectStats(
-    21,  
+    21,
     21,
     0,
     0,
@@ -2486,6 +2612,8 @@ const OyamatsumisGloves = new Equipment(
     0,
     0,
     52,
+    0,
+    0,
     0,
     0,
     0
@@ -2507,7 +2635,7 @@ const PensalirMageCape = new Equipment(
   true,
   true,
   new EffectStats(
-    4,  
+    4,
     4,
     4,
     4,
@@ -2525,6 +2653,8 @@ const PensalirMageCape = new Equipment(
     0,
     0,
     150,
+    0,
+    0,
     0,
     0,
     0
@@ -2546,7 +2676,7 @@ const EternalArcherHat = new Equipment(
   true,
   true,
   new EffectStats(
-    80,  
+    80,
     80,
     0,
     0,
@@ -2564,7 +2694,9 @@ const EternalArcherHat = new Equipment(
     0,
     0,
     750,
+    0,
     15,
+    0,
     0,
     0
   ),
@@ -2585,7 +2717,7 @@ const TsukuyomisCape = new Equipment(
   true,
   true,
   new EffectStats(
-    0,  
+    0,
     10,
     0,
     10,
@@ -2603,6 +2735,8 @@ const TsukuyomisCape = new Equipment(
     0,
     0,
     198,
+    0,
+    0,
     0,
     0,
     0
@@ -2624,7 +2758,7 @@ const EternalKnightArmor = new Equipment(
   true,
   true,
   new EffectStats(
-    50,  
+    50,
     50,
     0,
     0,
@@ -2642,7 +2776,9 @@ const EternalKnightArmor = new Equipment(
     0,
     0,
     325,
+    0,
     5,
+    0,
     0,
     0
   ),
@@ -2663,7 +2799,7 @@ const RoyalDunwitchHat = new Equipment(
   true,
   true,
   new EffectStats(
-    0,  
+    0,
     0,
     40,
     40,
@@ -2681,7 +2817,9 @@ const RoyalDunwitchHat = new Equipment(
     0,
     0,
     180,
+    0,
     10,
+    0,
     0,
     0
   ),
@@ -2702,7 +2840,7 @@ const ArcaneUmbraKnightHat = new Equipment(
   true,
   true,
   new EffectStats(
-    65,  
+    65,
     65,
     0,
     0,
@@ -2720,7 +2858,9 @@ const ArcaneUmbraKnightHat = new Equipment(
     0,
     0,
     600,
+    0,
     15,
+    0,
     0,
     0
   ),
@@ -2741,7 +2881,7 @@ const OyamatsumisArmor = new Equipment(
   true,
   true,
   new EffectStats(
-    43,  
+    43,
     43,
     0,
     0,
@@ -2759,6 +2899,8 @@ const OyamatsumisArmor = new Equipment(
     0,
     0,
     270,
+    0,
+    0,
     0,
     0,
     0
@@ -2780,7 +2922,7 @@ const ArcaneUmbraThiefHat = new Equipment(
   true,
   true,
   new EffectStats(
-    0,  
+    0,
     65,
     0,
     65,
@@ -2798,7 +2940,9 @@ const ArcaneUmbraThiefHat = new Equipment(
     0,
     0,
     600,
+    0,
     15,
+    0,
     0,
     0
   ),
@@ -2819,7 +2963,7 @@ const OyamatsumisCape = new Equipment(
   true,
   true,
   new EffectStats(
-    10,  
+    10,
     10,
     0,
     0,
@@ -2837,6 +2981,8 @@ const OyamatsumisCape = new Equipment(
     0,
     0,
     198,
+    0,
+    0,
     0,
     0,
     0
@@ -2858,7 +3004,7 @@ const EternalPirateHat = new Equipment(
   true,
   true,
   new EffectStats(
-    80,  
+    80,
     80,
     0,
     0,
@@ -2876,7 +3022,9 @@ const EternalPirateHat = new Equipment(
     0,
     0,
     750,
+    0,
     15,
+    0,
     0,
     0
   ),
@@ -2897,7 +3045,7 @@ const AbsoLabPirateGloves = new Equipment(
   true,
   true,
   new EffectStats(
-    20,  
+    20,
     20,
     0,
     0,
@@ -2915,6 +3063,8 @@ const AbsoLabPirateGloves = new Equipment(
     0,
     0,
     150,
+    0,
+    0,
     0,
     0,
     0
@@ -2936,7 +3086,7 @@ const TrixterAssassinPants = new Equipment(
   true,
   true,
   new EffectStats(
-    0,  
+    0,
     30,
     0,
     30,
@@ -2954,7 +3104,9 @@ const TrixterAssassinPants = new Equipment(
     0,
     0,
     135,
+    0,
     5,
+    0,
     0,
     0
   ),
@@ -2975,7 +3127,7 @@ const AbsoLabArcherCape = new Equipment(
   true,
   true,
   new EffectStats(
-    15,  
+    15,
     15,
     15,
     15,
@@ -2993,6 +3145,8 @@ const AbsoLabArcherCape = new Equipment(
     0,
     0,
     250,
+    0,
+    0,
     0,
     0,
     0
@@ -3014,7 +3168,7 @@ const ArcaneUmbraPirateShoes = new Equipment(
   true,
   true,
   new EffectStats(
-    40,  
+    40,
     40,
     0,
     0,
@@ -3032,6 +3186,8 @@ const ArcaneUmbraPirateShoes = new Equipment(
     0,
     0,
     250,
+    0,
+    0,
     0,
     0,
     0
@@ -3053,7 +3209,7 @@ const SusanoosCape = new Equipment(
   true,
   true,
   new EffectStats(
-    10,  
+    10,
     10,
     0,
     0,
@@ -3071,6 +3227,8 @@ const SusanoosCape = new Equipment(
     0,
     0,
     198,
+    0,
+    0,
     0,
     0,
     0
@@ -3092,7 +3250,7 @@ const ArcaneUmbraArcherGloves = new Equipment(
   true,
   true,
   new EffectStats(
-    40,  
+    40,
     40,
     0,
     0,
@@ -3110,6 +3268,8 @@ const ArcaneUmbraArcherGloves = new Equipment(
     0,
     0,
     250,
+    0,
+    0,
     0,
     0,
     0
@@ -3131,7 +3291,7 @@ const EagleEyeRangerCowl = new Equipment(
   true,
   true,
   new EffectStats(
-    30,  
+    30,
     30,
     0,
     0,
@@ -3149,7 +3309,9 @@ const EagleEyeRangerCowl = new Equipment(
     0,
     0,
     135,
+    0,
     5,
+    0,
     0,
     0
   ),
@@ -3170,7 +3332,7 @@ const AbsoLabArcherGloves = new Equipment(
   true,
   true,
   new EffectStats(
-    20,  
+    20,
     20,
     0,
     0,
@@ -3188,6 +3350,8 @@ const AbsoLabArcherGloves = new Equipment(
     0,
     0,
     150,
+    0,
+    0,
     0,
     0,
     0
@@ -3209,7 +3373,7 @@ const ArcaneUmbraArcherHat = new Equipment(
   true,
   true,
   new EffectStats(
-    65,  
+    65,
     65,
     0,
     0,
@@ -3227,7 +3391,9 @@ const ArcaneUmbraArcherHat = new Equipment(
     0,
     0,
     600,
+    0,
     15,
+    0,
     0,
     0
   ),
@@ -3248,7 +3414,7 @@ const PensalirChaserBoots = new Equipment(
   true,
   true,
   new EffectStats(
-    0,  
+    0,
     10,
     0,
     10,
@@ -3266,6 +3432,8 @@ const PensalirChaserBoots = new Equipment(
     0,
     0,
     80,
+    0,
+    0,
     0,
     0,
     0
@@ -3287,7 +3455,7 @@ const PensalirBattleBoots = new Equipment(
   true,
   true,
   new EffectStats(
-    15,  
+    15,
     9,
     0,
     0,
@@ -3305,6 +3473,8 @@ const PensalirBattleBoots = new Equipment(
     0,
     0,
     120,
+    0,
+    0,
     0,
     0,
     0
@@ -3326,7 +3496,7 @@ const RoyalWarriorHelm = new Equipment(
   true,
   true,
   new EffectStats(
-    40,  
+    40,
     40,
     0,
     0,
@@ -3344,7 +3514,9 @@ const RoyalWarriorHelm = new Equipment(
     0,
     0,
     390,
+    0,
     10,
+    0,
     0,
     0
   ),
@@ -3365,7 +3537,7 @@ const EternalPiratePants = new Equipment(
   true,
   true,
   new EffectStats(
-    50,  
+    50,
     50,
     0,
     0,
@@ -3383,7 +3555,9 @@ const EternalPiratePants = new Equipment(
     0,
     0,
     325,
+    0,
     5,
+    0,
     0,
     0
   ),
@@ -3404,7 +3578,7 @@ const AbsoLabPirateCape = new Equipment(
   true,
   true,
   new EffectStats(
-    15,  
+    15,
     15,
     15,
     15,
@@ -3422,6 +3596,8 @@ const AbsoLabPirateCape = new Equipment(
     0,
     0,
     250,
+    0,
+    0,
     0,
     0,
     0
@@ -3443,7 +3619,7 @@ const AmenoUzumesShoes = new Equipment(
   true,
   true,
   new EffectStats(
-    0,  
+    0,
     0,
     21,
     21,
@@ -3461,6 +3637,8 @@ const AmenoUzumesShoes = new Equipment(
     0,
     0,
     52,
+    0,
+    0,
     0,
     0,
     0
@@ -3482,7 +3660,7 @@ const AbsoLabMageSuit = new Equipment(
   true,
   true,
   new EffectStats(
-    0,  
+    0,
     0,
     65,
     65,
@@ -3500,6 +3678,8 @@ const AbsoLabMageSuit = new Equipment(
     0,
     0,
     300,
+    0,
+    0,
     0,
     0,
     0
@@ -3521,7 +3701,7 @@ const PensalirSkipperCape = new Equipment(
   true,
   true,
   new EffectStats(
-    4,  
+    4,
     4,
     4,
     4,
@@ -3539,6 +3719,8 @@ const PensalirSkipperCape = new Equipment(
     0,
     0,
     150,
+    0,
+    0,
     0,
     0,
     0
@@ -3560,7 +3742,7 @@ const EternalThiefPants = new Equipment(
   true,
   true,
   new EffectStats(
-    0,  
+    0,
     50,
     0,
     50,
@@ -3578,7 +3760,9 @@ const EternalThiefPants = new Equipment(
     0,
     0,
     325,
+    0,
     5,
+    0,
     0,
     0
   ),
@@ -3599,7 +3783,7 @@ const EagleEyeWandererCoat = new Equipment(
   true,
   true,
   new EffectStats(
-    30,  
+    30,
     30,
     0,
     0,
@@ -3617,7 +3801,9 @@ const EagleEyeWandererCoat = new Equipment(
     0,
     0,
     135,
+    0,
     5,
+    0,
     0,
     0
   ),
@@ -3638,7 +3824,7 @@ const ArcaneUmbraMageCape = new Equipment(
   true,
   true,
   new EffectStats(
-    35,  
+    35,
     35,
     35,
     35,
@@ -3656,6 +3842,8 @@ const ArcaneUmbraMageCape = new Equipment(
     0,
     0,
     450,
+    0,
+    0,
     0,
     0,
     0
@@ -3677,7 +3865,7 @@ const EternalPirateCoat = new Equipment(
   true,
   true,
   new EffectStats(
-    50,  
+    50,
     50,
     0,
     0,
@@ -3695,7 +3883,9 @@ const EternalPirateCoat = new Equipment(
     0,
     0,
     325,
+    0,
     5,
+    0,
     0,
     0
   ),
@@ -3716,7 +3906,7 @@ const AbsoLabArcherSuit = new Equipment(
   true,
   true,
   new EffectStats(
-    65,  
+    65,
     65,
     0,
     0,
@@ -3734,6 +3924,8 @@ const AbsoLabArcherSuit = new Equipment(
     0,
     0,
     300,
+    0,
+    0,
     0,
     0,
     0
@@ -3755,7 +3947,7 @@ const EagleEyeDunwitchRobe = new Equipment(
   true,
   true,
   new EffectStats(
-    0,  
+    0,
     0,
     30,
     30,
@@ -3773,7 +3965,9 @@ const EagleEyeDunwitchRobe = new Equipment(
     0,
     0,
     120,
+    0,
     5,
+    0,
     0,
     0
   ),
@@ -3794,7 +3988,7 @@ const ArcaneUmbraPirateSuit = new Equipment(
   true,
   true,
   new EffectStats(
-    85,  
+    85,
     85,
     0,
     0,
@@ -3812,7 +4006,9 @@ const ArcaneUmbraPirateSuit = new Equipment(
     0,
     0,
     500,
+    0,
     10,
+    0,
     0,
     0
   ),
@@ -3833,7 +4029,7 @@ const AbsoLabKnightShoes = new Equipment(
   true,
   true,
   new EffectStats(
-    20,  
+    20,
     20,
     0,
     0,
@@ -3851,6 +4047,8 @@ const AbsoLabKnightShoes = new Equipment(
     0,
     0,
     150,
+    0,
+    0,
     0,
     0,
     0
@@ -3872,7 +4070,7 @@ const PensalirChaserHat = new Equipment(
   true,
   true,
   new EffectStats(
-    0,  
+    0,
     15,
     0,
     15,
@@ -3890,6 +4088,8 @@ const PensalirChaserHat = new Equipment(
     0,
     0,
     165,
+    0,
+    0,
     0,
     0,
     0
@@ -3911,7 +4111,7 @@ const ArcaneUmbraPirateCape = new Equipment(
   true,
   true,
   new EffectStats(
-    35,  
+    35,
     35,
     35,
     35,
@@ -3929,6 +4129,8 @@ const ArcaneUmbraPirateCape = new Equipment(
     0,
     0,
     450,
+    0,
+    0,
     0,
     0,
     0
@@ -3950,7 +4152,7 @@ const EagleEyeWarriorArmor = new Equipment(
   true,
   true,
   new EffectStats(
-    30,  
+    30,
     30,
     0,
     0,
@@ -3968,7 +4170,9 @@ const EagleEyeWarriorArmor = new Equipment(
     0,
     0,
     210,
+    0,
     5,
+    0,
     0,
     0
   ),
@@ -3989,7 +4193,7 @@ const AbsoLabKnightGloves = new Equipment(
   true,
   true,
   new EffectStats(
-    20,  
+    20,
     20,
     0,
     0,
@@ -4007,6 +4211,8 @@ const AbsoLabKnightGloves = new Equipment(
     0,
     0,
     150,
+    0,
+    0,
     0,
     0,
     0
@@ -4028,7 +4234,7 @@ const ArcaneUmbraPirateGloves = new Equipment(
   true,
   true,
   new EffectStats(
-    40,  
+    40,
     40,
     0,
     0,
@@ -4046,6 +4252,8 @@ const ArcaneUmbraPirateGloves = new Equipment(
     0,
     0,
     250,
+    0,
+    0,
     0,
     0,
     0
@@ -4067,7 +4275,7 @@ const ArcaneUmbraKnightCape = new Equipment(
   true,
   true,
   new EffectStats(
-    35,  
+    35,
     35,
     35,
     35,
@@ -4085,6 +4293,8 @@ const ArcaneUmbraKnightCape = new Equipment(
     0,
     0,
     450,
+    0,
+    0,
     0,
     0,
     0
@@ -4106,7 +4316,7 @@ const AmenoUzumesGloves = new Equipment(
   true,
   true,
   new EffectStats(
-    0,  
+    0,
     0,
     21,
     21,
@@ -4124,6 +4334,8 @@ const AmenoUzumesGloves = new Equipment(
     0,
     0,
     20,
+    0,
+    0,
     0,
     0,
     0
@@ -4145,7 +4357,7 @@ const PensalirSentinelCap = new Equipment(
   true,
   true,
   new EffectStats(
-    15,  
+    15,
     16,
     0,
     0,
@@ -4163,6 +4375,8 @@ const PensalirSentinelCap = new Equipment(
     0,
     0,
     165,
+    0,
+    0,
     0,
     0,
     0
@@ -4184,7 +4398,7 @@ const AbsoLabBanditGloves = new Equipment(
   true,
   true,
   new EffectStats(
-    0,  
+    0,
     20,
     0,
     20,
@@ -4202,6 +4416,8 @@ const AbsoLabBanditGloves = new Equipment(
     0,
     0,
     150,
+    0,
+    0,
     0,
     0,
     0
@@ -4223,7 +4439,7 @@ const ArcaneUmbraMageShoes = new Equipment(
   true,
   true,
   new EffectStats(
-    0,  
+    0,
     0,
     40,
     40,
@@ -4241,6 +4457,8 @@ const ArcaneUmbraMageShoes = new Equipment(
     0,
     0,
     250,
+    0,
+    0,
     0,
     0,
     0
@@ -4262,7 +4480,7 @@ const AbsoLabBanditSuit = new Equipment(
   true,
   true,
   new EffectStats(
-    0,  
+    0,
     65,
     0,
     65,
@@ -4280,6 +4498,8 @@ const AbsoLabBanditSuit = new Equipment(
     0,
     0,
     300,
+    0,
+    0,
     0,
     0,
     0
@@ -4301,7 +4521,7 @@ const ArcaneUmbraPirateHat = new Equipment(
   true,
   true,
   new EffectStats(
-    65,  
+    65,
     65,
     0,
     0,
@@ -4319,7 +4539,9 @@ const ArcaneUmbraPirateHat = new Equipment(
     0,
     0,
     600,
+    0,
     15,
+    0,
     0,
     0
   ),
@@ -4340,7 +4562,7 @@ const SusanoosGloves = new Equipment(
   true,
   true,
   new EffectStats(
-    21,  
+    21,
     21,
     0,
     0,
@@ -4358,6 +4580,8 @@ const SusanoosGloves = new Equipment(
     0,
     0,
     52,
+    0,
+    0,
     0,
     0,
     0
@@ -4379,7 +4603,7 @@ const PensalirChaserCape = new Equipment(
   true,
   true,
   new EffectStats(
-    4,  
+    4,
     4,
     4,
     4,
@@ -4397,6 +4621,8 @@ const PensalirChaserCape = new Equipment(
     0,
     0,
     150,
+    0,
+    0,
     0,
     0,
     0
@@ -4418,7 +4644,7 @@ const TrixterRangerPants = new Equipment(
   true,
   true,
   new EffectStats(
-    30,  
+    30,
     30,
     0,
     0,
@@ -4436,7 +4662,9 @@ const TrixterRangerPants = new Equipment(
     0,
     0,
     135,
+    0,
     5,
+    0,
     0,
     0
   ),
@@ -4457,7 +4685,7 @@ const AbsoLabMageCrown = new Equipment(
   true,
   true,
   new EffectStats(
-    0,  
+    0,
     0,
     45,
     45,
@@ -4475,7 +4703,9 @@ const AbsoLabMageCrown = new Equipment(
     0,
     0,
     400,
+    0,
     10,
+    0,
     0,
     0
   ),
@@ -4496,7 +4726,7 @@ const EternalArcherHood = new Equipment(
   true,
   true,
   new EffectStats(
-    50,  
+    50,
     50,
     0,
     0,
@@ -4514,7 +4744,9 @@ const EternalArcherHood = new Equipment(
     0,
     0,
     325,
+    0,
     5,
+    0,
     0,
     0
   ),
@@ -4535,7 +4767,7 @@ const EternalMageHat = new Equipment(
   true,
   true,
   new EffectStats(
-    0,  
+    0,
     0,
     80,
     80,
@@ -4553,7 +4785,9 @@ const EternalMageHat = new Equipment(
     0,
     0,
     750,
+    0,
     15,
+    0,
     0,
     0
   ),
@@ -4574,7 +4808,7 @@ const PensalirSkipperHat = new Equipment(
   true,
   true,
   new EffectStats(
-    15,  
+    15,
     15,
     0,
     0,
@@ -4592,6 +4826,8 @@ const PensalirSkipperHat = new Equipment(
     0,
     0,
     165,
+    0,
+    0,
     0,
     0,
     0
@@ -4613,7 +4849,7 @@ const PensalirSkipperBoots = new Equipment(
   true,
   true,
   new EffectStats(
-    10,  
+    10,
     10,
     0,
     0,
@@ -4631,6 +4867,8 @@ const PensalirSkipperBoots = new Equipment(
     0,
     0,
     80,
+    0,
+    0,
     0,
     0,
     0
@@ -4652,7 +4890,7 @@ const AbsoLabPirateFedora = new Equipment(
   true,
   true,
   new EffectStats(
-    45,  
+    45,
     45,
     0,
     0,
@@ -4670,7 +4908,9 @@ const AbsoLabPirateFedora = new Equipment(
     0,
     0,
     400,
+    0,
     10,
+    0,
     0,
     0
   ),
@@ -4691,7 +4931,7 @@ const AmenoUzumesCape = new Equipment(
   true,
   true,
   new EffectStats(
-    0,  
+    0,
     0,
     10,
     10,
@@ -4709,6 +4949,8 @@ const AmenoUzumesCape = new Equipment(
     0,
     0,
     124,
+    0,
+    0,
     0,
     0,
     0
@@ -4730,7 +4972,7 @@ const EternalThiefShirt = new Equipment(
   true,
   true,
   new EffectStats(
-    0,  
+    0,
     50,
     0,
     50,
@@ -4748,7 +4990,9 @@ const EternalThiefShirt = new Equipment(
     0,
     0,
     325,
+    0,
     5,
+    0,
     0,
     0
   ),
@@ -4769,7 +5013,7 @@ const PensalirBattleMail = new Equipment(
   true,
   true,
   new EffectStats(
-    20,  
+    20,
     20,
     0,
     0,
@@ -4787,6 +5031,8 @@ const PensalirBattleMail = new Equipment(
     0,
     0,
     325,
+    0,
+    0,
     0,
     0,
     0
@@ -4808,7 +5054,7 @@ const RoyalRangerBeret = new Equipment(
   true,
   true,
   new EffectStats(
-    40,  
+    40,
     40,
     0,
     0,
@@ -4826,7 +5072,9 @@ const RoyalRangerBeret = new Equipment(
     0,
     0,
     300,
+    0,
     10,
+    0,
     0,
     0
   ),
@@ -4847,7 +5095,7 @@ const SusanoosShoes = new Equipment(
   true,
   true,
   new EffectStats(
-    21,  
+    21,
     21,
     0,
     0,
@@ -4865,6 +5113,8 @@ const SusanoosShoes = new Equipment(
     0,
     0,
     93,
+    0,
+    0,
     0,
     0,
     0
@@ -4886,7 +5136,7 @@ const AbsoLabPirateShoes = new Equipment(
   true,
   true,
   new EffectStats(
-    20,  
+    20,
     20,
     0,
     0,
@@ -4904,6 +5154,8 @@ const AbsoLabPirateShoes = new Equipment(
     0,
     0,
     150,
+    0,
+    0,
     0,
     0,
     0
