@@ -1,5 +1,4 @@
 import styled from "@emotion/styled/macro"
-import { Character } from "models/Character"
 import { ApplyEquipment, Equipment } from "models/Equipment"
 import { Effect } from "models/BuffEffect"
 import React, { useState } from "react"
@@ -10,9 +9,8 @@ import { SubWeapons } from "data/equipments/SecondaryWeapon"
 import { Bottoms, Capes, Gloves, Hats, Overalls, Shoes, Tops } from "data/equipments/Armor"
 import { Weapons } from "data/equipments/Weapon"
 import { EquipmentCard } from "./components/EquipmentCard"
-import { ApplyEffect, StatsDetail } from "models/StatsDetail"
+import { StatsDetail } from "models/StatsDetail"
 import { EquipSets } from "data/sets/Sets"
-import { FlameInputDialog } from "./components/FlameDialog"
 
 const StatRow = styled.tr``
 const StatName = styled.td``
@@ -199,7 +197,7 @@ export const Page: React.FC = ({ }) => {
   }
 
   sets.forEach((count, set) => {
-    stats = EquipSets.get(set)!.apply(stats, count)
+    stats = EquipSets.get(set)?.apply(stats, count) ?? stats
   })
 
   for(const buff of buffs) {

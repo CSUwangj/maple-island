@@ -1,10 +1,8 @@
 import _ from 'lodash'
-import { eq } from 'lodash'
 import { EffectStats } from 'models/EffectStats'
 import { Equipment } from 'models/Equipment'
 import { ConfirmDialog, ConfirmDialogProps } from 'primereact/confirmdialog'
 import { InputNumber } from 'primereact/inputnumber'
-import { InputText } from 'primereact/inputtext'
 import React, { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 
