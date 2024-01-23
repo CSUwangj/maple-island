@@ -11,6 +11,7 @@ import { Splitter, SplitterPanel } from 'primereact/splitter'
 import { FlameInputDialog } from './FlameInputDialog'
 import _ from 'lodash'
 import { PotentialSelectDialog } from './PotentialSelectDialog'
+import { SoulInputDialog } from './SoulInputDialog'
 
 interface Props {
   equipment: Equipment | undefined
@@ -41,12 +42,14 @@ export const EquipmentCard: React.FC<Props> = ({equipment, setEquipment, name, o
     maxSF = 8
   }
   const statsSummary = equipment!.statsSummary
+  const [ soulDialogVisible, setSoulDialogVisible ] = useState(false)
   const [ flameDialogVisible, setFlameDialogVisible ] = useState(false)
   const [ potentialDialogVisible, setPotentialDialogVisible ] = useState(false)
 
   return <>
     <FlameInputDialog header={`Set ${equipment!.name}'s flame`} onHide={() => setFlameDialogVisible(false)} visible={flameDialogVisible} equipment={equipment!} setEquipment={setEquipment} />
     <PotentialSelectDialog header={`Set ${equipment!.name}'s potential`} onHide={() => setPotentialDialogVisible(false)} visible={potentialDialogVisible} equipment={equipment!} setEquipment={setEquipment} />
+    <SoulInputDialog header={`Set ${equipment!.name}'s soul`} onHide={() => setSoulDialogVisible(false)} visible={soulDialogVisible} equipment={equipment!} setEquipment={setEquipment} />
     <Fieldset legend={name} className='card flex flex-wrap gap-3 p-fluid'>
       <Splitter>
         <SplitterPanel className='flex flex-column'>
@@ -67,6 +70,11 @@ export const EquipmentCard: React.FC<Props> = ({equipment, setEquipment, name, o
             <div className='flex-auto'>
               <Button disabled={!equipment!.canFlame} onClick={() => setFlameDialogVisible(true)}>{t('calc.set-flame')}</Button>
             </div>
+            {
+              options[0].slot === 'weapon' ? <div className='flex-auto'>
+                <Button onClick={() => setSoulDialogVisible(true)}>{t('calc.set-soul')}</Button>
+              </div> : <></>
+            }
           </div>
         </SplitterPanel>
         <SplitterPanel>

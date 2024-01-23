@@ -136,7 +136,9 @@ i18n
             'set-potential': 'Set Potential',
             'set-flame': 'Set Flame',
             'star-force': 'Star Force',
+            'set-soul': 'Set Soul',
             'asp': 'All Stats',
+            'soul-att-tip': 'don\'t forget the att/matt come with soul charge',
           }
         }
       }

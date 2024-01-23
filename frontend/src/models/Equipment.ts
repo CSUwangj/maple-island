@@ -47,7 +47,7 @@ export class Equipment{
     canPot = false,
     canFlame = false,
     stats: EffectStats = new EffectStats(),
-    slot: EquipType = 'weapon',
+    slot: EquipType = 'cape',
     flame: EffectStats = new EffectStats(),
     soul: EffectStats = new EffectStats(),
     potential: Potential = [],
@@ -107,11 +107,11 @@ export class Equipment{
       this.slot === 'weapon' ? hmpAdd : 0,
       0,
       0,
-      attAdd,
-      mattAdd,
+      this.base.att !== 0 ? attAdd : 0,
+      this.base.matt !== 0 ? mattAdd : 0,
       0, 0,
       0, 0, 0, 0, 0,
-      defAdd
+      this.slot === 'weapon' ? 0 : defAdd
     )
     this.updateStatsSummary()
   }
@@ -132,7 +132,6 @@ export class Equipment{
 
   setPotential(potential: Potential) {
     this.potential = potential
-    console.log('set pot', potential)
     this.updateStatsSummary()
   }
 
