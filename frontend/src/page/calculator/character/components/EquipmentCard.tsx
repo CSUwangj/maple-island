@@ -12,8 +12,8 @@ import { FlameInputDialog } from './FlameDialog'
 import _ from 'lodash'
 
 interface Props {
-  equipment: Equipment
-  setEquipment: React.Dispatch<React.SetStateAction<Equipment>>
+  equipment: Equipment | undefined
+  setEquipment: React.Dispatch<React.SetStateAction<Equipment | undefined>>
   name: string
   options: Equipment[]
 }
@@ -28,41 +28,41 @@ const EquipmentOptionTemplate = (option: Equipment) => {
 export const EquipmentCard: React.FC<Props> = ({equipment, setEquipment, name, options}) => {
   const { t } = useTranslation()
   let maxSF = 5
-  if(equipment.level > 137) {
+  if(equipment!.level > 137) {
     maxSF = 25
-  } else if (equipment.level > 127) {
+  } else if (equipment!.level > 127) {
     maxSF = 20
-  } else if (equipment.level > 117) {
+  } else if (equipment!.level > 117) {
     maxSF = 15
-  } else if (equipment.level > 107) {
+  } else if (equipment!.level > 107) {
     maxSF = 10
-  } else if (equipment.level > 94) {
+  } else if (equipment!.level > 94) {
     maxSF = 8
   }
-  const statsSummary = equipment.statsSummary
+  const statsSummary = equipment!.statsSummary
   const [ flameDialogVisible, setFlameDialogVisible ] = useState(false)
 
   return <>
-    <FlameInputDialog header={`Set ${equipment.name}'s flame`} onHide={() => setFlameDialogVisible(false)} visible={flameDialogVisible} equipment={equipment} setEquipment={setEquipment} />
+    <FlameInputDialog header={`Set ${equipment!.name}'s flame`} onHide={() => setFlameDialogVisible(false)} visible={flameDialogVisible} equipment={equipment!} setEquipment={setEquipment} />
     <Fieldset legend={name} className='card flex flex-wrap gap-3 p-fluid'>
       <Splitter>
         <SplitterPanel className='flex flex-column'>
-          <img alt={equipment.name} src={`data:image/png;base64,${equipment.icon}`} style={{ width: '90px' }} />
-          <Dropdown value={equipment} filter placeholder={equipment.name} onChange={(e) => setEquipment(e.target.value)} options={options} optionLabel='name' itemTemplate={EquipmentOptionTemplate} />
+          <img alt={equipment!.name} src={`data:image/png;base64,${equipment!.icon}`} style={{ width: '90px' }} />
+          <Dropdown value={equipment} filter placeholder={equipment!.name} onChange={(e) => setEquipment(e.target.value)} options={options} optionLabel='name' itemTemplate={EquipmentOptionTemplate} />
           <div className="card flex flex-row flex-wrap gap-3 p-fluid">
             <div className='flex-auto'>
               <label htmlFor={`sf${name}`} className="font-bold block mb-2" >{t('calc.star-force')}</label>
-              <InputNumber disabled={!equipment.canSF} showButtons inputId={`sf${name}`} min={0} max={maxSF} maxFractionDigits={0} onValueChange={(e) => {
+              <InputNumber disabled={!equipment!.canSF} showButtons inputId={`sf${name}`} min={0} max={maxSF} maxFractionDigits={0} onValueChange={(e) => {
                 const newEquipment = _.cloneDeep(equipment)
-                newEquipment.applyStarForce(e.value??0)
+                newEquipment!.applyStarForce(e.value??0)
                 setEquipment(newEquipment)
               }}/>
             </div>
             <div className='flex-auto'>
-              <Button disabled={!equipment.canPot}>{t('calc.set-potential')}</Button>
+              <Button disabled={!equipment!.canPot}>{t('calc.set-potential')}</Button>
             </div>
             <div className='flex-auto'>
-              <Button disabled={!equipment.canFlame} onClick={() => {
+              <Button disabled={!equipment!.canFlame} onClick={() => {
                 setFlameDialogVisible(true)
               }}>{t('calc.set-flame')}</Button>
             </div>

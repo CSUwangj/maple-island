@@ -7,8 +7,8 @@ import React, { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 
 interface FlameDialogProps {
-  equipment: Equipment
-  setEquipment: React.Dispatch<React.SetStateAction<Equipment>>
+  equipment: Equipment | undefined
+  setEquipment: React.Dispatch<React.SetStateAction<Equipment | undefined>>
 }
 
 export const FlameInputDialog: React.FC<ConfirmDialogProps & FlameDialogProps> = ({equipment, setEquipment,...props}) => {
@@ -122,7 +122,7 @@ export const FlameInputDialog: React.FC<ConfirmDialogProps & FlameDialogProps> =
   </>
   const accept = () => {
     const newEquip = _.cloneDeep(equipment)
-    newEquip.setFlame(stats)
+    newEquip!.setFlame(stats)
     setEquipment(newEquip)
   }
 

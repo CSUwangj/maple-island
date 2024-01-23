@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-non-null-assertion */
 import styled from "@emotion/styled/macro"
 import { ApplyEquipment, Equipment } from "models/Equipment"
 import { Effect } from "models/BuffEffect"
@@ -11,6 +12,9 @@ import { Weapons } from "data/equipments/Weapon"
 import { EquipmentCard } from "./components/EquipmentCard"
 import { StatsDetail } from "models/StatsDetail"
 import { EquipSets } from "data/sets/Sets"
+import { useLocalStorage } from "react-use"
+import ESSerializer from 'esserializer'
+import { EffectStats } from "models/EffectStats"
 
 const StatRow = styled.tr``
 const StatName = styled.td``
@@ -74,8 +78,8 @@ const baseStats = (job: string, level: number) => {
   const finalMp = 0
   const finalAtt = 0
   const finalMatt = 0
-  const mastery = 0
-  const multiplier = 0
+  const mastery = 0.85
+  const multiplier = 1.35
   const percentStr = 0
   const percentDex = 0
   const percentInt = 0
@@ -90,7 +94,7 @@ const baseStats = (job: string, level: number) => {
   const bossDamage = 0
   const normalMonsterDamage = 0
   const critDamage = 0
-  const finalDamage = 0
+  const finalDamage = 100
   const ignoreElementResistence = 0
   const critRate = 0
   if(Warrior.has(job) || StrPirate.has(job)) {
@@ -177,23 +181,34 @@ const calcStats = (stats: StatsDetail) => {
 }
 
 export const Page: React.FC = ({ }) => {
-  const [ level, setLevel ] = useState(0)
-  const [ job, setJob ] = useState('Pathfinder')
+  const [ level, setLevel ] = useLocalStorage('calc.level', 10)
+  const [ job, setJob ] = useLocalStorage('calc.job', 'Pathfinder')
+  if(level === undefined) {
+    setLevel(10)
+  }
+  if(job === undefined) {
+    setJob('Pathfinder')
+  }
   const { t } = useTranslation()
   const [ buffs, setBuffs ] = useState<Effect[]>([])
   const equipments = EquipmentsOptions.map((e) => {
-    const [equipment, setEquipment] = useState(new Equipment(''))
+    const [equipment, setEquipment] = useLocalStorage(e.name, new Equipment(''), {
+      raw: false,
+      serializer: (equipment) => ESSerializer.serialize(equipment),
+      deserializer: (equipmentString) => ESSerializer.deserialize(equipmentString, [Equipment, EffectStats])
+    })
+    if(equipment === undefined) setEquipment(new Equipment(''))
     return {...e, equipment: equipment, setEquipment: setEquipment}
   })
 
   // pure stats
-  let stats = baseStats(job, level)
+  let stats = baseStats(job!, level!)
   const sets = new Map()
-  
+  console.log(equipments)
   for(const { equipment } of equipments) {
-    stats = ApplyEquipment(stats, equipment)
-    if(equipment.set === '') continue
-    sets.set(equipment.set, (sets.get(equipment.set) ?? 0) + 1)
+    stats = ApplyEquipment(stats, equipment!)
+    if(equipment!.set === '') continue
+    sets.set(equipment!.set, (sets.get(equipment!.set) ?? 0) + 1)
   }
 
   sets.forEach((count, set) => {
@@ -207,11 +222,11 @@ export const Page: React.FC = ({ }) => {
   const [str, dex, int, luk, hp, mp, att, matt] = calcStats(stats)
 
   // stat value
-  const statValue = calculateStatValue(str, dex, int, luk, hp, job)
+  const statValue = calculateStatValue(str, dex, int, luk, hp, job!)
   const upperActual = stats.multiplier * statValue * att / 100
   const lowerActual = stats.mastery * upperActual
-  const drMax = upperActual * (1 + stats.damage / 100) * (1 + stats.finalDamage / 100)
-  const drMin = lowerActual * (1 + stats.damage / 100) * (1 + stats.finalDamage / 100)
+  const drMax = upperActual * (1 + stats.damage / 100) * (stats.finalDamage / 100)
+  const drMin = lowerActual * (1 + stats.damage / 100) * (stats.finalDamage / 100)
   return <>
     <table>
       <tbody>
@@ -273,7 +288,7 @@ export const Page: React.FC = ({ }) => {
         </StatRow>
         <StatRow>
           <StatName>{t('calc.fd')}</StatName>
-          <StatVal>{stats.finalDamage}%</StatVal>
+          <StatVal>{stats.finalDamage - 100}%</StatVal>
         </StatRow>
         <StatRow>
           <StatName>{t('calc.ied')}</StatName>
@@ -301,7 +316,7 @@ export const Page: React.FC = ({ }) => {
         </StatRow>
         <StatRow>
           <StatName>{t('calc.sf')}</StatName>
-          <StatVal>{equipments.reduce((prev, current) => prev + current.equipment.starForce, 0)}%</StatVal>
+          <StatVal>{equipments.reduce((prev, current) => prev + current.equipment!.starForce, 0)}%</StatVal>
         </StatRow>
         <StatRow>
           <StatName>{t('calc.af')}</StatName>
@@ -316,7 +331,7 @@ export const Page: React.FC = ({ }) => {
     {
       equipments.map((equip) => <EquipmentCard
         key={equip.name} 
-        {...equip} 
+        {...equip}
       />)
     }
   </>
