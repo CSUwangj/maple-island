@@ -23,6 +23,7 @@ export class EffectStats {
   bossDamage: number
   normalDamage: number
   critDamage: number
+  finalDamage: number
 
   constructor(
     str = 0,
@@ -48,7 +49,8 @@ export class EffectStats {
     bossDamage = 0,
     normalDamage = 0,
     critDamage = 0,
-    critRate = 0
+    critRate = 0,
+    finalDamage = 0,
   ) {
     this.str = str
     this.dex = dex
@@ -74,6 +76,7 @@ export class EffectStats {
     this.normalDamage = normalDamage
     this.critDamage = critDamage
     this.critRate = critRate
+    this.finalDamage = finalDamage
   }
 
   add(stat: EffectStats): EffectStats {
@@ -99,7 +102,8 @@ export class EffectStats {
       this.ignoreEnemyDefence + stat.ignoreEnemyDefence,
       this.bossDamage + stat.bossDamage,
       this.critDamage + stat.critDamage,
-      this.critRate + stat.critRate
+      this.critRate + stat.critRate,
+      this.finalDamage * (100 + stat.finalDamage) / 100
     )
   }
 }

@@ -68,5 +68,6 @@ export const ApplyEffect = (init: StatsDetail, target: EffectStats) => {
     ignoreEnemyDefence: target.ignoreEnemyDefence * (1 - init.ignoreEnemyDefence / 100) + init.ignoreEnemyDefence,
     bossDamage: init.bossDamage + target.bossDamage,
     critDamage: init.critDamage + target.critDamage,
+    finalDamage: init.finalDamage * (100 + target.finalDamage) / 100
   }
 }

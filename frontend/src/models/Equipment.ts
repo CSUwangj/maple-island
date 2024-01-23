@@ -24,10 +24,11 @@ export class Equipment{
   flame: EffectStats
   soul: EffectStats
   sfStat: EffectStats
+  potential: EffectStats
+  statsSummary: EffectStats
   canSF: boolean
   canPot: boolean
   canFlame: boolean
-  potential: EffectStats
   starForce: number
   level: number
   special: boolean
@@ -67,6 +68,8 @@ export class Equipment{
     this.soul = soul
     this.potential = potential
     this.icon = icon
+    this.statsSummary = new EffectStats()
+    this.updateStatsSummary()
   }
 
   applyStarForce(starForce: number) {
@@ -110,23 +113,27 @@ export class Equipment{
       0, 0, 0, 0, 0,
       defAdd
     )
+    this.updateStatsSummary()
   }
 
   // @TODO: need to avoid recalculation
-  get statsSummary(): EffectStats {
-    return this.base.add(this.flame).add(this.soul).add(this.potential).add(this.sfStat)
+  updateStatsSummary() {
+    this.statsSummary = this.base.add(this.flame).add(this.soul).add(this.potential).add(this.sfStat)
   }
 
   setFlame(flame: EffectStats) {
     this.flame = flame
+    this.updateStatsSummary()
   }
 
   setPotential(potential: EffectStats) {
     this.potential = potential
+    this.updateStatsSummary()
   }
 
   setSoul(soul: EffectStats) {
     this.soul = soul
+    this.updateStatsSummary()
   }
 }
 
