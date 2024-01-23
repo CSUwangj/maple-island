@@ -71,7 +71,6 @@ export const Page: React.FC = () => {
   const [ listedCharacters, setListedCharacters ] = useState<CharacterModelProps[]>([])
   const moveChar = useCallback(
     (name: string, left: number, top: number) => {
-      console.log(left, top, name)
       setListedCharacters(
         listedCharacters.map((char) => char.name === name ? {...char, left, top} : char)
       )

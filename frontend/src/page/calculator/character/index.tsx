@@ -15,6 +15,7 @@ import { EquipSets } from "data/sets/Sets"
 import { useLocalStorage } from "react-use"
 import ESSerializer from 'esserializer'
 import { EffectStats } from "models/EffectStats"
+import { Line } from "data/potential"
 
 const StatRow = styled.tr``
 const StatName = styled.td``
@@ -195,7 +196,7 @@ export const Page: React.FC = ({ }) => {
     const [equipment, setEquipment] = useLocalStorage(e.name, new Equipment(''), {
       raw: false,
       serializer: (equipment) => ESSerializer.serialize(equipment),
-      deserializer: (equipmentString) => ESSerializer.deserialize(equipmentString, [Equipment, EffectStats])
+      deserializer: (equipmentString) => ESSerializer.deserialize(equipmentString, [Equipment, EffectStats, Line])
     })
     if(equipment === undefined) setEquipment(new Equipment(''))
     return {...e, equipment: equipment, setEquipment: setEquipment}
@@ -204,7 +205,6 @@ export const Page: React.FC = ({ }) => {
   // pure stats
   let stats = baseStats(job!, level!)
   const sets = new Map()
-  console.log(equipments)
   for(const { equipment } of equipments) {
     stats = ApplyEquipment(stats, equipment!)
     if(equipment!.set === '') continue

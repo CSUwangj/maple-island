@@ -1,3 +1,4 @@
+import { Potential } from "data/potential"
 import { EffectStats } from "./EffectStats"
 import { ApplyEffect, StatsDetail } from "./StatsDetail"
 
@@ -24,7 +25,7 @@ export class Equipment{
   flame: EffectStats
   soul: EffectStats
   sfStat: EffectStats
-  potential: EffectStats
+  potential: Potential
   statsSummary: EffectStats
   canSF: boolean
   canPot: boolean
@@ -49,7 +50,7 @@ export class Equipment{
     slot: EquipType = 'weapon',
     flame: EffectStats = new EffectStats(),
     soul: EffectStats = new EffectStats(),
-    potential: EffectStats = new EffectStats(),
+    potential: Potential = [],
     icon?: string
   ) {
     this.name = name
@@ -60,20 +61,19 @@ export class Equipment{
     this.canSF = canSF
     this.canPot = canPot
     this.canFlame = canFlame
-    this.sfStat = new EffectStats()
-    this.starForce = starForce
-    this.applyStarForce(starForce)
-    this.slot = slot
     this.flame = flame
     this.soul = soul
     this.potential = potential
+    this.slot = slot
     this.icon = icon
     this.statsSummary = new EffectStats()
-    this.updateStatsSummary()
+    this.starForce = starForce
+    this.sfStat = new EffectStats()
+    this.applyStarForce(starForce)
   }
 
   applyStarForce(starForce: number) {
-    if(starForce === 0) return new EffectStats()
+    if(starForce === 0) this.sfStat = new EffectStats()
     const StatStarForce = Math.min(22, starForce)
     const statAdd = StatStarForce < 6 ? starForce * 2 :
       StatStarForce < 16 ? starForce * 3 - 5 :
@@ -89,7 +89,7 @@ export class Equipment{
         HMPStarForce < 8 ? HMPStarForce * 15 - 40 :
           HMPStarForce < 10 ? HMPStarForce * 20 - 75 :
             HMPStarForce * 25 - 120
-    const defAdd = Array(starForce).fill(0).map(() => (1 + Math.floor(this.base.defence / 20))).reduce((s, i) => s + i)
+    const defAdd = Array(starForce).fill(0).map(() => (1 + Math.floor(this.base.defence / 20))).reduce((s, i) => s + i, 0)
     let attAdd = this.slot === 'weapon' ? Math.min(15, starForce) * (1 + Math.floor(this.base.att / 50)) : 0
     let mattAdd = this.slot === 'weapon' ? Math.min(15, starForce) * (1 + Math.floor(this.base.matt / 50)) : 0
     const levelRange = +(this.level > 137) + +(this.level > 149) + +(this.level > 159) + +(this.level > 199) + +(this.level > 249)
@@ -116,9 +116,13 @@ export class Equipment{
     this.updateStatsSummary()
   }
 
-  // @TODO: need to avoid recalculation
   updateStatsSummary() {
-    this.statsSummary = this.base.add(this.flame).add(this.soul).add(this.potential).add(this.sfStat)
+    console.log(this.flame)
+    console.log(this.soul)
+    console.log(this.potential)
+    console.log(this.sfStat)
+    this.statsSummary = this.base.add(this.flame).add(this.soul).add(this.potential.reduce((stats, line) => stats.add(line.stats), new EffectStats())).add(this.sfStat)
+    console.log(this.statsSummary)
   }
 
   setFlame(flame: EffectStats) {
@@ -126,8 +130,9 @@ export class Equipment{
     this.updateStatsSummary()
   }
 
-  setPotential(potential: EffectStats) {
+  setPotential(potential: Potential) {
     this.potential = potential
+    console.log('set pot', potential)
     this.updateStatsSummary()
   }
 

@@ -121,9 +121,9 @@ export const FlameInputDialog: React.FC<ConfirmDialogProps & FlameDialogProps> =
     </div>
   </>
   const accept = () => {
-    const newEquip = _.cloneDeep(equipment)
-    newEquip!.setFlame(stats)
-    setEquipment(newEquip)
+    const newEquipment = _.cloneDeep(equipment)
+    newEquipment!.setFlame(stats)
+    setEquipment(newEquipment)
   }
 
   return <ConfirmDialog modal={true} message={FlameInput} {...props} accept={accept} />

@@ -8,8 +8,9 @@ import { Button } from 'primereact/button'
 import { Fieldset } from 'primereact/fieldset'
 import { InputNumber } from 'primereact/inputnumber'
 import { Splitter, SplitterPanel } from 'primereact/splitter'
-import { FlameInputDialog } from './FlameDialog'
+import { FlameInputDialog } from './FlameInputDialog'
 import _ from 'lodash'
+import { PotentialSelectDialog } from './PotentialSelectDialog'
 
 interface Props {
   equipment: Equipment | undefined
@@ -41,9 +42,11 @@ export const EquipmentCard: React.FC<Props> = ({equipment, setEquipment, name, o
   }
   const statsSummary = equipment!.statsSummary
   const [ flameDialogVisible, setFlameDialogVisible ] = useState(false)
+  const [ potentialDialogVisible, setPotentialDialogVisible ] = useState(false)
 
   return <>
     <FlameInputDialog header={`Set ${equipment!.name}'s flame`} onHide={() => setFlameDialogVisible(false)} visible={flameDialogVisible} equipment={equipment!} setEquipment={setEquipment} />
+    <PotentialSelectDialog header={`Set ${equipment!.name}'s potential`} onHide={() => setPotentialDialogVisible(false)} visible={potentialDialogVisible} equipment={equipment!} setEquipment={setEquipment} />
     <Fieldset legend={name} className='card flex flex-wrap gap-3 p-fluid'>
       <Splitter>
         <SplitterPanel className='flex flex-column'>
@@ -52,19 +55,17 @@ export const EquipmentCard: React.FC<Props> = ({equipment, setEquipment, name, o
           <div className="card flex flex-row flex-wrap gap-3 p-fluid">
             <div className='flex-auto'>
               <label htmlFor={`sf${name}`} className="font-bold block mb-2" >{t('calc.star-force')}</label>
-              <InputNumber disabled={!equipment!.canSF} showButtons inputId={`sf${name}`} min={0} max={maxSF} maxFractionDigits={0} onValueChange={(e) => {
+              <InputNumber disabled={!equipment!.canSF} value={equipment?.starForce} showButtons inputId={`sf${name}`} min={0} max={maxSF} maxFractionDigits={0} onValueChange={(e) => {
                 const newEquipment = _.cloneDeep(equipment)
-                newEquipment!.applyStarForce(e.value??0)
+                newEquipment!.applyStarForce(e.value!)
                 setEquipment(newEquipment)
               }}/>
             </div>
             <div className='flex-auto'>
-              <Button disabled={!equipment!.canPot}>{t('calc.set-potential')}</Button>
+              <Button disabled={!equipment!.canPot} onClick={() => setPotentialDialogVisible(true)}>{t('calc.set-potential')}</Button>
             </div>
             <div className='flex-auto'>
-              <Button disabled={!equipment!.canFlame} onClick={() => {
-                setFlameDialogVisible(true)
-              }}>{t('calc.set-flame')}</Button>
+              <Button disabled={!equipment!.canFlame} onClick={() => setFlameDialogVisible(true)}>{t('calc.set-flame')}</Button>
             </div>
           </div>
         </SplitterPanel>
@@ -82,6 +83,10 @@ export const EquipmentCard: React.FC<Props> = ({equipment, setEquipment, name, o
           { statsSummary.attPercent ? <div>{t('calc.atp')}: +{statsSummary.attPercent}%</div> : <></>}
           { statsSummary.mattPercent ? <div>{t('calc.matp')}: +{statsSummary.mattPercent}%</div> : <></>}
           { statsSummary.allStatPercent ? <div>{t('calc.asp')}: +{statsSummary.allStatPercent}%</div> : <></>}
+          { statsSummary.strPercent ? <div>{t('calc.str')}: +{statsSummary.strPercent}%</div> : <></>}
+          { statsSummary.dexPercent ? <div>{t('calc.dex')}: +{statsSummary.dexPercent}%</div> : <></>}
+          { statsSummary.intPercent ? <div>{t('calc.int')}: +{statsSummary.intPercent}%</div> : <></>}
+          { statsSummary.lukPercent ? <div>{t('calc.luk')}: +{statsSummary.lukPercent}%</div> : <></>}
           { statsSummary.defence ? <div>{t('calc.def')}: +{statsSummary.defence}</div> : <></>}
           { statsSummary.ignoreEnemyDefence ? <div>{t('calc.ied')}: +{statsSummary.ignoreEnemyDefence}%</div> : <></>}
           { statsSummary.damage ? <div>{t('calc.dmg')}: +{statsSummary.damage}%</div>: <></>}
