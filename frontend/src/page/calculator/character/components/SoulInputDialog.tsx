@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-non-null-assertion */
 import _ from 'lodash'
 import { EffectStats } from 'models/EffectStats'
 import { Equipment } from 'models/Equipment'

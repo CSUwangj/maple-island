@@ -1,10 +1,10 @@
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
 import styled from "@emotion/styled/macro"
 import { ApplyEquipment, Equipment } from "models/Equipment"
-import { Effect } from "models/BuffEffect"
+import { Buff, GeneralBuff } from "models/BuffEffect"
 import React, { useState } from "react"
 import { useTranslation } from "react-i18next"
-import { AllJobs, Bowman, DexPirate, DexStrThief, Mage, StrPirate, Thief, Warrior } from "models/Jobs"
+import { AllJobs, Bowman, DexPirate, DexStrThief, Job, Mage, StrPirate, Thief, Warrior } from "models/Jobs"
 import { Badges, Belts, Earrings, Emblems, Eyes, Faces, Hearts, Medals, Pendants, Pockets, Rings, Shoulders, Totems } from "data/equipments"
 import { SubWeapons } from "data/equipments/SecondaryWeapon"
 import { Bottoms, Capes, Gloves, Hats, Overalls, Shoes, Tops } from "data/equipments/Armor"
@@ -16,6 +16,10 @@ import { useLocalStorage } from "react-use"
 import ESSerializer from 'esserializer'
 import { EffectStats } from "models/EffectStats"
 import { Line } from "data/potential"
+import { Button } from "primereact/button"
+import { AncientBowExpertise, AncientBowExpertiseWithCO, AncientBowExpertiseWithDCO, AncientBowMastery, JobDefaultBuff, MapleWarrior, MapleWarriorWithCO, MapleWarriorWithDCO } from "data/skills"
+import { Fieldset } from "primereact/fieldset"
+import { Tooltip } from "primereact/tooltip"
 
 const StatRow = styled.tr``
 const StatName = styled.td``
@@ -53,7 +57,7 @@ const EquipmentsOptions = [
 ]
 
 // ignore xenon and demon avenger
-const baseStats = (job: string, level: number) => {
+const baseStats = (job: Job, level: number) => {
   const mainStat = level < 60 ? level * 5 + 4 :
     level < 100 ? level * 5 + 9 :
       level * 5 + 14
@@ -153,7 +157,7 @@ const baseStats = (job: string, level: number) => {
   }
 }
 
-const calculateStatValue = (str: number, dex: number, int: number, luk: number, hp: number, job: string) => {
+const calculateStatValue = (str: number, dex: number, int: number, luk: number, hp: number, job: Job) => {
   if(Warrior.has(job) || StrPirate.has(job)) {
     return str * 4 + dex
   } else if(Bowman.has(job) || DexPirate.has(job)) {
@@ -183,7 +187,7 @@ const calcStats = (stats: StatsDetail) => {
 
 export const Page: React.FC = ({ }) => {
   const [ level, setLevel ] = useLocalStorage('calc.level', 10)
-  const [ job, setJob ] = useLocalStorage('calc.job', 'Pathfinder')
+  const [ job, setJob ] = useLocalStorage<Job>('calc.job', 'Pathfinder')
   if(level === undefined) {
     setLevel(10)
   }
@@ -191,9 +195,13 @@ export const Page: React.FC = ({ }) => {
     setJob('Pathfinder')
   }
   const { t } = useTranslation()
-  const [ buffs, setBuffs ] = useState<Effect[]>([])
+  const [ buffs, setBuffs ] = useLocalStorage<Buff[]>('calc.buff', [], {
+    raw: false,
+    serializer: (buffs) => ESSerializer.serialize(buffs),
+    deserializer: (buffString) => ESSerializer.deserialize(buffString, [GeneralBuff, Buff, EffectStats, AncientBowMastery, MapleWarrior, MapleWarriorWithCO, MapleWarriorWithDCO, AncientBowExpertise, AncientBowExpertiseWithCO, AncientBowExpertiseWithDCO])
+  })
   const equipments = EquipmentsOptions.map((e) => {
-    const [equipment, setEquipment] = useLocalStorage(e.name, new Equipment(''), {
+    const [equipment, setEquipment] = useLocalStorage(`calc.${e.name}`, new Equipment(''), {
       raw: false,
       serializer: (equipment) => ESSerializer.serialize(equipment),
       deserializer: (equipmentString) => ESSerializer.deserialize(equipmentString, [Equipment, EffectStats, Line])
@@ -201,9 +209,21 @@ export const Page: React.FC = ({ }) => {
     if(equipment === undefined) setEquipment(new Equipment(''))
     return {...e, equipment: equipment, setEquipment: setEquipment}
   })
+  const setJobDefaultBuff = () => {
+    setBuffs(JobDefaultBuff[job!])
+  }
 
   // pure stats
   let stats = baseStats(job!, level!)
+
+  // need to apply godness's blessing with combat order
+  const BuffBeforEquip = buffs!.filter((b) => b.order < 1000).sort((a, b) => a.order - b.order)
+  const BuffAfterEquip = buffs!.filter((b) => b.order > 999).sort((a, b) => a.order - b.order)
+  for(const buff of BuffBeforEquip) {
+    console.log(buff.name)
+    stats = buff.apply(stats)
+  }
+
   const sets = new Map()
   for(const { equipment } of equipments) {
     stats = ApplyEquipment(stats, equipment!)
@@ -215,7 +235,7 @@ export const Page: React.FC = ({ }) => {
     stats = EquipSets.get(set)?.apply(stats, count) ?? stats
   })
 
-  for(const buff of buffs) {
+  for(const buff of BuffAfterEquip) {
     stats = buff.apply(stats)
   }
 
@@ -233,7 +253,7 @@ export const Page: React.FC = ({ }) => {
         <StatRow>
           <StatName>{t('calc.job')}</StatName>
           <StatVal>
-            <select value={job} onChange={(e) => setJob(e.target.value)}>
+            <select value={job} onChange={(e) => setJob(e.target.value as Job)}>
               {
                 Array.from(AllJobs).map((job) => <option key={job} value={job}>{job}</option>)
               }
@@ -328,6 +348,24 @@ export const Page: React.FC = ({ }) => {
         </StatRow>
       </tbody>
     </table>
+    <Fieldset legend={t('calc.buffs')}>
+      {
+        buffs!.map((buff, index) => {
+          return <>
+            <Tooltip target={`.buff${index}`} />
+            <img
+              src={`data:image/png;base64,${buff.icon}`}
+              className={`buff${index}`}
+              data-pr-tooltip={buff.tips !== '' ? `${buff.name}\n${buff.tips}` : `${buff.name}`}
+              data-pr-position="right"
+              data-pr-at="right+5 top"
+              data-pr-my="left center-2" 
+            />
+          </>
+        })
+      }
+    </Fieldset>
+    <Button onClick={setJobDefaultBuff}>{t('calc.set-job-buff')}</Button>
     {
       equipments.map((equip) => <EquipmentCard
         key={equip.name} 

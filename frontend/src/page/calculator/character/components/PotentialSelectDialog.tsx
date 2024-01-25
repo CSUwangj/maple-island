@@ -1,11 +1,8 @@
-import { Line, Lines, UselessLine } from 'data/potential'
+import { Lines, UselessLine } from 'data/potential'
 import { Equipment } from 'models/Equipment'
 import { ConfirmDialog, ConfirmDialogProps } from 'primereact/confirmdialog'
 import { Dropdown } from 'primereact/dropdown'
 import React, { useState } from 'react'
-import { useLocalStorage } from 'react-use'
-import ESSerializer from 'esserializer'
-import { EffectStats } from 'models/EffectStats'
 import _ from 'lodash'
 
 interface PotentialDialogProps {

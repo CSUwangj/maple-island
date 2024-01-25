@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-non-null-assertion */
 import { Equipment } from 'models/Equipment'
 import { Dropdown } from 'primereact/dropdown'
 import React, { useState } from 'react'
@@ -72,7 +73,7 @@ export const EquipmentCard: React.FC<Props> = ({equipment, setEquipment, name, o
             </div>
             {
               options[0].slot === 'weapon' ? <div className='flex-auto'>
-                <Button onClick={() => setSoulDialogVisible(true)}>{t('calc.set-soul')}</Button>
+                <Button disabled={equipment?.slot !== 'weapon'} onClick={() => setSoulDialogVisible(true)}>{t('calc.set-soul')}</Button>
               </div> : <></>
             }
           </div>

@@ -117,12 +117,7 @@ export class Equipment{
   }
 
   updateStatsSummary() {
-    console.log(this.flame)
-    console.log(this.soul)
-    console.log(this.potential)
-    console.log(this.sfStat)
     this.statsSummary = this.base.add(this.flame).add(this.soul).add(this.potential.reduce((stats, line) => stats.add(line.stats), new EffectStats())).add(this.sfStat)
-    console.log(this.statsSummary)
   }
 
   setFlame(flame: EffectStats) {
