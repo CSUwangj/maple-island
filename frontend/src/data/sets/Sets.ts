@@ -563,6 +563,34 @@ const EternalPirate = new Sets('Eternal Set (Pirate)', [
 
 ])
 
+const GuildCastleBroochSet = new Sets('Guild Castle Brooch Set', [
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(
+    0, 0, 0, 0,
+    0, 0,
+    0, 0,
+    5, 5
+  ),
+  new EffectStats(
+    0, 0, 0, 0,
+    0, 0,
+    0, 0,
+    15, 15
+  )
+])
+
+const AfterlandsSouvenir = new Sets('Afterlands Souvenir', [
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(),
+  new EffectStats(
+    0, 0, 0, 0,
+    0, 0,
+    0, 0,
+    10, 10
+  )
+])
 
 export const EquipSets = new Map([
   ['Boss Accessory Set', BossAccessorySet],
@@ -601,4 +629,6 @@ export const EquipSets = new Map([
   ['Eternal Set (Bowman)', EternalBowman],
   ['Eternal Set (Thief)', EternalThief],
   ['Eternal Set (Pirate)', EternalPirate],
+  ['Guild Castle Brooch Set', GuildCastleBroochSet],
+  ['Afterlands Souvenir', AfterlandsSouvenir]
 ])

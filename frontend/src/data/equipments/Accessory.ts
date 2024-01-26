@@ -290,13 +290,13 @@ const EllinForestGuardian = new Equipment(
 
 const MansaFigurine = new Equipment(
   'Mansa Figurine',
-  '',
+  'Afterlands Souvenir',
   90,
   0,
   false,
-  true,
-  true,
-  true,
+  false,
+  false,
+  false,
   new EffectStats(
     0,
     0,
@@ -2504,13 +2504,13 @@ const LudibriumsCollector = new Equipment(
 
 const BeodogFigurine = new Equipment(
   'Beodog Figurine',
-  '',
+  'Afterlands Souvenir',
   90,
   0,
   false,
-  true,
-  true,
-  true,
+  false,
+  false,
+  false,
   new EffectStats(
     20,
     0,
@@ -5005,13 +5005,13 @@ const AstralWhale = new Equipment(
 
 const GuildCastleRedBrooch = new Equipment(
   'Guild Castle Red Brooch',
-  '',
+  'Guild Castle Brooch Set',
   100,
   0,
   false,
-  true,
-  true,
-  true,
+  false,
+  false,
+  false,
   new EffectStats(
     7,
     7,
@@ -5866,13 +5866,13 @@ const CriticalDamageRing = new Equipment(
 
 const AdlerFigurine = new Equipment(
   'Adler Figurine',
-  '',
+  'Afterlands Souvenir',
   90,
   0,
   false,
-  true,
-  true,
-  true,
+  false,
+  false,
+  false,
   new EffectStats(
     0,
     0,
@@ -6891,13 +6891,13 @@ const PerionDonor = new Equipment(
 
 const GuildCastleGreenBrooch = new Equipment(
   'Guild Castle Green Brooch',
-  '',
+  'Guild Castle Brooch Set',
   100,
   0,
   false,
-  true,
-  true,
-  true,
+  false,
+  false,
+  false,
   new EffectStats(
     7,
     7,
@@ -14312,13 +14312,13 @@ const HayatosTreasure = new Equipment(
 
 const BillyFigurine = new Equipment(
   'Billy Figurine',
-  '',
+  'Afterlands Souvenir',
   90,
   0,
   false,
-  true,
-  true,
-  true,
+  false,
+  false,
+  false,
   new EffectStats(
     0,
     20,
@@ -14394,13 +14394,13 @@ const EyesonMe = new Equipment(
 
 const GuildCastleBlueBrooch = new Equipment(
   'Guild Castle Blue Brooch',
-  '',
+  'Guild Castle Brooch Set',
   100,
   0,
   false,
-  true,
-  true,
-  true,
+  false,
+  false,
+  false,
   new EffectStats(
     7,
     7,
@@ -15897,17 +15897,16 @@ export const Totems = [
   JadeKettleTotem,
   FrenzyTotem,
   GuildCastleBlueBrooch,
-  AncientSlateReplica,
-  BillyFigurine,
+  GuildCastleGreenBrooch,
   GuildCastleRedBrooch,
+  BillyFigurine,
   BeodogFigurine,
   MansaFigurine,
   AdlerFigurine,
-  GuildCastleGreenBrooch,
+  AncientSlateReplica,
   NineTailedFoxTotem,
   LirenisWish,
 ]
-
 
 export const Emblems = [
   AngelEmblem,

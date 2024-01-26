@@ -141,7 +141,7 @@ i18n
             'soul-att-tip': 'don\'t forget the att/matt come with soul charge',
             'set-job-buff': 'Set Job\'s default buff',
             'buffs': 'Buffs',
-            
+            'add-buff': 'Add Buff',
           }
         }
       }

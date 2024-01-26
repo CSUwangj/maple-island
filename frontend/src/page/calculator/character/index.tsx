@@ -20,10 +20,43 @@ import { Button } from "primereact/button"
 import { AncientBowExpertise, AncientBowExpertiseWithCO, AncientBowExpertiseWithDCO, AncientBowMastery, JobDefaultBuff, MapleWarrior, MapleWarriorWithCO, MapleWarriorWithDCO } from "data/skills"
 import { Fieldset } from "primereact/fieldset"
 import { Tooltip } from "primereact/tooltip"
+import { Image } from "primereact/image"
+import { BuffSelectionDialog } from "./components/BuffSelectionDialog"
 
 const StatRow = styled.tr``
 const StatName = styled.td``
 const StatVal = styled.td``
+const BuffIconContainer = styled.div`
+  position:relative;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  display: inline-block;
+  margin: 2px;
+  img {
+    width:100%;
+    vertical-align:top;
+  }
+  &:after {
+    content:'X';
+    color:#fff;
+    position: absolute;
+    width: 100%; 
+    height: 100%;
+    margin: auto;
+    vertical-align: center;
+    text-align: center;
+    top:0; 
+    left:0;
+    background:rgba(0,0,0,0.6);
+    opacity:0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+  }
+  &:hover:after {
+    opacity:1;
+  }
+`
 
 const EquipmentsOptions = [
   {name: 'weapon' ,slot: 'weapon', options: Weapons},
@@ -194,6 +227,7 @@ export const Page: React.FC = ({ }) => {
   if(job === undefined) {
     setJob('Pathfinder')
   }
+  const [ buffDialogVisible, setBuffDialogVisible ] = useState(false)
   const { t } = useTranslation()
   const [ buffs, setBuffs ] = useLocalStorage<Buff[]>('calc.buff', [], {
     raw: false,
@@ -220,7 +254,6 @@ export const Page: React.FC = ({ }) => {
   const BuffBeforEquip = buffs!.filter((b) => b.order < 1000).sort((a, b) => a.order - b.order)
   const BuffAfterEquip = buffs!.filter((b) => b.order > 999).sort((a, b) => a.order - b.order)
   for(const buff of BuffBeforEquip) {
-    console.log(buff.name)
     stats = buff.apply(stats)
   }
 
@@ -319,6 +352,10 @@ export const Page: React.FC = ({ }) => {
           <StatVal>{stats.ignoreElementResistence}%</StatVal>
         </StatRow>
         <StatRow>
+          <StatName>{t('calc.cr')}</StatName>
+          <StatVal>{stats.critRate}%</StatVal>
+        </StatRow>
+        <StatRow>
           <StatName>{t('calc.cd')}</StatName>
           <StatVal>{stats.critDamage}%</StatVal>
         </StatRow>
@@ -353,19 +390,27 @@ export const Page: React.FC = ({ }) => {
         buffs!.map((buff, index) => {
           return <>
             <Tooltip target={`.buff${index}`} />
-            <img
-              src={`data:image/png;base64,${buff.icon}`}
-              className={`buff${index}`}
-              data-pr-tooltip={buff.tips !== '' ? `${buff.name}\n${buff.tips}` : `${buff.name}`}
-              data-pr-position="right"
-              data-pr-at="right+5 top"
-              data-pr-my="left center-2" 
-            />
+            <BuffIconContainer className="buff">
+              <img
+                onClick={(e) => {
+                  e.preventDefault()
+                  setBuffs(buffs!.filter((b) => b.name != buff.name))
+                }}
+                src={`data:image/png;base64,${buff.icon}`}
+                className={`buff${index}`}
+                data-pr-tooltip={buff.tips !== '' ? `${buff.name}\n${buff.tips}` : `${buff.name}`}
+                data-pr-position="right"
+                data-pr-at="right+5 top"
+                data-pr-my="left center-2" 
+              />
+            </BuffIconContainer>
           </>
         })
       }
     </Fieldset>
+    <BuffSelectionDialog onHide={() => setBuffDialogVisible(false)} header={t('calc.add-buff')} visible={buffDialogVisible} buffs={buffs} setBuffs={setBuffs} />
     <Button onClick={setJobDefaultBuff}>{t('calc.set-job-buff')}</Button>
+    <Button onClick={() => setBuffDialogVisible(true)} >{t('calc.add-buff')}</Button>
     {
       equipments.map((equip) => <EquipmentCard
         key={equip.name} 

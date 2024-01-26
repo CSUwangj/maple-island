@@ -5,6 +5,9 @@ import { Providers } from 'Providers'
 import { Routes } from 'route'
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
+import 'primeflex/primeflex.css'
+import 'primereact/resources/primereact.css'
+import 'primeicons/primeicons.css'
 
 const Div = styled.div`
   height: 100%;

@@ -2,8 +2,6 @@
 import { Equipment } from 'models/Equipment'
 import { Dropdown } from 'primereact/dropdown'
 import React, { useState } from 'react'
-import 'primeflex/primeflex.css'
-import 'primereact/resources/primereact.css'
 import { useTranslation } from 'react-i18next'
 import { Button } from 'primereact/button'
 import { Fieldset } from 'primereact/fieldset'
@@ -23,7 +21,7 @@ interface Props {
 
 const EquipmentOptionTemplate = (option: Equipment) => {
   return <div className="flex align-items-center">
-    <img alt={option.name} src={`data:image/png;base64,${option.icon}`} style={{ width: '30px' }} />
+    <img alt={option.name} src={`data:image/png;base64,${option.icon}`} style={{ width: '32px' }} />
     <div>{option.name}</div>
   </div>
 }
