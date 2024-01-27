@@ -4,7 +4,7 @@ import { ApplyEquipment, Equipment } from "models/Equipment"
 import { Buff, GeneralBuff } from "models/BuffEffect"
 import React, { useState } from "react"
 import { useTranslation } from "react-i18next"
-import { AllJobs, Bowman, DexPirate, DexStrThief, Job, Mage, StrPirate, Thief, Warrior } from "models/Jobs"
+import { AllJobs, Bowman, DexPirate, DexStrThief, Job, JobDefaultMastery, Mage, StrPirate, Thief, Warrior } from "models/Jobs"
 import { Badges, Belts, Earrings, Emblems, Eyes, Faces, Hearts, Medals, Pendants, Pockets, Rings, Shoulders, Totems } from "data/equipments"
 import { SubWeapons } from "data/equipments/SecondaryWeapon"
 import { Bottoms, Capes, Gloves, Hats, Overalls, Shoes, Tops } from "data/equipments/Armor"
@@ -20,8 +20,9 @@ import { Button } from "primereact/button"
 import { AncientBowExpertise, AncientBowExpertiseWithCO, AncientBowExpertiseWithDCO, AncientBowMastery, JobDefaultBuff, MapleWarrior, MapleWarriorWithCO, MapleWarriorWithDCO } from "data/skills"
 import { Fieldset } from "primereact/fieldset"
 import { Tooltip } from "primereact/tooltip"
-import { Image } from "primereact/image"
 import { BuffSelectionDialog } from "./components/BuffSelectionDialog"
+import { ArcaneSymbol, SacredSymbol } from "data/Symbol"
+import { InputNumber } from "primereact/inputnumber"
 
 const StatRow = styled.tr``
 const StatName = styled.td``
@@ -37,7 +38,7 @@ const BuffIconContainer = styled.div`
     width:100%;
     vertical-align:top;
   }
-  &:after {
+  /* &:after {
     content:'X';
     color:#fff;
     position: absolute;
@@ -55,7 +56,15 @@ const BuffIconContainer = styled.div`
   }
   &:hover:after {
     opacity:1;
-  }
+  } */
+`
+
+const SymbolContainer = styled.div`
+  width: 200px;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  margin: 0 5px;
 `
 
 const EquipmentsOptions = [
@@ -116,7 +125,7 @@ const baseStats = (job: Job, level: number) => {
   const finalMp = 0
   const finalAtt = 0
   const finalMatt = 0
-  const mastery = 0.85
+  const mastery = JobDefaultMastery[job]
   const multiplier = 1.35
   const percentStr = 0
   const percentDex = 0
@@ -218,6 +227,29 @@ const calcStats = (stats: StatsDetail) => {
   return [str, dex, int, luk, hp, mp, att, matt]
 }
 
+const applySymbol = (stats: StatsDetail, sac: number[], arc: number[], job: Job) => {
+  let mainStatFinalDiff = 0
+  sac.forEach((l) =>{
+    if(l === 0) return
+    mainStatFinalDiff += (l * 200) + 300
+  })
+  arc.forEach((l) => {
+    if(l === 0) return
+    mainStatFinalDiff += (l * 100) + 200
+  })
+  if(Warrior.has(job) || StrPirate.has(job)) {
+    stats.finalStr += mainStatFinalDiff
+  } else if(Bowman.has(job) || DexPirate.has(job)) {
+    stats.finalDex += mainStatFinalDiff
+  } else if(Mage.has(job)){
+    stats.finalInt += mainStatFinalDiff
+  }else if(Thief.has(job)) {
+    stats.finalLuk += mainStatFinalDiff
+  }
+  
+  return stats
+}
+
 export const Page: React.FC = ({ }) => {
   const [ level, setLevel ] = useLocalStorage('calc.level', 10)
   const [ job, setJob ] = useLocalStorage<Job>('calc.job', 'Pathfinder')
@@ -234,6 +266,8 @@ export const Page: React.FC = ({ }) => {
     serializer: (buffs) => ESSerializer.serialize(buffs),
     deserializer: (buffString) => ESSerializer.deserialize(buffString, [GeneralBuff, Buff, EffectStats, AncientBowMastery, MapleWarrior, MapleWarriorWithCO, MapleWarriorWithDCO, AncientBowExpertise, AncientBowExpertiseWithCO, AncientBowExpertiseWithDCO])
   })
+  const [ arc, setArc ] = useLocalStorage('calc.arc', new Array(6).fill(0))
+  const [ sac, setSac ] = useLocalStorage('calc.sac', new Array(6).fill(0))
   const equipments = EquipmentsOptions.map((e) => {
     const [equipment, setEquipment] = useLocalStorage(`calc.${e.name}`, new Equipment(''), {
       raw: false,
@@ -250,12 +284,14 @@ export const Page: React.FC = ({ }) => {
   // pure stats
   let stats = baseStats(job!, level!)
 
+  console.log('base stats:', stats)
   // need to apply godness's blessing with combat order
   const BuffBeforEquip = buffs!.filter((b) => b.order < 1000).sort((a, b) => a.order - b.order)
   const BuffAfterEquip = buffs!.filter((b) => b.order > 999).sort((a, b) => a.order - b.order)
   for(const buff of BuffBeforEquip) {
     stats = buff.apply(stats)
   }
+  // console.log('after buff before equip:', stats)
 
   const sets = new Map()
   for(const { equipment } of equipments) {
@@ -263,15 +299,19 @@ export const Page: React.FC = ({ }) => {
     if(equipment!.set === '') continue
     sets.set(equipment!.set, (sets.get(equipment!.set) ?? 0) + 1)
   }
+  // console.log('after equip:', stats)
 
   sets.forEach((count, set) => {
     stats = EquipSets.get(set)?.apply(stats, count) ?? stats
   })
+  // console.log('after set:', stats)
 
   for(const buff of BuffAfterEquip) {
     stats = buff.apply(stats)
   }
+  stats = applySymbol(stats, sac!, arc!, job!)
 
+  // console.log('after buff:', stats)
   const [str, dex, int, luk, hp, mp, att, matt] = calcStats(stats)
 
   // stat value
@@ -411,7 +451,28 @@ export const Page: React.FC = ({ }) => {
     <BuffSelectionDialog onHide={() => setBuffDialogVisible(false)} header={t('calc.add-buff')} visible={buffDialogVisible} buffs={buffs} setBuffs={setBuffs} />
     <Button onClick={setJobDefaultBuff}>{t('calc.set-job-buff')}</Button>
     <Button onClick={() => setBuffDialogVisible(true)} >{t('calc.add-buff')}</Button>
-    {
+    <Fieldset legend={t('arc')}>
+      <div className='card flex'>
+        {
+          arc!.map((v, i) => <SymbolContainer className='card flex flex-column' key={`arcane${i}`}>
+            <b>{ArcaneSymbol[i].name}</b>
+            <img width={200} height={200} src={`data:image/png;base64,${ArcaneSymbol[i].icon}`} alt={ArcaneSymbol[i].name} />
+            <InputNumber inputStyle={{width: '5rem'}} maxFractionDigits={0} value={v} onValueChange={(e) => setArc([...arc!.slice(0, i), e.value, ...arc!.slice(i + 1)])} showButtons min={0} max={20} />
+          </SymbolContainer>)
+        }
+      </div>
+    </Fieldset>
+    <Fieldset legend={t('sac')}>
+      <div className='card flex'>
+        {
+          sac!.map((v, i) => <SymbolContainer className='card flex flex-column' key={`sac${i}`}>
+            <b>{SacredSymbol[i].name}</b>
+            <img width={200} height={200} src={`data:image/png;base64,${SacredSymbol[i].icon}`} alt={SacredSymbol[i].name} />
+            <InputNumber inputStyle={{width: '5rem'}} maxFractionDigits={0} value={v} onValueChange={(e) => setSac([...sac!.slice(0, i), e.value, ...sac!.slice(i + 1)])} showButtons min={0} max={20} />
+          </SymbolContainer>)
+        }
+      </div>
+    </Fieldset>{
       equipments.map((equip) => <EquipmentCard
         key={equip.name} 
         {...equip}

@@ -53,11 +53,11 @@ export const EquipmentCard: React.FC<Props> = ({equipment, setEquipment, name, o
       <Splitter>
         <SplitterPanel className='flex flex-column'>
           <img alt={equipment!.name} src={`data:image/png;base64,${equipment!.icon}`} style={{ width: '90px' }} />
-          <Dropdown value={equipment} filter placeholder={equipment!.name} onChange={(e) => setEquipment(e.target.value)} options={options} optionLabel='name' itemTemplate={EquipmentOptionTemplate} />
+          <Dropdown value={equipment} filter placeholder={equipment!.name} onChange={(e) => {console.log(e.target.value);setEquipment(e.target.value)}} options={options} optionLabel='name' itemTemplate={EquipmentOptionTemplate} />
           <div className="card flex flex-row flex-wrap gap-3 p-fluid">
             <div className='flex-auto'>
               <label htmlFor={`sf${name}`} className="font-bold block mb-2" >{t('calc.star-force')}</label>
-              <InputNumber disabled={!equipment!.canSF} value={equipment?.starForce} showButtons inputId={`sf${name}`} min={0} max={maxSF} maxFractionDigits={0} onValueChange={(e) => {
+              <InputNumber disabled={!equipment!.canSF} value={equipment!.starForce} showButtons inputId={`sf${name}`} min={0} max={maxSF} maxFractionDigits={0} onValueChange={(e) => {
                 const newEquipment = _.cloneDeep(equipment)
                 newEquipment!.applyStarForce(e.value!)
                 setEquipment(newEquipment)
@@ -71,7 +71,7 @@ export const EquipmentCard: React.FC<Props> = ({equipment, setEquipment, name, o
             </div>
             {
               options[0].slot === 'weapon' ? <div className='flex-auto'>
-                <Button disabled={equipment?.slot !== 'weapon'} onClick={() => setSoulDialogVisible(true)}>{t('calc.set-soul')}</Button>
+                <Button disabled={equipment!.slot !== 'weapon'} onClick={() => setSoulDialogVisible(true)}>{t('calc.set-soul')}</Button>
               </div> : <></>
             }
           </div>
@@ -87,13 +87,13 @@ export const EquipmentCard: React.FC<Props> = ({equipment, setEquipment, name, o
           { statsSummary.mpPercent ? <div>{t('calc.mpp')}: +{statsSummary.mpPercent}%</div> : <></>}
           { statsSummary.att ? <div>{t('calc.att')}: +{statsSummary.att}</div> : <></>}
           { statsSummary.matt ? <div>{t('calc.matt')}: +{statsSummary.matt}</div> : <></>}
-          { statsSummary.attPercent ? <div>{t('calc.atp')}: +{statsSummary.attPercent}%</div> : <></>}
-          { statsSummary.mattPercent ? <div>{t('calc.matp')}: +{statsSummary.mattPercent}%</div> : <></>}
-          { statsSummary.allStatPercent ? <div>{t('calc.asp')}: +{statsSummary.allStatPercent}%</div> : <></>}
-          { statsSummary.strPercent ? <div>{t('calc.str')}: +{statsSummary.strPercent}%</div> : <></>}
-          { statsSummary.dexPercent ? <div>{t('calc.dex')}: +{statsSummary.dexPercent}%</div> : <></>}
-          { statsSummary.intPercent ? <div>{t('calc.int')}: +{statsSummary.intPercent}%</div> : <></>}
-          { statsSummary.lukPercent ? <div>{t('calc.luk')}: +{statsSummary.lukPercent}%</div> : <></>}
+          { statsSummary.attPercent ? <div>{t('calc.att')}: +{statsSummary.attPercent}%</div> : <></>}
+          { statsSummary.mattPercent ? <div>{t('calc.matt')}: +{statsSummary.mattPercent}%</div> : <></>}
+          { statsSummary.percentAllStat ? <div>{t('calc.asp')}: +{statsSummary.percentAllStat}%</div> : <></>}
+          { statsSummary.percentStr ? <div>{t('calc.str')}: +{statsSummary.percentStr}%</div> : <></>}
+          { statsSummary.percentDex ? <div>{t('calc.dex')}: +{statsSummary.percentDex}%</div> : <></>}
+          { statsSummary.percentInt ? <div>{t('calc.int')}: +{statsSummary.percentInt}%</div> : <></>}
+          { statsSummary.percentLuk ? <div>{t('calc.luk')}: +{statsSummary.percentLuk}%</div> : <></>}
           { statsSummary.defence ? <div>{t('calc.def')}: +{statsSummary.defence}</div> : <></>}
           { statsSummary.ignoreEnemyDefence ? <div>{t('calc.ied')}: +{statsSummary.ignoreEnemyDefence}%</div> : <></>}
           { statsSummary.damage ? <div>{t('calc.dmg')}: +{statsSummary.damage}%</div>: <></>}

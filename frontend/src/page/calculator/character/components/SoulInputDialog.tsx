@@ -92,10 +92,10 @@ export const SoulInputDialog: React.FC<ConfirmDialogProps & SoulDialogProps> = (
       }}/>
     </div>
     <div>
-      <label htmlFor='allStatPercent'>{t('calc.asp')}</label>
-      <InputNumber min={0} allowEmpty={false} suffix='%' inputId='allStatPercent' value={stats.allStatPercent} onValueChange={(e) => {
+      <label htmlFor='percentAllStat'>{t('calc.asp')}</label>
+      <InputNumber min={0} allowEmpty={false} suffix='%' inputId='percentAllStat' value={stats.percentAllStat} onValueChange={(e) => {
         const newStats = _.cloneDeep(stats)
-        newStats.allStatPercent = e.value ?? 0
+        newStats.percentAllStat = e.value ?? 0
         setStats(newStats)
       }}/>
     </div>

@@ -1,9 +1,6 @@
-import { Lines, UselessLine } from 'data/potential'
-import { Equipment } from 'models/Equipment'
 import { ConfirmDialog, ConfirmDialogProps } from 'primereact/confirmdialog'
 import { Dropdown } from 'primereact/dropdown'
 import React, { useState } from 'react'
-import _ from 'lodash'
 import { Buff } from 'models/BuffEffect'
 import { Skills } from 'data/skills'
 
@@ -26,6 +23,7 @@ export const BuffSelectionDialog: React.FC<ConfirmDialogProps & BuffDialogProps>
     onChange={(e) => setBuff(e.target.value)}
     options={Skills} 
     optionLabel='name' 
+    defaultValue={0}
     itemTemplate={BuffOptionTemplate}
     filter 
   />

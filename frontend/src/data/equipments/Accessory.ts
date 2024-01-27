@@ -124,6 +124,47 @@ const LiquidMetalHeart = new Equipment(
   'iVBORw0KGgoAAAANSUhEUgAAAB4AAAAgCAYAAAAFQMh/AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAERUlEQVR4nK2WjbGyOhCG15nTQL4SQgk5JcQSsAQsAUuQEqQEKcGUICWQEkwJ5+67SSAiHu+d7+4MIhDy7Ls/CV/0P5ipLzjpdOnH4fjxnb8GJ6jlo023Or7nPsE3wao54yQKFCvw/ekjlEG2uEef4C9g1cDxwJMoURBYgW7OLsOLsKp0CLS5TfK831c2jfHp+AyO0Kgg9CdbqCeGjxSUStA2gxmqAW2tps695bwHP0M7O/38CGG321liOFMG/qlDIO0ZVk6SoawWEQG9g9olOkoiMA6HTcV6DS38h0PG90eZ4YefU3oOYLXbbYnCWENPRXfjvO9fwDlnMxQT5lBzjlXp0DqsRY41KwVs4KNeiu4WFdR354bvz+3EuSatNd1XUIR1Dc0GGMMNn8VZiiIsQ0WbtZPbBFdVxT3kKb+UXpwhKZfzM1zjvjsNVICeIpTeY7g46QWcwjmHepqigt3pIP00Xa4yYVaqCyh69TI9qDv0NN3b2fF1WsbepRBGVFacCuukUTgYfAgdqToWb3U8Mvwi1UtJcTZAYfZcL8WomhcoHESIKVX8F/cnnNC0rLV0op5u/PJeD+QHT6a1VB0Yfl3gFz5nkPOBjFYCwbm9NlR9d9EHvk5QaB3Q+s79EcX8iFqf1B4YeqVGXrqpmiq+BjyGKCoooaKWZwC8NERA0hI0/79x/itl7aOGnwj4V1qNVH6hkZaNVvU9JzGUj381Uc25BlSui1rISciTfW1NGbK8VAgBFX67iKqsFsoRduTnmEKclaK6Ybo2cvbD+MLYbKe9d9xOEW5aQ+74ugZLrikWEP7nUIsDSXF2AHmmFfsr6Qp5kiF4gRpeNHhX4MJY8gvrV7nMNhb3c+uU6pPNLAYriZypr5qbXqP/Ghto71LfrXKMQnraIZJ5vYxxuhZHAF2q+jFvHgLGjsHQvHfKnH0YBWhqvY7QevOIoFUUxu2oCAOtlBTDsurbrNrX3PRdxE73M/1X+03tDMZWxQv4rFqqV3NbXezTZKJEP/fBb2qV0XGPWqktFC+qeYWhY/XHYim0+t/17xoKtWgld9pD7bxMlmNnsBsqLGuI7cCDDcPVJ3ip9gPUlWpXikU1KDUPEijDqYSjX49p4fgb6AZ4WdIahlkuMuzD2EvzyjQcvql9PN5C+fMoQUMXgnfjuN+M1hr8tJjAsvIMV7qd1ZZQVHBUOrkQxt77bgzBKXpaft6A+cvda22lwPCpAigmx6eP7DTmLKtR3gjKJTG2zX30fnAMZVgwBTQUxxb4pLzXXpuWC+yuWKnJz7CfOlepfn8SB8o+xSpj7N3DcQarBF1HMbdrWINTfpk8nrC1jMbcFCyw8YQhXWvnvuMbIxy6B3k+IrRDKObK0E3bKi6MB2hUCkmMaeI7JF4oo9gBIw7Fccgpo8dcFiUsbBwv4ByODKdUHMuAIC4pTjlHAa0HMD6w/Za68Oa/2D9eId3JiDUOWwAAAABJRU5ErkJggg=='
 )
 
+const FairyHeart = new Equipment(
+  'Fairy Heart',
+  '',
+  100,
+  0,
+  false,
+  true,
+  true,
+  true,
+  new EffectStats(
+    5,
+    5,
+    5,
+    5,
+    100,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ),
+  'heart',
+  new EffectStats(),
+  new EffectStats(),
+  [],  
+  'iVBORw0KGgoAAAANSUhEUgAAABsAAAAeCAYAAADdGWXmAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADN0lEQVR4nKWWgXGrMAyGxV0XICM4I7gjpCOYEWAEGCGMEEbAI5QR4hHiEeIReJKNQQaS8lpdUwMx/vRLspwP\u002BLuN05j9NPGvsFHU4cK2HvoWuAc76qkHlUpAp\u002B0hz9aw8TleIQcJWfa15\u002BnIbyIIVR1xLoFNoBoctBsV/t8YWQMMroOvk4YYxiOWKCNFBDplDfcUGd84XGYIN2cFAu1ezjbp2C0Q8pZeFkLA43FLQKRmdg7DWOPcrhB4ZyOAFvdRIkPHZycS2PlcASgLj7LHhEzPmi8/3moVQbOnTtuxMwKcBHg\u002BlsV5Oq53Ac2n9cAE5lUMDmyV\u002B/vGdPDoe2jzZgMi77\u002BfCorKwLO/zc5yUIfvi5yi0iVhDHkhUBtA1lnMoICi0NDf0et7Ez30RiAyCqMDE5TKJe8RVJy72clFGYIwLZgvfGMYwKCQupRQdGEPSSExJPhM3ubFjTP\u002BOS1MY3\u002BTcCoq78AaFGHj\u002BOiD0quaHqN0rfHP8SgnIO9ALj0wmUMFQ5tcD6D6HHThtgViTQ5iutaV9mE8aqSKclfzPafo/TyZl5b\u002BkCoxWM59r2DINVzy0qv6bBq4X0OXoUqlKo2K2qkXXFSADJrGZc0ZZqwFQQViwsQ5XwISIxBAKAq6jmEkdXUdrtupyHJhgbu/hBHDZs0FhKSvBeYrDeO6cyxOLjmLDbmuxaySG8Gy7Fxg5eN\u002BKjCpvlvAJmdUDBS6tUnJCkYYDycQqVo36CVnInpqQVHM0yKb9k/6cF2JXOWeRRhTh5518Gt7pYrDvA1SQ43VR12DjCrR4YvGGLisIvhOlZQ5pKWxhWXY/7DfIeQeyplARyyCSNVFOdrIG1UbZRxIBfFycabqKGgPNtKRULUaN\u002BsCLGUJran8\u002BFvQHsz3Pyk6DyxVaLRxQTrmXoFM47vF//26ips3/pgpFczAqIqDqPJ0QXfuBOtmCGmV7OaMQhkWAjrD8PgPvS8229gdWInTcb5OsmOj/3BYPn0\u002BEXBnsys8/m\u002BNDr85\u002BD6avm93QBxIHyprG2ERJKaxYc/pmY8tQkvmRMfmvAIltlb2amK8b2Br7s118vlgX6xPuz2P0wPqZ\u002BeS639hfM4PZDWJhQAAAABJRU5ErkJggg=='
+)
+
 const KannasTreasure = new Equipment(
   'Kanna\'s Treasure',
   'Sengoku Treasure Set',
@@ -6224,7 +6265,8 @@ const AdventureDeepDarkCriticalRing = new Equipment(
     0,
     0,
     0,
-    0
+    5,
+    15
   ),
   'ring',
   new EffectStats(),
@@ -9314,8 +9356,8 @@ const PinkHolyCup = new Equipment(
   140,
   0,
   true,
-  true,
-  true,
+  false,
+  false,
   true,
   new EffectStats(
     5,
@@ -15527,6 +15569,7 @@ export const Hearts = [
   TitaniumHeart,
   GlimmeringWondroidHeart,
   GoldHeart,
+  FairyHeart,
 ]
 
 
@@ -15611,7 +15654,6 @@ export const Earrings = [
   RedEmblemRings,
   WillotheWisps,
 ]
-
 
 export const Rings = [
   LevelJumpIRing,

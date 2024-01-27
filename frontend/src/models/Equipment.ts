@@ -74,6 +74,7 @@ export class Equipment{
 
   applyStarForce(starForce: number) {
     if(starForce === 0) this.sfStat = new EffectStats()
+    this.starForce = starForce
     const StatStarForce = Math.min(22, starForce)
     const statAdd = StatStarForce < 6 ? starForce * 2 :
       StatStarForce < 16 ? starForce * 3 - 5 :
@@ -89,12 +90,27 @@ export class Equipment{
         HMPStarForce < 8 ? HMPStarForce * 15 - 40 :
           HMPStarForce < 10 ? HMPStarForce * 20 - 75 :
             HMPStarForce * 25 - 120
+    const gloveAttStar = [5, 7, 9, 11, 13, 14,15]
     const defAdd = Array(starForce).fill(0).map(() => (1 + Math.floor(this.base.defence / 20))).reduce((s, i) => s + i, 0)
-    let attAdd = this.slot === 'weapon' ? Math.min(15, starForce) * (1 + Math.floor(this.base.att / 50)) : 0
-    let mattAdd = this.slot === 'weapon' ? Math.min(15, starForce) * (1 + Math.floor(this.base.matt / 50)) : 0
+    let attAdd = 0
+    if(this.slot === 'weapon') {
+      for(let i = 0; i < Math.min(15, starForce); i += 1) {
+        attAdd += 1 + Math.floor((this.base.att + attAdd) / 50)
+      }
+    } else if(this.slot === 'glove') {
+      attAdd = gloveAttStar.filter((l) => l <= starForce).length
+    }
+    let mattAdd = 0
+    if(this.slot === 'weapon') {
+      for(let i = 0; i < Math.min(15, starForce); i += 1) {
+        mattAdd += 1 + Math.floor((this.base.matt + mattAdd) / 50)
+      }
+    } else if(this.slot === 'glove') {
+      mattAdd = gloveAttStar.filter((l) => l <= starForce).length
+    }
     const levelRange = +(this.level > 137) + +(this.level > 149) + +(this.level > 159) + +(this.level > 199) + +(this.level > 249)
     const notWeapon = +(this.slot !== 'weapon')
-    for(let i = 0; i + 16 < starForce; i += 1) {
+    for(let i = 0; i + 16 <= starForce; i += 1) {
       attAdd += AttAddAbove15Star[levelRange][i][notWeapon]
       mattAdd += AttAddAbove15Star[levelRange][i][notWeapon]
     }
@@ -137,5 +153,6 @@ export class Equipment{
 }
 
 export const ApplyEquipment = (init: StatsDetail, equip: Equipment) => {
+  equip.updateStatsSummary()
   return ApplyEffect(init, equip.statsSummary)
 }

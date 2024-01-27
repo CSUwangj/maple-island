@@ -510,7 +510,6 @@ export const JobDefaultBuff: SkillMap = {
   'Wild Hunter': [],
   'Kain': [],
   'Cannon Master': [],
-  'Cannoneer': [],
   'Buccaneer': [],
   'Shade': [],
   'Thunder Breaker': [],

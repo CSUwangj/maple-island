@@ -11,11 +11,11 @@ export class EffectStats {
   matt: number
   attPercent: number
   mattPercent: number
-  allStatPercent: number
-  dexPercent: number
-  strPercent: number
-  intPercent: number
-  lukPercent: number
+  percentAllStat: number
+  percentDex: number
+  percentStr: number
+  percentInt: number
+  percentLuk: number
   defence: number
   critRate: number
   damage: number
@@ -38,11 +38,11 @@ export class EffectStats {
     matt = 0,
     attPercent = 0,
     mattPercent = 0,
-    allStatPercent = 0,
-    strPercent = 0,
-    dexPercent = 0,
-    intPercent = 0,
-    lukPercent = 0,
+    percentAllStat = 0,
+    percentStr = 0,
+    percentDex = 0,
+    percentInt = 0,
+    percentLuk = 0,
     defence = 0,
     ignoreEnemyDefence = 0,
     damage = 0,
@@ -64,11 +64,11 @@ export class EffectStats {
     this.matt = matt
     this.attPercent = attPercent
     this.mattPercent = mattPercent
-    this.allStatPercent = allStatPercent
-    this.dexPercent = dexPercent
-    this.strPercent = strPercent
-    this.intPercent = intPercent
-    this.lukPercent = lukPercent
+    this.percentAllStat = percentAllStat
+    this.percentDex = percentDex
+    this.percentStr = percentStr
+    this.percentInt = percentInt
+    this.percentLuk = percentLuk
     this.defence = defence
     this.ignoreEnemyDefence = ignoreEnemyDefence
     this.damage = damage
@@ -93,14 +93,16 @@ export class EffectStats {
       this.matt + stat.matt,
       this.attPercent + stat.attPercent,
       this.mattPercent + stat.mattPercent,
-      this.allStatPercent + stat.allStatPercent,
-      this.strPercent + stat.strPercent,
-      this.dexPercent + stat.dexPercent,
-      this.intPercent + stat.intPercent,
-      this.lukPercent + stat.lukPercent,
+      this.percentAllStat + stat.percentAllStat,
+      this.percentStr + stat.percentStr,
+      this.percentDex + stat.percentDex,
+      this.percentInt + stat.percentInt,
+      this.percentLuk + stat.percentLuk,
       this.defence + stat.defence,
-      this.ignoreEnemyDefence + stat.ignoreEnemyDefence,
+      this.ignoreEnemyDefence * (1 - stat.ignoreEnemyDefence / 100) + stat.ignoreEnemyDefence,
+      this.damage + stat.damage,
       this.bossDamage + stat.bossDamage,
+      this.normalDamage + stat.normalDamage,
       this.critDamage + stat.critDamage,
       this.critRate + stat.critRate,
       this.finalDamage * (100 + stat.finalDamage) / 100

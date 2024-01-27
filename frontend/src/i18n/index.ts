@@ -68,6 +68,8 @@ i18n
           'hungry-muto': 'Hungry Muto Helper',
           'esfera-guardian': 'Esfera Guardian Helper',
           'calculator-character': 'Character Calculator',
+          'sac': 'Sacred Symbol',
+          'arc': 'Arcane Symbol',
           'legion': {
             'add-char': 'Add Character',
             'rem-char': 'Remove Character',

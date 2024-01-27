@@ -1,8 +1,8 @@
 import { EffectStats } from "./EffectStats"
 
 export interface StatsDetail {
-  pureDex: number
   pureStr: number
+  pureDex: number
   pureInt: number
   pureLuk: number
   pureHp: number
@@ -44,25 +44,25 @@ export interface StatsDetail {
   ignoreElementResistence: number
 }
 
-export const ApplyEffect = (init: StatsDetail, target: EffectStats) => {
+export const ApplyEffect = (init: StatsDetail, target: EffectStats): StatsDetail => {
   return {
     ...init,
-    addedDex: init.addedDex + target.dex,
     addedStr: init.addedStr + target.str,
+    addedDex: init.addedDex + target.dex,
     addedInt: init.addedInt + target.int,
     addedLuk: init.addedLuk + target.luk,
     addedHp: init.addedHp + target.hp,
     addedMp: init.addedMp + target.mp,
     addedAtt: init.addedAtt + target.att,
     addedMatt: init.addedMatt + target.matt,
-    dexPercent: init.percentDex + target.dexPercent + target.allStatPercent,
-    strPercent: init.percentStr + target.strPercent + target.allStatPercent,
-    intPercent: init.percentInt + target.intPercent + target.allStatPercent,
-    lukPercent: init.percentLuk + target.lukPercent + target.allStatPercent,
-    hpPercent: init.percentHp + target.hpPercent,
-    mpPercent: init.percentMp + target.mpPercent,
-    attPercent: init.percentAtt + target.attPercent,
-    mattPercent: init.percentMatt + target.mattPercent,
+    percentStr: init.percentStr + target.percentStr + target.percentAllStat,
+    percentDex: init.percentDex + target.percentDex + target.percentAllStat,
+    percentInt: init.percentInt + target.percentInt + target.percentAllStat,
+    percentLuk: init.percentLuk + target.percentLuk + target.percentAllStat,
+    percentHp: init.percentHp + target.hpPercent,
+    percentMp: init.percentMp + target.mpPercent,
+    percentAtt: init.percentAtt + target.attPercent,
+    percentMatt: init.percentMatt + target.mattPercent,
     defence: init.defence + target.defence,
     critRate: init.critRate + target.critRate,
     ignoreEnemyDefence: target.ignoreEnemyDefence * (1 - init.ignoreEnemyDefence / 100) + init.ignoreEnemyDefence,

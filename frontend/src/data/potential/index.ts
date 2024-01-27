@@ -265,6 +265,37 @@ const PercentDEX6 = new Line(
   )
 )
 
+const PercentDEX7 = new Line(
+  'DEX: +7%',
+  new EffectStats(
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    7,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+  )
+)
+
 const PercentDEX9 = new Line(
   'DEX: +9%',
   new EffectStats(
@@ -2218,6 +2249,37 @@ const CR13 = new Line(
   )
 )
 
+const CD8 = new Line(
+  'Critical Damage: +8%',
+  new EffectStats(
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    8,
+    0,
+    0,
+  )
+)
+
 export const Lines = [
   UselessLine,
   PercentSTR3,
@@ -2228,6 +2290,7 @@ export const Lines = [
   PercentSTR13,
   PercentDEX3,
   PercentDEX6,
+  PercentDEX7,
   PercentDEX9,
   PercentDEX10,
   PercentDEX12,
@@ -2291,4 +2354,5 @@ export const Lines = [
   CR10,
   CR12,
   CR13,
+  CD8
 ]

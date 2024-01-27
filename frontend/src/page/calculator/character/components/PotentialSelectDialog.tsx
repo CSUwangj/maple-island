@@ -11,7 +11,7 @@ interface PotentialDialogProps {
 }
 
 export const PotentialSelectDialog: React.FC<ConfirmDialogProps & PotentialDialogProps> = ({equipment, setEquipment, ...props}) => {
-  const [potentials, setPotentials] = useState(new Array(3).fill(0).map(__ => _.cloneDeep(UselessLine)))
+  const [potentials, setPotentials] = useState(new Array(3).fill(0).map(() => _.cloneDeep(UselessLine)))
   const PotentialSelection = <>
     {
       potentials?.map((_, index) => <Dropdown filter value={potentials[index]} key={`${equipment?.name}-pot-line${index}`} options={Lines} optionLabel='description' onChange={(e) => {
